@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  postgres:
+    image: postgres:11.1
+    environment:
+      - POSTGRES_PASSWORD=password
+    ports: 
+      - "5432:5432"
+  api:
+    build: 
+      context: backend
+    environment:
+      - POSTGRES_PASSWORD=password
+    volumes:
+      - $PWD/backend:/code
+    ports:
+      - 8000:8000
+    links:
+      - postgres:db
+    command: web_app migrate local
+  frontend:
+    build:
+      context: frontend
+    volumes:
+      - $PWD/frontend:/code
+    environment:
+      - NODE_ENV=development
+    ports:
+      - 3000:3000
+

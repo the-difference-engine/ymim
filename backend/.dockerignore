@@ -1,0 +1,11 @@
+*.swp
+**/__pycache__
+*.pyc
+
+.python-version
+
+.vscode/
+
+*.log
+
+.env
