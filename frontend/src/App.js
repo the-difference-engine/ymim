@@ -18,7 +18,7 @@ class App extends Component {
           </p>
         </header>
         <div className="row page-contents">
-          <p>We will render the router here. The router will render our various components. The code for the router is contained in router.js.</p>
+          <p>This is a sample component that currently lives at the root of our application.</p>
         </div>
       </div>
     );
