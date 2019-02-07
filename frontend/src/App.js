@@ -1,25 +1,25 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
+      <div className="App container">
+        <header className="App-header row">
           <p>
-            Edit <code>src/App.js</code> and save to reload.
+            This will be a navbar. <a
+              className="App-link"
+              href="https://reactjs.org"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+               React Docs
+            </a>
           </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
         </header>
+        <div className="row page-contents">
+          <p>We will render the router here. The router will render our various components. The code for the router is contained in router.js.</p>
+        </div>
       </div>
     );
   }
