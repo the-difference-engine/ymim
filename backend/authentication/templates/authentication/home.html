@@ -4,22 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS"
+    crossorigin="anonymous">
+    <title>Home</title>
 </head>
 <body>
-    <h2 class="text-center" style="margin-top: 30px;">LOGIN</h2>
-<br/>
-<div class="col-md-6 offset-md-3">
-    <form method="POST">{% csrf_token %}
-        <div class="form-group">
-            <input type="text" class="form-control" placeholder="Enter Username" name="username">
-        </div>
-         <div class="form-group">
-            <input type="password" class="form-control" placeholder="Enter Password" name="password">
-        </div>
-
-        <button type="submit" class="btn btn-secondary">Login</button>
-    </form>
-</div>
+<center>
+<br />
+<h1>Home Page</h1>
+<a class="btn btn-dark" href="/login" role="button">Login</a>
+<a class="btn btn-dark" href="/register" role="button">Register</a>
+</center>
 </body>
 </html>
