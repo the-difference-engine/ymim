@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import fetchData from "./reducers";
 import thunk from "redux-thunk";
-import App from './App';
+import App from './components/App';
 import fetchAPI from './components/fetchAPI';
 import NotFound from './components/NotFound';
 
