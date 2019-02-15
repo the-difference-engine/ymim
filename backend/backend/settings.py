@@ -32,8 +32,11 @@ INSTALLED_APPS = [
     "storages",
     # Django REST Framework Apps
     "rest_framework",
+    "rest_framework.authtoken",
+    "rest_auth",
     # Internal Apps
     "authentication",
+
 ]
 
 MIDDLEWARE = [
