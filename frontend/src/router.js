@@ -1,13 +1,26 @@
 import React from 'react';
-import { Route, BrowserRouter as Router } from 'react-router-dom'
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Provider } from "react-redux";
+import { createStore } from "redux";
+import fetchData from "./reducers";
 import App from './App';
+import fetchAPI from './components/fetchAPI';
+import NotFound from './components/NotFound';
+
+let store = createStore(fetchData);
 
 const router = (
-    <Router>
+    <Provider store={store}>
         <div>
-            <Route path="/" component={App} />
+            <Router>
+                <Switch>
+                    <Route exact path="/" component={App} />
+                    <Route exact path="/fetch" component={fetchAPI} />
+                    <Route component={NotFound} />
+                </Switch>
+            </Router>
         </div>
-    </Router>
+    </Provider>
 )
 
 export default router;
