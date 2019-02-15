@@ -1,13 +1,14 @@
 import React from 'react';
 import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
 import { Provider } from "react-redux";
-import { createStore } from "redux";
+import { createStore, applyMiddleware } from "redux";
 import fetchData from "./reducers";
+import thunk from "redux-thunk";
 import App from './App';
 import fetchAPI from './components/fetchAPI';
 import NotFound from './components/NotFound';
 
-let store = createStore(fetchData);
+let store = createStore(fetchData, applyMiddleware(thunk));
 
 const router = (
     <Provider store={store}>

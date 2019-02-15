@@ -1,9 +1,9 @@
 import { combineReducers } from 'redux';
-import notes from "./notes";
+import dogs from "./dogs";
 
 
 const fetchData = combineReducers({
-  notes,
+  dogs,
 })
 
 export default fetchData;
