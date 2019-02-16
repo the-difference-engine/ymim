@@ -29,7 +29,8 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 DEBUG = os.getenv("DEBUG", False)
 
 ALLOWED_HOSTS = [
-    "ymim-backend-staging.herokuapp.com"
+    "ymim-backend-staging.herokuapp.com",
+    "ymim-backend-production.herokuapp.com"
 ]
 
 
