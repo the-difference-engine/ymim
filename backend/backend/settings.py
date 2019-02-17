@@ -31,9 +31,9 @@ INSTALLED_APPS = [
     # Other Package Apps
     "storages",
     # Django REST Framework Apps
-    "rest_framework",
-    "rest_framework.authtoken",
-    "rest_auth",
+    'rest_framework',
+    # 'rest_framework.authtoken',
+    # 'rest_auth',
     # Internal Apps
     "authentication",
 

@@ -5,6 +5,6 @@ from django.contrib import admin
 
 urlpatterns = [
     path("admin/", admin.site.urls),
-    path("", include("authentication.urls")),
-    url(r'^rest-auth/', include('rest_auth.urls')),
+    # path("", include("authentication.urls")),
+    # url(r'^rest-auth/', include('rest_auth.urls')),
 ]
