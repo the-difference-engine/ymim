@@ -1,36 +1,19 @@
-from django.shortcuts import render, redirect
-from django.contrib.auth import authenticate, login, logout
-from django.contrib import messages 
-
-# from django.contrib.auth import authenticate
-#    user = authenticate(username='john', password='secret')
-#      if user is not None:
-# A backend authenticated the credentials
-#      else:
-# No backend authenticated the credentials
+from django.contrib.auth.models import User, Group
+from rest_framework import viewsets
+from tutorial.quickstart.serializers import UserSerializer, GroupSerializer
 
 
-def home(request):
-    return render(request, "authentication/home.html")
+class UserViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows users to be viewed or edited.
+    """
+    queryset = User.objects.all().order_by('-date_joined')
+    serializer_class = UserSerializer
 
 
-def login_user(request):
-    if request.method == 'POST':
-        username = request.POST['username']
-        password = request.POST['password']
-        # From import authenticate
-        user = authenticate(request, username=username, password=password)
-        if user is not None:
-            login(request, user)
-            messages.success(request, ('You are logged in!'))
-            return redirect('home')
-
-        else:
-            messages.success(request, ('Error logging in - Please try again.'))
-            return redirect('login_user')
-    else:
-        return render(request, 'authentication/login.html', {})
-
-
-def register_user(request):
-    return render(request, "authentication/register.html")
+class GroupViewSet(viewsets.ModelViewSet):
+    """
+    API endpoint that allows groups to be viewed or edited.
+    """
+    queryset = Group.objects.all()
+    serializer_class = GroupSerializer
