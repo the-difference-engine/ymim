@@ -1,0 +1,14 @@
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-item {
+  margin: 10px;
+}
+
+.nav-link:hover {
+  background: pink;
+}
+
