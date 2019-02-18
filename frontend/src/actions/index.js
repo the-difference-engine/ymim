@@ -1,3 +1,3 @@
 import * as dogs from "./dogs";
 
-export {dogs}
+export {dogs};
