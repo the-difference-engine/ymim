@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
 import PaypalButton from './components/PayPalButton';
-require('dotenv').config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 const CLIENT = {
-  sandbox: "AiYSI4dBBlv8vaSoN-0QkKMTmHq.AnWCIGMJHNCfZeZB8LHc6SMWx6Iq",
+  sandbox: process.env.REACT_APP_PAYPAL_CLIENT_ID_SANDBOX,
   production: process.env.PAYPAL_CLIENT_ID_PRODUCTION,
 };
 
