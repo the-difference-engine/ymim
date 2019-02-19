@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 import './Header.css';
 
 
@@ -10,16 +10,16 @@ class Header extends Component {
         <nav>
           <ul className="nav-links">
             <li className="nav-item">
-              <Link className="nav-link" to="/about">About</Link>
+              <NavLink className="nav-link" to="/about" activeStyle={{background:'limegreen'}}>About</NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/contact-us">Contact Us</Link>
+              <NavLink className="nav-link" to="/contact-us" activeStyle={{background:'limegreen'}}>Contact Us</NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/enrollment">Enroll Now</Link>
+              <NavLink className="nav-link" to="/enrollment" activeStyle={{background:'limegreen'}}>Enroll Now</NavLink>
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/ambassadors">Get Involved</Link>
+              <NavLink className="nav-link" to="/ambassadors" activeStyle={{background:'limegreen'}}>Get Involved</NavLink>
             </li>
           </ul>
         </nav>
