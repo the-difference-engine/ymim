@@ -1,14 +1,19 @@
+header {
+  border-bottom: 1px solid black;
+}
 .nav-links {
   list-style: none;
   display: flex;
   justify-content: flex-end;
 }
 
-.nav-item {
-  margin: 10px;
+.nav-link {
+  padding: 10px;
+  color: hsl(101,43%,42%);
 }
 
 .nav-link:hover {
-  background: pink;
+  background: hsl(95,60%,56%);
+  color: white;
 }
 
