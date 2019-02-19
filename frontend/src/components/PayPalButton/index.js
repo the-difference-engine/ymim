@@ -88,11 +88,18 @@ class PaypalButton extends React.Component {
 
           onSuccess(payment);
         });
+        const style = {
+          layout: 'vertical', // horizontal | vertical
+          size: 'medium', // medium | large | responsive
+          shape: 'rect', // pill | rect
+          color: 'gold' // gold | blue | silver | white | black
+        };
 
 
     return (
       <div>
         {showButton && <paypal.Button.react
+          style={style}
           env={env}
           client={client}
           commit={commit}
