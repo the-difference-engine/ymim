@@ -14,3 +14,8 @@
   color: white;
 }
 
+.nav-link-selected {
+  background: hsl(101,43%,42%);
+  color: white;
+}
+

@@ -10,16 +10,16 @@ class Header extends Component {
         <nav>
           <ul className="nav-links">
             <li className="nav-item">
-              <NavLink className="nav-link" to="/about" activeStyle={{background:'hsl(101,43%,42%)',color:'white'}}>About</NavLink>
+              <NavLink className="nav-link" to="/about" activeClassName="nav-link-selected">About</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/contact-us" activeStyle={{background:'hsl(101,43%,42%)',color:'white'}}>Contact Us</NavLink>
+              <NavLink className="nav-link" to="/contact-us" activeClassName="nav-link-selected">Contact Us</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/enrollment" activeStyle={{background:'hsl(101,43%,42%)',color:'white'}}>Enroll Now</NavLink>
+              <NavLink className="nav-link" to="/enrollment" activeClassName="nav-link-selected">Enroll Now</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/ambassadors" activeStyle={{background:'hsl(101,43%,42%)',color:'white'}}>Get Involved</NavLink>
+              <NavLink className="nav-link" to="/ambassadors" activeClassName="nav-link-selected">Get Involved</NavLink>
             </li>
           </ul>
         </nav>
