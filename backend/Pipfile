@@ -27,3 +27,4 @@ python_version = "3"
 
 [scripts]
 black = "black"
+secret_key = "python generate_secret_key.py"

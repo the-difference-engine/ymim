@@ -75,6 +75,17 @@ We're using the [lstoll/heroku-buildpack-monorepo](https://github.com/lstoll/her
 
 ### Backend
 
+We are using `django-dotenv` to manage our environment variables. You will need to create a `.env` file in `backend/` and populate the following variables:
 
+    SECRET_KEY=<SECRET_KEY>
+    DEBUG=True
+    DB_ENGINE="django.db.backends.postgresql"
+    DB_NAME="postgres"
+    DB_USER="postgres"
+    DB_PASSWORD="password"
+    DB_HOST="db"
+    DB_PORT=5432
+
+Use `pipenv run secret_key` to generate a value for SECRET_KEY and then save that into the file.
 
 ### Required Backend Env Vars
