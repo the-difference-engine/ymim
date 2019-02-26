@@ -7,7 +7,7 @@ verify_ssl = true
 pylint = ">=2.2.2"
 black = "==18.9b0"
 faker = ">=1.0.2"
-pprintpp = "*"
+pprintpp = ">=0.4.0"
 
 [packages]
 Django = ">=2.1.6"
@@ -20,6 +20,7 @@ gunicorn = ">=19.9.0"
 psycopg2 = ">=2.7.7"
 pyyaml = "==4.2b1"
 pendulum = ">=2.0.4"
+django-heroku = ">=0.3.1"
 
 [requires]
 python_version = "3.7"

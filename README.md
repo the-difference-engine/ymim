@@ -6,6 +6,12 @@
     - [PC Users (currently incomplete)](#pc-users-currently-incomplete)
   - [Developing On The App](#developing-on-the-app)
   - [What Technologies Are We Using?](#what-technologies-are-we-using)
+  - [Deployment](#deployment)
+    - [General](#general)
+    - [Frontend](#frontend)
+    - [Required FE Env Vars](#required-fe-env-vars)
+    - [Backend](#backend)
+    - [Required Backend Env Vars](#required-backend-env-vars)
 
 ## Getting Started With The App
 
@@ -28,7 +34,7 @@ I'm going to be very blunt: this will be much, much easier on a Mac or Linux sys
 - Set up Pipenv:
     ```
     cd backend
-    pipenv install
+    pipenv install --dev
     cd ..
     ```
 - Start Docker containers: 
@@ -54,3 +60,21 @@ If you need to add new packages to the frontend app, you can use Yarn to do so:
     yarn install <package_name>
 
 Generally speaking, look to handle data manipulation on the backend and visualization on the frontend.
+
+## Deployment
+
+### General
+
+This is deployed in two Heroku pipelines in the young-masterbuilders Heroku team, one for the frontend application and one for the backend. Each pipeline has a staging and production app, linked to the staging and master Github branches of this repo. The app is deployed by either pushing to those branches or manually deploying via the Heroku GUI.
+
+### Frontend
+We're using the [lstoll/heroku-buildpack-monorepo](https://github.com/lstoll/heroku-buildpack-monorepo) & [mars/create-react-app](https://github.com/mars/create-react-app-buildpack) buildpacks. They must be installed in that order to function.
+
+### Required FE Env Vars
+- APP_BASE
+
+### Backend
+
+
+
+### Required Backend Env Vars
