@@ -1,3 +1,3 @@
-import * as dogs from "./dogs";
+import * as items from "./demo";
 
-export {dogs};
+export { items };

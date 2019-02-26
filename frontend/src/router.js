@@ -5,7 +5,7 @@ import { createStore, applyMiddleware } from "redux";
 import fetchData from "./reducers";
 import thunk from "redux-thunk";
 import App from './components/App';
-import fetchAPI from './components/fetchAPI';
+import DemoPage from './components/DemoPage';
 import NotFound from './components/NotFound';
 
 let store = createStore(fetchData, applyMiddleware(thunk));
@@ -16,7 +16,7 @@ const router = (
             <Router>
                 <Switch>
                     <Route exact path="/" component={App} />
-                    <Route exact path="/fetch" component={fetchAPI} />
+                    <Route exact path="/fetch" component={DemoPage} />
                     <Route component={NotFound} />
                 </Switch>
             </Router>

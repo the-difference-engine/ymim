@@ -4,8 +4,8 @@ import React from 'react';
 const NotFound = () => {
     return (
         <div>
-            <h2>Oh no, you've found our junior developer's homepage!</h2>
-            <p>Despite sleeping on the couch most of the day, our junior developer still finds time to do some coding...</p>
+            <h2>Not found, error 404</h2>
+            <p>The page you are looking for no longer exists. Perhaps you can return back to the site's <a href="/">homepage</a> and see if you can find what you are looking for. Or, you can try finding it by using the search form below.</p>
         </div>
     )
 }
