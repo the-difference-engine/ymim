@@ -44,7 +44,7 @@ export const deleteFromAPI = index => {
   return (dispatch, getState) => {
 
     let headers = { "Content-Type": "application/json" };
-    let itemId = getState().itemss[index].id;
+    let itemId = getState().items[index].id;
 
     return fetch(`/api/item/${itemId}/`, { headers, method: "DELETE" })
       .then(res => {
