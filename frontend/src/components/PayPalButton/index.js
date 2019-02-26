@@ -94,7 +94,7 @@ class PaypalButton extends React.Component {
           shape: 'rect', // pill | rect
           color: 'gold' // gold | blue | silver | white | black
         };
-
+        
 
     return (
       <div>

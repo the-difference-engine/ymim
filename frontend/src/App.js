@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import PaypalButton from './components/PayPalButton';
 import dotenv from 'dotenv';
+import AltPaypalButton from './components/AltPayPal';
 dotenv.config();
 
 const CLIENT = {
@@ -51,6 +52,7 @@ class App extends Component {
           onError={onError}
           onCancel={onCancel}
         />
+        <AltPaypalButton/>
       </div>
         
         </div>
