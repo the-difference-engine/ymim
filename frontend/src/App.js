@@ -1,12 +1,16 @@
 import React, { Component } from 'react';
 import './App.css';
 import PaypalButton from './components/PayPalButton';
-import dotenv from 'dotenv';
 import AltPaypalButton from './components/AltPayPal';
+import dotenv from 'dotenv'
+require('dotenv').config();
 dotenv.config();
 
+
+console.log(process.env.REACT_APP_API_KEY)
+
 const CLIENT = {
-  sandbox: process.env.REACT_APP_PAYPAL_CLIENT_ID_SANDBOX,
+  sandbox: "Acw8TtEIdS536MMRdBDasTTgP3dHfOjBqN8v_RudOVI2AhZ_Wsh-8oGJSHdNLtEwaqqA6PNjQ4Q6NWA0",
   production: process.env.PAYPAL_CLIENT_ID_PRODUCTION,
 };
 
