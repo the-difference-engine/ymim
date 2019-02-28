@@ -34,7 +34,7 @@ I'm going to be very blunt: this will be much, much easier on a Mac or Linux sys
 - Set up Pipenv:
     ```
     cd backend
-    pipenv install
+    pipenv install --dev
     cd ..
     ```
 - Start Docker containers: 
