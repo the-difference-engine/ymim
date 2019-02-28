@@ -6,13 +6,8 @@ import dotenv from 'dotenv'
 require('dotenv').config();
 dotenv.config();
 
-
-console.log(process.env.API_KEY)
-console.log(process.env.REACT_APP_HELLO)
-console.log(process.env.REACT_APP_PAYPAL_CLIENT_ID_SANDBOX)
-
 const CLIENT = {
-  sandbox: "Acw8TtEIdS536MMRdBDasTTgP3dHfOjBqN8v_RudOVI2AhZ_Wsh-8oGJSHdNLtEwaqqA6PNjQ4Q6NWA0",
+  sandbox: process.env.REACT_APP_PAYPAL_CLIENT_ID_SANDBOX,
   production: process.env.PAYPAL_CLIENT_ID_PRODUCTION,
 };
 
