@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
 import PaypalButton from './components/PayPalButton';
-import AltPaypalButton from './components/AltPayPal';
 import dotenv from 'dotenv'
 require('dotenv').config();
 dotenv.config();

@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import scriptLoader from 'react-async-script-loader';
+import { readdirSync } from 'fs';
 
 class PaypalButton extends React.Component {
   constructor(props) {
@@ -26,6 +27,10 @@ class PaypalButton extends React.Component {
     }
   }
 
+  handleInputChange = event => {
+    this.setState({price: event.target.value});
+  };
+
   componentWillReceiveProps(nextProps) {
     const {
       isScriptLoaded,
@@ -48,7 +53,6 @@ class PaypalButton extends React.Component {
   render() {
     const paypal = window.PAYPAL
     const {
-      total,
       currency,
       env,
       commit,
@@ -96,11 +100,25 @@ class PaypalButton extends React.Component {
           shape: 'rect', // pill | rect
           color: 'gold' // gold | blue | silver | white | black
         };
-        
+        const isEnabled = (this.state.price >= 1)
 
     return (
-      <div>
+      <React.Fragment>
+        <form>
+          <h3 style={{ justifySelf: 'center' }}>Donate Amount</h3>
+            <input
+              name='donate'
+              type='number'
+              min="1"
+              placeholder="1"
+              value={this.state.price}
+              onChange={this.handleInputChange}
+              className='donationInput'
+            />
+        </form>
+      
         {showButton && <paypal.Button.react
+          disabled = {!isEnabled}
           style={style}
           env={env}
           client={client}
@@ -110,7 +128,8 @@ class PaypalButton extends React.Component {
           onCancel={onCancel}
           onError={onError}
         />}
-      </div>
+        </React.Fragment>
+      
     );
   }
 }
