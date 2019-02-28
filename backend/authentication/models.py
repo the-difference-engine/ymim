@@ -12,15 +12,3 @@ class UserProfile(models.Model):
     last_name = models.CharField(max_length=50, null=True, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-
-    def __unicode__(self):
-        return self.user.username
-
-    def create_profile_for_user(self, instance=None, created=False, **kargs):
-        if created:
-            UserProfile.objects.get_or_create(user=instance)
-
-    def delete_profile_for_user(self, instance=None, **kargs):
-        if instance:
-            user_profile = UserProfile.objects.get(user=instance)
-            user_profile.delete()

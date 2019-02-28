@@ -7,22 +7,21 @@ from .models import UserProfile
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
-        fields = ('url', 'username', 'password')
+        fields = ('url', 'username', 'password', 'first_name', 'last_name', 'email') 
 
+        def create_profile_for_user(self, instance=None, created=False, **kargs):
+            if created:
+                UserProfile.objects.get_or_create(user=instance)
 
-class UserProfileSerializer(serializers.ModelSerializer):
-    users = UserSerializer(many=True)
+        def update_profile_for_user(self, instance=None, created=True, **kargs):
+            if instance:
+                user_profile = UserProfile.objects.update(user=instance)
+                user_profile.save()
 
-    class Meta:
-        model = UserProfile
-        fields = ('first_name', 'last_name', 'phone_number', 'email', 'users')
-
-
-
-# class UserSerializer(serializers.HyperlinkedModelSerializer):
-#     class Meta:
-#         model = User
-#         fields = ('url', 'username', 'email', 'groups')
+        def delete_profile_for_user(self, instance=None, **kargs):
+            if instance:
+                user_profile = UserProfile.objects.get(user=instance)
+                user_profile.delete()
 
 
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
@@ -31,10 +30,4 @@ class GroupSerializer(serializers.HyperlinkedModelSerializer):
         fields = ('url', 'name')
 
 
-# class UserProfileSerializer(serializers.ModelSerializer):
-#     class Meta:
-#         model = UserProfile
-#         read_only_fields = ('created_at', 'updated_at',)
-#         fields = ('first_name', 'last_name', 'email', 'username', 'password')
-        # fields = ('__all__')
 
