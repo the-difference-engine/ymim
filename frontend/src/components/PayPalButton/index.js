@@ -8,6 +8,7 @@ class PaypalButton extends React.Component {
 
     this.state = {
       showButton: false,
+      price: 1.00,
     };
 
     window.React = React;
@@ -59,6 +60,7 @@ class PaypalButton extends React.Component {
 
     const {
       showButton,
+      price,
     } = this.state;
 
     
@@ -67,7 +69,7 @@ class PaypalButton extends React.Component {
         transactions: [
           {
             amount: {
-              total,
+              total: price,
               currency,
             }
           },
