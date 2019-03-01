@@ -10,6 +10,7 @@ class PaypalButton extends React.Component {
     this.state = {
       showButton: false,
       price: 1.00,
+      priceError: false,
     };
 
     window.React = React;
@@ -27,8 +28,12 @@ class PaypalButton extends React.Component {
     }
   }
 
-  handleInputChange = event => {
-    this.setState({price: event.target.value});
+  handleInputChange = e => {
+    const re = /^\d*\.?\d{0,2}$/
+        
+      if (e.target.value === '' || re.test(e.target.value)) {
+         this.setState({price: e.target.value})
+      }
   };
 
   componentWillReceiveProps(nextProps) {
@@ -48,8 +53,7 @@ class PaypalButton extends React.Component {
       }
     }
   }
-
-
+  
   render() {
     const paypal = window.PAYPAL
     const {
@@ -100,7 +104,6 @@ class PaypalButton extends React.Component {
           shape: 'rect', // pill | rect
           color: 'gold' // gold | blue | silver | white | black
         };
-        const isEnabled = (this.state.price >= 1)
 
     return (
       <React.Fragment>
@@ -108,17 +111,16 @@ class PaypalButton extends React.Component {
           <h3 style={{ justifySelf: 'center' }}>Donate Amount</h3>
             <input
               name='donate'
-              type='number'
-              min="1"
+              type='text'            
               placeholder="1"
               value={this.state.price}
               onChange={this.handleInputChange}
               className='donationInput'
             />
         </form>
-      
+        
+        <br/>
         {showButton && <paypal.Button.react
-          disabled = {!isEnabled}
           style={style}
           env={env}
           client={client}
