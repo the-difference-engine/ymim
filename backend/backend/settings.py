@@ -1,11 +1,15 @@
 import os
 
+import django_heroku
 import dotenv
+
+
+# Configure Django App for Heroku.
+django_heroku.settings(locals())
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 dotenv.read_dotenv(BASE_DIR)
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/2.1/howto/deployment/checklist/
@@ -16,7 +20,10 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", False)
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "ymim-backend-staging.herokuapp.com",
+    "ymim-backend-production.herokuapp.com"
+]
 
 
 # Application definition
@@ -119,7 +126,9 @@ USE_L10N = True
 
 USE_TZ = True
 
-
-STATIC_URL = "/static/"
 AUTH_USER_MODEL = 'auth.User'
 
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/2.1/howto/static-files/
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_URL = "/static/"

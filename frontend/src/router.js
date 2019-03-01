@@ -1,13 +1,27 @@
 import React from 'react';
-import { Route, BrowserRouter as Router } from 'react-router-dom'
-import App from './App';
+import { Switch, Route, BrowserRouter as Router } from 'react-router-dom';
+import { Provider } from "react-redux";
+import { createStore, applyMiddleware } from "redux";
+import fetchData from "./reducers";
+import thunk from "redux-thunk";
+import App from './components/App';
+import DemoPage from './components/DemoPage';
+import NotFound from './components/NotFound';
+
+let store = createStore(fetchData, applyMiddleware(thunk));
 
 const router = (
-    <Router>
+    <Provider store={store}>
         <div>
-            <Route path="/" component={App} />
+            <Router>
+                <Switch>
+                    <Route exact path="/" component={App} />
+                    <Route exact path="/fetch" component={DemoPage} />
+                    <Route component={NotFound} />
+                </Switch>
+            </Router>
         </div>
-    </Router>
+    </Provider>
 )
 
 export default router;

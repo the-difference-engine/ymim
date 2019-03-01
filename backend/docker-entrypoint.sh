@@ -26,7 +26,7 @@ case "$1" in
         case "$3" in
             prod)
                 echo "Starting Gunicorn."
-                exec gunicorn service_health.wsgi:application \
+                exec gunicorn backend.wsgi:application \
                     --bind 0.0.0.0:8000 \
                     --workers 3 \
                     --access-logfile '-'
