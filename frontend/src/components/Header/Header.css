@@ -1,0 +1,21 @@
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav-link {
+  padding: 10px;
+  color: hsl(101,43%,42%);
+}
+
+.nav-link:hover {
+  background: hsl(95,60%,56%);
+  color: white;
+}
+
+.nav-link-selected {
+  background: hsl(101,43%,42%);
+  color: white;
+}
+

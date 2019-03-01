@@ -2,6 +2,7 @@
 **/__pycache__
 */__pycache__/*
 *.pyc
+*/__pycache__/*
 
 .python-version
 
