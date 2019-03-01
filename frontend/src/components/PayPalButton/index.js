@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import scriptLoader from 'react-async-script-loader';
-import { readdirSync } from 'fs';
 
 class PaypalButton extends React.Component {
   constructor(props) {
@@ -112,7 +111,7 @@ class PaypalButton extends React.Component {
             <input
               name='donate'
               type='text'            
-              placeholder="1"
+              placeholder="Minimum $1.00"
               value={this.state.price}
               onChange={this.handleInputChange}
               className='donationInput'
