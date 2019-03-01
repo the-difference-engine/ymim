@@ -9,7 +9,7 @@ class PaypalButton extends React.Component {
     this.state = {
       showButton: false,
       price: 1.00,
-      priceError: false,
+      priceError: true,
     };
 
     window.React = React;
@@ -33,6 +33,12 @@ class PaypalButton extends React.Component {
       if (e.target.value === '' || re.test(e.target.value)) {
          this.setState({price: e.target.value})
       }
+      if(this.state.price >=1) {
+        this.state.priceError = false; 
+      } else {
+        this.state.priceError = true
+      }
+      console.log(this.state.priceError)
   };
 
   componentWillReceiveProps(nextProps) {
