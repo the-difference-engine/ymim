@@ -1,3 +1,4 @@
+import django_heroku
 """
 Django settings for API project.
 
@@ -126,6 +127,10 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = "/static/"
 
+REST_FRAMEWORK = {
+    'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
+    'PAGE_SIZE': 10
+}
+
 # Configure Django App for Heroku.
-import django_heroku
 django_heroku.settings(locals())
