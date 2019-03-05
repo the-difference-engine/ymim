@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     # Django REST Framework Apps
     "rest_framework",
     # Internal Apps
+    'send',
+
 ]
 
 MIDDLEWARE = [
@@ -125,6 +127,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = "/static/"
+
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = os.getenv('SMTP_USER')
+EMAIL_HOST_PASSWORD = os.getenv('SMTP_PASSWORD')
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
 
 # Configure Django App for Heroku.
 import django_heroku
