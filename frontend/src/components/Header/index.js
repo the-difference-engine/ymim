@@ -21,11 +21,14 @@ class Header extends Component {
             <li className="nav-item">
               <NavLink className="nav-link" to="/ambassadors" activeClassName="nav-link-selected">Get Involved</NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/admin" activeClassName="nav-link-selected">Login</NavLink>
+            </li>
           </ul>
         </nav>
       </header>
     )
-  } 
+  }
 }
 
 export default Header;

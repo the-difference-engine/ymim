@@ -17,6 +17,7 @@ const router = (
                 <Switch>
                     <Route exact path="/" component={App} />
                     <Route exact path="/fetch" component={DemoPage} />
+                    <Route exact path="admin" />
                     <Route component={NotFound} />
                 </Switch>
             </Router>
