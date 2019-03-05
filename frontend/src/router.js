@@ -7,15 +7,17 @@ import thunk from "redux-thunk";
 import App from './components/App';
 import DemoPage from './components/DemoPage';
 import NotFound from './components/NotFound';
+import Footer from './components/footer';
 import Header from './components/Header/Header';
+
 
 let store = createStore(fetchData, applyMiddleware(thunk));
 
 const router = (
     <Provider store={store}>
         <Router>
-            <div className='App Site'>
-                <div className='Site-content'>
+            <div className='App site'>
+                <div className='site-content'>
                     <Header />
                     <Switch>
                         <Route exact path="/" component={App} />
@@ -23,6 +25,7 @@ const router = (
                         <Route component={NotFound} />
                     </Switch>
                 </div>
+                <Footer />
             </div>
         </Router>
     </Provider>
