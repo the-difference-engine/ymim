@@ -3,6 +3,7 @@
   bottom: 0;
   height: 100px;
 }
-ul li {
+
+.footer_link {
   display: inline-block !important;
 }

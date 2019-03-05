@@ -10,16 +10,16 @@ export default class footer extends Component {
                 <div className='container'>
                     <nav>
                         <ul className='row'>
-                            <li className='col'>
+                            <li className='col footer_link'>
                                 <Link to="/about">About Us</Link>
                             </li>
-                            <li className='col'>
+                            <li className='col footer_link'>
                                 <Link to="/meet-the-team">Meet Our Team</Link>
                             </li>
-                            <li className='col'>
+                            <li className='col footer_link'>
                                 <Link to="/volunteer">Volunteer</Link>
                             </li>
-                            <li className='col'>
+                            <li className='col footer_link'>
                                 <Link to="/events">Events</Link>
                             </li>
                         </ul>

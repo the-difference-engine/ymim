@@ -16,8 +16,8 @@ let store = createStore(fetchData, applyMiddleware(thunk));
 const router = (
     <Provider store={store}>
         <Router>
-            <div className='App Site'>
-                <div className='Site-content'>
+            <div className='App site'>
+                <div className='site-content'>
                     <Header />
                     <Switch>
                         <Route exact path="/" component={App} />
