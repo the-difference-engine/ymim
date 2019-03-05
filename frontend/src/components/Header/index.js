@@ -22,7 +22,7 @@ class Header extends Component {
               <NavLink className="nav-link" to="/ambassadors" activeClassName="nav-link-selected">Get Involved</NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/admin" activeClassName="nav-link-selected">Login</NavLink>
+              <NavLink className="nav-link" to="/login" activeClassName="nav-link-selected">Login</NavLink>
             </li>
           </ul>
         </nav>
