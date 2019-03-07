@@ -47,6 +47,7 @@ INSTALLED_APPS = [
     "storages",
     # Django REST Framework Apps
     "rest_framework",
+    'djoser',
     # Internal Apps
 ]
 
