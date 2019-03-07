@@ -9,6 +9,7 @@ import DemoPage from './components/DemoPage';
 import NotFound from './components/NotFound';
 import Footer from './components/footer';
 import Header from './components/Header/Header';
+import Contact from './components/contact';
 
 
 let store = createStore(fetchData, applyMiddleware(thunk));
@@ -22,6 +23,7 @@ const router = (
                     <Switch>
                         <Route exact path="/" component={App} />
                         <Route exact path="/fetch" component={DemoPage} />
+                        <Route exact path="/contact-us" component={Contact} />
                         <Route component={NotFound} />
                     </Switch>
                 </div>
