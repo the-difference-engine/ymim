@@ -6,6 +6,12 @@
     - [PC Users (currently incomplete)](#pc-users-currently-incomplete)
   - [Developing On The App](#developing-on-the-app)
   - [What Technologies Are We Using?](#what-technologies-are-we-using)
+  - [Deployment](#deployment)
+    - [General](#general)
+    - [Frontend](#frontend)
+    - [Required Frontend Env Vars](#required-frontend-env-vars)
+    - [Backend](#backend)
+    - [Required Backend Env Vars](#required-backend-env-vars)
 
 ## Getting Started With The App
 
@@ -28,7 +34,7 @@ I'm going to be very blunt: this will be much, much easier on a Mac or Linux sys
 - Set up Pipenv:
     ```
     cd backend
-    pipenv install
+    pipenv install --dev
     cd ..
     ```
 - Start Docker containers: 
@@ -40,6 +46,23 @@ I'm going to be very blunt: this will be much, much easier on a Mac or Linux sys
 - Install [Docker Toolbox for Windows](https://docs.docker.com/toolbox/overview/)
 
 ## Developing On The App
+When you first clone the repo, you will have blank `.env` files in both the `backend/` and `frontend/` directories. Before you put any information into them, you need to run this command:
+
+    git update-index --assume-unchanged */.env
+
+After you run that, you will need to populate the `.env` files. Currently, we only require variables on the backend. Here are the variables you will need to run the application:
+
+    SECRET_KEY=<SECRET_KEY>
+    DEBUG=True
+    DB_ENGINE="django.db.backends.postgresql"
+    DB_NAME="postgres"
+    DB_USER="postgres"
+    DB_PASSWORD="password"
+    DB_HOST="db"
+    DB_PORT=5432
+
+Use `pipenv run secret_key` to generate a value for SECRET_KEY and then save that into the file.
+
 Once you have your containers running, the code in your local directory will be linked with the code inside the Docker containers. When you make changes, the app will reboot inside the containers to reflect those changes. The API will be accessible in your browser at `localhost:8000`, and the frontend application will be available at `localhost:3000`.
 
 ## What Technologies Are We Using?
@@ -54,3 +77,24 @@ If you need to add new packages to the frontend app, you can use Yarn to do so:
     yarn install <package_name>
 
 Generally speaking, look to handle data manipulation on the backend and visualization on the frontend.
+
+## Deployment
+
+### General
+
+This is deployed in two Heroku pipelines in the young-masterbuilders Heroku team, one for the frontend application and one for the backend. Each pipeline has a staging and production app, linked to the staging and master Github branches of this repo. The app is deployed by either pushing to those branches or manually deploying via the Heroku GUI.
+
+### Frontend
+We're using the [lstoll/heroku-buildpack-monorepo](https://github.com/lstoll/heroku-buildpack-monorepo) & [mars/create-react-app](https://github.com/mars/create-react-app-buildpack) buildpacks. They must be installed in that order to function.
+
+### Required Frontend Env Vars
+
+    APP_BASE=frontend
+
+### Backend
+On the backend, we use a Python package to extract the DB information from a DATABASE_URL that Heroku provides, so we need fewer environment variables. Make sure to manually create the SECRET_KEY, using the same `pipenv run secret_key`
+
+### Required Backend Env Vars
+
+    APP_BASE=backend
+    SECRET_KEY=<SECRET_KEY>
