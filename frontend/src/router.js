@@ -8,6 +8,7 @@ import App from './components/App';
 import DemoPage from './components/DemoPage';
 import NotFound from './components/NotFound';
 import Login from './components/Login';
+import Admin from "./pages/admin"
 
 let store = createStore(fetchData, applyMiddleware(thunk));
 
@@ -19,6 +20,7 @@ const router = (
                     <Route exact path="/" component={App} />
                     <Route exact path="/fetch" component={DemoPage} />
                     <Route exact path="/login" component={Login} />
+                    <Route exact path="/admin" component={Admin} />
                     <Route component={NotFound} />
                 </Switch>
             </Router>
