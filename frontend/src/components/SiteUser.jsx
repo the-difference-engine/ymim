@@ -3,7 +3,7 @@ import React from 'react';
 function SiteUser(props) {
     return (
         <ol>
-            {props.user.map((user) => (
+            {props.goof.map((user) => (
                 <li>
                     <div>
                         <p>{user.name}</p>

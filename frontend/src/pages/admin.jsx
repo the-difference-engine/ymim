@@ -9,20 +9,17 @@ class Admin extends Component {
             {
                 "id": "Johnny",
                 "name": "Johnny Golucky",
-                "email": "johnny@golucky.com",
-                "avatarURL": "http://localhost:5001/ryan.jpg"
+                "email": "johnny@golucky.com"
             },
             {
                 "id": "michael",
-                "name": "Michael Jackson",
-                "email": "michael@reacttraining.com",
-                "avatarURL": "http://localhost:5001/michael.jpg"
+                "name": "Michael Blabson",
+                "email": "michael@blabson.com"
             },
             {
                 "id": "tyler",
-                "name": "Tyler McGinnis",
-                "email": "tyler@reacttraining.com",
-                "avatarURL": "http://localhost:5001/tyler.jpg"
+                "name": "Tyler Hazelnut",
+                "email": "tyler@Hazelnut.com"
             }
         ]
     }
@@ -36,7 +33,7 @@ class Admin extends Component {
                     <input type="password" placeholder="passwword" />
                     <button>Admin</button>
                 </form>
-                <SiteUser user={this.state.user} />
+                <SiteUser goof={this.state.user} />
                 <Link to="/">Home</Link>
             </div>
 
