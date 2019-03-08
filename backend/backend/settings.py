@@ -14,9 +14,12 @@ import os
 
 import dotenv
 
-# Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-dotenv.read_dotenv(BASE_DIR)
+try:
+    # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
+    BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+    dotenv.read_dotenv(BASE_DIR)
+except IsADirectoryError as exception:
+    print(exception)
 
 
 # Quick-start development settings - unsuitable for production
@@ -30,7 +33,7 @@ DEBUG = os.getenv("DEBUG", False)
 
 ALLOWED_HOSTS = [
     "ymim-backend-staging.herokuapp.com",
-    "ymim-backend-production.herokuapp.com"
+    "ymim-backend-production.herokuapp.com",
 ]
 
 
@@ -123,17 +126,18 @@ USE_TZ = True
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATIC_URL = "/static/"
 
-DEFAULT_FROM_EMAIL = os.getenv('FROM_EMAIL', 'scott@scott-gall.com')
+DEFAULT_FROM_EMAIL = os.getenv("FROM_EMAIL", "scott@scott-gall.com")
 
-EMAIL_HOST = 'smtp.sendgrid.net'
-EMAIL_HOST_USER = os.getenv('SENDGRID_USERNAME')
-EMAIL_HOST_PASSWORD = os.getenv('SENDGRID_PASSWORD')
+EMAIL_HOST = "smtp.sendgrid.net"
+EMAIL_HOST_USER = os.getenv("SENDGRID_USERNAME")
+EMAIL_HOST_PASSWORD = os.getenv("SENDGRID_PASSWORD")
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 # Configure Django App for Heroku.
 import django_heroku
+
 django_heroku.settings(locals())
