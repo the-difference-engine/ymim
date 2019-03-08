@@ -126,6 +126,14 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = "/static/"
 
+DEFAULT_FROM_EMAIL = os.getenv('FROM_EMAIL', 'scott@scott-gall.com')
+
+EMAIL_HOST = 'smtp.sendgrid.net'
+EMAIL_HOST_USER = os.getenv('SENDGRID_USERNAME')
+EMAIL_HOST_PASSWORD = os.getenv('SENDGRID_PASSWORD')
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+
 # Configure Django App for Heroku.
 import django_heroku
 django_heroku.settings(locals())
