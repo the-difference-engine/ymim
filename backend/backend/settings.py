@@ -160,6 +160,7 @@ DJOSER = {
 JWT_AUTH = {
     'JWT_ALLOW_REFRESH': True,
 }
+
 DEFAULT_FROM_EMAIL = os.getenv("FROM_EMAIL")
 
 EMAIL_HOST = "smtp.sendgrid.net"
