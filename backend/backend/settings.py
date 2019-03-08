@@ -47,7 +47,8 @@ INSTALLED_APPS = [
     "storages",
     # Django REST Framework Apps
     "rest_framework",
-    'djoser',
+    "rest_framework.authtoken",
+    "djoser",
     # Internal Apps
 ]
 
@@ -77,6 +78,13 @@ TEMPLATES = [
             ]
         },
     }
+]
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'djoser.social.backends.facebook.FacebookOAuth2Override',
+    'social_core.backends.google.GoogleOAuth2',
+    'social_core.backends.steam.SteamOpenId',
 ]
 
 WSGI_APPLICATION = "backend.wsgi.application"
@@ -126,6 +134,28 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 STATIC_URL = "/static/"
+
+
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.IsAuthenticated',
+    ),
+    'DEFAULT_AUTHENTICATION_CLASSES': (
+        'rest_framework_simplejwt.authentication.JWTAuthentication',
+        'rest_framework.authentication.TokenAuthentication',
+    ),
+}
+
+DJOSER = {
+    'SEND_ACTIVATION_EMAIL': False,
+    'PASSWORD_RESET_CONFIRM_URL': '#/password/reset/confirm/{uid}/{token}',
+    'ACTIVATION_URL': '#/activate/{uid}/{token}',
+    'SOCIAL_AUTH_ALLOWED_REDIRECT_URIS': ['http://test.localhost/']
+}
+
+JWT_AUTH = {
+    'JWT_ALLOW_REFRESH': True,
+}
 
 # Configure Django App for Heroku.
 import django_heroku
