@@ -19,6 +19,7 @@ try:
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     dotenv.read_dotenv(BASE_DIR)
 except IsADirectoryError as exception:
+    # For some reason dotenv 
     print(exception)
 
 
@@ -129,7 +130,7 @@ USE_TZ = True
 STATIC_ROOT = os.path.join(BASE_DIR, "static")
 STATIC_URL = "/static/"
 
-DEFAULT_FROM_EMAIL = os.getenv("FROM_EMAIL", "scott@scott-gall.com")
+DEFAULT_FROM_EMAIL = os.getenv("FROM_EMAIL")
 
 EMAIL_HOST = "smtp.sendgrid.net"
 EMAIL_HOST_USER = os.getenv("SENDGRID_USERNAME")
