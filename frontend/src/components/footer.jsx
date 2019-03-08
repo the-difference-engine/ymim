@@ -17,7 +17,7 @@ export default class footer extends Component {
                                 <Link to="/meet-the-team">Meet Our Team</Link>
                             </li>
                             <li className='col footer_link'>
-                                <Link to="/volunteer">Volunteer</Link>
+                                <Link to="/ambassadors">Volunteer</Link>
                             </li>
                             <li className='col footer_link'>
                                 <Link to="/events">Events</Link>

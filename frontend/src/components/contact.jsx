@@ -17,7 +17,7 @@ class Contact extends Component {
                 <p>Email: Founder@theymim.org |&nbsp;Phone: 773.941.1200</p>
                 <p>&nbsp;</p>
                 <div id="contact-form-12">
-                    <form action="https://www.theymim.org/contact-us/#contact-form-12" method="post" class="contact-form commentsblock">
+                    <form action="/" method="post" class="contact-form commentsblock">
 
                         <div class="grunion-field-wrap grunion-field-name-wrap">
                             <label for="g12-name" class="grunion-field-label name">Name<span>(required)</span></label>
