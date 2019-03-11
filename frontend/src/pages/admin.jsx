@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import SiteUser from '../components/SiteUser';
 import { Link } from 'react-router-dom';
+import Header from '../components/Header';
 
 class Admin extends Component {
 
@@ -26,7 +27,10 @@ class Admin extends Component {
 
     render() {
         return (
+            
+                    
             <div>
+                < Header />    
                 <h1>Young Masterbuilders in Motion</h1>
                 <form>
                     <input type="text" placeholder="usernname" />
