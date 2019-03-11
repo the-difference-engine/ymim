@@ -143,3 +143,40 @@ class PaypalButton extends React.Component {
 
 
 export default scriptLoader('https://www.paypalobjects.com/api/checkout.js')(PaypalButton);
+
+/*Component was rendered in APP.js but is currently being stored here for future use.
+const PAYPAL_CLIENT = {
+  sandbox: process.env.REACT_APP_PAYPAL_CLIENT_ID_SANDBOX,
+  production: process.env.PAYPAL_CLIENT_ID_PRODUCTION,
+};
+
+const ENV = process.env.NODE_ENV === 'production'
+  ? 'production'
+  : 'sandbox';
+
+  These three go in the render method
+
+    const onSuccess = (payment) =>
+    console.log('Successful payment!', payment);
+
+  const onError = (error) =>
+    console.log('Erroneous payment OR failed to load script!', error);
+
+  const onCancel = (data) =>
+    console.log('Cancelled payment!', data);
+
+  This component goes in the return method 
+      <div>
+        <PaypalButton
+          client={PAYPAL_CLIENT}
+          env={ENV}
+          commit={true}
+          currency={'USD'}
+          onSuccess={onSuccess}
+          onError={onError}
+          onCancel={onCancel}
+        />
+      </div>
+        
+
+*/
