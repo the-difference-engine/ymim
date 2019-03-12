@@ -14,7 +14,6 @@ function SiteUser(props) {
                 </li>
             ))}
         </ol>
-
     )
 }
 

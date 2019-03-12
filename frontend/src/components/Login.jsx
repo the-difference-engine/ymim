@@ -6,11 +6,10 @@ class Login extends Component {
             <div>
                 <h1>Young Masterbuilders in Motion</h1>
                 <form>
-                    <input type="text" placeholder="usernname" />
-                    <input type="password" placeholder="passwword" />
+                    <input type="text" placeholder="username" />
+                    <input type="password" placeholder="password" />
                     <button>Log in</button>
                 </form>
-
             </div>
 
         );

@@ -1,4 +1,3 @@
-import django_heroku
 """
 Django settings for API project.
 
@@ -134,3 +133,5 @@ REST_FRAMEWORK = {
 
 # Configure Django App for Heroku.
 django_heroku.settings(locals())
+
+import django_heroku
