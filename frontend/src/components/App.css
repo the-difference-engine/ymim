@@ -15,9 +15,9 @@
 }
 
 .user-list-item {
-  background: grey;
   padding: 20px;
   display: flex;
+  border: solid gray 3px;
 }
 
 @media (min-width: 600px) {
