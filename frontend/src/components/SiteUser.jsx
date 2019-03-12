@@ -1,10 +1,11 @@
 import React from 'react';
+import './App.css';
 
 function SiteUser(props) {
     return (
-        <ol>
+        <ol className='user-list'>
             {props.goof.map((user) => (
-                <li>
+                <li className='user-list-item'>
                     <div>
                         <p>{user.name}</p>
                         <p>{user.email}</p>
