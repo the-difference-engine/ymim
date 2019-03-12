@@ -32,11 +32,6 @@ class Admin extends Component {
             <div>
                 < Header />
                 <h1>Young Masterbuilders in Motion</h1>
-                <form>
-                    <input type="text" placeholder="usernname" />
-                    <input type="password" placeholder="passwword" />
-                    <button>Admin</button>
-                </form>
                 <SiteUser demoUser={this.state.user} />
                 <Link to="/">Home</Link>
             </div>
