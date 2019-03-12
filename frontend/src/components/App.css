@@ -18,6 +18,7 @@
   padding: 20px;
   display: flex;
   border: solid gray 3px;
+  margin: 10px;
 }
 
 @media (min-width: 600px) {
