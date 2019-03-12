@@ -4,7 +4,7 @@ import './App.css';
 function SiteUser(props) {
     return (
         <ol className='user-list'>
-            {props.goof.map((user) => (
+            {props.demoUser.map((user) => (
                 <li className='user-list-item'>
                     <div>
                         <p>{user.name}</p>
