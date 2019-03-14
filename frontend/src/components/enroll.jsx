@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import Markdown from 'react-markdown';
 import Text from './Markdowns/enroll.md';
-// const input = require('enroll.md');
 
 class Enroll extends Component {
     constructor(props) {
