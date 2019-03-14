@@ -12,8 +12,6 @@
 
 .env
 
-Pipfile
-
 # dependencies
 frontend/node_modules/*
 frontend/.pnp
