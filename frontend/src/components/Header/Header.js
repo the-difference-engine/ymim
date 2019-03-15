@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink, Route } from 'react-router-dom';
+import { Link, NavLink, Route } from 'react-router-dom';
 import './Header.css';
 
 
@@ -7,6 +7,7 @@ class Header extends Component {
   render() {
     return (
       <header>
+        <Link to="/"><h1>YOUNG MASTERBUILDERS IN MOTION</h1></Link>
         <Route exact path="/" render={() => <h4>EMPOWERING YOUNG WOMEN ORPHANS, ADOPTEES, & FOSTER ALUMNAE</h4>}/>
         <nav>
           <ul className="nav-links">
