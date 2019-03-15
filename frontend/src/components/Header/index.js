@@ -12,6 +12,9 @@ class Header extends Component {
         <nav>
           <ul className="nav-links">
             <li className="nav-item">
+              <NavLink className="nav-link" to="/donate" activeClassName="nav-link-selected">Donate</NavLink>
+            </li>
+            <li className="nav-item">
               <NavLink className="nav-link" to="/about" activeClassName="nav-link-selected">About</NavLink>
             </li>
             <li className="nav-item">
