@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
+import { NavLink, Route } from 'react-router-dom';
 import './Header.css';
 
 class Header extends Component {
@@ -8,6 +8,7 @@ class Header extends Component {
     const AuthUser = false;
     return (
       <header>
+        <Route exact path="/" render={() => <h4>EMPOWERING YOUNG WOMEN ORPHANS, ADOPTEES, & FOSTER ALUMNAE</h4>} />
         <nav>
           <ul className="nav-links">
             <li className="nav-item">
