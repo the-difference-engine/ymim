@@ -2,17 +2,10 @@ import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
 
-const Navigation = () => (
-  <nav className='navbar navbar-expand-lg navbar-light bg-light'>
-
-    {/* {authUser => (authUser ? <HeaderAdmin/> : <HeaderNonAuth />)} */}
-    <HeaderAdmin />
-  </nav>
-);
-
-
-class HeaderNonAuth extends Component {
+class Header extends Component {
   render() {
+    const AuthAdmin = true;
+    const AuthUser = false;
     return (
       <header>
         <nav>
@@ -53,4 +46,4 @@ class HeaderNonAuth extends Component {
 }
 
 
-export default Navigation;
+export default Header;

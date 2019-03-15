@@ -9,6 +9,7 @@ import DemoPage from './components/DemoPage';
 import NotFound from './components/NotFound';
 import Login from './components/Login';
 import Admin from "./pages/admin"
+import Navigation from './components/Header';
 
 let store = createStore(fetchData, applyMiddleware(thunk));
 
@@ -25,7 +26,7 @@ const router = (
                 </Switch>
             </Router>
         </div>
-    </Provider>
+    </Provider >
 )
 
 export default router;
