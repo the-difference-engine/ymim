@@ -6,3 +6,24 @@
 .small_img {
   width: 100px;
 }
+
+.user-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.user-list-item {
+  padding: 20px;
+  display: flex;
+  border: solid gray 1px;
+  margin: 10px;
+}
+
+@media (min-width: 600px) {
+  .user-list-item {
+    margin: 20px;
+    border-radius: 5px;
+  }
+}

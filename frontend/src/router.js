@@ -7,8 +7,9 @@ import thunk from "redux-thunk";
 import App from './components/App';
 import DemoPage from './components/DemoPage';
 import NotFound from './components/NotFound';
+import Login from './components/Login';
+import Admin from "./pages/admin"
 import Footer from './components/footer';
-import Header from './components/Header/Header';
 import Contact from './components/contact';
 import About from './components/about';
 import Enroll from './components/enroll';
@@ -25,7 +26,6 @@ const router = (
         <Router>
             <div className='App site'>
                 <div className='site-content'>
-                    <Header />
                     <Switch>
                         <Route exact path="/" component={App} />
                         <Route exact path="/fetch" component={DemoPage} />
@@ -35,6 +35,8 @@ const router = (
                         <Route exact path="/meet-the-team" component={Team} />
                         <Route exact path="/ambassadors" component={Ambassadors} />
                         <Route exact path="/events" component={Events} />
+                        <Route exact path="/admin" component={Admin} />
+                        <Route exact path="/login" component={Login} />
                         <Route component={NotFound} />
                     </Switch>
                 </div>
