@@ -1,9 +1,8 @@
-import { combineReducers } from 'redux';
+import { combineReducers } from "redux";
 import items from "./demo";
 
-
 const fetchData = combineReducers({
-  items,
-})
+  items
+});
 
 export default fetchData;
