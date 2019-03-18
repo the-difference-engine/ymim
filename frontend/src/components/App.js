@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
-import ReactDOM from "react-dom";
-import { BrowserRouter as Router, Route } from 'react-router-dom';
-import Appform from './ApplicationForms/Appform';
+import Header from './Header/index';
+import './App.css';
 
 
 class App extends Component { 
   render() {
     return (
-      <Router>
-      <div className="App">
-      <Appform />
-      </div>
-      </Router>
+      <div className="App container">
+        <Header />
+        <div className="row page-contents">
+          <p>This is a sample component that currently lives at the root of our application.</p>
+        </div>
+      </div >
     );
   }
 }
