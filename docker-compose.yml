@@ -11,6 +11,7 @@ services:
     build: 
       context: backend
     environment:
+      - FRONTEND_URL=http://localhost:3000
       - POSTGRES_PASSWORD=password
     volumes:
       - $PWD/backend:/code
