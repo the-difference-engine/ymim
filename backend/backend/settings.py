@@ -7,7 +7,7 @@ try:
     BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
     dotenv.read_dotenv(BASE_DIR)
 except IsADirectoryError as exception:
-    # For some reason dotenv 
+    # For some reason dotenv
     print(exception)
 
 
@@ -42,7 +42,7 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
     "djoser",
     # Internal Apps
-    'applications'
+    "applications",
 ]
 
 MIDDLEWARE = [
@@ -74,10 +74,10 @@ TEMPLATES = [
 ]
 
 AUTHENTICATION_BACKENDS = [
-    'django.contrib.auth.backends.ModelBackend',
-    'djoser.social.backends.facebook.FacebookOAuth2Override',
-    'social_core.backends.google.GoogleOAuth2',
-    'social_core.backends.steam.SteamOpenId',
+    "django.contrib.auth.backends.ModelBackend",
+    "djoser.social.backends.facebook.FacebookOAuth2Override",
+    "social_core.backends.google.GoogleOAuth2",
+    "social_core.backends.steam.SteamOpenId",
 ]
 
 WSGI_APPLICATION = "backend.wsgi.application"
@@ -102,7 +102,9 @@ DATABASES = {
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    {"NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator"},
+    {
+        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator"
+    },
     {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator"},
     {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator"},
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
@@ -130,25 +132,21 @@ STATIC_URL = "/static/"
 
 
 REST_FRAMEWORK = {
-    'DEFAULT_PERMISSION_CLASSES': (
-        'rest_framework.permissions.IsAuthenticated',
-    ),
-    'DEFAULT_AUTHENTICATION_CLASSES': (
-        'rest_framework_simplejwt.authentication.JWTAuthentication',
-        'rest_framework.authentication.TokenAuthentication',
+    "DEFAULT_PERMISSION_CLASSES": ("rest_framework.permissions.IsAuthenticated",),
+    "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework_simplejwt.authentication.JWTAuthentication",
+        "rest_framework.authentication.TokenAuthentication",
     ),
 }
 
 DJOSER = {
-    'SEND_ACTIVATION_EMAIL': False,
-    'PASSWORD_RESET_CONFIRM_URL': '#/password/reset/confirm/{uid}/{token}',
-    'ACTIVATION_URL': '#/activate/{uid}/{token}',
-    'SOCIAL_AUTH_ALLOWED_REDIRECT_URIS': ['http://test.localhost/']
+    "SEND_ACTIVATION_EMAIL": False,
+    "PASSWORD_RESET_CONFIRM_URL": "#/password/reset/confirm/{uid}/{token}",
+    "ACTIVATION_URL": "#/activate/{uid}/{token}",
+    "SOCIAL_AUTH_ALLOWED_REDIRECT_URIS": ["http://test.localhost/"],
 }
 
-JWT_AUTH = {
-    'JWT_ALLOW_REFRESH': True,
-}
+JWT_AUTH = {"JWT_ALLOW_REFRESH": True}
 
 DEFAULT_FROM_EMAIL = os.getenv("FROM_EMAIL")
 
@@ -158,6 +156,7 @@ EMAIL_HOST_PASSWORD = os.getenv("SENDGRID_PASSWORD")
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-# Configure Django App for Heroku.    
-import django_heroku    
+# Configure Django App for Heroku.
+import django_heroku
+
 django_heroku.settings(locals())
