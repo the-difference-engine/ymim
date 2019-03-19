@@ -10,7 +10,7 @@ class Header extends Component {
       <header class="card card-header">
       <div class="row">
         <Link to="/">
-          <h1 className="org-name">YOUNG MASTERBUILDERS IN MOTION</h1>
+          <h1 className="org-name">YOUNG<br></br>MASTERBUILDERS<br></br>IN MOTION</h1>
         </Link>
         <nav class="ml-auto">
           <ul className="nav-links"  class="nav nav-tabs card-header-tabs">
@@ -97,7 +97,7 @@ class Header extends Component {
           exact
           path="/"
           render={() => (
-            <p class="ml-auto">EMPOWERING YOUNG WOMEN ORPHANS, ADOPTEES, & FOSTER ALUMNAE</p>
+            <h6 class="ml-auto">EMPOWERING YOUNG WOMEN ORPHANS, ADOPTEES, & FOSTER ALUMNAE</h6>
           )}
         />
       </header>
