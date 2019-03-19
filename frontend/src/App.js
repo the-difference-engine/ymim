@@ -6,7 +6,6 @@ dotenv.config();
 
 class App extends Component {
   render() {
-  
     return (
       <div className="App container">
         <header className="App-header row">
