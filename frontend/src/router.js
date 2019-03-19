@@ -16,6 +16,7 @@ import Enroll from "./components/enroll";
 import Team from "./components/team";
 import Ambassadors from "./components/ambassadors";
 import Events from "./components/events";
+import Header from "./components/Header/index";
 
 let store = createStore(fetchData, applyMiddleware(thunk));
 
@@ -24,6 +25,7 @@ const router = (
     <Router>
       <div className="App site">
         <div className="site-content">
+          <Header />
           <Switch>
             <Route exact path="/" component={App} />
             <Route exact path="/fetch" component={DemoPage} />

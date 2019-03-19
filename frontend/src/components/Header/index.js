@@ -7,20 +7,14 @@ class Header extends Component {
     const AuthAdmin = true;
     const AuthUser = false;
     return (
-      <header>
+      <header class="card card-header">
+      <div class="row">
         <Link to="/">
           <h1 className="org-name">YOUNG MASTERBUILDERS IN MOTION</h1>
         </Link>
-        <Route
-          exact
-          path="/"
-          render={() => (
-            <h4>EMPOWERING YOUNG WOMEN ORPHANS, ADOPTEES, & FOSTER ALUMNAE</h4>
-          )}
-        />
-        <nav>
-          <ul className="nav-links">
-            <li className="nav-item">
+        <nav class="ml-auto">
+          <ul className="nav-links"  class="nav nav-tabs card-header-tabs">
+            <li className="nav-item" class="nav-item">
               <NavLink
                 className="nav-link"
                 to="/donate"
@@ -29,7 +23,7 @@ class Header extends Component {
                 Donate
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" class="nav-item">
               <NavLink
                 className="nav-link"
                 to="/about"
@@ -38,7 +32,7 @@ class Header extends Component {
                 About
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" class="nav-item">
               <NavLink
                 className="nav-link"
                 to="/contact-us"
@@ -47,7 +41,7 @@ class Header extends Component {
                 Contact Us
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" class="nav-item">
               <NavLink
                 className="nav-link"
                 to="/enrollment"
@@ -56,7 +50,7 @@ class Header extends Component {
                 Enroll Now
               </NavLink>
             </li>
-            <li className="nav-item">
+            <li className="nav-item" class="nav-item">
               <NavLink
                 className="nav-link"
                 to="/ambassadors"
@@ -66,7 +60,7 @@ class Header extends Component {
               </NavLink>
             </li>
             {AuthAdmin ? (
-              <li className="nav-item">
+              <li className="nav-item" class="nav-item">
                 <NavLink
                   className="nav-link"
                   to="/admin"
@@ -76,7 +70,7 @@ class Header extends Component {
                 </NavLink>
               </li>
             ) : AuthUser ? (
-              <li className="nav-item">
+              <li className="nav-item" class="nav-item">
                 <NavLink
                   className="nav-link"
                   to="/login"
@@ -86,7 +80,7 @@ class Header extends Component {
                 </NavLink>
               </li>
             ) : (
-              <li className="nav-item">
+              <li className="nav-item" class="nav-item">
                 <NavLink
                   className="nav-link"
                   to="/login"
@@ -98,6 +92,14 @@ class Header extends Component {
             )}
           </ul>
         </nav>
+        </div>
+        <Route
+          exact
+          path="/"
+          render={() => (
+            <p class="ml-auto">EMPOWERING YOUNG WOMEN ORPHANS, ADOPTEES, & FOSTER ALUMNAE</p>
+          )}
+        />
       </header>
     );
   }
