@@ -90,6 +90,7 @@ class PaypalButton extends React.Component {
 
         onSuccess(payment);
       });
+
     const style = {
       layout: "vertical", // horizontal | vertical
       size: "medium", // medium | large | responsive
@@ -154,7 +155,7 @@ const ENV = process.env.NODE_ENV === 'production'
   const onCancel = (data) =>
     console.log('Cancelled payment!', data);
 
-  This component goes in the return method 
+  This component goes in the return method
       <div>
         <PaypalButton
           client={PAYPAL_CLIENT}
@@ -166,6 +167,6 @@ const ENV = process.env.NODE_ENV === 'production'
           onCancel={onCancel}
         />
       </div>
-        
+
 
 */
