@@ -12,7 +12,7 @@ import Admin from "./pages/admin";
 import Footer from "./components/footer";
 import Contact from "./components/contact";
 import About from "./components/about";
-import Enroll from "./components/enroll";
+import Enroll from "./components/enroll/enroll";
 import Team from "./components/team";
 import Ambassadors from "./components/ambassadors";
 import Events from "./components/events";
