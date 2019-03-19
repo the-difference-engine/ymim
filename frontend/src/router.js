@@ -23,9 +23,10 @@ let store = createStore(fetchData, applyMiddleware(thunk));
 const router = (
   <Provider store={store}>
     <Router>
-      <div className="App site">
+      <div className="App site container-fluid">
         <div className="site-content">
           <Header />
+          <div className="container">
           <Switch>
             <Route exact path="/" component={App} />
             <Route exact path="/fetch" component={DemoPage} />
@@ -39,6 +40,7 @@ const router = (
             <Route exact path="/login" component={Login} />
             <Route component={NotFound} />
           </Switch>
+          </div>
         </div>
         <Footer />
       </div>
