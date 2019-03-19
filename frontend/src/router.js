@@ -1,15 +1,4 @@
 import React from "react";
-<<<<<<< HEAD
-import { Route, BrowserRouter as Router } from "react-router-dom";
-import App from "./App";
-
-const router = (
-  <Router>
-    <div>
-      <Route path="/" component={App} />
-    </div>
-  </Router>
-=======
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
@@ -53,7 +42,6 @@ const router = (
       </div>
     </Router>
   </Provider>
->>>>>>> 0c58327f9a890e79be86dd96c921273282741192
 );
 
 export default router;
