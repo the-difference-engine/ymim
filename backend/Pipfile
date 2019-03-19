@@ -4,25 +4,29 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
-pylint = "*"
+pylint = ">=2.2.2"
+black = "==18.9b0"
+faker = ">=1.0.2"
+pprintpp = ">=0.4.0"
 
 [packages]
-django-filter = "*"
-django-storages = "*"
-djangorestframework = "*"
-gunicorn = "*"
-psycopg2 = "*"
-pytz = "*"
-Django = "*"
-arrow = "*"
-black = "==18.9b0"
-django-dotenv = "*"
+Django = ">=2.1.6"
+djangorestframework = ">=3.9.1"
+django-filter = ">=2.1.0"
+django-storages = ">=1.7.1"
+django-model-utils = ">=3.1.2"
+django-dotenv = ">=1.4.2"
+gunicorn = ">=19.9.0"
+psycopg2 = ">=2.7.7"
 pyyaml = "==4.2b1"
-django-model-utils = "*"
-faker = "*"
+pendulum = ">=2.0.4"
+django-heroku = ">=0.3.1"
+djoser = "*"
+djangorestframework-simplejwt = "*"
 
 [requires]
-python_version = "3"
+python_version = "3.7"
 
 [scripts]
 black = "black"
+secret_key = "python generate_secret_key.py"
