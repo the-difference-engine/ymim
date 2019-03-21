@@ -27,3 +27,7 @@
     border-radius: 5px;
   }
 }
+
+.container {
+    padding-top: 2.25rem !important;
+}
