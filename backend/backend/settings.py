@@ -156,6 +156,10 @@ EMAIL_HOST_PASSWORD = os.getenv("SENDGRID_PASSWORD")
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
+FIXTURE_DIRS = (
+   'fixtures',
+)
+
 # Configure Django App for Heroku.
 import django_heroku
 
