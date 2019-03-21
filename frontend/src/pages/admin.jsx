@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import SiteUser from '../components/SiteUser';
 import { Link } from 'react-router-dom';
 import Header from '../components/Header';
+import EventForm from '../components/EventForm';
 
 class Admin extends Component {
 
@@ -33,6 +34,7 @@ class Admin extends Component {
                 < Header />
                 <h1>Young Masterbuilders in Motion</h1>
                 <SiteUser demoUser={this.state.user} />
+                <EventForm />
                 <Link to="/">Home</Link>
             </div>
 
