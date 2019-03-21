@@ -15,37 +15,45 @@ class Ambassadors extends Component {
 
                     <div class="grunion-field-wrap grunion-field-radio-wrap">
                         <label for="g905-getinvolved" class="grunion-field-label">Get Involved!<span>(required)</span></label>
-                        <label class="grunion-radio-label radio"><input type="radio" name="g905-getinvolved" value="Ambassador / Volunteer" class="radio" required="" aria-required="true" /> Ambassador / Volunteer</label>
-                        <div class="clear-form"></div>
-                        <label class="grunion-radio-label radio"><input type="radio" name="g905-getinvolved" value="Sponsor / Donor" class="radio" required="" aria-required="true" /> Sponsor / Donor</label>
-                        <div class="clear-form"></div>
-                        <label class="grunion-radio-label radio"><input type="radio" name="g905-getinvolved" value="Partner / Organization" class="radio" required="" aria-required="true" /> Partner / Organization</label>
-                        <div class="clear-form"></div>
+                        <div>
+                            <label class="grunion-radio-label radio"><input type="radio" name="g905-getinvolved" value="Ambassador / Volunteer" class="radio" required="" aria-required="true" /> Ambassador / Volunteer</label>
+                            <div class="clear-form"></div>
+                            <label class="grunion-radio-label radio"><input type="radio" name="g905-getinvolved" value="Sponsor / Donor" class="radio" required="" aria-required="true" /> Sponsor / Donor</label>
+                            <div class="clear-form"></div>
+                            <label class="grunion-radio-label radio"><input type="radio" name="g905-getinvolved" value="Partner / Organization" class="radio" required="" aria-required="true" /> Partner / Organization</label>
+                            <div class="clear-form"></div>
+                        </div>
                     </div>
 
                     <div class="grunion-field-wrap grunion-field-name-wrap">
-                        <label for="g905-name" class="grunion-field-label name">Name<span>(required)</span></label>
-                        <input type="text" name="g905-name" id="g905-name" value="" class="name" required="" aria-required="true" />
+                        <label for="g900-name" class='col-md-2'>Name<span> (required)</span></label>
+                        <input type="text" name="g900-name" id="g900-name" value="" class="name col-md-4 " required="" aria-required="true" />
+                    </div>
+                    <br></br>
+                    <div class="grunion-field-wrap grunion-field-email-wrap">
+                        <label for="g900-email" class="email col-md-2 ">Email<span> (required)</span></label>
+                        <input type="email" name="g900-email" id="g900-email" value="" class="email col-md-4 " required="" aria-required="true" />
                     </div>
 
-                    <div class="grunion-field-wrap grunion-field-email-wrap">
-                        <label for="g905-email" class="grunion-field-label email">Email<span>(required)</span></label>
-                        <input type="email" name="g905-email" id="g905-email" value="" class="email" required="" aria-required="true" />
+                    <br></br>
+                    <div class="grunion-field-wrap grunion-field-text-wrap">
+                        <label for="g900-phone" class="grunion-field-label text col-md-2">Phone</label>
+                        <input type="text" name="g900-phone" id="g900-phone" value="" class="text col-md-4" />
                     </div>
+
+
+                    <br></br>
 
                     <div class="grunion-field-wrap grunion-field-text-wrap">
-                        <label for="g905-phone" class="grunion-field-label text">Phone<span>(required)</span></label>
-                        <input type="text" name="g905-phone" id="g905-phone" value="" class="text" required="" aria-required="true" />
+                        <label for="g900-website" class="grunion-field-label text col-md-2">Website</label>
+                        <input type="text" name="g900-website" id="g900-website" value="" class="text col-md-4" />
                     </div>
 
-                    <div class="grunion-field-wrap grunion-field-url-wrap">
-                        <label for="g905-website" class="grunion-field-label url">Website</label>
-                        <input type="url" name="g905-website" id="g905-website" value="" class="url" />
+                    <div class='col-md-4'>
+                        <label for="contact-form-comment-g900-message">Questions, or Comments</label>
                     </div>
-
-                    <div class="grunion-field-wrap grunion-field-textarea-wrap">
-                        <label for="contact-form-comment-g905-commentsorquestions" class="grunion-field-label textarea">Comments or Questions</label>
-                        <textarea name="g905-commentsorquestions" id="contact-form-comment-g905-commentsorquestions" rows="20" class="textarea"></textarea>
+                    <div>
+                        <textarea name="" id="contact-form" rows="6" class="messageInput"></textarea>
                     </div>
                     <p class="contact-submit">
                         <input type="submit" value="Submit" class="pushbutton-wide" />

@@ -19,25 +19,27 @@ class Contact extends Component {
                 <div id="contact-form-12">
                     <form action="/" method="post" class="contact-form commentsblock">
 
-                        <div class="grunion-field-wrap grunion-field-name-wrap">
-                            <label for="g12-name" class="grunion-field-label name">Name<span>(required)</span></label>
-                            <input type="text" name="g12-name" id="g12-name" value="" class="name" required="" aria-required="true" />
-                        </div>
+                    <div class="grunion-field-wrap grunion-field-name-wrap">
+                        <label for="g900-name" class='col-md-2'>Name<span> (required)</span></label>
+                        <input type="text" name="g900-name" id="g900-name" value="" class="name col-md-4 " required="" aria-required="true" />
+                    </div>
+                    <br></br>
+                    <div class="grunion-field-wrap grunion-field-email-wrap">
+                        <label for="g900-email" class="email col-md-2 ">Email<span> (required)</span></label>
+                        <input type="email" name="g900-email" id="g900-email" value="" class="email col-md-4 " required="" aria-required="true" />
+                    </div>
+                    <br></br>
+                    <div class="grunion-field-wrap grunion-field-text-wrap">
+                        <label for="g900-phone" class="grunion-field-label text col-md-2">Phone</label>
+                        <input type="text" name="g900-phone" id="g900-phone" value="" class="text col-md-4" />
+                    </div>
 
-                        <div class="grunion-field-wrap grunion-field-email-wrap">
-                            <label for="g12-email" class="grunion-field-label email">Email<span>(required)</span></label>
-                            <input type="email" name="g12-email" id="g12-email" value="" class="email" required="" aria-required="true" />
-                        </div>
-
-                        <div class="grunion-field-wrap grunion-field-textarea-wrap">
-                            <label for="contact-form-comment-g12-phone" class="grunion-field-label textarea">Phone<span>(required)</span></label>
-                            <textarea name="g12-phone" id="contact-form-comment-g12-phone" rows="20" class="textarea" required="" aria-required="true"></textarea>
-                        </div>
-
-                        <div class="grunion-field-wrap grunion-field-textarea-wrap">
-                            <label for="contact-form-comment-g12-message" class="grunion-field-label textarea">Message</label>
-                            <textarea name="g12-message" id="contact-form-comment-g12-message" rows="20" class="textarea"></textarea>
-                        </div>
+                    <div class='col-md-4'>
+                        <label for="contact-form-comment-g900-message">Message</label>
+                    </div>
+                    <div>
+                        <textarea name="" id="contact-form" rows="6" class="messageInput"></textarea>
+                    </div>
                         <p class="contact-submit">
                             <input type="submit" value="Submit" class="pushbutton-wide" />
                             <input type="hidden" name="contact-form-id" value="12" />
