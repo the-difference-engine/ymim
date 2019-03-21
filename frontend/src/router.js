@@ -15,6 +15,7 @@ import About from "./components/about";
 import Enroll from "./components/enroll/enroll";
 import Team from "./components/team";
 import Ambassadors from "./components/ambassadors";
+import Donate from "./components/DonationPage/Donate";
 import Events from "./components/events";
 import Header from "./components/Header/index";
 
@@ -30,6 +31,7 @@ const router = (
           <Switch>
             <Route exact path="/" component={App} />
             <Route exact path="/fetch" component={DemoPage} />
+            <Route exact path="/Donate" component={Donate} />
             <Route exact path="/contact-us" component={Contact} />
             <Route exact path="/about" component={About} />
             <Route exact path="/enrollment" component={Enroll} />
