@@ -4,7 +4,7 @@ class Donate extends Component {
     render() {
       return (
         <div class="entry-content" itemprop="text">
-        <h3>Donate Now!</h3>
+        <h1>Donate Now!</h1>
         <br></br>
             <p>The Young Masterbuilders In Motion, Inc., (<strong>YMIM</strong>), supports young women orphans, adoptees, and foster youth alumnae to build resiliency, hope, and a bright future.</p>
             <br></br>
