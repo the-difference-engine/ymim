@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import fetchData from "./reducers";
 import thunk from "redux-thunk";
-import App from "./components/App";
+import Home from "./components/Home";
 import DemoPage from "./components/DemoPage";
 import NotFound from "./components/NotFound";
 import Login from "./components/Login";
@@ -29,7 +29,7 @@ const router = (
           <Header />
           <div className="container">
           <Switch>
-            <Route exact path="/" component={App} />
+            <Route exact path="/" component={Home} />
             <Route exact path="/fetch" component={DemoPage} />
             <Route exact path="/Donate" component={Donate} />
             <Route exact path="/contact-us" component={Contact} />
