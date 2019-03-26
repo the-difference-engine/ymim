@@ -25,7 +25,7 @@ export default class footer extends Component {
                                 <Link to="/events">Events</Link>
                             </li>
                             <li className='col footer_link'>
-                                Follow Us:  <Link to="https://www.facebook.com/theymim/" style={{color: 'black'}}><FontAwesomeIcon icon={faFacebookSquare} /></Link> | <Link to="https://www.instagram.com/theyoungmasterbuilders" style={{color: 'black'}}><FontAwesomeIcon icon={faInstagram} /></Link>
+                                Follow Us:  <a href="https://www.facebook.com/theymim/" style={{color: 'black'}}><FontAwesomeIcon icon={faFacebookSquare} /></a> | <a href="https://www.instagram.com/theyoungmasterbuilders" style={{color: 'black'}}><FontAwesomeIcon icon={faInstagram} /></a>
                             </li>
                         </ul>
                     </nav>
