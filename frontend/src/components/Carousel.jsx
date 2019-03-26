@@ -6,7 +6,7 @@ class Carousel extends Component {
     <div id="carouselExampleSlidesOnly" className="carousel slide" data-ride="carousel">
         <div className="carousel-inner">
             <div className="carousel-item active">
-            <img className="d-block w-100" src="https://en.wikipedia.org/wiki/Waluigi#/media/File:Waluigi.png" alt="First slide"/>
+            <img className="d-block w-100" src="" alt="First slide"/>
          </div>
         <div className="carousel-item">
         <img className="d-block w-100" src="..." alt="Second slide"/>

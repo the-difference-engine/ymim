@@ -23,7 +23,7 @@ class Header extends Component {
                 Donate
               </NavLink>
             </li>
-            <li className="nav-item" class="nav-item">
+            <li className="nav-item" >
               <NavLink
                 className="nav-link"
                 to="/about"
@@ -32,7 +32,7 @@ class Header extends Component {
                 About
               </NavLink>
             </li>
-            <li className="nav-item" class="nav-item">
+            <li className="nav-item">
               <NavLink
                 className="nav-link"
                 to="/contact-us"
@@ -41,7 +41,7 @@ class Header extends Component {
                 Contact Us
               </NavLink>
             </li>
-            <li className="nav-item" class="nav-item">
+            <li className="nav-item">
               <NavLink
                 className="nav-link"
                 to="/enrollment"
@@ -60,7 +60,7 @@ class Header extends Component {
               </NavLink>
             </li>
             {AuthAdmin ? (
-              <li className="nav-item" class="nav-item">
+              <li className="nav-item">
                 <NavLink
                   className="nav-link"
                   to="/admin"
@@ -70,7 +70,7 @@ class Header extends Component {
                 </NavLink>
               </li>
             ) : AuthUser ? (
-              <li className="nav-item" class="nav-item">
+              <li className="nav-item">
                 <NavLink
                   className="nav-link"
                   to="/login"
@@ -80,7 +80,7 @@ class Header extends Component {
                 </NavLink>
               </li>
             ) : (
-              <li className="nav-item" class="nav-item">
+              <li className="nav-item">
                 <NavLink
                   className="nav-link"
                   to="/login"
