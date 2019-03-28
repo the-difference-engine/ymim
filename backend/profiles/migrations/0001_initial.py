@@ -7,19 +7,19 @@ from django.contrib.auth import get_user_model
 def create_beatles(apps, schema_editor):
     User = get_user_model()
 
-    jon = User(
-        username="jon.doe@example.com",
-        first_name="Jon",
+    jane = User(
+        username="jane.doe@example.com",
+        first_name="Jane",
         last_name="Doe",
         is_superuser=True,
         is_staff=True,
     )
-    jon.set_password("password")
-    jon.save()
+    jane.set_password("password")
+    jane.save()
 
-    jane = User(
-        username="jane.doe@example.com",
-        first_name="Jane",
+    jon = User(
+        username="jon.doe@example.com",
+        first_name="Jon",
         last_name="Doe",
         is_staff=True,
     )
