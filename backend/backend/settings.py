@@ -43,7 +43,7 @@ INSTALLED_APPS = [
     "djoser",
     # Internal Apps
     "applications",
-    "profiles"
+    "profiles",
 ]
 
 MIDDLEWARE = [
