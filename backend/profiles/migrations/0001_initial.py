@@ -4,7 +4,7 @@ from django.db import migrations
 from django.conf import settings
 from django.contrib.auth import get_user_model
 
-def create_beatles(apps, schema_editor):
+def create_profiles(apps, schema_editor):
     User = get_user_model()
 
     kim = User(
@@ -41,5 +41,5 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RunPython(create_beatles)
+        migrations.RunPython(create_profiles)
     ]
