@@ -74,13 +74,13 @@ class Enroll extends Component {
                         </div>
                     </div>
                     <br />
-                    <div className='col-md-4'>
-                        <label>
+                    <div>
+                        <label className='col-md-4'>
                             Message
                         </label>
                     </div>
-                    <div className='col-md-4'>
-                        <textarea name="" rows="6">
+                    <div>
+                        <textarea name="" rows="6" className='col-md-8'>
                         </textarea>
                     </div>
                     <br />

@@ -34,11 +34,11 @@ class Contact extends Component {
                         <input type="text" value="" className="col-md-4" />
                     </div>
 
-                    <div className='col-md-4'>
-                        <label>Message</label>
+                    <div>
+                        <label className='col-md-4'>Message</label>
                     </div>
                     <div>
-                        <textarea name="" rows="6"></textarea>
+                        <textarea name="" rows="6" className='col-md-8'></textarea>
                     </div>
                         <p>
                             <input type="submit" value="Submit" />
