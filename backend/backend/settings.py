@@ -76,9 +76,6 @@ TEMPLATES = [
 
 AUTHENTICATION_BACKENDS = [
     "django.contrib.auth.backends.ModelBackend",
-    # "djoser.social.backends.facebook.FacebookOAuth2Override",
-    # "social_core.backends.google.GoogleOAuth2",
-    # "social_core.backends.steam.SteamOpenId",
 ]
 
 WSGI_APPLICATION = "backend.wsgi.application"
