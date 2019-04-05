@@ -3,7 +3,7 @@ import CarouselComponent from './Carousel'
 
 import "./App.css";
 
-class Home extends Component {
+class App extends Component {
   render() {
     return (
       <div className="App container">
@@ -14,4 +14,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default App;

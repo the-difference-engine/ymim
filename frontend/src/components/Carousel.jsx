@@ -1,5 +1,9 @@
 import React, { Component } from "react";
 import { Carousel } from 'react-bootstrap';
+import ymim1 from './Assets/ymim1.png'
+import ymim2 from './Assets/ymim2.png'
+import ymim3 from './Assets/ymim3.png'
+
 
 class CarouselComponent extends Component {
     render() {
@@ -8,8 +12,8 @@ class CarouselComponent extends Component {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=First slide&bg=373940"
-      alt="First slide"
+      src={ymim1}
+      alt="First Sllllideslide"
     />
     <Carousel.Caption>
       <h3>First slide label</h3>
@@ -19,7 +23,7 @@ class CarouselComponent extends Component {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=Second slide&bg=282c34"
+      src={ymim2}
       alt="Third slide"
     />
 
@@ -31,7 +35,7 @@ class CarouselComponent extends Component {
   <Carousel.Item>
     <img
       className="d-block w-100"
-      src="holder.js/800x400?text=Third slide&bg=20232a"
+      src={ymim3}
       alt="Third slide"
     />
 
