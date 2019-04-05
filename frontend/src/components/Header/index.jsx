@@ -50,7 +50,7 @@ class Header extends Component {
                 Enroll Now
               </NavLink>
             </li>
-            <li className="nav-item" class="nav-item">
+            <li className="nav-item">
               <NavLink
                 className="nav-link"
                 to="/ambassadors"
