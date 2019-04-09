@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { events } from "../actions";
+import EventForm from '../components/EventForm';
 
 class Events extends Component {
 
@@ -9,10 +10,31 @@ class Events extends Component {
         this.props.fetchEvents();
     }
 
+    state = {
+        text: "",
+        updateEventId: null,
+        title: "",
+        description: ""
+    }
+
+    resetForm = () => {
+        this.setState({ text: "", updateEventId: null });
+    }
+
+    submitEvent = (e) => {
+        e.preventDefault();
+        if (this.state.updateEventId === null) {
+            this.props.addEvent(this.state.title).then(this.resetForm)
+        } else {
+            this.props.updateEvent(this.state.updateEventId, this.state.text).then(this.resetForm);
+        }
+        alert("You are trying to submit an event");
+    }
+
     render() {
         return (
             <div>
-                <h1 class="entry-title" itemprop="headline">Events</h1>
+                {/* <h1 class="entry-title" itemprop="headline">Events</h1>
                 <div class="entry-content" itemprop="text">
                     <p><strong>Chicago / NW Indiana / Wisconsin events</strong></p>
                     <p><span id="more-479"></span></p>
@@ -77,17 +99,29 @@ class Events extends Component {
                     <p>Young adult men and women who have experienced life as either an orphan, adoptee, or foster youth alumni share their diverse voices and stories on what they feel is needed or lacking for youth in care, and what they feel is needed now to help young women stand strong and thrive. We will continue listening to alumni and strive to create programs that matter.</p>
                     <p><a href="/contact-us/">Contact us now!</a></p>
                     <p>Our 2019-2020 co-hort participant recruitment campaign is now underway.&nbsp;&nbsp;<strong>The YMIM</strong> is seeking&nbsp;<a href="/ambassadors/">volunteer ambassadors</a> to support the cohort.&nbsp;Join our movement to inspire, connect, and empower young adult women orphans, adoptees, and foster youth alumnae. Now and always, your generous contributions are greatly appreciated!</p>
-                </div>
+                </div> */}
 
-                <h3>Events from the database will display here</h3>
+                <h3>Current Events</h3>
+
                 <table>
                     <tbody>
-                        <tr>
-                            <td>Event 1</td>
-                            <td>Event description </td>
-                        </tr>
+                        {this.props.events.map((event, id) => (
+                            <tr key={`event_${event.id}`}>
+                                <td>{event.title}</td>
+                                <td>{event.description}</td>
+                                <td>{event.start_time}</td>
+                                <td>to</td>
+                                <td>{event.end_time}</td>
+                                <td>{event.event_image}</td>
+
+                            </tr>
+                        ))}
                     </tbody>
                 </table>
+                <h1></h1>
+                <EventForm
+                    submitEvent={this.submitEvent}
+                    title={this.state.title} />
             </div>
         );
     }
@@ -104,6 +138,12 @@ const mapDispatchToProps = dispatch => {
         fetchEvents: () => {
             dispatch(events.fetchEvents());
         },
+        addEvent: (text, title) => {
+            return dispatch(events.addEvent(text, title));
+        },
+        updateEvent: (id, text) => {
+            return dispatch(events.updateEvent(id, text));
+        }
     }
 }
 

@@ -43,7 +43,9 @@ INSTALLED_APPS = [
     "djoser",
     # Internal Apps
     "applications",
-    "events"
+    "events",
+
+    'corsheaders'
 ]
 
 MIDDLEWARE = [
@@ -54,6 +56,8 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware',
 ]
 
 ROOT_URLCONF = "backend.urls"
@@ -153,6 +157,8 @@ EMAIL_HOST_USER = os.getenv("SENDGRID_USERNAME")
 EMAIL_HOST_PASSWORD = os.getenv("SENDGRID_PASSWORD")
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+CORS_ORIGIN_ALLOW_ALL = True
 
 # Configure Django App for Heroku.
 import django_heroku

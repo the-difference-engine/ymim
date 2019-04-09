@@ -5,11 +5,11 @@ class EventForm extends Component {
         return (
             <div>
                 <h1>Create an Event</h1>
-                <form>
+                <form onSubmit={this.props.submitEvent}>
                     <div >
                         <div className="form-group col-md-3">
                             <label htmlFor="title">Title</label>
-                            <input type="text" className="form-control" id="title" placeholder="Please enter title" />
+                            <input value={this.props.title} type="text" className="form-control" id="title" placeholder="Please enter title" />
                         </div>
                         <div className="form-group col-md-3">
                             <label htmlFor="description">Description</label>

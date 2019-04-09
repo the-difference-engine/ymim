@@ -17,6 +17,7 @@ import Team from "./components/team";
 import Ambassadors from "./components/ambassadors";
 import Events from "./components/events";
 
+
 let store = createStore(fetchData, applyMiddleware(thunk));
 
 const router = (
