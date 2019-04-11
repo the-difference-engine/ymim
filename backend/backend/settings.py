@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     "rest_framework.authtoken",
     # Other Package Apps
     "storages",
-    'corsheaders',
+    "corsheaders",
     "djoser",
     # Internal Apps
     "applications",
@@ -55,8 +55,8 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
-    'corsheaders.middleware.CorsMiddleware',
-    'django.middleware.common.CommonMiddleware',
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
 ]
 
 ROOT_URLCONF = "backend.urls"
@@ -77,9 +77,7 @@ TEMPLATES = [
     }
 ]
 
-AUTHENTICATION_BACKENDS = [
-    "django.contrib.auth.backends.ModelBackend",
-]
+AUTHENTICATION_BACKENDS = ["django.contrib.auth.backends.ModelBackend"]
 
 WSGI_APPLICATION = "backend.wsgi.application"
 
@@ -103,9 +101,7 @@ DATABASES = {
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator"
-    },
+    {"NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator"},
     {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator"},
     {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator"},
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},

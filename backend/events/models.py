@@ -9,4 +9,5 @@ class Event(models.Model):
     start_time = models.DateTimeField(null="False")
     end_time = models.DateTimeField(null="False")
     event_image = models.ImageField(
-        upload_to=None, default='https://via.placeholder.com/150', null="True")
+        upload_to=None, default="https://via.placeholder.com/150", null="True"
+    )

@@ -5,5 +5,5 @@ from .serializers import EventSerializer
 
 class EventViewSet(viewsets.ModelViewSet):
     queryset = Event.objects.all()
-    permission_classes = [permissions.AllowAny, ]
+    permission_classes = [permissions.AllowAny]
     serializer_class = EventSerializer

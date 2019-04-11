@@ -5,23 +5,43 @@ from django.db import migrations, models
 
 class Migration(migrations.Migration):
 
-    replaces = [('events', '0001_initial'), ('events', '0002_auto_20190319_0056'), ('events', '0003_event_event_image'), ('events', '0004_auto_20190322_0049'), ('events', '0005_auto_20190329_0256')]
+    replaces = [
+        ("events", "0001_initial"),
+        ("events", "0002_auto_20190319_0056"),
+        ("events", "0003_event_event_image"),
+        ("events", "0004_auto_20190322_0049"),
+        ("events", "0005_auto_20190329_0256"),
+    ]
 
     initial = True
 
-    dependencies = [
-    ]
+    dependencies = []
 
     operations = [
         migrations.CreateModel(
-            name='Event',
+            name="Event",
             fields=[
-                ('id', models.AutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
-                ('title', models.CharField(max_length=255)),
-                ('description', models.TextField(blank=True, null='True')),
-                ('end_time', models.DateTimeField(null='False')),
-                ('start_time', models.DateTimeField(null='False')),
-                ('event_image', models.ImageField(default='https://via.placeholder.com/150', null='True', upload_to=None)),
+                (
+                    "id",
+                    models.AutoField(
+                        auto_created=True,
+                        primary_key=True,
+                        serialize=False,
+                        verbose_name="ID",
+                    ),
+                ),
+                ("title", models.CharField(max_length=255)),
+                ("description", models.TextField(blank=True, null="True")),
+                ("end_time", models.DateTimeField(null="False")),
+                ("start_time", models.DateTimeField(null="False")),
+                (
+                    "event_image",
+                    models.ImageField(
+                        default="https://via.placeholder.com/150",
+                        null="True",
+                        upload_to=None,
+                    ),
+                ),
             ],
-        ),
+        )
     ]
