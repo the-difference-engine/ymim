@@ -113,7 +113,6 @@ class Events extends Component {
                                 <td>to</td>
                                 <td>{event.end_time}</td>
                                 <td>{event.event_image}</td>
-
                             </tr>
                         ))}
                     </tbody>
