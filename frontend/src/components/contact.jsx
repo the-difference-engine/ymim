@@ -3,9 +3,9 @@ import React, { Component } from 'react';
 class Contact extends Component {
     render() {
       return (
-        <div>
-            <h1 class="entry-title" itemprop="headline">Contact Us</h1>
-            <div class="entry-content" itemprop="text">
+        <div className="jumbotron">
+            <h1>Contact Us</h1>
+            <div>
                 <p>Hello Ms. or Mr. Wonderful,</p>
                 <p>Thank you for checking out our website and considering the Young Masterbuilders in Motion (<strong>YMIM</strong>) as your charity of choice.</p>
                 <p>Together we can work to make a difference in the lives of&nbsp;young adult women orphans, adoptees, and foster youth teens and alumnae.</p>
@@ -16,33 +16,32 @@ class Contact extends Component {
                 <p>Founder, Young Masterbuilders in Motion</p>
                 <p>Email: Founder@theymim.org |&nbsp;Phone: 773.941.1200</p>
                 <p>&nbsp;</p>
-                <div id="contact-form-12">
-                    <form action="/" method="post" class="contact-form commentsblock">
+                <div>
+                    <form action="/" method="post">
 
-                        <div class="grunion-field-wrap grunion-field-name-wrap">
-                            <label for="g12-name" class="grunion-field-label name">Name<span>(required)</span></label>
-                            <input type="text" name="g12-name" id="g12-name" value="" class="name" required="" aria-required="true" />
-                        </div>
+                    <div>
+                        <label className='col-md-2'>Name<span> (required)</span></label>
+                        <input type="text" value="" className="col-md-4 " required="" />
+                    </div>
+                    <br></br>
+                    <div>
+                        <label className="col-md-2 ">Email<span> (required)</span></label>
+                        <input type="email" value="" className="col-md-4 " required="" />
+                    </div>
+                    <br></br>
+                    <div>
+                        <label className="col-md-2">Phone</label>
+                        <input type="text" value="" className="col-md-4" />
+                    </div>
 
-                        <div class="grunion-field-wrap grunion-field-email-wrap">
-                            <label for="g12-email" class="grunion-field-label email">Email<span>(required)</span></label>
-                            <input type="email" name="g12-email" id="g12-email" value="" class="email" required="" aria-required="true" />
-                        </div>
-
-                        <div class="grunion-field-wrap grunion-field-textarea-wrap">
-                            <label for="contact-form-comment-g12-phone" class="grunion-field-label textarea">Phone<span>(required)</span></label>
-                            <textarea name="g12-phone" id="contact-form-comment-g12-phone" rows="20" class="textarea" required="" aria-required="true"></textarea>
-                        </div>
-
-                        <div class="grunion-field-wrap grunion-field-textarea-wrap">
-                            <label for="contact-form-comment-g12-message" class="grunion-field-label textarea">Message</label>
-                            <textarea name="g12-message" id="contact-form-comment-g12-message" rows="20" class="textarea"></textarea>
-                        </div>
-                        <p class="contact-submit">
-                            <input type="submit" value="Submit" class="pushbutton-wide" />
-                            <input type="hidden" name="contact-form-id" value="12" />
-                            <input type="hidden" name="action" value="grunion-contact-form" />
-                            <input type="hidden" name="contact-form-hash" value="ed979e3298e33fa29189576255c58eda9cc37c72" />
+                    <div>
+                        <label className='col-md-4'>Message</label>
+                    </div>
+                    <div>
+                        <textarea name="" rows="6" className='col-md-8'></textarea>
+                    </div>
+                        <p>
+                            <input type="submit" value="Submit" />
                         </p>
                     </form>
                 </div>
