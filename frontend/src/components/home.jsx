@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import CarouselComponent from './Carousel'
+import CarouselComponent from './carousel'
 
 import "./home.css";
 
