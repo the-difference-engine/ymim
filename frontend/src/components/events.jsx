@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { events } from "../actions";
 import EventForm from '../components/EventForm';
@@ -117,7 +116,6 @@ class Events extends Component {
                         ))}
                     </tbody>
                 </table>
-                <h1></h1>
                 <EventForm
                     submitEvent={this.submitEvent}
                     title={this.state.title} />
