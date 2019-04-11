@@ -35,17 +35,16 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    # Other Package Apps
-    "storages",
     # Django REST Framework Apps
     "rest_framework",
     "rest_framework.authtoken",
+    # Other Package Apps
+    "storages",
+    'corsheaders',
     "djoser",
     # Internal Apps
     "applications",
     "events",
-
-    'corsheaders'
 ]
 
 MIDDLEWARE = [
