@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import fetchData from "./reducers";
 import thunk from "redux-thunk";
-import App from "./components/App";
+import Home from "./components/home";
 import DemoPage from "./components/DemoPage";
 import NotFound from "./components/NotFound";
 import Login from "./components/Login";
@@ -24,12 +24,12 @@ let store = createStore(fetchData, applyMiddleware(thunk));
 const router = (
   <Provider store={store}>
     <Router>
-      <div className="App site container-fluid">
+      <div className="site container-fluid">
         <div className="site-content">
           <Header />
           <div className="container">
           <Switch>
-            <Route exact path="/" component={App} />
+            <Route exact path="/" component={Home} />
             <Route exact path="/fetch" component={DemoPage} />
             <Route exact path="/Donate" component={Donate} />
             <Route exact path="/contact-us" component={Contact} />
