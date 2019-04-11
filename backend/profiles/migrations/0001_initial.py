@@ -4,6 +4,7 @@ from django.db import migrations
 from django.conf import settings
 from django.contrib.auth import get_user_model
 
+## will be handle
 def create_profiles(apps, schema_editor):
     User = get_user_model()
 
@@ -34,6 +35,10 @@ def create_profiles(apps, schema_editor):
     mike.set_password("password")
     mike.save()
 
+def delete_all_users(apps, schema_editor):
+    User = get_user_model()
+    User.objects.all().delete()
+
 class Migration(migrations.Migration):
 
     dependencies = [
@@ -41,5 +46,5 @@ class Migration(migrations.Migration):
     ]
 
     operations = [
-        migrations.RunPython(create_profiles)
+        migrations.RunPython(create_profiles, delete_all_users)
     ]
