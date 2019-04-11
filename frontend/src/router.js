@@ -28,20 +28,20 @@ const router = (
         <div className="site-content">
           <Header />
           <div className="container">
-          <Switch>
-            <Route exact path="/" component={Home} />
-            <Route exact path="/fetch" component={DemoPage} />
-            <Route exact path="/Donate" component={Donate} />
-            <Route exact path="/contact-us" component={Contact} />
-            <Route exact path="/about" component={About} />
-            <Route exact path="/enrollment" component={Enroll} />
-            <Route exact path="/meet-the-team" component={Team} />
-            <Route exact path="/ambassadors" component={Ambassadors} />
-            <Route exact path="/events" component={Events} />
-            <Route exact path="/admin" component={Admin} />
-            <Route exact path="/login" component={Login} />
-            <Route component={NotFound} />
-          </Switch>
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route exact path="/fetch" component={DemoPage} />
+              <Route exact path="/Donate" component={Donate} />
+              <Route exact path="/contact-us" component={Contact} />
+              <Route exact path="/about" component={About} />
+              <Route exact path="/enrollment" component={Enroll} />
+              <Route exact path="/meet-the-team" component={Team} />
+              <Route exact path="/ambassadors" component={Ambassadors} />
+              <Route exact path="/events" component={Events} />
+              <Route exact path="/admin" component={Admin} />
+              <Route exact path="/login" component={Login} />
+              <Route component={NotFound} />
+            </Switch>
           </div>
         </div>
         <Footer />

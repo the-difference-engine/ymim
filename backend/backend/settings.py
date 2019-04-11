@@ -35,14 +35,16 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    # Other Package Apps
-    "storages",
     # Django REST Framework Apps
     "rest_framework",
     "rest_framework.authtoken",
+    # Other Package Apps
+    "storages",
+    "corsheaders",
     "djoser",
     # Internal Apps
     "applications",
+    "events",
 ]
 
 MIDDLEWARE = [
@@ -53,6 +55,8 @@ MIDDLEWARE = [
     "django.contrib.auth.middleware.AuthenticationMiddleware",
     "django.contrib.messages.middleware.MessageMiddleware",
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
+    "corsheaders.middleware.CorsMiddleware",
+    "django.middleware.common.CommonMiddleware",
 ]
 
 ROOT_URLCONF = "backend.urls"
@@ -73,12 +77,7 @@ TEMPLATES = [
     }
 ]
 
-AUTHENTICATION_BACKENDS = [
-    "django.contrib.auth.backends.ModelBackend",
-    "djoser.social.backends.facebook.FacebookOAuth2Override",
-    "social_core.backends.google.GoogleOAuth2",
-    "social_core.backends.steam.SteamOpenId",
-]
+AUTHENTICATION_BACKENDS = ["django.contrib.auth.backends.ModelBackend"]
 
 WSGI_APPLICATION = "backend.wsgi.application"
 
@@ -102,9 +101,7 @@ DATABASES = {
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
 
 AUTH_PASSWORD_VALIDATORS = [
-    {
-        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator"
-    },
+    {"NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator"},
     {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator"},
     {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator"},
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
@@ -155,6 +152,8 @@ EMAIL_HOST_USER = os.getenv("SENDGRID_USERNAME")
 EMAIL_HOST_PASSWORD = os.getenv("SENDGRID_PASSWORD")
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+
+CORS_ORIGIN_ALLOW_ALL = bool(os.getenv("ALLOW_CORS", False))
 
 # Configure Django App for Heroku.
 import django_heroku
