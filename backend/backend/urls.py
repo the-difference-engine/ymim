@@ -5,7 +5,6 @@ from healthcheck import views
 from events import endpoints
 
 
-
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("applications/", admin.site.urls),
