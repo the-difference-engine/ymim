@@ -10,6 +10,7 @@ RUN mkdir /code
 WORKDIR /code
 ADD . /code/
 
+RUN pip install --upgrade pip
 RUN pip install pipenv
 RUN pipenv install --system
     

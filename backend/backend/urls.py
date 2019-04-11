@@ -1,8 +1,8 @@
 from django.contrib import admin
 from django.urls import path, include
-from healthcheck import views
+from healthcheck import views as healthcheck_views
 
-from events import endpoints
+from events import urls as event_urls
 
 
 urlpatterns = [
@@ -12,6 +12,6 @@ urlpatterns = [
     path("auth/", include("djoser.urls")),
     path("auth/", include("djoser.urls.authtoken")),
     path("auth/", include("djoser.urls.jwt")),
-    path("api/healthcheck", views.healthcheck),
-    path('api/', include(endpoints)),
+    path("api/healthcheck", healthcheck_views.healthcheck),
+    path("api/", include(event_urls)),
 ]
