@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import './footer.css';
 
 
@@ -21,6 +23,9 @@ export default class footer extends Component {
                             </li>
                             <li className='col footer_link'>
                                 <Link to="/events">Events</Link>
+                            </li>
+                            <li className='col footer_link'>
+                                Follow Us:  <a href="https://www.facebook.com/theymim/" style={{color: 'black'}}><FontAwesomeIcon icon={faFacebookSquare} /></a> | <a href="https://www.instagram.com/theyoungmasterbuilders" style={{color: 'black'}}><FontAwesomeIcon icon={faInstagram} /></a>
                             </li>
                         </ul>
                     </nav>

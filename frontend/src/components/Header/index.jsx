@@ -7,20 +7,14 @@ class Header extends Component {
     const AuthAdmin = true;
     const AuthUser = false;
     return (
-      <header>
+      <header class="card card-header">
+      <div class="row">
         <Link to="/">
-          <h1 className="org-name">YOUNG MASTERBUILDERS IN MOTION</h1>
+          <h1 className="org-name">YOUNG<br></br>MASTERBUILDERS<br></br>IN MOTION</h1>
         </Link>
-        <Route
-          exact
-          path="/"
-          render={() => (
-            <h4>EMPOWERING YOUNG WOMEN ORPHANS, ADOPTEES, & FOSTER ALUMNAE</h4>
-          )}
-        />
-        <nav>
-          <ul className="nav-links">
-            <li className="nav-item">
+        <nav class="ml-auto">
+          <ul className="nav-links"  class="nav nav-tabs card-header-tabs">
+            <li className="nav-item" class="nav-item">
               <NavLink
                 className="nav-link"
                 to="/donate"
@@ -98,6 +92,14 @@ class Header extends Component {
             )}
           </ul>
         </nav>
+        </div>
+        <Route
+          exact
+          path="/"
+          render={() => (
+            <h6 class="ml-auto">EMPOWERING YOUNG WOMEN ORPHANS, ADOPTEES, & FOSTER ALUMNAE</h6>
+          )}
+        />
       </header>
     );
   }
