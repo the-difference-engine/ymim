@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import CarouselComponent from './Carousel'
 
-import "./App.css";
+import "./home.css";
 
-class App extends Component {
+class Home extends Component {
   render() {
     return (
-      <div className="App container">
+      <div className="Home container">
         <h1>YMIM</h1>
         <CarouselComponent />
       </div>
@@ -14,4 +14,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default Home;
