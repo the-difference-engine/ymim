@@ -38,10 +38,9 @@ class Command(BaseCommand):
         fake = Faker()
 
         for _ in range(100):
-            first = fake.first_name()
-            last = fake.last_name()
-            password = first.lower() + last.lower() + "password"
-            email = first.lower() + "." + last.lower() + "@example.com"
             User.objects.create_user(
-                username=email, password=password, first_name=first, last_name=last
+                username=fake.email(),
+                password="password",
+                first_name=fake.first_name(),
+                last_name=fake.last_name(),
             )
