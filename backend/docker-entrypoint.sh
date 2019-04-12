@@ -32,7 +32,9 @@ case "$1" in
                     --access-logfile '-'
             ;;
             local)
-                pipenv install --system
+                pipenv install --system --dev
+                echo "Creating test users in local DB"
+                python manage.py create_test_users
                 echo "Starting local server"
                 python manage.py runserver 0.0.0.0:8000
             ;;

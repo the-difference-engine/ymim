@@ -3,6 +3,7 @@
   max-height: 10vh;
   color: white;
 }
+
 .small_img {
   width: 100px;
 }
@@ -26,4 +27,8 @@
     margin: 20px;
     border-radius: 5px;
   }
+}
+
+.container {
+    padding-top: 2.25rem !important;
 }
