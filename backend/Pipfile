@@ -8,6 +8,7 @@ pylint = "*"
 black = "==19.3b0"
 faker = "*"
 pprintpp = "*"
+tqdm = "*"
 
 [packages]
 Django = "*"
@@ -25,6 +26,7 @@ djoser = "*"
 djangorestframework-simplejwt = "*"
 pillow = "*"
 django-cors-headers = "*"
+django-role-permissions = "*"
 
 [requires]
 python_version = "3.7"
