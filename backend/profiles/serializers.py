@@ -7,7 +7,7 @@ from .models import UserProfile
 class UserSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = User
-        fields = ('url', 'username', 'password', 'first_name', 'last_name', 'email') 
+        fields = ("url", "username", "password", "first_name", "last_name", "email")
 
         def create_profile_for_user(self, instance=None, created=False, **kargs):
             if created:
@@ -27,4 +27,4 @@ class UserSerializer(serializers.HyperlinkedModelSerializer):
 class GroupSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = Group
-        fields = ('url', 'name')
+        fields = ("url", "name")
