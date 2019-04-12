@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     "storages",
     "corsheaders",
     "djoser",
+    "rolepermissions",
     # Internal Apps
     "applications",
     "profiles",
@@ -113,6 +114,8 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+ROLEPERMISSIONS_MODULE = 'backend.roles'
 
 
 # Static files (CSS, JavaScript, Images)

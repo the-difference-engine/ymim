@@ -1,12 +1,14 @@
-from django.core.management.base import BaseCommand
 from django.contrib.auth.models import User
+from django.core.management.base import BaseCommand
 from faker import Faker
+from rolepermissions.roles import assign_role
+from tqdm import tqdm
 
 
 class Command(BaseCommand):
     help = "creates users in auth_user table"
 
-    def handle(self):
+    def handle(self, *args, **kwargs):
         User.objects.all().delete()
 
         kim = User.objects.create_user(
@@ -15,9 +17,8 @@ class Command(BaseCommand):
             first_name="Kim",
             last_name="Wright",
         )
-        kim.is_superuser = True
-        kim.is_staff = True
-        kim.save()
+        assign_role(kim, "admin")
+        assign_role(kim, "staff")
 
         jane = User.objects.create_user(
             username="jane.doe@example.com",
@@ -25,8 +26,7 @@ class Command(BaseCommand):
             first_name="Jane",
             last_name="Doe",
         )
-        jane.is_staff = True
-        jane.save()
+        assign_role(jane, "staff")
 
         User.objects.create_user(
             username="mike.smith@example.com",
@@ -36,8 +36,8 @@ class Command(BaseCommand):
         )
 
         fake = Faker()
-
-        for _ in range(100):
+        print("Creating 100 fake users")
+        for _ in tqdm(range(100)):
             User.objects.create_user(
                 username=fake.email(),
                 password="password",
