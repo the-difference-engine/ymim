@@ -6,7 +6,7 @@ export default function events(state = initialState, action) {
     case "FETCH_EVENTS":
       return [...state, ...action.events];
     case "ADD_EVENT":
-      return [...state, ...action.event];
+      return [...state, action.event];
     case "UPDATE_EVENT":
       let eventToUpdate = eventList[action.index];
       eventToUpdate.text = action.event.text;

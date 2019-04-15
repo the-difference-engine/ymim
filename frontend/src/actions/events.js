@@ -12,10 +12,10 @@ export const fetchEvents = () => {
     };
 };
 
-export const addEvent = (text, title) => {
+export const addEvent = (text, title, description, start_time, end_time, event_image) => {
     return dispatch => {
         let headers = { "Content-Type": "application/json" };
-        let body = JSON.stringify({ text, title });
+        let body = JSON.stringify({ text, title, description, start_time, end_time, event_image });
         return fetch("http://localhost:8000/api/events/", {
             headers,
             method: "POST",

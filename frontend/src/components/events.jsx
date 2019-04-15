@@ -13,7 +13,11 @@ class Events extends Component {
         text: "",
         updateEventId: null,
         title: "",
-        description: ""
+        description: "",
+        start_time: null,
+        end_time: null,
+        event_image: ""
+
     }
 
     resetForm = () => {
@@ -27,7 +31,6 @@ class Events extends Component {
         } else {
             this.props.updateEvent(this.state.updateEventId, this.state.text).then(this.resetForm);
         }
-        alert("You are trying to submit an event");
     }
 
     render() {
@@ -118,7 +121,16 @@ class Events extends Component {
                 </table>
                 <EventForm
                     submitEvent={this.submitEvent}
-                    title={this.state.title} />
+                    title={this.state.title}
+                    description={this.state.description}
+                    startTime={this.state.start_time}
+                    endTime={this.state.end_time}
+                    eventImage={this.state.event_image}
+                    changeTitle={(e) => this.setState({ title: e.target.value })}
+                    changeDescription={(e) => this.setState({ description: e.target.value })}
+                    changeStime={(e) => this.setState({ start_time: e.target.value })}
+                    changeEtime={(e) => this.setState({ end_time: e.target.value })}
+                    changeImage={(e) => this.setState({ event_image: e.target.value })} />
             </div>
         );
     }
@@ -135,8 +147,8 @@ const mapDispatchToProps = dispatch => {
         fetchEvents: () => {
             dispatch(events.fetchEvents());
         },
-        addEvent: (text, title) => {
-            return dispatch(events.addEvent(text, title));
+        addEvent: (text, title, description, start_time, end_time, event_image) => {
+            return dispatch(events.addEvent(text, title, description, start_time, end_time, event_image));
         },
         updateEvent: (id, text) => {
             return dispatch(events.updateEvent(id, text));
