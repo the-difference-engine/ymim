@@ -1,0 +1,20 @@
+.tbody {
+    /* border-style: solid;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    border-width: thin; */
+    border-top: 1px solid;
+    margin-bottom: 25px;
+    padding: 10px;
+}
+
+tr {
+    margin: 100px;
+}
+
+.event {
+    margin: 10px;
+    padding: 90px;
+
+}

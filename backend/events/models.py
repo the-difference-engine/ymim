@@ -6,8 +6,8 @@ from django.db import models
 class Event(models.Model):
     title = models.CharField(max_length=255)
     description = models.TextField(blank=True, null="True")
-    start_time = models.DateTimeField(null="False")
-    end_time = models.DateTimeField(null="False")
+    start_time = models.DateTimeField(null="True")
+    end_time = models.DateTimeField(null="True")
     event_image = models.ImageField(
         upload_to=None, default="https://via.placeholder.com/150", null="True"
     )
