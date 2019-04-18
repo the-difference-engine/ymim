@@ -6,11 +6,14 @@
     - [PC Users (currently incomplete)](#pc-users-currently-incomplete)
   - [Developing On The App](#developing-on-the-app)
   - [What Technologies Are We Using?](#what-technologies-are-we-using)
+  - [External Packages in Use](#external-packages-in-use)
+    - [Frontend](#frontend)
+    - [Backend](#backend)
   - [Deployment](#deployment)
     - [General](#general)
-    - [Frontend](#frontend)
+    - [Frontend](#frontend-1)
     - [Required Frontend Env Vars](#required-frontend-env-vars)
-    - [Backend](#backend)
+    - [Backend](#backend-1)
     - [Required Backend Env Vars](#required-backend-env-vars)
 
 ## Getting Started With The App
@@ -68,15 +71,40 @@ Once you have your containers running, the code in your local directory will be 
 ## What Technologies Are We Using?
 The backend application is written in Python, using the [Django](https://www.djangoproject.com/) framework and the [Django REST Framework](https://www.django-rest-framework.org/) library. The frontend application is written in Javascript, using the [React](https://reactjs.org/) framework and several other third party libraries, bootstrapped via the [create-react-app](https://github.com/facebook/create-react-app) tool.
 
-If you need to add new packages to the backend app, you can use Pipenv to do so:
 
-    pipenv install <package_name>
 
+
+## External Packages in Use
+
+### Frontend
 If you need to add new packages to the frontend app, you can use Yarn to do so:
 
     yarn install <package_name>
 
-Generally speaking, look to handle data manipulation on the backend and visualization on the frontend.
+Here are the existing packages already in use:
+
+### Backend
+If you need to add new packages to the backend app, you can use Pipenv to do so:
+
+    pipenv install <package_name>
+
+Here are the existing packages already in use:
+- [Django](https://www.djangoproject.com/): A full-featured web framework for Python
+- [djangorestframework](https://www.django-rest-framework.org/): A library that provides an extensive toolset for using Django as a backend API for an SPA.
+- [django-filter](https://django-filter.readthedocs.io/en/master/): Easy Django Queryset filtering from URL params
+- [django-storages](https://django-storages.readthedocs.io/en/latest/): Adapter for various storage backends.
+- [django-model-utils](https://django-model-utils.readthedocs.io/en/latest/): A set of composable models, managers, and fields that extend Django's functionality.
+- [django-dotenv](https://github.com/jpadilla/django-dotenv): A package for managing Django's environment variables from a `.env` file.
+- [gunicorn](https://github.com/benoitc/gunicorn): A WSGI HTTP server used to serve the app.
+- [psycopg2](https://github.com/psycopg/psycopg2): A PostgreSQL adapter for Python.
+- [pyyaml](https://github.com/yaml/pyyaml): A YAML parser and emitter.
+- [pendulum](https://pendulum.eustace.io/): A package that extends and improves on Python's default date and time handling.
+- [django-heroku](https://github.com/heroku/django-heroku): A package that configures Django apps to run on a Heroku dyno.
+- [djoser](https://github.com/sunscrapers/djoser): A package that provides RESTful hooks for Django's auth system.
+- [djangorestframework-simplejwt](https://github.com/davesque/django-rest-framework-simplejwt): Allows us to use JWTs to authenticate users.
+- [pillow](https://github.com/python-pillow/Pillow): Image manipulation on the server.
+- [django-cors-headers](https://github.com/ottoyiu/django-cors-headers): Override CORS headers errors in local development.
+- [django-role-permissions](https://github.com/vintasoftware/django-role-permissions): Manage user authorization and roles.
 
 ## Deployment
 
