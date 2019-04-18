@@ -1,4 +1,11 @@
-from django.urls import path
+from django.urls import include, path
+from rest_framework import routers
+
 from . import views
 
-urlpatterns = [path("api/applications/", views.ApplicationListCreate.as_view())]
+router = routers.DefaultRouter()
+router.register("/", views.ApplicationListCreate)
+
+urlpatterns = [
+    path("/", include(router.urls))
+]

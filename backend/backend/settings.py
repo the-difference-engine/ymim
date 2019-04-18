@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     "corsheaders",
     "djoser",
     "rolepermissions",
+    "django_filters",
+    "rest_framework_swagger",
     # Internal Apps
     "applications",
     "profiles",

@@ -1,7 +1,7 @@
-from django.shortcuts import render
-from applications.models import Application
-from applications.serializers import ApplicationSerializer
 from rest_framework import generics
+
+from .models import Application
+from .serializers import ApplicationSerializer
 
 
 class ApplicationListCreate(generics.ListCreateAPIView):
