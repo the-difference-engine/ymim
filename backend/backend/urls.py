@@ -7,7 +7,7 @@ from healthcheck import urls as healthcheck_urls
 from profiles import urls as profiles_urls
 
 
-schema_view = get_swagger_view(title='YMIM API')
+schema_view = get_swagger_view(title="YMIM API")
 
 urlpatterns = [
     path("auth/", include("djoser.urls")),
@@ -16,6 +16,6 @@ urlpatterns = [
     path("schema/", schema_view),
     path("applications/", include(application_urls)),
     path("profiles/", include(profiles_urls)),
-    path("healthcheck/", include(healthcheck_urls),
+    path("healthcheck/", include(healthcheck_urls)),
     path("events/", include(event_urls)),
 ]
