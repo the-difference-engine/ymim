@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     "corsheaders",
     "djoser",
     "rolepermissions",
+    "django_filters",
+    "rest_framework_swagger",
     # Internal Apps
     "applications",
     "profiles",
@@ -96,7 +98,9 @@ DATABASES = {
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
 AUTH_PASSWORD_VALIDATORS = [
-    {"NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator"},
+    {
+        "NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator"
+    },
     {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator"},
     {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator"},
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
@@ -115,7 +119,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-ROLEPERMISSIONS_MODULE = 'backend.roles'
+ROLEPERMISSIONS_MODULE = "backend.roles"
 
 
 # Static files (CSS, JavaScript, Images)
