@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import SiteUser from '../components/SiteUser';
+import SiteUser from './site_user';
 import { Link } from 'react-router-dom';
-import EventForm from '../components/EventForm';
+import EventForm from '../events/event_form';
 
 class Admin extends Component {
 

@@ -1,5 +1,6 @@
 import React from 'react';
-import './home.css';
+// TODO: Replace this with a local CSS page with whatever styling we need
+// import './home.css';
 
 function SiteUser(props) {
     return (

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Markdown from 'react-markdown';
-import Text from './Markdowns/about.md';
+import Text from './about.md';
 
 class About extends Component {
   constructor(props) {
@@ -16,7 +16,7 @@ class About extends Component {
   }
     render() {
       return (
-          <Markdown escapeHtml={false} source={this.state.text} />
+        <Markdown escapeHtml={false} source={this.state.text} />
     );
   }
 }

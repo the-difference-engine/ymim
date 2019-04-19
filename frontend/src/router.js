@@ -4,20 +4,19 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import fetchData from "./reducers";
 import thunk from "redux-thunk";
-import Home from "./components/home";
-import DemoPage from "./components/DemoPage";
-import NotFound from "./components/NotFound";
-import Login from "./components/Login";
-import Admin from "./pages/admin";
-import Footer from "./components/footer";
-import Contact from "./components/contact";
-import About from "./components/about";
+import Home from "./components/common/home";
+import NotFound from "./components/common/not_found";
+import Login from "./components/common/login";
+import Admin from "./components/admin";
+import Footer from "./components/common/footer";
+import Contact from "./components/static_pages/contact";
+import About from "./components/static_pages/about";
 import Enroll from "./components/enroll";
-import Team from "./components/team";
-import Ambassadors from "./components/ambassadors";
-import Donate from "./components/DonationPage";
+import Team from "./components/static_pages/team";
+import Ambassadors from "./components/static_pages/ambassadors";
+import Donate from "./components/donation_page";
 import Events from "./components/events";
-import Header from "./components/Header";
+import Header from "./components/common/header";
 
 let store = createStore(fetchData, applyMiddleware(thunk));
 
@@ -30,8 +29,7 @@ const router = (
           <div className="container">
             <Switch>
               <Route exact path="/" component={Home} />
-              <Route exact path="/fetch" component={DemoPage} />
-              <Route exact path="/Donate" component={Donate} />
+              <Route exact path="/donate" component={Donate} />
               <Route exact path="/contact-us" component={Contact} />
               <Route exact path="/about" component={About} />
               <Route exact path="/enrollment" component={Enroll} />
