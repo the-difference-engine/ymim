@@ -1,3 +1,4 @@
+import django_heroku
 import os
 
 import dotenv
@@ -42,8 +43,10 @@ INSTALLED_APPS = [
     "storages",
     "corsheaders",
     "djoser",
+    "rolepermissions",
     # Internal Apps
     "applications",
+    "profiles",
     "events",
 ]
 
@@ -81,10 +84,6 @@ AUTHENTICATION_BACKENDS = ["django.contrib.auth.backends.ModelBackend"]
 
 WSGI_APPLICATION = "backend.wsgi.application"
 
-
-# Database
-# https://docs.djangoproject.com/en/2.1/ref/settings/#databases
-
 DATABASES = {
     "default": {
         "ENGINE": os.getenv("DB_ENGINE"),
@@ -95,18 +94,14 @@ DATABASES = {
         "PORT": os.getenv("DB_PORT"),
     }
 }
-
-
 # Password validation
 # https://docs.djangoproject.com/en/2.1/ref/settings/#auth-password-validators
-
 AUTH_PASSWORD_VALIDATORS = [
     {"NAME": "django.contrib.auth.password_validation.UserAttributeSimilarityValidator"},
     {"NAME": "django.contrib.auth.password_validation.MinimumLengthValidator"},
     {"NAME": "django.contrib.auth.password_validation.CommonPasswordValidator"},
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
 ]
-
 
 # Internationalization
 # https://docs.djangoproject.com/en/2.1/topics/i18n/
@@ -120,6 +115,8 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+ROLEPERMISSIONS_MODULE = 'backend.roles'
 
 
 # Static files (CSS, JavaScript, Images)
@@ -153,9 +150,14 @@ EMAIL_HOST_PASSWORD = os.getenv("SENDGRID_PASSWORD")
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
+<< << << < HEAD
 CORS_ORIGIN_ALLOW_ALL = bool(os.getenv("ALLOW_CORS", True))
 
+| | | | | | | merged common ancestors
+== == == =
+CORS_ORIGIN_ALLOW_ALL = bool(os.getenv("ALLOW_CORS", False))
+
+>>>>>> > 4db8123112a0e84a5684b689ae403de306476834
 # Configure Django App for Heroku.
-import django_heroku
 
 django_heroku.settings(locals())
