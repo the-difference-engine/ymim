@@ -8,14 +8,15 @@ export const fetchEvents = () => {
                     type: "FETCH_EVENTS",
                     events
                 });
+
             });
     };
 };
-
-export const addEvent = (title, description, start_time, end_time, event_image) => {
+console.log(process.env.REACT_APP_API_ENDPOINT);
+export const addEvent = (title, description, start_date, start_time, end_date, end_time, event_image) => {
     return dispatch => {
         let headers = { "Content-Type": "application/json" };
-        let body = JSON.stringify({ title, description, start_time, end_time, event_image });
+        let body = JSON.stringify({ title, description, start_date, start_time, end_date, end_time, event_image });
         return fetch("http://localhost:8000/api/events/", {
             headers,
             method: "POST",
@@ -54,7 +55,7 @@ export const deleteEvent = index => {
         let headers = { "Content-Type": "application/json" };
         let eventId = getState().events[index].id;
 
-        return fetch(`/api/events/${eventId}/`, { headers, method: "DELETE" }).then(
+        return fetch(`http://localhost:8000/api/events/${eventId}/`, { headers, method: "DELETE" }).then(
             res => {
                 if (res.ok) {
                     return dispatch({

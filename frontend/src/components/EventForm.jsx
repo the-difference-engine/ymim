@@ -17,12 +17,20 @@ class EventForm extends Component {
                         </div>
                     </div>
                     <div className="form-group col-md-3">
-                        <label htmlFor="inputTime">Start Date & Time</label>
-                        <input value={this.props.startTime} onChange={this.props.Stime} type="datetime-local" className="form-control" id="inputTime" />
+                        <label htmlFor="inputTime">Start Date</label>
+                        <input value={this.props.startDate} onChange={this.props.changeSdate} type="date" className="form-control" id="inputTime" />
                     </div>
                     <div className="form-group col-md-3">
-                        <label htmlFor="inputTime">End Date & Time</label>
-                        <input value={this.props.endTime} onChange={this.props.changeEtime} type="datetime-local" className="form-control" id="inputTime" />
+                        <label htmlFor="inputTime">Start Time</label>
+                        <input value={this.props.startTime} onChange={this.props.changeStime} type="time" className="form-control" id="inputTime" />
+                    </div>
+                    <div className="form-group col-md-3">
+                        <label htmlFor="inputTime">End Date</label>
+                        <input value={this.props.endDate} onChange={this.props.changeEdate} type="date" className="form-control" id="inputTime" />
+                    </div>
+                    <div className="form-group col-md-3">
+                        <label htmlFor="inputTime">End Time</label>
+                        <input value={this.props.endTime} onChange={this.props.changeEtime} type="time" className="form-control" id="inputTime" />
                     </div>
                     <div className="form-group col-md-3">
                         <label htmlFor="inputImage">Add Image</label>
