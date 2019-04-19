@@ -43,6 +43,8 @@ INSTALLED_APPS = [
     "corsheaders",
     "djoser",
     "rolepermissions",
+    "django_filters",
+    "rest_framework_swagger",
     # Internal Apps
     "applications",
     "profiles",
@@ -117,7 +119,7 @@ USE_L10N = True
 
 USE_TZ = True
 
-ROLEPERMISSIONS_MODULE = 'backend.roles'
+ROLEPERMISSIONS_MODULE = "backend.roles"
 
 
 # Static files (CSS, JavaScript, Images)
