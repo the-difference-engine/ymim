@@ -18,6 +18,7 @@ import Ambassadors from "./components/ambassadors";
 import Donate from "./components/DonationPage";
 import Events from "./components/events";
 import Header from "./components/Header";
+import Resources from "./components/Resources";
 
 let store = createStore(fetchData, applyMiddleware(thunk));
 
@@ -40,6 +41,7 @@ const router = (
               <Route exact path="/events" component={Events} />
               <Route exact path="/admin" component={Admin} />
               <Route exact path="/login" component={Login} />
+              <Route exact path="/resources" component={Resources} />
               <Route component={NotFound} />
             </Switch>
           </div>
