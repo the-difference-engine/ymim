@@ -1,7 +1,7 @@
 export const fetchEvents = () => {
     return dispatch => {
         let headers = { "Content-Type": "application/json" };
-        return fetch("http://localhost:8000/api/events/", { headers })
+        return fetch(process.env.REACT_APP_EVENTS_ENDPOINT, { headers })
             .then(res => res.json())
             .then(events => {
                 return dispatch({
@@ -12,12 +12,12 @@ export const fetchEvents = () => {
             });
     };
 };
-console.log(process.env.REACT_APP_API_ENDPOINT);
+console.log(process.env);
 export const addEvent = (title, description, start_date, start_time, end_date, end_time, event_image) => {
     return dispatch => {
         let headers = { "Content-Type": "application/json" };
         let body = JSON.stringify({ title, description, start_date, start_time, end_date, end_time, event_image });
-        return fetch("http://localhost:8000/api/events/", {
+        return fetch(process.env.REACT_APP_EVENTS_ENDPOINT, {
             headers,
             method: "POST",
             body
@@ -32,10 +32,10 @@ export const addEvent = (title, description, start_date, start_time, end_date, e
     };
 };
 
-export const updateEvent = (index, text) => {
+export const updateEvent = (index, title, description, start_date, start_time, end_date, end_time, event_image) => {
     return (dispatch, getState) => {
         let headers = { "Content-Type": "application/json" };
-        let body = JSON.stringify({ text });
+        let body = JSON.stringify({ title, description, start_date, start_time, end_date, end_time, event_image });
         let eventId = getState().events[index].id;
 
         return fetch(`/api/events/${eventId}/`, { headers, method: "PUT", body })
@@ -55,7 +55,7 @@ export const deleteEvent = index => {
         let headers = { "Content-Type": "application/json" };
         let eventId = getState().events[index].id;
 
-        return fetch(`http://localhost:8000/api/events/${eventId}/`, { headers, method: "DELETE" }).then(
+        return fetch(process.env.REACT_APP_EVENTS_ENDPOINT + `${eventId}/`, { headers, method: "DELETE" }).then(
             res => {
                 if (res.ok) {
                     return dispatch({

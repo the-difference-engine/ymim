@@ -1,10 +1,12 @@
-.tbody {
+.tbodyy {
     /* border-style: solid;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
     border-width: thin; */
-    border-top: 1px solid grey;
+   
+    border-top: 1px solid red;
+    
     border-width: .5px;
     margin-bottom: 25px;
     padding: 10px;

@@ -36,10 +36,25 @@ class Events extends Component {
         }
     }
 
+    selectForEdit = (id) => {
+        alert("Hello");
+        let event = this.props.events[id];
+        this.setState({
+            title: event.title,
+            description: event.description,
+            start_date: event.start_date,
+            start_time: event.start_time,
+            end_date: event.end_date,
+            end_time: event.end_time,
+            even_image: event.event_image,
+            updateEventId: id
+        });
+    }
+
     render() {
         return (
             <div>
-                <h1 >Current Events</h1>
+                <h1 >What the fuck</h1>
                 <div>
                     {this.props.events.map((event, id) => (
                         <div className='tbody' key={`event_${event.id}`}>
@@ -49,7 +64,7 @@ class Events extends Component {
                             <p>to</p>
                             <p>{event.end_date} {event.end_time}</p>
                             <p>{event.event_image}</p>
-                            <button className="btn btn-info">Edit</button>
+                            <button className="btn btn-info" onClick={() => this.selctForEdit(id)}>Edit</button>
                             <button onClick={() => this.props.deleteEvent(id)} className="btn btn-danger">Delete</button>
                         </div>
                     ))}
@@ -91,8 +106,8 @@ const mapDispatchToProps = dispatch => {
         addEvent: (text, title, description, start_time, end_time, event_image) => {
             return dispatch(events.addEvent(text, title, description, start_time, end_time, event_image));
         },
-        updateEvent: (id, text) => {
-            return dispatch(events.updateEvent(id, text));
+        updateEvent: (id, title, description, start_time, end_time, event_image) => {
+            return dispatch(events.updateEvent(id, title, description, start_time, end_time, event_image));
         },
         deleteEvent: (id) => {
             dispatch(events.deleteEvent(id));

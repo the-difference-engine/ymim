@@ -152,14 +152,9 @@ EMAIL_HOST_PASSWORD = os.getenv("SENDGRID_PASSWORD")
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
-<< << << < HEAD
+
 CORS_ORIGIN_ALLOW_ALL = bool(os.getenv("ALLOW_CORS", True))
 
-| | | | | | | merged common ancestors
-== == == =
-CORS_ORIGIN_ALLOW_ALL = bool(os.getenv("ALLOW_CORS", False))
-
->>>>>> > 4db8123112a0e84a5684b689ae403de306476834
 # Configure Django App for Heroku.
 
 django_heroku.settings(locals())
