@@ -59,6 +59,15 @@ class Header extends Component {
                 Get Involved
               </NavLink>
             </li>
+            <li className="nav-item">
+              <NavLink
+                className="nav-link"
+                to="/resources"
+                activeClassName="nav-link-selected"
+              >
+                Resources
+              </NavLink>
+            </li>
             {AuthAdmin ? (
               <li className="nav-item">
                 <NavLink

@@ -15,6 +15,7 @@ import Enroll from "./components/enroll";
 import Team from "./components/static_pages/team";
 import Ambassadors from "./components/static_pages/ambassadors";
 import Donate from "./components/donation_page";
+import Resources from "./components/resources";
 import Events from "./components/events";
 import Header from "./components/common/header";
 
@@ -38,6 +39,7 @@ const router = (
               <Route exact path="/events" component={Events} />
               <Route exact path="/admin" component={Admin} />
               <Route exact path="/login" component={Login} />
+              <Route exact path="/resources" component={Resources} />
               <Route component={NotFound} />
             </Switch>
           </div>
