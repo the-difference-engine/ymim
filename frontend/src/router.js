@@ -5,19 +5,19 @@ import { createStore, applyMiddleware } from "redux";
 import fetchData from "./reducers";
 import thunk from "redux-thunk";
 import Home from "./components/common/home";
+import Header from "./components/common/header";
 import NotFound from "./components/common/not_found";
-import Login from "./components/common/login";
-import Admin from "./components/admin";
 import Footer from "./components/common/footer";
+import Login from "./components/common/login";
 import Contact from "./components/static_pages/contact";
 import About from "./components/static_pages/about";
+import Admin from "./components/admin";
 import Enroll from "./components/enroll";
 import Team from "./components/static_pages/team";
 import Ambassadors from "./components/static_pages/ambassadors";
 import Donate from "./components/donation_page";
 import Resources from "./components/resources";
 import Events from "./components/events";
-import Header from "./components/common/header";
 
 let store = createStore(fetchData, applyMiddleware(thunk));
 
