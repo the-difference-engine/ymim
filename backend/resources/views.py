@@ -14,4 +14,3 @@ class ResourceRetrieveUpdateDestroy(ViewSetMixin, generics.RetrieveUpdateDestroy
     queryset = Resource.objects.all()
     permission_classes = [permissions.AllowAny]
     serializer_class = ResourceSerializer
-    lookup_field = 'id'
