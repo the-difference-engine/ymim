@@ -1,7 +1,18 @@
 [tool.black]
-line-length = 90
+line-length = 120
 exclude = '''
 /(
-  \.venv
+    \.eggs
+  | \.git
+  | \.hg
+  | \.mypy_cache
+  | \.nox
+  | \.tox
+  | \.venv
+  | venv
+  | _build
+  | buck-out
+  | build
+  | dist
 )/
 '''

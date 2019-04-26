@@ -1,39 +1,40 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
+import React, { Component } from "react";
+import { connect } from "react-redux";
 import { events } from "../../actions";
-import EventForm from './event_form';
+import EventForm from "./event_form";
 
 class Events extends Component {
+  componentDidMount() {
+    this.props.fetchEvents();
+  }
 
-    componentDidMount() {
-        this.props.fetchEvents();
+  state = {
+    text: "",
+    updateEventId: null,
+    title: "",
+    description: ""
+  };
+
+  resetForm = () => {
+    this.setState({ text: "", updateEventId: null });
+  };
+
+  submitEvent = e => {
+    e.preventDefault();
+    if (this.state.updateEventId === null) {
+      this.props.addEvent(this.state.title).then(this.resetForm);
+    } else {
+      this.props
+        .updateEvent(this.state.updateEventId, this.state.text)
+        .then(this.resetForm);
     }
+    alert("You are trying to submit an event");
+  };
 
-    state = {
-        text: "",
-        updateEventId: null,
-        title: "",
-        description: ""
-    }
-
-    resetForm = () => {
-        this.setState({ text: "", updateEventId: null });
-    }
-
-    submitEvent = (e) => {
-        e.preventDefault();
-        if (this.state.updateEventId === null) {
-            this.props.addEvent(this.state.title).then(this.resetForm)
-        } else {
-            this.props.updateEvent(this.state.updateEventId, this.state.text).then(this.resetForm);
-        }
-        alert("You are trying to submit an event");
-    }
-
-    render() {
-        return (
-            <div>
-                {/* <h1 class="entry-title" itemprop="headline">Events</h1>
+  render() {
+    return (
+      <div>
+        {/* <h1 class="entry-title" itemprop="headline">Events</h1>
                 <div class="entry-content" itemprop="text">
                     <p><strong>Chicago / NW Indiana / Wisconsin events</strong></p>
                     <p><span id="more-479"></span></p>
@@ -100,50 +101,49 @@ class Events extends Component {
                     <p>Our 2019-2020 co-hort participant recruitment campaign is now underway.&nbsp;&nbsp;<strong>The YMIM</strong> is seeking&nbsp;<a href="/ambassadors/">volunteer ambassadors</a> to support the cohort.&nbsp;Join our movement to inspire, connect, and empower young adult women orphans, adoptees, and foster youth alumnae. Now and always, your generous contributions are greatly appreciated!</p>
                 </div> */}
 
-                <h3>Current Events</h3>
+        <h3>Current Events</h3>
 
-                <table>
-                    <tbody>
-                        {this.props.events.map((event, id) => (
-                            <tr key={`event_${event.id}`}>
-                                <td>{event.title}</td>
-                                <td>{event.description}</td>
-                                <td>{event.start_time}</td>
-                                <td>to</td>
-                                <td>{event.end_time}</td>
-                                <td>{event.event_image}</td>
-
-                            </tr>
-                        ))}
-                    </tbody>
-                </table>
-                <EventForm
-                    submitEvent={this.submitEvent}
-                    title={this.state.title} />
-            </div>
-        );
-    }
+        <table>
+          <tbody>
+            {this.props.events.map((event, id) => (
+              <tr key={`event_${event.id}`}>
+                <td>{event.title}</td>
+                <td>{event.description}</td>
+                <td>{event.start_time}</td>
+                <td>to</td>
+                <td>{event.end_time}</td>
+                <td>{event.event_image}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+        <EventForm submitEvent={this.submitEvent} title={this.state.title} />
+      </div>
+    );
+  }
 }
 
 const mapStateToProps = state => {
-    return {
-        events: state.events,
-    }
-}
+  return {
+    events: state.events
+  };
+};
 
 const mapDispatchToProps = dispatch => {
-    return {
-        fetchEvents: () => {
-            dispatch(events.fetchEvents());
-        },
-        addEvent: (text, title) => {
-            return dispatch(events.addEvent(text, title));
-        },
-        updateEvent: (id, text) => {
-            return dispatch(events.updateEvent(id, text));
-        }
+  return {
+    fetchEvents: () => {
+      dispatch(events.fetchEvents());
+    },
+    addEvent: (text, title) => {
+      return dispatch(events.addEvent(text, title));
+    },
+    updateEvent: (id, text) => {
+      return dispatch(events.updateEvent(id, text));
     }
-}
+  };
+};
 
-
-export default connect(mapStateToProps, mapDispatchToProps)(Events);
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Events);
