@@ -20,7 +20,10 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = os.getenv("DEBUG", False)
 
-ALLOWED_HOSTS = ["ymim-backend-staging.herokuapp.com", "ymim-backend-production.herokuapp.com"]
+ALLOWED_HOSTS = [
+    "ymim-backend-staging.herokuapp.com",
+    "ymim-backend-production.herokuapp.com",
+]
 
 
 # Application definition
