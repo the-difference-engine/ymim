@@ -1,9 +1,9 @@
-from django.conf.urls import url, include
-from django.views.generic import TemplateView
-
-from resources import endpoints
-
-urlpatterns = [
-    url(r'^api/', include(endpoints)),
-    url(r'^', TemplateView.as_view(template_name="index.html")),
-]
+#Import routers from Restframework
+from rest_framework import routers
+#Import views from current directory
+from . import views
+#Use default router, register listcreate and retrieve update destroy from the views
+router = routers.DefaultRouter()
+router.register("resources", views.ResourceListCreate)
+router.register("resources", views.ResourceRetrieveUpdateDestroy)
+urlpatterns = router.urls
