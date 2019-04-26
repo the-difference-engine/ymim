@@ -9,6 +9,7 @@ black = "==19.3b0"
 faker = "*"
 pprintpp = "*"
 tqdm = "*"
+autopep8 = "*"
 
 [packages]
 Django = "*"
@@ -27,6 +28,7 @@ djangorestframework-simplejwt = "*"
 pillow = "*"
 django-cors-headers = "*"
 django-role-permissions = "*"
+django-rest-swagger = "*"
 
 [requires]
 python_version = "3.7"
