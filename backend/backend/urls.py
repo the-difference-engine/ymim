@@ -13,7 +13,8 @@ urlpatterns = [
     path("auth/", include("djoser.urls.authtoken")),
     path("auth/", include("djoser.urls.jwt")),
     path("schema/", schema_view),
-] 
+
+]
 
 urlpatterns += profiles_urls
 urlpatterns += application_urls

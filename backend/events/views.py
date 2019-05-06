@@ -12,15 +12,22 @@ class EventListCreate(ViewSetMixin, generics.ListCreateAPIView):
     lookup_field = 'id'
 
 
-class EventListDelete(ViewSetMixin, generics.DestroyAPIView):
+class EventRetrieveUpdateDestroy(ViewSetMixin, generics.RetrieveUpdateDestroyAPIView):
     queryset = Event.objects.all()
     permission_classes = [permissions.AllowAny]
     serializer_class = EventSerializer
     lookup_field = 'id'
 
 
-class EventListUpdate(ViewSetMixin, generics.UpdateAPIView):
-    queryset = Event.objects.all()
-    permission_classes = [permissions.AllowAny]
-    serializer_class = EventSerializer
-    lookup_field = 'id'
+# class EventListDelete(ViewSetMixin, generics.DestroyAPIView):
+#     queryset = Event.objects.all()
+#     permission_classes = [permissions.AllowAny]
+#     serializer_class = EventSerializer
+#     lookup_field = 'id'
+
+
+# class EventListUpdate(ViewSetMixin, generics.UpdateAPIView):
+#     queryset = Event.objects.all()
+#     permission_classes = [permissions.AllowAny]
+#     serializer_class = EventSerializer
+#     lookup_field = 'id'

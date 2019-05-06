@@ -1,14 +1,13 @@
-.tbodyy {
+.ebody {
     /* border-style: solid;
     margin: 10px;
     padding: 10px;
     border-radius: 10px;
     border-width: thin; */
-   
-    border-top: 1px solid red;
     
+    border: 2px solid green;
     border-width: .5px;
-    margin-bottom: 25px;
+    margin: 10px;
     padding: 10px;
 }
 

@@ -12,7 +12,7 @@ export const fetchEvents = () => {
             });
     };
 };
-console.log(process.env);
+
 export const addEvent = (title, description, start_date, start_time, end_date, end_time, event_image) => {
     return dispatch => {
         let headers = { "Content-Type": "application/json" };
@@ -37,8 +37,7 @@ export const updateEvent = (index, title, description, start_date, start_time, e
         let headers = { "Content-Type": "application/json" };
         let body = JSON.stringify({ title, description, start_date, start_time, end_date, end_time, event_image });
         let eventId = getState().events[index].id;
-
-        return fetch(`/api/events/${eventId}/`, { headers, method: "PUT", body })
+        return fetch(process.env.REACT_APP_EVENTS_ENDPOINT + `${eventId}/`, { headers, method: "PUT", body })
             .then(res => res.json())
             .then(event => {
                 return dispatch({

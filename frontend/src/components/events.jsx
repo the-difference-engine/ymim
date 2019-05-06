@@ -11,7 +11,6 @@ class Events extends Component {
     }
 
     state = {
-        text: "",
         updateEventId: null,
         title: "",
         description: "",
@@ -25,19 +24,40 @@ class Events extends Component {
 
     resetForm = () => {
         this.setState({ title: "", description: "", start_date: "", start_time: "", end_date: "", end_time: "", event_image: "", updateEventId: null });
+        // this.props.events = [];
+        // this.props.fetchEvents();
+
     }
 
     submitEvent = (e) => {
         e.preventDefault();
         if (this.state.updateEventId === null) {
-            this.props.addEvent(this.state.title, this.state.description, this.state.start_date, this.state.start_time, this.state.end_date, this.state.end_time).then(this.resetForm)
+            this.props.addEvent(
+                this.state.title,
+                this.state.description,
+                this.state.start_date,
+                this.state.start_time,
+                this.state.end_date,
+                this.state.end_time
+            ).then(
+                this.resetForm
+            )
         } else {
-            this.props.updateEvent(this.state.updateEventId, this.state.text).then(this.resetForm);
+            this.props.updateEvent(
+                this.state.updateEventId,
+                this.state.title,
+                this.state.description,
+                this.state.start_date,
+                this.state.start_time,
+                this.state.end_date,
+                this.state.end_time
+            ).then(
+                this.resetForm
+            );
         }
     }
 
     selectForEdit = (id) => {
-        alert("Hello");
         let event = this.props.events[id];
         this.setState({
             title: event.title,
@@ -52,19 +72,20 @@ class Events extends Component {
     }
 
     render() {
+        console.log('updateEventDeubug');
         return (
             <div>
-                <h1 >What the fuck</h1>
-                <div>
+                <h1 >Current Events</h1>
+                <div className='row'>
                     {this.props.events.map((event, id) => (
-                        <div className='tbody' key={`event_${event.id}`}>
+                        <div className='ebody col-md-3' key={`event_${event.id}`}>
                             <h3>{event.title}</h3>
                             <p>{event.description}</p>
                             <p>{event.start_date} {event.start_time}</p>
                             <p>to</p>
                             <p>{event.end_date} {event.end_time}</p>
                             <p>{event.event_image}</p>
-                            <button className="btn btn-info" onClick={() => this.selctForEdit(id)}>Edit</button>
+                            <button className="btn btn-info" onClick={() => this.selectForEdit(id)}>Edit</button>
                             <button onClick={() => this.props.deleteEvent(id)} className="btn btn-danger">Delete</button>
                         </div>
                     ))}
@@ -101,13 +122,14 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         fetchEvents: () => {
+            console.log('fetching events');
             dispatch(events.fetchEvents());
         },
-        addEvent: (text, title, description, start_time, end_time, event_image) => {
-            return dispatch(events.addEvent(text, title, description, start_time, end_time, event_image));
+        addEvent: (title, description, start_date, start_time, end_date, end_time, event_image) => {
+            return dispatch(events.addEvent(title, description, start_date, start_time, end_date, end_time, event_image));
         },
-        updateEvent: (id, title, description, start_time, end_time, event_image) => {
-            return dispatch(events.updateEvent(id, title, description, start_time, end_time, event_image));
+        updateEvent: (id, title, description, start_date, start_time, end_date, end_time, event_image) => {
+            return dispatch(events.updateEvent(id, title, description, start_date, start_time, end_date, end_time, event_image));
         },
         deleteEvent: (id) => {
             dispatch(events.deleteEvent(id));

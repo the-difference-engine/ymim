@@ -4,6 +4,5 @@ from . import views
 
 router = routers.DefaultRouter()
 router.register("events", views.EventListCreate)
-router.register("events", views.EventListDelete)
-router.register("events", views.EventListUpdate)
+router.register("events", views.EventRetrieveUpdateDestroy)
 urlpatterns = router.urls
