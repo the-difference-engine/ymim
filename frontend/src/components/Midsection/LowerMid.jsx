@@ -6,7 +6,7 @@ class LowerrMid extends Component {
     render() {
         return (
             <div className="lowermid">
-                <h1 className="text-center">Who Are We?</h1>
+                <h1 className="text-center">What's New?</h1>
                 <p>Become a Young Masterbuilders in Motion (YMIM) scholar and enroll as a partcipant.
                 The YMIM empowers young women orphans, adoptees, and foster youth alumnae, ages 18 to 30, to build resiliency, hope, and a bright future.</p>
                 <div className="text-center"><button className='text-center' id="enroll">Enroll</button></div>
