@@ -3,21 +3,18 @@ import { NavLink } from 'react-router-dom';
 import { Navbar } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
+import logo from '../Assets/logo.png';
+import './logo.css';
 
 class NavTop extends Component {
 	render() {
 		return (
 			<div className="row">
-				<Navbar expand="lg">
+				<Navbar>
 					<Navbar.Brand href="/">
-						<img src="" width="60" height="60" className="" alt="YMIM" />
+						<img className="logo" src={logo} alt="YMIM" />
 					</Navbar.Brand>
 					<ul className="nav-links">
-						<li className="nav-item">
-							<NavLink className="nav-link" to="/" activeClassName="nav-link-selected">
-								Home
-							</NavLink>
-						</li>
 						<li className="nav-item">
 							<NavLink className="nav-link" to="/about" activeClassName="nav-link-selected">
 								About
