@@ -32,5 +32,24 @@
 }
 
 .card-header {
+<<<<<<< HEAD
 	padding: 0.75rem 2.25rem !important;
+=======
+  padding: 0.75rem 2.25rem !important;
+}
+.facebook {
+  color: #3C579D;
+  margin-right: 25px;
+}
+.insta {
+  background-image: linear-gradient(to left bottom, #f9ed32, #ffc726, #ffa135, #ff7b4a, #ff585e, #fc3e6d, #f42280, #e50094
+, #d600ab, #bc00c5, #8e00e2, #002aff);
+  color: white;
+  border-radius: 5px;
+  padding: 2px;
+}
+.twitter {
+  color:#52A7E7;
+  margin-left: 25px;
+>>>>>>> 5100f719da852666b65672ddb244e1c95256e59d
 }
