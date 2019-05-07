@@ -7,7 +7,7 @@ import "./home.css";
 class Home extends Component {
   render() {
     return (
-      <div className="Home container">
+      <div className="Home">
         <h1>YMIM</h1>
         <CarouselComponent />
         <UpperMid />

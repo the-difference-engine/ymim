@@ -16,3 +16,27 @@
 .lowermid{
     background-color: #eeeaea;
 }
+
+.up-text {
+    font-size: 15pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+}
+
+.ym-button {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.small-container {
+    max-width: 450px;
+}
+
+@media only screen and (min-width: 1210px) {
+    .up-text {
+      
+      margin-left: 75px;
+      margin-right: 75px;
+    }
+  }
+
