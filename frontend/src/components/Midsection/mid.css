@@ -1,0 +1,18 @@
+#enroll {
+    background-color:#FDD368;
+    border-radius: 2px;
+    width: 140px;
+    height: 54px;
+    text-align: center;
+    margin: 35px;
+}
+
+.bottom-text {
+    font-size: 10px;
+    text-align: center;
+    color: #697689;
+}
+
+.lowermid{
+    background-color: #eeeaea;
+}
