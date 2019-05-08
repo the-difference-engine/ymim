@@ -2,8 +2,26 @@
   margin-top: auto;
   bottom: 0;
   height: 100px;
+  background-color: #519b46;
 }
 
 .footer_link {
   display: inline-block !important;
+}
+
+.menu-text {
+  color: white;
+}
+
+.foot_text {
+  color: white;
+  text-decoration: none;
+}
+li {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+nav {
+  text-decoration: none;
 }

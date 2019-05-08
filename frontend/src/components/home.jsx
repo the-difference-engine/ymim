@@ -8,7 +8,6 @@ class Home extends Component {
   render() {
     return (
       <div className="Home">
-        <h1>YMIM</h1>
         <CarouselComponent />
         <UpperMid />
         <LowerMid />

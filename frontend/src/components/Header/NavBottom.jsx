@@ -5,8 +5,8 @@ import { NavDropdown, Button } from 'react-bootstrap';
 class NavBottom extends Component {
 	render() {
 		return (
-			<div className="row">
-				<nav>
+			<div className="">
+				<nav className="ym-bottom navbar navbar-expand">
 					<ul className="nav-links">
 						<li className="nav-item">
 							<NavDropdown className="nav-link" to="/resources" title="Youth Resources" id="nav-dropdown">

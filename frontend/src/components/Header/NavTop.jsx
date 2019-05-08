@@ -7,8 +7,9 @@ import { faFacebookSquare, faInstagram, faTwitterSquare } from '@fortawesome/fre
 class NavTop extends Component {
 	render() {
 		return (
-			<div className="row">
-				<Navbar expand="lg">
+			<div>
+				<nav className="navbar navbar-expand">
+
 					<Navbar.Brand href="/">
 						<img src="" width="60" height="60" className="" alt="YMIM" />
 					</Navbar.Brand>
@@ -45,12 +46,14 @@ class NavTop extends Component {
 							<a href="https://www.instagram.com/theyoungmasterbuilders" >
 
 								<FontAwesomeIcon className="twitter" icon={faTwitterSquare} size="2x" />
-								</a>
+							</a>
 						</li>
 					</ul>
-				</Navbar>
+
+				</nav>
 			</div>
 		);
-	} }
+	}
+}
 
 export default NavTop;
