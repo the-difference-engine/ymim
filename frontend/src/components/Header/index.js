@@ -6,7 +6,7 @@ import NavBottom from './NavBottom';
 class header extends Component {
 	render() {
 		return (
-			<div className="container">
+			<div>
 				<NavTop />
 				<NavBottom />
 			</div>

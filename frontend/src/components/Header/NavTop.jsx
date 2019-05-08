@@ -9,8 +9,8 @@ import './logo.css';
 class NavTop extends Component {
 	render() {
 		return (
-			<div className="row">
-				<Navbar>
+			<div>
+				<nav className="navbar navbar-expand">
 					<Navbar.Brand href="/">
 						<img className="logo" src={logo} alt="YMIM" />
 					</Navbar.Brand>
@@ -43,7 +43,7 @@ class NavTop extends Component {
 							</a>
 						</li>
 					</ul>
-				</Navbar>
+				</nav>
 			</div>
 		);
 	}

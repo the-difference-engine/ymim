@@ -15,20 +15,24 @@
 	margin: 0;
 }
 
+.nav-linkb {
+	padding: 20px;
+	color: black;
+	height: 100%;
+}
+
 .nav-link {
 	padding: 20px;
-	color: hsl(101, 43%, 42%);
+	color: white;
 	height: 100%;
 }
 
 .nav-link:hover {
-	background: hsl(95, 60%, 56%);
 	color: white;
 }
 
 .nav-link-selected {
-	background: hsl(101, 43%, 42%);
-	color: white;
+	color: green;
 }
 
 .card-header {
@@ -63,4 +67,8 @@
 	margin-left: 25px;
 	color: #52a7e7;
 	margin-left: 25px;
+}
+
+.ym-bottom {
+	background-color: #519b56;
 }
