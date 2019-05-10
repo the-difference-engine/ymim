@@ -1,49 +1,49 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Navbar } from 'react-bootstrap';
+import { Nav, Navbar } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookSquare, faInstagram, faTwitterSquare } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookSquare, faInstagram, faTwitterSquare, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import logo from '../Assets/logo.png';
-import './logo.css';
+import './Header.css';
 
 class NavTop extends Component {
 	render() {
 		return (
 			<div>
-				<nav className="navbar navbar-expand">
+				<Nav className="ym-top justify-content-center">
 					<Navbar.Brand href="/">
 						<img className="logo" src={logo} alt="YMIM" />
 					</Navbar.Brand>
 					<ul className="nav-links">
 						<li className="nav-item">
-							<NavLink className="nav-link" to="/about" activeClassName="nav-link-selected">
+							<NavLink className="nav-link-top" to="/about" activeClassName="nav-link-selected">
 								About
 							</NavLink>
 						</li>
 						<li className="nav-item">
-							<NavLink className="nav-link" to="/contact-us" activeClassName="nav-link-selected">
+							<NavLink className="nav-link-top" to="/contact-us" activeClassName="nav-link-selected">
 								Contact
 							</NavLink>
 						</li>
 						<li className="nav-item">
-							<NavLink className="nav-link" to="/events" activeClassName="nav-link-selected">
+							<NavLink className="nav-link-top" to="/events" activeClassName="nav-link-selected">
 								Events
 							</NavLink>
 						</li>
 						<li className="col footer_link">
 							<a href="https://www.facebook.com/theymim/">
-								<FontAwesomeIcon className="facebook" icon={faFacebookSquare} size="2x" />
+								<FontAwesomeIcon className="facebook" icon={faFacebookSquare} />
 							</a>
 
 							<a href="https://www.instagram.com/theyoungmasterbuilders">
-								<FontAwesomeIcon className="insta" icon={faInstagram} size="2x" />
+								<FontAwesomeIcon className="insta" icon={faInstagram} />
 							</a>
 							<a href="https://www.instagram.com/theyoungmasterbuilders">
-								<FontAwesomeIcon className="twitter" icon={faTwitterSquare} size="2x" />
+								<FontAwesomeIcon className="twitter" icon={faTwitter} />
 							</a>
 						</li>
 					</ul>
-				</nav>
+				</Nav>
 			</div>
 		);
 	}
