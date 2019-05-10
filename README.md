@@ -49,11 +49,7 @@ I'm going to be very blunt: this will be much, much easier on a Mac or Linux sys
 - Install [Docker Toolbox for Windows](https://docs.docker.com/toolbox/overview/)
 
 ## Developing On The App
-When you first clone the repo, you will have blank `.env` files in both the `backend/` and `frontend/` directories. Before you put any information into them, you need to run this command:
-
-    git update-index --assume-unchanged */.env
-
-After you run that, you will need to populate the `.env` files. Currently, we only require variables on the backend. Here are the variables you will need to run the application:
+When you first clone the repo, you will have blank `.env` files in both the `backend/` and `frontend/` directories. You will need to populate these to make the applications work correctly. Currently, we only require variables on the backend. Here are the variables you will need to run the application:
 
     SECRET_KEY=<SECRET_KEY>
     DEBUG=True
