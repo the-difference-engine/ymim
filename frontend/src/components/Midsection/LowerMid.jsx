@@ -17,11 +17,11 @@ class LowerrMid extends Component {
                         Young Masetbuilders in Motion is working to reverse the impat of poverty by letting our teen girls
                         and young adule women who have experienced foster care know that we care. We know it's an urgent situation.
                     We need your support! Won't you join us?</p>
-                        <h4>RSVP and Find out More:</h4>
+                        <h5>RSVP and Find out More:</h5>
 
-                        <h4>Eventbright:</h4>
+                        <h5>Eventbright:</h5>
                         <a href="#">https://www.eventbrite.com/ymim</a>
-                        <h4>Facebook:</h4>
+                        <h5>Facebook:</h5>
                         <a href="#">https://www.facebook.com/pg/theymim.events</a>
                         <br />
                         <br />
