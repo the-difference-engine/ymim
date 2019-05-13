@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { NavDropdown, Button } from 'react-bootstrap';
+import { Nav, NavDropdown } from 'react-bootstrap';
 
 class NavBottom extends Component {
 	render() {
 		return (
-			<div className="">
-				<nav className="ym-bottom navbar navbar-expand">
+			<div>
+				<Nav className="ym-bottom navbar navbar-expand justify-content-center">
 					<ul className="nav-links">
 						<li className="nav-item">
 							<NavDropdown className="nav-link" to="/resources" title="Youth Resources" id="nav-dropdown">
@@ -34,11 +34,11 @@ class NavBottom extends Component {
 						</li>
 						<li>
 							<NavLink className="nav-link" to="/donate" activeClassName="nav-link-selected">
-								<Button variant="secondary"> Donate </Button>
+								<button className="donate-button text-center"> Donate </button>
 							</NavLink>
 						</li>
 					</ul>
-				</nav>
+				</Nav>
 			</div>
 		);
 	}
