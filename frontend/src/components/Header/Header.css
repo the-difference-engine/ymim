@@ -58,7 +58,7 @@
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	position: absolute;
+	/* position: absolute; */
 	top: 25px;
 	left: 24px;
 	z-index: 50;

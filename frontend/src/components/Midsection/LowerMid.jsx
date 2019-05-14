@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import "./mid.css";
 
+const linkStyle = {
+    color: 'green'
+};
 
 class LowerrMid extends Component {
     render() {
@@ -20,9 +23,9 @@ class LowerrMid extends Component {
                         <h5>RSVP and Find out More:</h5>
 
                         <h5>Eventbright:</h5>
-                        <a href="#">https://www.eventbrite.com/ymim</a>
+                        <a style={linkStyle} href="#">https://www.eventbrite.com/ymim</a>
                         <h5>Facebook:</h5>
-                        <a href="#">https://www.facebook.com/pg/theymim.events</a>
+                        <a style={linkStyle} href="#">https://www.facebook.com/pg/theymim.events</a>
                         <br />
                         <br />
                     </div>
