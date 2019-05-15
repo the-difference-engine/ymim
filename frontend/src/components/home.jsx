@@ -3,6 +3,7 @@ import CarouselComponent from './carousel'
 import UpperMid from './Midsection/UpperMid'
 import LowerMid from './Midsection/LowerMid'
 import "./home.css";
+import TopFooter from "./TopFooter";
 
 class Home extends Component {
   render() {
@@ -11,6 +12,8 @@ class Home extends Component {
         <CarouselComponent />
         <UpperMid />
         <LowerMid />
+        <TopFooter />
+
       </div>
     );
   }
