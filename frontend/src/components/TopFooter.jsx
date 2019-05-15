@@ -10,19 +10,29 @@ export default class TopFooter extends Component {
     render() {
         return (
             <div>
-                <Container>
-                    <div className="container-fluid">
-                        <Row>
-                            <Col className="box" lg="2" sm="12" xs="12">
+                <Container className="mb-5">
+                    <Row className="justify-content-md-center">
+                        <h2 className="foot_head">Inspiring</h2>
+                        <h2 className="foot_head">Connecting</h2>
+                        <h2 className="foot_head">Empowering</h2>
+                    </Row>
+                    <Row className="justify-content-md-center">
+                        <div className="pic-container">
+                            <img className="pic" src="https://apothekergroup.com/wp-content/uploads/2018/09/placeholder.png" />
+                        </div>
 
-                                <img class="pic" src="https://apothekergroup.com/wp-content/uploads/2018/09/placeholder.png" />
+                        <div className="pic-container">
+                            <img className="pic" src="https://apothekergroup.com/wp-content/uploads/2018/09/placeholder.png" />
+                        </div>
 
-                            </Col>
-                            <Col className="box" lg="2" sm="12" xs="12"></Col>
-                            <Col className="box" lg="2" sm="12" xs="12"></Col>
-                            <Col className="box" lg="2" sm="12" xs="12"></Col>
-                        </Row>
-                    </div>
+                        <div className="pic-container">
+                            <img className="pic" src="https://res.cloudinary.com/dyaffqyuj/image/upload/v1557954804/YMIM/6a00d83451b26169e201a5118cd1e9970c-800wi.jpg" />
+                        </div>
+
+                        <div className="pic-container">
+                            <img className="pic" src="https://apothekergroup.com/wp-content/uploads/2018/09/placeholder.png" />
+                        </div>
+                    </Row>
                 </Container>
             </div>
         )

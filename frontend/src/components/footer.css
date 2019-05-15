@@ -39,3 +39,34 @@ nav {
   
   
 }
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.pic-container {
+  background: pink;
+  min-width: 200px;
+  height: 150px;
+  border-radius: 30px;
+  margin: 20px;
+  overflow: hidden;
+  transform: skew(20deg);
+  display: flex;
+  align-items: center;
+}
+
+.pic {
+  width: 135%;
+  position: absolute;
+  left: -35px;
+  transform: skewX(-20deg);
+  object-fit: cover;
+}
+
+.foot_head {
+  display: inline;
+  margin: 20px;
+
+}
