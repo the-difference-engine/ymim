@@ -1,4 +1,3 @@
-import django_heroku
 import os
 
 import dotenv
@@ -158,3 +157,5 @@ CORS_ORIGIN_ALLOW_ALL = bool(os.getenv("ALLOW_CORS", True))
 # Configure Django App for Heroku.
 
 django_heroku.settings(locals())
+import django_heroku
+
