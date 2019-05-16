@@ -22,10 +22,16 @@ class Events extends Component {
     }
 
     resetForm = () => {
-        this.setState({ title: "", description: "", start_date: "", start_time: "", end_date: "", end_time: "", event_image: "", updateEventId: null });
-        // this.props.events = [];
-        // this.props.fetchEvents();
-
+        this.setState({
+            title: "",
+            description: "",
+            start_date: "",
+            start_time: "",
+            end_date: "",
+            end_time: "",
+            event_image: "",
+            updateEventId: null
+        });
     }
 
     submitEvent = (e) => {
