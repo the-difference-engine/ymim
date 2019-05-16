@@ -77,7 +77,6 @@ class Events extends Component {
     }
 
     render() {
-        console.log('updateEventDeubug');
         return (
             <div>
                 <h1 >Current Events</h1>
