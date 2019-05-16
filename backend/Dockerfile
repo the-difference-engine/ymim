@@ -1,9 +1,9 @@
-FROM python:3.7
+FROM python:3.7.3-slim-stretch
 
 ENV PYTHONUNBUFFERED 1
 
 RUN apt-get update -y && \
-    apt-get install -y postgresql postgresql-contrib && \
+    apt-get install -y --no-install-recommends postgresql postgresql-contrib && \
     apt-get clean
 
 RUN mkdir /code
