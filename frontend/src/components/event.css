@@ -1,8 +1,9 @@
-.ebody {
+.event_container {
     border: 2px solid green;
     border-width: .5px;
     margin: 10px;
     padding: 10px;
+    border-radius: 10px;
 }
 
 tr {

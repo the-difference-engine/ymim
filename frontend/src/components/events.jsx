@@ -78,7 +78,7 @@ class Events extends Component {
                 <h1 >Current Events</h1>
                 <div className='row'>
                     {this.props.events.map((event, id) => (
-                        <div className='ebody col-md-3' key={`event_${event.id}`}>
+                        <div className='event_container col-md-3' key={`event_${event.id}`}>
                             <h3>{event.title}</h3>
                             <p>{event.description}</p>
                             <p>{event.start_date} {event.start_time}</p>
