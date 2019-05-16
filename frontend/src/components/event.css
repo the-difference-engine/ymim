@@ -1,10 +1,4 @@
 .ebody {
-    /* border-style: solid;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px;
-    border-width: thin; */
-    
     border: 2px solid green;
     border-width: .5px;
     margin: 10px;
