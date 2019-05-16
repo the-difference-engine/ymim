@@ -126,7 +126,6 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
     return {
         fetchEvents: () => {
-            console.log('fetching events');
             dispatch(events.fetchEvents());
         },
         addEvent: (title, description, start_date, start_time, end_date, end_time, event_image) => {
