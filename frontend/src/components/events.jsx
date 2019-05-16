@@ -19,7 +19,6 @@ class Events extends Component {
         end_date: "",
         end_time: "",
         event_image: null
-
     }
 
     resetForm = () => {
