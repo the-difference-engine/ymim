@@ -6,8 +6,8 @@ import './event.css';
 
 let eventObject = {
     updateEventId: null,
-    title: "",
-    description: "cvvdf",
+    title: "boo boo",
+    description: "",
     start_date: "",
     start_time: "",
     end_date: "",
@@ -42,7 +42,7 @@ class Events extends Component {
 
     resetForm = () => {
         this.setState({
-            title: "",
+            title: '',
             description: "",
             start_date: "",
             start_time: "",
