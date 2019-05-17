@@ -4,7 +4,25 @@ import { events } from "../actions";
 import EventForm from '../components/EventForm';
 import './event.css';
 
+let eventObject = {
+    updateEventId: null,
+    title: "",
+    description: "cvvdf",
+    start_date: "",
+    start_time: "",
+    end_date: "",
+    end_time: "",
+    event_image: null
+}
+
 class Events extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            event: eventObject
+        }
+        console.log(this.state.event);
+    }
 
     componentDidMount() {
         this.props.fetchEvents();
@@ -19,6 +37,7 @@ class Events extends Component {
         end_date: "",
         end_time: "",
         event_image: null
+
     }
 
     resetForm = () => {
