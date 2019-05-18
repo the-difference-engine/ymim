@@ -1,50 +1,53 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Nav, Navbar } from 'react-bootstrap';
+import { Nav, Navbar, NavDropdown, Container, Row, Col, NavbarBrand } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faInstagram, faTwitterSquare, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import logo from '../Assets/logo.png';
 import './Header.css';
-
 class NavTop extends Component {
 	render() {
+		{
+			/*Things to work on
+		hide logo and show small navbar on smal screens?
+		collapsed navba styling and z-index
+		move social media on small screens
+		style silver circle under logo*/
+		}
 		return (
-			<div>
-				<Nav className="ym-top justify-content-center">
-					<Navbar.Brand href="/">
+			<Container fluid={true}>
+				<Navbar collapseOnSelect expand="lg" className="ym-top">
+					<Navbar.Brand className="mx-auto my-auto pt-4" href="/">
 						<img className="logo" src={logo} alt="YMIM" />
 					</Navbar.Brand>
-					<ul className="nav-links">
-						<li className="nav-item">
-							<NavLink className="nav-link-top" to="/about" activeClassName="nav-link-selected">
+					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
+					<Navbar.Collapse id="responsive-navbar-nav">
+						<Nav className="mx-auto">
+							<NavLink className="nav-link-top" to="/about">
 								About
 							</NavLink>
-						</li>
-						<li className="nav-item">
-							<NavLink className="nav-link-top" to="/contact-us" activeClassName="nav-link-selected">
+							<NavLink className="nav-link-top" to="/contact-us">
 								Contact
 							</NavLink>
-						</li>
-						<li className="nav-item">
-							<NavLink className="nav-link-top" to="/events" activeClassName="nav-link-selected">
+							<NavLink className="nav-link-top" to="/events">
 								Events
 							</NavLink>
-						</li>
-						<li className="col footer_link">
-							<a href="https://www.facebook.com/theymim/">
+						</Nav>
+						<Nav>
+							<NavLink href="https://www.facebook.com/theymim/">
 								<FontAwesomeIcon className="facebook" icon={faFacebookSquare} />
-							</a>
+							</NavLink>
 
-							<a href="https://www.instagram.com/theyoungmasterbuilders">
+							<NavLink href="https://www.instagram.com/theyoungmasterbuilders">
 								<FontAwesomeIcon className="insta" icon={faInstagram} />
-							</a>
-							<a href="https://www.instagram.com/theyoungmasterbuilders">
+							</NavLink>
+							<NavLink href="https://www.instagram.com/theyoungmasterbuilders">
 								<FontAwesomeIcon className="twitter" icon={faTwitter} />
-							</a>
-						</li>
-					</ul>
-				</Nav>
-			</div>
+							</NavLink>
+						</Nav>
+					</Navbar.Collapse>
+				</Navbar>
+			</Container>
 		);
 	}
 }
