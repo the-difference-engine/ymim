@@ -1,19 +1,12 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Nav, Navbar, NavDropdown, Container, Row, Col, NavbarBrand } from 'react-bootstrap';
+import { Nav, Navbar, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookSquare, faInstagram, faTwitterSquare, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { faFacebookSquare, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import logo from '../Assets/logo.png';
 import './Header.css';
 class NavTop extends Component {
 	render() {
-		{
-			/*Things to work on
-		hide logo and show small navbar on smal screens?
-		collapsed navba styling and z-index
-		move social media on small screens
-		style silver circle under logo*/
-		}
 		return (
 			<Container fluid={true}>
 				<Navbar collapseOnSelect expand="lg" className="ym-top">
