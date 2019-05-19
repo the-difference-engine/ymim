@@ -4,6 +4,11 @@ import { Nav, Navbar, NavDropdown, Container } from 'react-bootstrap';
 
 class NavBottom extends Component {
 	render() {
+		{
+			/*make simple Component to hide neavbar when mobile?
+			style dropdowns, add relevant links & route them
+			logo touches navbar when scrren size @1024px*/
+		}
 		return (
 			<Container className="px-0" fluid={true}>
 				<Navbar collapseOnSelect expand="lg" className="ym-bottom">

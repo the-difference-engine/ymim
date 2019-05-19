@@ -7,6 +7,13 @@ import logo from '../Assets/logo.png';
 import './Header.css';
 class NavTop extends Component {
 	render() {
+		{
+			/*Things to work on
+		hide logo and show small navbar on smal screens?
+		collapsed navba styling and z-index
+		move social media on small screens
+		style silver circle under logo*/
+		}
 		return (
 			<Container fluid={true}>
 				<Navbar collapseOnSelect expand="lg" className="ym-top">
