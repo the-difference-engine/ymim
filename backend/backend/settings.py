@@ -49,7 +49,7 @@ INSTALLED_APPS = [
     "applications",
     "profiles",
     "events",
-    "resources"
+    "resources",
 ]
 
 MIDDLEWARE = [
