@@ -4,6 +4,7 @@ from rest_framework_swagger.views import get_swagger_view
 from applications.urls import urlpatterns as application_urls
 from events.urls import urlpatterns as event_urls
 from profiles.urls import urlpatterns as profiles_urls
+from resources.urls import urlpatterns as resources_urls
 
 
 schema_view = get_swagger_view(title="YMIM API")
@@ -18,3 +19,4 @@ urlpatterns = [
 urlpatterns += profiles_urls
 urlpatterns += application_urls
 urlpatterns += event_urls
+urlpatterns += resources_urls

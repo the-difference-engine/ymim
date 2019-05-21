@@ -7,7 +7,7 @@
 List general components of the application that this PR will affect: 
 * 
 
-PR hecklist
+PR checklist
 - [ ] I included  a screenshot for FE changes
 - [ ] I have linked the PR to a Zenhub ticket
 - [ ] I have checked for merge conflicts
