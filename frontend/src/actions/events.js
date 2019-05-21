@@ -1,7 +1,7 @@
 export const fetchEvents = () => {
   return dispatch => {
     let headers = { "Content-Type": "application/json" };
-    return fetch("http://localhost:8000/api/events/", { headers })
+    return fetch(process.env.REACT_APP_EVENTS_ENDPOINT, { headers })
       .then(res => res.json())
       .then(events => {
         return dispatch({
@@ -12,11 +12,27 @@ export const fetchEvents = () => {
   };
 };
 
-export const addEvent = (text, title) => {
+export const addEvent = (
+  title,
+  description,
+  start_date,
+  start_time,
+  end_date,
+  end_time,
+  event_image
+) => {
   return dispatch => {
     let headers = { "Content-Type": "application/json" };
-    let body = JSON.stringify({ text, title });
-    return fetch("http://localhost:8000/api/events/", {
+    let body = JSON.stringify({
+      title,
+      description,
+      start_date,
+      start_time,
+      end_date,
+      end_time,
+      event_image
+    });
+    return fetch(process.env.REACT_APP_EVENTS_ENDPOINT, {
       headers,
       method: "POST",
       body
@@ -31,13 +47,33 @@ export const addEvent = (text, title) => {
   };
 };
 
-export const updateEvent = (index, text) => {
+export const updateEvent = (
+  index,
+  title,
+  description,
+  start_date,
+  start_time,
+  end_date,
+  end_time,
+  event_image
+) => {
   return (dispatch, getState) => {
     let headers = { "Content-Type": "application/json" };
-    let body = JSON.stringify({ text });
+    let body = JSON.stringify({
+      title,
+      description,
+      start_date,
+      start_time,
+      end_date,
+      end_time,
+      event_image
+    });
     let eventId = getState().events[index].id;
-
-    return fetch(`/api/events/${eventId}/`, { headers, method: "PUT", body })
+    return fetch(process.env.REACT_APP_EVENTS_ENDPOINT + `${eventId}/`, {
+      headers,
+      method: "PUT",
+      body
+    })
       .then(res => res.json())
       .then(event => {
         return dispatch({
@@ -54,15 +90,16 @@ export const deleteEvent = index => {
     let headers = { "Content-Type": "application/json" };
     let eventId = getState().events[index].id;
 
-    return fetch(`/api/events/${eventId}/`, { headers, method: "DELETE" }).then(
-      res => {
-        if (res.ok) {
-          return dispatch({
-            type: "DELETE_EVENT",
-            index
-          });
-        }
+    return fetch(process.env.REACT_APP_EVENTS_ENDPOINT + `${eventId}/`, {
+      headers,
+      method: "DELETE"
+    }).then(res => {
+      if (res.ok) {
+        return dispatch({
+          type: "DELETE_EVENT",
+          index
+        });
       }
-    );
+    });
   };
 };

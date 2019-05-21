@@ -24,10 +24,10 @@ let store = createStore(fetchData, applyMiddleware(thunk));
 const router = (
   <Provider store={store}>
     <Router>
-      <div className="site container-fluid">
+      <div className="site ">
         <div className="site-content">
           <Header />
-          <div className="container">
+          <div>
             <Switch>
               <Route exact path="/" component={Home} />
               <Route exact path="/donate" component={Donate} />
