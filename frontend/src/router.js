@@ -4,7 +4,7 @@ import { Provider } from "react-redux";
 import { createStore, applyMiddleware } from "redux";
 import fetchData from "./reducers";
 import thunk from "redux-thunk";
-import Home from "./components/common/home";
+import Home from "./components/home";
 import Header from "./components/common/header";
 import NotFound from "./components/common/not_found";
 import Footer from "./components/common/footer";

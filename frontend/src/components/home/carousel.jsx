@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Carousel } from "react-bootstrap";
-import ymim1 from "../../../assets/ymim1.png";
-import ymim2 from "../../../assets/ymim2.png";
-import ymim3 from "../../../assets/ymim3.png";
+import ymim1 from "../../assets/ymim1.png";
+import ymim2 from "../../assets/ymim2.png";
+import ymim3 from "../../assets/ymim3.png";
 
 class CarouselComponent extends Component {
   render() {
