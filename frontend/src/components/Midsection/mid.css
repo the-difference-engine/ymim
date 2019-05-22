@@ -1,7 +1,5 @@
-
-
 .bottom-text {
-    font-size: 10px;
+    font-size: 10pt;
     text-align: center;
     color: #697689;
 }
@@ -38,5 +36,28 @@
       margin-left: 75px;
       margin-right: 75px;
     }
-  }
+  } 
 
+.heading {
+    font-size: 36pt;
+    font-family: 'Montserrat Medium', sans-serif;
+    padding-bottom: 5px;
+}
+
+.lineParagraph {
+    font-size: 24pt;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.subheading {
+    font-size: 24pt;
+    font-family: 'Montserrat Medium', sans-serif;
+    padding-bottom: 15px;
+}
+
+
+.spaceanchors{
+    font-size:24pt;
+    margin-bottom:10px !important;
+    color:#519B46;
+}
