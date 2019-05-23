@@ -7,11 +7,11 @@ class UpperMid extends Component {
         return (
             <div>
                 <div className="container">
-                    <h2 className="text-center">Who Are We?</h2>
+                    <h2 className="text-center heading">Who Are We?</h2>
 
 
                     <div>
-                        <p>Become a Young Masterbuilders in Motion (YMIM) scholar and enroll as a partcipant.
+                        <p className="paragraph">Become a Young Masterbuilders in Motion (YMIM) scholar and enroll as a partcipant.
                 The YMIM empowers young women orphans, adoptees, and foster youth alumnae, ages 18 to 30, to build resiliency, hope, and a bright future.</p>
                     </div>
 
