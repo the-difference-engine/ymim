@@ -49,10 +49,29 @@ code {
 
 .carousel-caption {
   position: absolute;
-  right: 0%;
-  left: 0;
+  right: 0 !important;
+  left: 0 !important;
   z-index: 10;
   color: #fff;
   text-align: center;
 }
 
+.carousel-indicators {
+  position: relative !important;
+  right: 0;
+  bottom: 0;
+}
+
+.paragraph-carousel {
+  font-size: 36pt;
+  font-family: 'Montserrat';
+  text-align: left;
+  color: #fff;
+}
+
+.title-carousel {
+  font-size: 48pt;
+  font-family: 'Montserrat';
+  text-align: left;
+  color: #fff;
+}

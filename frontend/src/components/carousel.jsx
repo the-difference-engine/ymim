@@ -17,12 +17,12 @@ class CarouselComponent extends Component {
               />
               <Carousel.Caption>
                 <div class="overlay">
-                <h3>First slide label</h3>
-                <p>Hello world</p>
+                <h3 className="title-carousel">Young Masterbuilder in Motion</h3>
+                <p className="paragraph-carousel">inspires, connects, and empowers young women orphans, adoptees, and foster youth alumnae to thrive.</p>
                 </div>
               </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            {/* <Carousel.Item>
               <img
                 className="d-block w-100"
                 src={ymim2}
@@ -49,7 +49,7 @@ class CarouselComponent extends Component {
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                 </div>
               </Carousel.Caption>
-            </Carousel.Item>
+            </Carousel.Item> */}
           </Carousel>
         );
     }
