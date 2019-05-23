@@ -1,17 +1,20 @@
-import React, { Component } from "react";
-import CarouselComponent from './carousel'
-
-import "./home.css";
+import React, { Component } from 'react';
+import CarouselComponent from './carousel';
+import Upper from './Midsection/Upper';
+import Lower from './Midsection/Lower';
+import './home.css';
+import { Container } from 'react-bootstrap';
 
 class Home extends Component {
-  render() {
-    return (
-      <div className="Home container">
-        <h1>YMIM</h1>
-        <CarouselComponent />
-      </div>
-    );
-  }
+	render() {
+		return (
+			<Container fluid={true}>
+				<CarouselComponent />
+				<Upper />
+				<Lower />
+			</Container>
+		);
+	}
 }
 
 export default Home;
