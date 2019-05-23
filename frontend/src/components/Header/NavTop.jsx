@@ -26,7 +26,7 @@ class NavTop extends Component {
 								Events
 							</NavLink>
 						</Nav>
-						<Nav>
+						<Nav className="pt-4">
 							<NavLink href="https://www.facebook.com/theymim/">
 								<FontAwesomeIcon className="facebook" icon={faFacebookSquare} />
 							</NavLink>

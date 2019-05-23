@@ -1,8 +1,4 @@
 .header-container {
-	display: flex;
-	justify-content: space-between;
-	background: hsl(0, 0%, 77%);
-	align-items: center;
 	width: 100%;
 	white-space: nowrap;
 }
@@ -35,17 +31,22 @@
 }
 
 .nav-link:hover {
-	background: hsl(95, 60%, 56%);
 	color: white;
 }
 
 .nav-link-selected {
-	background: hsl(101, 43%, 42%);
-	color: white;
+	color: green;
 }
 
 .card-header {
 	padding: 0.75rem 2.25rem !important;
+}
+
+.ym-bottom {
+	background-color: #519b56;
+	font-size: 24pt;
+	font-family: 'GothamMedium';
+	height: 140px;
 }
 
 .logo {

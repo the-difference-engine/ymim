@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faInstagram } from '@fortawesome/free-brands-svg-icons';
 import './footer.css';
@@ -11,22 +11,29 @@ export default class footer extends Component {
             <footer className='footer py-3'>
                 <div className='container'>
                     <nav>
-                        <ul className='row'>
+                        <ul className='row menu-text'>
                             <li className='col footer_link'>
-                                <Link to="/about">About Us</Link>
+                                <Link to="/about" style={{ color: 'white', fontSize: "12px" }} className="foot-text">About</Link>
                             </li>
                             <li className='col footer_link'>
-                                <Link to="/meet-the-team">Meet Our Team</Link>
+                                <Link style={{ color: 'white', fontSize: "12px" }} className="nav-item" to="/meet-the-team">Contact</Link>
                             </li>
                             <li className='col footer_link'>
-                                <Link to="/ambassadors">Volunteer</Link>
+                                <Link style={{ color: 'white', fontSize: "12px" }} to="/ambassadors">Volunteer</Link>
                             </li>
                             <li className='col footer_link'>
-                                <Link to="/events">Events</Link>
+                                <Link style={{ color: 'white', fontSize: "12px" }} to="/events">Enroll</Link>
                             </li>
                             <li className='col footer_link'>
-                                Follow Us:  <a href="https://www.facebook.com/theymim/" style={{color: 'black'}}><FontAwesomeIcon icon={faFacebookSquare} /></a> | <a href="https://www.instagram.com/theyoungmasterbuilders" style={{color: 'black'}}><FontAwesomeIcon icon={faInstagram} /></a>
+                                <Link style={{ color: 'white', fontSize: "12px" }} to="/events">Donate</Link>
                             </li>
+                            <li className='col footer_link'>
+                                <Link style={{ color: 'white', fontSize: "12px" }} to="/events">Events</Link>
+                            </li>
+                            <li className='col footer_link'>
+                                <Link style={{ color: 'white', fontSize: "12px" }} to="/events">Home</Link>
+                            </li>
+
                         </ul>
                     </nav>
                 </div>

@@ -1,18 +1,19 @@
 import React, { Component } from 'react';
 import CarouselComponent from './carousel';
-import Upper from './Midsection/Upper';
-import Lower from './Midsection/Lower';
+import UpperMid from './Midsection/UpperMid';
+import LowerMid from './Midsection/LowerMid';
 import './home.css';
-import { Container } from 'react-bootstrap';
+import TopFooter from './TopFooter';
 
 class Home extends Component {
 	render() {
 		return (
-			<Container fluid={true}>
+			<div className="Home">
 				<CarouselComponent />
-				<Upper />
-				<Lower />
-			</Container>
+				<UpperMid />
+				<LowerMid />
+				<TopFooter />
+			</div>
 		);
 	}
 }

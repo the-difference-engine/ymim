@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import { Carousel } from 'react-bootstrap';
-import ymim1 from './Assets/ymim1.png'
-import ymim2 from './Assets/ymim2.png'
-import ymim3 from './Assets/ymim3.png'
-
+import ymim1 from './Assets/ymim1.png';
+import ymim2 from './Assets/ymim2.png';
+import ymim3 from './Assets/ymim3.png';
+import '../index.css';
 
 class CarouselComponent extends Component {
     render() {
@@ -16,11 +16,13 @@ class CarouselComponent extends Component {
                 alt="First Sllllideslide"
               />
               <Carousel.Caption>
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                <div class="overlay">
+                <h3 className="title-carousel">Young Masterbuilder in Motion</h3>
+                <p className="paragraph-carousel">inspires, connects, and empowers young women orphans, adoptees, and foster youth alumnae to thrive.</p>
+                </div>
               </Carousel.Caption>
             </Carousel.Item>
-            <Carousel.Item>
+            {/* <Carousel.Item>
               <img
                 className="d-block w-100"
                 src={ymim2}
@@ -28,8 +30,10 @@ class CarouselComponent extends Component {
               />
 
               <Carousel.Caption>
+                <div class="overlay">
                 <h3>Second slide label</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                </div>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -40,10 +44,12 @@ class CarouselComponent extends Component {
               />
 
               <Carousel.Caption>
+                <div class="overlay">
                 <h3>Third slide label</h3>
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+                </div>
               </Carousel.Caption>
-            </Carousel.Item>
+            </Carousel.Item> */}
           </Carousel>
         );
     }
