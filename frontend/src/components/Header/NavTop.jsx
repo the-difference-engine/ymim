@@ -16,10 +16,10 @@ class NavTop extends Component {
 					<Navbar.Toggle aria-controls="responsive-navbar-nav" />
 					<Navbar.Collapse id="responsive-navbar-nav">
 						<Nav className="mx-auto">
-							<NavLink className="nav-link-top" to="/about">
+							<NavLink className="nav-link-top mr-5" to="/about">
 								About
 							</NavLink>
-							<NavLink className="nav-link-top" to="/contact-us">
+							<NavLink className="nav-link-top mr-5" to="/contact-us">
 								Contact
 							</NavLink>
 							<NavLink className="nav-link-top" to="/events">
