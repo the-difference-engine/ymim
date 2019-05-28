@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import './Header.css';
-import NavTop from './NavTop';
-import NavBottom from './NavBottom';
+import Nav from './Nav';
+
 
 class Header extends Component {
 	render() {
@@ -10,8 +10,7 @@ class Header extends Component {
 		const AuthUser = false;
 		return (
 			<div>
-				<NavTop />
-				<NavBottom />
+				<Nav />
 				{AuthAdmin ? (
 					<NavLink className="nav-link-top" to="/admin" activeClassName="nav-link-top-selected">
 						Admin
