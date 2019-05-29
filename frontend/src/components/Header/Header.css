@@ -23,7 +23,7 @@
 
 .nav-link {
 	padding: 20px;
-	color: white;
+	color: white !important;
 	height: 100%;
 }
 
@@ -45,13 +45,6 @@
 	padding: 0.75rem 2.25rem !important;
 }
 
-.ym-bottom {
-	background-color: #519b56;
-	font-size: 24pt;
-	font-family: 'GothamMedium';
-	height: 140px;
-}
-
 .logo {
 	width: 180px;
 	height: 180px;
@@ -69,6 +62,14 @@
 	font-size: 24pt;
 	font-family: 'GothamMedium';
 	height: 140px;
+}
+
+.ym-bottom {
+	background-color: #519b56;
+	font-size: 24pt;
+	font-family: 'GothamMedium';
+	height: 140px;
+	color: white;
 }
 
 .donate-button {
@@ -114,7 +115,6 @@
 }
 .twitter {
 	color: #52a7e7;
-	margin-left: 25px;
 	margin-bottom: 25px;
 	width: 25px;
 	height: 25px;
