@@ -1,14 +1,8 @@
 import React from "react";
+// import { Form } from "react-bootstrap";
 
-// This component lets us use a bootstrap input element without worrying about class names
-// or manually wrapping the input with a form-group div
-// All of the props passed to this component are spread onto the input element
 function Input(props) {
-  return (
-    <div className="input-group input-group-lg">
-      <input className="form-control" type="text" {...props} />
-    </div>
-  );
+  return <h1>Add a new event below</h1>;
 }
 
 export default Input;
