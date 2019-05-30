@@ -42,13 +42,6 @@
 	padding: 0.75rem 2.25rem !important;
 }
 
-.ym-bottom {
-	background-color: #519b56;
-	font-size: 24pt;
-	font-family: 'GothamMedium';
-	height: 140px;
-}
-
 .logo {
 	width: 180px;
 	height: 180px;
@@ -66,7 +59,7 @@
 	font-size: 24pt;
 	font-family: 'GothamMedium';
 	height: 140px;
-	width: 100%;
+	width: 100%;	
 }
 
 .ym-bottom {
@@ -75,6 +68,7 @@
 	font-family: 'GothamMedium';
 	height: 140px;
 	color: white;
+	width: 100%;
 }
 
 .donate-button {
