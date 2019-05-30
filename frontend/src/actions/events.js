@@ -11,7 +11,7 @@ export const fetchEvents = () => {
       });
   };
 };
-// add events
+// add event
 export const addEvent = (
   title,
   description,
