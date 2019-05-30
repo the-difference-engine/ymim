@@ -1,8 +1,14 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+}
 .footer {
   margin-top: auto;
   bottom: 0;
-  height: 100px;
+  height: 132px;
   background-color: #519b46;
+  position: relative;
 }
 
 .footer_link {
@@ -32,7 +38,6 @@ nav {
 }
 
 .box {
-  
   height: 60px;
   border: 2px solid red;
   margin: 4%;
@@ -98,4 +103,19 @@ nav {
 
 .moveConnecting{
    margin-right:35px !important;
+}
+
+.footer-contact {
+  position: absolute;
+  right: 50px;
+  bottom: 20px;
+}
+
+.contact {
+  text-decoration: none;
+  color: #fff;
+}
+
+p {
+  color: #fff;
 }
