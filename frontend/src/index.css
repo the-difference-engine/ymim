@@ -91,3 +91,27 @@ code {
   background: #fff;
   margin: 20px 0;
 }
+
+
+/* about page css *********************************/
+
+.lowermid{
+  background-color: #eeeaea;
+}
+
+
+.floatp{
+  float:right;
+  width:40%;
+  clear:right;
+}
+
+.floatimg {
+  float:left;
+  width:50%;
+}
+
+.clear{
+  clear:both;
+  overflow:auto;
+}

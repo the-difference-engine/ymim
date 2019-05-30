@@ -74,7 +74,44 @@ Consider becoming a [sponsor](/become-a-sponsor/) on behalf of foster alumnae to
 
 [Contact us now!](/contact-us/) */}
 
+
 </div>
+<div className="lowermid "> 
+   <div className="container clear">
+    <h1>Our People</h1>
+   <img className="floatimg" src="http://www.randolphcountync.gov/portals/0/Images/gray4.png?ver=2018-02-19-154405-587" />
+<p className="floatp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices nisl in consectetur ultricies. Sed a vestibulum purus, et consequat risus. Aliquam dapibus vestibulum elit. Nullam interdum consectetur nulla, eget faucibus tellus suscipit a. Ut bibendum efficitur suscipit. Maecenas euismod diam non nibh scelerisque, sed cursus leo ullamcorper. Morbi laoreet eros sit amet tempor fringilla. Fusce bibendum sollicitudin consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris at varius orci. Nullam mattis vulputate nibh.
+
+Etiam porttitor tempus tortor vel finibus. Sed a lacus placerat nisi efficitur aliquam. Aliquam et purus sapien. In ut lorem vulputate, feugiat erat non, pharetra justo. Pellentesque finibus, sem at consequat molestie, erat quam molestie est, tincidunt placerat orci purus cursus orci. Duis maximus orci at risus venenatis, non fringilla nisi sodales. Proin odio nunc, ornare eget auctor eu, interdum at ante. Sed tempus facilisis arcu ac imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec feugiat sem ac tristique dapibus. Pellentesque id nulla augue. Sed vulputate felis et dictum porta. Cras quis placerat ipsum. Vestibulum id eros lectus. Nulla id semper nulla.</p>
+   </div> 
+</div>
+
+
+<div className="clear">
+    <div className="container clear ">
+    <img className="floatimg" src="http://www.randolphcountync.gov/portals/0/Images/gray4.png?ver=2018-02-19-154405-587" />
+<p className="floatp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices nisl in consectetur ultricies. Sed a vestibulum purus, et consequat risus. Aliquam dapibus vestibulum elit. Nullam interdum consectetur nulla, eget faucibus tellus suscipit a. Ut bibendum efficitur suscipit. Maecenas euismod diam non nibh scelerisque, sed cursus leo ullamcorper. Morbi laoreet eros sit amet tempor fringilla. Fusce bibendum sollicitudin consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris at varius orci. Nullam mattis vulputate nibh.
+
+Etiam porttitor tempus tortor vel finibus. Sed a lacus placerat nisi efficitur aliquam. Aliquam et purus sapien. In ut lorem vulputate, feugiat erat non, pharetra justo. Pellentesque finibus, sem at consequat molestie, erat quam molestie est, tincidunt placerat orci purus cursus orci. Duis maximus orci at risus venenatis, non fringilla nisi sodales. Proin odio nunc, ornare eget auctor eu, interdum at ante. Sed tempus facilisis arcu ac imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec feugiat sem ac tristique dapibus. Pellentesque id nulla augue. Sed vulputate felis et dictum porta. Cras quis placerat ipsum. Vestibulum id eros lectus. Nulla id semper nulla.</p>
+</div> 
+</div>
+
+
+<div className="lowermid">
+
+  <div className="container clear">
+
+
+  <img className="floatimg" src="http://www.randolphcountync.gov/portals/0/Images/gray4.png?ver=2018-02-19-154405-587" />
+<p className="floatp">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ultrices nisl in consectetur ultricies. Sed a vestibulum purus, et consequat risus. Aliquam dapibus vestibulum elit. Nullam interdum consectetur nulla, eget faucibus tellus suscipit a. Ut bibendum efficitur suscipit. Maecenas euismod diam non nibh scelerisque, sed cursus leo ullamcorper. Morbi laoreet eros sit amet tempor fringilla. Fusce bibendum sollicitudin consectetur. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Mauris at varius orci. Nullam mattis vulputate nibh.
+
+Etiam porttitor tempus tortor vel finibus. Sed a lacus placerat nisi efficitur aliquam. Aliquam et purus sapien. In ut lorem vulputate, feugiat erat non, pharetra justo. Pellentesque finibus, sem at consequat molestie, erat quam molestie est, tincidunt placerat orci purus cursus orci. Duis maximus orci at risus venenatis, non fringilla nisi sodales. Proin odio nunc, ornare eget auctor eu, interdum at ante. Sed tempus facilisis arcu ac imperdiet. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Donec feugiat sem ac tristique dapibus. Pellentesque id nulla augue. Sed vulputate felis et dictum porta. Cras quis placerat ipsum. Vestibulum id eros lectus. Nulla id semper nulla.</p> 
+
+    </div>
+</div>
+
+
+
 
 {/* The form below is a general participant interest form that helps us plan for number and age groups of potential cohort members, not to be confused with the enrollment application that will need to be submitted via email to **Founder@TheYMIM.org** noted above. */}
           </>
