@@ -1,7 +1,7 @@
 export const fetchEvents = () => {
   return dispatch => {
     let headers = { "Content-Type": "application/json" };
-    return fetch(process.env.REACT_APP_EVENTS_ENDPOINT, { headers })
+    return fetch("events", { headers })
       .then(res => res.json())
       .then(events => {
         return dispatch({
@@ -32,7 +32,7 @@ export const addEvent = (
       end_time,
       event_image
     });
-    return fetch(process.env.REACT_APP_EVENTS_ENDPOINT, {
+    return fetch("events", {
       headers,
       method: "POST",
       body
@@ -69,7 +69,7 @@ export const updateEvent = (
       event_image
     });
     let eventId = getState().events[index].id;
-    return fetch(process.env.REACT_APP_EVENTS_ENDPOINT + `${eventId}/`, {
+    return fetch(`events/${eventId}/`, {
       headers,
       method: "PUT",
       body
@@ -90,7 +90,7 @@ export const deleteEvent = index => {
     let headers = { "Content-Type": "application/json" };
     let eventId = getState().events[index].id;
 
-    return fetch(process.env.REACT_APP_EVENTS_ENDPOINT + `${eventId}/`, {
+    return fetch(`events/${eventId}/`, {
       headers,
       method: "DELETE"
     }).then(res => {

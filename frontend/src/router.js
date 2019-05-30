@@ -24,7 +24,7 @@ let store = createStore(fetchData, applyMiddleware(thunk));
 const router = (
   <Provider store={store}>
     <Router>
-      <div className="site ">
+      <div className="container-fluid">
         <div className="site-content">
           <Header />
           <div>
@@ -43,8 +43,8 @@ const router = (
               <Route component={NotFound} />
             </Switch>
           </div>
+          <Footer />
         </div>
-        <Footer />
       </div>
     </Router>
   </Provider>

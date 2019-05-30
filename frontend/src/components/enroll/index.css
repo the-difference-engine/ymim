@@ -1,16 +1,16 @@
 .messageInput {
-    width: 40%;
+  width: 40%;
 }
 
 .jumbotron {
-    margin: auto 0;
-    justify-content: left;
+  margin: auto 0;
+  justify-content: left;
 }
 
-span{
-    justify-content: center;
+span {
+  justify-content: center;
 }
 
 .main-content {
-    margin: auto;
+  margin: auto;
 }

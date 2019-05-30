@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import { Nav, Navbar, NavDropdown, Container } from "react-bootstrap";
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 
 class NavBottom extends Component {
   render() {
     return (
-      <Container className="px-0" fluid={true}>
+      <div className="col">
         <Navbar collapseOnSelect expand="lg" className="ym-bottom">
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav justify-content-center">
@@ -65,7 +65,7 @@ class NavBottom extends Component {
             </NavLink>
           </Navbar.Collapse>
         </Navbar>
-      </Container>
+      </div>
     );
   }
 }

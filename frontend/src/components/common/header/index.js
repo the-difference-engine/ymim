@@ -3,15 +3,19 @@ import "./index.css";
 import NavTop from "./nav_top";
 import NavBottom from "./nav_bottom";
 
-class header extends Component {
+class Header extends Component {
   render() {
     return (
       <div>
-        <NavTop />
-        <NavBottom />
+        <div className="row">
+          <NavTop />
+        </div>
+        <div className="row">
+          <NavBottom />
+        </div>
       </div>
     );
   }
 }
 
-export default header;
+export default Header;
