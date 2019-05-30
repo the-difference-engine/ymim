@@ -21,25 +21,25 @@ class Enroll extends Component {
     return (
       <div className="main-content">
         <Markdown source={this.state.text} />
-        <div className="jumbotron">
+        <div className="container">
           <form action="/" method="post">
             <div>
-              <label className="col-md-2">Name (required)</label>
-              <input required="" type="text" value="" className="col-md-4" />
+            <label for="name" className="col-md-2 block">Name (required)</label>
+              <input id="name" required="" type="text" value="" className="col-md-4" />
             </div>
             <br />
             <div>
-              <label className="col-md-2">Email (required)</label>
-              <input required="" type="email" value="" className="col-md-4" />
+              <label for="email" className="col-md-2 block">Email (required)</label>
+              <input id="email" required="" type="email" value="" className="col-md-4" />
             </div>
             <br />
             <div>
-              <label className="col-md-2">Phone</label>
-              <input type="text" value="" className="col-md-4" />
+              <label for="phone" className="col-md-2 block">Phone</label>
+              <input id="phone" type="text" value="" className="col-md-4" />
             </div>
             <br />
             <div>
-              <label className="col-md-2">Age(required)</label>
+              <label className="col-md-2 block">Age(required)</label>
               <div>
                 <label className="radio">
                   <input

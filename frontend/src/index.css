@@ -102,13 +102,21 @@ code {
 
 .floatp{
   float:right;
-  width:40%;
-  clear:right;
+  width:30%;
+
 }
 
 .floatimg {
   float:left;
   width:50%;
+  padding-right: 5%;
+  padding-bottom:4%;
+  margin-bottom: 3%;
+}
+
+.floatimg img {
+  height:100px;
+  width:100px;
 }
 
 .clear{

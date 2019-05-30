@@ -14,3 +14,8 @@ span{
 .main-content {
     margin: auto;
 }
+
+
+.block{
+    display:block;
+}
