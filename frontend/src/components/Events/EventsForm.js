@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Form, Col, Button } from "react-bootstrap";
+import { Container, Form, Col, Button, Row } from "react-bootstrap";
 
 function EventsForm(props) {
   return (
@@ -14,6 +14,8 @@ function EventsForm(props) {
       </style>
 
       <Container id="eventForm">
+        {/* <Row>
+          <Col xs={6} md={4}> */}
         <h3>Add a new event</h3>
 
         <Form>
@@ -57,6 +59,8 @@ function EventsForm(props) {
             Add event
           </Button>
         </Form>
+        {/* </Col>
+        </Row> */}
       </Container>
     </React.Fragment>
   );
