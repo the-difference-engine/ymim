@@ -16,7 +16,7 @@ import Enroll from "./components/enroll";
 import Team from "./components/team";
 import Ambassadors from "./components/ambassadors";
 import Donate from "./components/DonationPage";
-import Events from "./components/Events/EventsJSX";
+import Events from "./components/Events/Index";
 import Header from "./components/Header";
 
 let store = createStore(fetchData, applyMiddleware(thunk));

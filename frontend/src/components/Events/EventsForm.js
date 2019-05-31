@@ -1,8 +1,22 @@
 import React from "react";
-// import { Form } from "react-bootstrap";
+import { Form, Row, Col } from "react-bootstrap";
 
-function Form(props) {
-  return <h1>Add a new event below</h1>;
+function EventsForm(props) {
+  return (
+    <React.Fragment>
+      <h3>Add a new event</h3>
+      <Form>
+        <Row>
+          <Col>
+            <Form.Control placeholder="First name" />
+          </Col>
+          <Col>
+            <Form.Control placeholder="Last name" />
+          </Col>
+        </Row>
+      </Form>
+    </React.Fragment>
+  );
 }
 
-export default Form;
+export default EventsForm;

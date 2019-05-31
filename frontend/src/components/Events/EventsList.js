@@ -1,8 +1,15 @@
 import React from "react";
-// import { Form } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 
 function List(props) {
-  return <h1>Upcoming events</h1>;
+  return (
+    <React.Fragment>
+      <h3>Upcoming events</h3>
+      <Card>
+        <Card.Body>Coming soon. First, need to learn some Python...</Card.Body>
+      </Card>
+    </React.Fragment>
+  );
 }
 
 export default List;
