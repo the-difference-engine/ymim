@@ -6,40 +6,40 @@ import { faFacebookSquare, faInstagram, faTwitter } from '@fortawesome/free-bran
 import logo from '../Assets/logo.png';
 import './Header.css';
 
-class NavTop extends Component {
+class NavBar extends Component {
 	constructor(props) {
 		super(props);
-	
+
 		this.toggle = this.toggle.bind(this);
 		this.state = {
-		  isOpen: false
+			isOpen: false
 		};
-	  }
-	  toggle() {
+	}
+	toggle() {
 		this.setState({
-		  isOpen: !this.state.isOpen
+			isOpen: !this.state.isOpen
 		});
-	  }
+	}
 	render() {
 		return (
-			<Container fluid={true}>
-			<Row as="div">
-				<Navbar collapseOnSelect expand="lg" className="ym-top" xs={12} lg={12}>	
+			<Container fluid={true} className="px-0">
+				<Navbar collapseOnSelect className="ym-top ym-top-mobile navbar-expand-md">
 					<Navbar.Brand className="my-auto pt-4" href="/">
 						<img className="logo" src={logo} alt="YMIM" />
 					</Navbar.Brand>
-						<Nav className="mx-auto my-auto">
-							<NavLink className="nav-link-top mr-5" to="/about">
-								About
-							</NavLink>
-							<NavLink className="nav-link-top mr-5" to="/contact-us">
-								Contact
-							</NavLink>
-							<NavLink className="nav-link-top" to="/events">
-								Events
-							</NavLink>
-						</Nav>
-						<Nav className="pt-4 mr-4 my-auto">
+					<Nav className="mx-auto my-auto">
+						<NavLink className="nav-link-top mr-5" to="/about">
+							About
+						</NavLink>
+						<NavLink className="nav-link-top mr-5" to="/contact-us">
+							Contact
+						</NavLink>
+						<NavLink className="nav-link-top" to="/events">
+							Events
+						</NavLink>
+					</Nav>
+					<Nav className="pt-4 mr-4 my-auto">
+						<div id="tsocial">
 							<NavLink href="https://www.facebook.com/theymim/">
 								<FontAwesomeIcon className="facebook" icon={faFacebookSquare} />
 							</NavLink>
@@ -48,14 +48,15 @@ class NavTop extends Component {
 								<FontAwesomeIcon className="insta" icon={faInstagram} />
 							</NavLink>
 							<NavLink href="https://www.instagram.com/theyoungmasterbuilders">
-								<FontAwesomeIcon className="twitter" icon={faTwitter} />	
-							</NavLink>	
-						</Nav>	
+								<FontAwesomeIcon className="twitter" icon={faTwitter} />
+							</NavLink>
+						</div>
+					</Nav>
 				</Navbar>
-			<Navbar collapseOnSelect expand="lg" className="ym-bottom" xs={12} lg={12}>
-			<Navbar.Toggle onClick={this.toggle} />
+				<Navbar collapseOnSelect expand="lg" className="ym-bottom">
+					<Navbar.Toggle onClick={this.toggle} />
 					<Navbar.Collapse isOpen={this.state.isOpen} navbar>
-			<Nav className="mx-auto">
+						<Nav className="mx-auto">
 							<NavDropdown className="nav-link" to="/resources" title="Youth Resources" id="nav-dropdown">
 								<NavDropdown.Item eventKey="4.1">Hospitals</NavDropdown.Item>
 								<NavDropdown.Item eventKey="4.2">Urgent care</NavDropdown.Item>
@@ -75,15 +76,14 @@ class NavTop extends Component {
 								<NavDropdown.Item eventKey="4.4">Separated link</NavDropdown.Item>
 							</NavDropdown>
 						</Nav>
-						</Navbar.Collapse>
-						<NavLink className="nav-link" to="/donate" activeClassName="nav-link-selected">
-							<button className="donate-button mt-2"> Donate </button>
-						</NavLink>
+					</Navbar.Collapse>
+					<NavLink className="nav-link" to="/donate" activeClassName="nav-link-selected">
+						<button className="donate-button mt-2"> Donate </button>
+					</NavLink>
 				</Navbar>
-			</Row>
 			</Container>
 		);
 	}
 }
 
-export default NavTop;
+export default NavBar;

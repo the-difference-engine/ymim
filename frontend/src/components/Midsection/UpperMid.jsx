@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import "./mid.css";
+import { Container } from "react-bootstrap";
 
 
 class UpperMid extends Component {
     render() {
         return (
-            <div>
+            <Container fluid={true} className="px-0">
                 <div className="container">
                     <h2 className="text-center heading">Who Are We?</h2>
 
@@ -22,7 +23,7 @@ class UpperMid extends Component {
                 deductible to the fulll extent of the law</p>
                     </div>
                 </div>
-            </div>
+            </Container>
 
         );
 

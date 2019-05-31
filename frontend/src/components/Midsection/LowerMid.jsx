@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "./mid.css";
+import { Container } from "react-bootstrap";
 
 const linkStyle = {
     color: 'green'
@@ -8,7 +9,7 @@ const linkStyle = {
 class LowerrMid extends Component {
     render() {
         return (
-            <div className="lowermid">
+            <Container fluid={true} className="lowermid px-0">
                 <div className="container">
                     <h2 className="text-center heading">What's New?</h2>
                     <h5 className="text-center subheading">Mar 9. 2019 - Let's Do 300! Emergency Care Package Drive</h5>
@@ -36,7 +37,7 @@ class LowerrMid extends Component {
                         <button className='text-center ym-button' id="enroll">All Events</button>
                     </div>
                 </div>
-            </div>
+            </Container>
         );
 
     }

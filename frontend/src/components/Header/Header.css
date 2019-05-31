@@ -54,12 +54,33 @@
 	z-index: 50;
 }
 
-.ym-top {
-	background-color: #ffffff;
-	font-size: 24pt;
-	font-family: 'GothamMedium';
-	height: 140px;
-	width: 100%;	
+@media all and (min-width: 768px) and (max-width: 2048px) {
+	.ym-top {
+		background-color: #ffffff;
+		font-size: 24pt;
+		font-family: 'GothamMedium';
+		height: 140px;
+		width: 100%;
+	}
+}
+
+@media all and (min-width: 320px) and (max-width: 425px) {
+	.ym-top-mobile {
+		background-color: #ffffff;
+		font-size: 12pt;
+		font-family: 'GothamMedium';
+		height: 140px;
+		width: auto;
+	}
+	#tsocial {
+		display: none;
+	}
+	.nav-link-top {
+		padding: 0px;
+	}
+	.logo {
+		display: none;
+	}
 }
 
 .ym-bottom {
