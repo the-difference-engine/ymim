@@ -5,30 +5,24 @@ function EventsForm(props) {
   return (
     <React.Fragment>
       <h3>Add a new event</h3>
+
       <Form>
-        <Form.Row>
-          <Form.Group as={Col} controlId="formGridEmail">
-            <Form.Label>Email</Form.Label>
-            <Form.Control type="email" placeholder="Enter email" />
-          </Form.Group>
-
-          <Form.Group as={Col} controlId="formGridPassword">
-            <Form.Label>Password</Form.Label>
-            <Form.Control type="password" placeholder="Password" />
-          </Form.Group>
-        </Form.Row>
-
-        <Form.Group controlId="formGridAddress1">
-          <Form.Label>Address</Form.Label>
-          <Form.Control placeholder="1234 Main St" />
+        <Form.Group controlId="name">
+          <Form.Label>Name</Form.Label>
+          <Form.Control placeholder="Enter the name of event" />
         </Form.Group>
 
-        <Form.Group controlId="formGridAddress2">
-          <Form.Label>Address 2</Form.Label>
-          <Form.Control placeholder="Apartment, studio, or floor" />
+        <Form.Group controlId="description">
+          <Form.Label>Description</Form.Label>
+          <Form.Control placeholder="Enter a description of event" />
         </Form.Group>
 
         <Form.Row>
+          <Form.Group as={Col} controlId="date">
+            <Form.Label>Date</Form.Label>
+            <Form.Control />
+          </Form.Group>
+
           <Form.Group as={Col} controlId="startTime">
             <Form.Label>Start time</Form.Label>
             <Form.Control />
@@ -39,6 +33,15 @@ function EventsForm(props) {
             <Form.Control />
           </Form.Group>
         </Form.Row>
+
+        <Form.Group controlId="exampleForm.ControlTextarea1">
+          <Form.Label>Additional details</Form.Label>
+          <Form.Control as="textarea" rows="3" />
+        </Form.Group>
+
+        <Form.Group id="formGridCheckbox">
+          <Form.Check type="checkbox" label="Registration required" />
+        </Form.Group>
 
         <Button variant="primary" type="submit">
           Add event
