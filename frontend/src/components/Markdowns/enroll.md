@@ -1,4 +1,4 @@
-# Enroll Now
+
 
 The Young Masterbuilders in Motion’s (**YMIM**) 2019 enrollment season is now open for young adult women orphans, adoptees, and foster youth alumnae up to age 30\. Alumnae may apply for rolling admissions to **YMIM** scholar’s leadership development program.
 
