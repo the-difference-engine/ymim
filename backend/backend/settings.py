@@ -1,4 +1,3 @@
-import django_heroku
 import os
 
 import dotenv
@@ -154,8 +153,10 @@ EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
 
-CORS_ORIGIN_ALLOW_ALL = bool(os.getenv("ALLOW_CORS", True))
+CORS_ORIGIN_ALLOW_ALL = bool(os.getenv("ALLOW_CORS", False))
 
 # Configure Django App for Heroku.
-
+import django_heroku
 django_heroku.settings(locals())
+
+

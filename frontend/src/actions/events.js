@@ -69,6 +69,7 @@ export const updateEvent = (
       event_image
     });
     let eventId = getState().events[index].id;
+    
     return fetch(`events/${eventId}/`, {
       headers,
       method: "PUT",
@@ -84,7 +85,7 @@ export const updateEvent = (
       });
   };
 };
-
+// delete event
 export const deleteEvent = index => {
   return (dispatch, getState) => {
     let headers = { "Content-Type": "application/json" };

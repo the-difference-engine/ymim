@@ -5,6 +5,15 @@ import EventForm from "./event_form";
 import "./index.css";
 
 class Events extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      event: {}
+    }
+    console.log(this.state.event);
+  }
+
+
   componentDidMount() {
     this.props.fetchEvents();
   }
