@@ -1,19 +1,14 @@
-import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
-import { Nav, Navbar } from "react-bootstrap";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faFacebookSquare,
-  faInstagram,
-  faTwitter
-} from "@fortawesome/free-brands-svg-icons";
-import logo from "../../../assets/logo.png";
-import "./index.css";
-
+import React, { Component } from 'react';
+import { NavLink } from 'react-router-dom';
+import { Nav, Navbar, Container } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookSquare, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import logo from '../Assets/logo.png';
+import './Header.css';
 class NavTop extends Component {
   render() {
     return (
-      <div className="col">
+      <Container fluid={true}>
         <Navbar collapseOnSelect expand="lg" className="ym-top">
           <Navbar.Brand className="mx-auto my-auto pt-4" href="/">
             <img className="logo" src={logo} alt="YMIM" />
@@ -23,13 +18,13 @@ class NavTop extends Component {
             <Nav className="mx-auto">
               <NavLink className="nav-link-top" to="/about">
                 About
-              </NavLink>
+							</NavLink>
               <NavLink className="nav-link-top" to="/contact-us">
                 Contact
-              </NavLink>
+							</NavLink>
               <NavLink className="nav-link-top" to="/events">
                 Events
-              </NavLink>
+							</NavLink>
             </Nav>
             <Nav>
               <NavLink href="https://www.facebook.com/theymim/">
@@ -39,13 +34,13 @@ class NavTop extends Component {
               <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
                 <FontAwesomeIcon className="insta" icon={faInstagram} />
               </NavLink>
-              <NavLink href="https://twitter.com/YMIMtweets">
+              <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
                 <FontAwesomeIcon className="twitter" icon={faTwitter} />
               </NavLink>
             </Nav>
           </Navbar.Collapse>
         </Navbar>
-      </div>
+      </Container>
     );
   }
 }
