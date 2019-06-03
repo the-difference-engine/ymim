@@ -3,6 +3,7 @@
   bottom: 0;
   height: 100px;
   background-color: #519b46;
+  position: relative;
 }
 
 .footer_link {
@@ -10,7 +11,7 @@
 }
 
 .menu-text {
-  color: white;
+  /* color: white; */
 }
 
 .foot_text {
@@ -32,7 +33,6 @@ nav {
 }
 
 .box {
-  
   height: 60px;
   border: 2px solid red;
   margin: 4%;
@@ -98,4 +98,24 @@ nav {
 
 .moveConnecting{
    margin-right:35px !important;
+}
+
+.footer-contact {
+  /* position: absolute;
+  right: 50px;
+  bottom: 20px; */
+}
+
+.contact {
+  text-decoration: none;
+  color: #fff;
+}
+
+.footer-contact h5 p {
+  color: #fff;
+}
+
+.footer-list {
+  color: #fff;
+  font-size: "14pt";
 }
