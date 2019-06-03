@@ -30,7 +30,7 @@ span{
 
 .button{
     width:140px;
-    height:55px;
+    height:75px;
     padding:20px;
     padding-top:13px;
     text-align:center;
@@ -38,6 +38,13 @@ span{
     border-radius:10px;
     box-shadow:none;
     background:#FDD368;
+    border:none;
+    
+}
+
+.buttonSpan{
+  font-weight:bold;
+  font-size:25px;
 }
 
 /* */
@@ -46,10 +53,18 @@ span{
     height:60px;
     background:#eeeaea;
     border:none;
+    color:black;
 }
 
 .inputs-text{
     height:220px;
     background:#eeeaea;
     border:none;
+}
+
+/*label font*/
+
+.labelFont{
+    font-weight:bold;
+    padding:0;
 }

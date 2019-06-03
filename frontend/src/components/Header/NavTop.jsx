@@ -28,14 +28,14 @@ class NavTop extends Component {
 						</Nav>
 						<Nav>
 							<NavLink href="https://www.facebook.com/theymim/">
-								<FontAwesomeIcon className="facebook" icon={faFacebookSquare} />
+								<FontAwesomeIcon className="facebook colorMe" icon={faFacebookSquare} />
 							</NavLink>
 
 							<NavLink href="https://www.instagram.com/theyoungmasterbuilders">
-								<FontAwesomeIcon className="insta" icon={faInstagram} />
+								<FontAwesomeIcon className="insta colorMe backgroundNone" icon={faInstagram} />
 							</NavLink>
 							<NavLink href="https://www.instagram.com/theyoungmasterbuilders">
-								<FontAwesomeIcon className="twitter" icon={faTwitter} />
+								<FontAwesomeIcon className="twitter colorMe" icon={faTwitter} />
 							</NavLink>
 						</Nav>
 					</Navbar.Collapse>

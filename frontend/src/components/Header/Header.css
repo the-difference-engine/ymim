@@ -90,7 +90,7 @@
 	height: 25px;
 }
 .insta {
-	background-image: linear-gradient(
+	/* background-image: linear-gradient(
 		to left bottom,
 		#f9ed32,
 		#ffc726,
@@ -103,8 +103,8 @@
 		#d600ab,
 		#bc00c5,
 		#8e00e2,
-		#002aff
-	);
+		#002aff */
+	/* ); */
 	color: white;
 	border-radius: 5px;
 	padding: 2px;
@@ -118,4 +118,14 @@
 	margin-bottom: 25px;
 	width: 25px;
 	height: 25px;
+}
+
+
+.colorMe{
+	color:green;
+
+}
+
+.backgroundNone{
+	background-color:none;
 }
