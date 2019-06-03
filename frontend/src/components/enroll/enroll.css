@@ -68,3 +68,13 @@ span{
     font-weight:bold;
     padding:0;
 }
+
+/*fontcss for marksdown*/
+
+#fontcss {
+    line-height:50px !important;
+}
+
+.main-content{
+    line-height: 2.0;
+}

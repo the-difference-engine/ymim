@@ -27,7 +27,7 @@ class Enroll extends Component {
       <h1 className="mt-5">Enroll Now</h1>
       <div className="main-content container col-sm-6 float-right mt-5">
        
-        <Markdown source={this.state.text} />
+        <Markdown id="fontcss" className="mt-3 " source={this.state.text} />
         </div>
         <div className="container col-sm-6 float-left mt-5">
           <form action="/" method="post">
