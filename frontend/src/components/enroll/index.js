@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import Markdown from "react-markdown";
 import "./enroll.css";
 import Text from "../Markdowns/enroll.md";
-import Carousel from '.././carousel.jsx';
 import 'react-bootstrap';
+import SingleCarousel from '../SingleCarousel/SingleCarousel.js';
 class Enroll extends Component {
   constructor(props) {
     super(props);
@@ -21,7 +21,7 @@ class Enroll extends Component {
   render() {
     return (
       <>
-      <Carousel className="mb-5" />
+      <SingleCarousel className="mb-5" />
 
       <div className="container">
       <h1 className="mt-5">Enroll Now</h1>
