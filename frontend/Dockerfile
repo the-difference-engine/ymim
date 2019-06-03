@@ -1,6 +1,4 @@
-FROM node:10.13.0
-
-RUN apt-get update
+FROM node:12.0.0-stretch-slim
 
 RUN mkdir /code
 WORKDIR /code
