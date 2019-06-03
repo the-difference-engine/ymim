@@ -13,25 +13,25 @@ export default class footer extends Component {
                     <nav>
                         <ul className='row menu-text'>
                             <li className='col footer_link'>
-                                <Link style={{ color: 'white', fontSize: "14pt" }} to="/events">Home</Link>
+                                <Link className="footer-list" to="/events">Home</Link>
                             </li>
                             <li className='col footer_link'>
-                                <Link style={{ color: 'white', fontSize: "14pt" }} to="/about">About</Link>
+                                <Link className="footer-list" to="/about">About</Link>
                             </li>
                             <li className='col footer_link'>
-                                <Link style={{ color: 'white', fontSize: "14pt" }} to="/meet-the-team">Contact</Link>
+                                <Link className="footer-list" to="/meet-the-team">Contact</Link>
                             </li>
                             <li className='col footer_link'>
-                                <Link style={{ color: 'white', fontSize: "14pt" }} to="/events">Enroll</Link>
+                                <Link className="footer-list" to="/events">Enroll</Link>
                             </li>
                             <li className='col footer_link'>
-                                <Link style={{ color: 'white', fontSize: "14pt" }} to="/ambassadors">Volunteer</Link>
+                                <Link className="footer-list" to="/ambassadors">Volunteer</Link>
                             </li>
                             <li className='col footer_link'>
-                                <Link style={{ color: 'white', fontSize: "14pt" }} to="/events">Donate</Link>
+                                <Link className="footer-list" to="/events">Donate</Link>
                             </li>
                             <li className='col footer_link'>
-                                <Link style={{ color: 'white', fontSize: "14pt" }} to="/events">Events</Link>
+                                <Link className="footer-list" to="/events">Events</Link>
                             </li>
                         </ul>
 

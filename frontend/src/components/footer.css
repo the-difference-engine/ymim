@@ -1,12 +1,7 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-family: 'Montserrat', sans-serif;
-}
 .footer {
   margin-top: auto;
   bottom: 0;
-  height: 132px;
+  height: 100px;
   background-color: #519b46;
   position: relative;
 }
@@ -16,7 +11,7 @@
 }
 
 .menu-text {
-  color: white;
+  /* color: white; */
 }
 
 .foot_text {
@@ -106,9 +101,9 @@ nav {
 }
 
 .footer-contact {
-  position: absolute;
+  /* position: absolute;
   right: 50px;
-  bottom: 20px;
+  bottom: 20px; */
 }
 
 .contact {
@@ -118,4 +113,9 @@ nav {
 
 .footer-contact h5 p {
   color: #fff;
+}
+
+.footer-list {
+  color: #fff;
+  font-size: "14pt";
 }
