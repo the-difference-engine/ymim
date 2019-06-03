@@ -31,30 +31,12 @@ export const addEvent = (event) => {
   };
 };
 
-export const updateEvent = (
-  index,
-  title,
-  description,
-  start_date,
-  start_time,
-  end_date,
-  end_time,
-  event_image
-) => {
-  return (dispatch, getState) => {
+export const updateEvent = (event) => {
+  return (dispatch) => {
     let headers = { "Content-Type": "application/json" };
-    let body = JSON.stringify({
-      title,
-      description,
-      start_date,
-      start_time,
-      end_date,
-      end_time,
-      event_image
-    });
-    let eventId = getState().events[index].id;
+    let body = JSON.stringify(event);
     
-    return fetch(`events/${eventId}/`, {
+    return fetch(`events/${event.id}/`, {
       headers,
       method: "PUT",
       body
