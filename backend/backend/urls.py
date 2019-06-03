@@ -6,6 +6,7 @@ from events.urls import urlpatterns as event_urls
 from profiles.urls import urlpatterns as profiles_urls
 from resources.urls import urlpatterns as resources_urls
 
+import pdb;pdb.set_trace()
 
 schema_view = get_swagger_view(title="YMIM API")
 

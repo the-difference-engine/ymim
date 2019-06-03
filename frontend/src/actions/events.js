@@ -12,27 +12,11 @@ export const fetchEvents = () => {
   };
 };
 
-export const addEvent = (
-  title,
-  description,
-  start_date,
-  start_time,
-  end_date,
-  end_time,
-  event_image
-) => {
+export const addEvent = (event) => {
   return dispatch => {
     let headers = { "Content-Type": "application/json" };
-    let body = JSON.stringify({
-      title,
-      description,
-      start_date,
-      start_time,
-      end_date,
-      end_time,
-      event_image
-    });
-    return fetch("events", {
+    let body = JSON.stringify({event});
+    return fetch("events/", {
       headers,
       method: "POST",
       body
