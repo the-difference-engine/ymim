@@ -33,7 +33,7 @@ class SingleCarousel extends Component{
             />
             <Carousel.Caption>
               <div class="overlay">
-                <h3 className="title-carousel">Young Masterbuilder in Motion</h3>
+                <h3 className="title-carousel">Enroll</h3>
                 <p className="paragraph-carousel">inspires, connects, and empowers young women orphans, adoptees, and foster youth alumnae to thrive.</p>
                 <Navbar.Brand className="logo-div">
                   <img style={inline} className="logo" src={logo} alt="YMIM" />
