@@ -25,3 +25,31 @@ span{
 .block{
     display:block;
 }
+
+/*for the button */
+
+.button{
+    width:140px;
+    height:55px;
+    padding:20px;
+    padding-top:13px;
+    text-align:center;
+    vertical-align:middle;
+    border-radius:10px;
+    box-shadow:none;
+    background:#FDD368;
+}
+
+/* */
+
+.inputs{
+    height:60px;
+    background:#eeeaea;
+    border:none;
+}
+
+.inputs-text{
+    height:220px;
+    background:#eeeaea;
+    border:none;
+}

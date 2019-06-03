@@ -3,6 +3,7 @@ import Markdown from "react-markdown";
 import "./enroll.css";
 import Text from "../Markdowns/enroll.md";
 import Carousel from '.././carousel.jsx';
+import 'react-bootstrap';
 class Enroll extends Component {
   constructor(props) {
     super(props);
@@ -31,23 +32,23 @@ class Enroll extends Component {
         <div className="container col-sm-6 float-left mt-5">
           <form action="/" method="post">
             <div>
-            <label for="name" className="col-md-2 block">Name(required)</label>
-              <input id="name" required="" type="text" value="" className="col-md-4" />
+            <label for="name" className="col-xs-4 block">Name(required)</label>
+              <input  id="name" required="" type="text" value="" className="col-md-10 inputs" />
             </div>
             <br />
             <div>
               <label for="email" className="col-md-2 block">Email(required)</label>
-              <input id="email" required="" type="email" value="" className="col-md-4" />
+              <input id="email" required="" type="email" value="" className="col-md-10 inputs" />
             </div>
             <br />
             <div>
               <label for="phone" className="col-md-2 block">Phone(required)</label>
-              <input id="phone" type="text" value="" className="col-md-4" />
+              <input id="phone" type="text" value="" className="col-md-10 inputs" />
             </div>
             <br />
-            <div>
+            {/* <div>
               <label for="age" className="col-md-2 block">Age(required)</label>
-              <input id="age" className="col-md-4" type="number" />
+              <input id="age" className="col-md-10  inputs" type="number" />
               {/* <div>
                 <label className="radio">
                   <input
@@ -99,18 +100,19 @@ class Enroll extends Component {
                   26-30
                 </label>
               </div> */}
-            </div>   
-           
+            {/* </div>   
+            */} 
             <div>
               <label className="col-md-4 block mt-3 mb-1">Message</label>
             
-              <textarea name="" rows="6" className="col-md-8 mb-4" />
+              <textarea name="" rows="6" className="col-md-10 mb-4  inputs-text" />
             </div>
          
-            <div className="col-md-8 mb-5">
+            <div className="col-md-8 mb-5 ">
               <p>
-                <input type="submit" value="Submit" />
+                <input className="button" type="submit" value="Submit" />
               </p>
+   
             </div>
           </form>
         </div>
