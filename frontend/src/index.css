@@ -59,11 +59,14 @@ code {
   font-weight:bolder;
 }
 
-.carousel-indicators {
+
+/* I don't understand this line css */
+
+/* .carousel-indicators {
   position: relative !important;
   right: 0;
   bottom: 0;
-}
+} */
 
 .paragraph-carousel {
   font-size: 26pt;
@@ -130,3 +133,5 @@ code {
   clear:both;
   overflow:auto;
 }
+
+
