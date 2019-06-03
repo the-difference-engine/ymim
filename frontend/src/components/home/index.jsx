@@ -15,7 +15,6 @@ class Home extends Component {
         <UpperMid />
         <LowerMid />
         <TopFooter />
-
       </div>
     );
   }
