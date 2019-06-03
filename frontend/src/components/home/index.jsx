@@ -6,7 +6,6 @@ import TopFooter from "./TopFooter";
 
 import "./index.css";
 
-
 class Home extends Component {
   render() {
     return (

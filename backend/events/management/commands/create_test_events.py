@@ -20,7 +20,11 @@ class Command(BaseCommand):
             Event.objects.create(
                 title=fake.sentence(nb_words=6),
                 description=fake.text(max_nb_chars=500),
-                start_datetime=fake.date_time_this_month(before_now=True, after_now=False, tzinfo=None),
-                end_datetime=fake.date_time_this_month(before_now=False, after_now=True, tzinfo=None),
+                start_datetime=fake.date_time_this_month(
+                    before_now=True, after_now=False, tzinfo=None
+                ),
+                end_datetime=fake.date_time_this_month(
+                    before_now=False, after_now=True, tzinfo=None
+                ),
                 event_image="https://via.placeholder.com/300",
             )

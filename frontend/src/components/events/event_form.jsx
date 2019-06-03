@@ -12,14 +12,10 @@ class EventForm extends Component {
   submitEvent = e => {
     e.preventDefault();
     if (this.props.event.id) {
-      this.props
-        .updateEvent(this.props.event)
-        .then(this.resetForm);
+      this.props.updateEvent(this.props.event).then(this.resetForm);
     } else {
       debugger;
-      this.props
-        .addEvent(this.props.event)
-        .then(this.resetForm);
+      this.props.addEvent(this.props.event).then(this.resetForm);
     }
   };
 
@@ -41,10 +37,7 @@ class EventForm extends Component {
             </div>
             <div className="form-group col-md-3">
               <label htmlFor="description">Description</label>
-              <textarea
-                className="form-control"
-                defaultValue={"\n "}
-              />
+              <textarea className="form-control" defaultValue={"\n "} />
             </div>
           </div>
           <div className="form-group col-md-3">
@@ -89,17 +82,13 @@ class EventForm extends Component {
 
 const mapDispatchToProps = dispatch => {
   return {
-    addEvent: (event) => {
-      return dispatch(
-        events.addEvent(event)
-      );
+    addEvent: event => {
+      return dispatch(events.addEvent(event));
     },
 
-    updateEvent: (event) => {
-      return dispatch(
-        events.updateEvent(event)
-      );
-    },
+    updateEvent: event => {
+      return dispatch(events.updateEvent(event));
+    }
   };
 };
 

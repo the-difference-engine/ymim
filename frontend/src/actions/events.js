@@ -12,10 +12,10 @@ export const fetchEvents = () => {
   };
 };
 
-export const addEvent = (event) => {
+export const addEvent = event => {
   return dispatch => {
     let headers = { "Content-Type": "application/json" };
-    let body = JSON.stringify({event});
+    let body = JSON.stringify({ event });
     return fetch("events/", {
       headers,
       method: "POST",
@@ -31,11 +31,11 @@ export const addEvent = (event) => {
   };
 };
 
-export const updateEvent = (event) => {
-  return (dispatch) => {
+export const updateEvent = event => {
+  return dispatch => {
     let headers = { "Content-Type": "application/json" };
     let body = JSON.stringify(event);
-    
+
     return fetch(`events/${event.id}/`, {
       headers,
       method: "PUT",

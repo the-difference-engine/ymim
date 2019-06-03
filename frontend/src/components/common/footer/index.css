@@ -26,18 +26,14 @@ nav {
   text-decoration: none;
 }
 
-
 .topFooter {
   background-color: blue;
 }
 
 .box {
-  
   height: 60px;
   border: 2px solid red;
   margin: 4%;
-  
-  
 }
 
 .flex-container {
@@ -68,5 +64,4 @@ nav {
 .foot_head {
   display: inline;
   margin: 20px;
-
 }

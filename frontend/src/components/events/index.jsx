@@ -9,7 +9,7 @@ class Events extends Component {
     super(props);
     this.state = {
       event: {}
-    }
+    };
   }
 
   componentDidMount() {
@@ -32,13 +32,9 @@ class Events extends Component {
             <div className="event_container col-md-3" key={`event_${event.id}`}>
               <h3>{event.title}</h3>
               <p>{event.description}</p>
-              <p>
-                {event.start_datetime}
-              </p>
+              <p>{event.start_datetime}</p>
               <p>to</p>
-              <p>
-                {event.end_datetime}
-              </p>
+              <p>{event.end_datetime}</p>
               <img src={event.event_image} />
               <button
                 className="btn btn-info"
@@ -56,7 +52,7 @@ class Events extends Component {
           ))}
         </div>
 
-        <EventForm event={this.state.event}/>
+        <EventForm event={this.state.event} />
       </div>
     );
   }
