@@ -1,10 +1,14 @@
-import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
-import { Nav, Navbar, Container } from 'react-bootstrap';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookSquare, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import logo from '../Assets/logo.png';
-import './Header.css';
+import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
+import { Nav, Navbar, Container } from "react-bootstrap";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookSquare,
+  faInstagram,
+  faTwitter
+} from "@fortawesome/free-brands-svg-icons";
+import logo from "../Assets/logo.png";
+import "./Header.css";
 class NavTop extends Component {
   render() {
     return (
@@ -18,13 +22,13 @@ class NavTop extends Component {
             <Nav className="mx-auto">
               <NavLink className="nav-link-top" to="/about">
                 About
-							</NavLink>
+              </NavLink>
               <NavLink className="nav-link-top" to="/contact-us">
                 Contact
-							</NavLink>
+              </NavLink>
               <NavLink className="nav-link-top" to="/events">
                 Events
-							</NavLink>
+              </NavLink>
             </Nav>
             <Nav>
               <NavLink href="https://www.facebook.com/theymim/">
