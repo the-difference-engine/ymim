@@ -1,4 +1,4 @@
-FROM python:3.7.3-slim-stretch
+FROM python:3.7.3
 
 ENV PYTHONUNBUFFERED 1
 
@@ -13,5 +13,5 @@ ADD . /code/
 RUN pip install --upgrade pip
 RUN pip install pipenv
 RUN pipenv install --system
-    
+
 ENTRYPOINT ["./docker-entrypoint.sh"]
