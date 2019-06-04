@@ -13,30 +13,37 @@ export default class footer extends Component {
                     <nav>
                         <ul className='row menu-text'>
                             <li className='col footer_link'>
-                                <Link to="/about" style={{ color: 'white', fontSize: "12px" }} className="foot-text">About</Link>
+                                <Link className="footer-list" to="/events">Home</Link>
                             </li>
                             <li className='col footer_link'>
-                                <Link style={{ color: 'white', fontSize: "12px" }} className="nav-item" to="/meet-the-team">Contact</Link>
+                                <Link className="footer-list" to="/about">About</Link>
                             </li>
                             <li className='col footer_link'>
-                                <Link style={{ color: 'white', fontSize: "12px" }} to="/ambassadors">Volunteer</Link>
+                                <Link className="footer-list" to="/meet-the-team">Contact</Link>
                             </li>
                             <li className='col footer_link'>
-                                <Link style={{ color: 'white', fontSize: "12px" }} to="/events">Enroll</Link>
+                                <Link className="footer-list" to="/events">Enroll</Link>
                             </li>
                             <li className='col footer_link'>
-                                <Link style={{ color: 'white', fontSize: "12px" }} to="/events">Donate</Link>
+                                <Link className="footer-list" to="/ambassadors">Volunteer</Link>
                             </li>
                             <li className='col footer_link'>
-                                <Link style={{ color: 'white', fontSize: "12px" }} to="/events">Events</Link>
+                                <Link className="footer-list" to="/events">Donate</Link>
                             </li>
                             <li className='col footer_link'>
-                                <Link style={{ color: 'white', fontSize: "12px" }} to="/events">Home</Link>
+                                <Link className="footer-list" to="/events">Events</Link>
                             </li>
-
                         </ul>
+
                     </nav>
                 </div>
+
+                <div className="footer-contact">
+                            <h5>
+                                <a className="contact" href="mailto:founder@theymim.org">founder@theymim.org</a>
+                                <p>773.941.1200</p>
+                            </h5>
+                        </div>
             </footer>
         )
     }
