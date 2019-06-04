@@ -31,7 +31,7 @@ export const addEvent = event => {
   };
 };
 
-export const updateEvent = event => {
+export const updateEvent = (event, index) => {
   return dispatch => {
     let headers = { "Content-Type": "application/json" };
     let body = JSON.stringify(event);

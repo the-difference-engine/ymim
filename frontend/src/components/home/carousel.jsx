@@ -1,11 +1,11 @@
 import React, { Component } from "react";
 import { Carousel } from "react-bootstrap";
-import ymim1 from "./Assets/ymim1.png";
-import ymim2 from "./Assets/ymim2.png";
-import ymim3 from "./Assets/ymim3.png";
-import "../index.css";
+import ymim1 from "../../assets/ymim1.png";
+import ymim2 from "../../assets/ymim2.png";
+import ymim3 from "../../assets/ymim3.png";
+import "./index.css";
 import { Navbar } from "react-bootstrap";
-import logo from "./Assets/logo.png";
+import logo from "../../assets/logo.png";
 
 const inline = {
   height: "auto",

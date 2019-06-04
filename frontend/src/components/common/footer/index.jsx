@@ -1,12 +1,17 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import "./footer.css";
+import { NavLink } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookSquare, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import TopFooter from "./top_footer";
+import "./index.css";
 
 export default class footer extends Component {
   render() {
     return (
       <footer className="footer py-3">
         <div className="container">
+          <TopFooter />
           <nav>
             <ul className="row menu-text">
               <li className="col footer_link">
@@ -49,7 +54,6 @@ export default class footer extends Component {
               <NavLink href="https://www.facebook.com/theymim/">
                 <FontAwesomeIcon className="facebook" icon={faFacebookSquare} />
               </NavLink>
-
               <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
                 <FontAwesomeIcon className="insta" icon={faInstagram} />
               </NavLink>

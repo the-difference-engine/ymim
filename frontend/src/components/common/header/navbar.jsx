@@ -1,11 +1,11 @@
 
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
-import { Nav, Navbar, Container, Row, Col, NavDropdown } from 'react-bootstrap';
+import { Nav, Navbar, Container, NavDropdown } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import logo from '../Assets/logo.png';
-import './Header.css';
+import logo from '../../../assets/logo.png';
+import './index.css';
 
 class NavBar extends Component {
 	constructor(props) {
