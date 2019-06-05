@@ -50,17 +50,6 @@ export default class footer extends Component {
                 </Link>
               </li>
             </ul>
-            <div id="tsocial">
-              <NavLink href="https://www.facebook.com/theymim/">
-                <FontAwesomeIcon className="facebook" icon={faFacebookSquare} />
-              </NavLink>
-              <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
-                <FontAwesomeIcon className="insta" icon={faInstagram} />
-              </NavLink>
-              <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
-                <FontAwesomeIcon className="twitter" icon={faTwitter} />
-              </NavLink>
-            </div>
           </nav>
         </div>
 
@@ -71,6 +60,17 @@ export default class footer extends Component {
             </a>
             <p>773.941.1200</p>
           </h5>
+        </div>
+        <div className="fsocial">
+            <NavLink href="https://www.facebook.com/theymim/">
+              <FontAwesomeIcon className="facebook" icon={faFacebookSquare} />
+            </NavLink>
+            <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
+              <FontAwesomeIcon className="insta" icon={faInstagram} />
+            </NavLink>
+            <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
+              <FontAwesomeIcon className="twitter" icon={faTwitter} />
+            </NavLink>
         </div>
       </footer>
     );
