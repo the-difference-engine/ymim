@@ -1,4 +1,3 @@
-
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Nav, Navbar, Container, NavDropdown } from 'react-bootstrap';
@@ -24,7 +23,7 @@ class NavBar extends Component {
 	render() {
 		return (
 			<Container fluid={true} className="px-0">
-				<Navbar collapseOnSelect className="ym-top ym-top-mobile navbar-expand-md">
+				<Navbar collapseOnSelect className="ym-top navbar-expand-md">
 					<Navbar.Brand className="my-auto pt-4" href="/">
 						<img className="logo" src={logo} alt="YMIM" />
 					</Navbar.Brand>
@@ -79,7 +78,7 @@ class NavBar extends Component {
 						</Nav>
 					</Navbar.Collapse>
 					<NavLink className="nav-link" to="/donate" activeClassName="nav-link-selected">
-						<button className="donate-button mt-2"> Donate </button>
+						<button id="donate-button" className="mt-2"> Donate </button>
 					</NavLink>
 				</Navbar>
 			</Container>
