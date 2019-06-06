@@ -29,15 +29,12 @@ class LowerMid extends Component {
               Won't you join us?
             </p>
             <h5 className="subheading">RSVP and Find out More:</h5>
-
-            <h5 className="subheading">Eventbright:</h5>
-            <a className="spaceanchors" style={linkStyle} href="#">
-              https://www.eventbrite.com/ymim
+            <a className="spaceanchors" style={linkStyle} href="https://www.eventbrite.com/ymim" alt="Eventbrite">
+              Eventbrite
             </a>
-
-            <h5 className="subheading">Facebook:</h5>
-            <a className="spaceanchors" style={linkStyle} href="#">
-              https://www.facebook.com/pg/theymim.events
+            <br />
+            <a className="spaceanchors" style={linkStyle} href="https://www.facebook.com/pg/theymim.events" alt="Facebook">
+              Facebook
             </a>
             <br />
             <br />

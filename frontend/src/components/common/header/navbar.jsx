@@ -24,7 +24,7 @@ class NavBar extends Component {
 		return (
 			<Container fluid={true} className="px-0">
 				<Navbar collapseOnSelect className="ym-top navbar-expand-md">
-					<Navbar.Brand className="my-auto pt-4" href="/">
+					<Navbar.Brand className="my-auto" href="/">
 						<img className="logo" src={logo} alt="YMIM" />
 					</Navbar.Brand>
 					<Nav className="mx-auto my-auto">
