@@ -33,7 +33,7 @@ const router = (
               <Route exact path="/" component={Home} />
               <Route exact path="/fetch" component={DemoPage} />
               <Route exact path="/Donate" component={Donate} />
-              <Route exact path="/contact" component={Contact} />
+              <Route exact path="/contact-us" component={Contact} />
               <Route exact path="/about" component={About} />
               <Route exact path="/enrollment" component={Enroll} />
               <Route exact path="/meet-the-team" component={Team} />
