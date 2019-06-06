@@ -8,6 +8,7 @@ import './footer.css';
 export default class footer extends Component {
     render() {
         return (
+            <>
             <footer className='footer py-3'>
                 <div className='container'>
                     <nav>
@@ -45,6 +46,7 @@ export default class footer extends Component {
                             </h5>
                         </div>
             </footer>
+            </>
         )
     }
 }
