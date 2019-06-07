@@ -1,7 +1,7 @@
-import React, { Component } from 'react';
-import { NavLink } from 'react-router-dom';
-import './index.css';
-import NavBar from './navbar';
+import React, { Component } from "react";
+import { NavLink } from "react-router-dom";
+import "./index.css";
+import NavBar from "./navbar";
 
 class Header extends Component {
   render() {
@@ -11,18 +11,30 @@ class Header extends Component {
       <div>
         <NavBar />
         {AuthAdmin ? (
-          <NavLink className="nav-link-top" to="/admin" activeClassName="nav-link-top-selected">
+          <NavLink
+            className="nav-link-top"
+            to="/admin"
+            activeClassName="nav-link-top-selected"
+          >
             Admin
-					</NavLink>
+          </NavLink>
         ) : AuthUser ? (
-          <NavLink className="nav-link-top" to="/login" activeClassName="nav-link-top-selected">
+          <NavLink
+            className="nav-link-top"
+            to="/login"
+            activeClassName="nav-link-top-selected"
+          >
             Logout
-					</NavLink>
+          </NavLink>
         ) : (
-              <NavLink className="nav-link-top" to="/login" activeClassName="nav-link-top-selected">
-                Login
-					</NavLink>
-            )}
+          <NavLink
+            className="nav-link-top"
+            to="/login"
+            activeClassName="nav-link-top-selected"
+          >
+            Login
+          </NavLink>
+        )}
       </div>
     );
   }
