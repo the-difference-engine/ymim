@@ -53,6 +53,13 @@
 	left: 24px;
 	z-index: 50;
 }
+#donateband{
+	background-color: #519b56;
+}
+
+#ym-bottomband{
+	background-color: #519b56;
+}
 
 @media all and (min-width: 768px) and (max-width: 2048px) {
 	.ym-top {
@@ -95,7 +102,7 @@
 		background-color: #519b56;
 		font-size: 12pt;
 		font-family: 'GothamMedium';
-		height: 35%;
+		height: auto;
 		color: white;
 		width: 100%;
 	}

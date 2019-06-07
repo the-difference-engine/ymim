@@ -58,7 +58,7 @@ class NavBar extends Component {
 					</Col>
 				</Row>
 				<Row>
-					<Col xs={10} sm={10} lg={10}>
+					<Col xs={10} sm={10} lg={10} id="ym-bottomband">
 						<Navbar collapseOnSelect expand="lg" className="ym-bottom">
 							<Navbar.Toggle onClick={this.toggle} />
 							<Navbar.Collapse isOpen={this.state.isOpen} navbar>
@@ -95,7 +95,7 @@ class NavBar extends Component {
 							</Navbar.Collapse>
 						</Navbar>
 					</Col>
-					<Col xs={2} sm={2} lg={2}>
+					<Col xs={2} sm={2} lg={2} id="donateband">
 						<NavLink to="/donate" activeClassName="nav-link-selected">
 							<button id="donate-button" className="mt-2">
 								{' '}
