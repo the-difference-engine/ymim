@@ -33,45 +33,13 @@
 	z-index: 50;
 }
 
-.facebook {
-	color: #3c579d;
-	margin-right: 25px;
-	margin-bottom: 25px;
+.social-media {
+	color: #519b56;
 	width: 25px;
 	height: 25px;
+
 }
 
-.insta {
-	background-image: linear-gradient(
-		to left bottom,
-		#f9ed32,
-		#ffc726,
-		#ffa135,
-		#ff7b4a,
-		#ff585e,
-		#fc3e6d,
-		#f42280,
-		#e50094,
-		#d600ab,
-		#bc00c5,
-		#8e00e2,
-		#002aff
-	);
-	color: white;
-	border-radius: 5px;
-	padding: 2px;
-	margin-right: 25px;
-	margin-bottom: 25px;
-	width: 25px;
-	height: 25px;
-}
-
-.twitter {
-	color: #52a7e7;
-	margin-bottom: 25px;
-	width: 25px;
-	height: 25px;
-}
 
 @media all and (min-width: 768px) and (max-width: 2048px) {
 	.ym-top {

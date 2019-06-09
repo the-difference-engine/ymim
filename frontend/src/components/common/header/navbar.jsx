@@ -22,9 +22,9 @@ class NavBar extends Component {
 	}
 	render() {
 		return (
-			<Container fluid={true} className="px-0">
-				<Row>
-					<Col>
+			<Container fluid={true}>
+				<Row noGutters={true}>
+					<Col className="px-0">
 						<Navbar collapseOnSelect className="ym-top navbar-expand-md">
 							<Navbar.Brand className="my-auto" href="/">
 								<img className="logo" src={logo} alt="YMIM" />
@@ -40,26 +40,23 @@ class NavBar extends Component {
 									Events
 								</NavLink>
 							</Nav>
-							<Nav className="pt-4 mr-4 my-auto">
-								<div id="tsocial">
+							<Nav id="tsocial" className="mt-4 mr-4 my-auto">
 									<NavLink href="https://www.facebook.com/theymim/">
-										<FontAwesomeIcon className="facebook" icon={faFacebookSquare} />
-									</NavLink>
-
-									<NavLink href="https://www.instagram.com/theyoungmasterbuilders">
-										<FontAwesomeIcon className="insta" icon={faInstagram} />
+										<FontAwesomeIcon className="social-media mr-2" icon={faFacebookSquare} />
 									</NavLink>
 									<NavLink href="https://www.instagram.com/theyoungmasterbuilders">
-										<FontAwesomeIcon className="twitter" icon={faTwitter} />
+										<FontAwesomeIcon className="social-media mr-2" icon={faInstagram} />
 									</NavLink>
-								</div>
+									<NavLink href="https://www.instagram.com/theyoungmasterbuilders">
+										<FontAwesomeIcon className="social-media mr-2" icon={faTwitter} />
+									</NavLink>
 							</Nav>
 						</Navbar>
 					</Col>
 				</Row>
-				<Row>
-					<Col xs={10} sm={10} lg={10} id="ym-bottomband">
-						<Navbar collapseOnSelect expand="lg" className="ym-bottom">
+				<Row className="ym-bottom" noGutters={true} >
+					<Col xs={8} sm={8} md={10} lg={10} className="px-0">
+						<Navbar collapseOnSelect expand="lg" className="px-0">
 							<Navbar.Toggle onClick={this.toggle} />
 							<Navbar.Collapse isOpen={this.state.isOpen} navbar>
 								<Nav className="mx-auto">
@@ -95,9 +92,9 @@ class NavBar extends Component {
 							</Navbar.Collapse>
 						</Navbar>
 					</Col>
-					<Col xs={2} sm={2} lg={2} id="donateband">
-						<NavLink to="/donate" activeClassName="nav-link-selected">
-							<button id="donate-button" className="mt-2">
+					<Col className="justify-content-center" xs={4} sm={4} md={2} lg={2}>
+						<NavLink to="/donate">
+							<button id="donate-button">
 								{' '}
 								Donate{' '}
 							</button>
