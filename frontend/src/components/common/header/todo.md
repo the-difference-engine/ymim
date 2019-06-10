@@ -13,5 +13,9 @@ There's a shopping cart icon next to the donate button
     I'm thinking for this we'll have to create a new Col and squeeze it in there with the different screen sizes 
 Other components interfereing with responsiveness 
     Fix it temporarily and talk to the other team about fixing it or fix it permanently and have them pull the changes?
+        The use of Col could probably help with responsiveness
+        Custom media queries can shrink the text when mobile
+        Is there an alternative to using <ul>?
+
 
 

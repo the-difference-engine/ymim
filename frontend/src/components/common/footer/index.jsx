@@ -11,7 +11,7 @@ export default class footer extends Component {
     return (
       <footer className="footer py-3">
         <div className="container">
-          <TopFooter />
+          {/*<TopFooter />*/}
           <nav>
             <ul className="row menu-text">
               <li className="col footer_link">
