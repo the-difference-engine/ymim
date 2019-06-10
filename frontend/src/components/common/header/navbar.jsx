@@ -42,10 +42,10 @@ class NavBar extends Component {
 							</Nav>
 							<Nav id="tsocial" className="mt-4 mr-4 my-auto">
 									<NavLink href="https://www.facebook.com/theymim/">
-										<FontAwesomeIcon className="social-media mr-2" icon={faFacebookSquare} />
+										<FontAwesomeIcon className="social-media mr-3" icon={faFacebookSquare} />
 									</NavLink>
 									<NavLink href="https://www.instagram.com/theyoungmasterbuilders">
-										<FontAwesomeIcon className="social-media mr-2" icon={faInstagram} />
+										<FontAwesomeIcon className="social-media mr-3" icon={faInstagram} />
 									</NavLink>
 									<NavLink href="https://www.instagram.com/theyoungmasterbuilders">
 										<FontAwesomeIcon className="social-media mr-2" icon={faTwitter} />
@@ -94,7 +94,7 @@ class NavBar extends Component {
 					</Col>
 					<Col className="justify-content-center" xs={4} sm={4} md={2} lg={2}>
 						<NavLink to="/donate">
-							<button id="donate-button">
+							<button className="mt-4" id="donate-button">
 								{' '}
 								Donate{' '}
 							</button>
