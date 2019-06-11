@@ -29,7 +29,7 @@ class NavBar extends Component {
 							<Navbar.Brand className="my-auto" href="/">
 								<img className="logo" src={logo} alt="YMIM" />
 							</Navbar.Brand>
-							<Nav className="mx-auto my-auto">
+							<Nav>
 								<NavLink className="nav-link-top mr-5" to="/about">
 									About
 								</NavLink>
@@ -40,7 +40,7 @@ class NavBar extends Component {
 									Events
 								</NavLink>
 							</Nav>
-							<Nav id="tsocial" className="mt-4 mr-4 my-auto">
+							<Nav id="tsocial" className="ml-auto">
 									<NavLink href="https://www.facebook.com/theymim/">
 										<FontAwesomeIcon className="social-media mr-3" icon={faFacebookSquare} />
 									</NavLink>
