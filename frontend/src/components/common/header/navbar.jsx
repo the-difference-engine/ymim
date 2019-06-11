@@ -55,7 +55,7 @@ class NavBar extends Component {
 					</Col>
 				</Row>
 				<Row className="ym-bottom" noGutters={true} >
-					<Col xs={8} sm={8} md={10} lg={10} className="px-0">
+					<Col className="align-me" xs={8} sm={8} md={10} lg={10} className="px-0">
 						<Navbar collapseOnSelect expand="lg" className="px-0">
 							<Navbar.Toggle onClick={this.toggle} />
 							<Navbar.Collapse isOpen={this.state.isOpen} navbar>
@@ -92,11 +92,10 @@ class NavBar extends Component {
 							</Navbar.Collapse>
 						</Navbar>
 					</Col>
-					<Col className="justify-content-center" xs={4} sm={4} md={2} lg={2}>
+					<Col className="align-me" xs={4} sm={4} md={2} lg={2}>
 						<NavLink to="/donate">
-							<button className="mt-4" id="donate-button">
-								{' '}
-								Donate{' '}
+							<button id="donate-button">
+								Donate
 							</button>
 						</NavLink>
 					</Col>

@@ -40,6 +40,10 @@
 
 }
 
+.align-me{
+	display: flex;
+	align-items: center;
+}
 
 @media all and (min-width: 768px) and (max-width: 2048px) {
 	.ym-top {
@@ -101,6 +105,7 @@
 		height: 40px;
 		text-align: center;
 	}
+	
 
 	#tsocial {
 		display: none;
