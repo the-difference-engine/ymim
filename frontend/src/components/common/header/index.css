@@ -1,16 +1,40 @@
+.ym-top {
+	background-color: #ffffff;
+	font-size: 24pt;
+	font-family: 'GothamMedium';
+	height: auto;
+	width: 100%;
+}
+
+.ym-bottom {
+	background-color: #519b56;
+	font-size: 24pt;
+	font-family: 'GothamMedium';
+	height: auto;
+	color: white;
+	width: 100%;
+}
+
 .nav-link {
-	padding: 20px;
-	color: hsl(101, 43%, 42%);
 	height: 100%;
 	padding: 20px;
 	color: white !important;
-	height: 100%;
+}
+
+.nav-link:hover {
+	text-decoration:none;
+	color: #fdd368;
 }
 
 .nav-link-top {
 	padding: 20px;
 	color: #000000;
 	height: 100%;
+}
+
+.nav-link-top:hover {
+	text-decoration:none;
+	color: #fdd368;
 }
 
 .logo {
@@ -37,36 +61,23 @@
 	align-items: center;
 }
 
-.nav-link-top:hover{
-	text-decoration:none;
-	color: #fdd368;
+#donate-button {
+	font-size: 20px;
+	font-weight: bold;
+	background-color: #fdd368;
+	border-radius: 2px;
+	width: 140px;
+	height: 54px;
+	text-align: center;
 }
 
 @media all and (min-width: 768px) and (max-width: 2048px) {
 	.ym-top {
-		background-color: #ffffff;
-		font-size: 24pt;
-		font-family: 'GothamMedium';
 		height: 140px;
-		width: 100%;
-	}
-	.ym-bottom {
-		background-color: #519b56;
-		font-size: 24pt;
-		font-family: 'GothamMedium';
-		height: 140px;
-		color: white;
-		width: 100%;
 	}
 
-	#donate-button {
-		font-size: 20px;
-		font-weight: bold;
-		background-color: #fdd368;
-		border-radius: 2px;
-		width: 140px;
-		height: 54px;
-		text-align: center;
+	.ym-bottom {
+		height: 140px;
 	}
 
 	.logo {
@@ -75,35 +86,30 @@
 	}
 }
 
+@media all and (min-width: 1024px) and (max-width: 2048px) {
+	.logo {
+		height: 180px;
+		width: 180px;
+	}
+}
+
 @media all and (min-width: 320px) and (max-width: 768px) {
 	.ym-top {
-		background-color: #ffffff;
 		font-size: 12pt;
-		font-family: 'GothamMedium';
 		height: 35%;
-		width: 100%;
 	}
 
-	.ym-bottom {
-		background-color: #519b56;
+	.ym-bottom {		
 		font-size: 12pt;
-		font-family: 'GothamMedium';
 		height: auto;
-		color: white;
-		width: 100%;
 	}
 
 	#donate-button {
 		font-size: 12px;
-		font-weight: bold;
-		background-color: #fdd368;
-		border-radius: 2px;
 		width: 80px;
 		height: 40px;
-		text-align: center;
 	}
 	
-
 	#tsocial {
 		display: none;
 	}
