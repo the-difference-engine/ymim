@@ -59,7 +59,7 @@ class NavBar extends Component {
 						<Navbar collapseOnSelect expand="lg" className="px-0">
 							<Navbar.Toggle onClick={this.toggle} />
 							<Navbar.Collapse isOpen={this.state.isOpen} navbar>
-								<Nav className="mx-auto">
+								<Nav className="ml-1">
 									<NavDropdown
 										className="nav-link"
 										to="/resources"

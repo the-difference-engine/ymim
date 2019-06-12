@@ -41,6 +41,9 @@
 	text-decoration:none;
 	color: #fdd368;
 }
+.ml-1 {
+	margin-left: 175px !important;
+}
 
 @media all and (min-width: 768px) and (max-width: 2048px) {
 	.ym-top {
