@@ -1,30 +1,24 @@
 .footer {
-  margin-top: auto;
-  bottom: 0;
-  height: 100px;
-  background-color: #519b46;
-  position: relative;
+	/* margin-top: auto; */
+	height: 15vh;
+	background-color: #519b46;
 }
 
 .footer_link {
 	display: inline-block !important;
 }
 
-.menu-text {
-  /* color: white; */
-}
-
 .foot_text {
 	color: white;
 	text-decoration: none;
 }
-li {
+
+.footer-list
+{
 	color: white !important;
 	text-decoration: none !important;
-}
-
-nav {
-	text-decoration: none;
+	font-family: "Montserrat";
+	font-size: 14pt;
 }
 
 .topFooter {
@@ -32,9 +26,9 @@ nav {
 }
 
 .box {
-  height: 60px;
-  border: 2px solid red;
-  margin: 4%;
+	height: 60px;
+	border: 2px solid red;
+	margin: 4%;
 }
 
 .flex-container {
@@ -85,7 +79,9 @@ nav {
 	font-family: 'Gotham Medium', 'Arial Narrow', Arial, sans-serif;
 	text-align: center !important;
 }
+
 /* Moves the inspiriing */
+
 .movefont {
 	margin-right: 95px !important;
 }
@@ -93,6 +89,29 @@ nav {
 .moveConnecting {
 	margin-right: 35px !important;
 }
-#tsocial {
-	display: inline-block;
+
+.contact {
+	color: #fff;
+	text-align: right;
+}
+
+.footer-contact {
+	text-align: right;
+	margin-top: 3vh;
+}
+
+.link-wrapper {
+	margin-top: 5vh;
+}
+
+@media screen and (min-width:520px){
+	#tsocial {
+		display:none;
+	}
+}
+
+
+.moveChild{
+	margin-left:200px;
+	text-align:right !important;
 }
