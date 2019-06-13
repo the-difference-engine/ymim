@@ -29,7 +29,7 @@ class NavBar extends Component {
 							<Navbar.Brand className="my-auto" href="/">
 								<img className="logo" src={logo} alt="YMIM" />
 							</Navbar.Brand>
-							<Nav>
+							<Nav className="mx-auto my-auto ym-top-desktop">
 								<NavLink className="nav-link-top mr-5" to="/about">
 									About
 								</NavLink>
@@ -57,7 +57,7 @@ class NavBar extends Component {
 				<Row className="ym-bottom" noGutters={true} >
 					<Col className="align-me" xs={8} sm={8} md={10} lg={10} className="px-0">
 						<Navbar collapseOnSelect expand="lg" className="px-0">
-							<Navbar.Toggle onClick={this.toggle} />
+							<Navbar.Toggle className="ml-3" onClick={this.toggle} />
 							<Navbar.Collapse isOpen={this.state.isOpen} navbar>
 								<Nav className="ml-1">
 									<NavDropdown
@@ -92,7 +92,7 @@ class NavBar extends Component {
 							</Navbar.Collapse>
 						</Navbar>
 					</Col>
-					<Col className="align-me" xs={4} sm={4} md={2} lg={2}>
+					<Col className="center-button" xs={4} sm={4} md={2} lg={2}>
 						<NavLink to="/donate">
 							<button id="donate-button">
 								Donate

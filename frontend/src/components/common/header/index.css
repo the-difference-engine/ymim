@@ -22,8 +22,8 @@
 }
 
 .nav-link:hover {
-	text-decoration:none;
-	color: #fdd368;
+	text-decoration: none;
+	color: #fdd368 !important;
 }
 
 .nav-link-top {
@@ -33,7 +33,7 @@
 }
 
 .nav-link-top:hover {
-	text-decoration:none;
+	text-decoration: none;
 	color: #fdd368;
 }
 
@@ -53,26 +53,24 @@
 	color: #519b56;
 	width: 25px;
 	height: 25px;
-
-}
-
-.align-me{
-	display: flex;
-	align-items: center;
 }
 
 #donate-button {
 	font-size: 20px;
 	font-weight: bold;
 	background-color: #fdd368;
-	border-radius: 2px;
+	border-radius: 7px;
+	border: none;
 	width: 140px;
 	height: 54px;
 	text-align: center;
 }
-.ml-1 {
-	margin-left: 175px !important;
+
+.center-button {
+	margin-top: auto;
+	margin-bottom: auto;
 }
+
 
 @media all and (min-width: 768px) and (max-width: 2048px) {
 	.ym-top {
@@ -87,22 +85,45 @@
 		height: 150px;
 		width: 150px;
 	}
+
 }
 
 @media all and (min-width: 1024px) and (max-width: 2048px) {
+	
 	.logo {
 		height: 180px;
 		width: 180px;
 	}
+
+	.ml-1 {
+		margin-left: 175px !important;
+	}
+}
+
+@media all and (min-width: 1440px) and (max-width: 2048px) {
+
+	.ml-1 {
+		margin-left: 200px !important;
+	}
+
+	.ym-top-desktop {
+		margin-left: 0px !important;
+		margin-right: 0px !important;
+	}
 }
 
 @media all and (min-width: 320px) and (max-width: 768px) {
+	
 	.ym-top {
 		font-size: 12pt;
 		height: 35%;
 	}
 
-	.ym-bottom {		
+	.nav-link-top {
+		padding: 0px;
+	}
+
+	.ym-bottom {
 		font-size: 12pt;
 		height: auto;
 	}
@@ -112,7 +133,12 @@
 		width: 80px;
 		height: 40px;
 	}
-	
+
+	.center-button {
+		margin-top: 10px;
+		margin-bottom: 10px;
+	}
+
 	#tsocial {
 		display: none;
 	}
@@ -120,4 +146,5 @@
 	.logo {
 		display: none;
 	}
+
 }
