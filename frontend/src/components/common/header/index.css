@@ -37,6 +37,15 @@
 	color: #fdd368;
 }
 
+div.dropdown-menu.show{
+	background-color: #519b56;
+}
+
+a.dropdown-item{
+	font-size:24pt;
+	color: white;
+}
+
 .logo {
 	width: 180px;
 	height: 180px;
