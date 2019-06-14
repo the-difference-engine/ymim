@@ -11,3 +11,4 @@ class Event(models.Model):
     event_image = models.ImageField(
         upload_to=None, default="https://via.placeholder.com/150", blank=True, null="True"
     )
+ 
