@@ -1,7 +1,7 @@
 export const fetchEvents = () => {
   return dispatch => {
     let headers = { "Content-Type": "application/json" };
-    return fetch("events", { headers })
+    return fetch("api/events", { headers })
       .then(res => res.json())
       .then(events => {
         return dispatch({
@@ -16,7 +16,7 @@ export const addEvent = event => {
   return dispatch => {
     let headers = { "Content-Type": "application/json" };
     let body = JSON.stringify({ event });
-    return fetch("events/", {
+    return fetch("api/events/", {
       headers,
       method: "POST",
       body
@@ -36,7 +36,7 @@ export const updateEvent = (event, index) => {
     let headers = { "Content-Type": "application/json" };
     let body = JSON.stringify(event);
 
-    return fetch(`events/${event.id}/`, {
+    return fetch(`api/events/${event.id}/`, {
       headers,
       method: "PUT",
       body
@@ -57,7 +57,7 @@ export const deleteEvent = index => {
     let headers = { "Content-Type": "application/json" };
     let eventId = getState().events[index].id;
 
-    return fetch(`events/${eventId}/`, {
+    return fetch(`api/events/${eventId}/`, {
       headers,
       method: "DELETE"
     }).then(res => {

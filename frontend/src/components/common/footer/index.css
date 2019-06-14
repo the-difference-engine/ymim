@@ -5,13 +5,14 @@
 }
 
 .footer_link {
-	display: inline-block !important;
+  display: inline-block !important;
 }
 
 .foot_text {
-	color: white;
-	text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
+<<<<<<< HEAD
 
 .footer-list
 {
@@ -19,10 +20,19 @@
 	text-decoration: none !important;
 	font-family: "Montserrat";
 	font-size: 14pt;
+=======
+li {
+  color: white !important;
+  text-decoration: none !important;
+}
+
+nav {
+  text-decoration: none;
+>>>>>>> 75921dd6d5cc6e32fe4faa6892e0ee5f27e25eda
 }
 
 .topFooter {
-	background-color: blue;
+  background-color: blue;
 }
 
 .box {
@@ -32,63 +42,64 @@
 }
 
 .flex-container {
-	display: flex;
-	justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .pic-container {
-	background: pink;
-	min-width: 200px;
-	height: 150px;
-	border-radius: 30px;
-	margin: 20px;
-	overflow: hidden;
-	transform: skew(20deg);
-	display: flex;
-	align-items: center;
+  background: pink;
+  min-width: 200px;
+  height: 150px;
+  border-radius: 30px;
+  margin: 20px;
+  overflow: hidden;
+  transform: skew(20deg);
+  display: flex;
+  align-items: center;
 }
 
 .pic {
-	width: 135%;
-	position: absolute;
-	left: -35px;
-	transform: skewX(-20deg);
-	object-fit: cover;
+  width: 135%;
+  position: absolute;
+  left: -35px;
+  transform: skewX(-20deg);
+  object-fit: cover;
 }
 
 .foot_head {
-	display: inline;
-	margin: 20px;
+  display: inline;
+  margin: 20px;
 }
 
 .footerImageHeader {
-	box-sizing: border-box;
-	text-align: center !important;
+  box-sizing: border-box;
+  text-align: center !important;
 }
 
 .h2-heading {
-	display: inline-block;
-	padding-right: 30px !important;
-	text-align: center !important;
+  display: inline-block;
+  padding-right: 30px !important;
+  text-align: center !important;
 }
 
 .h2-heading h2 {
-	color: black !important;
-	display: inline-block !important;
-	font-size: 36pt;
-	font-family: 'Gotham Medium', 'Arial Narrow', Arial, sans-serif;
-	text-align: center !important;
+  color: black !important;
+  display: inline-block !important;
+  font-size: 36pt;
+  font-family: "Gotham Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center !important;
 }
 
 /* Moves the inspiriing */
 
 .movefont {
-	margin-right: 95px !important;
+  margin-right: 95px !important;
 }
 
 .moveConnecting {
-	margin-right: 35px !important;
+  margin-right: 35px !important;
 }
+<<<<<<< HEAD
 
 .contact {
 	color: #fff;
@@ -102,6 +113,10 @@
 
 .link-wrapper {
 	margin-top: 5vh;
+=======
+#tsocial {
+  display: inline-block;
+>>>>>>> 75921dd6d5cc6e32fe4faa6892e0ee5f27e25eda
 }
 
 @media screen and (min-width:520px){
