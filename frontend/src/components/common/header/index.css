@@ -88,28 +88,13 @@
 
 }
 
-@media all and (min-width: 1024px) and (max-width: 2048px) {
+@media all and (min-width: 1440px) and (max-width: 2048px) {
 	
 	.logo {
 		height: 180px;
 		width: 180px;
 	}
 
-	.ml-1 {
-		margin-left: 175px !important;
-	}
-}
-
-@media all and (min-width: 1440px) and (max-width: 2048px) {
-
-	.ml-1 {
-		margin-left: 200px !important;
-	}
-
-	.ym-top-desktop {
-		margin-left: 0px !important;
-		margin-right: 0px !important;
-	}
 }
 
 @media all and (min-width: 320px) and (max-width: 768px) {

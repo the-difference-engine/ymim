@@ -29,7 +29,7 @@ class NavBar extends Component {
 							<Navbar.Brand className="my-auto" href="/">
 								<img className="logo" src={logo} alt="YMIM" />
 							</Navbar.Brand>
-							<Nav className="mx-auto my-auto ym-top-desktop">
+							<Nav className="mx-auto my-auto">
 								<NavLink className="nav-link-top mr-5" to="/about">
 									About
 								</NavLink>
@@ -40,7 +40,7 @@ class NavBar extends Component {
 									Events
 								</NavLink>
 							</Nav>
-							<Nav id="tsocial" className="ml-auto">
+							<Nav id="tsocial" className="ml-auto mr-3">
 									<NavLink href="https://www.facebook.com/theymim/">
 										<FontAwesomeIcon className="social-media mr-3" icon={faFacebookSquare} />
 									</NavLink>
@@ -55,11 +55,11 @@ class NavBar extends Component {
 					</Col>
 				</Row>
 				<Row className="ym-bottom" noGutters={true} >
-					<Col className="align-me" xs={8} sm={8} md={10} lg={10} className="px-0">
+					<Col className="mx-auto my-auto" xs={8} sm={8} md={10} lg={10} className="px-0">
 						<Navbar collapseOnSelect expand="lg" className="px-0">
 							<Navbar.Toggle className="ml-3" onClick={this.toggle} />
 							<Navbar.Collapse isOpen={this.state.isOpen} navbar>
-								<Nav className="ml-1">
+								<Nav className="mx-auto my-auto">
 									<NavDropdown
 										className="nav-link"
 										to="/resources"
