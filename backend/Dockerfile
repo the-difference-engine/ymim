@@ -2,9 +2,9 @@ FROM python:3.7.3
 
 ENV PYTHONUNBUFFERED 1
 
-RUN apt-get update -y && \
-    apt-get install -y --no-install-recommends postgresql postgresql-contrib && \
-    apt-get clean
+RUN apt-get update -y
+RUN apt-get install -y postgresql postgresql-contrib
+RUN apt-get clean
 
 RUN mkdir /code
 WORKDIR /code
