@@ -82,3 +82,16 @@ span {
 .warning{
     background:#fdd368;
 }
+
+.warning:hover{
+    background:#fdd368;
+}
+
+.warning::after:hover{
+    background:#fdd368;
+}
+
+
+/* .widthSelect{
+   width:220px;
+} */

@@ -12,15 +12,6 @@
   color: white;
   text-decoration: none;
 }
-<<<<<<< HEAD
-
-.footer-list
-{
-	color: white !important;
-	text-decoration: none !important;
-	font-family: "Montserrat";
-	font-size: 14pt;
-=======
 li {
   color: white !important;
   text-decoration: none !important;
@@ -28,7 +19,6 @@ li {
 
 nav {
   text-decoration: none;
->>>>>>> 75921dd6d5cc6e32fe4faa6892e0ee5f27e25eda
 }
 
 .topFooter {
@@ -99,24 +89,8 @@ nav {
 .moveConnecting {
   margin-right: 35px !important;
 }
-<<<<<<< HEAD
-
-.contact {
-	color: #fff;
-	text-align: right;
-}
-
-.footer-contact {
-	text-align: right;
-	margin-top: 3vh;
-}
-
-.link-wrapper {
-	margin-top: 5vh;
-=======
 #tsocial {
   display: inline-block;
->>>>>>> 75921dd6d5cc6e32fe4faa6892e0ee5f27e25eda
 }
 
 @media screen and (min-width:520px){

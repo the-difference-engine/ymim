@@ -1,11 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-<<<<<<< HEAD
-import { NavLink } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookSquare, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import { Container, Row, Col } from "react-bootstrap";
-=======
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -13,8 +7,7 @@ import {
   faInstagram,
   faTwitter
 } from "@fortawesome/free-brands-svg-icons";
-import TopFooter from "./top_footer";
->>>>>>> 75921dd6d5cc6e32fe4faa6892e0ee5f27e25eda
+import {Container,Row,Col} from 'react-bootstrap';
 import "./index.css";
 
 export default class footer extends Component {

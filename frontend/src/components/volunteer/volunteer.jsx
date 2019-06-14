@@ -1,20 +1,21 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import {Container, Row, Col } from "react-bootstrap";
 import "./volunteer.css";
 
 
 class Volunteer extends Component {
     render() {
         return (
-            <Container>
+            <Container className="mt-4">
                 <Row className="mx-auto">
                     <form action="/" method="post">
                         <Row noGutters={true}>
-                            <Col xs={12} sm={12} md={12} lg={6}>
-                                <h2>Get Involved!</h2>
-                                <div className="form-group s ">
+                            <Col xs={12} sm={12} md={12} lg={5} className="mr-2">
+                                <h2 className="mb-4">Get Involved!</h2>
+                                <div className="form-group">
                                     <label for="exampleFormControlSelect1"><b>Select your role</b></label>
-                                    <select class="form-control warning " id="exampleFormControlSelect1">
+                                    <select className="form-control warning  widthSelect col-md-10 " id="exampleFormControlSelect1">
+                                    <option className="warning">choose your role</option>
                                         <option className="warning">1</option>
                                         <option className="warning">2</option>
                                         <option className="warning">3</option>
@@ -41,8 +42,8 @@ class Volunteer extends Component {
                                 </div>
                                 <br />
                             </Col>
-                            <Col xs={12} sm={12} md={12} lg={6}>
-                                <h2>Volunteer!</h2>
+                            <Col xs={12} sm={12} md={12} lg={5}>
+                                <h2 className="mb-4" >Volunteer!</h2>
                                 <p>
                                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestias at laudantium, distinctio nulla quo minima delectus consequuntur aut incidunt ipsam quidem repellat fugiat consequatur nihil odit quam voluptas earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestias at laudantium, distinctio nulla quo minima delectus consequuntur aut incidunt ipsam quidem repellat fugiat consequatur nihil odit quam voluptas earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestias at laudantium, distinctio nulla quo minima delectus consequuntur aut incidunt ipsam quidem repellat fugiat consequatur nihil odit quam voluptas earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestias at laudantium, distinctio nulla quo minima delectus consequuntur aut incidunt ipsam quidem repellat fugiat consequatur nihil odit quam voluptas earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestias at laudantium, distinctio nulla quo minima delectus consequuntur aut incidunt ipsam quidem repellat fugiat consequatur nihil odit quam voluptas earum.Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa molestias at laudantium, distinctio nulla quo minima delectus consequuntur aut incidunt ipsam quidem repellat fugiat consequatur nihil odit quam voluptas earum.
                         </p>
