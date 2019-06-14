@@ -3,6 +3,7 @@ export const fetchEvents = () => {
     let headers = { "Content-Type": "application/json" };
     return fetch("api/events", { headers })
       .then(res => res.json())
+      .then(console.log("hey"))
       .then(events => {
         return dispatch({
           type: "FETCH_EVENTS",
