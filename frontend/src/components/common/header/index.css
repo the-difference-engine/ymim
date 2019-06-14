@@ -29,7 +29,7 @@
 .nav-link-top {
 	padding: 20px;
 	color: #000000;
-	height: 100%;
+  height: 100%;
 }
 
 .nav-link-top:hover {
@@ -93,7 +93,21 @@
 	.logo {
 		height: 180px;
 		width: 180px;
-	}
+  }
+  
+  .nav-link-top {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+
+  .nav-link {
+    margin-right: 35px;
+  }
+
+  .align-links {
+    padding-left: 180px;
+    color: white;
+  }
 
 }
 

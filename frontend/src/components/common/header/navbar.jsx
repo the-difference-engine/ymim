@@ -7,8 +7,8 @@ import logo from '../../../assets/logo.png';
 import './index.css';
 
 class NavBar extends Component {
-	constructor(props) {
-		super(props);
+  constructor(props) {
+    super(props);
 
 		this.toggle = this.toggle.bind(this);
 		this.state = {
@@ -59,7 +59,7 @@ class NavBar extends Component {
 						<Navbar collapseOnSelect expand="lg" className="px-0">
 							<Navbar.Toggle className="ml-3" onClick={this.toggle} />
 							<Navbar.Collapse isOpen={this.state.isOpen} navbar>
-								<Nav className="mx-auto my-auto">
+								<Nav className="mx-auto my-auto align-links">
 									<NavDropdown
 										className="nav-link"
 										to="/resources"
