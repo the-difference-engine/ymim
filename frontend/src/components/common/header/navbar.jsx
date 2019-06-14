@@ -40,23 +40,23 @@ class NavBar extends Component {
 									Events
 								</NavLink>
 							</Nav>
-							<Nav id="tsocial" className="ml-auto mr-3">
-									<NavLink href="https://www.facebook.com/theymim/">
-										<FontAwesomeIcon className="social-media mr-3" icon={faFacebookSquare} />
-									</NavLink>
-									<NavLink href="https://www.instagram.com/theyoungmasterbuilders">
-										<FontAwesomeIcon className="social-media mr-3" icon={faInstagram} />
-									</NavLink>
-									<NavLink href="https://www.instagram.com/theyoungmasterbuilders">
-										<FontAwesomeIcon className="social-media mr-2" icon={faTwitter} />
-									</NavLink>
+							<Nav id="tsocial" className="ml-auto">
+									<Nav.Link href="https://www.facebook.com/theymim/">
+										<FontAwesomeIcon className="social-media" icon={faFacebookSquare} />
+									</Nav.Link>
+									<Nav.Link href="https://www.instagram.com/theyoungmasterbuilders">
+										<FontAwesomeIcon className="social-media" icon={faInstagram} />
+									</Nav.Link>
+									<Nav.Link href="https://www.instagram.com/theyoungmasterbuilders">
+										<FontAwesomeIcon className="social-media" icon={faTwitter} />
+									</Nav.Link>
 							</Nav>
 						</Navbar>
 					</Col>
 				</Row>
 				<Row className="ym-bottom" noGutters={true} >
 					<Col className="mx-auto my-auto" xs={8} sm={8} md={10} lg={10} className="px-0">
-						<Navbar collapseOnSelect expand="lg" className="px-0">
+						<Navbar collapseOnSelect expand="lg">
 							<Navbar.Toggle className="ml-3" onClick={this.toggle} />
 							<Navbar.Collapse isOpen={this.state.isOpen} navbar>
 								<Nav className="mx-auto my-auto align-links">
