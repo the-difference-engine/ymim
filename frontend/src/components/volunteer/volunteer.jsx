@@ -12,12 +12,12 @@ class Volunteer extends Component {
                         <Row noGutters={true}>
                             <Col xs={12} sm={12} md={12} lg={6}>
                                 <h2>Get Involved!</h2>
-                                <div class="form-group">
+                                <div className="form-group s ">
                                     <label for="exampleFormControlSelect1"><b>Select your role</b></label>
-                                    <select class="form-control" id="exampleFormControlSelect1">
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
+                                    <select class="form-control warning " id="exampleFormControlSelect1">
+                                        <option className="warning">1</option>
+                                        <option className="warning">2</option>
+                                        <option className="warning">3</option>
                                     </select>
                                 </div>
                                 <div>

@@ -77,3 +77,8 @@ span {
 .main-content {
     line-height: 2.0;
 }
+
+
+.warning{
+    background:#fdd368;
+}
