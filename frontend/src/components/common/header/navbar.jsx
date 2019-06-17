@@ -47,16 +47,15 @@ class NavBar extends Component {
           </Nav>
           <Nav className="pt-4 mr-4 my-auto">
             <div id="tsocial">
-              <NavLink href="https://www.facebook.com/theymim/">
+              <a href="https://www.facebook.com/theymim/">
                 <FontAwesomeIcon className="facebook" icon={faFacebookSquare} />
-              </NavLink>
-
-              <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
+              </a>
+              <a href="https://www.instagram.com/theyoungmasterbuilders">
                 <FontAwesomeIcon className="insta" icon={faInstagram} />
-              </NavLink>
-              <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
+              </a>
+              <a href="https://twitter.com/YMIMtweets">
                 <FontAwesomeIcon className="twitter" icon={faTwitter} />
-              </NavLink>
+              </a>
             </div>
           </Nav>
         </Navbar>
