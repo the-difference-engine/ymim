@@ -1,16 +1,13 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
 .container-fluid {
@@ -43,18 +40,31 @@ code {
   position: relative;
   bottom: -40px;
   width: 100%;
+<<<<<<< HEAD
   background: #519b46;
   opacity: 0.53;
+=======
+  background: rgba(81,155,70,0.53);
+>>>>>>> 0d0e8fae891da611d3ccfcd27302027f40f3db3d
   margin: 0;
   padding: 0;
   height: 238px;
   overflow: auto;
+<<<<<<< HEAD
+=======
+  z-index:1;
+}
+
+.overlay p{
+  opacity:1;
+>>>>>>> 0d0e8fae891da611d3ccfcd27302027f40f3db3d
 }
 
 .carousel-caption {
   position: absolute;
   right: 0 !important;
   left: 0 !important;
+<<<<<<< HEAD
   z-index: 10;
   color: #fff;
   text-align: center;
@@ -69,17 +79,46 @@ code {
 .paragraph-carousel {
   font-size: 26pt;
   font-family: "Montserrat";
+=======
+  z-index: 2;
+  color: #fff;
+  text-align: center;
+  opacity:1 !important;
+  font-weight:bolder;
+}
+
+
+/* I don't understand this line css */
+
+/* .carousel-indicators {
+  position: relative !important;
+  right: 0;
+  bottom: 0;
+} */
+
+.paragraph-carousel {
+  font-size: 26pt;
+  font-family: 'Montserrat';
+>>>>>>> 0d0e8fae891da611d3ccfcd27302027f40f3db3d
   text-align: left;
   color: #fff;
   padding: 0 0 0 24px;
   display: inline-block;
   float: left;
   width: 80%;
+<<<<<<< HEAD
+=======
+  opacity:1;
+>>>>>>> 0d0e8fae891da611d3ccfcd27302027f40f3db3d
 }
 
 .title-carousel {
   font-size: 48pt;
+<<<<<<< HEAD
   font-family: "Montserrat";
+=======
+  font-family: 'Montserrat';
+>>>>>>> 0d0e8fae891da611d3ccfcd27302027f40f3db3d
   float: left;
   text-align: left;
   color: #fff;
@@ -98,3 +137,40 @@ code {
   background: #fff;
   margin: 20px 0;
 }
+<<<<<<< HEAD
+=======
+
+
+/* about page css *********************************/
+
+.lowermid{
+  background-color: #eeeaea;
+}
+
+
+.floatp{
+  float:right;
+  width:30%;
+
+}
+
+.floatimg {
+  float:left;
+  width:50%;
+  padding-right: 5%;
+  padding-bottom:4%;
+  margin-bottom: 3%;
+}
+
+.floatimg img {
+  height:100px;
+  width:100px;
+}
+
+.clear{
+  clear:both;
+  overflow:auto;
+}
+
+
+>>>>>>> 0d0e8fae891da611d3ccfcd27302027f40f3db3d

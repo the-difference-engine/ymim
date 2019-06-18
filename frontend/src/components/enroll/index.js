@@ -1,8 +1,15 @@
 import React, { Component } from "react";
 import Markdown from "react-markdown";
+<<<<<<< HEAD
 import "./index.css";
 import Text from "./enroll.md";
 
+=======
+import "./enroll.css";
+import Text from "../Markdowns/enroll.md";
+import 'react-bootstrap';
+import SingleCarousel from '../SingleCarousel/SingleCarousel.js';
+>>>>>>> 0d0e8fae891da611d3ccfcd27302027f40f3db3d
 class Enroll extends Component {
   constructor(props) {
     super(props);
@@ -19,28 +26,36 @@ class Enroll extends Component {
   }
   render() {
     return (
-      <div className="main-content">
-        <Markdown source={this.state.text} />
-        <div className="jumbotron">
+      <>
+      <SingleCarousel header={"Enroll"} className="mb-5" />
+
+      <div className="container">
+      <h1 className="mt-5">Enroll Now</h1>
+      <div className="main-content container col-sm-6 float-right mt-5">
+       
+        <Markdown id="fontcss" className="mt-3 " source={this.state.text} />
+        </div>
+        <div className="container col-sm-6 float-left mt-5">
           <form action="/" method="post">
             <div>
-              <label className="col-md-2">Name (required)</label>
-              <input required="" type="text" value="" className="col-md-4" />
+            <label for="name" className="col-xs-4 block labelFont">Name(required)</label>
+              <input  id="name" required="" type="text"  className="col-md-10 inputs" />
             </div>
             <br />
             <div>
-              <label className="col-md-2">Email (required)</label>
-              <input required="" type="email" value="" className="col-md-4" />
+              <label for="email" className="col-md-2 block labelFont">Email(required)</label>
+              <input id="email" required="" type="email" className ="col-md-10 inputs" />
             </div>
             <br />
             <div>
-              <label className="col-md-2">Phone</label>
-              <input type="text" value="" className="col-md-4" />
+              <label for="phone" className="col-md-2 block labelFont">Phone(required)</label>
+              <input id="phone" type="text" className="col-md-10 inputs" />
             </div>
             <br />
-            <div>
-              <label className="col-md-2">Age(required)</label>
-              <div>
+            {/* <div>
+              <label for="age" className="col-md-2 block">Age(required)</label>
+              <input id="age" className="col-md-10  inputs" type="number" />
+              {/* <div>
                 <label className="radio">
                   <input
                     required=""
@@ -90,24 +105,25 @@ class Enroll extends Component {
                   />
                   26-30
                 </label>
-              </div>
-            </div>
-            <br />
+              </div> */}
+            {/* </div>   
+            */} 
             <div>
-              <label className="col-md-4">Message</label>
+              <label className="col-md-4 block mt-3 mb-1 labelFont">Message</label>
+            
+              <textarea name="" rows="6" className="col-md-10 mb-4  inputs-text" />
             </div>
-            <div>
-              <textarea name="" rows="6" className="col-md-8" />
-            </div>
-            <br />
-            <div className="col-md-8">
+         
+            <div className="col-md-8 mb-5 ">
               <p>
-                <input type="submit" value="Submit" />
+                <button className="button" type="submit" value="Submit"> <span className="buttonSpan">Submit</span></button>
               </p>
+   
             </div>
           </form>
         </div>
-      </div>
+        </div>
+      </>
     );
   }
 }

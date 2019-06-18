@@ -157,5 +157,6 @@ CORS_ORIGIN_ALLOW_ALL = bool(os.getenv("ALLOW_CORS", False))
 
 # Configure Django App for Heroku.
 import django_heroku
-
 django_heroku.settings(locals())
+
+
