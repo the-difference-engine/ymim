@@ -27,6 +27,9 @@ class Events extends Component {
     return (
       <div>
         <h1>Current Events</h1>
+        <div className = "col-md-6">
+          <EventForm event={this.state.event} />
+          </div>
         <div className="row">
           {this.props.events.map((event, id) => (
             <div className="event_container col-md-3" key={`event_${event.id}`}>
@@ -50,9 +53,10 @@ class Events extends Component {
               </button>
             </div>
           ))}
+         
         </div>
-
-        <EventForm event={this.state.event} />
+{/* 
+        <EventForm event={this.state.event} /> */}
       </div>
     );
   }
