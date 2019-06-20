@@ -122,4 +122,3 @@ On the backend, we use a Python package to extract the DB information from a DAT
 
     APP_BASE=backend
     SECRET_KEY=<SECRET_KEY>
-
