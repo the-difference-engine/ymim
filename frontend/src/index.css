@@ -80,14 +80,14 @@ code {
 }
 
 .logo-div {
-  padding: 5px;
+  padding: 8px;
   display: inline-block;
   position: relative;
+  top:-7%;
   width: 192px !important;
   height: 192px !important;
   border-radius: 50%;
-  background: #fff;
-  margin: 20px 0;
+  margin: 17px 0;
 }
 
 

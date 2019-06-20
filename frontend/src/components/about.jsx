@@ -25,7 +25,7 @@ class About extends Component {
 
 <div class="container" itemprop="text">
 
-<h1> About </h1>
+<h1 className='mt-5 mb-5'> About </h1>
 
 
 <h2>Our Mission</h2>

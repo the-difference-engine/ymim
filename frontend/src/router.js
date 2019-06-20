@@ -8,9 +8,10 @@ import Home from "./components/home";
 import Header from "./components/common/header";
 import NotFound from "./components/common/not_found";
 import Footer from "./components/common/footer";
-import Contact from "./components/static_pages/contact";
+import Contact from "./components/contact/Contact";
 import About from "./components/about";
 // import Login from "./components/Login";
+import Volunteer from './components/volunteer/volunteer'
 import Admin from "./components/admin";
 import Enroll from "./components/enroll";
 import Team from "./components/static_pages/team";
@@ -39,7 +40,8 @@ const router = (
               {/* <Route exact path="/events" component={Events} /> */}
               <Route exact path="/admin" component={Admin} />
               {/* <Route exact path="/login" component={Login} /> */}
-              <Route exact path="/resources" component={Resources} />
+              <Route exact path ="/volunteer" component ={Volunteer}/>
+              <Route exact pat></Route>h="/resources" component={Resources} />
               {/* <Route exact path="/volunteer" component={Volunteer} />
               <Route exact path="/youth"component={Youth} /> */}
               <Route component={NotFound} />

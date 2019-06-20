@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 
 import Markdown from "react-markdown";
 import "./contact.css";
-import Text from "../Markdowns/enroll.md";
+// import Text from "./enroll.md";
 import 'react-bootstrap';
 import SingleCarousel from '../SingleCarousel/SingleCarousel.js';
 

@@ -78,3 +78,7 @@
   .main-content{
       line-height: 2.0;
   }
+
+  .container{
+      overflow:auto;
+  }

@@ -21,7 +21,7 @@ class Enroll extends Component {
   render() {
     return (
       <>
-      <SingleCarousel header={"Enroll"} className="mb-5" />
+      <SingleCarousel className="mb-5" />
 
       <div className="container">
       <h1 className="mt-5">Enroll Now</h1>
