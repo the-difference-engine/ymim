@@ -36,8 +36,8 @@ code {
   position: relative;
   bottom: -40px;
   width: 100%;
-  background: #519B46;
-  opacity: 0.53;
+  background:rgba(81,155,70,.6);
+ 
   margin: 0;
   padding: 0;
   height: 238px;
