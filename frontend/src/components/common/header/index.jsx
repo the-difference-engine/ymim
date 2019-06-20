@@ -5,12 +5,12 @@ import NavBar from "./navbar";
 
 class Header extends Component {
   render() {
-    const AuthAdmin = true;
+    const AuthAdmin = false;
     const AuthUser = false;
     return (
       <div>
         <NavBar />
-        {AuthAdmin ? (
+        {/* {AuthAdmin ? (
           <NavLink
             className="nav-link-top"
             to="/admin"
@@ -34,7 +34,7 @@ class Header extends Component {
           >
             Login
           </NavLink>
-        )}
+        )} */}
       </div>
     );
   }

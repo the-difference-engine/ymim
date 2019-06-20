@@ -54,9 +54,7 @@ code {
 }
 
 .carousel-indicators {
-  position: relative !important;
-  right: 0;
-  bottom: 0;
+  display:none;
 }
 
 .paragraph-carousel {
