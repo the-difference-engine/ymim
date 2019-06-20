@@ -32,5 +32,5 @@ class Command(BaseCommand):
                     before_now=False, after_now=True, tzinfo=pytz.utc 
                 ),
                 event_image="https://via.placeholder.com/300",
-            )
+            ) 
             
