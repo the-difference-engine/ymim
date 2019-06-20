@@ -1,15 +1,9 @@
 import React, { Component } from "react";
 import Markdown from "react-markdown";
-<<<<<<< HEAD
-import "./index.css";
-import Text from "./enroll.md";
-
-=======
 import "./enroll.css";
-import Text from "../Markdowns/enroll.md";
+import Text from "./enroll.md";
 import 'react-bootstrap';
 import SingleCarousel from '../SingleCarousel/SingleCarousel.js';
->>>>>>> 0d0e8fae891da611d3ccfcd27302027f40f3db3d
 class Enroll extends Component {
   constructor(props) {
     super(props);

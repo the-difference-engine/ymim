@@ -1,6 +1,6 @@
 import React,{Component} from 'react';
 import{Carousel} from 'react-bootstrap';
-import ymim1 from '../Assets/ymim1.png';
+import ymim1 from '../../assets/ymim1.png';
 import {Navbar} from 'react-bootstrap';
 import '../../index.css'
 import logo from '../Assets/logo.png';
