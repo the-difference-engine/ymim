@@ -90,9 +90,7 @@ nav {
   margin-right: 35px !important;
 }
 @media all and (min-width: 768px) and (max-width: 2048px) {
-	.fsocial{
-		display:none;
-	}
+  .fsocial {
+    display: none;
+  }
 }
-
-

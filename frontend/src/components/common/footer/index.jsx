@@ -66,15 +66,15 @@ export default class footer extends Component {
           </h5>
         </div>
         <div className="fsocial">
-            <NavLink href="https://www.facebook.com/theymim/">
-              <FontAwesomeIcon className="facebook" icon={faFacebookSquare} />
-            </NavLink>
-            <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
-              <FontAwesomeIcon className="insta" icon={faInstagram} />
-            </NavLink>
-            <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
-              <FontAwesomeIcon className="twitter" icon={faTwitter} />
-            </NavLink>
+          <NavLink href="https://www.facebook.com/theymim/">
+            <FontAwesomeIcon className="facebook" icon={faFacebookSquare} />
+          </NavLink>
+          <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
+            <FontAwesomeIcon className="insta" icon={faInstagram} />
+          </NavLink>
+          <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
+            <FontAwesomeIcon className="twitter" icon={faTwitter} />
+          </NavLink>
         </div>
       </footer>
     );
