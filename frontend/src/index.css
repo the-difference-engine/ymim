@@ -10,23 +10,19 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 
-.container-fluid {
-  padding: 0 !important;
-}
-
-/* .site {
+.site {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-} */
+}
 
-/* .site-content {
+.site-content {
   flex: 1 0 auto;
   padding: var( — space) var( — space) 0;
   width: 100%;
-} */
+}
 
-/* .site-content:after {
+.site-content:after {
   content: ‘\00a0’;
   display: block;
   margin-top: var( — space);
@@ -40,37 +36,28 @@ code {
   position: relative;
   bottom: -40px;
   width: 100%;
-  background: rgba(81,155,70,0.53);
+  background: #519B46;
+  opacity: 0.53;
   margin: 0;
   padding: 0;
   height: 238px;
   overflow: auto;
-  z-index:1;
-}
-
-.overlay p{
-  opacity:1;
 }
 
 .carousel-caption {
   position: absolute;
   right: 0 !important;
   left: 0 !important;
-  z-index: 2;
+  z-index: 10;
   color: #fff;
   text-align: center;
-  opacity:1 !important;
-  font-weight:bolder;
 }
 
-
-/* I don't understand this line css */
-
-/* .carousel-indicators {
+.carousel-indicators {
   position: relative !important;
   right: 0;
   bottom: 0;
-} */
+}
 
 .paragraph-carousel {
   font-size: 26pt;
@@ -81,7 +68,6 @@ code {
   display: inline-block;
   float: left;
   width: 80%;
-  opacity:1;
 }
 
 .title-carousel {
@@ -116,26 +102,16 @@ code {
 
 .floatp{
   float:right;
-  width:30%;
-
+  width:40%;
+  clear:right;
 }
 
 .floatimg {
   float:left;
   width:50%;
-  padding-right: 5%;
-  padding-bottom:4%;
-  margin-bottom: 3%;
-}
-
-.floatimg img {
-  height:100px;
-  width:100px;
 }
 
 .clear{
   clear:both;
   overflow:auto;
 }
-
-

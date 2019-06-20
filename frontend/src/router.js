@@ -9,7 +9,7 @@ import Header from "./components/common/header";
 import NotFound from "./components/common/not_found";
 import Footer from "./components/common/footer";
 import Contact from "./components/static_pages/contact";
-import About from "./components/static_pages/about";
+import About from "./components/about";
 // import Login from "./components/Login";
 import Admin from "./components/admin";
 import Enroll from "./components/enroll";
