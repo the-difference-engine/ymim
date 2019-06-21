@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Nav, Navbar, Container, NavDropdown } from 'react-bootstrap';
+import { HashLink } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFacebookSquare, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import logo from '../../../assets/logo.png';
@@ -58,24 +59,24 @@ class NavBar extends Component {
 						<Nav className="mx-auto">
 							<NavDropdown className="nav-link" to="/resources" title="Youth Resources" id="nav-dropdown">
 								<NavDropdown.Item>
-									<NavLink eventKey="4.1" to="/resources#hospital">
+									<HashLink eventKey="4.1" to="/resources#hospital">
 										Hospitals
-									</NavLink>
+									</HashLink>
 								</NavDropdown.Item>
 								<NavDropdown.Item>
-									<NavLink eventKey="4.2" to="/resources#uc">
+									<HashLink eventKey="4.2" to="/resources#uc">
 										Urgent Care
-									</NavLink>
+									</HashLink>
 								</NavDropdown.Item>
 								<NavDropdown.Item>
-									<NavLink eventKey="4.3" to="/resources#er">
-										Emergency Resources
-									</NavLink>
-								</NavDropdown.Item>
-								<NavDropdown.Item>
-									<NavLink eventKey="4.4" to="/resources#shelter">
+									<HashLink eventKey="4.3" to="/resources#shelter">
 										Shelters
-									</NavLink>
+									</HashLink>
+								</NavDropdown.Item>
+								<NavDropdown.Item>
+									<HashLink eventKey="4.4" to="/resources#er">
+										Emergency Resources
+									</HashLink>
 								</NavDropdown.Item>
 							</NavDropdown>
 							<NavDropdown className="nav-link" to="/enroll" title="Enroll" id="nav-dropdown">
