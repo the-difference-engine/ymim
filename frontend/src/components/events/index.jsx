@@ -1,5 +1,17 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
+import {
+  Container,
+  Form,
+  Col,
+  Button,
+  InputGroup,
+  FormControl, 
+  Row,
+  Label, 
+  Input,
+  FormGroup
+} from "react-bootstrap";
 import { events } from "../../actions";
 import EventForm from "./event_form";
 import "./index.css";
@@ -23,14 +35,27 @@ class Events extends Component {
     return (
       <div>
         <h1>Current Events</h1>
-        <div class="row">
-        <div className = "col-md-12">
+
+
+
+        
+        <Row>
+          <Col>
+      
           <EventForm event={this.state.event} />
-          </div>
-          </div>
-        <div className="row">
+     
+          </Col>
+        </Row>
+          
+
+
+
+        <Row>
+        
           {this.props.events.map((event, id) => (
-            <div className="event_container col-md-3" key={`event_${event.id}`}>
+
+            <Col>
+            <div className="event_container" key={`event_${event.id}`}>
               <h3>{event.title}</h3>
               <p>{event.description}</p>
               <p>{event.start_datetime}</p>
@@ -50,9 +75,11 @@ class Events extends Component {
                 Delete
               </button>
             </div>
+            </Col>
           ))}
          
-        </div>
+        
+        </Row>
 {/* 
         <EventForm event={this.state.event} /> */}
       </div>
