@@ -50,36 +50,43 @@ class Events extends Component {
 
 
 
+      <Container>
         <Row>
         
           {this.props.events.map((event, id) => (
 
             <Col>
             <div className="event_container" key={`event_${event.id}`}>
+              <img src={event.event_image} />
               <h3>{event.title}</h3>
               <p>{event.description}</p>
+              <p className="eventDisplayTime">Event date and time:</p>
+              
               <p>{event.start_datetime}</p>
               <p>to</p>
               <p>{event.end_datetime}</p>
-              <img src={event.event_image} />
+              
+              <div className = "eventButtons">
               <button
-                className="btn btn-info"
+                className="btn btn-light btn-edit"
                 onClick={() => this.selectForEdit(id)}
               >
                 Edit
               </button>
               <button
                 onClick={() => this.props.deleteEvent(id)}
-                className="btn btn-danger"
+                className="btn btn-light btn-delete"
               >
                 Delete
               </button>
+              </div>
             </div>
             </Col>
           ))}
          
         
         </Row>
+        </Container>
 {/* 
         <EventForm event={this.state.event} /> */}
       </div>

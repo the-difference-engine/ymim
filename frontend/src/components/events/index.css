@@ -6,6 +6,49 @@
   border-radius: 10px;
 }
 
+.event_container img,
+.event_container h3 {
+  margin-bottom: 30px; 
+  text-align: center;
+}
+
+.eventButtons {
+ text-align: right; 
+}
+
+
+.btn {
+  font-size: 15px;
+  font-weight: bold;
+  background-color: green;
+  border-radius: 2px;
+  padding-right: 25px; 
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px; 
+  /* width: 80px;
+  height: 30px; */
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+.btn-edit {
+ 
+  background-color: green;
+
+}
+
+.btn-delete {
+  
+  background-color: #fdd368;
+
+}
+/* 
+.event_container p {
+  padding-left: 15px; 
+  padding-right: 15px; 
+} */
+
 tr {
   margin: 100px;
 }
@@ -44,4 +87,8 @@ tr {
 .registrationRequired {
   text-align: right; 
   padding: 20px; 
+}
+
+.eventDisplayTime {
+  font-weight: bold;
 }
