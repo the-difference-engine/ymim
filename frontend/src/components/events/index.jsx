@@ -6,14 +6,27 @@ import {
   Col,
   Button,
   InputGroup,
-  FormControl, 
+  FormControl,
   Row,
-  Label, 
+  Label,
   Input,
   FormGroup
 } from "react-bootstrap";
 import { events } from "../../actions";
 import EventForm from "./event_form";
+import { Carousel } from "react-bootstrap";
+
+
+
+import ymim1 from "../../assets/ymim1.png";
+
+import "./index.css";
+import { Navbar } from "react-bootstrap";
+import logo from "../../assets/logo.png";
+
+
+
+
 import "./index.css";
 class Events extends Component {
   constructor(props) {
@@ -34,61 +47,89 @@ class Events extends Component {
   render() {
     return (
       <div>
-        <h1>Current Events</h1>
-
-
 
         
+        {/* Using the Carousel for right. Not sure if we want to keep it or not??? */}
+        <Carousel>
+          <Carousel.Item>
+            <img
+              className="d-block w-100"
+              src={ymim1}
+              alt="First Sllllideslide"
+            />
+            <Carousel.Caption>
+              <div class="overlay">
+                <h3 className="title-carousel">Events</h3>
+                <p className="paragraph-carousel">
+                  inspires, connects, and empowers young women orphans, adoptees,
+                  and foster youth alumnae to thrive.
+              </p>
+                <Navbar.Brand className="logo-div">
+                  <img className="logo" src={logo} alt="YMIM" />
+                </Navbar.Brand>
+              </div>
+            </Carousel.Caption>
+          </Carousel.Item>
+
+
+        </Carousel>
+
+
+
         <Row>
           <Col>
-      
-          <EventForm event={this.state.event} />
-     
+
+            <EventForm event={this.state.event} />
+
           </Col>
         </Row>
-          
 
 
 
-      <Container>
-        <Row>
-        
-          {this.props.events.map((event, id) => (
-
+        <div className="eventsDisplay">
+          <Container>
+            <Row >
             <Col>
-            <div className="event_container" key={`event_${event.id}`}>
-              <img src={event.event_image} />
-              <h3>{event.title}</h3>
-              <p>{event.description}</p>
-              <p className="eventDisplayTime">Event date and time:</p>
-              
-              <p>{event.start_datetime}</p>
-              <p>to</p>
-              <p>{event.end_datetime}</p>
-              
-              <div className = "eventButtons">
-              <button
-                className="btn btn-light btn-edit"
-                onClick={() => this.selectForEdit(id)}
-              >
-                Edit
+              {this.props.events.map((event, id) => (
+
+                // <Col>
+                  <div className="event_container" key={`event_${event.id}`}>
+                    
+                    <h3>{event.title}</h3>
+                    <img src={event.event_image} />
+                    <p>{event.description}</p>
+                    <p className="eventDisplayTime">Event date and time:</p>
+
+                    <p>{event.start_datetime}</p>
+                    <p>to</p>
+                    <p>{event.end_datetime}</p>
+
+                    <div className="eventButtons">
+                      <button
+                        className="btn btn-light btn-edit"
+                        onClick={() => this.selectForEdit(id)}
+                      >
+                        Edit
               </button>
-              <button
-                onClick={() => this.props.deleteEvent(id)}
-                className="btn btn-light btn-delete"
-              >
-                Delete
+                      <button
+                        onClick={() => this.props.deleteEvent(id)}
+                        className="btn btn-light btn-delete"
+                      >
+                        Delete
               </button>
-              </div>
-            </div>
-            </Col>
-          ))}
-         
-        
-        </Row>
-        </Container>
-{/* 
+                    </div>
+                  </div>
+                // </Col>
+              ))}
+
+             </Col>
+            </Row>
+          </Container>
+        </div>
+        {/* 
         <EventForm event={this.state.event} /> */}
+
+      
       </div>
     );
   }

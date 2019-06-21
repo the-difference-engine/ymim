@@ -200,6 +200,8 @@ class EventForm extends Component {
             <Button className="addEventBtn" variant="light" type="submit">
               Add event
             </Button>
+
+            <Button className="viewPastEvents" variant="light">View Past Events</Button>
           </Form>
           </Col>
         <Col xs sm lg="0" xl="2"></Col>
