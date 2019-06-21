@@ -1,27 +1,27 @@
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .messageInput {
-    width: 40%;
+  width: 40%;
 }
 
 .jumbotron {
-    margin: auto 0;
-    justify-content: left;
+  margin: auto 0;
+  justify-content: left;
 }
 
 span {
-    justify-content: center;
+  justify-content: center;
 }
 
 .main-content {
-    margin: auto;
+  margin: auto;
 }
 
 .block {
-    display: block;
+  display: block;
 }
 
 /*for the button* /
@@ -48,49 +48,47 @@ span {
   /* */
 
 .inputs {
-    height: 60px;
-    background: #eeeaea;
-    border: none;
-    color: black;
+  height: 60px;
+  background: #eeeaea;
+  border: none;
+  color: black;
 }
 
 .inputs-text {
-    height: 220px;
-    width: 100%;
-    background: #eeeaea;
-    border: none;
+  height: 220px;
+  width: 100%;
+  background: #eeeaea;
+  border: none;
 }
 
 /*label font*/
 
 .labelFont {
-    font-weight: bold;
-    padding: 0;
+  font-weight: bold;
+  padding: 0;
 }
 
 /*fontcss for marksdown*/
 
 #fontcss {
-    line-height: 50px !important;
+  line-height: 50px !important;
 }
 
 .main-content {
-    line-height: 2.0;
+  line-height: 2;
 }
 
-
-.warning{
-    background:#fdd368;
+.warning {
+  background: #fdd368;
 }
 
-.warning:hover{
-    background:#fdd368;
+.warning:hover {
+  background: #fdd368;
 }
 
-.warning::after:hover{
-    background:#fdd368;
+.warning::after:hover {
+  background: #fdd368;
 }
-
 
 /* .widthSelect{
    width:220px;

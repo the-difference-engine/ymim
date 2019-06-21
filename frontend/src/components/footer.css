@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .footer {
   margin-top: auto;
@@ -32,7 +32,6 @@ nav {
   text-decoration: none;
 }
 
-
 .topFooter {
   background-color: blue;
 }
@@ -41,8 +40,6 @@ nav {
   height: 60px;
   border: 2px solid red;
   margin: 4%;
-  
-  
 }
 
 .flex-container {
@@ -73,36 +70,33 @@ nav {
 .foot_head {
   display: inline;
   margin: 20px;
-
 }
 
-.footerImageHeader{
- box-sizing: border-box;
- text-align:center !important;
-
+.footerImageHeader {
+  box-sizing: border-box;
+  text-align: center !important;
 }
 
-.h2-heading{
+.h2-heading {
   display: inline-block;
-  padding-right:30px !important;
-  text-align:center !important;
+  padding-right: 30px !important;
+  text-align: center !important;
 }
 
-.h2-heading h2{
- color:black !important;;
- display:inline-block  !important;
- font-size: 36pt;
- font-family:'Gotham Medium', 'Arial Narrow', Arial, sans-serif;
- text-align:center !important;
-
+.h2-heading h2 {
+  color: black !important;
+  display: inline-block !important;
+  font-size: 36pt;
+  font-family: "Gotham Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center !important;
 }
 /* Moves the inspiriing */
-.movefont{
-   margin-right:95px !important; 
+.movefont {
+  margin-right: 95px !important;
 }
 
-.moveConnecting{
-   margin-right:35px !important;
+.moveConnecting {
+  margin-right: 35px !important;
 }
 
 .footer-contact {

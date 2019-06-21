@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import CarouselComponent from './carousel'
-import UpperMid from './Midsection/UpperMid'
-import LowerMid from './Midsection/LowerMid'
+import CarouselComponent from "./carousel";
+import UpperMid from "./Midsection/UpperMid";
+import LowerMid from "./Midsection/LowerMid";
 import TopFooter from "./TopFooter";
 
 class Home extends Component {
@@ -12,7 +12,6 @@ class Home extends Component {
         <UpperMid />
         <LowerMid />
         <TopFooter />
-
       </div>
     );
   }

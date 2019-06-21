@@ -53,9 +53,9 @@ export const updateEvent = (event, index) => {
 };
 // delete event
 export const deleteEvent = index => {
-    return (dispatch, getState) => {
-        let headers = { "Content-Type": "application/json" };
-        let eventId = getState().events[index].id;
+  return (dispatch, getState) => {
+    let headers = { "Content-Type": "application/json" };
+    let eventId = getState().events[index].id;
 
     return fetch(`api/events/${eventId}/`, {
       headers,

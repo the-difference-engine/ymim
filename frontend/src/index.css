@@ -1,13 +1,16 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
 }
 
 .site {
@@ -18,14 +21,14 @@ code {
 
 .site-content {
   flex: 1 0 auto;
-  padding: var( — space) var( — space) 0;
+  padding: var(— space) var(— space) 0;
   width: 100%;
 }
 
 .site-content:after {
   content: ‘\00a0’;
   display: block;
-  margin-top: var( — space);
+  margin-top: var(— space);
   height: 0;
   visibility: hidden;
 }
@@ -36,8 +39,8 @@ code {
   position: relative;
   bottom: -40px;
   width: 100%;
-  background:rgba(81,155,70,.6);
- 
+  background: rgba(81, 155, 70, 0.6);
+
   margin: 0;
   padding: 0;
   height: 238px;
@@ -54,12 +57,12 @@ code {
 }
 
 .carousel-indicators {
-  display:none;
+  display: none;
 }
 
 .paragraph-carousel {
   font-size: 26pt;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   text-align: left;
   color: #fff;
   padding: 0 0 0 24px;
@@ -70,7 +73,7 @@ code {
 
 .title-carousel {
   font-size: 48pt;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
   float: left;
   text-align: left;
   color: #fff;
@@ -83,33 +86,31 @@ code {
   padding: 8px;
   display: inline-block;
   position: relative;
-  top:-7%;
+  top: -7%;
   width: 192px !important;
   height: 192px !important;
   border-radius: 50%;
   margin: 17px 0;
 }
 
-
 /* about page css *********************************/
 
-.lowermid{
+.lowermid {
   background-color: #eeeaea;
 }
 
-
-.floatp{
-  float:right;
-  width:40%;
-  clear:right;
+.floatp {
+  float: right;
+  width: 40%;
+  clear: right;
 }
 
 .floatimg {
-  float:left;
-  width:50%;
+  float: left;
+  width: 50%;
 }
 
-.clear{
-  clear:both;
-  overflow:auto;
+.clear {
+  clear: both;
+  overflow: auto;
 }

@@ -11,15 +11,14 @@ import Footer from "./components/common/footer";
 import Contact from "./components/contact/Contact";
 import About from "./components/about";
 // import Login from "./components/Login";
-import Volunteer from './components/volunteer/volunteer'
+import Volunteer from "./components/volunteer/volunteer";
 import Admin from "./components/admin";
 import Enroll from "./components/enroll";
-import Youth from './components/youth/Youth';
+import Youth from "./components/youth/Youth";
 import Team from "./components/static_pages/team";
 import Ambassadors from "./components/static_pages/ambassadors";
 import Donate from "./components/donation_page";
 import Resources from "./components/resources";
-
 
 let store = createStore(fetchData, applyMiddleware(thunk));
 
@@ -41,10 +40,11 @@ const router = (
               {/* <Route exact path="/events" component={Events} /> */}
               <Route exact path="/admin" component={Admin} />
               {/* <Route exact path="/login" component={Login} /> */}
-              <Route exact path ="/volunteer" component ={Volunteer}/>
-              <Route exact path ="/resources"></Route>/resources" component={Resources} />
+              <Route exact path="/volunteer" component={Volunteer} />
+              <Route exact path="/resources" />
+              /resources" component={Resources} />
               {/* <Route exact path="/volunteer" component={Volunteer} /> */}
-              <Route exact path="/youth"component={Youth} /> 
+              <Route exact path="/youth" component={Youth} />
               <Route component={NotFound} />
             </Switch>
           </div>
