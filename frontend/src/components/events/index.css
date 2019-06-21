@@ -14,3 +14,34 @@ tr {
   margin: 10px;
   padding: 90px;
 }
+
+#eventForm {
+  padding: 20px; 
+  border-radius: 25px;
+  border: 2px solid #f1f1f1;
+  margin-top: 50px;
+  margin-bottom: 50px; 
+  font-size: 1.2rem;
+}
+
+#eventForm h2 {
+  padding-bottom: 20px; 
+  text-align: center;
+}
+
+.eventFormBody {
+  padding-left: 100px; 
+  padding-right: 100px; 
+}
+
+.addEventBtn {
+  width: 100%;
+  background: green;
+  color: white; 
+  margin-bottom: 20px; 
+}
+
+.registrationRequired {
+  text-align: right; 
+  padding: 20px; 
+}

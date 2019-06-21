@@ -23,8 +23,10 @@ class Events extends Component {
     return (
       <div>
         <h1>Current Events</h1>
-        <div className = "col-md-6">
+        <div class="row">
+        <div className = "col-md-12">
           <EventForm event={this.state.event} />
+          </div>
           </div>
         <div className="row">
           {this.props.events.map((event, id) => (

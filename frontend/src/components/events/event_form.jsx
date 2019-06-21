@@ -7,7 +7,11 @@ import {
   Col,
   Button,
   InputGroup,
-  FormControl
+  FormControl, 
+  Row,
+  Label, 
+  Input,
+  FormGroup
 } from "react-bootstrap";
 // class EventForm extends Component {
 //   resetForm = () => {
@@ -130,10 +134,15 @@ class EventForm extends Component {
   //   };
   render() {
     return (
+     
       <React.Fragment>
-        <Container id="eventForm">
-          <h3>Add a new event</h3>
-          <Form>
+
+        <Container  >
+        <Row>
+        <Col xs sm lg="0" xl="2"></Col>
+        <Col id="eventForm" className="link-wrapper" lg={8} md="12">
+          <h2>Add a new event</h2>
+          <Form className="eventFormBody">
             <Form.Group controlId="name">
               <Form.Label>Name</Form.Label>
               <Form.Control
@@ -186,14 +195,19 @@ class EventForm extends Component {
               <Form.Control as="textarea" rows="3" />
             </Form.Group>
             <Form.Group id="formGridCheckbox">
-              <Form.Check type="checkbox" label="Registration required" />
+              <Form.Check className="registrationRequired" type="checkbox" label="Registration required" />
             </Form.Group>
-            <Button variant="light" type="submit">
+            <Button className="addEventBtn" variant="light" type="submit">
               Add event
             </Button>
           </Form>
+          </Col>
+        <Col xs sm lg="0" xl="2"></Col>
+        </Row>
         </Container>
+      
       </React.Fragment>
+    
     );
   }
 }
