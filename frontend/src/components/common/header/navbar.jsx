@@ -58,22 +58,22 @@ class NavBar extends Component {
 						<Nav className="mx-auto">
 							<NavDropdown className="nav-link" to="/resources" title="Youth Resources" id="nav-dropdown">
 								<NavDropdown.Item>
-									<NavLink eventKey="4.1" to="/resources">
+									<NavLink eventKey="4.1" to="/resources#hospital">
 										Hospitals
 									</NavLink>
 								</NavDropdown.Item>
 								<NavDropdown.Item>
-									<NavLink eventKey="4.2" to="/resources">
+									<NavLink eventKey="4.2" to="/resources#uc">
 										Urgent Care
 									</NavLink>
 								</NavDropdown.Item>
 								<NavDropdown.Item>
-									<NavLink eventKey="4.3" to="/resources">
+									<NavLink eventKey="4.3" to="/resources#er">
 										Emergency Resources
 									</NavLink>
 								</NavDropdown.Item>
 								<NavDropdown.Item>
-									<NavLink eventKey="4.4" to="/resources">
+									<NavLink eventKey="4.4" to="/resources#shelter">
 										Shelters
 									</NavLink>
 								</NavDropdown.Item>
