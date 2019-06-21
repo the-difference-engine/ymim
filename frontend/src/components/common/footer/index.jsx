@@ -7,28 +7,25 @@ import {
   faInstagram,
   faTwitter
 } from "@fortawesome/free-brands-svg-icons";
-import {Container,Row,Col} from 'react-bootstrap';
+import TopFooter from "./top_footer";
 import "./index.css";
 
 export default class footer extends Component {
   render() {
     return (
-      <>
-        <footer className="footer py-3">
-          {/* <div className="container"> */}
-            <Container className="footer-styling">
-              <Row>
-                <Col className="link-wrapper" xs={12} md={10}>
-                  <nav>
-                    <ul className="row menu-text">
-                      <li className="col footer_link">
-                        <Link className="footer-list" to="/events">
-                          Home
+      <footer className="footer py-3">
+        <div className="container">
+          <TopFooter />
+          <nav>
+            <ul className="row menu-text">
+              <li className="col footer_link">
+                <Link className="footer-list" to="/">
+                  Home
                 </Link>
-                      </li>
-                      <li className="col footer_link">
-                        <Link className="footer-list" to="/about">
-                          About
+              </li>
+              <li className="col footer_link">
+                <Link className="footer-list" to="/about">
+                  About
                 </Link>
               </li>
               <li className="col footer_link">
@@ -40,51 +37,46 @@ export default class footer extends Component {
                 <Link className="footer-list" to="/enroll">
                   Enroll
                 </Link>
-                      </li>
-                      <li className="col footer_link">
-                        <Link className="footer-list" to="/ambassadors">
-                          Volunteer
+              </li>
+              <li className="col footer_link">
+                <Link className="footer-list" to="/ambassadors">
+                  Volunteer
                 </Link>
               </li>
               <li className="col footer_link">
                 <Link className="footer-list" to="/donate">
                   Donate
                 </Link>
-                      </li>
-                      <li className="col footer_link">
-                        <Link className="footer-list" to="/events">
-                          Events
+              </li>
+              <li className="col footer_link">
+                <Link className="footer-list" to="/events">
+                  Events
                 </Link>
-                      </li>
-                    </ul>
-                    <div id="tsocial">
-                      <NavLink href="https://www.facebook.com/theymim/">
-                        <FontAwesomeIcon className="facebook" icon={faFacebookSquare} />
-                      </NavLink>
-                      <NavLink href="https://www.instagram.com/theyoungmasterbuilders">https://codepen.io/jakob-e/pen/zjAHe
-                        <FontAwesomeIcon className="insta" icon={faInstagram} />
-                      </NavLink>
-                      <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
-                        <FontAwesomeIcon className="twitter" icon={faTwitter} />
-                      </NavLink>
-                    </div>
-                  </nav>
-                </Col>
-                <Col xs={1} md={{ span:1, offset: 1}}>
-                  <div class="moveChild">
-                    <h5 className="footer-contact">
-                      <a className="contact" href="mailto:founder@theymim.org">
-                        founder@theymim.org
-                    </a>
-                      <p className="contact">773.941.1200</p>
-                    </h5>
-                    </div>
-                  </Col>
-              </Row>
-            </Container>
-          {/* </div> */}
-        </footer>
-      </>
+              </li>
+            </ul>
+            <div id="tsocial">
+              <NavLink href="https://www.facebook.com/theymim/">
+                <FontAwesomeIcon className="facebook" icon={faFacebookSquare} />
+              </NavLink>
+              <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
+                <FontAwesomeIcon className="insta" icon={faInstagram} />
+              </NavLink>
+              <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
+                <FontAwesomeIcon className="twitter" icon={faTwitter} />
+              </NavLink>
+            </div>
+          </nav>
+        </div>
+
+        <div className="footer-contact">
+          <h5>
+            <a className="contact" href="mailto:founder@theymim.org">
+              founder@theymim.org
+            </a>
+            <p>773.941.1200</p>
+          </h5>
+        </div>
+      </footer>
     );
   }
 }
