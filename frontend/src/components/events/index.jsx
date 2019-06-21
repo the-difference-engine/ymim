@@ -96,7 +96,7 @@ class Events extends Component {
                   <div className="event_container" key={`event_${event.id}`}>
                     
                     <h3>{event.title}</h3>
-                    <img src={event.event_image} />
+                    {/* <img src={event.event_image} /> */}
                     <p>{event.description}</p>
                     <p className="eventDisplayTime">Event date and time:</p>
 
