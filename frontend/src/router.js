@@ -10,7 +10,6 @@ import NotFound from "./components/common/not_found";
 import Footer from "./components/common/footer";
 import Contact from "./components/contact/Contact";
 import About from "./components/about";
-// import Login from "./components/Login";
 import Volunteer from './components/volunteer/volunteer'
 import Admin from "./components/admin";
 import Enroll from "./components/enroll";
@@ -43,7 +42,6 @@ const router = (
               {/* <Route exact path="/login" component={Login} /> */}
               <Route exact path ="/volunteer" component ={Volunteer}/>
               <Route exact path ="/resources"></Route>/resources" component={Resources} />
-              {/* <Route exact path="/volunteer" component={Volunteer} /> */}
               <Route exact path="/youth"component={Youth} /> 
               <Route component={NotFound} />
             </Switch>
