@@ -1,39 +1,16 @@
 .footer {
-	/* margin-top: auto; */
-	height: 15vh;
 	background-color: #519b46;
 }
 
 .footer_link {
-	display: inline-block !important;
+	display: inline-block;
+	margin: 4vh 0;
 }
 
-.foot_text {
+.footer-list {
 	color: white;
-	text-decoration: none;
-}
-
-.footer-list
-{
-	color: white !important;
-	text-decoration: none !important;
 	font-family: "Montserrat";
 	font-size: 14pt;
-}
-
-.topFooter {
-	background-color: blue;
-}
-
-.box {
-	height: 60px;
-	border: 2px solid red;
-	margin: 4%;
-}
-
-.flex-container {
-	display: flex;
-	justify-content: center;
 }
 
 .pic-container {
@@ -80,38 +57,29 @@
 	text-align: center !important;
 }
 
-/* Moves the inspiriing */
-
-.movefont {
-	margin-right: 95px !important;
-}
-
-.moveConnecting {
-	margin-right: 35px !important;
-}
-
 .contact {
 	color: #fff;
-	text-align: right;
+	text-align: center;
 }
 
 .footer-contact {
-	text-align: right;
-	margin-top: 3vh;
+	padding-top: 3vh;
+	text-align: center;
+}
+.tsocial {
+	text-align: center;
 }
 
-.link-wrapper {
-	margin-top: 5vh;
-}
 
-@media screen and (min-width:520px){
-	#tsocial {
-		display:none;
+@media only screen and (min-width:1024px) {
+	.tsocial {
+		display: none;
 	}
 }
 
-
-.moveChild{
-	margin-left:200px;
-	text-align:right !important;
+@media only screen and (max-width:520px) {
+	.footer_link {
+		display: inline-block;
+		margin: 2vh;
+	}
 }
