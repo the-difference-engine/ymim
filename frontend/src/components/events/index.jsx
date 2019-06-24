@@ -32,9 +32,11 @@ class Events extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      event: {}
+      event: {},
+      isHidden: false
     };
   }
+
   componentDidMount() {
     this.props.fetchEvents();
   }
@@ -44,13 +46,26 @@ class Events extends Component {
       event: edit_event
     });
   };
-  render() {
+
+  toggleHidden() {
+    this.setState({
+      isHidden: !this.state.isHidden
+    })
+  }
+
+ 
+
+  
+  render() 
+  
+  
+  {
     return (
       <div>
 
         
         {/* Using the Carousel for right. Not sure if we want to keep it or not??? */}
-        <Carousel>
+        {/* <Carousel>
           <Carousel.Item>
             <img
               className="d-block w-100"
@@ -72,15 +87,16 @@ class Events extends Component {
           </Carousel.Item>
 
 
-        </Carousel>
+        </Carousel> */}
 
 
 
         <Row>
           <Col>
 
-            <EventForm event={this.state.event} />
-
+            <div>
+            {this.state.isHidden ? <EventForm event={this.state.event}/> : <button class="displayFormButton" onClick={this.toggleHidden.bind(this)}>Add a New Event</button>}
+            </div>
           </Col>
         </Row>
 
@@ -88,15 +104,15 @@ class Events extends Component {
 
         <div className="eventsDisplay">
           <Container>
-            <Row >
-            <Col>
+            <Row>
+            
               {this.props.events.map((event, id) => (
 
-                // <Col>
+                <Col>
                   <div className="event_container" key={`event_${event.id}`}>
-                    
+                    <Col>
                     <h3>{event.title}</h3>
-                    {/* <img src={event.event_image} /> */}
+                    <img src={event.event_image} />
                     <p>{event.description}</p>
                     <p className="eventDisplayTime">Event date and time:</p>
 
@@ -118,11 +134,12 @@ class Events extends Component {
                         Delete
               </button>
                     </div>
+                    </Col>
                   </div>
-                // </Col>
+                 </Col>
               ))}
 
-             </Col>
+             
             </Row>
           </Container>
         </div>

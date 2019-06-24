@@ -12,8 +12,7 @@
   /* border-bottom: 0.5px solid black; */
 }
 
-.event_container img,
-.event_container h3 {
+.event_container img {
   margin-bottom: 30px; 
   /* text-align: center; */
 }
