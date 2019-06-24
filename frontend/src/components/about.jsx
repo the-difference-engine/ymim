@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 // import Markdown from 'react-markdown';
 // import Text from './Markdowns/about.md';
  import '../index.css';
-import SingleCarousel from './SingleCarousel/SingleCarousel';
+import SingleCarousel from './Single_Carousel/Single_Carousel';
 
 class About extends Component {
   constructor(props) {

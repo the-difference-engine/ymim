@@ -4,7 +4,7 @@ import Markdown from "react-markdown";
 import "./contact.css";
 // import Text from "./enroll.md";
 import 'react-bootstrap';
-import SingleCarousel from '../SingleCarousel/SingleCarousel.js';
+import SingleCarousel from '../Single_Carousel/Single_Carousel.js';
 
 class Contact extends Component{
 
