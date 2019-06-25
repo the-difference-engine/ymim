@@ -12,16 +12,16 @@
   color: white;
   text-decoration: none;
 }
-li {
+.livy {
   color: white !important;
   text-decoration: none !important;
 }
 
-nav {
+.navy {
   text-decoration: none;
 }
 
-.topFooter {
+.top-Footer {
   background-color: blue;
 }
 
@@ -61,7 +61,7 @@ nav {
   margin: 20px;
 }
 
-.footerImageHeader {
+.footer-ImageHeader {
   box-sizing: border-box;
   text-align: center !important;
 }
@@ -82,11 +82,11 @@ nav {
 
 /* Moves the inspiriing */
 
-.movefont {
+.move-font {
   margin-right: 95px !important;
 }
 
-.moveConnecting {
+.move-Connecting {
   margin-right: 35px !important;
 }
 #tsocial {
@@ -100,7 +100,7 @@ nav {
 }
 
 
-.moveChild{
+.move-Child{
 	margin-left:200px;
 	text-align:right !important;
 }

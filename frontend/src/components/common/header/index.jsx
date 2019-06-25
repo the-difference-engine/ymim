@@ -10,7 +10,7 @@ class Header extends Component {
     return (
       <div>
         <NavBar />
-        {/* {AuthAdmin ? (
+        {AuthAdmin ? (
           <NavLink
             className="nav-link-top"
             to="/admin"
@@ -34,7 +34,7 @@ class Header extends Component {
           >
             Login
           </NavLink>
-        )} */}
+        )}
       </div>
     );
   }

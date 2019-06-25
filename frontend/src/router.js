@@ -8,12 +8,12 @@ import Home from "./components/home";
 import Header from "./components/common/header";
 import NotFound from "./components/common/not_found";
 import Footer from "./components/common/footer";
-import Contact from "./components/contact/Contact";
-import About from "./components/about";
+import Contact from "./components/static_pages/contact";
+import About from "./components/static_pages/about";
 import Volunteer from './components/volunteer/volunteer'
 import Admin from "./components/admin";
 import Enroll from "./components/enroll";
-import Youth from './components/youth/Youth';
+import Youth from './components/resources/Youth';
 import Team from "./components/static_pages/team";
 import Ambassadors from "./components/static_pages/ambassadors";
 import Donate from "./components/donation_page";
@@ -25,7 +25,7 @@ let store = createStore(fetchData, applyMiddleware(thunk));
 const router = (
   <Provider store={store}>
     <Router>
-      <div className="site ">
+      <div className="container-fluid ">
         <div className="site-content">
           <Header />
           <div>

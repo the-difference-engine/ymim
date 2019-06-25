@@ -19,39 +19,39 @@ export default class footer extends Component {
             <Container className="footer-styling">
               <Row>
                 <Col className="link-wrapper" xs={12} md={10}>
-                  <nav>
+                  <nav className="navy">
                     <ul className="row menu-text">
-                      <li className="col footer_link">
+                      <li className="col livy  footer_link">
                         <Link className="footer-list" to="/events">
                           Home
                 </Link>
                       </li>
-                      <li className="col footer_link">
+                      <li className="col livy footer_link">
                         <Link className="footer-list" to="/about">
                           About
                 </Link>
               </li>
-              <li className="col footer_link">
+              <li className="col livy footer_link">
                 <Link className="footer-list" to="/contact-us">
                   Contact
                 </Link>
               </li>
-              <li className="col footer_link">
+              <li className="col livy  footer_link">
                 <Link className="footer-list" to="/enroll">
                   Enroll
                 </Link>
                       </li>
-                      <li className="col footer_link">
+                      <li className="col livy  footer_link">
                         <Link className="footer-list" to="/ambassadors">
                           Volunteer
                 </Link>
               </li>
-              <li className="col footer_link">
+              <li className="col  livy footer_link">
                 <Link className="footer-list" to="/donate">
                   Donate
                 </Link>
                       </li>
-                      <li className="col footer_link">
+                      <li className="col  livy footer_link">
                         <Link className="footer-list" to="/events">
                           Events
                 </Link>
@@ -71,7 +71,7 @@ export default class footer extends Component {
                   </nav>
                 </Col>
                 <Col xs={1} md={{ span:1, offset: 1}}>
-                  <div class="moveChild">
+                  <div class="move-Child">
                     <h5 className="footer-contact">
                       <a className="contact" href="mailto:founder@theymim.org">
                         founder@theymim.org
