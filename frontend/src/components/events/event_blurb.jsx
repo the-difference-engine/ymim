@@ -28,23 +28,32 @@ class Blurb extends Component {
   render() {
     return (
      
-      <div>
+          <div>
 
-        <Row>
-          <Col>
+            
+               
 
-            <div>
-              {this.state.isHidden ? <EventForm event={this.state.event} /> :  <div>
-                <h3>Got a new Event?</h3>
-                <p>Click on the button below to access the create event form.</p>
-                <button class="displayFormButton" onClick={this.toggleHidden.bind(this)}>Add a New Event</button></div>}
-            </div>
-          </Col>
-        </Row>
-            
-            
-            </div>       
-    );
+                          <div>
+                              {this.state.isHidden ? <EventForm event={this.state.event} /> :
+                                  <div>
+                                       <Container fluid={true}>
+                                      <Row className="eventBlurb justify-content-md-center">
+                                      <Col lg={4} md="6">
+                                      <h2>Got a new Event?</h2>
+                                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci minus, laudantium accusantium dolorum pariatur veritatis libero deleniti eius maiores amet?</p> 
+                                      </Col>
+
+                                      <Col lg={4} md="6">
+                                      <button class="btn displayFormButton" onClick={this.toggleHidden.bind(this)}>Add a New Event</button>
+                                      </Col>
+                                      </Row>
+                                      </Container>
+                                  </div>}
+                          </div>
+
+
+          </div>
+      );
 
     
   }

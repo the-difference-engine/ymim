@@ -48,6 +48,15 @@
   background-color: #fdd368;
 
 }
+
+.displayFormButton {
+  width: 75%;
+  color: white; 
+  text-align: center; 
+  margin: 20px; 
+  padding: 50px; 
+  font-size: 1.5rem; 
+}
 /* 
 .event_container p {
   padding-left: 15px; 
@@ -63,18 +72,30 @@ tr {
   padding: 90px;
 }
 
-#eventForm {
+#eventForm,
+.eventBlurb {
   padding: 20px; 
-  border-radius: 25px;
-  border: 2px solid #f1f1f1;
   margin-top: 50px;
   margin-bottom: 50px; 
   font-size: 1.2rem;
 }
 
-#eventForm h2 {
+#eventForm {
+  border-radius: 25px;
+  border: 2px solid #f1f1f1;
+}
+
+#eventForm h2{
   padding-bottom: 20px; 
   text-align: center;
+}
+
+/* .eventBlurb p {
+  text-align: center;
+} */
+
+.eventBlurb h2 {
+  text-align: left; 
 }
 
 .eventFormBody {
