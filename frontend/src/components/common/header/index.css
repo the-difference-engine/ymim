@@ -145,13 +145,40 @@
   height: 25px;
 }
 
+.resource-heading {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  font-size: 48px;
+}
+
+.resource-title {
+  margin-top: 60px;
+  margin-top: 60px;
+}
+
+.resource-p {
+  margin-bottom: 60px;
+  font-size: 24px;
+}
+
+.resource-p2 {
+  font-size: 20px;
+}
+
+.resource-list {
+  color: black !important;
+  font-size: 24px;
+
+}
+
 .test {
   width: 100%;
   height: 100vh;
+  background-color: lightgray;
 }
 
 .test1 {
   width: 100%;
   height: 100vh;
-  background-color: lightgray;
+  background-color: white;
 }
