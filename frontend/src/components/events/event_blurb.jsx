@@ -39,12 +39,12 @@ class Blurb extends Component {
                                        <Container fluid={true}>
                                       <Row className="eventBlurb justify-content-md-center">
                                       <Col lg={4} md="6">
-                                      <h2>Got a new Event?</h2>
+                                      <h2>Got a New Event?</h2>
                                       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci minus, laudantium accusantium dolorum pariatur veritatis libero deleniti eius maiores amet?</p> 
                                       </Col>
 
                                       <Col lg={4} md="6">
-                                      <button class="btn displayFormButton" onClick={this.toggleHidden.bind(this)}>Add a New Event</button>
+                                      <button class="btn btn-light displayFormButton" onClick={this.toggleHidden.bind(this)}>Add a New Event</button>
                                       </Col>
                                       </Row>
                                       </Container>
