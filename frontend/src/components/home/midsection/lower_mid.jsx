@@ -57,15 +57,15 @@ class LowerMid extends Component {
           <Row className="justify-content-md-center">
             <ul className="footerImageHeader">
               <li className="h2-heading">
-                <h2 className="foot_head movefont">
+                <h2 className="foot-head movefont">
                   <span className="trymovingfont">Inspiring </span>
                 </h2>
               </li>
               <li className="h2-heading moveConnecting">
-                <h2 className="foot_head">Connecting</h2>
+                <h2 className="foot-head">Connecting</h2>
               </li>
               <li className="h2-heading">
-                <h2 className="foot_head">Empowering</h2>
+                <h2 className="foot-head">Empowering</h2>
               </li>
             </ul>
           </Row>

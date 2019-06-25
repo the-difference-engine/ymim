@@ -11,41 +11,40 @@ export default class footer extends Component {
     return (
       <Container fluid={true} className="footer">
         <Row className="justify-content-md-center">
-          <Col xs sm lg="1" xl="2"></Col>
           <Col md="12" lg="7">
             <nav>
               <ul className="row menu-text">
-                <li className="col footer_link">
+                <li className="col footer-link">
                   <Link className="footer-list" to="/events">
                     Home
                 </Link>
                 </li>
-                <li className="col footer_link">
+                <li className="col footer-link">
                   <Link className="footer-list" to="/about">
                     About
                 </Link>
                 </li>
-                <li className="col footer_link">
+                <li className="col footer-link">
                   <Link className="footer-list" to="/meet-the-team">
                     Contact
                 </Link>
                 </li>
-                <li className="col footer_link">
+                <li className="col footer-link">
                   <Link className="footer-list" to="/events">
                     Enroll
                 </Link>
                 </li>
-                <li className="col footer_link">
+                <li className="col footer-link">
                   <Link className="footer-list" to="/ambassadors">
                     Volunteer
                 </Link>
                 </li>
-                <li className="col footer_link">
+                <li className="col footer-link">
                   <Link className="footer-list" to="/events">
                     Donate
                 </Link>
                 </li>
-                <li className="col footer_link">
+                <li className="col footer-link">
                   <Link className="footer-list" to="/events">
                     Events
                 </Link>
@@ -53,15 +52,16 @@ export default class footer extends Component {
               </ul>
             </nav>
           </Col>
-          <Col className=" align-items-cente" xs="12" sm="6" md="6" lg="2">
+        </Row>
+        <Row className="justify-content-center">
+          <Col xs="6" sm="6" md="6" lg="7">
             <div className="contact">
-              <h5 className="footer-contact">
-                <a className="contact" href="mailto:founder@theymim.org">founder@theymim.org</a>
-                <p>773.941.1200</p>
-              </h5>
+              &copy; Copyright 2019    
+                <a className="contact mx-4" href="mailto:founder@theymim.org">founder@theymim.org</a>
+              773.941.1200
             </div>
           </Col>
-          <Col xs="12" sm="12" md="6" className=" align-items-center">
+          <Col xs="4" sm="12" md="6" className="align-items-center">
             <div className="tsocial">
               <NavLink href="https://www.facebook.com/theymim/">
                 <FontAwesomeIcon className="facebook" icon={faFacebookSquare} />

@@ -63,3 +63,8 @@
   margin-bottom: 10px !important;
   color: #519b46;
 }
+
+.foot-head {
+	display: inline;
+	margin: 20px;
+}

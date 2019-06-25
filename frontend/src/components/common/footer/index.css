@@ -2,7 +2,7 @@
 	background-color: #519b46;
 }
 
-.footer_link {
+.footer-link {
 	display: inline-block;
 	margin: 4vh 0;
 }
@@ -33,11 +33,6 @@
 	object-fit: cover;
 }
 
-.foot_head {
-	display: inline;
-	margin: 20px;
-}
-
 .footerImageHeader {
 	box-sizing: border-box;
 	text-align: center !important;
@@ -66,10 +61,11 @@
 	padding-top: 3vh;
 	text-align: center;
 }
+
 .tsocial {
 	text-align: center;
+	background-color: #fff;
 }
-
 
 @media only screen and (min-width:1024px) {
 	.tsocial {
@@ -81,5 +77,6 @@
 	.footer_link {
 		display: inline-block;
 		margin: 2vh;
+		text-align: center;
 	}
 }
