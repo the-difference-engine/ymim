@@ -14,6 +14,7 @@ import {
 } from "react-bootstrap";
 import { events } from "../../actions";
 import EventForm from "./event_form";
+import Blurb from "./event_blurb";
 import { Carousel } from "react-bootstrap";
 
 
@@ -53,17 +54,14 @@ class Events extends Component {
     })
   }
 
- 
 
-  
-  render() 
-  
-  
-  {
+
+
+  render() {
     return (
       <div>
 
-        
+
         {/* Using the Carousel for right. Not sure if we want to keep it or not??? */}
         {/* <Carousel>
           <Carousel.Item>
@@ -88,65 +86,56 @@ class Events extends Component {
 
 
         </Carousel> */}
+<Blurb />
 
-
-
-        <Row>
-          <Col>
-
-            <div>
-            {this.state.isHidden ? <EventForm event={this.state.event}/> : <button class="displayFormButton" onClick={this.toggleHidden.bind(this)}>Add a New Event</button>}
-            </div>
-          </Col>
-        </Row>
 
 
 
         <div className="eventsDisplay">
           <Container>
             <Row>
-            
+
               {this.props.events.map((event, id) => (
 
                 <Col>
                   <div className="event_container" key={`event_${event.id}`}>
                     <Col>
-                    <h3>{event.title}</h3>
-                    <img src={event.event_image} />
-                    <p>{event.description}</p>
-                    <p className="eventDisplayTime">Event date and time:</p>
+                      <h3>{event.title}</h3>
+                      <img src={event.event_image} />
+                      <p>{event.description}</p>
+                      <p className="eventDisplayTime">Event date and time:</p>
 
-                    <p>{event.start_datetime}</p>
-                    <p>to</p>
-                    <p>{event.end_datetime}</p>
+                      <p>{event.start_datetime}</p>
+                      <p>to</p>
+                      <p>{event.end_datetime}</p>
 
-                    <div className="eventButtons">
-                      <button
-                        className="btn btn-light btn-edit"
-                        onClick={() => this.selectForEdit(id)}
-                      >
-                        Edit
-              </button>
-                      <button
-                        onClick={() => this.props.deleteEvent(id)}
-                        className="btn btn-light btn-delete"
-                      >
-                        Delete
-              </button>
-                    </div>
+                      <div className="eventButtons">
+                        
+                        <button
+                          className="btn btn-light btn-edit"
+                          onClick={() => this.selectForEdit(id)}
+                        >
+                          Edit
+                        </button>
+                        <button
+                          onClick={() => this.props.deleteEvent(id)}
+                          className="btn btn-light btn-delete"
+                        >
+                          Delete
+                        </button>
+                      </div>
                     </Col>
                   </div>
-                 </Col>
+                </Col>
               ))}
 
-             
+
             </Row>
           </Container>
         </div>
-        {/* 
-        <EventForm event={this.state.event} /> */}
+    
 
-      
+
       </div>
     );
   }

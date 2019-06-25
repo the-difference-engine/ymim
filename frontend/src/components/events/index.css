@@ -83,7 +83,8 @@ tr {
 }
 
 .addEventBtn,
-.viewPastEvents {
+.viewPastEvents,
+.hideFormButton {
   width: 100%;
   background: green;
   margin-bottom: 20px; 
@@ -95,6 +96,10 @@ tr {
 
 .viewPastEvents {
   background-color: #fdd368;
+}
+
+.hideFormButton {
+  background-color: #f1f1f1;
 }
 .registrationRequired {
   text-align: right; 

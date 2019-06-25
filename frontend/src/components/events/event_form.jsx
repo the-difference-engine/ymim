@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { events } from "../../actions";
+import Blurb from "./event_blurb";
 import {
   Container,
   Form,
@@ -101,10 +102,12 @@ import {
 //   null,
 //   mapDispatchToProps
 // )(EventForm);
+
 class EventForm extends Component {
   state = {
     eventName: "",
-    eventDescription: ""
+    eventDescription: "",
+    isHidden: false
   };
   handleFormChange = event => {
     const { name, value } = event.target;
@@ -118,6 +121,15 @@ class EventForm extends Component {
       this.state.eventDescription
     );
   };
+
+  toggleHidden() {
+    this.setState({
+      isHidden: !this.state.isHidden
+    })
+  }
+
+
+
   //   submitEvent = (event) => {
   //   event.preventDefault()
   //   const {
@@ -135,6 +147,9 @@ class EventForm extends Component {
   render() {
     return (
      
+      <div>
+
+      {this.state.isHidden ? <Blurb /> :
       <React.Fragment>
 
         <Container  >
@@ -202,6 +217,9 @@ class EventForm extends Component {
             </Button>
 
             <Button className="viewPastEvents" variant="light">View Past Events</Button>
+            <Button onClick={this.toggleHidden.bind(this)} className="hideFormButton" variant="light">Hide Form Button</Button>
+
+
           </Form>
           </Col>
         <Col xs sm lg="0" xl="2"></Col>
@@ -209,8 +227,11 @@ class EventForm extends Component {
         </Container>
       
       </React.Fragment>
-    
+      
+            }</div>       
     );
+
+    
   }
 }
 export default EventForm;
