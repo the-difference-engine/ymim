@@ -209,9 +209,14 @@ class EventForm extends Component {
               <Form.Label>Additional details</Form.Label>
               <Form.Control as="textarea" rows="3" />
             </Form.Group>
+            
+           <Button className="imageUploadButton" variant="light" type="submit">Upload Image</Button>
+
             <Form.Group id="formGridCheckbox">
               <Form.Check className="registrationRequired" type="checkbox" label="Registration required" />
             </Form.Group>
+
+
             <Button className="addEventBtn" variant="light" type="submit">
               Add event
             </Button>
