@@ -11,7 +11,7 @@ export default class footer extends Component {
     return (
       <Container fluid={true} className="footer">
         <Row className="justify-content-md-center">
-          <Col md="12" lg="7">
+          <Col md="12" lg="10" xl="8">
             <nav>
               <ul className="row menu-text">
                 <li className="col footer-link">
@@ -54,14 +54,7 @@ export default class footer extends Component {
           </Col>
         </Row>
         <Row className="justify-content-center">
-          <Col xs="6" sm="6" md="6" lg="7">
-            <div className="contact">
-              &copy; Copyright 2019    
-                <a className="contact mx-4" href="mailto:founder@theymim.org">founder@theymim.org</a>
-              773.941.1200
-            </div>
-          </Col>
-          <Col xs="4" sm="12" md="6" className="align-items-center">
+          <Col xs="10" sm="10">
             <div className="tsocial">
               <NavLink href="https://www.facebook.com/theymim/">
                 <FontAwesomeIcon className="facebook" icon={faFacebookSquare} />
@@ -73,6 +66,19 @@ export default class footer extends Component {
                 <FontAwesomeIcon className="twitter" icon={faTwitter} />
               </NavLink>
             </div>
+          </Col>
+          <Col xs sm md lg xl="12">
+            <Row className="justify-content-md-center contact">
+              <Col xs="12" sm="12" md="4" lg="4" xl="2">
+                Copyright 2019
+              </Col>
+              <Col xs="12" sm="12" md="auto" lg="auto" xl="auto">
+                <a className="contact" href="mailto:founder@theymim.org">founder@theymim.org</a>
+              </Col>
+              <Col xs="12" sm="12" md="4" lg="4" xl="2">
+                773.941.1200
+              </Col>
+            </Row>
           </Col>
         </Row>
       </Container>
