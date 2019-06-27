@@ -222,7 +222,7 @@ class EventForm extends Component {
             </Button>
 
             <Button className="viewPastEvents" variant="light">View Past Events</Button>
-            <Button onClick={this.toggleHidden.bind(this)} className="hideFormButton" variant="light">Hide Form Button</Button>
+            <Button onClick={this.toggleHidden.bind(this)} className="hideFormButton" variant="light">Hide Form</Button>
 
 
           </Form>
