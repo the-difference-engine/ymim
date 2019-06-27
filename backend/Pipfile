@@ -34,5 +34,5 @@ django-rest-swagger = "*"
 python_version = "3.7"
 
 [scripts]
-black = "black"
+black = "black ."
 secret_key = "python generate_secret_key.py"
