@@ -1,0 +1,84 @@
+
+*{
+    margin:0;
+    padding:0;
+  }
+  
+  .messageInput {
+      width: 40%;
+  }
+  
+  .jumbotron {
+      margin: auto 0;
+      justify-content: left;
+  }
+  
+  span{
+      justify-content: center;
+  }
+  
+  .main-content {
+      margin: auto;
+  }
+  
+  
+  .block{
+      display:block;
+  }
+  
+  /*for the button */
+  
+  .button{
+      width:140px;
+      height:75px;
+      padding:20px;
+      padding-top:13px;
+      text-align:center;
+      vertical-align:middle;
+      border-radius:10px;
+      box-shadow:none;
+      background:#FDD368;
+      border:none;
+      
+  }
+  
+  .buttonSpan{
+    font-weight:bold;
+    font-size:25px;
+  }
+  
+  /* */
+  
+  .inputs{
+      height:60px;
+      background:#eeeaea;
+      border:none;
+      color:black;
+  }
+  
+  .inputs-text{
+      height:220px;
+      background:#eeeaea;
+      border:none;
+  }
+  
+  /*label font*/
+  
+  .labelFont{
+      font-weight:bold;
+      padding:0;
+  }
+  
+  /*fontcss for marksdown*/
+  
+  #fontcss {
+      line-height:50px !important;
+  }
+  
+  .main-content{
+      line-height: 2.0;
+  }
+
+  .container{
+      overflow:auto;
+  }

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Markdown from "react-markdown";
-import "./enroll.css";
-import Text from "../Markdowns/enroll.md";
+import "./index.css";
+import Text from "./enroll.md";
 
 class Enroll extends Component {
   constructor(props) {
