@@ -196,14 +196,14 @@ class EventForm extends Component {
                 <input type="time" className="form-control" id="inputTime" />
               </Form.Group>
             </Form.Row>
-            <label htmlFor="basic-url">Event URL</label>
+            <label htmlFor="basic-url" >Event URL</label>
             <InputGroup className="mb-3">
               <InputGroup.Prepend>
                 {/* <InputGroup.Text id="basic-addon3">
                 https://example.com/users/
               </InputGroup.Text> */}
               </InputGroup.Prepend>
-              <FormControl id="basic-url" aria-describedby="basic-addon3" />
+              <FormControl id="basic-url" placeholder="Eventbrite URL" aria-describedby="basic-addon3" />
             </InputGroup>
             <Form.Group controlId="exampleForm.ControlTextarea1">
               <Form.Label>Additional details</Form.Label>
