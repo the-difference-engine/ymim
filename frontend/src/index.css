@@ -98,3 +98,29 @@ code {
   background: #fff;
   margin: 20px 0;
 }
+
+
+/* Here lies code for the team.jsx; Does this belong here */
+.meetTheTeam {
+  /* padding: 20px; 
+  margin-top: 50px;
+  margin-bottom: 50px;  */
+  margin: 60px; 
+  font-size: 1.2rem;
+}
+
+.teamPhotosArea {
+  background-color: #EEEAEA;
+}
+
+.teamPhotosArea img {
+  padding: 20px; 
+}
+
+.teamPhotos {
+  margin: 20px; 
+}
+
+.whitebottom {
+  margin-bottom: 0; 
+}
