@@ -10,10 +10,6 @@
   display: inline-block !important;
 }
 
-.menu-text {
-  /* color: white; */
-}
-
 .foot_text {
   color: white;
   text-decoration: none;
@@ -93,6 +89,8 @@ nav {
 .moveConnecting {
   margin-right: 35px !important;
 }
-#tsocial {
-  display: inline-block;
+@media all and (min-width: 768px) and (max-width: 2048px) {
+  .fsocial {
+    display: none;
+  }
 }
