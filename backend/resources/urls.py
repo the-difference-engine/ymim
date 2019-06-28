@@ -3,6 +3,6 @@ from . import views
 
 
 router = routers.DefaultRouter()
-router.register("resources", views.ResourceListCreate)
-router.register("resources", views.ResourceRetrieveUpdateDestroy)
+router.register("api/resources", views.ResourceListCreate)
+router.register("api/resources", views.ResourceRetrieveUpdateDestroy)
 urlpatterns = router.urls

@@ -2,6 +2,10 @@
 line-length = 90
 exclude = '''
 /(
-  \.venv
+    migrations
+  | \.venv
+  | venv
+  | build
+  | dist
 )/
 '''
