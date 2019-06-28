@@ -1,89 +1,89 @@
 .footer {
-	background-color: #519b46;
+  background-color: #519b46;
 }
 
 .footer-link {
-	display: inline-block;
-	margin: 4vh 0;
+  display: inline-block;
+  margin: 4vh 0;
 }
 
 .footer-list {
-	color: white;
-	font-family: "Montserrat";
-	font-size: 14pt;
+  color: white;
+  font-family: "Montserrat";
+  font-size: 14pt;
 }
 
 .pic-container {
-	background: pink;
-	min-width: 200px;
-	height: 150px;
-	border-radius: 30px;
-	margin: 20px;
-	overflow: hidden;
-	transform: skew(20deg);
-	display: flex;
-	align-items: center;
+  background: pink;
+  min-width: 200px;
+  height: 150px;
+  border-radius: 30px;
+  margin: 20px;
+  overflow: hidden;
+  transform: skew(20deg);
+  display: flex;
+  align-items: center;
 }
 
 .pic {
-	width: 135%;
-	position: absolute;
-	left: -35px;
-	transform: skewX(-20deg);
-	object-fit: cover;
+  width: 135%;
+  position: absolute;
+  left: -35px;
+  transform: skewX(-20deg);
+  object-fit: cover;
 }
 
 .h2-heading {
-	display: inline-block;
-	padding-right: 30px !important;
-	text-align: center !important;
+  display: inline-block;
+  padding-right: 30px !important;
+  text-align: center !important;
 }
 
 .h2-heading h2 {
-	color: black !important;
-	display: inline-block !important;
-	font-size: 36pt;
-	font-family: 'Gotham Medium', 'Arial Narrow', Arial, sans-serif;
-	text-align: center !important;
+  color: black !important;
+  display: inline-block !important;
+  font-size: 36pt;
+  font-family: "Gotham Medium", "Arial Narrow", Arial, sans-serif;
+  text-align: center !important;
 }
 
 .contact {
-	color: #fff;
-	text-align: center;
+  color: #fff;
+  text-align: center;
 }
 
 .footer-contact {
-	padding-top: 3vh;
-	text-align: center;
+  padding-top: 3vh;
+  text-align: center;
 }
 
 .tsocial {
-	text-align: center;
+  text-align: center;
 }
 
 @media (min-width: 768px) and (max-width: 2560px) {
-	.tsocial {
-		display: none;
-	}
+  .tsocial {
+    display: none;
+  }
 }
 
-@media only screen and (max-width:520px) {
-	.footer_link {
-		display: inline-block;
-		margin: 2vh;
-	}
-	.svg-inline--fa.fa-facebook-square.fa-w-14.facebook,
-	.svg-inline--fa.fa-twitter.fa-w-16.twitter,
-	.svg-inline--fa.fa-instagram.fa-w-14.insta {
-		width: 8vh;
-		height: 8vh;
-		background: #fff;
-		border-radius: 50%;
-		padding: 1.5vh;
-		margin: 1vh;
-	}
+@media only screen and (max-width: 520px) {
+  .footer-link {
+    display: inline-block;
+    margin: 2vh;
+  }
+  .svg-inline--fa.fa-facebook-square.fa-w-14.facebook,
+  .svg-inline--fa.fa-twitter.fa-w-16.twitter,
+  .svg-inline--fa.fa-instagram.fa-w-14.insta {
+    width: 8vh;
+    height: 8vh;
+    background: #fff;
+    border-radius: 50%;
+    padding: 1.5vh;
+    margin: 1vh;
+  }
 }
 
 .justify-content-md-center.contact.row {
-	margin-bottom: 1vh;
+  margin-bottom: 1vh;
 }

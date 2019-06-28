@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./mid.css";
 import { Container, Row } from "react-bootstrap";
 
-
 class LowerMid extends Component {
   render() {
     return (
@@ -78,22 +77,22 @@ class LowerMid extends Component {
               <img
                 className="pic"
                 src="https://apothekergroup.com/wp-content/uploads/2018/09/placeholder.png"
-                />
+              />
             </div>
 
             <div className="pic-container">
               <img
                 className="pic"
                 src="https://res.cloudinary.com/dyaffqyuj/image/upload/v1557954804/YMIM/6a00d83451b26169e201a5118cd1e9970c-800wi.jpg"
-                />
+              />
             </div>
 
             <div className="pic-container">
               <img
                 className="pic"
                 src="https://apothekergroup.com/wp-content/uploads/2018/09/placeholder.png"
-                />
-                </div>
+              />
+            </div>
           </Row>
         </Container>
       </div>

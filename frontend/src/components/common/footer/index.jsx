@@ -1,8 +1,12 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { NavLink } from 'react-router-dom';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebookSquare, faInstagram, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { NavLink } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faFacebookSquare,
+  faInstagram,
+  faTwitter
+} from "@fortawesome/free-brands-svg-icons";
 import { Container, Row, Col } from "react-bootstrap";
 import "./index.css";
 
@@ -17,37 +21,37 @@ export default class footer extends Component {
                 <li className="col footer-link">
                   <Link className="footer-list" to="/events">
                     Home
-                </Link>
+                  </Link>
                 </li>
                 <li className="col footer-link">
                   <Link className="footer-list" to="/about">
                     About
-                </Link>
+                  </Link>
                 </li>
                 <li className="col footer-link">
                   <Link className="footer-list" to="/meet-the-team">
                     Contact
-                </Link>
+                  </Link>
                 </li>
                 <li className="col footer-link">
                   <Link className="footer-list" to="/events">
                     Enroll
-                </Link>
+                  </Link>
                 </li>
                 <li className="col footer-link">
                   <Link className="footer-list" to="/ambassadors">
                     Volunteer
-                </Link>
+                  </Link>
                 </li>
                 <li className="col footer-link">
                   <Link className="footer-list" to="/events">
                     Donate
-                </Link>
+                  </Link>
                 </li>
                 <li className="col footer-link">
                   <Link className="footer-list" to="/events">
                     Events
-                </Link>
+                  </Link>
                 </li>
               </ul>
             </nav>
@@ -59,9 +63,9 @@ export default class footer extends Component {
               <NavLink href="https://www.facebook.com/theymim/">
                 <FontAwesomeIcon className="facebook" icon={faFacebookSquare} />
               </NavLink>
-                <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
-                  <FontAwesomeIcon className="insta" icon={faInstagram} />
-                </NavLink>
+              <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
+                <FontAwesomeIcon className="insta" icon={faInstagram} />
+              </NavLink>
               <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
                 <FontAwesomeIcon className="twitter" icon={faTwitter} />
               </NavLink>
@@ -73,7 +77,9 @@ export default class footer extends Component {
                 Copyright 2019
               </Col>
               <Col xs="12" sm="12" md="4" lg="4" xl="2">
-                <a className="contact" href="mailto:founder@theymim.org">founder@theymim.org</a>
+                <a className="contact" href="mailto:founder@theymim.org">
+                  founder@theymim.org
+                </a>
               </Col>
               <Col xs="12" sm="12" md="4" lg="4" xl="2">
                 773.941.1200
