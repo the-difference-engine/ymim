@@ -33,6 +33,19 @@
   object-fit: cover;
 }
 
+<<<<<<< HEAD
+=======
+.foot_head {
+  display: inline;
+  margin: 20px;
+}
+
+.footerImageHeader {
+  box-sizing: border-box;
+  text-align: center !important;
+}
+
+>>>>>>> 1df7c84b870a56a13d661a37a0fa0e6f62b02dab
 .h2-heading {
   display: inline-block;
   padding-right: 30px !important;
@@ -46,6 +59,7 @@
   font-family: "Gotham Medium", "Arial Narrow", Arial, sans-serif;
   text-align: center !important;
 }
+<<<<<<< HEAD
 
 .contact {
   color: #fff;
@@ -87,3 +101,18 @@
 .justify-content-md-center.contact.row {
   margin-bottom: 1vh;
 }
+=======
+/* Moves the inspiriing */
+.movefont {
+  margin-right: 95px !important;
+}
+
+.moveConnecting {
+  margin-right: 35px !important;
+}
+@media all and (min-width: 768px) and (max-width: 2048px) {
+  .fsocial {
+    display: none;
+  }
+}
+>>>>>>> 1df7c84b870a56a13d661a37a0fa0e6f62b02dab
