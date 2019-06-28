@@ -1,10 +1,30 @@
 import React, { Component } from "react";
+import {
+  Container,
+  Col,
+  Row
+  
+} from "react-bootstrap";
 
 class Team extends Component {
   render() {
     return (
       <div>
-        <h1 class="entry-title" itemprop="headline">
+
+        <div className="eventsDisplay">
+          <Container>
+            <Row>
+                <Col>
+                    <Col>
+                     Something
+                    </Col>
+                </Col>
+            </Row>
+          </Container>
+        </div>
+    
+
+        {/* <h1 class="entry-title" itemprop="headline">
           Meet Our Team
         </h1>
         <div class="entry-content" itemprop="text">
@@ -128,7 +148,7 @@ class Team extends Component {
             now, and you too can help our Young Masterbuilders in Motion thrive.
           </p>
           <p>&nbsp;</p>
-        </div>
+        </div> */}
       </div>
     );
   }
