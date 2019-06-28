@@ -35,7 +35,9 @@ class Team extends Component {
         <div className="teamPhotosArea">
           <Container className="teamPhotos">
             <Row>
-             
+              <Col><h2>Gallery</h2></Col>
+            </Row>
+            <Row>
                 <Col>
                 <img src="https://imgplaceholder.com/420x320" /></Col>
                 <Col><img src="https://imgplaceholder.com/420x320" /></Col>

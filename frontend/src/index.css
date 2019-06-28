@@ -105,12 +105,20 @@ code {
   /* padding: 20px; 
   margin-top: 50px;
   margin-bottom: 50px;  */
-  margin: 60px; 
+  padding: 60px; 
   font-size: 1.2rem;
 }
 
+.meetTheTeam h2,
+.teamPhotosArea h2 {
+  margin-bottom: 20px; 
+}
 .teamPhotosArea {
   background-color: #EEEAEA;
+}
+
+.teamPhotos h2 {
+  padding: 20px; 
 }
 
 .teamPhotosArea img {
@@ -121,6 +129,4 @@ code {
   margin: 20px; 
 }
 
-.whitebottom {
-  margin-bottom: 0; 
-}
+
