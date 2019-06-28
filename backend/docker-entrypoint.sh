@@ -33,8 +33,9 @@ case "$1" in
             ;;
             local)
                 pipenv install --system --dev
-                echo "Creating test users in local DB"
+                echo "Creating test data in local DB"
                 python manage.py create_test_users
+                python manage.py create_test_events
                 echo "Starting local server"
                 python manage.py runserver 0.0.0.0:8000
             ;;
