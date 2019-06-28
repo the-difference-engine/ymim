@@ -9,3 +9,11 @@ class EventListCreate(ViewSetMixin, generics.ListCreateAPIView):
     queryset = Event.objects.all()
     permission_classes = [permissions.AllowAny]
     serializer_class = EventSerializer
+    lookup_field = "id"
+
+
+class EventRetrieveUpdateDestroy(ViewSetMixin, generics.RetrieveUpdateDestroyAPIView):
+    queryset = Event.objects.all()
+    permission_classes = [permissions.AllowAny]
+    serializer_class = EventSerializer
+    lookup_field = "id"
