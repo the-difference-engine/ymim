@@ -65,14 +65,7 @@ class NavBar extends Component {
           </Col>
         </Row>
         <Row className="ym-bottom" noGutters={true}>
-          <Col
-            className="mx-auto my-auto"
-            xs={8}
-            sm={8}
-            md={10}
-            lg={10}
-            className="px-0"
-          >
+          <Col className="mx-auto my-auto px-0" xs={8} sm={8} md={10} lg={10}>
             <Navbar collapseOnSelect expand="lg">
               <Navbar.Toggle className="ml-3" onClick={this.toggle} />
               <Navbar.Collapse isOpen={this.state.isOpen} navbar>

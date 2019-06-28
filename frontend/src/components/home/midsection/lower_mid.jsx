@@ -28,7 +28,6 @@ class LowerMid extends Component {
             <h5 className="subheading">RSVP and Find out More:</h5>
             <a
               className="spaceanchors"
-              style={linkStyle}
               href="https://www.eventbrite.com/ymim"
               alt="Eventbrite"
             >
@@ -37,7 +36,6 @@ class LowerMid extends Component {
             <br />
             <a
               className="spaceanchors"
-              style={linkStyle}
               href="https://www.facebook.com/pg/theymim.events"
               alt="Facebook"
             >
@@ -77,6 +75,7 @@ class LowerMid extends Component {
               <img
                 className="pic"
                 src="https://apothekergroup.com/wp-content/uploads/2018/09/placeholder.png"
+                alt=""
               />
             </div>
 
@@ -84,6 +83,7 @@ class LowerMid extends Component {
               <img
                 className="pic"
                 src="https://apothekergroup.com/wp-content/uploads/2018/09/placeholder.png"
+                alt=""
               />
             </div>
 
@@ -91,6 +91,7 @@ class LowerMid extends Component {
               <img
                 className="pic"
                 src="https://res.cloudinary.com/dyaffqyuj/image/upload/v1557954804/YMIM/6a00d83451b26169e201a5118cd1e9970c-800wi.jpg"
+                alt=""
               />
             </div>
 
@@ -98,6 +99,7 @@ class LowerMid extends Component {
               <img
                 className="pic"
                 src="https://apothekergroup.com/wp-content/uploads/2018/09/placeholder.png"
+                alt=""
               />
             </div>
           </Row>

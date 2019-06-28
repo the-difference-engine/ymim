@@ -35,7 +35,7 @@ class Events extends Component {
               <p>{event.start_datetime}</p>
               <p>to</p>
               <p>{event.end_datetime}</p>
-              <img src={event.event_image} />
+              <img src={event.event_image} alt="" />
               <button
                 className="btn btn-info"
                 onClick={() => this.selectForEdit(id)}
