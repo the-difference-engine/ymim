@@ -59,9 +59,9 @@ export default class footer extends Component {
               <NavLink href="https://www.facebook.com/theymim/">
                 <FontAwesomeIcon className="facebook" icon={faFacebookSquare} />
               </NavLink>
-              <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
-                <FontAwesomeIcon className="insta" icon={faInstagram} />
-              </NavLink>
+                <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
+                  <FontAwesomeIcon className="insta" icon={faInstagram} />
+                </NavLink>
               <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
                 <FontAwesomeIcon className="twitter" icon={faTwitter} />
               </NavLink>
@@ -72,7 +72,7 @@ export default class footer extends Component {
               <Col xs="12" sm="12" md="4" lg="4" xl="2">
                 Copyright 2019
               </Col>
-              <Col xs="12" sm="12" md="auto" lg="auto" xl="auto">
+              <Col xs="12" sm="12" md="4" lg="4" xl="2">
                 <a className="contact" href="mailto:founder@theymim.org">founder@theymim.org</a>
               </Col>
               <Col xs="12" sm="12" md="4" lg="4" xl="2">

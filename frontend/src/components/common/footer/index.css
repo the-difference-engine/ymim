@@ -33,11 +33,6 @@
 	object-fit: cover;
 }
 
-.footerImageHeader {
-	box-sizing: border-box;
-	text-align: center !important;
-}
-
 .h2-heading {
 	display: inline-block;
 	padding-right: 30px !important;
@@ -78,9 +73,16 @@
 		margin: 2vh;
 	}
 	.svg-inline--fa.fa-facebook-square.fa-w-14.facebook,
-	.svg-inline--fa.fa-twitter.fa-w-16.twitter,
-	.svg-inline--fa.fa-instagram.fa-w-14.insta
-	{	width: 6vh;
-		height: 6vh;
+	.svg-inline--fa.fa-twitter.fa-w-16.twitter {
+	/* .svg-inline--fa.fa-instagram.fa-w-14.insta { */
+		width: 8vh;
+		height: 8vh;
+		background: #fff;
+		border-radius: 50%;
+		padding: 1.5vh;
 	}
+}
+
+.justify-content-md-center.contact.row {
+	margin-bottom: 1vh;
 }

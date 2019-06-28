@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import "./mid.css";
 import { Container, Row } from "react-bootstrap";
 
-const linkStyle = {
-  color: "green"
-};
 
 class LowerMid extends Component {
   render() {
@@ -32,12 +29,12 @@ class LowerMid extends Component {
             <h5 className="subheading">RSVP and Find out More:</h5>
 
             <h5 className="subheading">Eventbright:</h5>
-            <a className="spaceanchors" style={linkStyle} href="#">
+            <a className="spaceanchors" className="link-style" href="#">
               https://www.eventbrite.com/ymim
             </a>
 
             <h5 className="subheading">Facebook:</h5>
-            <a className="spaceanchors" style={linkStyle} href="#">
+            <a className="spaceanchors" className="link-style" href="#">
               https://www.facebook.com/pg/theymim.events
             </a>
             <br />
@@ -55,7 +52,7 @@ class LowerMid extends Component {
 
         <Container className="mb-5">
           <Row className="justify-content-md-center">
-            <ul className="footerImageHeader">
+            <ul className="footer-image-header">
               <li className="h2-heading">
                 <h2 className="foot-head movefont">
                   <span className="trymovingfont">Inspiring </span>
