@@ -99,6 +99,13 @@ code {
   margin: 20px 0;
 }
 
+/* Here lies code for the about.jsx. Does this belong here? */
+
+.entry-content {
+  padding: 20px 266px; 
+}
+
+
 
 /* Here lies code for the team.jsx; Does this belong here */
 .meetTheTeam {
