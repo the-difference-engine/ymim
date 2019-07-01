@@ -14,7 +14,8 @@ class Events extends Component {
 
   componentDidMount() {
     this.props.fetchEvents();
-  }
+
+  } 
 
   selectForEdit = id => {
     let edit_event = this.props.events[id];
@@ -27,15 +28,23 @@ class Events extends Component {
     return (
       <div>
         <h1>Current Events</h1>
+        <div className = "col-md-6">
+          <EventForm event={this.state.event} />
+          </div>
         <div className="row">
           {this.props.events.map((event, id) => (
             <div className="event_container col-md-3" key={`event_${event.id}`}>
-              <h3>{event.title}</h3>
-              <p>{event.description}</p>
-              <p>{event.start_datetime}</p>
-              <p>to</p>
-              <p>{event.end_datetime}</p>
-              <img src={event.event_image} alt="" />
+              <h3>{event.name.text}</h3>
+              
+              <p>{event.description.text}</p>
+             <div>
+              <img src={
+                event.logo
+                ? event.logo.url
+                : "https://placehold.it/300x300"
+              }></img>
+
+             </div>
               <button
                 className="btn btn-info"
                 onClick={() => this.selectForEdit(id)}
@@ -50,9 +59,9 @@ class Events extends Component {
               </button>
             </div>
           ))}
+         
         </div>
 
-        <EventForm event={this.state.event} />
       </div>
     );
   }
