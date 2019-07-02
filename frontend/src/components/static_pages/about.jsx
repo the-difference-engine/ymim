@@ -1,20 +1,14 @@
 import React, { Component } from "react";
-
 import "../../index.css";
-// import SingleCarousel from '../Single_Carousel/Single_Carousel';
 
 class About extends Component {
   constructor(props) {
     super(props);
-
-    
   }
 
   render() {
     return (
       <>
-        {/* <SingleCarousel  header={"About"}/> */}
-
         <div class="container" itemprop="text">
           <h1 className="mt-5 mb-5"> About </h1>
 
@@ -192,8 +186,6 @@ class About extends Component {
             </div>
           </div>
         </div>
-
-        {/* The form below is a general participant interest form that helps us plan for number and age groups of potential cohort members, not to be confused with the enrollment application that will need to be submitted via email to **Founder@TheYMIM.org** noted above. */}
       </>
     );
   }
