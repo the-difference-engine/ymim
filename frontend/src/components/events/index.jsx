@@ -4,6 +4,7 @@ import { events } from "../../actions";
 import EventForm from "./event_form";
 import "./index.css";
 import logo from "../../assets/logo.png";
+import { EventList, EventItems } from "./event_card";
 
 class Events extends Component {
   constructor(props) {
@@ -33,49 +34,44 @@ class Events extends Component {
           <EventForm event={this.state.event} />
         </div>
         <div className="row">
-          {this.props.events.map((event, id) => (
-          
-          <div className="event_container col-md-3" key={`event_${event.id}`}>
-             
-              <a href={event.url}> 
-              <h3>{
-                event.name
-                  ? event.name.text
-                  : "Young Masterbuilders In Motion Event"
-                }</h3>
-              </a>
-              
-                 <p>{
-                event.description
-                  ? event.description.text
-                  : ""
-                }</p>
-              
-              <a href={event.url}>
-               
-                <img class = "eventImage" src=
-                {
-                  event.logo
-                    ? event.logo.url
-                    : logo
-                }></img>
-              </a>
-             
-              {/* <button
-                className="btn btn-info"
-                onClick={() => this.selectForEdit(id)}
-              >
-                Edit
-              </button>
-              <button
-                onClick={() => this.props.deleteEvent(id)}
-                className="btn btn-danger"
-              >
-                Delete
-              </button> */}
-            </div>
-          ))}
+          <EventList>
+            {this.props.events.map(event => {
 
+              return (
+
+                <EventItems
+                  key={event.id}
+                  name={
+                    event.name
+                      ? event.name.text
+                      : "Young Masterbuilders In Motion Event"
+                  }
+                  description={
+                    event.description
+                      ? event.description.text
+                      : ""
+                  }
+                  start={
+                    event.start
+                      ? event.start.local
+                      : "TBA"
+                  }
+                  end={
+                    event.end
+                      ? event.end.local
+                      : "TBA"
+                  }
+                  logo={
+                    event.logo
+                      ? event.logo.url
+                      : logo
+                  }
+                />
+
+              )
+
+            })}
+          </EventList>
         </div>
 
       </div>
