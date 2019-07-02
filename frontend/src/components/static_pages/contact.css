@@ -1,28 +1,21 @@
 
-*{
-    margin:0;
-    padding:0;
-  }
   
   .messageInput {
       width: 40%;
   }
   
-  .jumbotron {
-      margin: auto 0;
-      justify-content: left;
-  }
-  
+
   span{
       justify-content: center;
   }
   
   .main-content {
       margin: auto;
+      line-height: 2.0;
   }
   
   
-  .block{
+  label {
       display:block;
   }
   
@@ -75,9 +68,6 @@
       line-height:50px !important;
   }
   
-  .main-content{
-      line-height: 2.0;
-  }
 
   .container{
       overflow:auto;

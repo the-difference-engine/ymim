@@ -36,23 +36,23 @@ class Contact extends Component{
             <div className="container col-sm-6 float-left mt-5">
               <form action="/" method="post">
                 <div>
-                <label for="name" className="col-xs-4 block labelFont">Name(required)</label>
+                <label for="name" className="col-xs-4 labelFont">Name(required)</label>
                   <input  id="name" required="" type="text"  className="col-md-10 inputs" />
                 </div>
                 <br />
                 <div>
-                  <label for="email" className="col-md-2 block labelFont">Email(required)</label>
+                  <label for="email" className="col-md-2 labelFont">Email(required)</label>
                   <input id="email" required="" type="email" className ="col-md-10 inputs" />
                 </div>
                 <br />
                 <div>
-                  <label for="phone" className="col-md-2 block labelFont">Phone(required)</label>
+                  <label for="phone" className="col-md-2 labelFont">Phone(required)</label>
                   <input id="phone" type="text" className="col-md-10 inputs" />
                 </div>
                 <br />
                 
                 <div>
-                  <label className="col-md-4 block mt-3 mb-1 labelFont">Message</label>
+                  <label className="col-md-4 mt-3 mb-1 labelFont">Message</label>
                 
                   <textarea name="" rows="6" className="col-md-10 mb-4  inputs-text" />
                 </div>
