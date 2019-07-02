@@ -101,10 +101,28 @@ code {
 
 /* Here lies code for the about.jsx. Does this belong here? */
 
-.entry-content {
-  padding: 20px 266px; 
+.aboutDiv {
+  padding: 20px 266px;
+  font-size: 1.2rem; 
 }
 
+.aboutDiv h1 {
+  margin-bottom: 50px; 
+  font-size: 36pt; 
+}
+
+.aboutDiv h2,
+.aboutDiv h1 {
+  font-weight: bold; 
+}
+
+.aboutDiv h2 {
+  width: 50%; 
+}
+
+.aboutSection {
+  margin-bottom: 60px; 
+}
 
 
 /* Here lies code for the team.jsx; Does this belong here */
