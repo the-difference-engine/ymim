@@ -29,7 +29,7 @@ export default class footer extends Component {
                   </Link>
                 </li>
                 <li className="col footer-link">
-                  <Link className="footer-list" to="/meet-the-team">
+                  <Link className="footer-list" to="/contact">
                     Contact
                   </Link>
                 </li>
@@ -44,13 +44,18 @@ export default class footer extends Component {
                   </Link>
                 </li>
                 <li className="col footer-link">
-                  <Link className="footer-list" to="/events">
+                  <Link className="footer-list" to="/donate">
                     Donate
                   </Link>
                 </li>
                 <li className="col footer-link">
                   <Link className="footer-list" to="/events">
                     Events
+                  </Link>
+                </li>
+                <li className="col footer-link">
+                  <Link className="footer-list" to="/meet-the-team">
+                    Meet the Team
                   </Link>
                 </li>
               </ul>
