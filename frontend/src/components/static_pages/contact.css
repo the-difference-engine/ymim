@@ -17,11 +17,14 @@
   
   label {
       display:block;
+      font-weight:bold;
+      padding:0;
+      
   }
   
   /*for the button */
   
-  .button{
+  .button {
       width:140px;
       height:75px;
       padding:20px;
@@ -35,21 +38,21 @@
       
   }
   
-  .buttonSpan{
+  .buttonSpan {
     font-weight:bold;
     font-size:25px;
   }
   
   /* */
   
-  .inputs{
+  input {
       height:60px;
       background:#eeeaea;
       border:none;
       color:black;
   }
   
-  .inputs-text{
+  .inputs-text {
       height:220px;
       background:#eeeaea;
       border:none;
@@ -57,10 +60,7 @@
   
   /*label font*/
   
-  .labelFont{
-      font-weight:bold;
-      padding:0;
-  }
+  
   
   /*fontcss for marksdown*/
   
@@ -72,3 +72,11 @@
   .container{
       overflow:auto;
   }
+
+
+  @media (min-width: 768px){
+  .col-md-2 {
+      flex: 0 0 16.666667%;
+      max-width: unset !important;
+  }
+}
