@@ -66,6 +66,7 @@ class Events extends Component {
                       ? event.logo.url
                       : logo
                   }
+                  url={event.url}
                 />
 
               )

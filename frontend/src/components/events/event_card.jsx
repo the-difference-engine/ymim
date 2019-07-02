@@ -36,8 +36,8 @@ return (
                 <Col>
                   <div className="event_container">
                     <Col>
-                      <h3>{props.name}</h3>
-                      <img className = "eventImage" src={props.logo} />
+                     <a href ={props.url}><h3>{props.name}</h3></a> 
+                      <a href ={props.url}><img className = "eventImage" src={props.logo} /></a> 
                       <p>{props.description}</p>
                       <p className="eventDisplayTime">Event date and time:</p>
                       <p>{props.start}</p>
