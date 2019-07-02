@@ -85,12 +85,29 @@
   .svg-inline--fa.fa-facebook-square.fa-w-14.facebook,
   .svg-inline--fa.fa-twitter.fa-w-16.twitter,
   .svg-inline--fa.fa-instagram.fa-w-14.insta {
-    width: 8vh;
-    height: 8vh;
+    width: 10vh;
+    height: 10vh;
     background: #fff;
     border-radius: 50%;
     padding: 1.5vh;
     margin: 1vh;
+  }
+  .svg-inline--fa.fa-facebook-square.fa-w-14.facebook {
+    color: #3c579d;
+  }
+  .svg-inline--fa.fa-twitter.fa-w-16.twitter {
+    color: #52a7e7;
+  }
+  .svg-inline--fa.fa-instagram.fa-w-14.insta {
+    color: #fff;
+    background-image: radial-gradient(
+      circle at 30% 107%,
+      #fdf497 0%,
+      #fdf497 5%,
+      #fd5949 45%,
+      #d6249f 60%,
+      #285aeb 90%
+    );
   }
 }
 
