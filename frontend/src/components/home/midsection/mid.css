@@ -63,3 +63,13 @@
   margin-bottom: 10px !important;
   color: #519b46;
 }
+
+.footer-image-header {
+  box-sizing: border-box;
+  text-align: center !important;
+}
+
+.link-style {
+  color: #519b46;
+  font-size: 22pt;
+}
