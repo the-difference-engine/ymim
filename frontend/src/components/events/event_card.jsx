@@ -2,6 +2,8 @@ import React from "react";
 import { connect } from "react-redux";
 import {
   Container,
+  Card,
+  CardDeck,
   Form,
   Col,
   Button,
@@ -23,61 +25,61 @@ import logo from "../../assets/logo.png";
 import "./index.css";
 
 export function EventList({ children }) {
-    return <ul className="list-group">{children}</ul>;
-  }
-  
+  return <ul className="list-group">{children}</ul>;
+}
 
 const EventItems = props => {
-return (
-<div className="eventsDisplay">
-          <Container>
-            <Row>
-              
-                <Col>
-                  <div className="event_container">
-                    <Col>
-                     <a href ={props.url}><h3>{props.name}</h3></a> 
-                      <a href ={props.url}><img className = "eventImage" src={props.logo} /></a> 
-                      <p>{props.description}</p>
-                      <p className="eventDisplayTime">Event date and time:</p>
-                      <p>{props.start}</p>
-                      <p>to</p>
-                      <p>{props.end}</p>
-                      <div className="eventButtons">
-                        
-                        <button
-                          className="btn btn-light btn-edit"
-                        //   onClick={() => this.selectForEdit(id)}
-                        >
-                          Edit
-                        </button>
-                        <button
-                        //   onClick={() => this.props.deleteEvent(id)}
-                          className="btn btn-light btn-delete"
-                        >
-                          Delete
-                        </button>
-                      </div>
-                    </Col>
-                  </div>
-                </Col>
-              
-            </Row>
-          </Container>
+  return (
+    <div className="eventsDisplay">
+      <Container>
+        {/* <Row>
+          <Col> */}
+        <div className="event_container">
+          {/* <Col> */}
+          <CardDeck>
+            <Card>
+              <a href={props.url}>
+                <h3>{props.name}</h3>
+              </a>
+              <a href={props.url}>
+                <img className="eventImage" src={props.logo} />
+              </a>
+              <p>{props.description}</p>
+              <p className="eventDisplayTime">Event date and time:</p>
+              <p>{props.start}</p>
+              <p>to</p>
+              <p>{props.end}</p>
+              <div className="eventButtons">
+                <button
+                  className="btn btn-light btn-edit"
+                  //   onClick={() => this.selectForEdit(id)}
+                >
+                  Edit
+                </button>
+                <button
+                  //   onClick={() => this.props.deleteEvent(id)}
+                  className="btn btn-light btn-delete"
+                >
+                  Delete
+                </button>
+              </div>
+              {/* </Col> */}
+            </Card>
+          </CardDeck>
         </div>
-    
-)
-    
-  }
+        {/* </Col> */}
+        {/* </Row> */}
+      </Container>
+    </div>
+  );
+};
 
-export {EventItems}
+export { EventItems };
 
+// <div className="event_container col-md-3" key={`event_${event.id}`}>
 
-  // <div className="event_container col-md-3" key={`event_${event.id}`}>
-
-
-             
-              {/* <a href={event.url}> 
+{
+  /* <a href={event.url}> 
               <h3>{
                 event.name
                   ? event.name.text
@@ -112,5 +114,6 @@ export {EventItems}
                 className="btn btn-danger"
               >
                 Delete
-              </button> */}
-            // </div>
+              </button> */
+}
+// </div>
