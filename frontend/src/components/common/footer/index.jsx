@@ -53,11 +53,6 @@ export default class footer extends Component {
                     Events
                   </Link>
                 </li>
-                <li className="col footer-link">
-                  <Link className="footer-list" to="/meet-the-team">
-                    Meet the Team
-                  </Link>
-                </li>
               </ul>
             </nav>
           </Col>
