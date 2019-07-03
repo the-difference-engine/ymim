@@ -99,59 +99,38 @@ code {
   margin: 20px 0;
 }
 
-/* Here lies code for the about.jsx. Does this belong here? */
 
-.aboutDiv {
-  padding: 20px 266px;
-  font-size: 1.2rem; 
+/*About css */
+
+.lowermid {
+  background-color: #eeeaea;
+  width: 100%;
 }
 
-.aboutDiv h1 {
-  margin-bottom: 50px; 
-  font-size: 36pt; 
+.floatp {
+  float: right;
+  width: 40%;
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
-.aboutDiv h2,
-.aboutDiv h1 {
-  font-weight: bold; 
+.floatimg {
+  padding-top: 5%;
+  float: left;
+  width: 40%;
+  padding-top: 5%;
 }
 
-.aboutDiv h2 {
-  width: 50%; 
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 2%;
+  text-align: center;
+  margin: auto;
 }
 
-.aboutSection {
-  margin-bottom: 60px; 
+.margin-bottom {
+  margin-bottom: 7%;
 }
-
-
-/* Here lies code for the team.jsx; Does this belong here */
-.meetTheTeam {
-  /* padding: 20px; 
-  margin-top: 50px;
-  margin-bottom: 50px;  */
-  padding: 20px 266px; 
-  font-size: 1.2rem;
-}
-
-.meetTheTeam h2,
-.teamPhotosArea h2 {
-  margin-bottom: 20px; 
-}
-.teamPhotosArea {
-  background-color: #EEEAEA;
-}
-
-.teamPhotos h2 {
-  padding: 20px; 
-}
-
-.teamPhotosArea img {
-  padding: 20px; 
-}
-
-.teamPhotos {
-  margin: 20px; 
-}
-
 
