@@ -1,8 +1,5 @@
 
-  
-  .messageInput {
-      width: 40%;
-  }
+ 
   
 
   span{
@@ -25,48 +22,37 @@
   /*for the button */
   
   .button {
-      width:140px;
-      height:75px;
-      padding:20px;
-      padding-top:13px;
-      text-align:center;
-      vertical-align:middle;
-      border-radius:10px;
-      box-shadow:none;
-      background:#FDD368;
-      border:none;
+    width: 150px;
+    height: 75px;
+    border-radius: 10px;
+    background: #FDD368;
+    border: none;
       
   }
   
   .buttonSpan {
-    font-weight:bold;
-    font-size:25px;
+    font-weight: bold;
+    font-size: 25px;
   }
   
   /* */
   
   input {
-      height:60px;
-      background:#eeeaea;
-      border:none;
-      color:black;
+      height: 60px;
+      background: #eeeaea;
+      border: none;
+      color: black;
   }
   
   .inputs-text {
-      height:220px;
-      background:#eeeaea;
-      border:none;
+      height: 220px;
+      background: #eeeaea;
+      border: none;
   }
   
-  /*label font*/
   
   
   
-  /*fontcss for marksdown*/
-  
-  #fontcss {
-      line-height:50px !important;
-  }
   
 
   .container{
