@@ -100,6 +100,7 @@ code {
 }
 
 
+
 /* Here lies code for the team.jsx; Does this belong here */
 .meetTheTeam {
   /* padding: 20px; 
@@ -129,4 +130,38 @@ code {
   margin: 20px; 
 }
 
+
+/*About css */
+
+.lowermid {
+  background-color: #eeeaea;
+  width: 100%;
+}
+
+.floatp {
+  float: right;
+  width: 40%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.floatimg {
+  padding-top: 5%;
+  float: left;
+  width: 40%;
+  padding-top: 5%;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 2%;
+  text-align: center;
+  margin: auto;
+}
+
+.margin-bottom {
+  margin-bottom: 7%;
+}
 

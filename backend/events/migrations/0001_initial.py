@@ -19,7 +19,7 @@ class Migration(migrations.Migration):
                 ('description', models.TextField(blank=True, null=True)),
                 ('start_datetime', models.DateTimeField(blank=True, null=True)),
                 ('end_datetime', models.DateTimeField(blank=True, null=True)),
-                ('event_image', models.URLField(blank=True, default='https://via.placeholder.com/150', null='True')),
+                ('event_image', models.URLField(blank=True, default='https://via.placeholder.com/150', null=True)),
             ],
         ),
     ]

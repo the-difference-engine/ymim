@@ -62,6 +62,7 @@ class Events extends Component {
       <div>
 
 
+
         {/* Using the Carousel for right. Not sure if we want to keep it or not??? */}
         {/* <Carousel>
           <Carousel.Item>
