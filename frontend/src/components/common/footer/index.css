@@ -82,21 +82,24 @@
     display: inline-block;
     margin: 2vh;
   }
-  .svg-inline--fa.fa-facebook-square.fa-w-14.facebook,
+  .svg-inline--fa.fa-facebook.fa-w-16.facebook,
   .svg-inline--fa.fa-twitter.fa-w-16.twitter,
   .svg-inline--fa.fa-instagram.fa-w-14.insta {
     width: 10vh;
     height: 10vh;
     background: #fff;
     border-radius: 50%;
-    padding: 1.5vh;
     margin: 1vh;
   }
-  .svg-inline--fa.fa-facebook-square.fa-w-14.facebook {
+  .svg-inline--fa.fa-facebook.fa-w-16.facebook {
     color: #3c579d;
+    background-color: #fff;
   }
   .svg-inline--fa.fa-twitter.fa-w-16.twitter {
-    color: #52a7e7;
+    background-color: #52a7e7;
+    color: #fff;
+    padding: 1.5vh;
+    border: 1px solid white;
   }
   .svg-inline--fa.fa-instagram.fa-w-14.insta {
     color: #fff;
@@ -108,6 +111,8 @@
       #d6249f 60%,
       #285aeb 90%
     );
+    padding: 1.5vh;
+    border: 1px solid white;
   }
 }
 

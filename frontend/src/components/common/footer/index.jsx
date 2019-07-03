@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faFacebookSquare,
+  faFacebook,
   faInstagram,
   faTwitter
 } from "@fortawesome/free-brands-svg-icons";
@@ -61,7 +61,7 @@ export default class footer extends Component {
           <Col xs="10" sm="10">
             <div className="tsocial">
               <NavLink href="https://www.facebook.com/theymim/">
-                <FontAwesomeIcon className="facebook" icon={faFacebookSquare} />
+                <FontAwesomeIcon className="facebook" icon={faFacebook} />
               </NavLink>
               <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
                 <FontAwesomeIcon className="insta" icon={faInstagram} />
