@@ -1,16 +1,5 @@
-*{
-    margin:0;
-    padding:0;
-  }
-  
-  .messageInput {
-      width: 40%;
-  }
-  
-  .jumbotron {
-      margin: auto 0;
-      justify-content: left;
-  }
+
+ 
   
   span{
       justify-content: center;
@@ -21,7 +10,7 @@
   }
   
   
-  .block{
+  label{
       display:block;
   }
   
@@ -30,10 +19,6 @@
   .button{
       width:140px;
       height:75px;
-      padding:20px;
-      padding-top:13px;
-      text-align:center;
-      vertical-align:middle;
       border-radius:10px;
       box-shadow:none;
       background:#FDD368;

@@ -46,62 +46,7 @@ class Enroll extends Component {
               <input id="phone" type="text" className="col-md-10 inputs" />
             </div>
             <br />
-            {/* <div>
-              <label for="age" className="col-md-2 block">Age(required)</label>
-              <input id="age" className="col-md-10  inputs" type="number" />
-              {/* <div>
-                <label className="radio">
-                  <input
-                    required=""
-                    type="radio"
-                    value="14-16"
-                    className="radio"
-                  />
-                  14-16
-                </label>
-                <div className="clear-form" />
-                <label className="radio">
-                  <input
-                    required=""
-                    type="radio"
-                    value="17-18"
-                    className="radio"
-                  />
-                  17-18
-                </label>
-                <div className="clear-form" />
-                <label className="radio">
-                  <input
-                    required=""
-                    type="radio"
-                    value="19-21"
-                    className="radio"
-                  />
-                  19-21
-                </label>
-                <div className="clear-form" />
-                <label className="radio">
-                  <input
-                    required=""
-                    type="radio"
-                    value="22-25"
-                    className="radio"
-                  />
-                  22-25
-                </label>
-                <div className="clear-form" />
-                <label className="radio">
-                  <input
-                    required=""
-                    type="radio"
-                    value="26-30"
-                    className="radio"
-                  />
-                  26-30
-                </label>
-              </div> */}
-            {/* </div>   
-            */} 
+          
             <div>
               <label className="col-md-4 block mt-3 mb-1 labelFont">Message</label>
             
