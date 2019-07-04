@@ -1,5 +1,4 @@
 
- 
   
   span{
       justify-content: center;
@@ -10,8 +9,10 @@
   }
   
   
-  label{
-      display:block;
+  label {
+      display: block;
+      font-weight:bold;
+      padding:0;
   }
   
   /*for the button */
@@ -20,38 +21,32 @@
       width:140px;
       height:75px;
       border-radius:10px;
-      box-shadow:none;
       background:#FDD368;
       border:none;
+      font-weight:bold;
+      font-size:25px;
+     
       
   }
   
-  .buttonSpan{
-    font-weight:bold;
-    font-size:25px;
-  }
+  
   
   /* */
   
-  .inputs{
+  input {
       height:60px;
       background:#eeeaea;
       border:none;
       color:black;
   }
   
-  .inputs-text{
+   textarea{
       height:220px;
       background:#eeeaea;
       border:none;
-  }
+  } 
   
-  /*label font*/
   
-  .labelFont{
-      font-weight:bold;
-      padding:0;
-  }
   
   /*fontcss for marksdown*/
   
@@ -68,3 +63,13 @@
     display: table;
     clear: both;
   }
+
+
+  @media (min-width: 768px){
+    .col-md-2 {
+        flex: 0 0 16.666667%;
+        max-width: unset !important;
+        padding:0;
+    }
+  } 
+  
