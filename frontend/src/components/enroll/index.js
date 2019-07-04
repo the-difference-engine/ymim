@@ -24,7 +24,7 @@ class Enroll extends Component {
       {/* <SingleCarousel className="mb-5" /> */}
 
       <div className="container group">
-      <h1 className="mt-5">Enroll Now</h1>
+      <h1 className="mt-5">Enroll</h1>
       <div className="main-content container col-sm-6 float-right mt-5">
        
         <Markdown id="fontcss" className="mt-3 " source={this.state.text} />
