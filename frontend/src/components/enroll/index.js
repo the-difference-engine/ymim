@@ -32,12 +32,7 @@ class Enroll extends Component {
               <label for="name" className="col-xs-4">
                 Name (required)
               </label>
-              <input
-                id="name"
-                required=""
-                type="text"
-                className="col-md-10"
-              />
+              <input id="name" required="" type="text" className="col-md-10" />
             </div>
             <br />
             <div>
@@ -61,18 +56,12 @@ class Enroll extends Component {
             <br />
 
             <div>
-              <label className="col-xs-4 mt-3 mb-1">
-                Message
-              </label>
+              <label className="col-xs-4 mt-3 mb-1">Message</label>
 
-              <textarea
-                name=""
-                rows="6"
-                className="col-md-10 mb-4"
-              />
+              <textarea name="" rows="6" className="col-md-10 mb-4" />
             </div>
 
-            <div className="col-md-8 mb-5">
+            <div className="col-xs-8 mb-5">
               <p>
                 <button className="button" type="submit" value="Submit">
                   {" "}

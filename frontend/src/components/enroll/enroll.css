@@ -2,6 +2,9 @@ span {
   justify-content: center;
 }
 
+.main-content {
+  margin: auto;
+}
 
 label {
   display: block;
@@ -16,6 +19,7 @@ label {
   height: 75px;
   border-radius: 10px;
   background: #fdd368;
+  border: none;
   font-weight: bold;
   font-size: 25px;
 }
@@ -25,12 +29,14 @@ label {
 input {
   height: 60px;
   background: #eeeaea;
+  border: none;
   color: black;
 }
 
 textarea {
   height: 220px;
   background: #eeeaea;
+  border: none;
 }
 
 /*fontcss for marksdown*/
