@@ -1,84 +1,68 @@
 
-*{
-    margin:0;
-    padding:0;
-  }
+ 
   
-  .messageInput {
-      width: 40%;
-  }
-  
-  .jumbotron {
-      margin: auto 0;
-      justify-content: left;
-  }
-  
+
   span{
       justify-content: center;
   }
   
   .main-content {
       margin: auto;
+      line-height: 2.0;
   }
   
   
-  .block{
+  label {
       display:block;
+      font-weight:bold;
+      padding:0;
+      
   }
   
   /*for the button */
   
-  .button{
-      width:140px;
-      height:75px;
-      padding:20px;
-      padding-top:13px;
-      text-align:center;
-      vertical-align:middle;
-      border-radius:10px;
-      box-shadow:none;
-      background:#FDD368;
-      border:none;
+  .button {
+    width: 150px;
+    height: 75px;
+    border-radius: 10px;
+    background: #FDD368;
+    border: none;
       
   }
   
-  .buttonSpan{
-    font-weight:bold;
-    font-size:25px;
+  .buttonSpan {
+    font-weight: bold;
+    font-size: 25px;
   }
   
   /* */
   
-  .inputs{
-      height:60px;
-      background:#eeeaea;
-      border:none;
-      color:black;
+  input {
+      height: 60px;
+      background: #eeeaea;
+      border: none;
+      color: black;
   }
   
-  .inputs-text{
-      height:220px;
-      background:#eeeaea;
-      border:none;
+  .inputs-text {
+      height: 220px;
+      background: #eeeaea;
+      border: none;
   }
   
-  /*label font*/
   
-  .labelFont{
-      font-weight:bold;
-      padding:0;
-  }
   
-  /*fontcss for marksdown*/
   
-  #fontcss {
-      line-height:50px !important;
-  }
   
-  .main-content{
-      line-height: 2.0;
-  }
 
   .container{
       overflow:auto;
   }
+
+
+  @media (min-width: 768px){
+  .col-md-2 {
+      flex: 0 0 16.666667%;
+      max-width: unset !important;
+  }
+}
