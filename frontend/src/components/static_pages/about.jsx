@@ -2,10 +2,6 @@ import React, { Component } from "react";
 import "../../index.css";
 
 class About extends Component {
-  constructor(props) {
-    super(props);
-  }
-
   render() {
     return (
       <>
@@ -81,6 +77,7 @@ class About extends Component {
           <div className="container clear">
             <h1>Our People</h1>
             <img
+              alt="floatimg"
               className="floatimg"
               src="http://www.randolphcountync.gov/portals/0/Images/gray4.png?ver=2018-02-19-154405-587"
             />
@@ -117,6 +114,7 @@ class About extends Component {
         <div className="group">
           <div className="container clear ">
             <img
+            alt="floatimg"
               className="floatimg"
               src="http://www.randolphcountync.gov/portals/0/Images/gray4.png?ver=2018-02-19-154405-587"
             />
@@ -154,6 +152,7 @@ class About extends Component {
         <div className="lowermid group margin-bottom">
           <div className="container clear">
             <img
+              alt="floatimg"
               className="floatimg"
               src="http://www.randolphcountync.gov/portals/0/Images/gray4.png?ver=2018-02-19-154405-587"
             />
