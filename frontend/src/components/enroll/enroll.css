@@ -1,75 +1,58 @@
-
-  
-  span{
-      justify-content: center;
-  }
-  
-  .main-content {
-      margin: auto;
-  }
-  
-  
-  label {
-      display: block;
-      font-weight:bold;
-      padding:0;
-  }
-  
-  /*for the button */
-  
-  .button{
-      width:140px;
-      height:75px;
-      border-radius:10px;
-      background:#FDD368;
-      border:none;
-      font-weight:bold;
-      font-size:25px;
-     
-      
-  }
-  
-  
-  
-  /* */
-  
-  input {
-      height:60px;
-      background:#eeeaea;
-      border:none;
-      color:black;
-  }
-  
-   textarea{
-      height:220px;
-      background:#eeeaea;
-      border:none;
-  } 
-  
-  
-  
-  /*fontcss for marksdown*/
-  
-  #fontcss {
-      line-height:50px !important;
-  }
-  
-  .main-content{
-      line-height: 2.0;
-  }
-
-  .group::after{
-    content: "";
-    display: table;
-    clear: both;
-  }
+span {
+  justify-content: center;
+}
 
 
-  @media (min-width: 768px){
-    .col-md-2 {
-        flex: 0 0 16.666667%;
-        max-width: unset !important;
-        padding:0;
-    }
-  } 
-  
+label {
+  display: block;
+  font-weight: bold;
+  padding: 0;
+}
+
+/*for the button */
+
+.button {
+  width: 140px;
+  height: 75px;
+  border-radius: 10px;
+  background: #fdd368;
+  font-weight: bold;
+  font-size: 25px;
+}
+
+/* */
+
+input {
+  height: 60px;
+  background: #eeeaea;
+  color: black;
+}
+
+textarea {
+  height: 220px;
+  background: #eeeaea;
+}
+
+/*fontcss for marksdown*/
+
+#fontcss {
+  line-height: 50px !important;
+}
+
+.main-content {
+  line-height: 2;
+}
+
+.group::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media (min-width: 768px) {
+  .col-md-2 {
+    flex: 0 0 16.666667%;
+    max-width: unset !important;
+    padding: 0;
+  }
+}
