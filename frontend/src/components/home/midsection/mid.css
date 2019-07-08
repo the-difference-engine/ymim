@@ -15,9 +15,9 @@
 }
 
 .heading,
-.lineParagraph,
-.uppermidSectiontext,
-subheading {
+.line-paragraph,
+.upper-mid-sectiontext,
+.sub-heading {
   font-family: "Montserrat Medium", sans-serif;
 }
 
@@ -34,7 +34,7 @@ subheading {
   font-size: 15pt;
 }
 
-.subheading {
+.sub-heading {
   font-size: 24pt;
   padding-bottom: 15px;
 }
@@ -59,9 +59,10 @@ subheading {
   align-content: center;
 }
 
-/* @media only screen and (min-width: 1210px) {
-  .up-text {
-    margin-left: 75px;
-    margin-right: 75px;
-  }
-} */
+.foot-head {
+  font-size: 36pt;
+}
+
+.sub-heading {
+  font-size: 24pt;
+}
