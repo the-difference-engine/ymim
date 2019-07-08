@@ -3,7 +3,7 @@ import { Carousel } from "react-bootstrap";
 import ymim1 from "../../assets/ymim1.png";
 import { Navbar } from "react-bootstrap";
 import "./index.css";
-import logo from "../Assets/logo.png";
+import logo from "../../assets/logo.png";
 
 const inline = {
   height: "auto",
