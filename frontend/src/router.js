@@ -18,7 +18,7 @@ import Ambassadors from "./components/static_pages/ambassadors";
 import Donate from "./components/donation_page";
 import Resources from "./components/resources";
 import Events from "./components/events";
-import Volunteer from './components/Volunteer/volunteer.jsx';
+import Volunteer from "./components/Volunteer/volunteer.jsx";
 
 let store = createStore(fetchData, applyMiddleware(thunk));
 
