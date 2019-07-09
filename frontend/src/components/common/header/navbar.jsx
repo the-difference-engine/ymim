@@ -98,7 +98,7 @@ class NavBar extends Component {
                     title="Enroll"
                     id="nav-dropdown"
                   >
-                    <NavDropdown.Item eventKey="4.1" href="#">
+                    <NavDropdown.Item eventKey="4.1" href="/enrollment">
                       Program Participant
                     </NavDropdown.Item>
                     <NavDropdown.Item eventKey="4.2" href="/ambassadors">
