@@ -33,7 +33,7 @@ class NavBar extends Component {
               <Navbar.Brand className="my-auto" href="/">
                 <img className="logo" src={logo} alt="YMIM" />
               </Navbar.Brand>
-              {/* first nav bar (white) */}
+              {/* first navbar (white) */}
               <Nav className="mx-auto my-auto">
                 <NavLink className="nav-link-top mr-5" to="/about">
                   About
@@ -102,7 +102,7 @@ class NavBar extends Component {
                       Program Participant
                     </NavDropdown.Item>
                     <NavDropdown.Item eventKey="4.2" href="#">
-                      Volunteer Ambassabors
+                      Volunteer Ambassadors
                     </NavDropdown.Item>
                     <NavDropdown.Item eventKey="4.3" href="/events">
                       Events
