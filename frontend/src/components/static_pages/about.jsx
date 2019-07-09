@@ -1,10 +1,12 @@
 import React, { Component } from "react";
 import "../../index.css";
+import Single_Carousel from '../Single_Carousel/Single_Carousel.js'
 
 class About extends Component {
   render() {
     return (
       <>
+       <Single_Carousel />
         <div class="container" itemprop="text">
           <h1 className="mt-5 mb-5"> About </h1>
 
