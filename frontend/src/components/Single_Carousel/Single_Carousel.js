@@ -19,7 +19,7 @@ class Single_Carousel extends Component {
           <img
             className="d-block w-100"
             src={ymim1} // src={this.props.image} feature img props  when the splash pictures come
-            alt="First Sllllideslide"
+            alt="First Slide"
           />
           <Carousel.Caption>
             <div class="overlay">
