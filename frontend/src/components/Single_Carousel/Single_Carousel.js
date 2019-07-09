@@ -18,7 +18,7 @@ class Single_Carousel extends Component {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src={ymim1}
+            src={ymim1} // src={this.props.image} feature img props  when the splash pictures come
             alt="First Sllllideslide"
           />
           <Carousel.Caption>
