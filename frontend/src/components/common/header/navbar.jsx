@@ -98,13 +98,13 @@ class NavBar extends Component {
                     title="Enroll"
                     id="nav-dropdown"
                   >
-                    <NavDropdown.Item eventKey="4.1">Action</NavDropdown.Item>
+                    <NavDropdown.Item eventKey="4.1">
+                      Program Participant
+                    </NavDropdown.Item>
                     <NavDropdown.Item eventKey="4.2">
-                      Another action
+                      Volunteer Ambassabors
                     </NavDropdown.Item>
-                    <NavDropdown.Item eventKey="4.3">
-                      Something else here
-                    </NavDropdown.Item>
+                    <NavDropdown.Item eventKey="4.3">Events</NavDropdown.Item>
                   </NavDropdown>
                   {/* volunteer  */}
                   <NavDropdown
