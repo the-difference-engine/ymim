@@ -33,6 +33,7 @@ class NavBar extends Component {
               <Navbar.Brand className="my-auto" href="/">
                 <img className="logo" src={logo} alt="YMIM" />
               </Navbar.Brand>
+              {/* first nav bar (white) */}
               <Nav className="mx-auto my-auto">
                 <NavLink className="nav-link-top mr-5" to="/about">
                   About
@@ -44,6 +45,7 @@ class NavBar extends Component {
                   Events
                 </NavLink>
               </Nav>
+              {/* social media links */}
               <Nav id="tsocial" className="ml-auto">
                 <Nav.Link href="https://www.facebook.com/theymim/">
                   <FontAwesomeIcon
@@ -64,12 +66,14 @@ class NavBar extends Component {
             </Navbar>
           </Col>
         </Row>
+        {/* second navbar (green) */}
         <Row className="ym-bottom" noGutters={true}>
           <Col className="mx-auto my-auto px-0" xs={8} sm={8} md={10} lg={10}>
             <Navbar collapseOnSelect expand="lg">
               <Navbar.Toggle className="ml-3" onClick={this.toggle} />
               <Navbar.Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="mx-auto my-auto align-links">
+                  {/* resources  */}
                   <NavDropdown
                     className="nav-link"
                     to="/resources"
@@ -87,6 +91,7 @@ class NavBar extends Component {
                     </NavDropdown.Item>
                     <NavDropdown.Item eventKey="4.4">Shelters</NavDropdown.Item>
                   </NavDropdown>
+                  {/* enroll  */}
                   <NavDropdown
                     className="nav-link"
                     to="/enroll"
@@ -101,6 +106,7 @@ class NavBar extends Component {
                       Something else here
                     </NavDropdown.Item>
                   </NavDropdown>
+                  {/* volunteer  */}
                   <NavDropdown
                     className="nav-link"
                     to="/volunteer"
@@ -123,6 +129,7 @@ class NavBar extends Component {
               </Navbar.Collapse>
             </Navbar>
           </Col>
+          {/* donate button  */}
           <Col className="center-button" xs={4} sm={4} md={2} lg={2}>
             <NavLink to="/donate">
               <button id="donate-button">Donate</button>
