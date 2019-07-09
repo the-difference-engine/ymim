@@ -71,13 +71,16 @@
   text-align: center;
 }
 
-@media (min-width: 768px) and (max-width: 2560px) {
+@media (min-width: 769px) and (max-width: 2560px) {
   .tsocial {
     display: none;
   }
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 768px) {
+  .footer-list {
+    font-size: 12pt;
+  }
   .footer-link {
     display: inline-block;
     margin: 2vh;
