@@ -30,23 +30,21 @@ class LowerMid extends Component {
             </div>
             <h2 className="sub-heading">RSVP and Find out More:</h2>
             <p>
-              <h2 className="sub-heading">Eventbrite</h2>
               <Link
                 to="/https://www.eventbrite.com/ymim"
                 className="space-anchors"
                 alt="Eventbrite"
               >
-                https://www.eventbrite.com/ymim
+                Eventbrite
               </Link>
             </p>
             <p>
-              <h2 className="sub-heading">Facebook</h2>
               <Link
                 to="/https://www.facebook.com/pg/theymim.events"
                 className="space-anchors"
                 alt="Facebook"
               >
-                https://www.facebook.com/pg/theymim.events
+                Facebook
               </Link>
             </p>
             <div>
@@ -61,47 +59,61 @@ class LowerMid extends Component {
           <Col xs={1} sm={1} md={2} lg={2} xl={2}></Col>
         </Row>
         <Row className="justify-content-md-center">
-          <Col md={2} lg={2} xl={2}></Col>
-          <Col xs="10" sm="10" md="4" lg="2" xl="2" className="text-center">
-            <h2 className="foot-head">Inspiring</h2>
+          <Col xs={1} sm={1} md={1} lg={2} xl={2}></Col>
+          <Col md={10} lg={8} xl={8}>
+            <Row className="justify-content-md-center">
+              <Col xs="10" sm="10" md="4" lg="4" xl="4">
+                <h2 className="foot-head">Inspiring</h2>
+              </Col>
+              <Col xs="10" sm="10" md="4" lg="4" xl="4">
+                <h2 className="foot-head">Connecting</h2>
+              </Col>
+              <Col xs="10" sm="10" md="4" lg="4" xl="4" className="text-center">
+                <h2 className="foot-head">Empowering</h2>
+              </Col>
+            </Row>
           </Col>
-          <Col xs="10" sm="10" md="4" lg="2" xl="2" className="text-center">
-            <h2 className="foot-head">Connecting</h2>
-          </Col>
-          <Col xs="10" sm="10" md="4" lg="2" xl="2" className="text-center">
-            <h2 className="foot-head">Empowering</h2>
-          </Col>
-          <Col md={2} lg={2} xl={3}></Col>
+          <Col xs={1} sm={1} md={1} lg={2} xl={2}></Col>
         </Row>
         <Row className="justify-content-md-center">
-          <div className="pic-container">
-            <img
-              className="pic"
-              src="https://apothekergroup.com/wp-content/uploads/2018/09/placeholder.png"
-              alt=""
-            />
-          </div>
-          <div className="pic-container">
-            <img
-              className="pic"
-              src="https://apothekergroup.com/wp-content/uploads/2018/09/placeholder.png"
-              alt=""
-            />
-          </div>
-          <div className="pic-container">
-            <img
-              className="pic"
-              src="https://res.cloudinary.com/dyaffqyuj/image/upload/v1557954804/YMIM/6a00d83451b26169e201a5118cd1e9970c-800wi.jpg"
-              alt=""
-            />
-          </div>
-          <div className="pic-container">
-            <img
-              className="pic"
-              src="https://apothekergroup.com/wp-content/uploads/2018/09/placeholder.png"
-              alt=""
-            />
-          </div>
+          <Col lg={2} xl={2}></Col>
+          <Col xs={10} md={5} lg={2} xl={2}>
+            <div className="pic-container">
+              <img
+                className="pic"
+                src="https://apothekergroup.com/wp-content/uploads/2018/09/placeholder.png"
+                alt=""
+              />
+            </div>
+          </Col>
+          <Col xs={10} md={5} lg={2} xl={2}>
+            <div className="pic-container">
+              <img
+                className="pic"
+                src="https://apothekergroup.com/wp-content/uploads/2018/09/placeholder.png"
+                alt=""
+              />
+            </div>
+          </Col>
+          <Col xs={10} md={5} lg={2} xl={2}>
+            <div className="pic-container">
+              <img
+                className="pic"
+                src="https://res.cloudinary.com/dyaffqyuj/image/upload/v1557954804/YMIM/6a00d83451b26169e201a5118cd1e9970c-800wi.jpg"
+                alt=""
+              />
+            </div>
+          </Col>
+          <Col xs={10} md={5} lg={2} xl={2}>
+            <div className="pic-container">
+              <img
+                className="pic"
+                src="https://apothekergroup.com/wp-content/uploads/2018/09/placeholder.png"
+                alt=""
+              />
+            </div>
+          </Col>
+          <Col lg={2} xl={2}></Col>
         </Row>
       </Container>
     );

@@ -66,3 +66,39 @@
 .sub-heading {
   font-size: 24pt;
 }
+
+.pic {
+  width: 224px;
+  height: 146px;
+}
+
+/* mobile */
+
+@media all and (min-width: 320px) and (max-width: 425px) {
+  .heading {
+    font-size: 24pt;
+  }
+  .line-paragraph {
+    font-size: 12pt;
+  }
+  .upper-mid-sectiontext {
+    font-size: 10pt;
+  }
+  .ym-button {
+    margin: 3pt 0;
+  }
+  .sub-heading {
+    font-size: 18pt;
+  }
+  .container {
+    text-align: center;
+  }
+}
+
+/* tablet */
+
+@media all and (min-width: 320px) and (max-width: 768px) {
+  .foot-head {
+    font-size: 24pt;
+  }
+}
