@@ -101,7 +101,7 @@ class NavBar extends Component {
                     <NavDropdown.Item eventKey="4.1" href="#">
                       Program Participant
                     </NavDropdown.Item>
-                    <NavDropdown.Item eventKey="4.2" href="#">
+                    <NavDropdown.Item eventKey="4.2" href="/ambassadors">
                       Volunteer Ambassadors
                     </NavDropdown.Item>
                     <NavDropdown.Item eventKey="4.3" href="/events">
