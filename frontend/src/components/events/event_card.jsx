@@ -49,7 +49,7 @@ const EventItems = props => {
               <p>{props.start}</p>
               <p>to</p>
               <p>{props.end}</p>
-              <div className="eventButtons">
+              {/* <div className="eventButtons">
                 <button
                   className="btn btn-light btn-edit"
                   //   onClick={() => this.selectForEdit(id)}
@@ -62,7 +62,7 @@ const EventItems = props => {
                 >
                   Delete
                 </button>
-              </div>
+              </div> */}
               {/* </Col> */}
             </Card>
           </CardDeck>
