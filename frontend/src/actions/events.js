@@ -1,18 +1,19 @@
 export const fetchEvents = () => {
   return dispatch => {
-    let headers = { 
+    let headers = {
       "Content-Type": "application/json",
-      "Authorization": "Bearer QKHM4XEST643ZDZK5HUN"
+      Authorization: "Bearer KIFYHFTNBKFCIFOPNESJ"
     };
-    return fetch("https://www.eventbriteapi.com/v3/users/me/events/", { headers })
+    return fetch("https://www.eventbriteapi.com/v3/users/me/events/", {
+      headers
+    })
       .then(res => res.json())
       .then(events => {
         return dispatch({
           type: "FETCH_EVENTS",
           events: events.events
-        })
+        });
         // .then(console.log(events.events));
-        ;
       });
   };
 };
@@ -20,7 +21,10 @@ export const fetchEvents = () => {
 export const addEvent = event => {
   return dispatch => {
     let headers = { "Content-Type": "application/json" };
-    let body = JSON.stringify( {title: event.title, description: event.description} );
+    let body = JSON.stringify({
+      title: event.title,
+      description: event.description
+    });
     return fetch("api/events/", {
       headers,
       method: "POST",
