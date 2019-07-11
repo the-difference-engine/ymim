@@ -88,8 +88,8 @@
   .svg-inline--fa.fa-facebook.fa-w-16.facebook,
   .svg-inline--fa.fa-twitter.fa-w-16.twitter,
   .svg-inline--fa.fa-instagram.fa-w-14.insta {
-    width: 10vh;
-    height: 10vh;
+    width: 30px;
+    height: 30px;
     background: #fff;
     border-radius: 50%;
     margin: 1vh;
@@ -97,12 +97,13 @@
   .svg-inline--fa.fa-facebook.fa-w-16.facebook {
     color: #3c579d;
     background-color: #fff;
+    border: 0.5px solid #fff;
   }
   .svg-inline--fa.fa-twitter.fa-w-16.twitter {
     background-color: #52a7e7;
     color: #fff;
-    padding: 1.5vh;
-    border: 1px solid white;
+    padding: 1vh;
+    border: 1px solid #fff;
   }
   .svg-inline--fa.fa-instagram.fa-w-14.insta {
     color: #fff;
@@ -114,8 +115,8 @@
       #d6249f 60%,
       #285aeb 90%
     );
-    padding: 1.5vh;
-    border: 1px solid white;
+    padding: 1vh;
+    border: 1px solid #fff;
   }
 }
 

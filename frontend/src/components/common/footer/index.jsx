@@ -58,19 +58,6 @@ export default class footer extends Component {
           </Col>
         </Row>
         <Row className="justify-content-center">
-          <Col xs="10" sm="10">
-            <div className="tsocial">
-              <NavLink href="https://www.facebook.com/theymim/">
-                <FontAwesomeIcon className="facebook" icon={faFacebook} />
-              </NavLink>
-              <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
-                <FontAwesomeIcon className="insta" icon={faInstagram} />
-              </NavLink>
-              <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
-                <FontAwesomeIcon className="twitter" icon={faTwitter} />
-              </NavLink>
-            </div>
-          </Col>
           <Col xs sm md lg xl="12">
             <Row className="justify-content-md-center contact">
               <Col xs="12" sm="12" md="4" lg="4" xl="2">
@@ -85,6 +72,19 @@ export default class footer extends Component {
                 773.941.1200
               </Col>
             </Row>
+          </Col>
+          <Col xs="10" sm="10">
+            <div className="tsocial">
+              <NavLink href="https://www.facebook.com/theymim/">
+                <FontAwesomeIcon className="facebook" icon={faFacebook} />
+              </NavLink>
+              <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
+                <FontAwesomeIcon className="insta" icon={faInstagram} />
+              </NavLink>
+              <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
+                <FontAwesomeIcon className="twitter" icon={faTwitter} />
+              </NavLink>
+            </div>
           </Col>
         </Row>
       </Container>
