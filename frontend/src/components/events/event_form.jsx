@@ -10,7 +10,6 @@ import {
   FormControl
 } from "react-bootstrap";
 
-
 class EventForm extends Component {
   state = {
     event: {
@@ -28,7 +27,7 @@ class EventForm extends Component {
         [name]: value
       }
     }));
-  
+
     console.log(
       "event name: " +
         this.state.event.title +
@@ -43,7 +42,6 @@ class EventForm extends Component {
     this.props.addEvent(this.state.event);
   };
 
-  
   render() {
     return (
       <React.Fragment>
@@ -123,7 +121,6 @@ class EventForm extends Component {
     );
   }
 }
-
 
 const mapDispatchToProps = dispatch => {
   return {

@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { events } from "../../actions";
-import EventForm from "./event_form";
+// import EventForm from "./event_form";
 import "./index.css";
 import logo from "../../assets/logo.png";
 import { EventList, EventItems } from "./event_card";
@@ -16,7 +16,6 @@ class Events extends Component {
 
   componentDidMount() {
     this.props.fetchEvents();
-
   }
 
   selectForEdit = id => {
@@ -31,14 +30,12 @@ class Events extends Component {
       <div>
         <h1>Current Events</h1>
         <div className="col-md-6">
-          <EventForm event={this.state.event} />
+          {/* <EventForm event={this.state.event} /> */}
         </div>
         <div className="row">
           <EventList>
             {this.props.events.map(event => {
-
               return (
-
                 <EventItems
                   key={event.id}
                   name={
@@ -46,35 +43,16 @@ class Events extends Component {
                       ? event.name.text
                       : "Young Masterbuilders In Motion Event"
                   }
-                  description={
-                    event.description
-                      ? event.description.text
-                      : ""
-                  }
-                  start={
-                    event.start
-                      ? event.start.local
-                      : "TBA"
-                  }
-                  end={
-                    event.end
-                      ? event.end.local
-                      : "TBA"
-                  }
-                  logo={
-                    event.logo
-                      ? event.logo.url
-                      : logo
-                  }
+                  description={event.description ? event.description.text : ""}
+                  start={event.start ? event.start.local : "TBA"}
+                  end={event.end ? event.end.local : "TBA"}
+                  logo={event.logo ? event.logo.url : logo}
                   url={event.url}
                 />
-
-              )
-
+              );
             })}
           </EventList>
         </div>
-
       </div>
     );
   }
