@@ -3,7 +3,7 @@ import Markdown from "react-markdown";
 import "./enroll.css";
 import Text from "./enroll.md";
 import "react-bootstrap";
-import SingleCarousel from "../SingleCarousel/SingleCarousel.js";
+import SingleCarousel from "../SingleCarousel";
 
 class Enroll extends Component {
   constructor(props) {

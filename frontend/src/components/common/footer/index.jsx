@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { NavLink } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebook,
@@ -30,12 +29,12 @@ export default class footer extends Component {
                     </Link>
                   </li>
                   <li className="col footer-link">
-                    <Link className="footer-list" to="/meet-the-team">
+                    <Link className="footer-list" to="/contact-us">
                       Contact
                     </Link>
                   </li>
                   <li className="col footer-link">
-                    <Link className="footer-list" to="/events">
+                    <Link className="footer-list" to="/enrollment">
                       Enroll
                     </Link>
                   </li>
@@ -76,18 +75,20 @@ export default class footer extends Component {
             </Col>
             <Col xs="10" sm="10">
               <div className="tsocial">
-                <a href="https://www.facebook.com/theymim/" target="_blank">
+                <a href="https://www.facebook.com/theymim/" target="_blank"  rel="noopener noreferrer">
                   <FontAwesomeIcon className="facebook" icon={faFacebook} />
                 </a>
                 <a
                   href="https://www.instagram.com/theyoungmasterbuilders"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon className="insta" icon={faInstagram} />
                 </a>
                 <a
                   href="https://www.instagram.com/theyoungmasterbuilders"
                   target="_blank"
+                  rel="noopener noreferrer"
                 >
                   <FontAwesomeIcon className="twitter" icon={faTwitter} />
                 </a>
