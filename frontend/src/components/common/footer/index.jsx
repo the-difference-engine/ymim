@@ -17,45 +17,53 @@ export default class footer extends Component {
         <Col>
           <Row className="justify-content-md-center">
             <Col md="12" lg="10" xl="8">
-              <nav>
+              <a>
                 <ul className="row menu-text">
                   <li className="col footer-link">
-                    <Link className="footer-list" to="/events">
+                    <Link className="footer-list" to="/events" target="_blank">
                       Home
                     </Link>
                   </li>
                   <li className="col footer-link">
-                    <Link className="footer-list" to="/about">
+                    <Link className="footer-list" to="/about" target="_blank">
                       About
                     </Link>
                   </li>
                   <li className="col footer-link">
-                    <Link className="footer-list" to="/meet-the-team">
+                    <Link
+                      className="footer-list"
+                      to="/meet-the-team"
+                      target="_blank"
+                    >
                       Contact
                     </Link>
                   </li>
                   <li className="col footer-link">
-                    <Link className="footer-list" to="/events">
+                    <Link className="footer-list" to="/events" target="_blank">
                       Enroll
                     </Link>
                   </li>
                   <li className="col footer-link">
-                    <Link className="footer-list" to="/ambassadors">
+                    <Link
+                      className="footer-list"
+                      to="/ambassadors"
+                      target="_blank"
+                    >
                       Volunteer
                     </Link>
                   </li>
                   <li className="col footer-link">
-                    <Link className="footer-list" to="/events">
+                    <Link className="footer-list" to="/events" target="_blank">
                       Donate
                     </Link>
                   </li>
                   <li className="col footer-link">
-                    <Link className="footer-list" to="/events">
+                    <Link className="footer-list" to="/events" target="_blank">
                       Events
                     </Link>
                   </li>
                 </ul>
-              </nav>
+              </a>
             </Col>
           </Row>
           <Row className="justify-content-center">
