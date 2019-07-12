@@ -17,53 +17,45 @@ export default class footer extends Component {
         <Col>
           <Row className="justify-content-md-center">
             <Col md="12" lg="10" xl="8">
-              <a>
+              <nav>
                 <ul className="row menu-text">
                   <li className="col footer-link">
-                    <Link className="footer-list" to="/events" target="_blank">
+                    <Link className="footer-list" to="/events">
                       Home
                     </Link>
                   </li>
                   <li className="col footer-link">
-                    <Link className="footer-list" to="/about" target="_blank">
+                    <Link className="footer-list" to="/about">
                       About
                     </Link>
                   </li>
                   <li className="col footer-link">
-                    <Link
-                      className="footer-list"
-                      to="/meet-the-team"
-                      target="_blank"
-                    >
+                    <Link className="footer-list" to="/meet-the-team">
                       Contact
                     </Link>
                   </li>
                   <li className="col footer-link">
-                    <Link className="footer-list" to="/events" target="_blank">
+                    <Link className="footer-list" to="/events">
                       Enroll
                     </Link>
                   </li>
                   <li className="col footer-link">
-                    <Link
-                      className="footer-list"
-                      to="/ambassadors"
-                      target="_blank"
-                    >
+                    <Link className="footer-list" to="/ambassadors">
                       Volunteer
                     </Link>
                   </li>
                   <li className="col footer-link">
-                    <Link className="footer-list" to="/events" target="_blank">
+                    <Link className="footer-list" to="/events">
                       Donate
                     </Link>
                   </li>
                   <li className="col footer-link">
-                    <Link className="footer-list" to="/events" target="_blank">
+                    <Link className="footer-list" to="/events">
                       Events
                     </Link>
                   </li>
                 </ul>
-              </a>
+              </nav>
             </Col>
           </Row>
           <Row className="justify-content-center">
@@ -84,15 +76,21 @@ export default class footer extends Component {
             </Col>
             <Col xs="10" sm="10">
               <div className="tsocial">
-                <NavLink href="https://www.facebook.com/theymim/">
+                <a href="https://www.facebook.com/theymim/" target="_blank">
                   <FontAwesomeIcon className="facebook" icon={faFacebook} />
-                </NavLink>
-                <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
+                </a>
+                <a
+                  href="https://www.instagram.com/theyoungmasterbuilders"
+                  target="_blank"
+                >
                   <FontAwesomeIcon className="insta" icon={faInstagram} />
-                </NavLink>
-                <NavLink href="https://www.instagram.com/theyoungmasterbuilders">
+                </a>
+                <a
+                  href="https://www.instagram.com/theyoungmasterbuilders"
+                  target="_blank"
+                >
                   <FontAwesomeIcon className="twitter" icon={faTwitter} />
-                </NavLink>
+                </a>
               </div>
             </Col>
           </Row>
