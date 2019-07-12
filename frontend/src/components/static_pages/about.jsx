@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "../../index.css";
-import SingleCarousel from "../SingleCarousel/SingleCarousel.js";
+import SingleCarousel from "../SingleCarousel";
 
 class About extends Component {
   render() {
