@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import Markdown from "react-markdown";
-import "./index.css";
+import "./enroll.css";
 import Text from "./enroll.md";
+import "react-bootstrap";
+import SingleCarousel from "../SingleCarousel/SingleCarousel.js";
 
 class Enroll extends Component {
   constructor(props) {
@@ -17,95 +19,66 @@ class Enroll extends Component {
         this.setState({ text: text });
       });
   }
+
   render() {
     return (
-      <div className="main-content">
-        <Markdown source={this.state.text} />
-        <div className="jumbotron">
-          <form action="/" method="post">
-            <div>
-              <label className="col-md-2">Name (required)</label>
-              <input required="" type="text" value="" className="col-md-4" />
-            </div>
-            <br />
-            <div>
-              <label className="col-md-2">Email (required)</label>
-              <input required="" type="email" value="" className="col-md-4" />
-            </div>
-            <br />
-            <div>
-              <label className="col-md-2">Phone</label>
-              <input type="text" value="" className="col-md-4" />
-            </div>
-            <br />
-            <div>
-              <label className="col-md-2">Age(required)</label>
+      <div>
+        <SingleCarousel />
+        <div className="container group">
+          <h1 className="mt-5">Enroll</h1>
+          <div className="container col-sm-6 float-right mt-5">
+            <Markdown id="fontcss" className="mt-3 " source={this.state.text} />
+          </div>
+          <div className="container col-sm-6 float-left mt-5">
+            <form action="/" method="post">
               <div>
-                <label className="radio">
-                  <input
-                    required=""
-                    type="radio"
-                    value="14-16"
-                    className="radio"
-                  />
-                  14-16
+                <label for="name" className="col-xs-4">
+                  Name (required)
                 </label>
-                <div className="clear-form" />
-                <label className="radio">
-                  <input
-                    required=""
-                    type="radio"
-                    value="17-18"
-                    className="radio"
-                  />
-                  17-18
-                </label>
-                <div className="clear-form" />
-                <label className="radio">
-                  <input
-                    required=""
-                    type="radio"
-                    value="19-21"
-                    className="radio"
-                  />
-                  19-21
-                </label>
-                <div className="clear-form" />
-                <label className="radio">
-                  <input
-                    required=""
-                    type="radio"
-                    value="22-25"
-                    className="radio"
-                  />
-                  22-25
-                </label>
-                <div className="clear-form" />
-                <label className="radio">
-                  <input
-                    required=""
-                    type="radio"
-                    value="26-30"
-                    className="radio"
-                  />
-                  26-30
-                </label>
+                <input
+                  id="name"
+                  required=""
+                  type="text"
+                  className="col-md-10"
+                />
               </div>
-            </div>
-            <br />
-            <div>
-              <label className="col-md-4">Message</label>
-            </div>
-            <div>
-              <textarea name="" rows="6" className="col-md-8" />
-            </div>
-            <br />
-            <div className="col-md-8">
-              <p>
-                <input type="submit" value="Submit" />
-              </p>
-            </div>
-          </form>
+              <br />
+              <div>
+                <label for="email" className="col-xs-4">
+                  Email (required)
+                </label>
+                <input
+                  id="email"
+                  required=""
+                  type="email"
+                  className="col-md-10"
+                />
+              </div>
+              <br />
+              <div>
+                <label for="phone" className="col-xs-4">
+                  Phone (required)
+                </label>
+                <input id="phone" type="text" className="col-md-10" />
+              </div>
+              <br />
+
+              <div>
+                <label className="col-xs-4 mt-3 mb-1">Message</label>
+
+                <textarea name="" rows="6" className="col-md-10 mb-4" />
+              </div>
+
+              <div className="col-xs-8 mb-5">
+                <p>
+                  <button className="button" type="submit" value="Submit">
+                    {" "}
+                    <span className="buttonSpan">Submit</span>
+                  </button>
+                </p>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     );

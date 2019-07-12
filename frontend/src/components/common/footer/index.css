@@ -5,6 +5,12 @@
 .footer-link {
   display: inline-block;
   margin: 4vh 0;
+  text-align: center;
+}
+
+.footer-link :hover {
+  text-decoration: none;
+  color: #fdd368;
 }
 
 .footer-list {
@@ -60,6 +66,11 @@
 .contact {
   color: #fff;
   text-align: center;
+}
+
+.contact :hover {
+  text-decoration: none;
+  color: #fdd368;
 }
 
 .footer-contact {

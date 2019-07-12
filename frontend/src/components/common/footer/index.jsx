@@ -19,7 +19,7 @@ export default class footer extends Component {
             <nav>
               <ul className="row menu-text">
                 <li className="col footer-link">
-                  <Link className="footer-list" to="/events">
+                  <Link className="footer-list" to="/">
                     Home
                   </Link>
                 </li>
@@ -29,12 +29,12 @@ export default class footer extends Component {
                   </Link>
                 </li>
                 <li className="col footer-link">
-                  <Link className="footer-list" to="/meet-the-team">
+                  <Link className="footer-list" to="/contact-us">
                     Contact
                   </Link>
                 </li>
                 <li className="col footer-link">
-                  <Link className="footer-list" to="/events">
+                  <Link className="footer-list" to="/enrollment">
                     Enroll
                   </Link>
                 </li>
@@ -44,7 +44,7 @@ export default class footer extends Component {
                   </Link>
                 </li>
                 <li className="col footer-link">
-                  <Link className="footer-list" to="/events">
+                  <Link className="footer-list" to="/donate">
                     Donate
                   </Link>
                 </li>
@@ -74,7 +74,7 @@ export default class footer extends Component {
           <Col xs sm md lg xl="12">
             <Row className="justify-content-md-center contact">
               <Col xs="12" sm="12" md="4" lg="4" xl="2">
-                Copyright 2019
+                Copyright YMIM 2019
               </Col>
               <Col xs="12" sm="12" md="4" lg="4" xl="2">
                 <a className="contact" href="mailto:founder@theymim.org">
