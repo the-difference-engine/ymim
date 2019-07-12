@@ -19,7 +19,7 @@ export default class footer extends Component {
               <nav>
                 <ul className="row menu-text">
                   <li className="col footer-link">
-                    <Link className="footer-list" to="/events">
+                    <Link className="footer-list" to="/">
                       Home
                     </Link>
                   </li>
