@@ -1,5 +1,5 @@
 .eventsDisplay {
-  background-color: #EEEAEA; 
+  background-color: #eeeaea;
 }
 
 .event_container {
@@ -8,29 +8,28 @@
   margin: 10px;
   padding: 10px;
   border-radius: 10px; */
-  margin: 20px; 
+  margin: 20px;
   /* border-bottom: 0.5px solid black; */
 }
 
 .event_container img {
-  margin-bottom: 30px; 
+  margin-bottom: 30px;
   /* text-align: center; */
 }
 
 .eventButtons {
- text-align: right; 
+  text-align: right;
 }
-
 
 .btn {
   font-size: 15px;
   font-weight: bold;
   background-color: green;
   border-radius: 2px;
-  padding-right: 25px; 
+  padding-right: 25px;
   padding-left: 25px;
   padding-top: 10px;
-  padding-bottom: 10px; 
+  padding-bottom: 10px;
   /* width: 80px;
   height: 30px; */
   text-align: center;
@@ -38,28 +37,24 @@
   margin-bottom: 25px;
 }
 .btn-edit {
- 
   background-color: green;
-
 }
 
 .btn-delete {
-  
   background-color: #fdd368;
-
 }
 
 .displayFormButton {
   width: 75%;
-  color: white; 
-  text-align: center; 
-  margin: 20px; 
-  padding: 50px; 
-  font-size: 1.5rem; 
+  color: white;
+  text-align: center;
+  margin: 20px;
+  padding: 50px;
+  font-size: 1.5rem;
 }
 
 .imageUploadButton {
-  background-color: #f1f1f1;  
+  background-color: #f1f1f1;
 }
 /* 
 .event_container p {
@@ -78,9 +73,9 @@ tr {
 
 #eventForm,
 .eventBlurb {
-  padding: 20px; 
+  padding: 20px;
   margin-top: 50px;
-  margin-bottom: 50px; 
+  margin-bottom: 50px;
   font-size: 1.2rem;
 }
 
@@ -89,8 +84,8 @@ tr {
   border: 2px solid #f1f1f1;
 }
 
-#eventForm h2{
-  padding-bottom: 20px; 
+#eventForm h2 {
+  padding-bottom: 20px;
   text-align: center;
 }
 
@@ -99,12 +94,12 @@ tr {
 } */
 
 .eventBlurb h2 {
-  text-align: left; 
+  text-align: left;
 }
 
 .eventFormBody {
-  padding-left: 100px; 
-  padding-right: 100px; 
+  padding-left: 100px;
+  padding-right: 100px;
 }
 
 .addEventBtn,
@@ -112,7 +107,7 @@ tr {
 .hideFormButton {
   width: 100%;
   background: green;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .addEventBtn {
@@ -127,8 +122,8 @@ tr {
   background-color: #f1f1f1;
 }
 .registrationRequired {
-  text-align: right; 
-  padding: 20px; 
+  text-align: right;
+  padding: 20px;
 }
 
 .eventDisplayTime {

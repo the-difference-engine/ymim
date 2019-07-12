@@ -17,16 +17,11 @@ import EventForm from "./event_form";
 import Blurb from "./event_blurb";
 import { Carousel } from "react-bootstrap";
 
-
-
 import ymim1 from "../../assets/ymim1.png";
 
 import "./index.css";
 import { Navbar } from "react-bootstrap";
 import logo from "../../assets/logo.png";
-
-
-
 
 import "./index.css";
 class Events extends Component {
@@ -51,18 +46,12 @@ class Events extends Component {
   toggleHidden() {
     this.setState({
       isHidden: !this.state.isHidden
-    })
+    });
   }
-
-
-
 
   render() {
     return (
       <div>
-
-
-
         {/* Using the Carousel for right. Not sure if we want to keep it or not??? */}
         {/* <Carousel>
           <Carousel.Item>
@@ -87,17 +76,12 @@ class Events extends Component {
 
 
         </Carousel> */}
-<Blurb />
-
-
-
+        <Blurb />
 
         <div className="eventsDisplay">
           <Container>
             <Row>
-
               {this.props.events.map((event, id) => (
-
                 <Col>
                   <div className="event_container" key={`event_${event.id}`}>
                     <Col>
@@ -111,7 +95,6 @@ class Events extends Component {
                       <p>{event.end_datetime}</p>
 
                       <div className="eventButtons">
-                        
                         <button
                           className="btn btn-light btn-edit"
                           onClick={() => this.selectForEdit(id)}
@@ -129,14 +112,9 @@ class Events extends Component {
                   </div>
                 </Col>
               ))}
-
-
             </Row>
           </Container>
         </div>
-    
-
-
       </div>
     );
   }

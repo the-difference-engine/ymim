@@ -99,37 +99,34 @@ code {
   margin: 20px 0;
 }
 
-
-
 /* Here lies code for the team.jsx; Does this belong here */
 .meetTheTeam {
   /* padding: 20px; 
   margin-top: 50px;
   margin-bottom: 50px;  */
-  padding: 20px 266px; 
+  padding: 20px 266px;
   font-size: 1.2rem;
 }
 
 .meetTheTeam h2,
 .teamPhotosArea h2 {
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 .teamPhotosArea {
-  background-color: #EEEAEA;
+  background-color: #eeeaea;
 }
 
 .teamPhotos h2 {
-  padding: 20px; 
+  padding: 20px;
 }
 
 .teamPhotosArea img {
-  padding: 20px; 
+  padding: 20px;
 }
 
 .teamPhotos {
-  margin: 20px; 
+  margin: 20px;
 }
-
 
 /*About css */
 
@@ -164,4 +161,3 @@ code {
 .margin-bottom {
   margin-bottom: 7%;
 }
-

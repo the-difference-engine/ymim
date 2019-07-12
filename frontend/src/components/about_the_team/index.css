@@ -1,141 +1,136 @@
 .eventsDisplay {
-    background-color: #EEEAEA; 
-  }
-  
-  .event_container {
-    /* border: 2px solid green;
+  background-color: #eeeaea;
+}
+
+.event_container {
+  /* border: 2px solid green;
     border-width: 0.5px;
     margin: 10px;
     padding: 10px;
     border-radius: 10px; */
-    margin: 20px; 
-    /* border-bottom: 0.5px solid black; */
-  }
-  
-  .event_container img {
-    margin-bottom: 30px; 
-    /* text-align: center; */
-  }
-  
-  .eventButtons {
-   text-align: right; 
-  }
-  
-  
-  .btn {
-    font-size: 15px;
-    font-weight: bold;
-    background-color: green;
-    border-radius: 2px;
-    padding-right: 25px; 
-    padding-left: 25px;
-    padding-top: 10px;
-    padding-bottom: 10px; 
-    /* width: 80px;
+  margin: 20px;
+  /* border-bottom: 0.5px solid black; */
+}
+
+.event_container img {
+  margin-bottom: 30px;
+  /* text-align: center; */
+}
+
+.eventButtons {
+  text-align: right;
+}
+
+.btn {
+  font-size: 15px;
+  font-weight: bold;
+  background-color: green;
+  border-radius: 2px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  /* width: 80px;
     height: 30px; */
-    text-align: center;
-    margin-right: 5px;
-    margin-bottom: 25px;
-  }
-  .btn-edit {
-   
-    background-color: green;
-  
-  }
-  
-  .btn-delete {
-    
-    background-color: #fdd368;
-  
-  }
-  
-  .displayFormButton {
-    width: 75%;
-    color: white; 
-    text-align: center; 
-    margin: 20px; 
-    padding: 50px; 
-    font-size: 1.5rem; 
-  }
-  
-  .imageUploadButton {
-    background-color: #f1f1f1;  
-  }
-  /* 
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom: 25px;
+}
+.btn-edit {
+  background-color: green;
+}
+
+.btn-delete {
+  background-color: #fdd368;
+}
+
+.displayFormButton {
+  width: 75%;
+  color: white;
+  text-align: center;
+  margin: 20px;
+  padding: 50px;
+  font-size: 1.5rem;
+}
+
+.imageUploadButton {
+  background-color: #f1f1f1;
+}
+/* 
   .event_container p {
     padding-left: 15px; 
     padding-right: 15px; 
   } */
-  
-  tr {
-    margin: 100px;
-  }
-  
-  .event {
-    margin: 10px;
-    padding: 90px;
-  }
-  
-  #eventForm,
-  .eventBlurb {
-    padding: 20px; 
-    margin-top: 50px;
-    margin-bottom: 50px; 
-    font-size: 1.2rem;
-  }
-  
-  #eventForm {
-    border-radius: 25px;
-    border: 2px solid #f1f1f1;
-  }
-  
-  #eventForm h2{
-    padding-bottom: 20px; 
-    text-align: center;
-  }
-  
-  /* .eventBlurb p {
+
+tr {
+  margin: 100px;
+}
+
+.event {
+  margin: 10px;
+  padding: 90px;
+}
+
+#eventForm,
+.eventBlurb {
+  padding: 20px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-size: 1.2rem;
+}
+
+#eventForm {
+  border-radius: 25px;
+  border: 2px solid #f1f1f1;
+}
+
+#eventForm h2 {
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+/* .eventBlurb p {
     text-align: center;
   } */
-  
-  .eventBlurb h2 {
-    text-align: left; 
-  }
-  
-  .eventFormBody {
-    padding-left: 100px; 
-    padding-right: 100px; 
-  }
-  
-  .addEventBtn,
-  .viewPastEvents,
-  .hideFormButton {
-    width: 100%;
-    background: green;
-    margin-bottom: 20px; 
-  }
-  
-  .addEventBtn {
-    background: green;
-  }
-  
-  .viewPastEvents {
-    background-color: #fdd368;
-  }
-  
-  .hideFormButton {
-    background-color: #f1f1f1;
-  }
-  .registrationRequired {
-    text-align: right; 
-    padding: 20px; 
-  }
-  
-  .eventDisplayTime {
-    font-weight: bold;
-  }
-  
-  /* .viewPastEvents {
+
+.eventBlurb h2 {
+  text-align: left;
+}
+
+.eventFormBody {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.addEventBtn,
+.viewPastEvents,
+.hideFormButton {
+  width: 100%;
+  background: green;
+  margin-bottom: 20px;
+}
+
+.addEventBtn {
+  background: green;
+}
+
+.viewPastEvents {
+  background-color: #fdd368;
+}
+
+.hideFormButton {
+  background-color: #f1f1f1;
+}
+.registrationRequired {
+  text-align: right;
+  padding: 20px;
+}
+
+.eventDisplayTime {
+  font-weight: bold;
+}
+
+/* .viewPastEvents {
     font-size: 20px;
       font-weight: bold;
       background-color: #fdd368;
