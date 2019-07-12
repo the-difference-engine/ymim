@@ -3,18 +3,11 @@
 }
 
 .event_container {
-  /* border: 2px solid green;
-    border-width: 0.5px;
-    margin: 10px;
-    padding: 10px;
-    border-radius: 10px; */
   margin: 20px;
-  /* border-bottom: 0.5px solid black; */
 }
 
 .event_container img {
   margin-bottom: 30px;
-  /* text-align: center; */
 }
 
 .eventButtons {
@@ -30,8 +23,6 @@
   padding-left: 25px;
   padding-top: 10px;
   padding-bottom: 10px;
-  /* width: 80px;
-    height: 30px; */
   text-align: center;
   margin-right: 5px;
   margin-bottom: 25px;
@@ -56,11 +47,6 @@
 .imageUploadButton {
   background-color: #f1f1f1;
 }
-/* 
-  .event_container p {
-    padding-left: 15px; 
-    padding-right: 15px; 
-  } */
 
 tr {
   margin: 100px;
@@ -88,10 +74,6 @@ tr {
   padding-bottom: 20px;
   text-align: center;
 }
-
-/* .eventBlurb p {
-    text-align: center;
-  } */
 
 .eventBlurb h2 {
   text-align: left;
@@ -129,14 +111,3 @@ tr {
 .eventDisplayTime {
   font-weight: bold;
 }
-
-/* .viewPastEvents {
-    font-size: 20px;
-      font-weight: bold;
-      background-color: #fdd368;
-      border-radius: 2px;
-      width: 200px;
-      height: 54px;
-      text-align: center;
-      margin: 20px; 
-  } */
