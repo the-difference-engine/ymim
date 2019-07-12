@@ -3,7 +3,7 @@ import Markdown from "react-markdown";
 import "./enroll.css";
 import Text from "./enroll.md";
 import "react-bootstrap";
-import Single_Carousel from '../Single_Carousel/Single_Carousel.js'
+import SingleCarousel from "../SingleCarousel/SingleCarousel.js";
 
 class Enroll extends Component {
   constructor(props) {
@@ -23,7 +23,7 @@ class Enroll extends Component {
   render() {
     return (
       <div>
-        <Single_Carousel />
+        <SingleCarousel />
         <div className="container group">
           <h1 className="mt-5">Enroll</h1>
           <div className="container col-sm-6 float-right mt-5">
@@ -35,7 +35,12 @@ class Enroll extends Component {
                 <label for="name" className="col-xs-4">
                   Name (required)
                 </label>
-                <input id="name" required="" type="text" className="col-md-10" />
+                <input
+                  id="name"
+                  required=""
+                  type="text"
+                  className="col-md-10"
+                />
               </div>
               <br />
               <div>
@@ -75,7 +80,7 @@ class Enroll extends Component {
             </form>
           </div>
         </div>
-       </div>
+      </div>
     );
   }
 }
