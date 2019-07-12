@@ -57,7 +57,7 @@ class Volunteer extends Component {
                 </div>
                 <br />
                 <div>
-                  <label for="website" className="col-md-2 block labelFont">
+                  <label for="website" className="col-xs-4 block labelFont">
                     <b>Website</b>
                   </label>
                   <input
@@ -66,11 +66,30 @@ class Volunteer extends Component {
                     className="col-md-10 inputs"
                   />
                 </div>
+
+                <div>
+                  <label for="message" className=" block labelFont mt-4">
+                    <b>Message</b>
+                  </label>
+                  <textarea
+                    id="message"
+                    name=""
+                    rows="1"
+                    className="col-xs-12 mb- inputs-text"
+                  />
+                </div>
+                <div className="col-md-8 mb-5 ">
+                  <p>
+                    <button className="button" type="submit" value="Submit">
+                      <span className="buttonSpan">Submit</span>
+                    </button>
+                  </p>
+                </div>
                 <br />
               </Col>
               <Col xs={12} sm={12} md={12} lg={5}>
                 <h2 className="mb-4">Volunteer!</h2>
-                <p>
+                <p className="query">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa
                   molestias at laudantium, distinctio nulla quo minima delectus
                   consequuntur aut incidunt ipsam quidem repellat fugiat
@@ -95,28 +114,6 @@ class Volunteer extends Component {
                   aut incidunt ipsam quidem repellat fugiat consequatur nihil
                   odit quam voluptas earum.
                 </p>
-              </Col>
-            </Row>
-            <Row>
-              <Col>
-                <div>
-                  <label for="message" className=" block labelFont">
-                    <b>Message</b>
-                  </label>
-                  <textarea
-                    id="message"
-                    name=""
-                    rows="1"
-                    className="col-md-10 mb-4 inputs-text"
-                  />
-                </div>
-                <div className="col-md-8 mb-5 ">
-                  <p>
-                    <button className="button" type="submit" value="Submit">
-                      <span className="buttonSpan">Submit</span>
-                    </button>
-                  </p>
-                </div>
               </Col>
             </Row>
           </form>

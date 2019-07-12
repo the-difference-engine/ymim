@@ -1,10 +1,20 @@
-* {
-  margin: 0;
-  padding: 0;
-}
+
 
 .messageInput {
   width: 40%;
+}
+
+
+
+.button{
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #fdd368;
+  border-radius: 7px;
+  border: none;
+  width: 140px;
+  height: 54px;
+  text-align: center;
 }
 
 .jumbotron {
@@ -16,36 +26,10 @@ span {
   justify-content: center;
 }
 
-.main-content {
-  margin: auto;
-}
 
 .block {
   display: block;
 }
-
-/*for the button* /
- 
-  .button{
-      width:140px;
-      height:75px;
-      padding:20px;
-      padding-top:13px;
-      text-align:center;
-      vertical-align:middle;
-      border-radius:10px;
-      box-shadow:none;
-      background:#FDD368;
-      border:none;
- 
-  }
- 
-  .buttonSpan{
-    font-weight:bold;
-    font-size:25px;
-  }
- 
-  /* */
 
 .inputs {
   height: 60px;
@@ -61,7 +45,6 @@ span {
   border: none;
 }
 
-/*label font*/
 
 .labelFont {
   font-weight: bold;
@@ -90,6 +73,53 @@ span {
   background: #fdd368;
 }
 
-/* .widthSelect{
-   width:220px;
-} */
+
+
+.inputs-text {
+  min-width: 900px;
+}
+
+@media  (max-width:900px){
+
+
+  input{
+    max-width:70% !important;
+  }
+
+
+    textarea{
+      max-width:50% !important;
+    }
+}
+
+
+
+@media (max-width:700px){
+
+  .query{
+
+    overflow:hidden !important;
+    width:100%;
+  }
+
+}
+
+@media (min-width: 768px){
+
+.col-md-10 {
+    flex: 0 0 83.333333%;
+    /* max-width: 83.333333%; */
+    max-width: 70%;
+
+   }
+
+
+   #message {
+     max-width:75%;
+   }
+
+   .row {
+
+    flex-wrap:nowrap;
+   }
+}
