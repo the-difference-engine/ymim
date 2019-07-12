@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import "../../index.css";
-import Single_Carousel from '../Single_Carousel/Single_Carousel.js'
+import SingleCarousel from "../SingleCarousel/SingleCarousel.js";
 
 class About extends Component {
   render() {
     return (
       <>
-       <Single_Carousel />
+        <SingleCarousel />
         <div class="container" itemprop="text">
           <h1 className="mt-5 mb-5"> About </h1>
 
@@ -79,7 +79,6 @@ class About extends Component {
           <div className="container clear">
             <h1>Our People</h1>
             <img
-
               alt="floatimg"
               className="floatimg"
               src="http://www.randolphcountync.gov/portals/0/Images/gray4.png?ver=2018-02-19-154405-587"
@@ -117,7 +116,7 @@ class About extends Component {
         <div className="group">
           <div className="container clear ">
             <img
-
+              alt="floatimg"
               className="floatimg"
               src="http://www.randolphcountync.gov/portals/0/Images/gray4.png?ver=2018-02-19-154405-587"
             />
@@ -155,7 +154,7 @@ class About extends Component {
         <div className="lowermid group margin-bottom">
           <div className="container clear">
             <img
-
+              alt="floatimg"
               className="floatimg"
               src="http://www.randolphcountync.gov/portals/0/Images/gray4.png?ver=2018-02-19-154405-587"
             />

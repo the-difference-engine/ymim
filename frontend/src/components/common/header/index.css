@@ -42,13 +42,15 @@
 /* dropdowns for resources, enroll, and volunteer */
 div.dropdown-menu.show {
   background-color: #519b56;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 a.dropdown-item {
   font-size: 32px;
   color: white;
-  padding: none;
-  margin: none;
 }
 
 .logo {

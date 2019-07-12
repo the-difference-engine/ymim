@@ -34,7 +34,6 @@ export default class footer extends Component {
                   </Link>
                 </li>
                 <li className="col footer-link">
-
                   <Link className="footer-list" to="/enrollment">
                     Enroll
                   </Link>
