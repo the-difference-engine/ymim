@@ -3,7 +3,7 @@ import Markdown from "react-markdown";
 import "./enroll.css";
 import Text from "./enroll.md";
 import "react-bootstrap";
-import Single_Carousel from "../Single_Carousel/Single_Carousel.js";
+import SingleCarousel from "../SingleCarousel";
 
 class Enroll extends Component {
   constructor(props) {
@@ -23,7 +23,7 @@ class Enroll extends Component {
   render() {
     return (
       <div>
-        <Single_Carousel />
+        <SingleCarousel />
         <div className="container group">
           <h1 className="mt-5">Enroll</h1>
           <div className="container col-sm-6 float-right mt-5">

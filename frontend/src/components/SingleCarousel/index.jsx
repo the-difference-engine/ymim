@@ -11,7 +11,7 @@ const inline = {
   margin: "0 0 0 -40px !important"
 };
 
-class Single_Carousel extends Component {
+class SingleCarousel extends Component {
   render() {
     return (
       <Carousel>
@@ -39,4 +39,4 @@ class Single_Carousel extends Component {
   }
 }
 
-export default Single_Carousel;
+export default SingleCarousel;
