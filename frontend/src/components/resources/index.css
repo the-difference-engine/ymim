@@ -1,0 +1,35 @@
+Jumbotron {
+    width: 100%;
+}
+
+#hospitals {
+    background-color: lightgray;
+    height: 100vh;
+}
+
+#urgent-care {
+    background-color: white;
+    height: 100vh;
+}
+
+#shelters {
+  background-color: lightgray;
+  height: 100vh;
+}
+
+#emergency-resources {
+  background-color: white;
+  height: 100vh;
+}
+
+
+
+p {
+  margin-bottom: 60px;
+  font-size: 28px;
+}
+
+.subparagraph {
+  margin-bottom: 0;
+  font-size: 24px;
+}

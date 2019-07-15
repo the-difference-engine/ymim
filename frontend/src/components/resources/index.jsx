@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Jumbotron, Card, Accordion, Button } from "react-bootstrap";
-
+import "./index.css"
 class Resources extends Component {
   render() {
     return (
@@ -8,16 +8,16 @@ class Resources extends Component {
         <div className="text-center">
           <h1>Resources</h1>
         </div>
-        <Jumbotron className="test" id="hospital">
-          <h1 className="resource-heading">Hospitals</h1>
-          <p className="resource-p">
+        <Jumbotron id="hospitals">
+          <h1>Hospitals</h1>
+          <p>
             Elit deserunt occaecat adipisicing minim mollit dolore exercitation
             quis aliquip sit nostrud. Ad ut et irure ex pariatur occaecat non
             tempor irure ex occaecat culpa. Cillum esse quis laboris
             exercitation quis occaecat labore tempor quis ad et consectetur eu.
             Cupidatat pariatur ipsum commodo aute.
           </p>
-          <p className="resource-p2">
+          <p className="subparagraph">
             Nisi excepteur occaecat id quis enim id occaecat nostrud officia qui
             laboris nostrud. Irure aute ipsum proident proident ipsum commodo
             consequat irure in. Voluptate irure aliquip nulla in laborum do est
@@ -30,9 +30,9 @@ class Resources extends Component {
             excepteur fugiat ipsum do dolor et.
           </p>
         </Jumbotron>
-        <Jumbotron className="test1" id="uc">
-          <h1 className="resource-heading">Urgent Care</h1>
-          <p className="resource-p">
+        <Jumbotron id="urgent-care">
+          <h1>Urgent Care</h1>
+          <p>
             Elit deserunt occaecat adipisicing minim mollit dolore exercitation
             quis aliquip sit nostrud. Ad ut et irure ex pariatur occaecat non
             tempor irure ex occaecat culpa. Cillum esse quis laboris
@@ -43,7 +43,7 @@ class Resources extends Component {
             <Card>
               <Card.Header>
                 <Accordion.Toggle
-                  className="resource-p2"
+                  className="subparagraph"
                   as={Button}
                   variant="link"
                   eventKey="1"
@@ -65,16 +65,16 @@ class Resources extends Component {
             </Card>
           </Accordion>
         </Jumbotron>
-        <Jumbotron className="test" id="shelter">
-          <h1 className="resource-heading">Shelters</h1>
-          <p className="resource-p">
+        <Jumbotron id="shelters">
+          <h1>Shelters</h1>
+          <p>
             Elit deserunt occaecat adipisicing minim mollit dolore exercitation
             quis aliquip sit nostrud. Ad ut et irure ex pariatur occaecat non
             tempor irure ex occaecat culpa. Cillum esse quis laboris
             exercitation quis occaecat labore tempor quis ad et consectetur eu.
             Cupidatat pariatur ipsum commodo aute.
           </p>
-          <p className="resource-p2">
+          <p className="subparagraph">
             Nisi excepteur occaecat id quis enim id occaecat nostrud officia qui
             laboris nostrud. Irure aute ipsum proident proident ipsum commodo
             consequat irure in. Voluptate irure aliquip nulla in laborum do est
@@ -87,16 +87,16 @@ class Resources extends Component {
             excepteur fugiat ipsum do dolor et.
           </p>
         </Jumbotron>
-        <Jumbotron className="test1" id="er">
-          <h1 className="resource-heading">Emergency Resources </h1>
-          <p className="resource-p">
+        <Jumbotron id="emergency-resources">
+          <h1>Emergency Resources </h1>
+          <p>
             Elit deserunt occaecat adipisicing minim mollit dolore exercitation
             quis aliquip sit nostrud. Ad ut et irure ex pariatur occaecat non
             tempor irure ex occaecat culpa. Cillum esse quis laboris
             exercitation quis occaecat labore tempor quis ad et consectetur eu.
             Cupidatat pariatur ipsum commodo aute.
           </p>
-          <p className="resource-p2">
+          <p className="subparagraph">
             Nisi excepteur occaecat id quis enim id occaecat nostrud officia qui
             laboris nostrud. Irure aute ipsum proident proident ipsum commodo
             consequat irure in. Voluptate irure aliquip nulla in laborum do est
