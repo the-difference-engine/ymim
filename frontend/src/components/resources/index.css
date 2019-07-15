@@ -1,15 +1,15 @@
 Jumbotron {
-    width: 100%;
+  width: 100%;
 }
 
 #hospitals {
-    background-color: lightgray;
-    height: 100vh;
+  background-color: lightgray;
+  height: 100vh;
 }
 
 #urgent-care {
-    background-color: white;
-    height: 100vh;
+  background-color: white;
+  height: 100vh;
 }
 
 #shelters {
@@ -21,8 +21,6 @@ Jumbotron {
   background-color: white;
   height: 100vh;
 }
-
-
 
 p {
   margin-bottom: 60px;

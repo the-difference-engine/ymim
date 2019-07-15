@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Container, Jumbotron, Card, Accordion, Button } from "react-bootstrap";
-import "./index.css"
+import "./index.css";
 class Resources extends Component {
   render() {
     return (
