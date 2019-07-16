@@ -50,7 +50,12 @@ div.dropdown-menu.show {
 
 a.dropdown-item {
   font-size: 32px;
-  color: white;
+  color: #fdd368;
+}
+
+.dropdown-item.active {
+  font-size: 32px;
+  background-color: #a7d129;
 }
 
 .logo {
@@ -89,6 +94,9 @@ a.dropdown-item {
   margin-bottom: auto;
 }
 
+a {
+  color: #fdd368;
+}
 /* responsiveness */
 @media all and (min-width: 768px) and (max-width: 2048px) {
   .ym-top {

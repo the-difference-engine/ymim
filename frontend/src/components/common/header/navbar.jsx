@@ -86,17 +86,17 @@ class NavBar extends Component {
                       </HashLink>
                     </NavDropdown.Item>
                     <NavDropdown.Item>
-                      <HashLink eventKey="4.2" to="/resources#urgent_care">
+                      <HashLink eventKey="4.2" to="/resources#urgent-care">
                         Urgent Care
                       </HashLink>
                     </NavDropdown.Item>
                     <NavDropdown.Item>
-                      <HashLink eventKey="4.3" to="/resources#shelter">
+                      <HashLink eventKey="4.3" to="/resources#shelters">
                         Shelters
                       </HashLink>
                     </NavDropdown.Item>
                     <NavDropdown.Item>
-                      <HashLink eventKey="4.4" to="/resources#er">
+                      <HashLink eventKey="4.4" to="/resources#emergency-resources">
                         Emergency Resources
                       </HashLink>
                     </NavDropdown.Item>
