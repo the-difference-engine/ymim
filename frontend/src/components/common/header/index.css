@@ -1,3 +1,4 @@
+/* first navbar (white) */
 .ym-top {
   background-color: #ffffff;
   font-size: 32px;
@@ -6,6 +7,7 @@
   width: 100%;
 }
 
+/* second navbar (green) */
 .ym-bottom {
   background-color: #519b56;
   font-size: 32px;
@@ -37,8 +39,13 @@
   color: #fdd368;
 }
 
+/* dropdowns for resources, enroll, and volunteer */
 div.dropdown-menu.show {
   background-color: #519b56;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 a.dropdown-item {
@@ -64,6 +71,7 @@ a.dropdown-item {
   height: 25px;
 }
 
+/* donate button on second navbar (green) */
 #donate-button {
   font-size: 20px;
   font-weight: bold;
@@ -75,11 +83,13 @@ a.dropdown-item {
   text-align: center;
 }
 
+/* spacing around donate button  */
 .center-button {
   margin-top: auto;
   margin-bottom: auto;
 }
 
+/* responsiveness */
 @media all and (min-width: 768px) and (max-width: 2048px) {
   .ym-top {
     height: 140px;
