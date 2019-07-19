@@ -21,9 +21,11 @@ tr {
   max-height: 210px;
 }
 
-.eventsDisplay {
-  background-color: #eeeaea;
+.eventbright-results {
+  margin: 25px;
+  align-content: center;
 }
+
 .event_container {
   /* border: 2px solid green;
   border-width: 0.5px;

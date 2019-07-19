@@ -30,27 +30,31 @@ class Events extends Component {
     return (
       <div>
         <h1>Current Events</h1>
-        <EventList>
-          <CardDeck>
-            {this.props.events.map(event => {
-              return (
-                <EventItems
-                  key={event.id}
-                  name={
-                    event.name
-                      ? event.name.text
-                      : "Young Masterbuilders In Motion Event"
-                  }
-                  description={event.description ? event.description.text : ""}
-                  start={event.start ? event.start.local : "TBA"}
-                  end={event.end ? event.end.local : "TBA"}
-                  logo={event.logo ? event.logo.url : logo}
-                  url={event.url}
-                />
-              );
-            })}
-          </CardDeck>
-        </EventList>
+        <div className="eventbright-results">
+          <EventList>
+            <CardDeck>
+              {this.props.events.map(event => {
+                return (
+                  <EventItems
+                    key={event.id}
+                    name={
+                      event.name
+                        ? event.name.text
+                        : "Young Masterbuilders In Motion Event"
+                    }
+                    description={
+                      event.description ? event.description.text : ""
+                    }
+                    start={event.start ? event.start.local : "TBA"}
+                    end={event.end ? event.end.local : "TBA"}
+                    logo={event.logo ? event.logo.url : logo}
+                    url={event.url}
+                  />
+                );
+              })}
+            </CardDeck>
+          </EventList>
+        </div>
       </div>
     );
   }
