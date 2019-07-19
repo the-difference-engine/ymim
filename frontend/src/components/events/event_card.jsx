@@ -4,6 +4,7 @@ import {
   Container,
   Card,
   CardDeck,
+  CardGroup,
   Form,
   Col,
   Button,
@@ -30,26 +31,51 @@ export function EventList({ children }) {
 
 const EventItems = props => {
   return (
-    <div className="eventsDisplay">
-      <Container>
-        {/* <Row>
+    // template from react bootstrap--card deck
+    <React.Fragment>
+      <div className="eventsDisplay">
+        <Container>
+          <div className="event_container">
+            <CardDeck>
+              <Card>
+                <a href={props.url}>
+                  <h3>{props.name}</h3>
+                </a>
+                <a href={props.url}>
+                  <img className="eventImage" src={props.logo} />
+                </a>
+                <p>{props.description}</p>
+                <p className="eventDisplayTime">Event date and time:</p>
+                <p>{props.start}</p>
+                <p>to</p>
+                <p>{props.end}</p>
+              </Card>
+            </CardDeck>
+          </div>
+        </Container>
+      </div>
+
+      {/* older code--one vertical column */}
+      {/* <div className="eventsDisplay">
+        <Container>
+          {/* <Row>
           <Col> */}
-        <div className="event_container">
-          {/* <Col> */}
-          <CardDeck>
-            <Card>
-              <a href={props.url}>
-                <h3>{props.name}</h3>
-              </a>
-              <a href={props.url}>
-                <img className="eventImage" src={props.logo} />
-              </a>
-              <p>{props.description}</p>
-              <p className="eventDisplayTime">Event date and time:</p>
-              <p>{props.start}</p>
-              <p>to</p>
-              <p>{props.end}</p>
-              {/* <div className="eventButtons">
+      {/* <div className="event_container">
+            {/* <Col> */}
+      {/* <CardDeck>
+              <Card>
+                <a href={props.url}>
+                  <h3>{props.name}</h3>
+                </a>
+                <a href={props.url}>
+                  <img className="eventImage" src={props.logo} />
+                </a> */}
+      {/* <p>{props.description}</p>
+                <p className="eventDisplayTime">Event date and time:</p>
+                <p>{props.start}</p>
+                <p>to</p> */}
+      {/* <p>{props.end}</p>  */}
+      {/* <div className="eventButtons">
                 <button
                   className="btn btn-light btn-edit"
                   //   onClick={() => this.selectForEdit(id)}
@@ -63,14 +89,15 @@ const EventItems = props => {
                   Delete
                 </button>
               </div> */}
-              {/* </Col> */}
-            </Card>
-          </CardDeck>
-        </div>
-        {/* </Col> */}
-        {/* </Row> */}
-      </Container>
-    </div>
+      {/* </Col> */}
+      {/* </Card>
+            </CardDeck>
+          </div>
+          {/* </Col> */}
+      {/* </Row> */}
+      {/* </Container>
+      </div> */}
+    </React.Fragment>
   );
 };
 

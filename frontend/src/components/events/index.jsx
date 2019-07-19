@@ -5,6 +5,7 @@ import { events } from "../../actions";
 import "./index.css";
 import logo from "../../assets/logo.png";
 import { EventList, EventItems } from "./event_card";
+import { CardDeck } from "react-bootstrap";
 
 class Events extends Component {
   constructor(props) {
@@ -29,11 +30,8 @@ class Events extends Component {
     return (
       <div>
         <h1>Current Events</h1>
-        <div className="col-md-6">
-          {/* <EventForm event={this.state.event} /> */}
-        </div>
-        <div className="row">
-          <EventList>
+        <EventList>
+          <CardDeck>
             {this.props.events.map(event => {
               return (
                 <EventItems
@@ -51,8 +49,8 @@ class Events extends Component {
                 />
               );
             })}
-          </EventList>
-        </div>
+          </CardDeck>
+        </EventList>
       </div>
     );
   }
