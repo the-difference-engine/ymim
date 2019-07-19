@@ -26,6 +26,7 @@ class Events extends Component {
   render() {
     return (
       <div>
+        <div className="container"></div>
         <h1>Current Events</h1>
         <div className="row">
           {this.props.events.map((event, id) => (
