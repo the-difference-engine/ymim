@@ -53,3 +53,8 @@ textarea {
     max-width: unset !important;
   }
 }
+
+.error{
+  color:red;
+  display:block;
+}

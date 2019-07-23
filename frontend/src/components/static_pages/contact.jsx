@@ -2,55 +2,87 @@ import React, { Component } from "react";
 import "./contact.css";
 import "react-bootstrap";
 
+
+
+const validEmailRegex = RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
+
+
+const validPhoneRegex= RegExp(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im);
+
+
+const validateForm = (errors) => {
+  let valid = true;
+  Object.values(errors).forEach(
+    // if we have an error string set valid to false
+    (val) => val.length > 0 && (valid = false)
+  );
+  return valid;
+};
 class Contact extends Component {
 
-  constructor(props){
-    super(props)
-
-
-    this.state={
-        name:"",
-        email:"",
-        number:"",
-
-        errors:{
-          name:'',
-          email:'',
-          number:''
-        }
-
-    }
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: null,
+      email: null,
+      number: null,
+      errors: {
+       name: '', email: '', number: ''
+      }
+    };
   }
 
-   handleChange=(event)=>{
-
+  handleChange = (event) => {
     event.preventDefault();
-    const{name,value} = event.target;
-    
-
+    const { name, value } = event.target;
     let errors = this.state.errors;
 
+    switch (name) {
+      case 'name': 
+        errors.name = 
+          value.length < 5
+            ? 'Full Number must  5 characters long!'
+            : '';
+        break;
+      case 'email': 
+        errors.email = 
+          validEmailRegex.test(value)
+            ? ''
+            : 'Email is not valid!';
+        break;
 
-    switch(name){
+      case 'phone':
+       errors.number = validPhoneRegex.test(value) ? '' :'Enter valid number (xxx)xxx-xxxx';
 
-      case'fullname':
-      errors.fullName = value.length < 5 ? 'Full Name must 5 characters long !'
-      :'';
-      break;
-
-      case'email':
-      errors.email = validEmailRegex.test(value) ? '' : 'Email is not valid !';
-      break;
-      
+      default:
+        break;
     }
 
- 
-   }
+    this.setState({errors, [name]: value});
+  }
 
+
+  handleSubmit = (event) =>{
+    event.preventDefault();
+
+
+    if(validateForm(this.state.errors)){
+      console.info('valid form');
+    }
+
+    else{
+      console.error('invalid form');
+    }
+
+  }
 
   render() {
 
+    const {errors} = this.state;
    
+    console.log('this the name length',errors.name.length)
+
+    console.log('console.errors',errors);
     return (
       <div className="container">
         <h1 className="mt-5">Contact us</h1>
@@ -80,12 +112,21 @@ class Contact extends Component {
           </div>
         </div>
         <div className="container col-sm-6 float-left mt-5">
-          <form action="/" method="post">
+          <form action="/" >
             <div>
               <label for="name" className="col-xs-4 ">
                 Name (required)
               </label>
-              <input id="name" required="" type="text" className="col-md-10 " />
+              <input 
+              onChange={this.handleChange}
+              id="name" 
+              required="" 
+              name="name" 
+              type="text" 
+              className="col-md-10 " />
+
+{errors.name.length > 0 && 
+              <span className='error'>{errors.name}</span>}
             </div>
             <br />
             <div>
@@ -93,18 +134,28 @@ class Contact extends Component {
                 Email (required)
               </label>
               <input
+                onChange={this.handleChange}
                 id="email"
                 required=""
+                name="email"
                 type="email"
                 className="col-md-10"
               />
+              {errors.email.length > 0 && 
+              <span className='error'>{errors.email}</span>}
             </div>
             <br />
             <div>
               <label for="phone" className="col-xs-4">
                 Phone (required)
               </label>
-              <input id="phone" type="text" className="col-md-10" />
+              <input onChange={this.handleChange}
+               id="phone"
+                type="number" 
+                name="phone"                
+                className="col-md-10" />
+                {errors.number.length > 0 && 
+                <span className='error'>{errors.number}</span>}
             </div>
             <br />
 
