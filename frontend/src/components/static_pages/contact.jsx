@@ -3,7 +3,54 @@ import "./contact.css";
 import "react-bootstrap";
 
 class Contact extends Component {
+
+  constructor(props){
+    super(props)
+
+
+    this.state={
+        name:"",
+        email:"",
+        number:"",
+
+        errors:{
+          name:'',
+          email:'',
+          number:''
+        }
+
+    }
+  }
+
+   handleChange=(event)=>{
+
+    event.preventDefault();
+    const{name,value} = event.target;
+    
+
+    let errors = this.state.errors;
+
+
+    switch(name){
+
+      case'fullname':
+      errors.fullName = value.length < 5 ? 'Full Name must 5 characters long !'
+      :'';
+      break;
+
+      case'email':
+      errors.email = validEmailRegex.test(value) ? '' : 'Email is not valid !';
+      break;
+      
+    }
+
+ 
+   }
+
+
   render() {
+
+   
     return (
       <div className="container">
         <h1 className="mt-5">Contact us</h1>
