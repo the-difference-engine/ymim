@@ -4,6 +4,7 @@ export const fetchEvents = () => {
       "Content-Type": "application/json",
       Authorization: "Bearer KIFYHFTNBKFCIFOPNESJ"
     };
+
     return fetch("https://www.eventbriteapi.com/v3/users/me/events/", {
       headers
     })
@@ -25,18 +26,21 @@ export const addEvent = event => {
       title: event.title,
       description: event.description
     });
-    return fetch("api/events/", {
-      headers,
-      method: "POST",
-      body
-    })
-      .then(res => res.json())
-      .then(event => {
-        return dispatch({
-          type: "ADD_EVENT",
-          event
-        });
-      });
+    return (
+      fetch("api/events/", {
+        headers,
+        method: "POST",
+        body
+      })
+        // old code--not used for API
+        .then(res => res.json())
+        .then(event => {
+          return dispatch({
+            type: "ADD_EVENT",
+            event
+          });
+        })
+    );
   };
 };
 
