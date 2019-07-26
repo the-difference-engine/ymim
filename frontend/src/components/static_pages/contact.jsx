@@ -10,6 +10,7 @@ const validEmailRegex = RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"
 const validPhoneRegex= RegExp(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im);
 
 
+
 const validateForm = (errors) => {
   let valid = true;
   Object.values(errors).forEach(
@@ -26,11 +27,14 @@ class Contact extends Component {
       name: null,
       email: null,
       number: null,
+      isinvalid: true,
       errors: {
-       name: '', email: '', number: ''
+       name:'' , email: '', number: ''
       }
     };
   }
+ 
+ 
 
   handleChange = (event) => {
     event.preventDefault();
@@ -43,6 +47,8 @@ class Contact extends Component {
           value.length < 5
             ? 'Full Number must  5 characters long!'
             : '';
+          
+            
         break;
       case 'email': 
         errors.email = 
@@ -59,6 +65,55 @@ class Contact extends Component {
     }
 
     this.setState({errors, [name]: value});
+
+
+    const errorsObject = this.state.errors;
+
+    const errArrayValue = Object.values(errorsObject);
+
+ 
+    console.log("array values",errArrayValue);
+     const booleanfunction = errArrayValue.every(this.checkErrors);
+
+      console.log("this is the boolean", booleanfunction)
+
+    if(booleanfunction ){
+    if(validateForm(this.state.errors)){
+      console.info('valid form');
+      this.setState({
+        isinvalid:false
+      })
+
+
+    }
+
+    else{
+      console.error('invalid form');
+      this.setState({
+        isinvalid:true
+      })
+    }
+
+  }
+
+  else{
+    this.setState({isinvalid:true});
+  }
+  }
+
+
+
+  checkErrors = (arr) =>{  
+
+     console.log(arr,"solve the logic")
+    if(arr == ""){
+
+      return true
+    }
+
+    else{
+      return false
+    }
   }
 
 
@@ -66,22 +121,23 @@ class Contact extends Component {
     event.preventDefault();
 
 
-    if(validateForm(this.state.errors)){
-      console.info('valid form');
-    }
-
-    else{
-      console.error('invalid form');
-    }
+   
 
   }
 
   render() {
 
     const {errors} = this.state;
+
+  
+
+    const errorArray = Object.entries(errors);
+
+    console.log('array',errorArray);
    
     console.log('this the name length',errors.name.length)
 
+    console.log(errors.length);
     console.log('console.errors',errors);
     return (
       <div className="container">
@@ -161,15 +217,19 @@ class Contact extends Component {
 
             <div>
               <label className="col-xs-4 mt-3 mb-1 ">Message</label>
-              <textarea name="" rows="6" className="col-md-10 mb-4" />
+              <textarea  maxlength="255" name="" rows="6" className="col-md-10 mb-4" />
             </div>
 
             <div className="col-xs-8 mb-5 ">
-              <p>
+             {
+               
+               this.state.isinvalid ? (''):(<p>
                 <button className="button" type="submit" value="Submit">
                   <span className="buttonSpan">Submit</span>
                 </button>
-              </p>
+              </p>)
+
+             }
             </div>
           </form>
         </div>
