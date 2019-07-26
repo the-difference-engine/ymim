@@ -7,8 +7,7 @@ class UpperMid extends Component {
     return (
       <Container fluid={true}>
         <Row className="justify-content-md-center">
-          <Col xs={1} sm={1} md={2} lg={2} xl={2}></Col>
-          <Col xs={10} md={8} md={8} lg={8} xl={8}>
+          <Col className="test">
             <h2 className="text-center heading">Who Are We?</h2>
             <div className="line-paragraph">
               Become a Young Masterbuilders in Motion (YMIM) scholar and enroll
@@ -28,7 +27,6 @@ class UpperMid extends Component {
               </p>
             </div>
           </Col>
-          <Col xs={1} sm={1} md={2} lg={2} xl={2}></Col>
         </Row>
       </Container>
     );

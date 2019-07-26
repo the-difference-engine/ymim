@@ -51,41 +51,19 @@ class LowerMid extends Component {
             </div>
           </Col>
         </Row>
-        <Row className="justify-content-md-center">
-          <Col className="test">
-            <Row className="justify-content-md-center">
-              <Col xs="10" sm="10" md="4" lg="4" xl="4">
-                <h2 className="heading">Inspiring</h2>
-              </Col>
-              <Col xs="10" sm="10" md="4" lg="4" xl="4">
-                <h2 className="heading">Connecting</h2>
-              </Col>
-              <Col xs="10" sm="10" md="4" lg="4" xl="4">
-                <h2 className="heading">Empowering</h2>
-              </Col>
-            </Row>
+        <Row className="test justify-content-md-center">
+          <Col className="justify-content-md-center">
+            <h2 className="heading test text-center">Inspiring</h2>
+          </Col>
+          <Col className="justify-content-md-center">
+            <h2 className="heading test text-center">Connecting</h2>
+          </Col>
+          <Col className="justify-content-md-center">
+            <h2 className="heading test text-center">Empowering</h2>
           </Col>
         </Row>
-        <Row className="justify-content-md-center">
-          <Col xs={10} md={5} lg={2} xl={2}>
-            <div className="pic-container">
-              <img
-                className="pic"
-                src="https://apothekergroup.com/wp-content/uploads/2018/09/placeholder.png"
-                alt=""
-              />
-            </div>
-          </Col>
-          <Col xs={10} md={5} lg={2} xl={2}>
-            <div className="pic-container">
-              <img
-                className="pic"
-                src="https://apothekergroup.com/wp-content/uploads/2018/09/placeholder.png"
-                alt=""
-              />
-            </div>
-          </Col>
-          <Col xs={10} md={5} lg={2} xl={2}>
+        <Row className="test justify-content-md-center">
+          <Col className="justify-content-md-center">
             <div className="pic-container">
               <img
                 className="pic"
@@ -94,11 +72,29 @@ class LowerMid extends Component {
               />
             </div>
           </Col>
-          <Col xs={10} md={5} lg={2} xl={2}>
+          <Col className="justify-content-md-center">
             <div className="pic-container">
               <img
                 className="pic"
-                src="https://apothekergroup.com/wp-content/uploads/2018/09/placeholder.png"
+                src="https://res.cloudinary.com/dyaffqyuj/image/upload/v1557954804/YMIM/6a00d83451b26169e201a5118cd1e9970c-800wi.jpg"
+                alt=""
+              />
+            </div>
+          </Col>
+          <Col className="justify-content-md-center">
+            <div className="pic-container">
+              <img
+                className="pic"
+                src="https://res.cloudinary.com/dyaffqyuj/image/upload/v1557954804/YMIM/6a00d83451b26169e201a5118cd1e9970c-800wi.jpg"
+                alt=""
+              />
+            </div>
+          </Col>
+          <Col className="justify-content-md-center">
+            <div className="pic-container">
+              <img
+                className="pic"
+                src="https://res.cloudinary.com/dyaffqyuj/image/upload/v1557954804/YMIM/6a00d83451b26169e201a5118cd1e9970c-800wi.jpg"
                 alt=""
               />
             </div>

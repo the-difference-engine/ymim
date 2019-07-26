@@ -14,13 +14,12 @@
   width: 140px;
   height: 54px;
   text-align: center;
-  margin-right: 35px;
   margin-bottom: 35px;
 }
 
 .heading {
   font-size: 36pt;
-  padding-bottom: 5px;
+  padding: 15px 0;
 }
 
 .line-paragraph {
@@ -38,7 +37,7 @@
 
 .space-anchors {
   font-size: 24pt;
-  margin-bottom: 10px !important;
+  margin: 0 20px 0 0 !important;
   color: #519b46;
 }
 
@@ -52,17 +51,8 @@
   font-size: 22pt;
 }
 
-.pic-container {
-  justify-content: center;
-}
-
 .foot-head {
   font-size: 36pt;
-}
-
-.pic {
-  width: 224px;
-  height: 146px;
 }
 
 .test {
@@ -71,55 +61,12 @@
   justify-content: center;
 }
 
-.pic-cont {
-  margin-left: 16.67%;
-  margin-right: 16.67%;
-  justify-content: center;
-}
-
-/* mobile */
-
-@media all and (min-width: 320px) and (max-width: 425px) {
-  .heading {
-    font-size: 24pt;
-  }
-  .line-paragraph {
-    font-size: 12pt;
-  }
-  .upper-mid-sectiontext {
-    font-size: 10pt;
-  }
-  .ym-button {
-    margin: 3pt 0;
-  }
-  .sub-heading {
-    font-size: 18pt;
-    padding-bottom: 0;
-  }
-  .container {
-    text-align: center;
-  }
-  .test {
-    margin-left: 8.33%;
-    margin-right: 8.33%;
-    justify-content: center;
-  }
-  .pic-cont {
-    margin-left: 8.33%;
-    margin-right: 8.33%;
-    justify-content: center;
-  }
-  .space-anchors {
-    font-size: 12pt;
-    color: #519b46;
-  }
-}
-
 /* tablet */
 
 @media all and (min-width: 320px) and (max-width: 768px) {
   .heading {
     font-size: 18pt;
+    padding: 10px 0;
   }
   .sub-heading {
     font-size: 12pt;
@@ -142,5 +89,58 @@
   .space-anchors {
     font-size: 14pt;
     color: #519b46;
+  }
+  .ym-button {
+    font-size: 15px;
+    font-weight: bold;
+    background-color: #fdd368;
+    border-radius: 2px;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    margin-right: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+/* mobile */
+
+@media all and (min-width: 320px) and (max-width: 425px) {
+  .heading {
+    font-size: 26pt;
+    padding: 5px 0;
+  }
+  .upper-mid-sectiontext {
+    font-size: 10pt;
+  }
+  .ym-button {
+    margin: 3pt 0;
+  }
+  .sub-heading {
+    font-size: 18pt;
+    padding-bottom: 0;
+  }
+  .container {
+    text-align: center;
+  }
+  .test {
+    margin-left: 8.33%;
+    margin-right: 8.33%;
+    justify-content: center;
+  }
+  .space-anchors {
+    font-size: 12pt;
+    color: #519b46;
+  }
+  .ym-button {
+    font-size: 10px;
+    font-weight: bold;
+    background-color: #fdd368;
+    border-radius: 2px;
+    width: 70px;
+    height: 35px;
+    text-align: center;
+    margin-right: 15px;
+    margin-bottom: 15px;
   }
 }
