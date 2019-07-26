@@ -8,17 +8,15 @@ class LowerMid extends Component {
     return (
       <Container fluid={true}>
         <Row className="lower-mid">
-          <Col xs={1} sm={1} md={2} lg={2} xl={2}></Col>
-          <Col xs={10} md={8} md={8} lg={8} xl={8}>
+          <Col className="test">
             <h2 className="text-center heading">What's New?</h2>
-            <b>
-              <h2 className="text-center sub-heading">
-                Mar 9 2019 - Let's Do 300! Emergency Care Package Drive
-              </h2>
-            </b>
+            <h2 className="text-center sub-heading">
+              Mar 9 2019 - Let's Do 300! Emergency Care Package Drive
+            </h2>
             <div className="line-paragraph">
               Join Young Masterbuilders In Motion on March 9th at Rogers Park
-              Library to collect and package essential supplies for foster youth
+              Library to collect and package essential supplies for foster
+              youth.
             </div>
             <div className="line-paragraph">
               It's estimated that 5,000 youth age out of foster care in the
@@ -29,24 +27,20 @@ class LowerMid extends Component {
               Won't you join us?
             </div>
             <h2 className="sub-heading">RSVP and Find out More:</h2>
-            <p>
-              <Link
-                to="/https://www.eventbrite.com/ymim"
-                className="space-anchors"
-                alt="Eventbrite"
-              >
-                Eventbrite
-              </Link>
-            </p>
-            <p>
-              <Link
-                to="/https://www.facebook.com/pg/theymim.events"
-                className="space-anchors"
-                alt="Facebook"
-              >
-                Facebook
-              </Link>
-            </p>
+            <Link
+              to="/https://www.eventbrite.com/ymim"
+              className="space-anchors"
+              alt="Eventbrite"
+            >
+              Eventbrite
+            </Link>
+            <Link
+              to="/https://www.facebook.com/pg/theymim.events"
+              className="space-anchors"
+              alt="Facebook"
+            >
+              Facebook
+            </Link>
             <div>
               <button className="ym-button" id="enroll">
                 All News
@@ -56,27 +50,23 @@ class LowerMid extends Component {
               </button>
             </div>
           </Col>
-          <Col xs={1} sm={1} md={2} lg={2} xl={2}></Col>
         </Row>
         <Row className="justify-content-md-center">
-          <Col xs={1} sm={1} md={1} lg={2} xl={2}></Col>
-          <Col md={10} lg={8} xl={8}>
+          <Col className="test">
             <Row className="justify-content-md-center">
               <Col xs="10" sm="10" md="4" lg="4" xl="4">
-                <h2 className="foot-head">Inspiring</h2>
+                <h2 className="heading">Inspiring</h2>
               </Col>
               <Col xs="10" sm="10" md="4" lg="4" xl="4">
-                <h2 className="foot-head">Connecting</h2>
+                <h2 className="heading">Connecting</h2>
               </Col>
-              <Col xs="10" sm="10" md="4" lg="4" xl="4" className="text-center">
-                <h2 className="foot-head">Empowering</h2>
+              <Col xs="10" sm="10" md="4" lg="4" xl="4">
+                <h2 className="heading">Empowering</h2>
               </Col>
             </Row>
           </Col>
-          <Col xs={1} sm={1} md={1} lg={2} xl={2}></Col>
         </Row>
         <Row className="justify-content-md-center">
-          <Col lg={2} xl={2}></Col>
           <Col xs={10} md={5} lg={2} xl={2}>
             <div className="pic-container">
               <img
@@ -113,7 +103,6 @@ class LowerMid extends Component {
               />
             </div>
           </Col>
-          <Col lg={2} xl={2}></Col>
         </Row>
       </Container>
     );

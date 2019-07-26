@@ -1,3 +1,7 @@
+* {
+  font-family: "Montserrat Medium", sans-serif;
+}
+
 .lower-mid {
   background-color: #eeeaea;
 }
@@ -12,13 +16,6 @@
   text-align: center;
   margin-right: 35px;
   margin-bottom: 35px;
-}
-
-.heading,
-.line-paragraph,
-.upper-mid-sectiontext,
-.sub-heading {
-  font-family: "Montserrat Medium", sans-serif;
 }
 
 .heading {
@@ -56,20 +53,28 @@
 }
 
 .pic-container {
-  align-content: center;
+  justify-content: center;
 }
 
 .foot-head {
   font-size: 36pt;
 }
 
-.sub-heading {
-  font-size: 24pt;
-}
-
 .pic {
   width: 224px;
   height: 146px;
+}
+
+.test {
+  margin-left: 16.67%;
+  margin-right: 16.67%;
+  justify-content: center;
+}
+
+.pic-cont {
+  margin-left: 16.67%;
+  margin-right: 16.67%;
+  justify-content: center;
 }
 
 /* mobile */
@@ -89,16 +94,53 @@
   }
   .sub-heading {
     font-size: 18pt;
+    padding-bottom: 0;
   }
   .container {
     text-align: center;
+  }
+  .test {
+    margin-left: 8.33%;
+    margin-right: 8.33%;
+    justify-content: center;
+  }
+  .pic-cont {
+    margin-left: 8.33%;
+    margin-right: 8.33%;
+    justify-content: center;
+  }
+  .space-anchors {
+    font-size: 12pt;
+    color: #519b46;
   }
 }
 
 /* tablet */
 
 @media all and (min-width: 320px) and (max-width: 768px) {
-  .foot-head {
-    font-size: 24pt;
+  .heading {
+    font-size: 18pt;
+  }
+  .sub-heading {
+    font-size: 12pt;
+    padding-bottom: 0;
+  }
+  .line-paragraph {
+    font-size: 9pt;
+  }
+  .upper-mid-sectiontext {
+    font-size: pt;
+  }
+  .ym-button {
+    margin: 3pt 0;
+  }
+  .test {
+    margin-left: 8.33%;
+    margin-right: 8.33%;
+    justify-content: center;
+  }
+  .space-anchors {
+    font-size: 14pt;
+    color: #519b46;
   }
 }
