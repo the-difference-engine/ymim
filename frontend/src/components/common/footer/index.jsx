@@ -75,7 +75,11 @@ export default class footer extends Component {
             </Col>
             <Col xs="10" sm="10">
               <div className="tsocial">
-                <a href="https://www.facebook.com/theymim/" target="_blank"  rel="noopener noreferrer">
+                <a
+                  href="https://www.facebook.com/theymim/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FontAwesomeIcon className="facebook" icon={faFacebook} />
                 </a>
                 <a
