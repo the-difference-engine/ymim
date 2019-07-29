@@ -36,8 +36,8 @@ class Command(BaseCommand):
         )
 
         fake = Faker()
-        print("Creating 100 fake users")
-        for _ in tqdm(range(100)):
+        print("Creating 20 fake users")
+        for _ in tqdm(range(20)):
             User.objects.create_user(
                 username=fake.email(),
                 password="password",

@@ -73,11 +73,14 @@
     padding-bottom: 0;
   }
   .line-paragraph {
-    font-size: 9pt;
+    font-size: 14px;
+    margin-bottom: 10px;
   }
+
   .upper-mid-sectiontext {
-    font-size: pt;
+    font-size: 8px;
   }
+
   .ym-button {
     margin: 3pt 0;
   }
