@@ -14,7 +14,6 @@ export const fetchEvents = () => {
           type: "FETCH_EVENTS",
           events: events.events
         });
-        // .then(console.log(events.events));
       });
   };
 };
@@ -26,60 +25,10 @@ export const addEvent = event => {
       title: event.title,
       description: event.description
     });
-    return (
-      fetch("api/events/", {
-        headers,
-        method: "POST",
-        body
-      })
-        // old code--not used for API
-        .then(res => res.json())
-        .then(event => {
-          return dispatch({
-            type: "ADD_EVENT",
-            event
-          });
-        })
-    );
-  };
-};
-
-export const updateEvent = (event, index) => {
-  return dispatch => {
-    let headers = { "Content-Type": "application/json" };
-    let body = JSON.stringify(event);
-
-    return fetch(`api/events/${event.id}/`, {
+    return fetch("api/events/", {
       headers,
-      method: "PUT",
+      method: "POST",
       body
-    })
-      .then(res => res.json())
-      .then(event => {
-        return dispatch({
-          type: "UPDATE_EVENT",
-          event,
-          index
-        });
-      });
-  };
-};
-// delete event
-export const deleteEvent = index => {
-  return (dispatch, getState) => {
-    let headers = { "Content-Type": "application/json" };
-    let eventId = getState().events[index].id;
-
-    return fetch(`api/events/${eventId}/`, {
-      headers,
-      method: "DELETE"
-    }).then(res => {
-      if (res.ok) {
-        return dispatch({
-          type: "DELETE_EVENT",
-          index
-        });
-      }
     });
   };
 };

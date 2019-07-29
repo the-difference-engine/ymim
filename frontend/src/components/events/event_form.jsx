@@ -9,6 +9,7 @@ import {
   InputGroup,
   FormControl
 } from "react-bootstrap";
+to;
 
 class EventForm extends Component {
   state = {
