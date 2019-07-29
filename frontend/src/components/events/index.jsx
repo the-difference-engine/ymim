@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { events } from "../../actions";
-// import EventForm from "./event_form";
 import "./index.css";
 import logo from "../../assets/logo.png";
 import { EventList, EventItems } from "./event_card";
