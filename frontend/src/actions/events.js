@@ -17,18 +17,3 @@ export const fetchEvents = () => {
       });
   };
 };
-
-export const addEvent = event => {
-  return dispatch => {
-    let headers = { "Content-Type": "application/json" };
-    let body = JSON.stringify({
-      title: event.title,
-      description: event.description
-    });
-    return fetch("api/events/", {
-      headers,
-      method: "POST",
-      body
-    });
-  };
-};
