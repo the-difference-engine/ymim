@@ -42,19 +42,19 @@ class Team extends Component {
             </Row>
             <Row>
               <Col>
-                <img src="images/dream_team.jpg" />
+                <img src="images/dream_team.jpg" alt="dream team" />
               </Col>
               <Col>
-                <img src="images/donation.jpg" />
+                <img src="images/donation.jpg" alt="donation" />
               </Col>
             </Row>
 
             <Row>
               <Col>
-                <img src="images/jm_mw_ep.jpg" />
+                <img src="images/jm_mw_ep.jpg" alt="jm_mw_ep" />
               </Col>
               <Col>
-                <img src="images/calix.jpg" />
+                <img src="images/calix.jpg" alt="calix" />
               </Col>
             </Row>
           </Container>
