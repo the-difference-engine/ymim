@@ -1,20 +1,6 @@
 import React from "react";
 import { connect } from "react-redux";
-import {
-  Container,
-  Card,
-  CardDeck,
-  CardGroup,
-  Form,
-  Col,
-  Button,
-  InputGroup,
-  FormControl,
-  Row,
-  Label,
-  Input,
-  FormGroup
-} from "react-bootstrap";
+import { Container, Card, CardDeck } from "react-bootstrap";
 import { events } from "../../actions";
 import { Carousel } from "react-bootstrap";
 import ymim1 from "../../assets/ymim1.png";
