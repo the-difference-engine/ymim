@@ -97,6 +97,33 @@ code {
   margin: 20px 0;
 }
 
+/* Here lies code for the team.jsx; Does this belong here */
+.meetTheTeam {
+  padding: 20px 266px;
+  font-size: 1.2rem;
+}
+
+.meetTheTeam h2,
+.teamPhotosArea h2 {
+  margin-bottom: 20px;
+}
+.teamPhotosArea {
+  background-color: #eeeaea;
+}
+
+.teamPhotos h2 {
+  padding: 20px;
+}
+
+.teamPhotosArea img {
+  padding: 20px;
+  height: 240px;
+}
+
+.teamPhotos {
+  margin: 20px;
+}
+
 /*About css */
 
 .lowermid {

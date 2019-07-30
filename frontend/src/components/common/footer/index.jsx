@@ -15,7 +15,7 @@ export default class footer extends Component {
       <Container fluid={true} className="footer">
         <Col>
           <Row className="justify-content-md-center">
-            <Col md="12" lg="10" xl="8">
+            <Col md="12" lg="12" xl="12">
               <nav>
                 <ul className="row menu-text">
                   <li className="col footer-link">
@@ -31,6 +31,11 @@ export default class footer extends Component {
                   <li className="col footer-link">
                     <Link className="footer-list" to="/contact-us">
                       Contact
+                    </Link>
+                  </li>
+                  <li className="col footer-link">
+                    <Link className="footer-list" to="/meet-the-team">
+                      Meet the Team
                     </Link>
                   </li>
                   <li className="col footer-link">
