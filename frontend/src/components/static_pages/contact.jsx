@@ -27,9 +27,10 @@ class Contact extends Component {
       name: null,
       email: null,
       number: null,
+      isLimit:null,
       isinvalid: true,
       errors: {
-       name:'' , email: '', number: ''
+       name:'' , email: '', number: '', isLimit:''
       }
     };
   }
@@ -60,12 +61,27 @@ class Contact extends Component {
       case 'phone':
        errors.number = validPhoneRegex.test(value) ? '' :'Enter valid number (xxx)xxx-xxxx';
 
+      break;
+
+      case 'message':
+
+      console.log(value.length,"value lenghttt");
+
+    errors.isLimit = value.length < 255 ? '' : 'You have exceeded the text limit of 255';
+
+
+    console.log('this is the lengthhh' ,value.length)
+       
+      break;
+
       default:
         break;
     }
 
     this.setState({errors, [name]: value});
 
+    
+    console.log(errors.isLimit.length,"gwllwej");
 
     const errorsObject = this.state.errors;
 
@@ -114,9 +130,60 @@ class Contact extends Component {
     else{
       return false
     }
+
+
+
   }
 
+  // textlimit =(e) =>{
 
+  //   console.log(e.target.value,"this is the value");
+
+  //   const textlimit = e.target.value;
+
+  //   console.log(textlimit.length,"this is the value of the limit");
+
+
+  //   const textlength = textlimit.length;
+
+  //    const boolean = this.alertlimit(textlength)
+
+
+  
+    
+
+  // }
+
+
+  // alertlimit = (textlimit) => {
+
+
+  //   if(textlimit == 255) {
+
+  //     errors.isLimit = "You have reach the text limit 255 letters";
+  //   }
+
+
+  //   this.setState({})
+      
+  // }
+
+
+  // createAlert =(message, className) =>{
+
+  //   const createDiv = document.createElement('div');
+
+  //   createDiv.setAttribute('class',className);
+
+
+  //   createDiv.innerText(message);
+
+
+
+
+  // }
+
+  
   handleSubmit = (event) =>{
     event.preventDefault();
 
@@ -216,8 +283,12 @@ class Contact extends Component {
             <br />
 
             <div>
-              <label className="col-xs-4 mt-3 mb-1 ">Message</label>
-              <textarea  maxlength="255" name="" rows="6" className="col-md-10 mb-4" />
+              <label className="col-xs-4 mt-3 mb-1 messager">Message</label>
+              <textarea onChange={this.handleChange} maxlength="255" name="message" rows="6" className="col-md-10 mb-4"></textarea>
+              { errors.isLimit.length > 0 &&
+              <span className="error">{errors.isLimit}</span>}
+
+
             </div>
 
             <div className="col-xs-8 mb-5 ">
