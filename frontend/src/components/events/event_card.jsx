@@ -1,12 +1,5 @@
 import React from "react";
-import { connect } from "react-redux";
 import { Container, Card, CardDeck } from "react-bootstrap";
-import { events } from "../../actions";
-import { Carousel } from "react-bootstrap";
-import ymim1 from "../../assets/ymim1.png";
-import "./index.css";
-import { Navbar } from "react-bootstrap";
-import logo from "../../assets/logo.png";
 import "./index.css";
 
 export function EventList({ children }) {
@@ -26,7 +19,7 @@ const EventItems = props => {
                   <h3>{props.name}</h3>
                 </a>
                 <a href={props.url}>
-                  <img className="eventImage" src={props.logo} />
+                  <img className="eventImage" src={props.logo} alt="event" />
                 </a>
                 <p>{props.description}</p>
                 <p className="eventDisplayTime">Event date and time:</p>
