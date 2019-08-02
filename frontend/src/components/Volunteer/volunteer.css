@@ -1,8 +1,16 @@
 
 
+.container-fluid {
+  overflow:hidden;
+  
+}
+
+
 .messageInput {
   width: 40%;
 }
+
+
 
 
 
@@ -14,10 +22,6 @@
  
 }
 
-.jumbotron {
-  margin: auto 0;
-  justify-content: left;
-}
 
 span {
   justify-content: center;
@@ -33,6 +37,7 @@ span {
   background: #eeeaea;
   border: none;
   color: black;
+  width:70vw !important;
 }
 
 .inputs-text {
@@ -43,16 +48,18 @@ span {
 }
 
 
+#message{
+  width:70vw !important;
+  overflow:hidden !important;
+}
+
 .labelFont {
   font-weight: bold;
   padding: 0;
 }
 
-/*fontcss for marksdown*/
 
-#fontcss {
-  line-height: 50px !important;
-}
+
 
 .main-content {
   line-height: 2;
@@ -72,51 +79,22 @@ span {
 
 
 
-.inputs-text {
-  min-width: 900px;
-}
-
-@media  (max-width:900px){
 
 
-  input{
-    max-width:70% !important;
-  }
 
 
-    textarea{
-      max-width:50% !important;
-    }
+.form-control{
+  
+  width:70vw;
 }
 
 
+@media(min-width:768px){
 
-@media (max-width:700px){
 
-  .query{
-
-    overflow:hidden !important;
+  .form-control {
+   
     width:100%;
   }
 
-}
-
-@media (min-width: 768px){
-
-.col-md-10 {
-    flex: 0 0 83.333333%;
-    /* max-width: 83.333333%; */
-    max-width: 70%;
-
-   }
-
-
-   #message {
-     max-width:75%;
-   }
-
-   .row {
-
-    flex-wrap:nowrap;
-   }
 }
