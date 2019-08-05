@@ -17,8 +17,8 @@ tr {
 }
 
 .eventImage {
-  max-width: 240px;
-  max-height: 210px;
+  width: 400px;
+  height: 200px;
 }
 
 .eventbright-results {

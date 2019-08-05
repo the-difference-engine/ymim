@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { events } from "../../actions";
 import "./index.css";
-import logo from "../../assets/logo.png";
+import logo from "../../assets/ymim1.png";
 import { EventList, EventItems } from "./event_card";
 import { CardDeck } from "react-bootstrap";
 
