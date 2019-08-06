@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./volunteer.css";
+import SingleCarousel from '../SingleCarousel/index';
 
 class Volunteer extends Component {
 
@@ -10,20 +11,101 @@ class Volunteer extends Component {
 
       this.state = {
         role:'',
+        name:'',
         email:'',
         phone:'',
         website:'',
         message:''
+       }
+    }
+
+   onNameChange = (e) =>{
+        this.setState =({
+          name:e.target.value
+        })
+  }
+
+  onRolechange = (e) =>{
+    this.setState =({
+      name:e.target.value
+    })
+}
+
+
+   onMessageChange = (e) =>{
+    this.setState =({
+      message:e.target.value
+    })
+ }
+
+  
+   onWebsiteChange = (e) =>{
+        this.setState =({
+          website:e.target.value
+         })
+     }
+
+
+
+   onEmailChange = (e) =>{
+
+          this.setState =({
+          email:e.target.value
+            })
+         }
+
+
+   onPhoneChange = (e) =>{
+
+       this.setState =({
+        phone:e.target.value
+           })
+      }
+
+     
+   onFormSubmit = (e) => {
+      e.preventDefault();
+
+
+      let sendBackend = {
+        role:this.state.role,
+        name:this.state.name,
+        email:this.state.email,
+        phone:this.state.phone,
+        website:this.state.website,
+        message:this.state.message
       }
 
 
-  }
+      this.SendData(sendBackend);
 
-
+      this.setState({
+        role:'',
+        name:'',
+        email:'',
+        phone:'',
+        website:'',
+        message:''
+      })
+    }
+  
+ SendData=(data) =>{fetch('http://the backend', {
+  method: 'POST', 
+  body:JSON.stringify(data),
+	mode: 'cors', 
+	redirect: 'follow',
+	headers: new Headers({
+		'Content-Type': 'text/plain'
+	})
+}).then(function() { console.log('data has been set')});
+    }
+  
 
 
   render() {
     return (
+      <>
+      <SingleCarousel className="carousel" header='Volunteer' />
       <Container className="mt-4">
         <Row className="mx-auto">
           <form action="/"  className="flexForm" method="post">
@@ -138,6 +220,7 @@ class Volunteer extends Component {
           </form>
         </Row>
       </Container>
+      </>
     );
   }
 }

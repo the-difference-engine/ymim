@@ -43,12 +43,11 @@ code {
   position: relative;
   bottom: -40px;
   width: 100%;
-  background: #519b46;
-  opacity: 0.53;
+  background: rgba(81, 155, 70, 0.65);
   margin: 0;
   padding: 0;
   height: 238px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .carousel-caption {
@@ -95,6 +94,66 @@ code {
   width: 192px !important;
   height: 192px !important;
   border-radius: 50%;
-  background: #fff;
   margin: 20px 0;
+}
+
+/* Here lies code for the team.jsx; Does this belong here */
+.meetTheTeam {
+  padding: 20px 266px;
+  font-size: 1.2rem;
+}
+
+.meetTheTeam h2,
+.teamPhotosArea h2 {
+  margin-bottom: 20px;
+}
+.teamPhotosArea {
+  background-color: #eeeaea;
+}
+
+.teamPhotos h2 {
+  padding: 20px;
+}
+
+.teamPhotosArea img {
+  padding: 20px;
+  height: 240px;
+}
+
+.teamPhotos {
+  margin: 20px;
+}
+
+/*About css */
+
+.lowermid {
+  background-color: #eeeaea;
+  width: 100%;
+}
+
+.floatp {
+  float: right;
+  width: 40%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.floatimg {
+  padding-top: 5%;
+  float: left;
+  width: 40%;
+  padding-top: 5%;
+}
+
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+  padding: 2%;
+  text-align: center;
+  margin: auto;
+}
+
+.margin-bottom {
+  margin-bottom: 7%;
 }

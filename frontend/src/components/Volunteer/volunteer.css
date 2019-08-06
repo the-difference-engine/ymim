@@ -13,6 +13,9 @@
 
 
 
+.flexForm{
+  overflow:hidden;
+}
 
 @media(max-width:1000px){
 
@@ -68,7 +71,7 @@ label {
 
 
 #message{
-  width:70vw !important;
+  width:1000px;
   overflow:hidden !important;
 }
 

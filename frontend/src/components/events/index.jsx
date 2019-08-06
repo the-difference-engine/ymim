@@ -1,8 +1,10 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { events } from "../../actions";
-import EventForm from "./event_form";
 import "./index.css";
+import logo from "../../assets/logo.png";
+import { EventList, EventItems } from "./event_card";
+import { CardDeck } from "react-bootstrap";
 
 class Events extends Component {
   constructor(props) {
@@ -26,33 +28,32 @@ class Events extends Component {
   render() {
     return (
       <div>
-        <h1>Current Events</h1>
-        <div className="row">
-          {this.props.events.map((event, id) => (
-            <div className="event_container col-md-3" key={`event_${event.id}`}>
-              <h3>{event.title}</h3>
-              <p>{event.description}</p>
-              <p>{event.start_datetime}</p>
-              <p>to</p>
-              <p>{event.end_datetime}</p>
-              <img src={event.event_image} alt="" />
-              <button
-                className="btn btn-info"
-                onClick={() => this.selectForEdit(id)}
-              >
-                Edit
-              </button>
-              <button
-                onClick={() => this.props.deleteEvent(id)}
-                className="btn btn-danger"
-              >
-                Delete
-              </button>
-            </div>
-          ))}
+        <h1>Upcoming Events</h1>
+        <div className="eventbright-results">
+          <EventList>
+            <CardDeck>
+              {this.props.events.map(event => {
+                return (
+                  <EventItems
+                    key={event.id}
+                    name={
+                      event.name
+                        ? event.name.text
+                        : "Young Masterbuilders In Motion Event"
+                    }
+                    description={
+                      event.description ? event.description.text : ""
+                    }
+                    start={event.start ? event.start.local : "TBA"}
+                    end={event.end ? event.end.local : "TBA"}
+                    logo={event.logo ? event.logo.url : logo}
+                    url={event.url}
+                  />
+                );
+              })}
+            </CardDeck>
+          </EventList>
         </div>
-
-        <EventForm event={this.state.event} />
       </div>
     );
   }
