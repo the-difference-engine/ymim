@@ -82,8 +82,8 @@ class About extends Component {
               <img src={KimWright} alt={"Kim Wright"} className="images" />
             </Col>
             <Col xs="10" md="6" lg="6" xl="6">
-              <h1 className="heading">Kim Wright, MBA</h1>
-              <h4 className="sub-heading">Founder and President</h4>
+              <h1 className="heading text-left">Kim Wright, MBA</h1>
+              <h4 className="sub-heading text-left">Founder and President</h4>
               <p className="text-left">
                 Wright grew up as a youth-in-care from age 2 to 17 in multiple
                 foster homes and a catholic orphanage after losing her mother to
@@ -113,8 +113,10 @@ class About extends Component {
               />
             </Col>
             <Col xs="10" md="6" lg="6" xl="6">
-              <h1 className="heading">Pierre Priestley, JD, MBA</h1>
-              <h4 className="sub-heading">Board Officer, Treasurer</h4>
+              <h1 className="heading text-left">Pierre Priestley, JD, MBA</h1>
+              <h4 className="sub-heading text-left">
+                Board Officer, Treasurer
+              </h4>
               <p className="text-left">
                 “Service to our youth today will ensure the strength of our
                 world tomorrow.”
@@ -139,10 +141,12 @@ class About extends Component {
               />
             </Col>
             <Col xs="10" md="6" lg="6" xl="6">
-              <h1 className="heading">
+              <h1 className="heading text-left">
                 Shirley Scott, MS, RN-BC, C-EFM, APN, DNP
               </h1>
-              <h4 className="sub-heading">Board Officer, Secretary</h4>
+              <h4 className="sub-heading text-left">
+                Board Officer, Secretary
+              </h4>
               <p className="text-left">
                 Scott works as a perinatal network administrator and cares for
                 women and infants. She has a special interest in the adolescent

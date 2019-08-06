@@ -1,29 +1,26 @@
 .images {
   width: 400px;
-  margin: 5%;
-}
-
-.lowermid {
-  background-color: #eeeaea;
-  width: 100%;
+  margin: 10px;
 }
 
 .sub-heading {
-  font-size: 24pt;
+  font-size: 24px;
 }
 
 /* tablet */
 
-@media all and (min-width: 426px) and (max-width: 768px) {
+@media all and (min-width: 426px) and (max-width: 1023px) {
   .images {
     width: 300px;
   }
   .heading {
-    font-size: 26pt;
-    padding: 5px 0;
+    font-size: 30px;
   }
   .sub-heading {
-    font-size: 12pt;
+    font-size: 24px;
+  }
+  p {
+    font-size: 16px;
   }
 }
 
@@ -34,10 +31,12 @@
     width: 250px;
   }
   .heading {
-    font-size: 18pt;
-    padding: 10px 0;
+    font-size: 26px;
   }
   .sub-heading {
-    font-size: 18pt;
+    font-size: 18px;
+  }
+  p {
+    font-size: 14px;
   }
 }
