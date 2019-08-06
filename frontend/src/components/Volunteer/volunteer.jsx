@@ -3,11 +3,30 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./volunteer.css";
 
 class Volunteer extends Component {
+
+  constructor(props){
+      super(props)
+
+
+      this.state = {
+        role:'',
+        email:'',
+        phone:'',
+        website:'',
+        message:''
+      }
+
+
+  }
+
+
+
+
   render() {
     return (
       <Container className="mt-4">
         <Row className="mx-auto">
-          <form action="/" method="post">
+          <form action="/"  className="flexForm" method="post">
             <Row noGutters={true}>
               <Col xs={12} sm={12} md={12} lg={5} className="mr-2">
                 <h2 className="mb-4">Get Involved!</h2>
@@ -26,8 +45,8 @@ class Volunteer extends Component {
                   </select>
                 </div>
                 <div>
-                  <label for="name" className="col-md-2 block labelFont">
-                    <b>Name</b>(required)
+                  <label for="name" className="col-xs-2 labelFont">
+                    <b>Name</b>  (required)
                   </label>
                   <input
                     id="name"
@@ -38,8 +57,8 @@ class Volunteer extends Component {
                 </div>
                 <br />
                 <div>
-                  <label for="email" className="col-md-2 block labelFont">
-                    <b>Email</b>(required)
+                  <label for="email" className="col-xs-2  labelFont">
+                    <b>Email</b>  (required)
                   </label>
                   <input
                     id="email"
@@ -50,14 +69,14 @@ class Volunteer extends Component {
                 </div>
                 <br />
                 <div>
-                  <label for="phone" className="col-md-2 block labelFont">
-                    <b>Phone</b>(required)
+                  <label for="phone" className="col-xs-2  labelFont">
+                    <b>Phone</b>  (required)
                   </label>
                   <input id="phone" type="text" className="col-md-10 inputs" />
                 </div>
                 <br />
                 <div>
-                  <label for="website" className="col-xs-4 block labelFont">
+                  <label for="website" className="col-xs-4  labelFont">
                     <b>Website</b>
                   </label>
                   <input
@@ -68,7 +87,7 @@ class Volunteer extends Component {
                 </div>
 
                 <div>
-                  <label for="message" className=" block labelFont mt-4">
+                  <label for="message" className="  labelFont mt-4">
                     <b>Message</b>
                   </label>
                   <textarea
@@ -78,7 +97,7 @@ class Volunteer extends Component {
                     className="col-xs-12 mb- inputs-text"
                   />
                 </div>
-                <div className="col-md-8 mb-5 ">
+                <div className="col-xs-8 mb-5 ">
                   <p>
                     <button className="button" type="submit" value="Submit">
                       <span className="buttonSpan">Submit</span>
@@ -87,7 +106,7 @@ class Volunteer extends Component {
                 </div>
                 <br />
               </Col>
-              <Col xs={12} sm={12} md={12} lg={5}>
+              <Col className="volunteerMain" xs={12} sm={12} md={12} lg={5}>
                 <h2 className="mb-4">Volunteer!</h2>
                 <p className="query">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa

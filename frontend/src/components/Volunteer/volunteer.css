@@ -14,6 +14,23 @@
 
 
 
+@media(max-width:1000px){
+
+  .flexForm{
+    display:flex;
+    
+  }
+
+  .volunteerMain{
+
+    order:-1 
+
+
+  }
+}
+
+
+
 .button{
   font-size: 20px;
   font-weight: bold;
@@ -28,8 +45,10 @@ span {
 }
 
 
-.block {
+label {
   display: block;
+  font-weight: bold;
+  padding: 0;
 }
 
 .inputs {
@@ -53,10 +72,7 @@ span {
   overflow:hidden !important;
 }
 
-.labelFont {
-  font-weight: bold;
-  padding: 0;
-}
+
 
 
 
