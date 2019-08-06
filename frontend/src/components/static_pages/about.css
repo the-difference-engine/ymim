@@ -1,6 +1,10 @@
 .images {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.images img {
   width: 400px;
-  margin: 10px;
 }
 
 .sub-heading {
@@ -10,7 +14,7 @@
 /* tablet */
 
 @media all and (min-width: 426px) and (max-width: 1023px) {
-  .images {
+  .images img {
     width: 300px;
   }
   .heading {
@@ -27,7 +31,7 @@
 /* mobile */
 
 @media all and (min-width: 300px) and (max-width: 425px) {
-  .images {
+  .images img {
     width: 250px;
   }
   .heading {

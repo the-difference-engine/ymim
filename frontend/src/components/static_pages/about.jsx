@@ -78,8 +78,8 @@ class About extends Component {
           <h1 className="heading">Our People</h1>
 
           <Row>
-            <Col xs="10" md="6" lg="6" xl="6">
-              <img src={KimWright} alt={"Kim Wright"} className="images" />
+            <Col xs="10" md="6" lg="6" xl="6" className="images">
+              <img src={KimWright} alt={"Kim Wright"} />
             </Col>
             <Col xs="10" md="6" lg="6" xl="6">
               <h1 className="heading text-left">Kim Wright, MBA</h1>
@@ -105,12 +105,8 @@ class About extends Component {
           </Row>
 
           <Row>
-            <Col xs="10" md="6" lg="6" xl="6">
-              <img
-                src={PierrePriestley}
-                alt={"Pierre Priestley"}
-                className="images"
-              />
+            <Col xs="10" md="6" lg="6" xl="6" className="images">
+              <img src={PierrePriestley} alt={"Pierre Priestley"} />
             </Col>
             <Col xs="10" md="6" lg="6" xl="6">
               <h1 className="heading text-left">Pierre Priestley, JD, MBA</h1>
@@ -133,12 +129,8 @@ class About extends Component {
           </Row>
 
           <Row>
-            <Col xs="10" md="6" lg="6" xl="6">
-              <img
-                src={ShirleyScott}
-                alt={"Shirley Scott"}
-                className="images"
-              />
+            <Col xs="10" md="6" lg="6" xl="6" className="images">
+              <img src={ShirleyScott} alt={"Shirley Scott"} />
             </Col>
             <Col xs="10" md="6" lg="6" xl="6">
               <h1 className="heading text-left">
