@@ -1,0 +1,43 @@
+.images {
+  width: 400px;
+  margin: 5%;
+}
+
+.lowermid {
+  background-color: #eeeaea;
+  width: 100%;
+}
+
+.sub-heading {
+  font-size: 24pt;
+}
+
+/* tablet */
+
+@media all and (min-width: 426px) and (max-width: 768px) {
+  .images {
+    width: 300px;
+  }
+  .heading {
+    font-size: 26pt;
+    padding: 5px 0;
+  }
+  .sub-heading {
+    font-size: 12pt;
+  }
+}
+
+/* mobile */
+
+@media all and (min-width: 300px) and (max-width: 425px) {
+  .images {
+    width: 250px;
+  }
+  .heading {
+    font-size: 18pt;
+    padding: 10px 0;
+  }
+  .sub-heading {
+    font-size: 18pt;
+  }
+}
