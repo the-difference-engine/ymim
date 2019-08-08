@@ -97,36 +97,29 @@ code {
   margin: 20px 0;
 }
 
-/*About css */
+/* Here lies code for the team.jsx; Does this belong here */
+.meetTheTeam {
+  padding: 20px 266px;
+  font-size: 1.2rem;
+}
 
-.lowermid {
+.meetTheTeam h2,
+.teamPhotosArea h2 {
+  margin-bottom: 20px;
+}
+.teamPhotosArea {
   background-color: #eeeaea;
-  width: 100%;
 }
 
-.floatp {
-  float: right;
-  width: 40%;
-  padding-top: 5%;
-  padding-bottom: 5%;
+.teamPhotos h2 {
+  padding: 20px;
 }
 
-.floatimg {
-  padding-top: 5%;
-  float: left;
-  width: 40%;
-  padding-top: 5%;
+.teamPhotosArea img {
+  padding: 20px;
+  height: 240px;
 }
 
-.group:after {
-  content: "";
-  display: table;
-  clear: both;
-  padding: 2%;
-  text-align: center;
-  margin: auto;
-}
-
-.margin-bottom {
-  margin-bottom: 7%;
+.teamPhotos {
+  margin: 20px;
 }

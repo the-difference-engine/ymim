@@ -18,34 +18,37 @@ import Ambassadors from "./components/static_pages/ambassadors";
 import Donate from "./components/donation_page";
 import Resources from "./components/resources";
 import Events from "./components/events";
+import ScrollToTop from "./components/to_the_top";
 
 let store = createStore(fetchData, applyMiddleware(thunk));
 
 const router = (
   <Provider store={store}>
     <Router>
-      <div className="container-fluid">
-        <div className="site-content">
-          <Header />
-          <div>
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route exact path="/donate" component={Donate} />
-              <Route exact path="/contact-us" component={Contact} />
-              <Route exact path="/about" component={About} />
-              <Route exact path="/enrollment" component={Enroll} />
-              <Route exact path="/meet-the-team" component={Team} />
-              <Route exact path="/ambassadors" component={Ambassadors} />
-              <Route exact path="/events" component={Events} />
-              <Route exact path="/admin" component={Admin} />
-              <Route exact path="/login" component={Login} />
-              <Route exact path="/resources" component={Resources} />
-              <Route component={NotFound} />
-            </Switch>
+      <ScrollToTop>
+        <div className="container-fluid">
+          <div className="site-content">
+            <Header />
+            <div>
+              <Switch>
+                <Route exact path="/" component={Home} />
+                <Route exact path="/donate" component={Donate} />
+                <Route exact path="/contact-us" component={Contact} />
+                <Route exact path="/about" component={About} />
+                <Route exact path="/enrollment" component={Enroll} />
+                <Route exact path="/meet-the-team" component={Team} />
+                <Route exact path="/ambassadors" component={Ambassadors} />
+                <Route exact path="/events" component={Events} />
+                <Route exact path="/admin" component={Admin} />
+                <Route exact path="/login" component={Login} />
+                <Route exact path="/resources" component={Resources} />
+                <Route component={NotFound} />
+              </Switch>
+            </div>
+            <Footer />
           </div>
-          <Footer />
         </div>
-      </div>
+      </ScrollToTop>
     </Router>
   </Provider>
 );

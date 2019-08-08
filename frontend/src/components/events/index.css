@@ -4,12 +4,53 @@
   margin: 10px;
   padding: 10px;
   border-radius: 10px;
+  width: 350px;
 }
 
 tr {
   margin: 100px;
 }
 
+.event {
+  margin: 10px;
+  padding: 90px;
+}
+
+.eventImage {
+  max-width: 240px;
+  max-height: 210px;
+}
+
+.eventbright-results {
+  margin: 25px;
+  align-content: center;
+}
+
+.event_container {
+  margin: 20px;
+}
+.event_container img {
+  margin-bottom: 30px;
+}
+
+.btn {
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  background-color: green;
+  border-radius: 2px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-right: 5px;
+  margin-bottom: 25px;
+}
+
+tr {
+  margin: 100px;
+}
 .event {
   margin: 10px;
   padding: 90px;
