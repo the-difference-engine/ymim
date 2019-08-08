@@ -53,3 +53,17 @@ textarea {
     max-width: unset !important;
   }
 }
+
+.error{
+  color:red;
+  display:block;
+}
+
+
+
+.dangerclass{
+
+
+  color:black;
+  background:darkred;
+}
