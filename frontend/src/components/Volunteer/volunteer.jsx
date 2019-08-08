@@ -169,14 +169,14 @@ class Volunteer extends Component {
                 </div>
 
                 <div>
-                  <label for="message" className="  labelFont mt-4">
+                  <label for="message" className=" fix labelFont mt-4">
                     <b>Message</b>
                   </label>
                   <textarea
                     id="message"
                     name=""
                     rows="1"
-                    className="col-xs-12 mb- inputs-text"
+                    className="col-xs-12 mb-2 inputs-text"
                   />
                 </div>
                 <div className="col-xs-8 mb-5 ">

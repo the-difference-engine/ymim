@@ -21,6 +21,7 @@
 
   .flexForm{
     display:flex;
+    flex-direction:column-reverse;
     
   }
 
@@ -95,11 +96,6 @@ label {
 .warning::after:hover {
   background: #fdd368;
 }
-
-
-
-
-
 
 
 .form-control{
