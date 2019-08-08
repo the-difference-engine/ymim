@@ -1,53 +1,36 @@
-
-
 .container-fluid {
-  overflow:hidden;
-  
+  overflow: hidden;
 }
-
 
 .messageInput {
   width: 40%;
 }
 
-
-
-
-.flexForm{
-  overflow:hidden;
+.flexForm {
+  overflow: hidden;
 }
 
-@media(max-width:1000px){
-
-  .flexForm{
-    display:flex;
-    flex-direction:column-reverse;
-    
+@media (max-width: 1000px) {
+  .flexForm {
+    display: flex;
+    flex-direction: column-reverse;
   }
 
-  .volunteerMain{
-
-    order:-1 
-
-
+  .volunteerMain {
+    order: -1;
   }
 }
 
-
-
-.button{
+.button {
   font-size: 20px;
   font-weight: bold;
   background-color: #fdd368;
   border-radius: 7px;
- 
 }
-
 
 span {
   justify-content: center;
 }
-
 
 label {
   display: block;
@@ -60,7 +43,7 @@ label {
   background: #eeeaea;
   border: none;
   color: black;
-  width:70vw !important;
+  width: 70vw !important;
 }
 
 .inputs-text {
@@ -70,16 +53,10 @@ label {
   border: none;
 }
 
-
-#message{
-  width:1000px;
-  overflow:hidden !important;
+#message {
+  width: 1000px;
+  overflow: hidden !important;
 }
-
-
-
-
-
 
 .main-content {
   line-height: 2;
@@ -97,19 +74,12 @@ label {
   background: #fdd368;
 }
 
-
-.form-control{
-  
-  width:70vw;
+.form-control {
+  width: 70vw;
 }
 
-
-@media(min-width:768px){
-
-
+@media (min-width: 768px) {
   .form-control {
-   
-    width:100%;
+    width: 100%;
   }
-
 }
