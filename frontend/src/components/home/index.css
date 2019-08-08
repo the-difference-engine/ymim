@@ -22,9 +22,30 @@
   margin: 10px;
 }
 
-@media (min-width: 600px) {
+/* tablet */
+
+@media all and (min-width: 520px) and (max-width: 768px) {
+  .title-carousel {
+    font-size: 24px;
+  }
+  .paragraph-carousel {
+    font-size: 12px;
+  }
+}
+
+/* mobile */
+
+@media all and (min-width: 320px) and (max-width: 425px) {
+  .title-carousel {
+    font-size: 12px;
+  }
+  .paragraph-carousel {
+    font-size: 6px;
+  }
+}
+/* @media (min-width: 600px) {
   .user-list-item {
     margin: 20px;
     border-radius: 5px;
   }
-}
+} */
