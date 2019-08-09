@@ -28,6 +28,18 @@
   color: #fdd368 !important;
 }
 
+.resources-link {
+  height: 100%;
+  padding: 40px 8px 20px 8px;
+  margin-right: 15px;
+  color: white !important;
+}
+
+.resources-link:hover {
+  text-decoration: none;
+  color: #fdd368 !important;
+}
+
 .nav-link-top {
   padding: 20px;
   color: #000000;
@@ -51,6 +63,14 @@ div.dropdown-menu.show {
 a.dropdown-item {
   font-size: 32px;
   color: white;
+}
+
+a.dropdown-item:active {
+  background-color: #fdd368 !important;
+}
+
+a.dropdown-item.active {
+  background-color: #fdd368 !important;
 }
 
 .logo {
