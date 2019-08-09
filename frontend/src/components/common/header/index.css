@@ -65,14 +65,6 @@ a.dropdown-item {
   color: white;
 }
 
-a.dropdown-item:active {
-  background-color: #fdd368 !important;
-}
-
-a.dropdown-item.active {
-  background-color: #fdd368 !important;
-}
-
 .logo {
   width: 180px;
   height: 180px;
