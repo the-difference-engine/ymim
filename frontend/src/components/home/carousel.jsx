@@ -2,8 +2,6 @@ import React, { Component } from "react";
 import { Carousel, Navbar } from "react-bootstrap";
 import "./index.css";
 import ymim1 from "../../assets/ymim1.png";
-import ymim2 from "../../assets/ymim2.png";
-import ymim3 from "../../assets/ymim3.png";
 import logo from "../../assets/logo.png";
 
 class CarouselComponent extends Component {
@@ -25,36 +23,6 @@ class CarouselComponent extends Component {
             </div>
           </Carousel.Caption>
         </Carousel.Item>
-        {/* <Carousel.Item>
-          <img className="d-block w-100" src={ymim2} alt="Third slide" />
-
-          <Carousel.Caption>
-            <div className="overlay">
-              <h3 className="title-carousel">Second slide label</h3>
-              <p className="paragraph-carousel">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-              </p>
-              <Navbar.Brand className="logo-div">
-                <img style={inline} className="logo" src={logo} alt="YMIM" />
-              </Navbar.Brand>
-            </div>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="d-block w-100" src={ymim3} alt="Third slide" />
-
-          <Carousel.Caption>
-            <div class="overlay">
-              <h3 className="title-carousel">Third slide label</h3>
-              <p className="paragraph-carousel">
-                Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-              </p>
-              <Navbar.Brand className="logo-div">
-                <img style={inline} className="logo" src={logo} alt="YMIM" />
-              </Navbar.Brand>
-            </div>
-          </Carousel.Caption>
-        </Carousel.Item> */}
       </Carousel>
     );
   }
