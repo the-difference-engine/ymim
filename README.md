@@ -36,7 +36,7 @@ The backend application is written in Python, using the [Django](https://www.dja
 
         brew install pipenv
 
-- Clone go into the Application
+- Clone and go into the application
 
         git clone git@github.com:the-difference-engine/ymim.git
         cd ymim
