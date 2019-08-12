@@ -1,24 +1,27 @@
 # Young Masterbuilders in Motion
 
-- [Young Masterbuilders in Motion](#young-masterbuilders-in-motion)
-  - [Getting Started With The App](#getting-started-with-the-app)
-    - [Mac/Linux Users](#maclinux-users)
-    - [PC Users (currently incomplete)](#pc-users-currently-incomplete)
-  - [Developing On The App](#developing-on-the-app)
-  - [What Technologies Are We Using?](#what-technologies-are-we-using)
-  - [External Packages in Use](#external-packages-in-use)
-    - [Frontend](#frontend)
-    - [Backend](#backend)
-  - [Deployment](#deployment)
-    - [General](#general)
-    - [Frontend](#frontend-1)
-    - [Required Frontend Env Vars](#required-frontend-env-vars)
-    - [Backend](#backend-1)
-    - [Required Backend Env Vars](#required-backend-env-vars)
+- [Young Masterbuilders in Motion](#Young-Masterbuilders-in-Motion)
+  - [Getting Started With The App](#Getting-Started-With-The-App)
+    - [Mac/Linux Users](#MacLinux-Users)
+    - [PC Users (currently incomplete)](#PC-Users-currently-incomplete)
+  - [Developing On The App](#Developing-On-The-App)
+  - [What Technologies Are We Using?](#What-Technologies-Are-We-Using)
+  - [External Packages in Use](#External-Packages-in-Use)
+    - [Frontend](#Frontend)
+    - [Backend](#Backend)
+  - [Deployment](#Deployment)
+    - [General](#General)
+    - [Frontend](#Frontend-1)
+    - [Required Frontend Env Vars](#Required-Frontend-Env-Vars)
+    - [Backend](#Backend-1)
+    - [Required Backend Env Vars](#Required-Backend-Env-Vars)
 
 ## Getting Started With The App
 
 I'm going to be very blunt: this will be much, much easier on a Mac or Linux system than it will be on a PC. On any PC that doesn't have Hyper-V (any system running any OS older/less powerful than Win10 Pro), you're going to need to run older, mostly unsupported programs. We strongly recommend that you either use a Mac or move to Linux.
+
+## What Technologies Are We Using?
+The backend application is written in Python, using the [Django](https://www.djangoproject.com/) framework and the [Django REST Framework](https://www.django-rest-framework.org/) library. The frontend application is written in Javascript, using the [React](https://reactjs.org/) framework and several other third party libraries, bootstrapped via the [create-react-app](https://github.com/facebook/create-react-app) tool.
 
 ### Mac/Linux Users
 - Install homebrew
@@ -30,26 +33,19 @@ I'm going to be very blunt: this will be much, much easier on a Mac or Linux sys
         brew install node
 
 - Install Pipenv: 
-  
+
         brew install pipenv
 
-- [Download and Install Docker](https://download.docker.com/mac/stable/Docker.dmg)
-- Set up Pipenv:
-    ```
-    cd backend
-    pipenv install --dev
-    cd ..
-    ```
-- Start Docker containers: 
+- Clone go into the Application
 
-        docker-compose up
+        git clone git@github.com:the-difference-engine/ymim.git
+        cd ymim
 
-### PC Users (currently incomplete)
+You should now be in the root of the project
 
-- Install [Docker Toolbox for Windows](https://docs.docker.com/toolbox/overview/)
+When you first clone the repo, you will need to create and populate `.env` files in both the `backend/` and `frontend/` directories to make the applications work correctly. Currently, we only require variables on the backend. 
 
-## Developing On The App
-When you first clone the repo, you will need to create and populate `.env` files in both the `backend/` and `frontend/` directories to make the applications work correctly. Currently, we only require variables on the backend. Here are the variables you will need to run the application:
+Here are the variables you will need to run the application. Copy this
 
     SECRET_KEY=<SECRET_KEY>
     DEBUG=True
@@ -60,22 +56,44 @@ When you first clone the repo, you will need to create and populate `.env` files
     DB_HOST="db"
     DB_PORT=5432
 
+Then `cd backend` and `vi .env` and paste this file in there. Then run `:wq!` to save. Then `cd ..` so you are back in the root of the project. 
+
 Use `pipenv run secret_key` to generate a value for SECRET_KEY and then save that into the file.
 
+- Install the FrontEnd Dependencies
+
+        cd frontend
+        npm install
+
+- Install Pipenv: 
+  
+        brew install pipenv
+
+- Set up Pipenv and install the backend dependencies:
+    ```
+    cd backend
+    pipenv install --dev
+    cd ..
+    ```
+
+- [Download and Install Docker](https://download.docker.com/mac/stable/Docker.dmg)
+- Start Docker containers (from root directory): 
+
+        docker-compose up
+
+### PC Users (currently incomplete)
+
+- Install [Docker Toolbox for Windows](https://docs.docker.com/toolbox/overview/)
+
 Once you have your containers running, the code in your local directory will be linked with the code inside the Docker containers. When you make changes, the app will reboot inside the containers to reflect those changes. The API will be accessible in your browser at `localhost:8000`, and the frontend application will be available at `localhost:3000`.
-
-## What Technologies Are We Using?
-The backend application is written in Python, using the [Django](https://www.djangoproject.com/) framework and the [Django REST Framework](https://www.django-rest-framework.org/) library. The frontend application is written in Javascript, using the [React](https://reactjs.org/) framework and several other third party libraries, bootstrapped via the [create-react-app](https://github.com/facebook/create-react-app) tool.
-
-
 
 
 ## External Packages in Use
 
 ### Frontend
-If you need to add new packages to the frontend app, you can use Yarn to do so:
+If you need to add new packages to the frontend app, you can use npm to do so:
 
-    yarn install <package_name>
+    npm install <package_name>
 
 Here are the existing packages already in use:
 
@@ -83,6 +101,7 @@ Here are the existing packages already in use:
 If you need to add new packages to the backend app, you can use Pipenv to do so:
 
     pipenv install <package_name>
+
 
 Here are the existing packages already in use:
 - [Django](https://www.djangoproject.com/): A full-featured web framework for Python
@@ -106,7 +125,7 @@ Here are the existing packages already in use:
 
 ### General
 
-This is deployed in two Heroku pipelines in the young-masterbuilders Heroku team, one for the frontend application and one for the backend. Each pipeline has a staging and production app, linked to the staging and master Github branches of this repo. The app is deployed by either pushing to those branches or manually deploying via the Heroku GUI.
+The application is deployed in two Heroku pipelines in the young-masterbuilders Heroku team, one for the frontend application and one for the backend. Each pipeline has a staging and production app, linked to the staging and master Github branches of this repo. The app is deployed by either pushing to those branches or manually deploying via the Heroku GUI.
 
 ### Frontend
 We're using the [lstoll/heroku-buildpack-monorepo](https://github.com/lstoll/heroku-buildpack-monorepo) & [mars/create-react-app](https://github.com/mars/create-react-app-buildpack) buildpacks. They must be installed in that order to function.
