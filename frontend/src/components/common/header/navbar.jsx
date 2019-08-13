@@ -74,8 +74,13 @@ class NavBar extends Component {
               <Navbar.Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="mx-auto my-auto align-links">
                   {/* resources  */}
-                  <NavLink className="resources-link" to="/resources.pdf" download target="_blank">
-                  Youth Resources
+                  <NavLink
+                    className="resources-link"
+                    to="/resources.pdf"
+                    download
+                    target="_blank"
+                  >
+                    Youth Resources
                   </NavLink>
                   {/* enroll  */}
                   <NavDropdown
