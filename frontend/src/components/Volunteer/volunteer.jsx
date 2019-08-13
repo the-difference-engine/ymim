@@ -19,65 +19,29 @@ class Volunteer extends Component {
        }
     }
 
-   onNameChange = (e) =>{
-        this.setState =({
-          name:e.target.value
-        })
+
+
+  onChange = (event) => {
+
+     const target = event.target;
+     const value = target.value;
+     const name = target.name;
+
+
+     this.setState({
+        [name]:value
+     })
+
+
   }
 
-  onRolechange = (e) =>{
-    this.setState =({
-      name:e.target.value
-    })
-}
-
-
-   onMessageChange = (e) =>{
-    this.setState =({
-      message:e.target.value
-    })
- }
-
-  
-   onWebsiteChange = (e) =>{
-        this.setState =({
-          website:e.target.value
-         })
-     }
-
-
-
-   onEmailChange = (e) =>{
-
-          this.setState =({
-          email:e.target.value
-            })
-         }
-
-
-   onPhoneChange = (e) =>{
-
-       this.setState =({
-        phone:e.target.value
-           })
-      }
-
-     
    onFormSubmit = (e) => {
       e.preventDefault();
 
 
-      let sendBackend = {
-        role:this.state.role,
-        name:this.state.name,
-        email:this.state.email,
-        phone:this.state.phone,
-        website:this.state.website,
-        message:this.state.message
-      }
+   
 
-
-      this.SendData(sendBackend);
+      this.SendData(this.state);
 
       this.setState({
         role:'',
@@ -121,19 +85,21 @@ class Volunteer extends Component {
                     id="exampleFormControlSelect1"
                   >
                     <option className="warning">choose your role</option>
-                    <option className="warning">1</option>
-                    <option className="warning">2</option>
-                    <option className="warning">3</option>
+                    <option className="warning">Ambassador/Volunteer</option>
+                    <option className="warning">Sponsor/Donor</option>
+                    <option className="warning">Partner/Organization</option>
                   </select>
                 </div>
                 <div>
                   <label for="name" className="col-xs-2 labelFont">
-                    <b>Name</b>  (required)
+                    <b>Name</b> (required)
                   </label>
                   <input
                     id="name"
                     required=""
-                    type="text"
+                    type="text" 
+                    name="name"
+                    onChange = {this.onChange}
                     className="col-md-10 inputs"
                   />
                 </div>
@@ -146,6 +112,8 @@ class Volunteer extends Component {
                     id="email"
                     required=""
                     type="email"
+                    name="email"
+                    onChange = {this.onChange}
                     className="col-md-10 inputs"
                   />
                 </div>
@@ -154,7 +122,11 @@ class Volunteer extends Component {
                   <label for="phone" className="col-xs-2  labelFont">
                     <b>Phone</b>  (required)
                   </label>
-                  <input id="phone" type="text" className="col-md-10 inputs" />
+                  <input id="phone" 
+                  type="text" 
+                  className="col-md-10  inputs"
+                  name="phone"
+                  onChange = {this.onChange} />
                 </div>
                 <br />
                 <div>
@@ -165,6 +137,8 @@ class Volunteer extends Component {
                     id="website"
                     type="text"
                     className="col-md-10 inputs"
+                    name="website"
+                    onChange={this.onChange}
                   />
                 </div>
 
@@ -176,12 +150,14 @@ class Volunteer extends Component {
                     id="message"
                     name=""
                     rows="1"
+                    name="message"
+                    onChange = {this.onChange}
                     className="col-xs-12 mb-2 inputs-text"
                   />
                 </div>
                 <div className="col-xs-8 mb-5 ">
                   <p>
-                    <button className="button" type="submit" value="Submit">
+                    <button onClick={this.onFormSubmit} className="button" type="submit" value="Submit">
                       <span className="buttonSpan">Submit</span>
                     </button>
                   </p>
