@@ -43,7 +43,7 @@ label {
   background: #eeeaea;
   border: none;
   color: black;
-  width:350px !important;
+  width: 350px !important;
 }
 
 .inputs-text {
@@ -74,10 +74,8 @@ label {
   background: #fdd368;
 }
 
-
-.form-control{
-  
-  width:350px;
+.form-control {
+  width: 350px;
 }
 
 @media (min-width: 768px) {
