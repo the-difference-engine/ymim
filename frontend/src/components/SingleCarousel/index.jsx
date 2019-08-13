@@ -22,7 +22,7 @@ class SingleCarousel extends Component {
             alt="First Slide"
           />
           <Carousel.Caption>
-            <div class="overlay">
+            <div className="overlay">
               <h3 className="title-carousel">{this.props.header}</h3>
               <p className="paragraph-carousel">
                 inspires, connects, and empowers young women orphans, adoptees,

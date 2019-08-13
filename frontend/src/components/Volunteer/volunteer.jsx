@@ -3,24 +3,6 @@ import { Container, Row, Col } from "react-bootstrap";
 import "./volunteer.css";
 import SingleCarousel from "../SingleCarousel/index";
 
-
-
-const validEmailRegex = RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
-
-
-const validPhoneRegex= RegExp(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im);
-
-
-
-const validateForm = (errors) => {
-  let valid = true;
-  Object.values(errors).forEach(
-    // if we have an error string set valid to false
-    (val) => val.length > 0 && (valid = false)
-  );
-  return valid;
-};
-
 class Volunteer extends Component {
   constructor(props) {
     super(props);
@@ -48,7 +30,14 @@ class Volunteer extends Component {
   onFormSubmit = e => {
     e.preventDefault();
 
-    this.SendData(this.state);
+    console.log("data is being sent", this.state);
+    // fetch("http://the backend", {
+    //   method: "POST",
+    //   body: JSON.stringify(this.state),
+    //   headers: { "Content-Type": "application/json" }
+    // }).then(function() {
+    //   console.log("data has been set");
+    // });
 
     this.setState({
       role: "",
@@ -60,19 +49,7 @@ class Volunteer extends Component {
     });
   };
 
-  SendData = data => {
-    console.log("data is being sent");
-    // fetch("http://the backend", {
-    //   method: "POST",
-    //   body: JSON.stringify(data),
-    //   headers: { "Content-Type": "application/json" }
-    // }).then(function() {
-    //   console.log("data has been set");
-    // });
-  };
-
   render() {
-    console.log(this.state);
     return (
       <>
         <SingleCarousel className="carousel" header="Volunteer" />
@@ -83,7 +60,7 @@ class Volunteer extends Component {
                 <Col xs={12} sm={12} md={12} lg={5} className="mr-2">
                   <h2 className="mb-4">Get Involved!</h2>
                   <div className="form-group">
-                    <label for="exampleFormControlSelect1">
+                    <label>
                       <b>Select your role</b>
                     </label>
                     <select
@@ -91,6 +68,7 @@ class Volunteer extends Component {
                       id="exampleFormControlSelect1"
                       name="role"
                       onChange={this.onChange}
+                      value={this.state.role}
                     >
                       <option className="warning">choose your role</option>
                       <option className="warning">
@@ -103,7 +81,7 @@ class Volunteer extends Component {
                     </select>
                   </div>
                   <div>
-                    <label for="name" className="col-xs-2 labelFont">
+                    <label className="col-xs-2 labelFont">
                       <b>Name</b> (required)
                     </label>
                     <input
@@ -113,11 +91,12 @@ class Volunteer extends Component {
                       name="name"
                       className="col-md-10 inputs"
                       onChange={this.onChange}
+                      value={this.state.name}
                     />
                   </div>
                   <br />
                   <div>
-                    <label for="email" className="col-xs-2  labelFont">
+                    <label className="col-xs-2  labelFont">
                       <b>Email</b> (required)
                     </label>
                     <input
@@ -127,11 +106,12 @@ class Volunteer extends Component {
                       name="email"
                       className="col-md-10 inputs"
                       onChange={this.onChange}
+                      value={this.state.email}
                     />
                   </div>
                   <br />
                   <div>
-                    <label for="phone" className="col-xs-2  labelFont">
+                    <label className="col-xs-2  labelFont">
                       <b>Phone</b> (required)
                     </label>
                     <input
@@ -140,11 +120,12 @@ class Volunteer extends Component {
                       name="phone"
                       className="col-md-10 inputs"
                       onChange={this.onChange}
+                      value={this.state.phone}
                     />
                   </div>
                   <br />
                   <div>
-                    <label for="website" className="col-xs-4  labelFont">
+                    <label className="col-xs-4  labelFont">
                       <b>Website</b>
                     </label>
                     <input
@@ -153,20 +134,21 @@ class Volunteer extends Component {
                       name="website"
                       className="col-md-10 inputs"
                       onChange={this.onChange}
+                      value={this.state.website}
                     />
                   </div>
 
                   <div>
-                    <label for="message" className=" fix labelFont mt-4">
+                    <label className=" fix labelFont mt-4">
                       <b>Message</b>
                     </label>
                     <textarea
                       id="message"
-                      name=""
                       rows="1"
-                      name="website"
+                      name="message"
                       className="col-xs-12 mb-2 inputs-text"
                       onChange={this.onChange}
+                      value={this.state.message}
                     />
                   </div>
                   <div className="col-xs-8 mb-5 ">
