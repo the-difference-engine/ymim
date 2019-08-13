@@ -11,7 +11,7 @@ class SingleCarousel extends Component {
         <Carousel.Item>
           <img className="d-block w-100" src={ymim1} alt="First Slide" />
           <Carousel.Caption>
-            <div class="overlay">
+            <div className="overlay">
               <h3 className="title-carousel">{this.props.header}</h3>
               <p className="paragraph-carousel">
                 inspires, connects, and empowers young women orphans, adoptees,
