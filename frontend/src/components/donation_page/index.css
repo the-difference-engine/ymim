@@ -1,0 +1,29 @@
+.content-styling {
+  font-size: 24px;
+  margin-left: 266px;
+  margin-right: 266px;
+}
+
+.content-styling p {
+  padding-bottom: 25px;
+}
+
+h1 {
+  font-size: 48px;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  text-align: center;
+}
+
+/* tablet  and mobile */
+
+@media (max-width: 1023px) {
+  .content-styling {
+    margin-left: 8.33%;
+    margin-right: 8.33%;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+}
