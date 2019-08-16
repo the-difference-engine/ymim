@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./contact.css";
 import "react-bootstrap";
+import SingleCarousel from '../SingleCarousel/index';
 
 
 
@@ -157,6 +158,7 @@ class Contact extends Component {
 
    
     return (
+      <SingleCarousel header={"contact"} />
       <div className="container">
         <h1 className="mt-5">Contact us</h1>
         <div className="main-content container col-sm-6 float-right mt-5">
