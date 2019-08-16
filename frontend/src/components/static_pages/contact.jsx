@@ -158,6 +158,7 @@ class Contact extends Component {
 
    
     return (
+      <>
       <SingleCarousel header={"contact"} />
       <div className="container">
         <h1 className="mt-5">Contact us</h1>
@@ -257,6 +258,7 @@ class Contact extends Component {
           </form>
         </div>
       </div>
+      </>
     );
   }
 }
