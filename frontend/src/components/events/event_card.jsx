@@ -1,6 +1,7 @@
 import React from "react";
 import { Container, Card, CardDeck } from "react-bootstrap";
 import "./index.css";
+import Moment from 'react-moment';
 
 export function EventList({ children }) {
   return <ul className="list-group">{children}</ul>;
@@ -23,9 +24,9 @@ const EventItems = props => {
                 </a>
                 <p>{props.description}</p>
                 <p className="eventDisplayTime">Event date and time:</p>
-                <p>{props.start}</p>
+                <p><Moment format='llll'>{props.start}</Moment></p>
                 <p>to</p>
-                <p>{props.end}</p>
+                <p><Moment format='llll'>{props.end}</Moment></p>
               </Card>
             </CardDeck>
           </div>
