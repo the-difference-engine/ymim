@@ -7,7 +7,7 @@ import "react-bootstrap";
 const validEmailRegex = RegExp(/^(([^<>()\[\]\.,;:\s@\"]+(\.[^<>()\[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i);
 
 
-const validPhoneRegex= RegExp(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im);
+const validPhoneRegex= RegExp(/^[\+]?[(]?[0-9]{3}-[)]?[-\s\.]?[0-9]{3}-[-\s\.]?[0-9]{4,6}$/im);
 
 
 
@@ -59,18 +59,18 @@ class Contact extends Component {
         break;
 
       case 'phone':
-       errors.number = validPhoneRegex.test(value) ? '' :'Enter valid number (xxx)xxx-xxxx';
+       errors.number = validPhoneRegex.test(value) ? '' :'Enter valid numbers (xxx)xxx-xxxx, letters  are not acceptable';
 
       break;
 
       case 'message':
 
-      console.log(value.length,"value lenghttt");
+
 
     errors.isLimit = value.length < 255 ? '' : 'You have exceeded the text limit of 255';
 
 
-    console.log('this is the lengthhh' ,value.length)
+
        
       break;
 
@@ -81,21 +81,19 @@ class Contact extends Component {
     this.setState({errors, [name]: value});
 
     
-    console.log(errors.isLimit.length,"gwllwej");
 
     const errorsObject = this.state.errors;
 
     const errArrayValue = Object.values(errorsObject);
 
  
-    console.log("array values",errArrayValue);
+    
      const booleanfunction = errArrayValue.every(this.checkErrors);
 
-      console.log("this is the boolean", booleanfunction)
+    
 
     if(booleanfunction ){
     if(validateForm(this.state.errors)){
-      console.info('valid form');
       this.setState({
         isinvalid:false
       })
@@ -104,7 +102,6 @@ class Contact extends Component {
     }
 
     else{
-      console.error('invalid form');
       this.setState({
         isinvalid:true
       })
@@ -120,8 +117,6 @@ class Contact extends Component {
 
 
   checkErrors = (arr) =>{  
-
-     console.log(arr,"solve the logic")
     if(arr == ""){
 
       return true
@@ -135,53 +130,13 @@ class Contact extends Component {
 
   }
 
-  // textlimit =(e) =>{
 
-  //   console.log(e.target.value,"this is the value");
-
-  //   const textlimit = e.target.value;
-
-  //   console.log(textlimit.length,"this is the value of the limit");
-
-
-  //   const textlength = textlimit.length;
-
-  //    const boolean = this.alertlimit(textlength)
 
 
   
     
 
-  // }
-
-
-  // alertlimit = (textlimit) => {
-
-
-  //   if(textlimit == 255) {
-
-  //     errors.isLimit = "You have reach the text limit 255 letters";
-  //   }
-
-
-  //   this.setState({})
-      
-  // }
-
-
-  // createAlert =(message, className) =>{
-
-  //   const createDiv = document.createElement('div');
-
-  //   createDiv.setAttribute('class',className);
-
-
-  //   createDiv.innerText(message);
-
-
-
-
-  // }
+ 
 
   
   handleSubmit = (event) =>{
@@ -200,12 +155,7 @@ class Contact extends Component {
 
     const errorArray = Object.entries(errors);
 
-    console.log('array',errorArray);
    
-    console.log('this the name length',errors.name.length)
-
-    console.log(errors.length);
-    console.log('console.errors',errors);
     return (
       <div className="container">
         <h1 className="mt-5">Contact us</h1>
@@ -274,7 +224,7 @@ class Contact extends Component {
               </label>
               <input onChange={this.handleChange}
                id="phone"
-                type="number" 
+                type="phone" 
                 name="phone"                
                 className="col-md-10" />
                 {errors.number.length > 0 && 
