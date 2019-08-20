@@ -36,3 +36,5 @@ frontend/yarn.lock
 frontend/package.json
 
 node_modules
+
+docker-compose.yml
