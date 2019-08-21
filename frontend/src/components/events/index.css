@@ -1,3 +1,8 @@
+.eventbright-results div {
+  padding: 20px;
+  border: solid 2px black;
+}
+
 .event_container {
   border: 2px solid green;
   border-width: 0.5px;
