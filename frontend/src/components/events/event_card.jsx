@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Card, CardDeck } from "react-bootstrap";
 import "./index.css";
 import Moment from 'react-moment';
+import EventImage from "../../components/events/atoms/image/image";
 
 export function EventList({ children }) {
   return <ul className="list-group">{children}</ul>;
@@ -19,9 +20,12 @@ const EventItems = props => {
                 <a href={props.url}>
                   <h3>{props.name}</h3>
                 </a>
-                <a href={props.url}>
-                  <img className="eventImage" src={props.logo} alt="event" />
-                </a>
+                <div>
+                  <EventImage
+                    url={props.url}
+                    image={props.logo}
+                  />
+                </div>
                 <p>{props.description}</p>
                 <p className="eventDisplayTime">Event date and time:</p>
                 <p><Moment format='llll'>{props.start}</Moment></p>
