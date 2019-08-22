@@ -34,7 +34,7 @@ class NavBar extends Component {
                 <img className="logo" src={logo} alt="YMIM" />
               </Navbar.Brand>
               {/* first navbar (white) */}
-              <Nav className="mx-auto my-auto">
+              <Nav className="ml-lg-3 ml-xl-3 ml-auto mr-auto my-auto">
                 <NavLink className="nav-link-top mr-5" to="/about">
                   About
                 </NavLink>
@@ -74,8 +74,13 @@ class NavBar extends Component {
               <Navbar.Collapse isOpen={this.state.isOpen} navbar>
                 <Nav className="mx-auto my-auto align-links">
                   {/* resources  */}
-                  <NavLink className="resources-link" to="/resources.pdf" download target="_blank">
-                  Youth Resources
+                  <NavLink
+                    className="resources-link"
+                    to="/resources.pdf"
+                    download
+                    target="_blank"
+                  >
+                    Youth Resources
                   </NavLink>
                   {/* enroll  */}
                   <NavDropdown
