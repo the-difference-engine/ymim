@@ -1,0 +1,25 @@
+.text {
+  font-size: 14px;
+  font-family: sans-serif;
+  margin: 0;
+}
+
+.text.paragraph {
+  font-size: 16px;
+  color: #808080;
+}
+
+.text.subheading {
+  font-size: 18px;
+  font-weight: bold;
+  color: #fc03b6;
+}
+
+.text.heading {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.text.gutterBottom {
+  margin-bottom: 0.5em;
+}
