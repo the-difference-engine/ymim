@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Card, CardDeck } from "react-bootstrap";
 import "./index.css";
 import Moment from 'react-moment';
+import Text from '../events/atoms/text/text';
 
 export function EventList({ children }) {
   return <ul className="list-group">{children}</ul>;
@@ -17,16 +18,13 @@ const EventItems = props => {
             <CardDeck>
               <Card>
                 <a href={props.url}>
-                  <h3>{props.name}</h3>
+                <Text text={props.name} type="subheading" />
+                <img className="eventImage" src={props.logo} alt="event" />
                 </a>
-                <a href={props.url}>
-                  <img className="eventImage" src={props.logo} alt="event" />
-                </a>
-                <p>{props.description}</p>
-                <p className="eventDisplayTime">Event date and time:</p>
-                <p><Moment format='llll'>{props.start}</Moment></p>
-                <p>to</p>
-                <p><Moment format='llll'>{props.end}</Moment></p>
+                <Text text={props.description} type="paragraph" />
+                <Text text={<Moment format='llll'>{props.start}</Moment>} type="paragraph"/>
+                <Text text="to" type="paragraph" />
+                <Text text={<Moment format='llll'>{props.end}</Moment>} type="paragraph"/>
               </Card>
             </CardDeck>
           </div>

@@ -5,6 +5,7 @@ import "./index.css";
 import logo from "../../assets/ymim1.png";
 import { EventList, EventItems } from "./event_card";
 import { CardDeck } from "react-bootstrap";
+import Text from '../events/atoms/text/text';
 
 class Events extends Component {
   constructor(props) {
@@ -28,7 +29,8 @@ class Events extends Component {
   render() {
     return (
       <div>
-        <h1>Upcoming Events</h1>
+        <Text text="Upcoming Events" type="heading"/>
+            {/*console.log(EventData.events.map(event => event.name))*/}
         <div className="eventbright-results">
           <EventList>
             <CardDeck>
