@@ -30,7 +30,6 @@ class Events extends Component {
     return (
       <div>
         <Text text="Upcoming Events" type="heading"/>
-            {/*console.log(EventData.events.map(event => event.name))*/}
         <div className="eventbright-results">
           <EventList>
             <CardDeck>
