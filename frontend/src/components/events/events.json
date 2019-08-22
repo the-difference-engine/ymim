@@ -1,0 +1,114 @@
+{
+    "events": [
+        {
+            "name": "Event a year ago, also ?description is long",
+            "id": "65873219573",
+            "url": "https://www.eventbrite.com/e/old-school-dance-fundraiser-dance-to-make-a-difference-tickets-51641188184",
+            "start": "2018-07-08T19:04:00",
+            "end": "2018-07-08T22:06:00",
+            "status": "completed",
+            "description": "You Can Dance to Make a Difference!\nOLD SCHOOL DANCE FUNDRAISER\n80's, R&B, Disco, Dusties, Steppin' & House!\nThe Young Masterbuilders in Motion, Inc., (YMIM) a 501(c)(3) nonprofit organization, is hosting an Old School Dance to raise funds\u00a0to support young adult women orphans, adoptees, and foster youth alumnae. Our participants have aged out of foster care and are enrolled or seeking to enroll in a high-demand trade school certification program, or in a college degree seeking program.\u00a0\nJoin us for great music, board and card games, and LINE DANCE LESSONS for a great cause!\nHelping our young adult women who are foster youth alumnae is critically important. According to the National Foster Youth Institute, after reaching the age of 18, 20% of the children who were in foster care will become instantly homeless. Only 1 out of every 2 foster youth will have some form of gainful employment by the age of 24. There is less than a 3% chance for children who have aged out of foster care to earn a college degree at any point in their life.\nAlthough, those facts are startling, together we can reverse the impact of poverty through educating young women who are foster youth alumnae.\nLearn more about us by visiting the Young Masterbuilders in Motion website at https://www.theymim.org\nThank you in advance for your support.\u00a0And remember, if your employer offers matching funds, your contribution\u00a0doubles!\u00a0\nFor now, just get your dance shoes ready and meet us on the dance floor soon!\nKim Wright, MBA, U.S. Army Veteran\nFounder, Foster Youth Alumna\nYoung Masterbuilders in Motion, Inc.\nLearn more about us at www.theymim.org\nCall us at 773.941.1200.\n\nFAQs\n\u00a0\nAre there ID or minimum age requirements to enter the event?\nThe Broadway Armory provides safety officers while the facility is open. For this event, attendees must show ID and be age 21 and over. Your attendance at this event will likely be captured in photos. Attending the event grants consent for your image to be used in publicity for the nonprofit marketing purposes..\n\u00a0\nWhat are my transportation/parking options for getting to and from the event?\nMetered street parking, and Divvy bike parking are available. Nearby public transportation is via the CTA Broadway 36 bus line or the CTA Redline Thorndale station.\u00a0\nWhat can I bring into the event?\nYour bright smile. Comfortable dance apparel and shoes. Your friends and family you want to hang out with laughing and having fun. Your card or board game to play when you want to sit down after so much dancing! Bring business cards for networking.\u00a0\nHow can I contact the organizer with any questions?\nFounder@theymim.org\u00a0\nWhat's the refund policy?\nRefunds are not available.\u00a0\nDo I have to bring my printed ticket to the event?\nYes, you must bring your printed ticket to the event for admission, wifi is not available. Mobile signal transmission will likely be unreliable.\u00a0\nCan I update my registration information?\nNo\u00a0\nIs my registration fee or ticket transferrable?\n\u00a0No\nIs it ok if the name on my ticket or registration doesn't match the person who attends?\nNo\u00a0",
+            "venue": "Ballroom - 2nd Floor",
+            "logo": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F52055887%2F35605838310%2F1%2Foriginal.jpg?h=200&w=450&auto=compress&rect=5%2C3%2C804%2C402&s=3aea8ccc2ee7b79c95976e0aa34f4b29"
+        }, 
+        {
+            "name": "Completed event/When ?venue is null",
+            "id": "52439888125",
+            "url": "https://www.eventbrite.com/e/seven-tickets-65873219573",
+            "start": "2019-04-23T10:30:00",
+            "end": "2019-04-23T12:00:00",
+            "status": "completed", 
+            "description": "(!venue && online_event) == online_event, (!venue && !online_event) == venue TBD", 
+            "venue": null,  
+            "logo": null
+        },   
+        {
+            "name": "Reccuring event",
+            "id": "99083692284",
+            "url": "https://www.eventbrite.com/e/charity-care-package-drive-4-girls-young-women-aging-out-of-foster-care-tickets-57138421557",
+            "start": "2019-07-31T19:00:00",
+            "end": "2019-07-31T22:00:00",
+            "status": "completed", 
+            "description": "Reccuring event. This event is in the past, hence the status is completed", 
+            "venue": "This is example of a long venue name",  
+            "logo": null
+        }, 
+        {
+            "name": "Reccuring event",
+            "id": "99083692284",
+            "url": "https://www.eventbrite.com/e/charity-care-package-drive-4-girls-young-women-aging-out-of-foster-care-tickets-57138421557",
+            "start": "2019-07-31T19:00:00",
+            "end": "2019-07-31T22:00:00",
+            "status": "completed", 
+            "description": "Reccuring event. This event is in the past, hence the status is completed", 
+            "venue": "University of Illinois",  
+            "logo": null
+        }, 
+        {
+            "name": "Cancelled event",
+            "id": "86794109449",
+            "url": "https://www.eventbrite.com/e/cancelled-tickets-69949562023",
+            "start": "2019-08-29T13:15:00",
+            "end": "2019-07-31T15:45:00",
+            "status": "canceled", 
+            "description": "This event is show the cancelled status. This should not be visible to the user", 
+            "venue": "Chicago Art Institute",  
+            "logo": null
+        }, 
+        {
+            "name": "This is an example of a long event title. Eventbrite max length is 75 char!",
+            "id": "67347096987",
+            "url": "https://www.eventbrite.com/e/seven-tickets-65873219573",
+            "start": "2019-08-21T14:00:00",
+            "end": "2019-08-21T19:00:00",
+            "status": "completed", 
+            "description": "Ensure formatting is consistent when there are mixture of short and long event name", 
+            "venue": "Indianapolis",  
+            "logo": null
+        }, 
+        {
+            "name": "Volunteer Event Day - ended",
+            "id": "99350766371",
+            "url": "https://www.eventbrite.com/e/four-tickets-65872523491",
+            "start ": "2019-10-31T11:00:00",
+            "end": "2019-07-31T16:00:00",
+            "status": "ended",  
+            "description": "Event that has ended example, assume it is 31 Oct 2019, 6PM",
+            "venue": "Chicago Public Library",
+            "logo": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F65907229%2F290798976738%2F1%2Foriginal.20190718-235429?h=200&w=450&auto=compress&rect=0%2C1920%2C3840%2C1920&s=18afdfa04cbd49efd60be8d4e6d77fe8"
+        },
+        {
+            "name": "Volunteer Event Night - started",
+            "id": "34524599512",
+            "url": "https://www.eventbrite.com/e/seven-tickets-65873219573",
+            "start": "2019-10-31T17:00:00",
+            "end": "2019-10-31T20:00:00",
+            "status": "started", 
+            "description": "Event that has started example, assume it is 31 Oct 2019, 6PM", 
+            "venue": "Chicago Public Library",  
+            "logo": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F65907229%2F290798976738%2F1%2Foriginal.20190718-235429?h=200&w=450&auto=compress&rect=0%2C1920%2C3840%2C1920&s=18afdfa04cbd49efd60be8d4e6d77fe8"
+        }, 
+        {
+            "name": "Upcoming event",
+            "id": "42616348162",
+            "url": "https://www.eventbrite.com/e/three-tickets-65879989823",
+            "start": "2020-01-01T17:00:00",
+            "end": "2020-01-01T20:00:00",
+            "status": "live",  
+            "description": "This is an example of an upcoming event", 
+            "venue": "Millennium Park", 
+            "logo": "https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F65907229%2F290798976738%2F1%2Foriginal.20190718-235429?h=200&w=450&auto=compress&rect=0%2C1920%2C3840%2C1920&s=18afdfa04cbd49efd60be8d4e6d77fe8"
+        },
+        {
+            "name": "An event in draft with only mandatory fields",
+            "id": "02491612858",
+            "url": "https://www.eventbrite.com/e/three-tickets-12345",
+            "start": "2020-03-01T14:00:00",
+            "end": "2020-01-03T16:00:00",
+            "status": "draft",  
+            "description": null, 
+            "venue": null,
+            "logo": null
+        }
+    ]
+}
