@@ -39,6 +39,7 @@
   font-size: 24pt;
   margin: 0 20px 0 0 !important;
   color: #519b46;
+  font-family: "Gotham Light Font", sans-serif;
 }
 
 .footer-image-header {
@@ -92,6 +93,7 @@
   .space-anchors {
     font-size: 14pt;
     color: #519b46;
+    font-family: "Gotham Light Font", sans-serif;
   }
   .ym-button {
     font-size: 15px;
@@ -134,6 +136,7 @@
   .space-anchors {
     font-size: 12pt;
     color: #519b46;
+    font-family: "Gotham Light Font", sans-serif;
   }
   .ym-button {
     font-size: 10px;
