@@ -103,6 +103,10 @@ a.dropdown-item {
 
 /* responsiveness */
 @media all and (min-width: 768px) and (max-width: 2048px) {
+  .align-links {
+    padding-left: 166px;
+  }
+
   .ym-top {
     height: 140px;
   }
@@ -133,7 +137,7 @@ a.dropdown-item {
   }
 
   .align-links {
-    padding-left: 180px;
+    padding-left: 296px;
     color: white;
   }
 }

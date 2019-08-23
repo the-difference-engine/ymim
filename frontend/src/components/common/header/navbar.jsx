@@ -72,7 +72,7 @@ class NavBar extends Component {
             <Navbar collapseOnSelect expand="lg">
               <Navbar.Toggle className="ml-3" onClick={this.toggle} />
               <Navbar.Collapse isOpen={this.state.isOpen} navbar>
-                <Nav className="mx-auto my-auto align-links">
+                <Nav className="ml-lg-3 ml-xl-3 ml-auto mr-auto my-auto align-links">
                   {/* resources  */}
                   <NavLink
                     className="resources-link"
