@@ -1,6 +1,7 @@
-#aboutPageContainer {
-  padding-left: 266px;
-  padding-right: 266px;
+#aboutPageTextRow {
+  padding-left: 133px;
+  padding-right: 133px;
+  display: block;
 }
 
 .images {
@@ -19,7 +20,7 @@
 /* tablet */
 
 @media all and (min-width: 426px) and (max-width: 1023px) {
-  #aboutPageContainer {
+  #aboutPageTextRow {
     padding-left: 133px;
     padding-right: 133px;
   }
@@ -45,7 +46,7 @@
 /* mobile */
 
 @media all and (min-width: 300px) and (max-width: 425px) {
-  #aboutPageContainer {
+  #aboutPageTextRow {
     padding-left: 20px;
     padding-right: 20px;
   }
