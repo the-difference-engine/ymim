@@ -23,7 +23,7 @@
     padding-left: 133px;
     padding-right: 133px;
   }
-  
+
   .images {
     margin: 0;
     margin-bottom: 20px;
@@ -47,7 +47,7 @@
 @media all and (min-width: 300px) and (max-width: 425px) {
   #aboutPageContainer {
     padding-left: 20px;
-    padding-right: 20px;    
+    padding-right: 20px;
   }
   .images {
     margin: 0;
