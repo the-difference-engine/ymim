@@ -1,3 +1,8 @@
+#aboutPageContainer {
+  padding-left: 266px;
+  padding-right: 266px;
+}
+
 .images {
   margin: 0;
   margin-bottom: 40px;
@@ -14,6 +19,11 @@
 /* tablet */
 
 @media all and (min-width: 426px) and (max-width: 1023px) {
+  #aboutPageContainer {
+    padding-left: 133px;
+    padding-right: 133px;
+  }
+  
   .images {
     margin: 0;
     margin-bottom: 20px;
@@ -35,6 +45,10 @@
 /* mobile */
 
 @media all and (min-width: 300px) and (max-width: 425px) {
+  #aboutPageContainer {
+    padding-left: 20px;
+    padding-right: 20px;    
+  }
   .images {
     margin: 0;
     margin-bottom: 10px;

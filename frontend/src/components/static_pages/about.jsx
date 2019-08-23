@@ -11,7 +11,7 @@ class About extends Component {
     return (
       <Container fluid="true">
         <SingleCarousel />
-        <Container>
+        <Container id="aboutPageContainer">
           <h1 className="heading"> About </h1>
           <h2 className="sub-heading">Our Mission</h2>
           <p className="text-left">
