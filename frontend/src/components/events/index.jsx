@@ -3,7 +3,7 @@ import { connect } from "react-redux";
 import { events } from "../../actions";
 import "./index.css";
 import logo from "../../assets/ymim1.png";
-import { EventList, EventItems } from "./event_card";
+import { EventList, EventCard } from "../events/molecules/event_card";
 import { CardDeck } from "react-bootstrap";
 import Text from '../events/atoms/text/text';
 
@@ -35,7 +35,7 @@ class Events extends Component {
             <CardDeck>
               {this.props.events.map(event => {
                 return (
-                  <EventItems
+                  <EventCard
                     key={event.id}
                     name={
                       event.name
