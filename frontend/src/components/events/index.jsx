@@ -2,10 +2,7 @@ import React, { Component } from "react";
 import { connect } from "react-redux";
 import { events } from "../../actions";
 import "./index.css";
-import logo from "../../assets/ymim1.png";
-import { EventList, EventCard } from "../events/molecules/event_card";
-import { CardDeck } from "react-bootstrap";
-import Text from '../events/atoms/text/text';
+import EventSection from "./organisms/event_section";
 
 class Events extends Component {
   constructor(props) {
@@ -27,36 +24,7 @@ class Events extends Component {
   };
 
   render() {
-    return (
-      <div>
-        <Text text="Upcoming Events" type="heading"/>
-        <div className="eventbright-results">
-          <EventList>
-            <CardDeck>
-              {this.props.events.map(event => {
-                return (
-                  <EventCard
-                    key={event.id}
-                    name={
-                      event.name
-                        ? event.name.text
-                        : "Young Masterbuilders In Motion Event"
-                    }
-                    description={
-                      event.description ? event.description.text : ""
-                    }
-                    start={event.start ? event.start.local : "TBA"}
-                    end={event.end ? event.end.local : "TBA"}
-                    logo={event.logo ? event.logo.url : logo}
-                    url={event.url}
-                  />
-                );
-              })}
-            </CardDeck>
-          </EventList>
-        </div>
-      </div>
-    );
+    return <EventSection events={this.props.events} sectionTitle={"Upcoming Events"} />;
   }
 }
 
