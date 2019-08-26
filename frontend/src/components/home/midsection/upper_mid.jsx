@@ -11,7 +11,7 @@ class UpperMid extends Component {
             <h2 className="text-center heading">Who Are We?</h2>
             <div className="line-paragraph">
               Become a Young Masterbuilders in Motion (YMIM) scholar and enroll
-              as a partcipant. The YMIM empowers young women orphans, adoptees,
+              as a participant. The YMIM empowers young women orphans, adoptees,
               and foster alumnae to build resiliency, hope, and a bright future.
             </div>
             <div className="text-center line-paragraph">
