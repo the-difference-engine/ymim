@@ -17,7 +17,7 @@ class UpperMid extends Component {
             <div className="text-center line-paragraph">
               <a href="/enrollment">
                 <button className="ym-button text-center" id="enroll">
-                 Enroll
+                  Enroll
                 </button>
               </a>
             </div>
