@@ -15,9 +15,11 @@ class UpperMid extends Component {
               and foster alumnae to build resiliency, hope, and a bright future.
             </div>
             <div className="text-center line-paragraph">
-              <button className="ym-button text-center" id="enroll">
-                Enroll
-              </button>
+              <a href="/enrollment">
+                <button className="ym-button text-center" id="enroll">
+                 Enroll
+                </button>
+              </a>
             </div>
             <div>
               <p className="bottom-text upper-mid-sectiontext">
