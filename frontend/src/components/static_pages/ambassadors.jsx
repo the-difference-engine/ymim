@@ -1,9 +1,20 @@
 import React, { Component } from "react";
+import Ymim3 from "../../assets/ymim3.png";
+import "./about.css";
 
 class Ambassadors extends Component {
   render() {
     return (
       <div>
+        <img src={Ymim3} alt="ymim3" width="100%" display="block" height="580px"/>
+        <div class = "caption2">
+          <div class = "overlay-volunteer">
+            <h3 class = "title-volunteer">Volunteer
+            </h3>
+            <p class = "volunteer-paragraph"> Inspires, connects, and empowers young women orphans, adoptees, and foster youth alumnae to thrive.
+            </p>
+          </div>
+        </div>
         <h1>Volunteer Ambassadors</h1>
         <div>
           <p>Dear Volunteer Ambassadors!</p>

@@ -1,0 +1,41 @@
+.overlay-volunteer {
+    position: relative;
+    bottom: 237px;
+    width: 100%;
+    background: rgba(81, 155, 70, 0.65);
+    margin: 0;
+    padding: 0;
+    height: 238px;
+    overflow: hidden;
+  }
+
+.caption2 {
+  position: absolute;
+  right: 0 !important;
+  left: 0 !important;
+  z-index: 10;
+  color: #fff;
+  text-align: center;
+  }
+  .title-volunteer {
+    font-size: 26pt;
+    font-family: "Montserrat";
+    text-align: left;
+    color: #fff;
+    padding: 0 0 0 24px;
+    margin-top: 20px;
+    display: inline-block;
+    float: left;
+    width: 80%;
+  }
+
+  .volunteer-paragraph {
+    font-size: 22pt;
+    font-family: "Montserrat";
+    text-align: left;
+    color: #fff;
+    padding: 0 0 0 24px;
+    display: inline-block;
+    float: left;
+    width: 80%;
+  }
