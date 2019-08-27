@@ -16,12 +16,12 @@ class Events extends Component {
     this.props.fetchEvents();
   }
 
-  selectForEdit = id => {
+/*   selectForEdit = id => {
     let edit_event = this.props.events[id];
     this.setState({
       event: edit_event
     });
-  };
+  }; */
 
   render() {
     return <EventSection events={this.props.events} sectionTitle={"Upcoming Events"} />;
