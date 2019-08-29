@@ -83,7 +83,7 @@ Use `pipenv run secret_key` to generate a value for SECRET_KEY and then save tha
 
 ### PC Users (currently incomplete)
 
-- Install [Docker Toolbox for Windows](https://docs.docker.com/toolbox/overview/)
+- Install [Docker Toolbox for Windows](https://docs.docker.com/docker-for-windows/)
 
 Once you have your containers running, the code in your local directory will be linked with the code inside the Docker containers. When you make changes, the app will reboot inside the containers to reflect those changes. The API will be accessible in your browser at `localhost:8000`, and the frontend application will be available at `localhost:3000`.
 
