@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { Container, Row, Col } from "react-bootstrap";
 import "./mid.css";
 
@@ -15,9 +16,11 @@ class UpperMid extends Component {
               and foster alumnae to build resiliency, hope, and a bright future.
             </div>
             <div className="text-center line-paragraph">
-              <button className="ym-button text-center" id="enroll">
-                Enroll
-              </button>
+              <Link to="/enrollment">
+                <button className="ym-button text-center" id="enroll">
+                  Enroll
+                </button>
+              </Link>
             </div>
             <div>
               <p className="bottom-text upper-mid-sectiontext">
