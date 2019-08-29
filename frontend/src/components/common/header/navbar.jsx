@@ -47,23 +47,29 @@ class NavBar extends Component {
               </Nav>
               {/* social media links */}
               <Nav id="tsocial" className="ml-auto">
-                <Nav.Link href="https://www.facebook.com/theymim/" target="_blank">
+                <Nav.Link
+                  href="https://www.facebook.com/theymim/"
+                  target="_blank"
+                >
                   <FontAwesomeIcon
                     className="social-media"
-                    icon={faFacebookSquare}                    
+                    icon={faFacebookSquare}
                   />
                 </Nav.Link>
-                <Nav.Link href="https://www.instagram.com/theyoungmasterbuilders" target="_blank">
+                <Nav.Link
+                  href="https://www.instagram.com/theyoungmasterbuilders"
+                  target="_blank"
+                >
                   <FontAwesomeIcon
                     className="social-media"
-                    icon={faInstagram}                    
+                    icon={faInstagram}
                   />
                 </Nav.Link>
-                <Nav.Link href="https://www.twitter.com/YMIMtweets" target="_blank">
-                  <FontAwesomeIcon 
-                    className="social-media" 
-                    icon={faTwitter}                     
-                  />
+                <Nav.Link
+                  href="https://www.twitter.com/YMIMtweets"
+                  target="_blank"
+                >
+                  <FontAwesomeIcon className="social-media" icon={faTwitter} />
                 </Nav.Link>
               </Nav>
             </Navbar>

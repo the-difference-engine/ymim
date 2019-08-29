@@ -11,14 +11,14 @@ class About extends Component {
     return (
       <Container fluid="true">
         <SingleCarousel />
-        <Container >
+        <Container>
           <Row id="aboutPageTextRow">
             <h1 className="heading"> About </h1>
             <h2 className="sub-heading">Our Mission</h2>
             <p className="text-left">
               The Young Masterbuilders in Motion (YMIM) inspires, connects, and
-              empowers young women orphans, adoptees, and foster youth alumnae to
-              thrive.
+              empowers young women orphans, adoptees, and foster youth alumnae
+              to thrive.
             </p>
 
             <p className="text-left">
@@ -53,10 +53,10 @@ class About extends Component {
             </p>
 
             <p className="text-left">
-              We listen to participants, address their concerns, and help connect
-              them with resources to navigate life. We help participants develop
-              life skills necessary to thrive as the masterbuilder of their
-              future.
+              We listen to participants, address their concerns, and help
+              connect them with resources to navigate life. We help participants
+              develop life skills necessary to thrive as the masterbuilder of
+              their future.
             </p>
 
             <p className="text-left">
@@ -67,14 +67,15 @@ class About extends Component {
               mentoring and workshops on the precepts and concepts of
               entrepreneurship, sustained employment, global community service
               activities and more. **Our Road to Impactful Programming** Alumnae
-              input and feedback are the drivers of ongoing program enhancements.
-              Our pre and post self assessments provide our guideposts to
-              impactful programming. Participants of each age segment serve on
-              ideation and planning committees. Participant-centered needs is how
-              we determine where to prioritize cultural, education, life skills,
-              and employment programming.  **Resources and Referrals** We link
-              participants to resources and services beyond our capacity for those
-              desiring or requiring additional support.
+              input and feedback are the drivers of ongoing program
+              enhancements. Our pre and post self assessments provide our
+              guideposts to impactful programming. Participants of each age
+              segment serve on ideation and planning committees.
+              Participant-centered needs is how we determine where to prioritize
+              cultural, education, life skills, and employment programming. 
+              **Resources and Referrals** We link participants to resources and
+              services beyond our capacity for those desiring or requiring
+              additional support.
             </p>
           </Row>
           <h1 className="heading">Our People</h1>
