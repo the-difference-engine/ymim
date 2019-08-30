@@ -14,7 +14,7 @@ services:
       - FRONTEND_URL=http://localhost:3000
       - POSTGRES_PASSWORD=password
     volumes:
-      - $PWD/backend:/code
+      - /home/khanh/Documents/ymim/ymim/backend:/code
     ports:
       - 8000:8000
     links:
@@ -24,7 +24,7 @@ services:
     build:
       context: frontend
     volumes:
-      - $PWD/frontend:/code
+      - /home/khanh/Documents/ymim/ymim/frontend:/code
     environment:
       - NODE_ENV=development
     ports:

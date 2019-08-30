@@ -161,7 +161,7 @@ class Contact extends Component {
       <>
       <SingleCarousel header={"contact"} />
       <div className="container">
-        <h1 className="mt-5">Contact us</h1>
+        <h1 className="mt-5">Contact Us</h1>
         <div className="main-content container col-sm-6 float-right mt-5">
           <div className="mt-4">
             <p>Hello Ms. or Mr. Wonderful,</p>
