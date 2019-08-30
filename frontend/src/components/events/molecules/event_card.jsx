@@ -13,7 +13,10 @@ const EventCard = props => {
     <div className="eventCard">
       <EventImage url={props.url} image={props.logo} />
       <Text url={props.url} text={props.name} type="subheading" />
-      <Text text={<Moment format="llll">{props.start}</Moment>} type="paragraph" />
+      <Text
+        text={<Moment format="llll">{props.start}</Moment>}
+        type="paragraph"
+      />
     </div>
   );
 };

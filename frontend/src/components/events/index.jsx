@@ -24,7 +24,12 @@ class Events extends Component {
   };
 
   render() {
-    return <EventSection events={this.props.events} sectionTitle={"Upcoming Events"} />;
+    return (
+      <EventSection
+        events={this.props.events}
+        sectionTitle={"Upcoming Events"}
+      />
+    );
   }
 }
 

@@ -1,8 +1,8 @@
 import React from "react";
 import { Container, Card, CardDeck } from "react-bootstrap";
 import "./index.css";
-import Moment from 'react-moment';
-import Text from '../events/atoms/text/text';
+import Moment from "react-moment";
+import Text from "../events/atoms/text/text";
 import EventImage from "../../components/events/atoms/image/image";
 
 export function EventList({ children }) {
@@ -25,9 +25,15 @@ const EventItems = props => {
                   </div>
                 </a>
                 <Text text={props.description} type="paragraph" />
-                <Text text={<Moment format="llll">{props.start}</Moment>} type="paragraph" />
+                <Text
+                  text={<Moment format="llll">{props.start}</Moment>}
+                  type="paragraph"
+                />
                 <Text text="to" type="paragraph" />
-                <Text text={<Moment format="llll">{props.end}</Moment>} type="paragraph" />
+                <Text
+                  text={<Moment format="llll">{props.end}</Moment>}
+                  type="paragraph"
+                />
               </Card>
             </CardDeck>
           </div>
