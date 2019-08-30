@@ -54,16 +54,12 @@ textarea {
   }
 }
 
-.error{
-  color:red;
-  display:block;
+.error {
+  color: red;
+  display: block;
 }
 
-
-
-.dangerclass{
-
-
-  color:black;
-  background:darkred;
+.dangerclass {
+  color: black;
+  background: darkred;
 }
