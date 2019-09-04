@@ -1,18 +1,19 @@
 .eventImage {
-    position: relative;
     display: flex;
+    position: relative;
     justify-content: center;
     overflow: hidden;
     border-radius: 4px;
-    width: 400px;
-    height: 200px;
 }
 
 .eventImage img {
     display: flex;
+    background-color: green;
+    width: 100%;
+    max-width: 400px;
+    max-height: 200px;
+    flex: 0 1 400px;
     justify-content: center;
     object-fit: cover;
     border-radius: 4px;
-    max-width: 400px;
-    max-height: 200px;
 }
