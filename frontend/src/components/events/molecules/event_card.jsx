@@ -12,9 +12,18 @@ const EventCard = props => {
   return (
     <div className="eventCard">
       <EventImage url={props.url} image={props.logo} />
+      <div className="eventBody">  
+      <div className="thumbNail">
+      <Text text={<Moment format="MMM">{props.start}</Moment>} type="thumbnailMonth" />
+      <Text text={<Moment format="ddd">{props.start}</Moment>} type="thumbnailDay" />
+      </div>
+      <div>
       <Text url={props.url} text={props.name} type="subheading" />
-      <Text text={<Moment format="llll">{props.start}</Moment>} type="paragraph" />
-    </div>
+      <Text text={<Moment format="llll">{props.start}</Moment>} type="paragraph" /> 
+      </div>
+      </div>
+      </div>
+
   );
 };
 

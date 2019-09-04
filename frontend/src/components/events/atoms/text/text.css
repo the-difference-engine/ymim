@@ -6,13 +6,13 @@
 
 .text.paragraph {
   font-size: 16px;
-  color: #808080;
+  color: #474747;
 }
 
 .text.subheading {
   font-size: 18px;
   font-weight: bold;
-  color: #fc03b6;
+  color:  #363636;
 }
 
 .text.heading {
@@ -20,6 +20,29 @@
   font-weight: bold;
 }
 
+.text.thumbnailMonth {
+  color: #519b56;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.text.thumbnailDay {
+  color: #474747;
+  font-size: 16px;
+  font-weight: bold;
+}
+
 .text.gutterBottom {
   margin-bottom: 0.5em;
+}
+
+div.thumbNail {
+  max-width: 48px;
+  flex: 0 0 auto;
+  background-color: yellow;
+  float: left;
+}
+div.eventBody {
+  flex: 1 1 auto;
+  background-color: red;
 }
