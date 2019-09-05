@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import "./mid.css";
 import { Container, Row, Col } from "react-bootstrap";
-import { Link } from "react-router-dom";
 
 class LowerMid extends Component {
   render() {
@@ -27,20 +26,22 @@ class LowerMid extends Component {
               Won't you join us?
             </div>
             <h2 className="sub-heading">RSVP and Find out More:</h2>
-            <Link
-              to="/https://www.eventbrite.com/ymim"
+            <a
+              href="https://www.eventbrite.com/o/young-masterbuilders-in-motion-inc-18024803549"
+              target="_blank"
               className="space-anchors"
               alt="Eventbrite"
             >
               Eventbrite
-            </Link>
-            <Link
-              to="/https://www.facebook.com/pg/theymim.events"
+            </a>
+            <a
+              href="https://www.facebook.com/theymim/"
+              target="_blank"
               className="space-anchors"
               alt="Facebook"
             >
               Facebook
-            </Link>
+            </a>
             <div>
               <button className="ym-button" id="enroll">
                 All News
