@@ -20,8 +20,10 @@
 }
 
 .heading {
+  font-weight: bold;
   font-size: 36pt;
   padding: 15px 0;
+  margin-top: 25px;
 }
 
 .line-paragraph {
