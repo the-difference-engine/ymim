@@ -34,6 +34,8 @@
 .sub-heading {
   font-size: 24pt;
   padding-bottom: 15px;
+  padding-top: 15px;
+  font-weight: bold;
 }
 
 .space-anchors {
