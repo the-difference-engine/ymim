@@ -35,3 +35,7 @@
 .text.gutterBottom {
   margin-bottom: 0.5em;
 }
+
+div.thumbNail {
+  max-width: 48px;
+}
