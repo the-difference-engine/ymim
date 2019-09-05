@@ -8,12 +8,12 @@
 
 .eventImage img {
     display: flex;
-    background-color: green;
     width: 100%;
     max-width: 400px;
-    max-height: 200px;
+    height: 200px;
     flex: 0 1 400px;
     justify-content: center;
-    object-fit: cover;
+    object-fit: scale-down;
+    /* object-position: 0% 100%; */
     border-radius: 4px;
 }
