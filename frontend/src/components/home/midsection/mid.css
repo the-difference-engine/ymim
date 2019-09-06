@@ -39,6 +39,11 @@
   font-size: 24pt;
   margin: 0 20px 0 0 !important;
   color: #519b46;
+  text-decoration: none;
+}
+
+.ym-button {
+  margin: 0 20px 0 0;
 }
 
 .footer-image-header {
