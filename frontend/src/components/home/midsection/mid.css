@@ -35,6 +35,7 @@
   padding-bottom: 15px;
 }
 
+/* links to facebook and eventbrite */
 .space-anchors {
   font-size: 24pt;
   margin: 0 20px 0 0 !important;
@@ -42,6 +43,7 @@
   text-decoration: none;
 }
 
+/* buttons for news and events */
 .ym-button {
   margin: 0 20px 0 0;
 }
