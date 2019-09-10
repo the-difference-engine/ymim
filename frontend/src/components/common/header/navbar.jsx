@@ -92,22 +92,9 @@ class NavBar extends Component {
                     Youth Resources
                   </NavLink>
                   {/* enroll  */}
-                  <NavDropdown
-                    className="nav-link"
-                    to="/enroll"
-                    title="Enroll"
-                    id="nav-dropdown"
-                  >
-                    <NavDropdown.Item eventKey="4.1" href="/enrollment">
-                      Program Participant
-                    </NavDropdown.Item>
-                    <NavDropdown.Item eventKey="4.2" href="/ambassadors">
-                      Volunteer Ambassadors
-                    </NavDropdown.Item>
-                    <NavDropdown.Item eventKey="4.3" href="/events">
-                      Events
-                    </NavDropdown.Item>
-                  </NavDropdown>
+                  <NavLink className="resources-link" to="/enrollment">
+                    Enroll
+                  </NavLink>
                   {/* volunteer  */}
                   <NavDropdown
                     className="nav-link"
