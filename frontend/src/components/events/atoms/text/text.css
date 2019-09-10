@@ -1,6 +1,4 @@
 .text {
-  font-size: 14px;
-  font-family: sans-serif;
   margin: 0;
 }
 
@@ -12,7 +10,7 @@
 .text.subheading {
   font-size: 18px;
   font-weight: bold;
-  color:  #363636;
+  color: #363636;
 }
 
 .text.heading {
@@ -32,10 +30,38 @@
   font-weight: bold;
 }
 
-.text.gutterBottom {
-  margin-bottom: 0.5em;
+.thumbNail {
+  max-width: 48px;
 }
 
-div.thumbNail {
-  max-width: 48px;
+@media all and (min-width: 320px) and (max-width: 768px) {
+  .text.subheading {
+    font-size: 14px;
+  }
+  .text.paragraph {
+    font-size: 12px;
+  }
+  .text.thumbnailDay {
+    font-size: 14px;
+  }
+  .text.thumbnailMonth {
+    font-size: 14px;
+  }
+}
+
+/* mobile */
+
+@media all and (min-width: 320px) and (max-width: 425px) {
+  .text.subheading {
+    font-size: 12px;
+  }
+  .text.paragraph {
+    font-size: 10px;
+  }
+  .text.thumbnailDay {
+    font-size: 12px;
+  }
+  .text.thumbnailMonth {
+    font-size: 12px;
+  }
 }
