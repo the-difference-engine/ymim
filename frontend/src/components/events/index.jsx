@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { events } from "../../actions";
 import "./index.css";
 import EventSection from "./organisms/event_section";
-import Text from "./atoms/text/text";
 
 class Events extends Component {
   constructor(props) {
@@ -18,26 +17,25 @@ class Events extends Component {
   }
 
   render() {
-    if (this.props.events.length > 0) {
+    if (this.props.events.length) {
       const currentTime = Date.now();
-      let lastIndex = this.props.events.length - 1;
+      let recentPast = this.props.events.length - 1;
       while (
-        lastIndex >= 0 &&
-        Date.parse(this.props.events[lastIndex].end.local) - currentTime > 0
+        recentPast >= 0 &&
+        Date.parse(this.props.events[recentPast].end.local) - currentTime > 0
       ) {
-        lastIndex--;
+        recentPast--;
       }
-      if (lastIndex == this.props.events.length - 1) {
+
+      if (recentPast == this.props.events.length - 1) {
         return (
           <div>
-            <Text text="Upcoming Events" type="heading" />
+            <EventSection events={[]} isUpcoming={true} />
             Check back again soon for what's is coming up next for YMIM. If you
             have an event that you think YMIM should be a part of please email:
             Founder@theymim.org or call: 773.941.1200.
             <EventSection
-              events={this.props.events.slice(0, lastIndex + 1)}
-              sectionTitle={"Past Events"}
-              eventsLength={lastIndex}
+              events={this.props.events.slice(0, recentPast + 1)}
               isUpcoming={false}
             />
           </div>
@@ -46,15 +44,11 @@ class Events extends Component {
         return (
           <div>
             <EventSection
-              events={this.props.events.slice(lastIndex + 1)}
-              sectionTitle={"Upcoming Events"}
-              eventsLength={this.props.events.length - lastIndex - 1}
+              events={this.props.events.slice(recentPast + 1)}
               isUpcoming={true}
             />
             <EventSection
-              events={this.props.events.slice(0, lastIndex + 1)}
-              sectionTitle={"Past Events"}
-              eventsLength={lastIndex}
+              events={this.props.events.slice(0, recentPast + 1)}
               isUpcoming={false}
             />
           </div>

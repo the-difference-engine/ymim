@@ -4,9 +4,11 @@ import { EventCard } from "../molecules/event_card";
 import Flex, { FlexItem } from "../atoms/flex/flex";
 import defaultLogo from "../../../assets/ymim1.png";
 
-const EventSection = ({ events, sectionTitle, isUpcoming }) => {
+const EventSection = ({ events, isUpcoming }) => {
+  let sectionTitle = "Upcoming Events";
   if (isUpcoming == false) {
     events.reverse();
+    sectionTitle = "Past Events";
   }
   return (
     <div>
@@ -15,8 +17,9 @@ const EventSection = ({ events, sectionTitle, isUpcoming }) => {
         {events.map(({ name, start, logo, url, id, status }) => {
           if (
             status == "completed" ||
-            (status == "ended" && isUpcoming == false) ||
-            (status == "live" || (status == "started" && isUpcoming == true))
+            status == "ended" ||
+            status == "live" ||
+            status == "started"
           ) {
             return (
               <FlexItem key={id}>
