@@ -19,13 +19,13 @@ class Events extends Component {
 
   render() {
     if (this.props.events.length > 0) {
-      const currentTime = Date.now()
+      const currentTime = Date.now();
       let lastIndex = this.props.events.length - 1;
       while (
         lastIndex >= 0 &&
         Date.parse(this.props.events[lastIndex].end.local) - currentTime > 0
       ) {
-        lastIndex--
+        lastIndex--;
       }
       if (lastIndex == this.props.events.length - 1) {
         return (
