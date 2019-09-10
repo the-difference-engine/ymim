@@ -13,19 +13,19 @@
     margin: 12px 8px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 425px) {
     .flex-item {
         flex-basis: 90%;
     }
 }
 
-@media screen and (min-width: 601px) and (max-width: 1000px) {
+@media screen and (min-width: 426px) and (max-width: 767px) {
     .flex-item {
         flex-basis: 40%;
     }
 }
 
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 768px) {
     .flex-item {
         flex-basis: 25%;
     }
