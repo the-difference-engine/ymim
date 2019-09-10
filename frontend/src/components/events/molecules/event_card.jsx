@@ -3,7 +3,7 @@ import Text from "../atoms/text/text";
 import EventImage from "../atoms/image/image";
 import "./event_card.css";
 import Moment from "react-moment";
-
+import { Col, Row } from 'react-bootstrap';
 export function EventList({ children }) {
   return <ul>{children}</ul>;
 }
@@ -12,18 +12,28 @@ const EventCard = props => {
   return (
     <div className="eventCard">
       <EventImage url={props.url} image={props.logo} />
-      <div className="eventBody">  
-      <div className="thumbNail">
-      <Text text={<Moment format="MMM">{props.start}</Moment>} type="thumbnailMonth" />
-      <Text text={<Moment format="ddd">{props.start}</Moment>} type="thumbnailDay" />
-      </div>
-      <div>
-      <Text url={props.url} text={props.name} type="subheading" />
-      <Text text={<Moment format="llll">{props.start}</Moment>} type="paragraph" /> 
-      </div>
-      </div>
-      </div>
-
+      <Row className="mt-3">
+        <Col className="thumbNail">
+          <Text
+            text={<Moment format="MMM">{props.start}</Moment>}
+            type="thumbnailMonth"
+          />
+          <Text
+            text={<Moment format="DD">{props.start}</Moment>}
+            type="thumbnailDay"
+          />
+        </Col>
+        <Col>
+          <a href={props.url}>
+            <Text text={props.name} type="subheading" />
+          </a>
+          <Text
+            text={<Moment format="llll">{props.start}</Moment>}
+            type="paragraph"
+          />
+        </Col>
+      </Row>
+    </div>
   );
 };
 

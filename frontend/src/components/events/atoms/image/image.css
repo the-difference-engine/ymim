@@ -9,11 +9,31 @@
 .eventImage img {
     display: flex;
     width: 100%;
-    max-width: 400px;
+    width: 400px;
     height: 200px;
     flex: 0 1 400px;
     justify-content: center;
-    object-fit: scale-down;
+    object-fit: cover;
     /* object-position: 0% 100%; */
     border-radius: 4px;
 }
+
+@media screen and (max-width: 600px) {
+    .eventImage img {
+        width: 300px;
+        height: 150px;
+    }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+    .eventImage img {
+        width: 360px;
+        height: 180px;
+    }
+}
+/* 
+@media screen and (min-width: 1001px) {
+    .eventImage {
+        width: ;
+    }
+} */

@@ -38,11 +38,4 @@
 
 div.thumbNail {
   max-width: 48px;
-  flex: 0 0 auto;
-  background-color: yellow;
-  float: left;
-}
-div.eventBody {
-  flex: 1 1 auto;
-  background-color: red;
 }
