@@ -15,20 +15,17 @@ const EventSection = ({ events, isUpcoming }) => {
       <Text text={sectionTitle} type="heading" />
       <Flex>
         {events.map(({ name, start, logo, url, id }) => {
-            return (
-              <FlexItem key={id}>
-                <EventCard
-                  name={
-                    name ? name.text : "Young Masterbuilders In Motion Event"
-                  }
-                  start={start ? start.local : "TBA"}
-                  logo={logo ? logo.url : defaultLogo}
-                  url={url}
-                />
-              </FlexItem>
-            );
-          }
-        )}
+          return (
+            <FlexItem key={id}>
+              <EventCard
+                name={name ? name.text : "Young Masterbuilders In Motion Event"}
+                start={start ? start.local : "TBA"}
+                logo={logo ? logo.url : defaultLogo}
+                url={url}
+              />
+            </FlexItem>
+          );
+        })}
       </Flex>
     </div>
   );

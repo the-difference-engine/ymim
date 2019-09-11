@@ -17,7 +17,9 @@ class Events extends Component {
   }
 
   render() {
-    let events = this.props.events.filter((s) => ['live', 'started', 'ended', 'completed'].includes(s.status))
+    let events = this.props.events.filter(s =>
+      ["live", "started", "ended", "completed"].includes(s.status)
+    );
     if (events.length) {
       const currentTime = Date.now();
       let recentPast = events.length - 1;
