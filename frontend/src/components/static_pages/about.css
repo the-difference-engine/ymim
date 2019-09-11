@@ -54,12 +54,15 @@
 }
 .span1 {
   font-size: 16px;
+  color: grey;
 }
 .span2 {
   font-size: 9px;
+  color: grey;
 }
 #volunteer_form {
   width: 250px;
   margin-left: 400px;
   height: 100px;
+  margin-top: 50px;
 }
