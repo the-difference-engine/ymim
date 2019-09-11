@@ -17,17 +17,18 @@ class Events extends Component {
   }
 
   render() {
-    if (this.props.events.length) {
+    let events = this.props.events.filter((s) => ['live', 'started', 'ended', 'completed'].includes(s.status))
+    if (events.length) {
       const currentTime = Date.now();
-      let recentPast = this.props.events.length - 1;
+      let recentPast = events.length - 1;
       while (
         recentPast >= 0 &&
-        Date.parse(this.props.events[recentPast].end.local) - currentTime > 0
+        Date.parse(events[recentPast].end.local) - currentTime > 0
       ) {
         recentPast--;
       }
 
-      if (recentPast == this.props.events.length - 1) {
+      if (recentPast === events.length - 1) {
         return (
           <div>
             <EventSection events={[]} isUpcoming={true} />
@@ -35,7 +36,7 @@ class Events extends Component {
             have an event that you think YMIM should be a part of please email:
             Founder@theymim.org or call: 773.941.1200.
             <EventSection
-              events={this.props.events.slice(0, recentPast + 1)}
+              events={events.slice(0, recentPast + 1)}
               isUpcoming={false}
             />
           </div>
@@ -44,7 +45,7 @@ class Events extends Component {
         return (
           <div>
             <EventSection
-              events={this.props.events.slice(recentPast + 1)}
+              events={events.slice(recentPast + 1)}
               isUpcoming={true}
             />
             <EventSection
@@ -55,7 +56,7 @@ class Events extends Component {
         );
       }
     }
-    return null;
+    return "Check back soon for events";
   }
 }
 
