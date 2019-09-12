@@ -31,6 +31,7 @@
 }
 
 .upper-mid-sectiontext {
+  text-align: center;
   font-size: 15pt;
   color: #697689;
 }
@@ -38,7 +39,7 @@
 .sub-heading {
   font-size: 24pt;
   padding-bottom: 15px;
-  padding-top: 15px;
+  padding-top: 20px;
   font-weight: bold;
 }
 

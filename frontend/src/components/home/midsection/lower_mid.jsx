@@ -17,6 +17,7 @@ class LowerMid extends Component {
               Library to collect and package essential supplies for foster
               youth.
             </div>
+            <br/>
             <div className="line-paragraph">
               It's estimated that 5,000 youth age out of foster care in the
               Chicagoland area each year. Young Masterbuilders in Motion is
