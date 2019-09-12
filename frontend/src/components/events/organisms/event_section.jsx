@@ -20,7 +20,9 @@ const EventSection = ({ events, isUpcoming }) => {
             return (
               <FlexItem key={id}>
                 <EventCard
-                  name={name ? name.text : "Young Masterbuilders In Motion Event"}
+                  name={
+                    name ? name.text : "Young Masterbuilders In Motion Event"
+                  }
                   start={start ? start.local : "TBA"}
                   logo={logo ? logo.url : defaultLogo}
                   url={url}
