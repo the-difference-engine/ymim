@@ -32,7 +32,7 @@ const EventList = ({ events }) => {
       <div>
         <EventSection events={events.slice(recentPast + 1)} isUpcoming={true} />
         <EventSection
-          events={this.props.events.slice(0, recentPast + 1)}
+          events={events.slice(0, recentPast + 1)}
           isUpcoming={false}
         />
       </div>
