@@ -30,18 +30,24 @@ class Ambassadors extends Component {
           <h2>
             Get Involved! <span class="span1">(required)</span>
           </h2>
-
+          
           <form action="/" method="post" id="volunteer_form">
-            <label for="entername">
-              Name <span class="span2">(required)</span>
-            </label>
-            <input
-              type="text"
-              class="form-control"
-              id="exampleInputEmail1"
-              aria-describedby="emailHelp"
-              placeholder="Enter name"
-            ></input>
+          <label for="formName">Name <span class="namespan">(required)</span></label>
+            <input type="text" class="form-name" id="formGroupNameInput"></input>
+
+            <label for="formEmail">Email <span class="emailspan">(required)</span></label>
+            <input type="text" class="form-email" id="formGroupEmailInput"></input>
+
+            <label for="formPhone">Phone <span class="phonespan">(required)</span></label>
+            <input type="text" class="form-phone" id="formGroupPhoneInput"></input>
+
+            <label for="formWeb">Website</label>
+            <input type="text" class="form-web" id="formGroupWebInput"></input>
+            
+            <label for="formMess">Message </label>
+            <textarea id ="form_message"></textarea>
+            
+            
           </form>
         </div>
 

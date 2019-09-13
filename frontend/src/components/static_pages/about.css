@@ -49,16 +49,47 @@
   width: 80%;
 }
 .form_container h2 {
-  margin-left: 400px;
+  margin-left: 398px;
   margin-top: 40px;
+}
+.form_container{
+  margin-bottom:500px;
 }
 .span1 {
   font-size: 16px;
   color: grey;
 }
-.span2 {
+.namespan{
   font-size: 9px;
   color: grey;
+}
+.emailspan{
+  font-size: 9px;
+  color: grey;
+}
+.phonespan{
+  font-size: 9px;
+  color: grey;
+}
+
+.form-name{
+  width: 400px;
+  height: 50px;
+}
+.form-email{
+  width: 400px;
+  height: 50px;
+}
+.form-phone{
+  width: 400px;
+  height: 50px;
+}
+.form-web {
+  width: 400px;
+  height: 50px;
+}
+#form_message{
+  width: 400px;
 }
 #volunteer_form {
   width: 250px;
