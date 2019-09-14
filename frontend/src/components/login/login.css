@@ -1,12 +1,28 @@
 .center-login {
     margin: 0 auto;
+    text-align: center
 }
 .login {
-    margin: 5% auto;
+    margin: 4% auto;
 }
 .loginButton {
     background-color: #519B46;
     color: #FFF;
+}
+.password-link {
+    color: #519B46;
+}
+.password-link:hover {
+    text-decoration: none;
+}
+.style-login {
+    border: 15px solid #519B46;    
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    -moz-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    -webkit-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    -o-box-shadow: 0 4px 8px 0 rgba(0,0,0,0.6);
+    margin: 0 0 3% 0;
+    padding: 50px 50px 10px 50px;
 }
 
 /* @media (min-width: 769px) and (max-width: 2560px) {

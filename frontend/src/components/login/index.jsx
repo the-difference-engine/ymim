@@ -39,6 +39,7 @@ class Login extends Component {
           <div> 
             <Row>            
             <form action="/" className="center-login" method="post">
+                <div className="style-login">
                   <div>                    
                     <input
                       id="username"
@@ -76,7 +77,11 @@ class Login extends Component {
                       </button>
                     </p>
                   </div>
-                  <br />                             
+                  <div className="center-login" >
+                      <a className="password-link" href="">Forgot Password</a>
+                  </div>                    
+                  <br />
+                </div>                             
             </form>
             </Row>          
           </div>          
