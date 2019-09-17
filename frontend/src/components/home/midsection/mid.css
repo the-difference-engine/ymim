@@ -40,7 +40,7 @@
   font-size: 24pt;
   margin: 0 20px 0 0 !important;
   color: #519b46;
-  text-decoration: none;
+  text-decoration: none !important ;
 }
 
 /* buttons for news and events */
@@ -99,6 +99,7 @@
   .space-anchors {
     font-size: 14pt;
     color: #519b46;
+    text-decoration: none !important;
   }
   .ym-button {
     font-size: 15px;
@@ -141,6 +142,7 @@
   .space-anchors {
     font-size: 12pt;
     color: #519b46;
+    text-decoration: none !important;
   }
   .ym-button {
     font-size: 10px;
