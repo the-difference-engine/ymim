@@ -1,18 +1,11 @@
 import React from "react";
 import EventSection from "./organisms/event_section";
 import "./index.css";
+import { findPastEndIndex } from "./utils";
 
 const EventList = ({ events }) => {
-  const currentTime = Date.now();
-  let recentPast = events.length - 1;
-  while (
-    recentPast >= 0 &&
-    Date.parse(events[recentPast].end.local) - currentTime > 0
-  ) {
-    recentPast--;
-  }
-
-  if (recentPast === events.length - 1) {
+  let pastEnd = findPastEndIndex(events)
+  if (pastEnd === events.length - 1) {
     return (
       <div>
         <EventSection events={[]} isUpcoming={true} />
@@ -22,7 +15,7 @@ const EventList = ({ events }) => {
           Founder@theymim.org or call: 773.941.1200.
         </div>
         <EventSection
-          events={events.slice(0, recentPast + 1)}
+          events={events.slice(0, pastEnd + 1)}
           isUpcoming={false}
         />
       </div>
@@ -30,9 +23,9 @@ const EventList = ({ events }) => {
   } else {
     return (
       <div>
-        <EventSection events={events.slice(recentPast + 1)} isUpcoming={true} />
+        <EventSection events={events.slice(pastEnd + 1)} isUpcoming={true} />
         <EventSection
-          events={this.props.events.slice(0, recentPast + 1)}
+          events={events.slice(0, pastEnd + 1)}
           isUpcoming={false}
         />
       </div>
