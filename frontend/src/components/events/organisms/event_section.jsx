@@ -12,26 +12,24 @@ const EventSection = ({ events, isUpcoming }) => {
     sectionTitle = "Past Events";
   }
   return (
-    <div>
-      <Text text={sectionTitle} type="heading" />
-      <div className="sectionFlex">
-        <Flex>
-          {events.map(({ name, start, logo, url, id }) => {
-            return (
-              <FlexItem key={id}>
-                <EventCard
-                  name={
-                    name ? name.text : "Young Masterbuilders In Motion Event"
-                  }
-                  start={start ? start.local : "TBA"}
-                  logo={logo ? logo.url : defaultLogo}
-                  url={url}
-                />
-              </FlexItem>
-            );
-          })}
-        </Flex>
-      </div>
+    <div className="sectionFlex">
+      <Flex>
+        <div className="headingFlex">
+          <Text text={sectionTitle} type="heading" />
+        </div>
+        {events.map(({ name, start, logo, url, id }) => {
+          return (
+            <FlexItem key={id}>
+              <EventCard
+                name={name ? name.text : "Young Masterbuilders In Motion Event"}
+                start={start ? start.local : "TBA"}
+                logo={logo ? logo.url : defaultLogo}
+                url={url}
+              />
+            </FlexItem>
+          );
+        })}
+      </Flex>
     </div>
   );
 };
