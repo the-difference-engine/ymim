@@ -1,25 +1,25 @@
 .meetTheTeam {
-    padding: 20px 15px;
-    font-size: 1.2rem;
+  padding: 20px 15px;
+  font-size: 1.2rem;
 }
 
 .meetTheTeam h2 {
-    margin-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .teamPhotosArea {
-    background-color: #eeeaea;
+  background-color: #eeeaea;
 }
 
 .teamPhotos h2 {
-    padding: 20px;
+  padding: 20px;
 }
 
 .imageColumn {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
-  
-.gallery-picture{
-    width: 100%;
-    height: auto;
+
+.gallery-picture {
+  width: 100%;
+  height: auto;
 }
