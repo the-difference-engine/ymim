@@ -34,7 +34,7 @@ class NavBar extends Component {
                 <img className="logo" src={logo} alt="YMIM" />
               </Navbar.Brand>
               {/* first navbar (white) */}
-              <Nav className="mx-auto my-auto">
+              <Nav className="ml-lg-3 ml-xl-3 ml-auto mr-auto my-auto">
                 <NavLink className="nav-link-top mr-5" to="/about">
                   About
                 </NavLink>
@@ -47,19 +47,28 @@ class NavBar extends Component {
               </Nav>
               {/* social media links */}
               <Nav id="tsocial" className="ml-auto">
-                <Nav.Link href="https://www.facebook.com/theymim/">
+                <Nav.Link
+                  href="https://www.facebook.com/theymim/"
+                  target="_blank"
+                >
                   <FontAwesomeIcon
                     className="social-media"
                     icon={faFacebookSquare}
                   />
                 </Nav.Link>
-                <Nav.Link href="https://www.instagram.com/theyoungmasterbuilders">
+                <Nav.Link
+                  href="https://www.instagram.com/theyoungmasterbuilders"
+                  target="_blank"
+                >
                   <FontAwesomeIcon
                     className="social-media"
                     icon={faInstagram}
                   />
                 </Nav.Link>
-                <Nav.Link href="https://www.instagram.com/theyoungmasterbuilders">
+                <Nav.Link
+                  href="https://www.twitter.com/YMIMtweets"
+                  target="_blank"
+                >
                   <FontAwesomeIcon className="social-media" icon={faTwitter} />
                 </Nav.Link>
               </Nav>
@@ -72,7 +81,7 @@ class NavBar extends Component {
             <Navbar collapseOnSelect expand="lg">
               <Navbar.Toggle className="ml-3" onClick={this.toggle} />
               <Navbar.Collapse isOpen={this.state.isOpen} navbar>
-                <Nav className="mx-auto my-auto align-links">
+                <Nav className="ml-lg-3 ml-xl-3 ml-auto mr-auto my-auto align-links">
                   {/* resources  */}
                   <NavLink
                     className="resources-link"
@@ -83,22 +92,9 @@ class NavBar extends Component {
                     Youth Resources
                   </NavLink>
                   {/* enroll  */}
-                  <NavDropdown
-                    className="nav-link"
-                    to="/enroll"
-                    title="Enroll"
-                    id="nav-dropdown"
-                  >
-                    <NavDropdown.Item eventKey="4.1" href="/enrollment">
-                      Program Participant
-                    </NavDropdown.Item>
-                    <NavDropdown.Item eventKey="4.2" href="/ambassadors">
-                      Volunteer Ambassadors
-                    </NavDropdown.Item>
-                    <NavDropdown.Item eventKey="4.3" href="/events">
-                      Events
-                    </NavDropdown.Item>
-                  </NavDropdown>
+                  <NavLink className="resources-link" to="/enrollment">
+                    Enroll
+                  </NavLink>
                   {/* volunteer  */}
                   <NavDropdown
                     className="nav-link"
