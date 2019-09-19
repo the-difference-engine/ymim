@@ -52,31 +52,31 @@ class Team extends Component {
               </Col>
             </Row>
             <Row>
-              <Col sm={4}>
+              <Col className="imageColumn" sm={4}>
                 <img src={Picture1} className="gallery-picture" alt="dream team" />
               </Col>
-              <Col sm={4}>
+              <Col className="imageColumn" sm={4}>
                 <img src={Picture2} className="gallery-picture" alt="donation" />
               </Col>
-              <Col sm={4}>
+              <Col className="imageColumn" sm={4}>
                 <img src={Picture3} className="gallery-picture" alt="jm_mw_ep" />
               </Col>
-              <Col sm={4}>
+              <Col className="imageColumn" sm={4}>
                 <img src={Picture4} className="gallery-picture" alt="calix" />
               </Col>
-              <Col sm={4}>
+              <Col className="imageColumn" sm={4}>
                 <img src={Picture5} className="gallery-picture" alt="calix" />
               </Col>
-              <Col sm={4}>
+              <Col className="imageColumn" sm={4}>
                 <img src={Picture6} className="gallery-picture" alt="calix" />
               </Col>
-              <Col sm={4}>
+              <Col className="imageColumn" sm={4}>
                 <img src={Picture7} className="gallery-picture" alt="calix" />
               </Col>
-              <Col sm={4}>
+              <Col className="imageColumn" sm={4}>
                 <img src={Picture8} className="gallery-picture" alt="calix" />
               </Col>
-              <Col sm={4}>
+              <Col className="imageColumn" sm={4}>
                 <img src={Picture9} className="gallery-picture" alt="calix" />
               </Col>
             </Row>
