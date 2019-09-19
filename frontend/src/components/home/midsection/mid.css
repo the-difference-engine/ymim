@@ -42,10 +42,17 @@
   font-weight: bold;
 }
 
+/* links to facebook and eventbrite */
 .space-anchors {
   font-size: 24pt;
   margin: 0 20px 0 0 !important;
   color: #519b46;
+  text-decoration: none !important ;
+}
+
+/* buttons for news and events */
+.ym-button {
+  margin-right: 25px;
   font-family: "Gotham Light Font", sans-serif;
 }
 
@@ -100,6 +107,7 @@
   .space-anchors {
     font-size: 14pt;
     color: #519b46;
+    text-decoration: none !important;
     font-family: "Gotham Light Font", sans-serif;
   }
   .ym-button {
@@ -144,6 +152,7 @@
   .space-anchors {
     font-size: 12pt;
     color: #519b46;
+    text-decoration: none !important;
     font-family: "Gotham Light Font", sans-serif;
   }
   .ym-button {
