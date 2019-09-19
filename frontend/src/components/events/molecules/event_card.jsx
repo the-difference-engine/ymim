@@ -13,7 +13,7 @@ const EventCard = props => {
     <div className="eventCard">
       <EventImage url={props.url} image={props.logo} />
       <Row className="mt-3">
-        <Col className="thumbNail">
+        <Col className="thumbNail eventTextBoxes">
           <Text
             text={<Moment format="MMM">{props.start}</Moment>}
             type="thumbnailMonth"
@@ -23,7 +23,7 @@ const EventCard = props => {
             type="thumbnailDay"
           />
         </Col>
-        <Col>
+        <Col className="eventTextBoxes">
           <a href={props.url}>
             <Text text={props.name} type="subheading" />
           </a>
