@@ -78,7 +78,7 @@ export default class footer extends Component {
                 </Col>
                 <Col xs="12" sm="12" md="4" lg="4" xl="2">
                   <Link className="contact" to="/login">
-                      Login
+                    Login
                   </Link>
                 </Col>
               </Row>

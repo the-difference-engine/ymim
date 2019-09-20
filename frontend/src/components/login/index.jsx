@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row } from "react-bootstrap";
 import "./login.css";
-// import SingleCarousel from "../SingleCarousel";
 
 class Login extends Component {
   constructor(props) {
@@ -9,13 +8,32 @@ class Login extends Component {
 
     this.state = {
       username: "",
-      password: ""
+      password: "",
+      errors: {
+        username: "",
+        password: ""
+      },
+      usernameValid: false,
+      passwordValid: false,
+      formValid: false
     };
+
+    this.handleInputChange = this.handleInputChange.bind(this);
+    this.handleSubmit = this.handleSubmit.bind(this);
   }
 
-  onFormSubmit = e => {
-    e.preventDefault();
+  handleInputChange = event => {
+    const { name, value } = event.target;
 
+    this.setState({
+      [name]: value
+    });
+  };
+
+  handleSubmit = event => {
+    event.preventDefault();
+
+    // proceed to the backend to validate the admin user data
     console.log("data is being sent", this.state);
     // fetch("http://the backend", {
     //   method: "POST",
@@ -32,15 +50,16 @@ class Login extends Component {
   };
 
   render() {
+    const { errors } = this.state;
+
     return (
       <div>
-        {/* <SingleCarousel /> */}
         <Container className="login">
-          <div> 
-            <Row>            
-            <form action="/" className="center-login" method="post">
-                <div className="style-login">
-                  <div>                    
+          <div>
+            <Row>
+              <form action="/" className="center-login" method="post">
+                <div className="container col-md-12 style-login">
+                  <div>
                     <input
                       id="username"
                       required=""
@@ -49,42 +68,53 @@ class Login extends Component {
                       placeholder="username"
                       className="col-md-12 inputs"
                       value={this.state.username}
+                      onChange={this.handleInputChange}
                     />
+                    {errors.username.length > 0 && (
+                      <div className="style-error">{errors.username}</div>
+                    )}
                   </div>
                   <br />
                   <div>
                     <input
                       id="password"
                       required=""
-                      type="text"
+                      type="password"
                       name="password"
                       placeholder="password"
                       className="col-md-12 inputs"
                       value={this.state.password}
+                      onChange={this.handleInputChange}
                     />
+                    {errors.password.length > 0 && (
+                      <div className="style-error">{errors.password}</div>
+                    )}
                   </div>
-                  <br />                  
+                  <br />
                   <div>
                     <p>
                       <button
-                        onClick={this.onFormSubmit}
+                        onClick={this.handleSubmit}
                         className="col-md-12 loginButton"
                         type="submit"
                         value="Submit"
+                        // disabled={!this.validateForm()}
                         // onChange={this.onChange}
                       >
                         <span className="buttonSpan">LOGIN</span>
                       </button>
                     </p>
                   </div>
-                  <div className="center-login" >
-                      <a className="password-link" href="">Forgot Password</a>
-                  </div>                    
+                  <div className="center-login">
+                    <a className="password-link" href="">
+                      Forgot Password
+                    </a>
+                  </div>
                   <br />
-                </div>                             
-            </form>
-            </Row>          
-          </div>          
+                </div>
+              </form>
+            </Row>
+          </div>
         </Container>
       </div>
     );
