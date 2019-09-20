@@ -52,31 +52,31 @@ class Team extends Component {
             </Row>
             <Row>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture1} className="gallery-picture" alt="Photo 1" />
+                <img src={Picture1} className="gallery-picture" alt="1" />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture2} className="gallery-picture" alt="Photo 2" />
+                <img src={Picture2} className="gallery-picture" alt="2" />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture3} className="gallery-picture" alt="Photo 3" />
+                <img src={Picture3} className="gallery-picture" alt="3" />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture4} className="gallery-picture" alt="Photo 4" />
+                <img src={Picture4} className="gallery-picture" alt="4" />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture5} className="gallery-picture" alt="Photo 5" />
+                <img src={Picture5} className="gallery-picture" alt="5" />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture6} className="gallery-picture" alt="Photo 6" />
+                <img src={Picture6} className="gallery-picture" alt="6" />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture7} className="gallery-picture" alt="Photo 7" />
+                <img src={Picture7} className="gallery-picture" alt="7" />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture8} className="gallery-picture" alt="Photo 8" />
+                <img src={Picture8} className="gallery-picture" alt="8" />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture9} className="gallery-picture" alt="Photo 9" />
+                <img src={Picture9} className="gallery-picture" alt="9" />
               </Col>
             </Row>
           </Container>

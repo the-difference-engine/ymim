@@ -29,6 +29,7 @@ class LowerMid extends Component {
             <a
               href="https://www.eventbrite.com/o/young-masterbuilders-in-motion-inc-18024803549"
               target="_blank"
+              rel="noopener noreferrer"
               className="space-anchors"
               alt="Eventbrite"
             >
@@ -37,6 +38,7 @@ class LowerMid extends Component {
             <a
               href="https://www.facebook.com/theymim/"
               target="_blank"
+              rel="noopener noreferrer"
               className="space-anchors"
               alt="Facebook"
             >
