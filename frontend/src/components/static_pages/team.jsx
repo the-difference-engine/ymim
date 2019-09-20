@@ -76,7 +76,13 @@ class Team extends Component {
                 <img src={Picture8} className="gallery-picture" alt="Photo 8" />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture9} className="gallery-picture" alt="Photo 9" />
+                <a href="https://www.facebook.com/theymim/" target="_blank">
+                  <div className="facebookLinkContainer">
+                    <p>
+                      See more images on Facebook!
+                    </p>
+                  </div>
+                </a>
               </Col>
             </Row>
           </Container>
