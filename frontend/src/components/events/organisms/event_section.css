@@ -1,0 +1,10 @@
+.sectionFlex {
+  display: block;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.headingFlex {
+  width: fill;
+  margin: 0 14px;
+}
