@@ -2,7 +2,7 @@ import React from "react";
 import EventSection from "./organisms/event_section";
 import "./index.css";
 import { findPastEndIndex } from "./utils";
-import FeatureEvent from "./"
+import FeatureEvent from "./FeatureEvent";
 
 const EventList = ({ events }) => {
   let pastEnd = findPastEndIndex(events)
