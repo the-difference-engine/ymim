@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import Moment from "react-moment";
 import defaultLogo from "../../assets/ymim1.png";
 import "./organisms/event_section.css";
-import "./FeatureEvent.css";
 import EventImage from "./atoms/image/image";
 import Text from "./atoms/text/text";
 import Flex from "./atoms/flex/flex";
