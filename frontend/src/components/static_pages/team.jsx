@@ -1,5 +1,15 @@
 import React, { Component } from "react";
 import { Container, Col, Row } from "react-bootstrap";
+import "./team.css";
+import Picture1 from "../../assets/action-shots/3 rows of donations lined up.jpg";
+import Picture2 from "../../assets/action-shots/Handmade drawstring bag donations.jpg";
+import Picture3 from "../../assets/action-shots/JM MW EP RPL 2.jpg";
+import Picture4 from "../../assets/action-shots/Rev Irene Min Trina KWKOIOEO pix wDonations.jpg";
+import Picture5 from "../../assets/action-shots/Team photo wKennedy.jpg";
+import Picture6 from "../../assets/action-shots/TTigue Sscott ASayre.jpg";
+import Picture7 from "../../assets/action-shots/UIC Dream Team SScott ACalix KWright.jpg";
+import Picture8 from "../../assets/action-shots/Calix family donors.jpg";
+import Picture9 from "../../assets/action-shots/Claxtons delivering donations.jpg";
 
 class Team extends Component {
   render() {
@@ -41,20 +51,32 @@ class Team extends Component {
               </Col>
             </Row>
             <Row>
-              <Col>
-                <img src="images/dream_team.jpg" alt="dream team" />
+              <Col className="imageColumn" sm={4}>
+                <img src={Picture1} className="gallery-picture" alt="Photo 1" />
               </Col>
-              <Col>
-                <img src="images/donation.jpg" alt="donation" />
+              <Col className="imageColumn" sm={4}>
+                <img src={Picture2} className="gallery-picture" alt="Photo 2" />
               </Col>
-            </Row>
-
-            <Row>
-              <Col>
-                <img src="images/jm_mw_ep.jpg" alt="jm_mw_ep" />
+              <Col className="imageColumn" sm={4}>
+                <img src={Picture3} className="gallery-picture" alt="Photo 3" />
               </Col>
-              <Col>
-                <img src="images/calix.jpg" alt="calix" />
+              <Col className="imageColumn" sm={4}>
+                <img src={Picture4} className="gallery-picture" alt="Photo 4" />
+              </Col>
+              <Col className="imageColumn" sm={4}>
+                <img src={Picture5} className="gallery-picture" alt="Photo 5" />
+              </Col>
+              <Col className="imageColumn" sm={4}>
+                <img src={Picture6} className="gallery-picture" alt="Photo 6" />
+              </Col>
+              <Col className="imageColumn" sm={4}>
+                <img src={Picture7} className="gallery-picture" alt="Photo 7" />
+              </Col>
+              <Col className="imageColumn" sm={4}>
+                <img src={Picture8} className="gallery-picture" alt="Photo 8" />
+              </Col>
+              <Col className="imageColumn" sm={4}>
+                <img src={Picture9} className="gallery-picture" alt="Photo 9" />
               </Col>
             </Row>
           </Container>
