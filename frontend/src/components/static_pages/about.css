@@ -53,7 +53,7 @@
   margin-top: 40px;
 }
 .form_container{
-  margin-bottom:500px;
+  margin-bottom:900px;
 }
 .span1 {
   font-size: 16px;
@@ -75,18 +75,22 @@
 .form-name{
   width: 400px;
   height: 50px;
+  margin-bottom: 20px;
 }
 .form-email{
   width: 400px;
   height: 50px;
+  margin-bottom: 20px;
 }
 .form-phone{
   width: 400px;
   height: 50px;
+  margin-bottom: 20px;
 }
 .form-web {
   width: 400px;
   height: 50px;
+  margin-bottom: 20px;
 }
 #form_message{
   width: 400px;
@@ -95,5 +99,14 @@
   width: 250px;
   margin-left: 400px;
   height: 100px;
-  margin-top: 50px;
+  margin-top: 60px;
+}
+#submitbutton {
+  margin-top: 25px;
+  width: 120px;
+  height: 40px;
+  background-color:#ffdb4d;
+  border: #ffdb4d;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
 }

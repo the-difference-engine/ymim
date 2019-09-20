@@ -47,6 +47,7 @@ class Ambassadors extends Component {
             <label for="formMess">Message </label>
             <textarea id ="form_message"></textarea>
             
+            <button type = "submit" id="submitbutton">Submit</button>
             
           </form>
         </div>
