@@ -2,6 +2,7 @@ import React from "react";
 import EventSection from "./organisms/event_section";
 import "./index.css";
 import { findPastEndIndex } from "./utils";
+import FeatureEvent from "./"
 
 const EventList = ({ events }) => {
   let pastEnd = findPastEndIndex(events)
@@ -20,10 +21,25 @@ const EventList = ({ events }) => {
         />
       </div>
     );
-  } else {
+  } else if (pastEnd === events.length - 2) {
     return (
       <div>
-        <EventSection events={events.slice(pastEnd + 1)} isUpcoming={true} />
+        <div>
+          <FeatureEvent event={events[pastEnd + 1]} />
+        </div>
+        <EventSection
+          events={events.slice(0, pastEnd + 1)}
+          isUpcoming={false}
+        />
+      </div>
+    )
+  } {
+    return (
+      <div>
+        <div>
+          <FeatureEvent event={events[pastEnd + 1]} />
+        </div>
+        <EventSection events={events.slice(pastEnd + 2)} isUpcoming={true} />
         <EventSection
           events={events.slice(0, pastEnd + 1)}
           isUpcoming={false}
