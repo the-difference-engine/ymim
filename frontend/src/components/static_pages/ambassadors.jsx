@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import Ymim3 from "../../assets/ymim3.png";
-import Logo2 from "../../assets/logo.png";
+// import Logo2 from "../../assets/logo.png";
 import "./about.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Dropdown from "react-bootstrap/Dropdown";
 
 class Ambassadors extends Component {
   render() {
@@ -14,7 +16,9 @@ class Ambassadors extends Component {
           display="block"
           height="580px"
         />
-        <div class="caption2">
+
+        {/* THIS IS A DESIGN ISSUE */}
+        {/* <div class="caption2">
           <div class="overlay-volunteer">
             <h3 class="title-volunteer">Volunteer | Become a Sponsor</h3>
             <p class="volunteer-paragraph">
@@ -24,33 +28,75 @@ class Ambassadors extends Component {
             </p>
             <img class="logo2" src={Logo2} alt="ymim-logo"></img>
           </div>
-        </div>
+        </div> */}
 
         <div class="form_container">
           <h2>
             Get Involved! <span class="span1">(required)</span>
           </h2>
-          
+
           <form action="/" method="post" id="volunteer_form">
-          <label for="formName">Name <span class="namespan">(required)</span></label>
-            <input type="text" class="form-name" id="formGroupNameInput"></input>
+            <Dropdown>
+              <Dropdown.Toggle variant="success" id="dropdown-basic">
+                Select Your Role:
+              </Dropdown.Toggle>
 
-            <label for="formEmail">Email <span class="emailspan">(required)</span></label>
-            <input type="text" class="form-email" id="formGroupEmailInput"></input>
+              <Dropdown.Menu>
+                <Dropdown.Item href="#/action-1">Ambassador/Volunteer</Dropdown.Item>
+                <Dropdown.Item href="#/action-2">Sponsor/Donor</Dropdown.Item>
+                <Dropdown.Item href="#/action-3">Partner/Organization</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
 
-            <label for="formPhone">Phone <span class="phonespan">(required)</span></label>
-            <input type="text" class="form-phone" id="formGroupPhoneInput"></input>
+            <label for="formName">
+              Name <span class="namespan">(required)</span>
+            </label>
+            <input
+              type="text"
+              class="form-name"
+              id="formGroupNameInput"
+            ></input>
+
+            <label for="formEmail">
+              Email <span class="emailspan">(required)</span>
+            </label>
+            <input
+              type="text"
+              class="form-email"
+              id="formGroupEmailInput"
+            ></input>
+
+            <label for="formPhone">
+              Phone <span class="phonespan">(required)</span>
+            </label>
+            <input
+              type="text"
+              class="form-phone"
+              id="formGroupPhoneInput"
+            ></input>
 
             <label for="formWeb">Website</label>
             <input type="text" class="form-web" id="formGroupWebInput"></input>
-            
+
             <label for="formMess">Message </label>
-            <textarea id ="form_message"></textarea>
-            
-            <button type = "submit" id="submitbutton">Submit</button>
-            
+            <textarea id="form_message"></textarea>
+
+            <button type="submit" id="submitbutton">
+              Submit
+            </button>
           </form>
         </div>
+        {/* <Dropdown>
+  <Dropdown.Toggle variant="success" id="dropdown-basic">
+    Dropdown Button
+  </Dropdown.Toggle>
+
+  <Dropdown.Menu>
+    <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
+    <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
+    <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
+  </Dropdown.Menu>
+</Dropdown> */}
 
         {/* <p>
             Thank you for considering getting involved in the Young

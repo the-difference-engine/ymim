@@ -52,37 +52,37 @@
   margin-left: 398px;
   margin-top: 40px;
 }
-.form_container{
-  margin-bottom:900px;
+.form_container {
+  margin-bottom: 900px;
 }
 .span1 {
   font-size: 16px;
   color: grey;
 }
-.namespan{
+.namespan {
   font-size: 9px;
   color: grey;
 }
-.emailspan{
+.emailspan {
   font-size: 9px;
   color: grey;
 }
-.phonespan{
+.phonespan {
   font-size: 9px;
   color: grey;
 }
 
-.form-name{
+.form-name {
   width: 400px;
   height: 50px;
   margin-bottom: 20px;
 }
-.form-email{
+.form-email {
   width: 400px;
   height: 50px;
   margin-bottom: 20px;
 }
-.form-phone{
+.form-phone {
   width: 400px;
   height: 50px;
   margin-bottom: 20px;
@@ -92,7 +92,7 @@
   height: 50px;
   margin-bottom: 20px;
 }
-#form_message{
+#form_message {
   width: 400px;
 }
 #volunteer_form {
@@ -105,7 +105,7 @@
   margin-top: 25px;
   width: 120px;
   height: 40px;
-  background-color:#ffdb4d;
+  background-color: #ffdb4d;
   border: #ffdb4d;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
