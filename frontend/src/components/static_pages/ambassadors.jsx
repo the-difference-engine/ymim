@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Ymim3 from "../../assets/ymim3.png";
-// import Logo2 from "../../assets/logo.png";
+import Logo2 from "../../assets/logo.png";
 import "./about.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Dropdown from "react-bootstrap/Dropdown";
@@ -18,7 +18,7 @@ class Ambassadors extends Component {
         />
 
         {/* THIS IS A DESIGN ISSUE */}
-        {/* <div class="caption2">
+        {/* <div class="caption2"> */}
           <div class="overlay-volunteer">
             <h3 class="title-volunteer">Volunteer | Become a Sponsor</h3>
             <p class="volunteer-paragraph">
@@ -28,7 +28,7 @@ class Ambassadors extends Component {
             </p>
             <img class="logo2" src={Logo2} alt="ymim-logo"></img>
           </div>
-        </div> */}
+        {/* </div> */}
 
         <div class="form_container">
           <h2>

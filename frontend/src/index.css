@@ -46,7 +46,7 @@ code {
   background: rgba(81, 155, 70, 0.65);
   margin: 0;
   padding: 0;
-  height: 235px;
+  height: 150px;
   overflow: hidden;
 }
 
@@ -157,6 +157,7 @@ code {
 .margin-bottom {
   margin-bottom: 7%;
 }
-.dropdownMenuButton {
-  background-color: #ffdb4d;
+.form_container {
+  margin-top: -200px;
 }
+
