@@ -5,7 +5,7 @@ import { findPastEndIndex } from "./utils";
 import FeatureEvent from "./FeatureEvent";
 
 const EventList = ({ events }) => {
-  let pastEnd = findPastEndIndex(events)
+  let pastEnd = findPastEndIndex(events);
   if (pastEnd === events.length - 1) {
     return (
       <div>
@@ -32,8 +32,9 @@ const EventList = ({ events }) => {
           isUpcoming={false}
         />
       </div>
-    )
-  } {
+    );
+  }
+  {
     return (
       <div>
         <div>

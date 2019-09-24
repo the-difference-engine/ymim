@@ -9,62 +9,88 @@ import Flex from "./atoms/flex/flex";
 class FeatureEvent extends Component {
   constructor(props) {
     super(props);
-    this.state = { isOpen: false }
+    this.state = { isOpen: false };
   }
 
   toggle = () => {
-    this.setState({ isOpen: !this.state.isOpen })
-  }
+    this.setState({ isOpen: !this.state.isOpen });
+  };
 
-  displayToggle = (text) => {
+  displayToggle = text => {
     return (
-      <div>{text}
-        <span role="button" onClick={this.toggle} style={{ color: "red" }}>  {this.state.isOpen ? "+ Show less" : " - Show more"} </span>
+      <div>
+        {text}
+        <span role="button" onClick={this.toggle} style={{ color: "red" }}>
+          {" "}
+          {this.state.isOpen ? "+ Show less" : " - Show more"}{" "}
+        </span>
       </div>
-    )
-  }
-  displayContent = (text) => {
-    let maxChar = 140
+    );
+  };
+  displayContent = text => {
+    let maxChar = 140;
     if (this.state.isOpen) {
-      return this.displayToggle(text)
+      return this.displayToggle(text);
     }
-    return this.displayToggle(text.substring(0, maxChar + 1))
-  }
-
+    return this.displayToggle(text.substring(0, maxChar + 1));
+  };
 
   render() {
-    const { event } = this.props
+    const { event } = this.props;
     return (
       <div>
         <h2>Upcoming Events</h2>
         <Flex>
-
-          <EventImage url={event.url} image={event.logo.url ? event.logo.url : defaultLogo} />
-          <Text text={<Moment format="ll">{event.start}</Moment>} type="subheading" text={event.name.text} />
-
-          <Text type="description" text={event.description.text ? this.displayContent(event.description.text) : ""} />
           <p>
-            <Text type="paragraph" text={"RSVP and Find out and more:"} />
+            <EventImage
+              url={event.url}
+              image={event.logo.url ? event.logo.url : defaultLogo}
+              type="floating"
+            />
+            < Text
+            type = "subheading"
+            text = {
+              event.name.text
+            }
+            />
+            <Text
+              text={<Moment format="ll">{event.start}</Moment>}
+              type="subheading"
+            />
+            <Text
+              type="description"
+              text={
+                event.description.text
+                  ? this.displayContent(event.description.text)
+                  : ""
+              }
+            />
+          </p>
+          <p>
+            <Text type="rsvp" text={"RSVP and Find out and more:"} />
           </p>
           <a
             href={event.url}
             target="_blank"
+            rel="noopener noreferrer"
+            className = "space-anchors"
             alt="Eventbrite"
           >
-            <Text type="paragraph" text={"Eventbrite"} />
+            <Text text={"Eventbrite"} />
           </a>
           <a
             href="https://www.facebook.com/theymim/"
             target="_blank"
+            rel="noopener noreferrer"
+            className = "space-anchors"
             alt="Facebook"
           >
-            <Text type="paragraph" text={"Facebook"} />
+            <Text text={"Facebook"} />
           </a>
         </Flex>
       </div>
     );
   }
 }
-
 
 export default FeatureEvent;

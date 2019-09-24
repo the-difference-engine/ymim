@@ -7,6 +7,15 @@
   color: #474747;
 }
 
+.text.description {
+  width: auto;
+}
+
+.text.rsvp {
+  font-size: 24px;
+  padding-bottom: 15px;
+}
+
 .text.subheading {
   font-size: 18px;
   font-weight: bold;

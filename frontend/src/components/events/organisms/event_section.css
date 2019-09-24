@@ -8,3 +8,10 @@
   width: fill;
   margin: 0 14px;
 }
+
+.space-anchors {
+  font-size: 24pt;
+  margin: 0 20px 0 0 !important;
+  color: #519b46;
+  font-family: "Gotham Light Font", sans-serif;
+}
