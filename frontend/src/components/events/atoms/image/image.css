@@ -19,7 +19,7 @@
 
 .eventImage.floating {
   float: left;
-  margin: 10px;
+  margin: 14px;
 }
 
 @media screen and (max-width: 425px) {

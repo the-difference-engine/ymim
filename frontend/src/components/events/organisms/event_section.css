@@ -15,3 +15,9 @@
   color: #519b46;
   font-family: "Gotham Light Font", sans-serif;
 }
+
+.row-learn-more {
+  display: flex;
+  flex-flow: row;
+  margin-left: 14px;
+}

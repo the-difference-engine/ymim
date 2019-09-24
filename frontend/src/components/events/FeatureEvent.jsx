@@ -48,14 +48,14 @@ class FeatureEvent extends Component {
               type="floating"
             />
             < Text
-            type = "subheading"
+            type = "feature-subheading"
             text = {
               event.name.text
             }
             />
             <Text
               text={<Moment format="ll">{event.start}</Moment>}
-              type="subheading"
+              type="feature-subheading"
             />
             <Text
               type="description"
@@ -66,27 +66,32 @@ class FeatureEvent extends Component {
               }
             />
           </p>
-          <p>
-            <Text type="rsvp" text={"RSVP and Find out and more:"} />
-          </p>
-          <a
-            href={event.url}
-            target="_blank"
-            rel="noopener noreferrer"
-            className = "space-anchors"
-            alt="Eventbrite"
-          >
-            <Text text={"Eventbrite"} />
-          </a>
-          <a
-            href="https://www.facebook.com/theymim/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className = "space-anchors"
-            alt="Facebook"
-          >
-            <Text text={"Facebook"} />
-          </a>
+
+          <div className="col-learn-more">
+            <h2>
+              <Text type="rsvp" text={"RSVP and Find out more:"} />
+            </h2>
+            <div className="row-learn-more">
+              <a
+                href={event.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className = "space-anchors"
+                alt="Eventbrite"
+              >
+                <Text text={"Eventbrite"} />
+              </a>
+              <a
+                href="https://www.facebook.com/theymim/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className = "space-anchors"
+                alt="Facebook"
+              >
+                <Text text={"Facebook"} />
+              </a>
+            </div>
+          </div>
         </Flex>
       </div>
     );
