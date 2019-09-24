@@ -1,12 +1,12 @@
 import React from "react";
 import EventSection from "./organisms/event_section";
 import "./index.css";
-import { findPastEndIndex } from "./utils";
+import { findFirstUpcomingIndex } from "./utils";
 import FeatureEvent from "./FeatureEvent";
 
 const EventList = ({ events }) => {
-  let pastEnd = findPastEndIndex(events)
-  if (pastEnd === events.length - 1) {
+  const firstUpcoming = findFirstUpcomingIndex(events)
+  if (firstUpcoming === undefined) {
     return (
       <div>
         <EventSection events={[]} isUpcoming={true} />
@@ -16,32 +16,32 @@ const EventList = ({ events }) => {
           Founder@theymim.org or call: 773.941.1200.
         </div>
         <EventSection
-          events={events.slice(0, pastEnd + 1)}
+          events={events}
           isUpcoming={false}
         />
       </div>
     );
-  } else if (pastEnd === events.length - 2) {
+  } else if (firstUpcoming === events.length - 1) {
     return (
       <div>
         <div>
-          <FeatureEvent event={events[pastEnd + 1]} />
+          <FeatureEvent event={events[firstUpcoming]} />
         </div>
         <EventSection
-          events={events.slice(0, pastEnd + 1)}
+          events={events.slice(0, firstUpcoming)}
           isUpcoming={false}
         />
       </div>
     )
-  } {
+  } else {
     return (
       <div>
         <div>
-          <FeatureEvent event={events[pastEnd + 1]} />
+          <FeatureEvent event={events[firstUpcoming]} />
         </div>
-        <EventSection events={events.slice(pastEnd + 2)} isUpcoming={true} />
+        <EventSection events={events.slice(firstUpcoming + 1)} isUpcoming={true} />
         <EventSection
-          events={events.slice(0, pastEnd + 1)}
+          events={events.slice(0, firstUpcoming)}
           isUpcoming={false}
         />
       </div>
