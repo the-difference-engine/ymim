@@ -5,13 +5,8 @@ import { findFirstUpcomingIndex } from "./utils";
 import FeatureEvent from "./FeatureEvent";
 
 const EventList = ({ events }) => {
-<<<<<<< HEAD
-  let pastEnd = findPastEndIndex(events);
-  if (pastEnd === events.length - 1) {
-=======
   const firstUpcoming = findFirstUpcomingIndex(events)
   if (firstUpcoming === undefined) {
->>>>>>> ba6f19d0b4ef5f4274ddf4c361883ad9b08b7a54
     return (
       <div>
         <EventSection events={[]} isUpcoming={true} />
@@ -37,14 +32,8 @@ const EventList = ({ events }) => {
           isUpcoming={false}
         />
       </div>
-<<<<<<< HEAD
-    );
-  }
-  {
-=======
     )
   } else {
->>>>>>> ba6f19d0b4ef5f4274ddf4c361883ad9b08b7a54
     return (
       <div>
         <div>
