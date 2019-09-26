@@ -158,6 +158,15 @@ code {
   margin-bottom: 7%;
 }
 .form_container {
-  margin-top: -200px;
+  margin-top: -230px;
 }
+#dropdown-basic{
+  width: 400px;
+  text-align: left;
+  margin-top: -30px;
+  background-color: #ffdb4d;
+  color: black;
+  border-color: #ffdb4d;
+}
+
 
