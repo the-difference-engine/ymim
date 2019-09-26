@@ -169,4 +169,6 @@ code {
   border-color: #ffdb4d;
 }
 
-
+.dropdown-item{
+  background-color: #ffdb4d;
+}
