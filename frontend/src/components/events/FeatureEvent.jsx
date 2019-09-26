@@ -20,7 +20,7 @@ class FeatureEvent extends Component {
     return (
       <div>
         {text}
-        <span role="button" onClick={this.toggle} style={{ color: "red", cursor: "pointer"}} onmouseover="">
+        <span onClick={this.toggle} style={{ color: "gray", cursor: "pointer"}} onmouseover="">
           {" "}
           {this.state.isOpen ? " - Show less" : " + Show more"}{" "}
         </span>
@@ -29,11 +29,15 @@ class FeatureEvent extends Component {
   };
   displayContent = text => {
     let maxChar = 600;
+    if (text.length <= maxChar) {
+      return text
+    }
     if (this.state.isOpen) {
       return this.displayToggle(text);
     }
     return this.displayToggle(text.substring(0, maxChar + 1));
   };
+
 
   render() {
     const { event } = this.props;
@@ -51,7 +55,7 @@ class FeatureEvent extends Component {
               <Text type = "feature-subheading" text = {event.name.text}/>
             </a>
             <Text
-              text={<Moment format="ll">{event.start}</Moment>}
+              text={<Moment format="llll">{event.start}</Moment>}
               type="feature-subheading"
             />
             <Text
