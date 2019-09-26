@@ -27,6 +27,7 @@ class FeatureEvent extends Component {
       </div>
     );
   };
+  
   displayContent = text => {
     let maxChar = 600;
     if (text.length <= maxChar) {
