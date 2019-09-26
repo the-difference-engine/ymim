@@ -20,15 +20,15 @@ class FeatureEvent extends Component {
     return (
       <div>
         {text}
-        <span role="button" onClick={this.toggle} style={{ color: "red" }}>
+        <span role="button" onClick={this.toggle} style={{ color: "red", cursor: "pointer"}} onmouseover="">
           {" "}
-          {this.state.isOpen ? "+ Show less" : " - Show more"}{" "}
+          {this.state.isOpen ? " - Show less" : " + Show more"}{" "}
         </span>
       </div>
     );
   };
   displayContent = text => {
-    let maxChar = 140;
+    let maxChar = 600;
     if (this.state.isOpen) {
       return this.displayToggle(text);
     }
@@ -47,12 +47,9 @@ class FeatureEvent extends Component {
               image={event.logo.url ? event.logo.url : defaultLogo}
               type="floating"
             />
-            < Text
-            type = "feature-subheading"
-            text = {
-              event.name.text
-            }
-            />
+            <a href={event.url}>
+              <Text type = "feature-subheading" text = {event.name.text}/>
+            </a>
             <Text
               text={<Moment format="ll">{event.start}</Moment>}
               type="feature-subheading"
