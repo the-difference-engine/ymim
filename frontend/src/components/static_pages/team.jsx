@@ -79,7 +79,7 @@ class Team extends Component {
                 <a href="https://www.facebook.com/theymim/" target="_blank">
                   <div className="facebookLinkContainer">
                     <p>
-                      See more images on Facebook!
+                      Click here for more photos of the team.
                     </p>
                   </div>
                 </a>
