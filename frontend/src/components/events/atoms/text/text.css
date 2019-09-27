@@ -7,24 +7,6 @@
   color: #474747;
 }
 
-.text.description {
-  width: auto;
-  padding-top: 10px;
-  text-align: justify;
-}
-
-.text.feature-subheading {
-  font-size: 24px;
-  font-weight: bold;
-  color: #363636;
-  padding-top: 10px;
-}
-
-.text.rsvp {
-  font-size: 24px;
-  margin-left: 14px;
-}
-
 .text.subheading {
   font-size: 18px;
   font-weight: bold;
@@ -52,6 +34,35 @@
   max-width: 48px;
 }
 
+/* Styling for the featured event */
+
+.text.description {
+  width: auto;
+  padding-top: 10px;
+  text-align: justify;
+  margin: 0 16px 10px 16px;
+}
+
+.text.feature-subheading {
+  font-size: 24px;
+  font-weight: bold;
+  color: #363636;
+  padding-top: 10px;
+  position: relative;
+  margin: 0 16px;
+}
+
+.text.rsvp {
+  font-size: 24px;
+  margin-left: 14px;
+}
+
+.text.rsvp-link {
+  font-size: 24px;
+}
+
+/* Responsive styling */
+
 @media all and (min-width: 426px) and (max-width: 768px) {
   .text.subheading {
     font-size: 14px;
@@ -64,6 +75,9 @@
   }
   .text.thumbnailMonth {
     font-size: 14px;
+  }
+  .text.text.feature-subheading {
+    font-size: 20px;
   }
 }
 
@@ -81,5 +95,8 @@
   }
   .text.thumbnailMonth {
     font-size: 12px;
+  }
+  .text.feature-subheading {
+    font-size: 18px;
   }
 }

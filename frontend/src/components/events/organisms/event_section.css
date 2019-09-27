@@ -13,6 +13,10 @@ a {
   margin: 0 14px;
 }
 
+.featured-event-top {
+  width: fill;
+}
+
 .space-anchors {
   font-size: 24pt;
   margin: 0 20px 0 0 !important;

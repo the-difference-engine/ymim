@@ -6,7 +6,7 @@ export const fetchEvents = () => {
     };
 
     return fetch(
-      "https://www.eventbriteapi.com/v3/organizers/16679765733/events/",
+      "https://www.eventbriteapi.com/v3/organizers/25494791983/events/",
       {
         headers
       }

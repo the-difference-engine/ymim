@@ -22,7 +22,7 @@ class FeatureEvent extends Component {
         {text}
         <span role="button" onClick={this.toggle} style={{ color: "red", cursor: "pointer"}} onmouseover="">
           {" "}
-          {this.state.isOpen ? " - Show less" : " + Show more"}{" "}
+          {this.state.isOpen ? " -Show less" : " +Show more"}{" "}
         </span>
       </div>
     );
@@ -41,14 +41,14 @@ class FeatureEvent extends Component {
       <div>
         <h2>Upcoming Events</h2>
         <Flex>
-          <p>
+          <div className="featured-event-top">
             <EventImage
               url={event.url}
               image={event.logo.url ? event.logo.url : defaultLogo}
               type="floating"
             />
             <a href={event.url}>
-              <Text type = "feature-subheading" text = {event.name.text}/>
+              <Text type="feature-subheading" text={event.name.text}/>
             </a>
             <Text
               text={<Moment format="ll">{event.start}</Moment>}
@@ -62,7 +62,7 @@ class FeatureEvent extends Component {
                   : ""
               }
             />
-          </p>
+          </div>
 
           <div className="col-learn-more">
             <h2>
@@ -76,7 +76,7 @@ class FeatureEvent extends Component {
                 className = "space-anchors"
                 alt="Eventbrite"
               >
-                <Text text={"Eventbrite"} />
+                <Text type="rsvp-link" text={"Eventbrite"} />
               </a>
               <a
                 href="https://www.facebook.com/theymim/"
@@ -85,7 +85,7 @@ class FeatureEvent extends Component {
                 className = "space-anchors"
                 alt="Facebook"
               >
-                <Text text={"Facebook"} />
+                <Text type="rsvp-link" text={"Facebook"} />
               </a>
             </div>
           </div>
