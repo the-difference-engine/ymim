@@ -9,7 +9,11 @@ class CarouselComponent extends Component {
     return (
       <Carousel>
         <Carousel.Item>
-          <img className="d-block w-100 blurImage" src={ymim1} alt="First Slide" />
+          <img
+            className="d-block w-100 blurImage"
+            src={ymim1}
+            alt="First Slide"
+          />
           <Carousel.Caption>
             <div class="overlay">
               <h3 className="title-carousel">Young Masterbuilders in Motion</h3>

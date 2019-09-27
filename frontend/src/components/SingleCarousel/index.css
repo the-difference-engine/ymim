@@ -1,12 +1,13 @@
 .blurImage {
-  filter: opacity(.5);
-  -webkit-filter: opacity(.5);
+  filter: opacity(0.5);
+  -webkit-filter: opacity(0.5);
 }
 
 .carousel-indicators {
   display: none;
 }
 
-.carousel-control-prev-icon, .carousel-control-next-icon  {
-  display: none;  
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: none;
 }
