@@ -5,7 +5,7 @@ import { findFirstUpcomingIndex } from "./utils";
 import FeatureEvent from "./FeatureEvent";
 
 const EventList = ({ events }) => {
-  const firstUpcoming = findFirstUpcomingIndex(events)
+  const firstUpcoming = findFirstUpcomingIndex(events);
   if (firstUpcoming === undefined) {
     return (
       <div>
@@ -15,10 +15,7 @@ const EventList = ({ events }) => {
           an event that you think YMIM should be a part of please email:
           Founder@theymim.org or call: 773.941.1200.
         </div>
-        <EventSection
-          events={events}
-          isUpcoming={false}
-        />
+        <EventSection events={events} isUpcoming={false} />
       </div>
     );
   } else if (firstUpcoming === events.length - 1) {
@@ -32,14 +29,17 @@ const EventList = ({ events }) => {
           isUpcoming={false}
         />
       </div>
-    )
+    );
   } else {
     return (
       <div>
         <div>
           <FeatureEvent event={events[firstUpcoming]} />
         </div>
-        <EventSection events={events.slice(firstUpcoming + 1)} isUpcoming={true} />
+        <EventSection
+          events={events.slice(firstUpcoming + 1)}
+          isUpcoming={true}
+        />
         <EventSection
           events={events.slice(0, firstUpcoming)}
           isUpcoming={false}

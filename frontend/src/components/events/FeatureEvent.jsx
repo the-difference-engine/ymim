@@ -20,25 +20,28 @@ class FeatureEvent extends Component {
     return (
       <div>
         {text}
-        <span onClick={this.toggle} style={{ color: "gray", cursor: "pointer"}} onmouseover="">
+        <span
+          onClick={this.toggle}
+          style={{ color: "gray", cursor: "pointer" }}
+          onmouseover=""
+        >
           {" "}
           {this.state.isOpen ? " -Show less" : " +Show more"}{" "}
         </span>
       </div>
     );
   };
-  
+
   displayContent = text => {
     let maxChar = 600;
     if (text.length <= maxChar) {
-      return text
+      return text;
     }
     if (this.state.isOpen) {
       return this.displayToggle(text);
     }
     return this.displayToggle(text.substring(0, maxChar + 1));
   };
-
 
   render() {
     const { event } = this.props;
@@ -53,7 +56,7 @@ class FeatureEvent extends Component {
               type="floating"
             />
             <a href={event.url}>
-              <Text type="feature-subheading" text={event.name.text}/>
+              <Text type="feature-subheading" text={event.name.text} />
             </a>
             <Text
               text={<Moment format="llll">{event.start}</Moment>}
@@ -78,7 +81,7 @@ class FeatureEvent extends Component {
                 href={event.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className = "space-anchors"
+                className="space-anchors"
                 alt="Eventbrite"
               >
                 <Text type="rsvp-link" text={"Eventbrite"} />
@@ -87,7 +90,7 @@ class FeatureEvent extends Component {
                 href="https://www.facebook.com/theymim/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className = "space-anchors"
+                className="space-anchors"
                 alt="Facebook"
               >
                 <Text type="rsvp-link" text={"Facebook"} />
