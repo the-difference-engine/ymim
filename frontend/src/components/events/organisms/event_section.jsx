@@ -17,7 +17,7 @@ const EventSection = ({ events, isUpcoming }) => {
         <div className="headingFlex">
           <Text text={sectionTitle} type="heading" />
         </div>
-        {events.map(({ name, start, logo, url, id }) => {
+        {events.map(({ name, start, logo, url, id, description }) => {
           return (
             <FlexItem key={id}>
               <EventCard
@@ -25,6 +25,7 @@ const EventSection = ({ events, isUpcoming }) => {
                 start={start ? start.local : "TBA"}
                 logo={logo ? logo.url : defaultLogo}
                 url={url}
+                description={description.text ? description.text : ""} 
               />
             </FlexItem>
           );

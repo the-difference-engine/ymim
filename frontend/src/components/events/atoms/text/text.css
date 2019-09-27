@@ -48,6 +48,16 @@
   font-weight: bold;
 }
 
+.text.hoverDescription,
+.text.hoverTitle {
+  color: white;
+  margin: 10px;
+}
+
+.text.hoverTitle {
+  font-weight: bold;
+}
+
 .thumbNail {
   max-width: 48px;
 }
