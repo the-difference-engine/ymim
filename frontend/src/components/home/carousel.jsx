@@ -9,10 +9,10 @@ class CarouselComponent extends Component {
     return (
       <Carousel>
         <Carousel.Item>
-          <img className="d-block w-100" src={ymim1} alt="First Slide" />
+          <img className="d-block w-100 blurImage" src={ymim1} alt="First Slide" />
           <Carousel.Caption>
             <div class="overlay">
-              <h3 className="title-carousel">Young Masterbuilder in Motion</h3>
+              <h3 className="title-carousel">Young Masterbuilders in Motion</h3>
               <p className="paragraph-carousel">
                 inspires, connects, and empowers young women orphans, adoptees,
                 and foster youth alumnae to thrive.

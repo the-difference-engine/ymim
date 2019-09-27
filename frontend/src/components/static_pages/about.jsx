@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./about.css";
-import SingleCarousel from "../SingleCarousel";
+import CarouselComponent from "../home/carousel";
 import { Container, Row, Col } from "react-bootstrap";
 import KimWright from "./../../assets/KWright_profile.jpg";
 import PierrePriestley from "./../../assets/Pierre-Priestley_profile.jpg";
@@ -10,7 +10,7 @@ class About extends Component {
   render() {
     return (
       <Container fluid="true">
-        <SingleCarousel />
+        <CarouselComponent />
         <Container>
           <Row id="aboutPageTextRow">
             <h1 className="heading"> About </h1>
