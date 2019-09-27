@@ -84,7 +84,7 @@ class About extends Component {
               <img src={KimWright} alt={"Kim Wright"} />
             </Col>
             <Col xs="10" md="6" lg="6" xl="6">
-              <h1 className="heading text-left">Kim Wright, MBA</h1>
+              <h1 className="people-heading text-left">Kim Wright, MBA</h1>
               <h4 className="sub-heading text-left">Founder and President</h4>
               <p className="text-left">
                 Wright grew up as a youth-in-care from age 2 to 17 in multiple
@@ -111,7 +111,9 @@ class About extends Component {
               <img src={PierrePriestley} alt={"Pierre Priestley"} />
             </Col>
             <Col xs="10" md="6" lg="6" xl="6">
-              <h1 className="heading text-left">Pierre Priestley, JD, MBA</h1>
+              <h1 className="people-heading text-left">
+                Pierre Priestley, JD, MBA
+              </h1>
               <h4 className="sub-heading text-left">
                 Board Officer, Treasurer
               </h4>
@@ -135,7 +137,7 @@ class About extends Component {
               <img src={ShirleyScott} alt={"Shirley Scott"} />
             </Col>
             <Col xs="10" md="6" lg="6" xl="6">
-              <h1 className="heading text-left">
+              <h1 className="people-heading text-left">
                 Shirley Scott, MS, RN-BC, C-EFM, APN, DNP
               </h1>
               <h4 className="sub-heading text-left">
