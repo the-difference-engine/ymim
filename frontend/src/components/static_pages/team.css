@@ -52,6 +52,13 @@
   }
 }
 
+/* tablet */
+@media all and (min-width: 426px) and (max-width: 768px) {
+  .teamPhotos .facebookLinkContainer p {
+    font-size: medium;
+  }
+}
+
 /* mobile */
 @media all and (min-width: 300px) and (max-width: 425px) {
   .teamPhotos .facebookLinkContainer {
