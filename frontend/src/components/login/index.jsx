@@ -65,9 +65,6 @@ class Login extends Component {
                       value={this.state.username}
                       onChange={this.handleInputChange}
                     />
-                    {errors.username.length > 0 && (
-                      <div className="style-error">{errors.username}</div>
-                    )}
                   </div>
                   <br />
                   <div>
@@ -81,9 +78,6 @@ class Login extends Component {
                       value={this.state.password}
                       onChange={this.handleInputChange}
                     />
-                    {errors.password.length > 0 && (
-                      <div className="style-error">{errors.password}</div>
-                    )}
                   </div>
                   <br />
                   <div>
