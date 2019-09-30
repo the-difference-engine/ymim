@@ -88,12 +88,7 @@ class Login extends Component {
                         <span className="buttonSpan">LOGIN</span>
                       </button>
                     </p>
-                  </div>
-                  <div className="center-login">
-                    <a className="password-link" href="">
-                      Forgot Password
-                    </a>
-                  </div>
+                  </div>                  
                   <br />
                 </div>
               </form>
