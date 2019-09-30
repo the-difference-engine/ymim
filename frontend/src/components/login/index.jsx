@@ -12,10 +12,7 @@ class Login extends Component {
       errors: {
         username: "",
         password: ""
-      },
-      usernameValid: false,
-      passwordValid: false,
-      formValid: false
+      }      
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
