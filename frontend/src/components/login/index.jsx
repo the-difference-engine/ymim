@@ -39,11 +39,6 @@ class Login extends Component {
     // }).then(function() {
     //   console.log("data has been set");
     // });
-
-    this.setState({
-      username: "",
-      password: ""
-    });
   };
 
   render() {
