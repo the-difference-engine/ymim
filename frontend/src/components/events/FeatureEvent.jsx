@@ -22,9 +22,7 @@ class FeatureEvent extends Component {
         {text}
         <span
           onClick={this.toggle}
-          style={{ color: "gray", cursor: "pointer" }}
-          onmouseover=""
-        >
+          style={{ color: "gray", cursor: "pointer" }}>
           {" "}
           {this.state.isOpen ? " -Show less" : " +Show more"}{" "}
         </span>
@@ -74,7 +72,7 @@ class FeatureEvent extends Component {
 
           <div className="col-learn-more">
             <h2>
-              <Text type="rsvp" text={"RSVP and Find out more:"} />
+              <Text type="rsvp" text="RSVP and Find out more:" />
             </h2>
             <div className="row-learn-more">
               <a
