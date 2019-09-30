@@ -22,7 +22,8 @@ class FeatureEvent extends Component {
         {text}
         <span
           onClick={this.toggle}
-          style={{ color: "gray", cursor: "pointer" }}>
+          style={{ color: "gray", cursor: "pointer" }}
+        >
           {" "}
           {this.state.isOpen ? " -Show less" : " +Show more"}{" "}
         </span>

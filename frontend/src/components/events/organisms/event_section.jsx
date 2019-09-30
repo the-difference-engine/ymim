@@ -25,7 +25,7 @@ const EventSection = ({ events, isUpcoming }) => {
                 start={start ? start.local : "TBA"}
                 logo={logo ? logo.url : defaultLogo}
                 url={url}
-                description={description.text ? description.text : ""} 
+                description={description.text ? description.text : ""}
               />
             </FlexItem>
           );
