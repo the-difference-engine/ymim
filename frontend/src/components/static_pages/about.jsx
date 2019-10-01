@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./about.css";
 import SingleCarousel from "../SingleCarousel";
 import { Container, Row, Col } from "react-bootstrap";
-import KimWright from "./../../assets/KWright_profile.jpg";
-import PierrePriestley from "./../../assets/Pierre-Priestley_profile.jpg";
-import ShirleyScott from "./../../assets/Shirley-Scott_profile .jpg";
+import PierrePriestley from "./../../assets/Pierre-Priestley_new.jpg";
+import ShirleyScott from "./../../assets/Shirley-Scott_new.jpg";
+import KimWright from "./../../assets/KWright_new.jpg";
 
 class About extends Component {
   render() {
