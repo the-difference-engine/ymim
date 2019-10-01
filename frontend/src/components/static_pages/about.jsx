@@ -149,7 +149,7 @@ class About extends Component {
                 and young adult women population particularly those living in
                 underserved areas. Scott incorporates the physical, social,
                 emotional, and spiritual aspects of life to help women and
-                families obtain optimal health. U.S. Air Force Veteran
+                families obtain optimal health. U.S. Air Force Veteran.
               </p>
             </Col>
           </Row>
