@@ -167,8 +167,13 @@ code {
   background-color: #ffdb4d;
   color: black;
   border-color: #ffdb4d;
+  
+ 
 }
 
 .dropdown-item{
   background-color: #ffdb4d;
+}
+.dropdown.toggle{
+  display: none;
 }
