@@ -36,6 +36,7 @@ class Donate extends Component {
           <div className="mx-auto">
             <form action="https://www.paypal.com/" method="post" target="_top">
               <input type="hidden" name="cmd" value="_s-xclick" />
+              <input type="hidden" name="hosted_button_id" value="34L62HLMP5VEC" />
               <input
                 type="hidden"
                 name="hosted_button_id"
