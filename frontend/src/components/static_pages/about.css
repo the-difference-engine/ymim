@@ -19,7 +19,7 @@
 }
 
 .people-heading {
-  font-size: 36pt;
+  font-size: 48px;
   font-weight: bold;
 }
 
@@ -40,10 +40,6 @@
   }
   .heading {
     font-size: 30px;
-  }
-  .people-heading {
-    font-size: 30px;
-    font-weight: bold;
   }
   .sub-heading {
     font-size: 24px;
