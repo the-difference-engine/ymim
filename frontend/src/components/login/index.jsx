@@ -9,10 +9,6 @@ class Login extends Component {
     this.state = {
       username: "",
       password: "",
-      errors: {
-        username: "",
-        password: ""
-      }      
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -82,8 +78,6 @@ class Login extends Component {
                         className="col-md-12 loginButton"
                         type="submit"
                         value="Submit"
-                        // disabled={!this.validateForm()}
-                        // onChange={this.onChange}
                       >
                         <span className="buttonSpan">LOGIN</span>
                       </button>
