@@ -36,6 +36,10 @@
     margin-bottom: 20px;
   }
 
+  .images img {
+    width: 300px;
+  }
+
   .heading {
     font-size: 30px;
   }
@@ -59,7 +63,7 @@
     margin-bottom: 10px;
   }
   .images img {
-    width: 250px;
+    width: 100%;
   }
   .heading {
     font-size: 26px;
