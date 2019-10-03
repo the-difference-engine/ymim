@@ -7,6 +7,7 @@
 .images {
   margin: 0;
   margin-bottom: 40px;
+  margin-left: 120px;
 }
 
 .images img {
@@ -18,6 +19,9 @@
   font-size: 24px;
 }
 
+.about-heading {
+  margin-left: 120px;
+}
 /* tablet */
 
 @media all and (min-width: 426px) and (max-width: 1023px) {
@@ -29,6 +33,7 @@
   .images {
     margin: 0;
     margin-bottom: 20px;
+    margin-left: 120px;
   }
   .images img {
     width: 300px;
@@ -41,6 +46,9 @@
   }
   p {
     font-size: 16px;
+  }
+  .about-heading {
+    font-size: 30px;
   }
 }
 
@@ -66,5 +74,8 @@
   }
   p {
     font-size: 14px;
+  }
+  .about-heading {
+    font-size: 26px;
   }
 }
