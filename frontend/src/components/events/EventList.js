@@ -20,8 +20,10 @@ const EventList = ({ events }) => {
         />
       </div>
     );
-  }
-  else if (firstUpcoming < events.length - 1 && typeof (firstUpcoming) === typeof (events.lengths - 1)) {
+  } else if (
+    firstUpcoming < events.length - 1 &&
+    typeof firstUpcoming === typeof (events.lengths - 1)
+  ) {
     return (
       <div>
         <div>
@@ -37,8 +39,7 @@ const EventList = ({ events }) => {
         />
       </div>
     );
-  }
-  else {
+  } else {
     return (
       <div>
         <EventSection events={[]} isUpcoming={true} />
