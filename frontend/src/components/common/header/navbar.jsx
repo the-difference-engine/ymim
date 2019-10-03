@@ -96,7 +96,7 @@ class NavBar extends Component {
                     Enroll
                   </NavLink>
                   {/* volunteer  */}
-                  <NavLink className="resources-link" to="/ambassadors">
+                  <NavLink className="resources-link" to="/volunteer">
                       Volunteer
                   </NavLink>
                 </Nav>
