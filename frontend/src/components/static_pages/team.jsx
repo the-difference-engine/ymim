@@ -9,7 +9,6 @@ import Picture5 from "../../assets/action-shots/Team photo wKennedy.jpg";
 import Picture6 from "../../assets/action-shots/TTigue Sscott ASayre.jpg";
 import Picture7 from "../../assets/action-shots/UIC Dream Team SScott ACalix KWright.jpg";
 import Picture8 from "../../assets/action-shots/Calix family donors.jpg";
-import Picture9 from "../../assets/action-shots/Claxtons delivering donations.jpg";
 
 class Team extends Component {
   render() {
