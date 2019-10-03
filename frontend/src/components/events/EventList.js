@@ -3,8 +3,10 @@ import EventSection from "./organisms/event_section";
 import "./index.css";
 import { findFirstUpcomingIndex } from "./utils";
 import FeatureEvent from "./FeatureEvent";
+import moment from "moment";
 
 const EventList = ({ events }) => {
+  events.sort((a, b) => moment(a.start.local) - moment(b.start.local));
   const firstUpcoming = findFirstUpcomingIndex(events);
   if (firstUpcoming === events.length - 1) {
     return (
