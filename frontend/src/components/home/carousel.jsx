@@ -4,7 +4,7 @@ import "./index.css";
 import ymim1 from "../../assets/ymim1.png";
 import logo from "../../assets/logo.png";
 
-class CarouselComponent extends Component {
+class MainCarousel extends Component {
   render() {
     return (
       <Carousel>
@@ -32,4 +32,4 @@ class CarouselComponent extends Component {
   }
 }
 
-export default CarouselComponent;
+export default MainCarousel;
