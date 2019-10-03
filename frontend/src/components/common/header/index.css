@@ -51,10 +51,6 @@
   color: #fdd368;
 }
 
-.active {
-  color: #fdd368 !important;
-}
-
 /* dropdowns for resources, enroll, and volunteer */
 div.dropdown-menu.show {
   background-color: #519b56;
@@ -64,7 +60,8 @@ div.dropdown-menu.show {
   padding-bottom: 0;
 }
 
-a.dropdown-item {
+
+ a.dropdown-item {
   font-size: 32px;
   color: white;
 }
