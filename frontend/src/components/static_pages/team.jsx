@@ -77,9 +77,7 @@ class Team extends Component {
               <Col className="imageColumn" sm={4}>
                 <a href="https://www.facebook.com/theymim/" target="_blank">
                   <div className="facebookLinkContainer">
-                    <p>
-                      Click here for more photos of the team.
-                    </p>
+                    <p>Click here for more photos of the team.</p>
                   </div>
                 </a>
               </Col>

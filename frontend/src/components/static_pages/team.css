@@ -43,7 +43,7 @@
 }
 
 .imageColumn a {
- color: black; 
+  color: black;
 }
 
 @media all and (min-width: 1440px) {
