@@ -80,7 +80,7 @@ class About extends Component {
           </Row>
           <h1 className="about-heading">Our People</h1>
           <Row>
-            <Col xs="10" md="6" lg="6" xl="4" className="images">
+            <Col xs="10" md="6" lg="4" xl="4" className="images">
               <img src={KimWright} alt={"Kim Wright"} />
             </Col>
             <Col xs="10" md="4" lg="4" xl="6">
@@ -131,7 +131,7 @@ class About extends Component {
           </Row>
 
           <Row>
-            <Col xs="10" md="6" lg="6" xl="4" className="images">
+            <Col xs="10" md="6" lg="4" xl="4" className="images">
               <img src={ShirleyScott} alt={"Shirley Scott"} />
             </Col>
             <Col xs="10" md="4" lg="4" xl="6">
