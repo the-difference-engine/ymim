@@ -42,7 +42,7 @@ class Events extends Component {
     return (
       <div>
         {eventsHeading}
-        Check back soon for events
+        <div className="checkBack"> Check back soon for events</div>
       </div>
     );
   }
