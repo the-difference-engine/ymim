@@ -60,8 +60,7 @@ div.dropdown-menu.show {
   padding-bottom: 0;
 }
 
-
- a.dropdown-item {
+a.dropdown-item {
   font-size: 32px;
   color: white;
 }

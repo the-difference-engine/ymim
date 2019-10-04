@@ -4,7 +4,7 @@ import "./index.css";
 import { findPastEndIndex } from "./utils";
 
 const EventList = ({ events }) => {
-  let pastEnd = findPastEndIndex(events)
+  let pastEnd = findPastEndIndex(events);
   if (pastEnd === events.length - 1) {
     return (
       <div>

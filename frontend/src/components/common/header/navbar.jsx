@@ -97,7 +97,7 @@ class NavBar extends Component {
                   </NavLink>
                   {/* volunteer  */}
                   <NavLink className="resources-link" to="/volunteer">
-                      Volunteer
+                    Volunteer
                   </NavLink>
                 </Nav>
               </Navbar.Collapse>
