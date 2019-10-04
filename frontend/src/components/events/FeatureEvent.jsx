@@ -46,7 +46,6 @@ class FeatureEvent extends Component {
     const { event } = this.props;
     return (
       <div>
-        <h2>Upcoming Events</h2>
         <Flex>
           <div className="featured-event-top">
             <EventImage
@@ -58,7 +57,7 @@ class FeatureEvent extends Component {
               <Text type="feature-subheading" text={event.name.text} />
             </a>
             <Text
-              text={<Moment format="llll">{event.start}</Moment>}
+              text={<Moment format="llll">{event.start.local}</Moment>}
               type="feature-subheading"
             />
             <Text
