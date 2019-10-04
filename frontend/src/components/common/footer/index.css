@@ -78,6 +78,14 @@
   text-align: center;
 }
 
+.footer-line{
+  border: 0.7px solid white;
+  margin-left: 220px;
+  margin-right: 175px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
 .tsocial {
   text-align: center;
 }
