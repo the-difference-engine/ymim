@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container, Col, Row } from "react-bootstrap";
+import ImageModal from "../modals/image_modal.jsx";
 import "./team.css";
 import Picture1 from "../../assets/action-shots/3 rows of donations lined up.jpg";
 import Picture2 from "../../assets/action-shots/Handmade drawstring bag donations.jpg";
@@ -11,6 +12,10 @@ import Picture7 from "../../assets/action-shots/UIC Dream Team SScott ACalix KWr
 import Picture8 from "../../assets/action-shots/Calix family donors.jpg";
 
 class Team extends Component {
+  state = {
+    showImageModal: false,
+  }
+
   render() {
     return (
       <div>
@@ -82,6 +87,12 @@ class Team extends Component {
                 </a>
               </Col>
             </Row>
+            <button onClick={()=>{this.setState({showImageModal: true})}}>Modal</button>
+            <ImageModal 
+              src={Picture8} 
+              show={this.state.showImageModal} 
+              onHide={()=>{this.setState({showImageModal: false})}}
+            />
           </Container>
         </div>
       </div>

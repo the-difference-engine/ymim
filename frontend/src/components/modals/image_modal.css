@@ -1,0 +1,7 @@
+.ImageModal .modal-dialog {
+  max-width: none;
+}
+
+.ImageModal img {
+  width: 100%;
+}
