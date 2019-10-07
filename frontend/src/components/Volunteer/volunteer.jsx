@@ -54,12 +54,13 @@ class Volunteer extends Component {
       <>
         <SingleCarousel className="carousel" header="Volunteer" />
         <Container className="mt-4">
-          <Row className="mx-auto">
-            <form action="/" className="flexForm" method="post">
+          <Row className="mx-auto flexForm">
+            {/* <form action="/" className="flexForm" method="post"> */}
               <Row noGutters={true}>
                 <Col xs={12} sm={12} md={12} lg={5} className="mr-2">
-                  <h2 className="mb-4">Get Involved!</h2>
-                  <div className="form-group">
+                  {/* <h2 className="mb-4">Get Involved!</h2> */}
+                  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe64AwGoRanKukVA4RzS-hzh_oN1EFMu4WQiWpKoCQ-LOO90w/viewform?embedded=true" width="100%" height="1050" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                  {/* <div className="form-group">
                     <label>
                       <b>Select your role</b>
                     </label>
@@ -164,9 +165,9 @@ class Volunteer extends Component {
                       </button>
                     </p>
                   </div>
-                  <br />
+                  <br /> */}
                 </Col>
-                <Col className="volunteerMain" xs={12} sm={12} md={12} lg={5}>
+                {/* <Col className="volunteerMain" xs={12} sm={12} md={12} lg={5}>
                   <h2 className="mb-4">Volunteer!</h2>
                   <p className="query">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -194,9 +195,34 @@ class Volunteer extends Component {
                     delectus consequuntur aut incidunt ipsam quidem repellat
                     fugiat consequatur nihil odit quam voluptas earum.
                   </p>
-                </Col>
+                </Col> */}
+                <Col className="volunteerMain" xs={12} sm={12} md={12} lg={5}>
+                  <h2 className="mb-4">Dear Volunteers!</h2>
+                  <p>
+                    Thank you for considering getting involved in the Young
+                    Masterbuilders in Motion (<b>YMIM)</b>&nbsp;movement to inspire,
+                    connect, and empower young adult orphans, adoptees, and foster youth
+                    alumnae.
+                  </p>
+                  <p>
+                    Your thoughtful and generous contributions will help our vulnerable
+                    young adult alumnae who are in need to matriculate through life.
+                    Your time, talent and donations are greatly appreciated!
+                  </p>
+                  <p>
+                    In the accompanying form, please tell us more about you in the comment
+                    section. Describe your current occupation and expertise, and if the
+                    area you want to help us with is different from your career
+                    expertise, tell us what you hope to help us accomplish. Oh yes, of
+                    course, donors and sponsors can be volunteers too!
+                  </p>
+                  <p>
+                    We welcome you to our family of great people connecting other
+                    wonderful people to life changing experiences!
+                  </p>
+                </Col >
               </Row>
-            </form>
+            {/* </form> */}
           </Row>
         </Container>
       </>
