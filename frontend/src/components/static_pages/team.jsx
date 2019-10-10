@@ -14,12 +14,12 @@ import Picture8 from "../../assets/action-shots/Calix family donors.jpg";
 class Team extends Component {
   state = {
     showImageModal: false,
-    enhancedImage: null,
-  }
+    enhancedImage: null
+  };
 
-  selectImage = (event) => {
-    this.setState({enhancedImage: event.target.src, showImageModal: true});
-  }
+  selectImage = event => {
+    this.setState({ enhancedImage: event.target.src, showImageModal: true });
+  };
 
   render() {
     return (
@@ -61,28 +61,84 @@ class Team extends Component {
             </Row>
             <Row>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture1} className="gallery-picture" alt="Photo 1" onClick={(event)=>{this.selectImage(event)}} />
+                <img
+                  src={Picture1}
+                  className="gallery-picture"
+                  alt="Photo 1"
+                  onClick={event => {
+                    this.selectImage(event);
+                  }}
+                />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture2} className="gallery-picture" alt="Photo 2" onClick={(event)=>{this.selectImage(event)}} />
+                <img
+                  src={Picture2}
+                  className="gallery-picture"
+                  alt="Photo 2"
+                  onClick={event => {
+                    this.selectImage(event);
+                  }}
+                />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture3} className="gallery-picture" alt="Photo 3" onClick={(event)=>{this.selectImage(event)}} />
+                <img
+                  src={Picture3}
+                  className="gallery-picture"
+                  alt="Photo 3"
+                  onClick={event => {
+                    this.selectImage(event);
+                  }}
+                />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture4} className="gallery-picture" alt="Photo 4" onClick={(event)=>{this.selectImage(event)}} />
+                <img
+                  src={Picture4}
+                  className="gallery-picture"
+                  alt="Photo 4"
+                  onClick={event => {
+                    this.selectImage(event);
+                  }}
+                />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture5} className="gallery-picture" alt="Photo 5" onClick={(event)=>{this.selectImage(event)}} />
+                <img
+                  src={Picture5}
+                  className="gallery-picture"
+                  alt="Photo 5"
+                  onClick={event => {
+                    this.selectImage(event);
+                  }}
+                />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture6} className="gallery-picture" alt="Photo 6" onClick={(event)=>{this.selectImage(event)}} />
+                <img
+                  src={Picture6}
+                  className="gallery-picture"
+                  alt="Photo 6"
+                  onClick={event => {
+                    this.selectImage(event);
+                  }}
+                />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture7} className="gallery-picture" alt="Photo 7" onClick={(event)=>{this.selectImage(event)}} />
+                <img
+                  src={Picture7}
+                  className="gallery-picture"
+                  alt="Photo 7"
+                  onClick={event => {
+                    this.selectImage(event);
+                  }}
+                />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture8} className="gallery-picture" alt="Photo 8" onClick={(event)=>{this.selectImage(event)}} />
+                <img
+                  src={Picture8}
+                  className="gallery-picture"
+                  alt="Photo 8"
+                  onClick={event => {
+                    this.selectImage(event);
+                  }}
+                />
               </Col>
               <Col className="imageColumn" sm={4}>
                 <a href="https://www.facebook.com/theymim/" target="_blank">
@@ -92,10 +148,12 @@ class Team extends Component {
                 </a>
               </Col>
             </Row>
-            <ImageModal 
-              src={this.state.enhancedImage} 
-              show={this.state.showImageModal} 
-              onHide={()=>{this.setState({showImageModal: false})}}
+            <ImageModal
+              src={this.state.enhancedImage}
+              show={this.state.showImageModal}
+              onHide={() => {
+                this.setState({ showImageModal: false });
+              }}
             />
           </Container>
         </div>

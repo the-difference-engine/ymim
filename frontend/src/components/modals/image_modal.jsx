@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Modal from 'react-bootstrap/Modal';
+import Modal from "react-bootstrap/Modal";
 import "./image_modal.css";
 
 class ImageModal extends Component {
@@ -13,9 +13,9 @@ class ImageModal extends Component {
         aria-labelledby="ImageModal"
         centered
       >
-        <Modal.Header closeButton/>
+        <Modal.Header closeButton />
         <Modal.Body>
-          <img src={this.props.src} alt="no image"/>
+          <img src={this.props.src} alt="no image" />
         </Modal.Body>
       </Modal>
     );
