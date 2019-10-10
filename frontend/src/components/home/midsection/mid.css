@@ -30,7 +30,7 @@
   font-size: 24pt;
 }
 
-.upper-mid-sectiontext {
+.nonprofit-disclaimer {
   text-align: center;
   font-size: 15pt;
   color: #697689;
@@ -86,7 +86,7 @@
     margin-bottom: 10px;
   }
 
-  .upper-mid-sectiontext {
+  .nonprofit-disclaimer {
     font-size: 8px;
   }
 
@@ -124,7 +124,7 @@
     font-size: 26pt;
     padding: 5px 0;
   }
-  .upper-mid-sectiontext {
+  .nonprofit-disclaimer {
     font-size: 10pt;
   }
   .ym-button {
