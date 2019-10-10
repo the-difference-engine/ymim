@@ -15,7 +15,7 @@ class ImageModal extends Component {
       >
         <Modal.Header closeButton />
         <Modal.Body>
-          <img src={this.props.src} alt="no image" />
+          <img src={this.props.src} alt="src" />
         </Modal.Body>
       </Modal>
     );
