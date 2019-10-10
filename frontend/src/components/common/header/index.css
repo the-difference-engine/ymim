@@ -105,6 +105,10 @@ a.dropdown-item {
   margin-bottom: auto;
 }
 
+.mx-auto {
+  width: 220px;
+}
+
 /* responsiveness */
 @media all and (min-width: 768px) and (max-width: 2048px) {
   .align-links {
