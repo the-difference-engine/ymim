@@ -23,7 +23,7 @@ class Enroll extends Component {
   render() {
     return (
       <div>
-        <SingleCarousel />
+        <SingleCarousel header="Enroll" />
         <div className="container group">
           <h1 className="mt-5">Enroll</h1>
           <div className="container col-sm-6 float-right mt-5">
