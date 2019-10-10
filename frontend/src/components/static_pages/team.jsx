@@ -141,7 +141,9 @@ class Team extends Component {
                 />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <a href="https://www.facebook.com/theymim/" target="_blank">
+                <a href="https://www.facebook.com/theymim/"
+                   target="_blank"
+                   rel="noopener noreferrer">
                   <div className="facebookLinkContainer">
                     <p>Click here for more photos of the team.</p>
                   </div>

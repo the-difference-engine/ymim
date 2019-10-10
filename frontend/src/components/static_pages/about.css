@@ -6,15 +6,21 @@
 
 .images {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 140px;
 }
 
 .images img {
   width: 400px;
+  height: 400px;
 }
 
 .sub-heading {
   font-size: 24px;
+}
+
+.people-heading {
+  font-size: 48px;
+  font-weight: bold;
 }
 
 /* tablet */
@@ -29,9 +35,11 @@
     margin: 0;
     margin-bottom: 20px;
   }
+
   .images img {
     width: 300px;
   }
+
   .heading {
     font-size: 30px;
   }
@@ -55,13 +63,17 @@
     margin-bottom: 10px;
   }
   .images img {
-    width: 250px;
+    width: 100%;
   }
   .heading {
     font-size: 26px;
   }
   .sub-heading {
     font-size: 18px;
+  }
+  .people-heading {
+    font-size: 26px;
+    font-weight: bold;
   }
   p {
     font-size: 14px;
