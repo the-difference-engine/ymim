@@ -1,10 +1,10 @@
-export function findFirstUpcomingIndex(events) {
-  const currentTime = Date.now();
-  let upcomingEvent = events.find(
-    e => Date.parse(e.end.local) - currentTime > 0
-  );
-  if (upcomingEvent) {
-    return events.indexOf(upcomingEvent);
-  }
-  return upcomingEvent;
+import moment from "moment";
+
+export function findUpcomingEvents(events, currentTime) {
+  return events.filter(event => moment(event.end.local).isAfter(currentTime))
 }
+
+export function findPastEvents(events, currentTime) {
+  return events.filter(event => moment(event.end.local).isBefore(currentTime))
+}
+
