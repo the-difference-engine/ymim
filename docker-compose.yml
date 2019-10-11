@@ -20,4 +20,12 @@ services:
     links:
       - postgres:db
     command: web_app migrate local
-  
+  frontend:
+    build:
+      context: frontend
+    volumes:
+      - $PWD/frontend:/code
+    environment:
+      - NODE_ENV=development
+    ports:
+      - 3000:3000
