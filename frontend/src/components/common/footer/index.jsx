@@ -62,6 +62,7 @@ export default class footer extends Component {
               </nav>
             </Col>
           </Row>
+          <hr className="footer-line"></hr>
           <Row className="justify-content-center">
             <Col xs sm md lg xl="12">
               <Row className="justify-content-md-center contact">
