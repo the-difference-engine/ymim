@@ -1,3 +1,7 @@
+a {
+  text-decoration: none !important;
+}
+
 .sectionFlex {
   display: block;
   justify-content: center;
@@ -7,4 +11,21 @@
 .headingFlex {
   width: stretch;
   margin: 0 14px;
+}
+
+.featured-event-top {
+  width: stretch;
+}
+
+.space-anchors {
+  font-size: 24pt;
+  margin: 0 20px 0 0 !important;
+  color: #519b46;
+  font-family: "Gotham Light Font", sans-serif;
+}
+
+.row-learn-more {
+  display: flex;
+  flex-flow: row;
+  margin-left: 14px;
 }
