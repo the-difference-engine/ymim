@@ -23,7 +23,7 @@ class UpperMid extends Component {
               </Link>
             </div>
             <div>
-              <p className="bottom-text upper-mid-sectiontext">
+              <p className="bottom-text nonprofit-disclaimer">
                 Young Masterbuilders in Motion, Inc., is a 501(c)(3)nonprofit
                 organization and your contributions are deductible to the full
                 extent of the law.

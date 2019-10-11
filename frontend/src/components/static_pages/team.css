@@ -1,0 +1,70 @@
+.meetTheTeam {
+  padding: 20px 15px;
+  font-size: 1.2rem;
+}
+
+.meetTheTeam h2 {
+  margin-bottom: 20px;
+}
+
+.teamPhotosArea {
+  background-color: #eeeaea;
+}
+
+.teamPhotos h2 {
+  padding: 20px;
+}
+
+.imageColumn {
+  padding-bottom: 20px;
+  cursor: pointer;
+}
+
+.gallery-picture {
+  width: 100%;
+  height: auto;
+}
+
+.teamPhotos .facebookLinkContainer {
+  background: darkgrey;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.teamPhotos .facebookLinkContainer p {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -66%);
+  transform: translate(-50%, -66%);
+  font-size: larger;
+  font-weight: bold;
+}
+
+.imageColumn a {
+  color: black;
+}
+
+@media all and (min-width: 1440px) {
+  .teamPhotos .facebookLinkContainer p {
+    font-size: x-large;
+  }
+}
+
+/* tablet */
+@media all and (min-width: 426px) and (max-width: 768px) {
+  .teamPhotos .facebookLinkContainer p {
+    font-size: medium;
+  }
+}
+
+/* mobile */
+@media all and (min-width: 300px) and (max-width: 425px) {
+  .teamPhotos .facebookLinkContainer {
+    margin: auto;
+    height: 200px;
+    width: 250px;
+  }
+}

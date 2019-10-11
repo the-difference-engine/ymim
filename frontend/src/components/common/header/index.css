@@ -51,6 +51,10 @@
   color: #fdd368;
 }
 
+.active {
+  color: #fdd368 !important;
+}
+
 /* dropdowns for resources, enroll, and volunteer */
 div.dropdown-menu.show {
   background-color: #519b56;
@@ -72,7 +76,7 @@ a.dropdown-item {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  top: 25px;
+  top: -5px;
   left: 24px;
   z-index: 50;
 }
@@ -99,6 +103,10 @@ a.dropdown-item {
 .center-button {
   margin-top: auto;
   margin-bottom: auto;
+}
+
+.donate {
+  width: 220px;
 }
 
 /* responsiveness */
