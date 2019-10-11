@@ -1,11 +1,9 @@
-export function findPastEndIndex(events) {
-  const currentTime = Date.now();
-  let pastEnd = events.length - 1;
-  while (
-    pastEnd >= 0 &&
-    Date.parse(events[pastEnd].end.local) - currentTime > 0
-  ) {
-    pastEnd--;
-  }
-  return pastEnd;
+import moment from "moment";
+
+export function findUpcomingEvents(events, currentTime) {
+  return events.filter(event => moment(event.end.local).isAfter(currentTime))
+}
+
+export function findPastEvents(events, currentTime) {
+  return events.filter(event => moment(event.end.local).isBefore(currentTime))
 }
