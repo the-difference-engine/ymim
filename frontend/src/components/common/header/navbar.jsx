@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { NavLink } from "react-router-dom";
-import { Nav, Navbar, Container, NavDropdown, Col, Row } from "react-bootstrap";
+import { Nav, Navbar, Container, Col, Row } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookSquare,
@@ -96,24 +96,9 @@ class NavBar extends Component {
                     Enroll
                   </NavLink>
                   {/* volunteer  */}
-                  <NavDropdown
-                    className="nav-link"
-                    to="/volunteer"
-                    title="Volunteer"
-                    id="nav-dropdown"
-                  >
-                    <NavDropdown.Item eventKey="4.1">Action</NavDropdown.Item>
-                    <NavDropdown.Item eventKey="4.2">
-                      Another action
-                    </NavDropdown.Item>
-                    <NavDropdown.Item eventKey="4.3">
-                      Something else here
-                    </NavDropdown.Item>
-                    <NavDropdown.Divider />
-                    <NavDropdown.Item eventKey="4.4">
-                      Separated link
-                    </NavDropdown.Item>
-                  </NavDropdown>
+                  <NavLink className="resources-link" to="/volunteer">
+                    Volunteer
+                  </NavLink>
                 </Nav>
               </Navbar.Collapse>
             </Navbar>

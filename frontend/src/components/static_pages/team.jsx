@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Container, Col, Row } from "react-bootstrap";
+import ImageModal from "../modals/image_modal.jsx";
 import "./team.css";
 import Picture1 from "../../assets/action-shots/3 rows of donations lined up.jpg";
 import Picture2 from "../../assets/action-shots/Handmade drawstring bag donations.jpg";
@@ -9,9 +10,17 @@ import Picture5 from "../../assets/action-shots/Team photo wKennedy.jpg";
 import Picture6 from "../../assets/action-shots/TTigue Sscott ASayre.jpg";
 import Picture7 from "../../assets/action-shots/UIC Dream Team SScott ACalix KWright.jpg";
 import Picture8 from "../../assets/action-shots/Calix family donors.jpg";
-import Picture9 from "../../assets/action-shots/Claxtons delivering donations.jpg";
 
 class Team extends Component {
+  state = {
+    showImageModal: false,
+    enhancedImage: null
+  };
+
+  selectImage = event => {
+    this.setState({ enhancedImage: event.target.src, showImageModal: true });
+  };
+
   render() {
     return (
       <div>
@@ -52,33 +61,102 @@ class Team extends Component {
             </Row>
             <Row>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture1} className="gallery-picture" alt="1" />
+                <img
+                  src={Picture1}
+                  className="gallery-picture"
+                  alt="1"
+                  onClick={event => {
+                    this.selectImage(event);
+                  }}
+                />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture2} className="gallery-picture" alt="2" />
+                <img
+                  src={Picture2}
+                  className="gallery-picture"
+                  alt="2"
+                  onClick={event => {
+                    this.selectImage(event);
+                  }}
+                />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture3} className="gallery-picture" alt="3" />
+                <img
+                  src={Picture3}
+                  className="gallery-picture"
+                  alt="3"
+                  onClick={event => {
+                    this.selectImage(event);
+                  }}
+                />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture4} className="gallery-picture" alt="4" />
+                <img
+                  src={Picture4}
+                  className="gallery-picture"
+                  alt="4"
+                  onClick={event => {
+                    this.selectImage(event);
+                  }}
+                />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture5} className="gallery-picture" alt="5" />
+                <img
+                  src={Picture5}
+                  className="gallery-picture"
+                  alt="5"
+                  onClick={event => {
+                    this.selectImage(event);
+                  }}
+                />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture6} className="gallery-picture" alt="6" />
+                <img
+                  src={Picture6}
+                  className="gallery-picture"
+                  alt="6"
+                  onClick={event => {
+                    this.selectImage(event);
+                  }}
+                />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture7} className="gallery-picture" alt="7" />
+                <img
+                  src={Picture7}
+                  className="gallery-picture"
+                  alt="7"
+                  onClick={event => {
+                    this.selectImage(event);
+                  }}
+                />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture8} className="gallery-picture" alt="8" />
+                <img
+                  src={Picture8}
+                  className="gallery-picture"
+                  alt="8"
+                  onClick={event => {
+                    this.selectImage(event);
+                  }}
+                />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <img src={Picture9} className="gallery-picture" alt="9" />
+                <a href="https://www.facebook.com/theymim/"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                  <div className="facebookLinkContainer">
+                    <p>Click here for more photos of the team.</p>
+                  </div>
+                </a>
               </Col>
             </Row>
+            <ImageModal
+              src={this.state.enhancedImage}
+              show={this.state.showImageModal}
+              onHide={() => {
+                this.setState({ showImageModal: false });
+              }}
+            />
           </Container>
         </div>
       </div>

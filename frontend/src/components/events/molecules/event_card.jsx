@@ -10,7 +10,7 @@ export function EventList({ children }) {
 
 const EventCard = props => {
   return (
-    <div className="eventCard">
+    <a href={props.url} className="eventCard">
       <EventImage url={props.url} image={props.logo} />
       <Row className="mt-3">
         <Col className="thumbNail eventTextBoxes">
@@ -24,16 +24,23 @@ const EventCard = props => {
           />
         </Col>
         <Col className="eventTextBoxes">
-          <a href={props.url}>
-            <Text text={props.name} type="subheading" />
-          </a>
+          <Text text={props.name} type="subheading" />
+
           <Text
             text={<Moment format="llll">{props.start}</Moment>}
             type="paragraph"
           />
         </Col>
       </Row>
-    </div>
+      <div className="event-overlay">
+        <Text text={props.name} type="hoverTitle" />
+        <Text
+          text={<Moment format="llll">{props.start}</Moment>}
+          type="hoverTitle"
+        />
+        <Text text={props.description} type="hoverDescription" />
+      </div>
+    </a>
   );
 };
 
