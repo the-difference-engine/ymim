@@ -3,8 +3,10 @@
   font-size: 1.2rem;
 }
 
-.meetTheTeam h2 {
+.meetTheTeam h2, .teamPhotos h2 {
   margin-bottom: 20px;
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .teamPhotosArea {
