@@ -6,6 +6,8 @@ import { events } from "../../../actions";
 import { findUpcomingEvents, findNextUpcomingEvent } from "../../events/utils";
 import moment  from "moment";
 import Moment from "react-moment";
+import { Link } from "react-router-dom";
+
 class LowerMid extends Component {
   componentDidMount() {
     this.props.fetchEvents();
@@ -53,9 +55,11 @@ class LowerMid extends Component {
         <button className="ym-button" id="enroll">
           All News
         </button>
-        <button className="ym-button" id="enroll">
-          All Events
-        </button>
+        <Link to="/events">
+          <button className="ym-button" id="enroll">
+            All Events
+          </button>
+        </Link>
       </div>
     </Col>
   </Row>
