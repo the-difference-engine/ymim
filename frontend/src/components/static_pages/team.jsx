@@ -64,7 +64,7 @@ class Team extends Component {
                 <img
                   src={Picture1}
                   className="gallery-picture"
-                  alt="Photo 1"
+                  alt="1"
                   onClick={event => {
                     this.selectImage(event);
                   }}
@@ -74,7 +74,7 @@ class Team extends Component {
                 <img
                   src={Picture2}
                   className="gallery-picture"
-                  alt="Photo 2"
+                  alt="2"
                   onClick={event => {
                     this.selectImage(event);
                   }}
@@ -84,7 +84,7 @@ class Team extends Component {
                 <img
                   src={Picture3}
                   className="gallery-picture"
-                  alt="Photo 3"
+                  alt="3"
                   onClick={event => {
                     this.selectImage(event);
                   }}
@@ -94,7 +94,7 @@ class Team extends Component {
                 <img
                   src={Picture4}
                   className="gallery-picture"
-                  alt="Photo 4"
+                  alt="4"
                   onClick={event => {
                     this.selectImage(event);
                   }}
@@ -104,7 +104,7 @@ class Team extends Component {
                 <img
                   src={Picture5}
                   className="gallery-picture"
-                  alt="Photo 5"
+                  alt="5"
                   onClick={event => {
                     this.selectImage(event);
                   }}
@@ -114,7 +114,7 @@ class Team extends Component {
                 <img
                   src={Picture6}
                   className="gallery-picture"
-                  alt="Photo 6"
+                  alt="6"
                   onClick={event => {
                     this.selectImage(event);
                   }}
@@ -124,7 +124,7 @@ class Team extends Component {
                 <img
                   src={Picture7}
                   className="gallery-picture"
-                  alt="Photo 7"
+                  alt="7"
                   onClick={event => {
                     this.selectImage(event);
                   }}
@@ -134,14 +134,16 @@ class Team extends Component {
                 <img
                   src={Picture8}
                   className="gallery-picture"
-                  alt="Photo 8"
+                  alt="8"
                   onClick={event => {
                     this.selectImage(event);
                   }}
                 />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <a href="https://www.facebook.com/theymim/" target="_blank">
+                <a href="https://www.facebook.com/theymim/"
+                   target="_blank"
+                   rel="noopener noreferrer">
                   <div className="facebookLinkContainer">
                     <p>Click here for more photos of the team.</p>
                   </div>

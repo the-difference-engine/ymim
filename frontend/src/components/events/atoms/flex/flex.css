@@ -1,0 +1,25 @@
+.flex {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px auto;
+  max-width: 1310px;
+}
+
+.flex-item {
+  display: flex;
+  flex: content;
+  margin: 20px 10px;
+  margin-top: 0px;
+}
+
+@media screen and (max-width: 839px) {
+  .flex {
+    max-width: 334px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1267px) {
+  .flex {
+    max-width: 850px;
+  }
+}

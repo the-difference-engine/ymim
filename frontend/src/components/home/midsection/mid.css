@@ -30,7 +30,8 @@
   font-size: 24pt;
 }
 
-.upper-mid-sectiontext {
+.nonprofit-disclaimer {
+  text-align: center;
   font-size: 15pt;
   color: #697689;
 }
@@ -38,14 +39,21 @@
 .sub-heading {
   font-size: 24pt;
   padding-bottom: 15px;
-  padding-top: 15px;
+  padding-top: 20px;
   font-weight: bold;
 }
 
+/* links to facebook and eventbrite */
 .space-anchors {
   font-size: 24pt;
   margin: 0 20px 0 0 !important;
   color: #519b46;
+  text-decoration: none !important ;
+}
+
+/* buttons for news and events */
+.ym-button {
+  margin-right: 25px;
   font-family: "Gotham Light Font", sans-serif;
 }
 
@@ -85,7 +93,7 @@
     margin-bottom: 10px;
   }
 
-  .upper-mid-sectiontext {
+  .nonprofit-disclaimer {
     font-size: 8px;
   }
 
@@ -100,6 +108,7 @@
   .space-anchors {
     font-size: 14pt;
     color: #519b46;
+    text-decoration: none !important;
     font-family: "Gotham Light Font", sans-serif;
   }
   .ym-button {
@@ -123,7 +132,7 @@
     font-size: 26pt;
     padding: 5px 0;
   }
-  .upper-mid-sectiontext {
+  .nonprofit-disclaimer {
     font-size: 10pt;
   }
   .ym-button {
@@ -144,6 +153,7 @@
   .space-anchors {
     font-size: 12pt;
     color: #519b46;
+    text-decoration: none !important;
     font-family: "Gotham Light Font", sans-serif;
   }
   .ym-button {

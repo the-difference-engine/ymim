@@ -19,6 +19,7 @@
 
 .imageColumn {
   padding-bottom: 20px;
+  cursor: pointer;
 }
 
 .gallery-picture {
