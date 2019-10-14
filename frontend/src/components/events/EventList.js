@@ -1,7 +1,7 @@
 import React from "react";
 import EventSection from "./organisms/event_section";
 import "./index.css";
-import { findUpcomingEvents, findPastEvents } from "./utils";
+import { findUpcomingEvents, findPastEvents, findNextUpcomingEvent } from "./utils";
 import FeatureEvent from "./FeatureEvent";
 import moment from "moment";
 
@@ -26,7 +26,7 @@ const EventList = ({ events }) => {
   else if (upcomingEvents.length === 1) {
     return (
       <div>
-        <FeatureEvent event={upcomingEvents} />
+        <FeatureEvent event={findNextUpcomingEvent(upcomingEvents)} />
         <EventSection
           events={pastEvents}
           isUpcoming={false}
@@ -37,7 +37,7 @@ const EventList = ({ events }) => {
   else {
     return (
       <div>
-        <FeatureEvent event={upcomingEvents[0]} />
+        <FeatureEvent event={findNextUpcomingEvent(upcomingEvents)} />
         <EventSection
           events={upcomingEvents.slice(1)}
           isUpcoming={true}

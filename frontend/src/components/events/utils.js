@@ -7,3 +7,7 @@ export function findUpcomingEvents(events, currentTime) {
 export function findPastEvents(events, currentTime) {
   return events.filter(event => moment(event.end.local).isBefore(currentTime))
 }
+
+export function findNextUpcomingEvent(upcomingEvents) {
+  return upcomingEvents[0]
+}
