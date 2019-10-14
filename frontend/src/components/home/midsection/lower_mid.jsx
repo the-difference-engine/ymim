@@ -1,60 +1,69 @@
 import React, { Component } from "react";
 import "./mid.css";
 import { Container, Row, Col } from "react-bootstrap";
-
+import { connect } from "react-redux";
+import { events } from "../../../actions";
+import { findUpcomingEvents, findNextUpcomingEvent } from "../../events/utils";
+import moment  from "moment";
+import Moment from "react-moment";
 class LowerMid extends Component {
+  componentDidMount() {
+    this.props.fetchEvents();
+  }
+
   render() {
+    this.props.events.sort((a, b) => moment(a.start.local) - moment(b.start.local)).filter(s =>
+      ["live", "started", "ended", "completed"].includes(s.status));
+    const upcomingEvents = findUpcomingEvents(this.props.events, moment())
+    const defaultContent = "Check back again soon for what's is coming up next for YMIM. If you have an event that you think YMIM should be a part of please please email: Founder@theymim.org or call: 773.941.1200";
+    let nextEvent;
+    if (upcomingEvents.length) {
+      nextEvent = findNextUpcomingEvent(upcomingEvents)
+    }
+    const lowermidSection =   (
+    <Row className="lower-mid">
+    <Col className="test">
+      <h2 className="text-center heading">What's New?</h2>
+      <h2 className="text-center sub-heading">
+        {nextEvent? ( <div><Moment format="llll">{nextEvent.start.local}</Moment> - <span>{nextEvent.name.text} </span></div>) : ""}
+      </h2>
+      <div className="line-paragraph">
+      {nextEvent ? nextEvent.description.text : defaultContent}
+      </div>
+      {nextEvent ? ( <div> <h2 className="sub-heading">RSVP and Find out More:</h2>
+      <a
+        href={nextEvent.url}
+        target="_blank"
+        className="space-anchors"
+        alt="Eventbrite"
+      >
+        Eventbrite
+      </a>
+      <a
+        href="https://www.facebook.com/theymim/"
+        target="_blank"
+        className="space-anchors"
+        alt="Facebook"
+      >
+        Facebook
+      </a>
+    </div>): ""}
+     
+      <div>
+        <button className="ym-button" id="enroll">
+          All News
+        </button>
+        <button className="ym-button" id="enroll">
+          All Events
+        </button>
+      </div>
+    </Col>
+  </Row>
+    );
+
     return (
       <Container fluid={true}>
-        <Row className="lower-mid">
-          <Col className="test">
-            <h2 className="text-center heading">What's New?</h2>
-            <h2 className="text-center sub-heading">
-              Mar 9 2019 - Let's Do 300! Emergency Care Package Drive
-            </h2>
-            <div className="line-paragraph">
-              Join Young Masterbuilders In Motion on March 9th at Rogers Park
-              Library to collect and package essential supplies for foster
-              youth.
-            </div>
-            <br />
-            <div className="line-paragraph">
-              It's estimated that 5,000 youth age out of foster care in the
-              Chicagoland area each year. Young Masterbuilders in Motion is
-              working to reverse the impact of poverty by letting our teen girls
-              and young adult women who have experienced foster care know that
-              we care. We know it's an urgent situation. We need your support!
-              Won't you join us?
-            </div>
-            <h2 className="sub-heading">RSVP and Find out More:</h2>
-            <a
-              href="https://www.eventbrite.com/o/young-masterbuilders-in-motion-inc-18024803549"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="space-anchors"
-              alt="Eventbrite"
-            >
-              Eventbrite
-            </a>
-            <a
-              href="https://www.facebook.com/theymim/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="space-anchors"
-              alt="Facebook"
-            >
-              Facebook
-            </a>
-            <div>
-              <button className="ym-button" id="enroll">
-                All News
-              </button>
-              <button className="ym-button" id="enroll">
-                All Events
-              </button>
-            </div>
-          </Col>
-        </Row>
+        {lowermidSection}
         <Row className="test justify-content-md-center">
           <Col className="justify-content-md-center">
             <h2 className="heading test text-center">Inspiring</h2>
@@ -109,4 +118,18 @@ class LowerMid extends Component {
   }
 }
 
-export default LowerMid;
+const mapStateToProps = state => {
+  return {
+    events: state.events
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    fetchEvents: () => {
+      dispatch(events.fetchEvents());
+    }
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(LowerMid);
