@@ -10,6 +10,11 @@
   overflow: hidden;
 }
 
+.content-format {
+  min-width: 90%;
+  margin-bottom: 15px;
+}
+
 @media (max-width: 1000px) {
   .flexForm {
     display: flex;
@@ -18,8 +23,8 @@
 
   .volunteerMain {
     order: -1;
-    padding-left: 15x;
-  }
+    padding-left: 10px;
+  }  
 }
 
 .button {
@@ -54,10 +59,10 @@ label {
   border: none;
 }
 
-#message {
+/* #message {
   width: 1000px;
   overflow: hidden !important;
-}
+} */
 
 .main-content {
   line-height: 2;
