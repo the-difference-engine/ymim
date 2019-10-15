@@ -52,32 +52,8 @@ label {
   width: 350px !important;
 }
 
-.inputs-text {
-  height: 220px;
-  width: 100%;
-  background: #eeeaea;
-  border: none;
-}
-
-/* #message {
-  width: 1000px;
-  overflow: hidden !important;
-} */
-
 .main-content {
   line-height: 2;
-}
-
-.warning {
-  background: #fdd368;
-}
-
-.warning:hover {
-  background: #fdd368;
-}
-
-.warning::after:hover {
-  background: #fdd368;
 }
 
 .form-control {
