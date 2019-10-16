@@ -8,7 +8,6 @@ class Volunteer extends Component {
     super(props);
 
     this.state = {
-      message: "",
       loadCounter: 0
     };
   }
