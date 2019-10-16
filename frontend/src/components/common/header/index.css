@@ -175,4 +175,7 @@ a.dropdown-item {
   .logo {
     display: none;
   }
+  .donate{
+    font-size: 50px;
+  }
 }
