@@ -17,6 +17,7 @@ class LowerMid extends Component {
               Library to collect and package essential supplies for foster
               youth.
             </div>
+            <br />
             <div className="line-paragraph">
               It's estimated that 5,000 youth age out of foster care in the
               Chicagoland area each year. Young Masterbuilders in Motion is
@@ -25,31 +26,30 @@ class LowerMid extends Component {
               we care. We know it's an urgent situation. We need your support!
               Won't you join us?
             </div>
+
             <h2 className="sub-heading">RSVP and Find out More:</h2>
-            <a
-              href="https://www.eventbrite.com/o/young-masterbuilders-in-motion-inc-18024803549"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="space-anchors"
-              alt="Eventbrite"
-            >
-              Eventbrite
-            </a>
-            <a
-              href="https://www.facebook.com/theymim/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="space-anchors"
-              alt="Facebook"
-            >
-              Facebook
-            </a>
             <div>
               <button className="ym-button" id="enroll">
-                All News
+                <a
+                  href="https://www.facebook.com/theymim/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button-anchors"
+                  alt="Facebook"
+                >
+                  Facebook
+                </a>
               </button>
               <button className="ym-button" id="enroll">
-                All Events
+                <a
+                  href="https://www.eventbrite.com/o/young-masterbuilders-in-motion-inc-18024803549"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button-anchors"
+                  alt="Eventbrite"
+                >
+                  Eventbrite
+                </a>
               </button>
             </div>
           </Col>

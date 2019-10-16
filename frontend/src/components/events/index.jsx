@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { events } from "../../actions";
 import "./index.css";
 import EventList from "./EventList";
+import Flex from "./atoms/flex/flex";
 
 class Events extends Component {
   constructor(props) {
@@ -20,10 +21,30 @@ class Events extends Component {
     let events = this.props.events.filter(s =>
       ["live", "started", "ended", "completed"].includes(s.status)
     );
+
+    const eventsHeading = (
+      <Flex>
+        <div className="headingFlex">
+          <h1>Events</h1>
+        </div>
+      </Flex>
+    );
+
     if (events.length) {
-      return <EventList events={events} />;
+      return (
+        <div>
+          {eventsHeading}
+          <EventList events={events} />
+          );
+        </div>
+      );
     }
-    return "Check back soon for events";
+    return (
+      <div>
+        {eventsHeading}
+        <div className="checkBack"> Check back soon for events</div>
+      </div>
+    );
   }
 }
 

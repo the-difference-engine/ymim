@@ -76,7 +76,7 @@ a.dropdown-item {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  top: 25px;
+  top: -5px;
   left: 24px;
   z-index: 50;
 }
@@ -178,5 +178,9 @@ a.dropdown-item {
 
   .logo {
     display: none;
+  }
+
+  .donate{
+    font-size: 50px;
   }
 }

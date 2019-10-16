@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./about.css";
-import SingleCarousel from "../SingleCarousel";
+import MainCarousel from "../home/carousel";
 import { Container, Row, Col } from "react-bootstrap";
 import PierrePriestley from "./../../assets/Pierre-Priestley_new.jpg";
 import ShirleyScott from "./../../assets/Shirley-Scott_new.jpg";
@@ -10,7 +10,7 @@ class About extends Component {
   render() {
     return (
       <Container fluid="true">
-        <SingleCarousel />
+        <MainCarousel />
         <Container>
           <Row id="aboutPageTextRow">
             <h1 className="heading"> About </h1>
@@ -78,12 +78,12 @@ class About extends Component {
               additional support.
             </p>
           </Row>
-          <h1 className="heading">Our People</h1>
+          <h1 className="about-heading">Our People</h1>
           <Row>
-            <Col xs="10" md="6" lg="6" xl="6" className="images">
+            <Col xs="10" md="6" lg="4" xl="4" className="images">
               <img src={KimWright} alt={"Kim Wright"} />
             </Col>
-            <Col xs="10" md="6" lg="6" xl="6">
+            <Col xs="10" md="4" lg="4" xl="6">
               <h1 className="people-heading text-left">Kim Wright, MBA</h1>
               <h4 className="sub-heading text-left">Founder and President</h4>
               <p className="text-left">
@@ -107,13 +107,11 @@ class About extends Component {
           </Row>
 
           <Row>
-            <Col xs="10" md="6" lg="6" xl="6" className="images">
+            <Col xs="10" md="6" lg="4" xl="4" className="images">
               <img src={PierrePriestley} alt={"Pierre Priestley"} />
             </Col>
-            <Col xs="10" md="6" lg="6" xl="6">
-              <h1 className="people-heading text-left">
-                Pierre Priestley, JD, MBA
-              </h1>
+            <Col xs="10" md="4" lg="4" xl="6">
+              <h1 className="people-heading text-left">Pierre Priestley</h1>
               <h4 className="sub-heading text-left">
                 Board Officer, Treasurer
               </h4>
@@ -133,10 +131,10 @@ class About extends Component {
           </Row>
 
           <Row>
-            <Col xs="10" md="6" lg="6" xl="6" className="images">
+            <Col xs="10" md="6" lg="4" xl="4" className="images">
               <img src={ShirleyScott} alt={"Shirley Scott"} />
             </Col>
-            <Col xs="10" md="6" lg="6" xl="6">
+            <Col xs="10" md="4" lg="4" xl="6">
               <h1 className="people-heading text-left">
                 Shirley Scott, MS, RN-BC, C-EFM, APN, DNP
               </h1>
