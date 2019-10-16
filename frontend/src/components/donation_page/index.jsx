@@ -7,7 +7,7 @@ class Donate extends Component {
     return (
       <Row noGutters="true">
         <Container fluid="true" className="content-styling">
-          <h1>Donate Now!</h1>
+          <h1 className="donate">Donate Now!</h1>
           <p>
             The Young Masterbuilders In Motion, Inc., (<strong>YMIM</strong>),
             supports young women orphans, adoptees, and foster youth alumnae to
@@ -33,10 +33,18 @@ class Donate extends Component {
             <strong>Founder@TheYMIM.org</strong>
           </p>
 
-          <div className="mx-auto">
-            <form action="https://www.paypal.com/" method="post" target="_top">
+          <div className="mx-auto donate">
+            <form
+              action="https://www.paypal.com/"
+              method="post"
+              target="_blank"
+            >
               <input type="hidden" name="cmd" value="_s-xclick" />
-              <input type="hidden" name="hosted_button_id" value="34L62HLMP5VEC" />
+              <input
+                type="hidden"
+                name="hosted_button_id"
+                value="34L62HLMP5VEC"
+              />
               <input
                 type="hidden"
                 name="hosted_button_id"

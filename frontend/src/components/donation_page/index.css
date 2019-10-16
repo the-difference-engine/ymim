@@ -8,16 +8,15 @@
   padding-bottom: 25px;
 }
 
-h1 {
+.donate {
   font-size: 48px;
   padding-bottom: 25px;
   padding-top: 25px;
   text-align: center;
 }
-.content-styling a{
+.content-styling a {
   font-size: 22px;
 }
-
 
 /* tablet  and mobile */
 
@@ -27,7 +26,7 @@ h1 {
     margin-right: 8.33%;
   }
 
-  h1 {
+  .donate {
     font-size: 32px;
   }
 }

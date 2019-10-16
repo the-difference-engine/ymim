@@ -1,26 +1,50 @@
+#aboutPageTextRow {
+  padding-left: 133px;
+  padding-right: 133px;
+  display: block;
+}
+
 .images {
   margin: 0;
   margin-bottom: 40px;
+  margin-left: 120px;
 }
 
 .images img {
-  width: 400px;
+  width: 300px;
+  margin-bottom: 140px;
+}
+
+.about-heading {
+  margin-left: 120px;
 }
 
 .sub-heading {
   font-size: 24px;
 }
 
+.people-heading {
+  font-size: 48px;
+  font-weight: bold;
+}
+
 /* tablet */
 
 @media all and (min-width: 426px) and (max-width: 1023px) {
+  #aboutPageTextRow {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
   .images {
     margin: 0;
-    margin-bottom: 20px;
+    height: 350px;
   }
+
   .images img {
     width: 300px;
   }
+
   .heading {
     font-size: 30px;
   }
@@ -30,17 +54,25 @@
   p {
     font-size: 16px;
   }
+  .about-heading {
+    font-size: 30px;
+    margin-left: 0;
+  }
 }
 
 /* mobile */
 
 @media all and (min-width: 300px) and (max-width: 425px) {
+  #aboutPageTextRow {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
   .images {
     margin: 0;
     margin-bottom: 10px;
   }
   .images img {
-    width: 250px;
+    width: 100%;
   }
   .heading {
     font-size: 26px;
@@ -48,7 +80,14 @@
   .sub-heading {
     font-size: 18px;
   }
+  .people-heading {
+    font-size: 26px;
+    font-weight: bold;
+  }
   p {
     font-size: 14px;
+  }
+  .about-heading {
+    font-size: 26px;
   }
 }

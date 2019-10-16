@@ -11,6 +11,7 @@
 *.log
 
 */.env
+.env
 
 # dependencies
 frontend/node_modules/*

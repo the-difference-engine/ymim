@@ -1,0 +1,30 @@
+.eventCard {
+  border-radius: 5px;
+  padding: 5px;
+  transition: box-shadow 0.3s;
+  max-width: 400px;
+  position: relative;
+}
+
+.event-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: gray;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(33, 33, 33, 0.8);
+  z-index: 1;
+  overflow: auto;
+}
+
+.eventCard:hover .overlay {
+  opacity: 0.9;
+}
+
+.eventTextBoxes {
+  height: 110px;
+}

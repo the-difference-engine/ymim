@@ -44,12 +44,12 @@ export default class footer extends Component {
                     </Link>
                   </li>
                   <li className="col footer-link">
-                    <Link className="footer-list" to="/ambassadors">
+                    <Link className="footer-list" to="/volunteer">
                       Volunteer
                     </Link>
                   </li>
                   <li className="col footer-link">
-                    <Link className="footer-list" to="/events">
+                    <Link className="footer-list" to="/donate">
                       Donate
                     </Link>
                   </li>
@@ -62,6 +62,7 @@ export default class footer extends Component {
               </nav>
             </Col>
           </Row>
+          <hr className="footer-line"></hr>
           <Row className="justify-content-center">
             <Col xs sm md lg xl="12">
               <Row className="justify-content-md-center contact">
@@ -75,6 +76,11 @@ export default class footer extends Component {
                 </Col>
                 <Col xs="12" sm="12" md="4" lg="4" xl="2">
                   773.941.1200
+                </Col>
+                <Col xs="12" sm="12" md="4" lg="4" xl="2">
+                  <Link className="contact" to="/login">
+                    Login
+                  </Link>
                 </Col>
               </Row>
             </Col>
