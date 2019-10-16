@@ -8,7 +8,7 @@ class Login extends Component {
 
     this.state = {
       username: "",
-      password: "",
+      password: ""
     };
 
     this.handleInputChange = this.handleInputChange.bind(this);
@@ -82,7 +82,7 @@ class Login extends Component {
                         <span className="buttonSpan">LOGIN</span>
                       </button>
                     </p>
-                  </div>                  
+                  </div>
                   <br />
                 </div>
               </form>
