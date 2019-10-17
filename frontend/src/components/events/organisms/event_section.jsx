@@ -8,7 +8,6 @@ import "./event_section.css";
 const EventSection = ({ events, isUpcoming }) => {
   let sectionTitle = "Upcoming Events";
   if (isUpcoming === false) {
-    events.reverse();
     sectionTitle = "Past Events";
   }
   return (
