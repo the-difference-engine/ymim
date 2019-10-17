@@ -1,5 +1,4 @@
 from django.urls import include, path
-from rest_framework_swagger.views import get_swagger_view
 
 from applications.urls import urlpatterns as application_urls
 from profiles.urls import urlpatterns as profiles_urls
