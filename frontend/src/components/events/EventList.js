@@ -3,7 +3,7 @@ import EventSection from "./organisms/event_section";
 import "./index.css";
 import { findNextUpcomingEvent } from "./utils";
 import FeatureEvent from "./FeatureEvent";
- 
+
 const EventList = ({ upcomingEvents, pastEvents }) => {
   if (upcomingEvents.length === 0) {
     return (
@@ -34,5 +34,5 @@ const EventList = ({ upcomingEvents, pastEvents }) => {
     );
   }
 };
- 
+
 export default EventList;

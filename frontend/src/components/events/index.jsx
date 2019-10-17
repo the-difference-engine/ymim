@@ -9,13 +9,13 @@ import {
   getUpcomingEvents,
   getPastEvents
 } from "../../reducers/selectors";
+
 class Events extends Component {
   componentDidMount() {
     this.props.fetchEvents();
   }
- 
+
   render() {
-    let events = this.props.events;
     const eventsHeading = (
       <Flex>
         <div className="headingFlex">
@@ -23,8 +23,8 @@ class Events extends Component {
         </div>
       </Flex>
     );
- 
-    if (events.length) {
+
+    if (this.props.upcomingEvents.length || this.props.pastEvents.length) {
       return (
         <div>
           {eventsHeading}
@@ -43,15 +43,14 @@ class Events extends Component {
     );
   }
 }
- 
+
 const mapStateToProps = state => {
   return {
-    events: getSorted(state.events),
-    upcomingEvents: getUpcomingEvents(state.events),
-    pastEvents: getPastEvents(state.events)
+    upcomingEvents: getUpcomingEvents(getSorted(state.events)),
+    pastEvents: getPastEvents(getSorted(state.events))
   };
 };
- 
+
 const mapDispatchToProps = dispatch => {
   return {
     fetchEvents: () => {
@@ -59,7 +58,7 @@ const mapDispatchToProps = dispatch => {
     }
   };
 };
- 
+
 export default connect(
   mapStateToProps,
   mapDispatchToProps
