@@ -3,8 +3,15 @@
   font-size: 1.2rem;
 }
 
-.meetTheTeam h2 {
-  margin-bottom: 20px;
+.heading {
+  font-weight: bold;
+  font-size: 48px;
+  padding: 15px 0;
+  margin-top: 25px;
+}
+
+.line-paragraph {
+  font-size: 32px;
 }
 
 .teamPhotosArea {
@@ -58,6 +65,14 @@
   .teamPhotos .facebookLinkContainer p {
     font-size: medium;
   }
+  .heading {
+    font-size: 24px;
+    padding: 10px 0;
+  }
+  .line-paragraph {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
 }
 
 /* mobile */
@@ -66,5 +81,16 @@
     margin: auto;
     height: 200px;
     width: 250px;
+  }
+
+  .heading {
+    font-size: 36px;
+    padding: 5px 0;
+  }
+
+  .line-paragraph {
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: left;
   }
 }
