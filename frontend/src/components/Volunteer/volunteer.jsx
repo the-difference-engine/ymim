@@ -17,7 +17,7 @@ class Volunteer extends Component {
     if (this.state.loadCounter % 2 === 0)
       document.getElementsByClassName("resp-iframe")[0].style.height = "400px";
     else
-      document.getElementsByClassName("resp-iframe")[0].style.height = "1050px";
+      document.getElementsByClassName("resp-iframe")[0].style.height = "1075px";
   };
 
   render() {
@@ -31,7 +31,7 @@ class Volunteer extends Component {
                 <iframe
                   src="https://docs.google.com/forms/d/e/1FAIpQLSe64AwGoRanKukVA4RzS-hzh_oN1EFMu4WQiWpKoCQ-LOO90w/viewform?embedded=true"
                   width="100%"
-                  height="1000"
+                  height="1075"
                   frameborder="0"
                   marginheight="0"
                   marginwidth="0"
