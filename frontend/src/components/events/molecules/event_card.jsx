@@ -32,7 +32,7 @@ const EventCard = props => {
           />
         </Col>
       </Row>
-      <div className="overlay">
+      <div className="overlay event-overlay">
         <Text text={props.name} type="hoverTitle" />
         <Text
           text={<Moment format="llll">{props.start}</Moment>}
