@@ -52,7 +52,7 @@ class Volunteer extends Component {
   render() {
     return (
       <>
-        <SingleCarousel className="carousel" header="Volunteer" />
+        <SingleCarousel className="carousel" header="Volunteer" image="ymim1.png"/>
         <Container className="mt-4">
           <Row className="mx-auto">
             <form action="/" className="flexForm" method="post">
