@@ -28,7 +28,7 @@ class Volunteer extends Component {
           <Row className="mx-auto flexForm">
             <Row noGutters={true}>
               <Col xs={12} sm={12} md={12} lg={8}>
-                <div className="mb-5">
+                <div className="mb-5 px-3">
                   <h2 className="mb-4">Dear Volunteers!</h2>
                   <p>
                     Thank you for considering getting involved in the Young
@@ -70,27 +70,30 @@ class Volunteer extends Component {
                 </iframe>
 
               </Col>
+              
               <Col className="volunteerVideos" xs={12} sm={12} md={12} lg={4}>
-              <iframe 
-                width="560" 
-                height="315" 
-                src="https://www.youtube.com/embed/PK9ESRMGq74" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen
-              >
-                Loading…
-              </iframe>
-              <iframe 
-                  width="560" 
-                  height="315" 
-                  src="https://www.youtube.com/embed/jdsqht1m1rE" 
-                  frameborder="0" 
-                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
-                  allowfullscreen
-                >
-                  Loading…
-                </iframe>
+                <div className="videoFrame">
+                  <div className="videoWrapper">
+                    <iframe 
+                      src="https://www.youtube.com/embed/PK9ESRMGq74" 
+                      frameborder="0" 
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen
+                    >
+                    </iframe>
+                  </div>
+                </div>
+                <div className="videoFrame">
+                  <div className="videoWrapper">
+                    <iframe 
+                      src="https://www.youtube.com/embed/jdsqht1m1rE" 
+                      frameborder="0" 
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen
+                    >
+                    </iframe>
+                  </div>
+                </div>
               </Col>
             </Row>
           </Row>
