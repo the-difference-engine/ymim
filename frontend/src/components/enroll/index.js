@@ -11,7 +11,8 @@ class Enroll extends Component {
 
     this.state = {
       text: null,
-      loadCounter: 0
+      loadCounter: 0,
+      iframeHeight: 1275,
     };
   }
 
@@ -24,11 +25,9 @@ class Enroll extends Component {
   }
 
   loaded = () => {
-    this.state.loadCounter += 1;
-    if (this.state.loadCounter % 2 === 0)
-      document.getElementsByClassName("resp-iframe")[0].style.height = "400px";
-    else
-      document.getElementsByClassName("resp-iframe")[0].style.height = "1275px";
+
+    let height = this.state.loadCounter % 2 === 0 ? 1275 : 400
+    this.setState({iframeHeight: height, loadCounter: this.state.loadCounter += 1})
   };
 
   render() {
@@ -41,16 +40,13 @@ class Enroll extends Component {
           </div>
           <div className="container col-sm-6 mt-5">
             <iframe
+              title="enroll"
               src="https://docs.google.com/forms/d/e/1FAIpQLScH_lkw44ikfkHlHpUFVsAtXF6MzElK19xWUyVOP_mJ-ClmHw/viewform?embedded=true"
-              width="100%"
-              height="1250"
+              style={{width: "100%", height: this.state.iframeHeight}}
               frameborder="0"
-              marginheight="0"
-              marginwidth="0"
               onLoad={this.loaded}
-              className="resp-iframe"
+              className="enroll-iframe"
             >
-              Loading…
             </iframe>
           </div>
         </div>
