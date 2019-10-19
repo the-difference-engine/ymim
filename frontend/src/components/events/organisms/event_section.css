@@ -17,6 +17,12 @@ a {
   width: stretch;
 }
 
+.featured-event-top .eventImage {
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(33, 33, 33, 0.2);
+}
+
 .space-anchors {
   font-size: 24pt;
   margin: 0 20px 0 0 !important;
