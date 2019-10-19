@@ -10,7 +10,12 @@ export function EventList({ children }) {
 
 const EventCard = props => {
   return (
-    <a target="_blank" rel="noopener noreferrer" href={props.url} className="eventCard">
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      href={props.url}
+      className="eventCard"
+    >
       <EventImage url={props.url} image={props.logo} />
       <Row className="mt-3">
         <Col className="thumbNail eventTextBoxes">

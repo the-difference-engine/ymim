@@ -10,7 +10,7 @@ a {
 
 .headingFlex {
   width: stretch;
-  margin: 0 14px;
+  margin: 0 10px;
 }
 
 .featured-event-top {
@@ -33,5 +33,5 @@ a {
 .row-learn-more {
   display: flex;
   flex-flow: row;
-  margin-left: 14px;
+  margin-left: 10px;
 }
