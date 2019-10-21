@@ -15,7 +15,7 @@ class Volunteer extends Component {
 
   loaded = () => {
     let height = this.state.loadCounter % 2 === 0 ? 1075 : 400
-    this.setState({iframeHeight: height, loadCounter: this.state.loadCounter += 1})
+    this.setState({iframeHeight: height, loadCounter: this.state.loadCounter + 1})
   };
 
   render() {
@@ -31,7 +31,7 @@ class Volunteer extends Component {
                   style={{width: "100%", height: this.state.iframeHeight}}
                   frameborder="0"
                   onLoad={this.loaded}
-                  className="volunteer-iframe"
+                  title="volunteer-iframe"
                 >                  
                 </iframe>
               </Col>
