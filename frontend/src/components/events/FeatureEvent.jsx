@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Moment from "react-moment";
-import defaultLogo from "../../assets/ymim1.png";
+import defaultLogo from "../../assets/logo.png";
 import "./organisms/event_section.css";
 import EventImage from "./atoms/image/image";
 import Text from "./atoms/text/text";
@@ -50,10 +50,10 @@ class FeatureEvent extends Component {
           <div className="featured-event-top">
             <EventImage
               url={event.url}
-              image={event.logo.url ? event.logo.url : defaultLogo}
+              image={event.logo ? event.logo.url : defaultLogo}
               type="floating"
             />
-            <a href={event.url}>
+            <a target="_blank" rel="noopener noreferrer" href={event.url}>
               <Text type="feature-subheading" text={event.name.text} />
             </a>
             <Text
