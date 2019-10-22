@@ -1,58 +1,44 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 import { events } from "../../actions";
-import EventForm from "./event_form";
 import "./index.css";
+import EventList from "./EventList";
+import Flex from "./atoms/flex/flex";
+import {
+  getSorted,
+  getUpcomingEvents,
+  getPastEvents
+} from "../../reducers/selectors";
 
 class Events extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      event: {}
-    };
-  }
-
   componentDidMount() {
     this.props.fetchEvents();
   }
 
-  selectForEdit = id => {
-    let edit_event = this.props.events[id];
-    this.setState({
-      event: edit_event
-    });
-  };
-
   render() {
+    const eventsHeading = (
+      <Flex>
+        <div className="headingFlex">
+          <h1>Events</h1>
+        </div>
+      </Flex>
+    );
+
+    if (this.props.upcomingEvents.length || this.props.pastEvents.length) {
+      return (
+        <div>
+          {eventsHeading}
+          <EventList
+            upcomingEvents={this.props.upcomingEvents}
+            pastEvents={this.props.pastEvents}
+          />
+        </div>
+      );
+    }
     return (
       <div>
-        <h1>Current Events</h1>
-        <div className="row">
-          {this.props.events.map((event, id) => (
-            <div className="event_container col-md-3" key={`event_${event.id}`}>
-              <h3>{event.title}</h3>
-              <p>{event.description}</p>
-              <p>{event.start_datetime}</p>
-              <p>to</p>
-              <p>{event.end_datetime}</p>
-              <img src={event.event_image} alt="" />
-              <button
-                className="btn btn-info"
-                onClick={() => this.selectForEdit(id)}
-              >
-                Edit
-              </button>
-              <button
-                onClick={() => this.props.deleteEvent(id)}
-                className="btn btn-danger"
-              >
-                Delete
-              </button>
-            </div>
-          ))}
-        </div>
-
-        <EventForm event={this.state.event} />
+        {eventsHeading}
+        <div className="checkBack"> Check back soon for events</div>
       </div>
     );
   }
@@ -60,7 +46,8 @@ class Events extends Component {
 
 const mapStateToProps = state => {
   return {
-    events: state.events
+    upcomingEvents: getUpcomingEvents(getSorted(state.events)),
+    pastEvents: getPastEvents(getSorted(state.events))
   };
 };
 
@@ -68,10 +55,6 @@ const mapDispatchToProps = dispatch => {
   return {
     fetchEvents: () => {
       dispatch(events.fetchEvents());
-    },
-
-    deleteEvent: id => {
-      dispatch(events.deleteEvent(id));
     }
   };
 };

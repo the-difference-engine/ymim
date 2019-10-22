@@ -1,0 +1,37 @@
+a {
+  text-decoration: none !important;
+}
+
+.sectionFlex {
+  display: block;
+  justify-content: center;
+  margin: 10px auto;
+}
+
+.headingFlex {
+  width: stretch;
+  margin: 0 10px;
+}
+
+.featured-event-top {
+  width: stretch;
+}
+
+.featured-event-top .eventImage {
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(33, 33, 33, 0.2);
+}
+
+.space-anchors {
+  font-size: 24pt;
+  margin: 0 20px 0 0 !important;
+  color: #519b46;
+  font-family: "Gotham Light Font", sans-serif;
+}
+
+.row-learn-more {
+  display: flex;
+  flex-flow: row;
+  margin-left: 10px;
+}

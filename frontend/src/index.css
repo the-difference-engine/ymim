@@ -43,12 +43,11 @@ code {
   position: relative;
   bottom: -40px;
   width: 100%;
-  background: #519b46;
-  opacity: 0.53;
+  background: rgba(81, 155, 70, 0.65);
   margin: 0;
   padding: 0;
   height: 238px;
-  overflow: auto;
+  overflow: hidden;
 }
 
 .carousel-caption {
@@ -58,6 +57,7 @@ code {
   z-index: 10;
   color: #fff;
   text-align: center;
+  bottom: 0 !important;
 }
 
 .carousel-indicators {
@@ -67,7 +67,7 @@ code {
 }
 
 .paragraph-carousel {
-  font-size: 26pt;
+  font-size: 26px;
   font-family: "Montserrat";
   text-align: left;
   color: #fff;
@@ -78,7 +78,7 @@ code {
 }
 
 .title-carousel {
-  font-size: 48pt;
+  font-size: 48px;
   font-family: "Montserrat";
   float: left;
   text-align: left;
@@ -95,6 +95,5 @@ code {
   width: 192px !important;
   height: 192px !important;
   border-radius: 50%;
-  background: #fff;
   margin: 20px 0;
 }

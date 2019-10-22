@@ -1,13 +1,19 @@
 import React, { Component } from "react";
 import Markdown from "react-markdown";
-import "./index.css";
+import "./enroll.css";
 import Text from "./enroll.md";
+import "react-bootstrap";
+import SingleCarousel from "../SingleCarousel";
 
 class Enroll extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { text: null };
+    this.state = {
+      text: null,
+      loadCounter: 0,
+      iframeHeight: 1275
+    };
   }
 
   componentWillMount() {
@@ -17,95 +23,31 @@ class Enroll extends Component {
         this.setState({ text: text });
       });
   }
+
+  loaded = () => {
+    let height = this.state.loadCounter % 2 === 0 ? 1275 : 400;
+    let loadCounter = this.state.loadCounter + 1;
+    this.setState({ iframeHeight: height, loadCounter: loadCounter });
+  };
+
   render() {
     return (
-      <div className="main-content">
-        <Markdown source={this.state.text} />
-        <div className="jumbotron">
-          <form action="/" method="post">
-            <div>
-              <label className="col-md-2">Name (required)</label>
-              <input required="" type="text" value="" className="col-md-4" />
-            </div>
-            <br />
-            <div>
-              <label className="col-md-2">Email (required)</label>
-              <input required="" type="email" value="" className="col-md-4" />
-            </div>
-            <br />
-            <div>
-              <label className="col-md-2">Phone</label>
-              <input type="text" value="" className="col-md-4" />
-            </div>
-            <br />
-            <div>
-              <label className="col-md-2">Age(required)</label>
-              <div>
-                <label className="radio">
-                  <input
-                    required=""
-                    type="radio"
-                    value="14-16"
-                    className="radio"
-                  />
-                  14-16
-                </label>
-                <div className="clear-form" />
-                <label className="radio">
-                  <input
-                    required=""
-                    type="radio"
-                    value="17-18"
-                    className="radio"
-                  />
-                  17-18
-                </label>
-                <div className="clear-form" />
-                <label className="radio">
-                  <input
-                    required=""
-                    type="radio"
-                    value="19-21"
-                    className="radio"
-                  />
-                  19-21
-                </label>
-                <div className="clear-form" />
-                <label className="radio">
-                  <input
-                    required=""
-                    type="radio"
-                    value="22-25"
-                    className="radio"
-                  />
-                  22-25
-                </label>
-                <div className="clear-form" />
-                <label className="radio">
-                  <input
-                    required=""
-                    type="radio"
-                    value="26-30"
-                    className="radio"
-                  />
-                  26-30
-                </label>
-              </div>
-            </div>
-            <br />
-            <div>
-              <label className="col-md-4">Message</label>
-            </div>
-            <div>
-              <textarea name="" rows="6" className="col-md-8" />
-            </div>
-            <br />
-            <div className="col-md-8">
-              <p>
-                <input type="submit" value="Submit" />
-              </p>
-            </div>
-          </form>
+      <div>
+        <SingleCarousel header="Enroll" />
+        <div className="container group">
+          <div className="container col-sm-6 float-right mt-5">
+            <Markdown id="fontcss" className="mt-3 " source={this.state.text} />
+          </div>
+          <div className="container col-sm-6 mt-5">
+            <iframe
+              title="enroll"
+              src="https://docs.google.com/forms/d/e/1FAIpQLScH_lkw44ikfkHlHpUFVsAtXF6MzElK19xWUyVOP_mJ-ClmHw/viewform?embedded=true"
+              style={{ width: "100%", height: this.state.iframeHeight }}
+              frameborder="0"
+              onLoad={this.loaded}
+              className="enroll-iframe"
+            ></iframe>
+          </div>
         </div>
       </div>
     );

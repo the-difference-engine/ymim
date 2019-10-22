@@ -1,3 +1,4 @@
+/* first navbar (white) */
 .ym-top {
   background-color: #ffffff;
   font-size: 32px;
@@ -6,6 +7,7 @@
   width: 100%;
 }
 
+/* second navbar (green) */
 .ym-bottom {
   background-color: #519b56;
   font-size: 32px;
@@ -26,6 +28,18 @@
   color: #fdd368 !important;
 }
 
+.resources-link {
+  height: 100%;
+  padding: 40px 8px 20px 8px;
+  margin-right: 15px;
+  color: white !important;
+}
+
+.resources-link:hover {
+  text-decoration: none;
+  color: #fdd368 !important;
+}
+
 .nav-link-top {
   padding: 20px;
   color: #000000;
@@ -37,8 +51,17 @@
   color: #fdd368;
 }
 
+.active {
+  color: #fdd368 !important;
+}
+
+/* dropdowns for resources, enroll, and volunteer */
 div.dropdown-menu.show {
   background-color: #519b56;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
 }
 
 a.dropdown-item {
@@ -53,17 +76,18 @@ a.dropdown-item {
   background-position: center center;
   background-repeat: no-repeat;
   position: relative;
-  top: 25px;
+  top: -5px;
   left: 24px;
   z-index: 50;
 }
 
 .social-media {
   color: #519b56;
-  width: 25px;
-  height: 25px;
+  width: 50px;
+  height: 50px;
 }
 
+/* donate button on second navbar (green) */
 #donate-button {
   font-size: 20px;
   font-weight: bold;
@@ -75,12 +99,18 @@ a.dropdown-item {
   text-align: center;
 }
 
+/* spacing around donate button  */
 .center-button {
   margin-top: auto;
   margin-bottom: auto;
 }
 
+/* responsiveness */
 @media all and (min-width: 768px) and (max-width: 2048px) {
+  .align-links {
+    padding-left: 166px;
+  }
+
   .ym-top {
     height: 140px;
   }
@@ -111,7 +141,7 @@ a.dropdown-item {
   }
 
   .align-links {
-    padding-left: 180px;
+    padding-left: 296px;
     color: white;
   }
 }
@@ -148,5 +178,9 @@ a.dropdown-item {
 
   .logo {
     display: none;
+  }
+
+  .donate {
+    font-size: 50px;
   }
 }
