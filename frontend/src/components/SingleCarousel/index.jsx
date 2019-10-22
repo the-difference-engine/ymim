@@ -10,7 +10,7 @@ class SingleCarousel extends Component {
 
     this.state = {
       header: "",
-      image: "",
+      image: ""
     };
   }
 
@@ -21,7 +21,7 @@ class SingleCarousel extends Component {
           <img
             className="d-block w-100 blurImage"
             //src={ymim1}
-            src={require('../../assets/' + this.props.image)}
+            src={require("../../assets/" + this.props.image)}
             alt="First Slide"
           />
           <Carousel.Caption>

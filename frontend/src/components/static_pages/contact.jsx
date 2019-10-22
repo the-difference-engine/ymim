@@ -7,7 +7,11 @@ class Contact extends Component {
   render() {
     return (
       <>
-        <SingleCarousel className="carousel" header="Contact Us" image="ymim5.png"/>
+        <SingleCarousel
+          className="carousel"
+          header="Contact Us"
+          image="ymim5.png"
+        />
         <div className="container">
           <h1 className="mt-5">Contact Us</h1>
           <div className="main-content container col-sm-6 float-right mt-5">
@@ -41,7 +45,12 @@ class Contact extends Component {
                 <label for="name" className="col-xs-4 ">
                   Name (required)
                 </label>
-                <input id="name" required="" type="text" className="col-md-10 " />
+                <input
+                  id="name"
+                  required=""
+                  type="text"
+                  className="col-md-10 "
+                />
               </div>
               <br />
               <div>
