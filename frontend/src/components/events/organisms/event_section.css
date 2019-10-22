@@ -10,11 +10,17 @@ a {
 
 .headingFlex {
   width: stretch;
-  margin: 0 14px;
+  margin: 0 10px;
 }
 
 .featured-event-top {
   width: stretch;
+}
+
+.featured-event-top .eventImage {
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 4px rgba(33, 33, 33, 0.2);
 }
 
 .space-anchors {
@@ -27,5 +33,5 @@ a {
 .row-learn-more {
   display: flex;
   flex-flow: row;
-  margin-left: 14px;
+  margin-left: 10px;
 }

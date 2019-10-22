@@ -8,8 +8,8 @@
 .flex-item {
   display: flex;
   flex: content;
-  margin: 20px 10px;
-  margin-top: 0px;
+  max-width: 414px;
+  margin: 0 10px 20px 10px;
 }
 
 @media screen and (max-width: 839px) {
