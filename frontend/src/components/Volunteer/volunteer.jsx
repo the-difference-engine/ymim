@@ -7,15 +7,18 @@ class Volunteer extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {      
+    this.state = {
       loadCounter: 0,
       iframeHeight: 1075
     };
   }
 
   loaded = () => {
-    let height = this.state.loadCounter % 2 === 0 ? 1075 : 400
-    this.setState({iframeHeight: height, loadCounter: this.state.loadCounter + 1})
+    let height = this.state.loadCounter % 2 === 0 ? 1075 : 400;
+    this.setState({
+      iframeHeight: height,
+      loadCounter: this.state.loadCounter + 1
+    });
   };
 
   render() {
@@ -36,70 +39,71 @@ class Volunteer extends Component {
                   </p>
                   <p>
                     Your thoughtful and generous contributions will help our
-                    vulnerable young adult alumnae who are in need to matriculate
-                    through life. Your time, talent and donations are greatly
-                    appreciated!
+                    vulnerable young adult alumnae who are in need to
+                    matriculate through life. Your time, talent and donations
+                    are greatly appreciated!
                   </p>
                   <p>
-                    In the accompanying form, please tell us more about you in the
-                    comment section. Describe your current occupation and
+                    In the accompanying form, please tell us more about you in
+                    the comment section. Describe your current occupation and
                     expertise, and if the area you want to help us with is
-                    different from your career expertise, tell us what you hope to
-                    help us accomplish. Oh yes, of course, donors and sponsors can
-                    be volunteers too!
+                    different from your career expertise, tell us what you hope
+                    to help us accomplish. Oh yes, of course, donors and
+                    sponsors can be volunteers too!
                   </p>
                   <p>
-                    We welcome you to our family of great people connecting other
-                    wonderful people to life changing experiences!
+                    We welcome you to our family of great people connecting
+                    other wonderful people to life changing experiences!
                   </p>
                 </div>
 
                 <iframe
                   src="https://docs.google.com/forms/d/e/1FAIpQLSe64AwGoRanKukVA4RzS-hzh_oN1EFMu4WQiWpKoCQ-LOO90w/viewform?embedded=true"
-                  style={{width: "100%", height: this.state.iframeHeight}}
+                  style={{ width: "100%", height: this.state.iframeHeight }}
                   frameborder="0"
                   onLoad={this.loaded}
                   title="volunteer-iframe"
-                >                  
-                </iframe>
-
+                ></iframe>
               </Col>
-              
-              <Col className="volunteerVideos px-2 pt-2" xs={12} sm={12} md={12} lg={4}>
+
+              <Col
+                className="volunteerVideos px-2 pt-2"
+                xs={12}
+                sm={12}
+                md={12}
+                lg={4}
+              >
                 <div className="videoFrame">
                   <h4 className="videoFrameTitle">Inspiring</h4>
                   <div className="videoWrapper">
-                    <iframe 
-                      src="https://www.youtube.com/embed/PK9ESRMGq74" 
-                      frameborder="0" 
-                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    <iframe
+                      src="https://www.youtube.com/embed/PK9ESRMGq74"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen
-                    >
-                    </iframe>
+                    ></iframe>
                   </div>
                 </div>
                 <div className="videoFrame">
                   <h4 className="videoFrameTitle">Connecting</h4>
                   <div className="videoWrapper">
-                    <iframe 
-                      src="https://www.youtube.com/embed/jdsqht1m1rE" 
-                      frameborder="0" 
-                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    <iframe
+                      src="https://www.youtube.com/embed/jdsqht1m1rE"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen
-                    >
-                    </iframe>
+                    ></iframe>
                   </div>
                 </div>
                 <div className="videoFrame">
-                 <h4 className="videoFrameTitle">Empowering</h4>
+                  <h4 className="videoFrameTitle">Empowering</h4>
                   <div className="videoWrapper">
-                    <iframe 
-                      src="https://www.youtube.com/embed/GwXt3tL6FqY" 
-                      frameborder="0" 
-                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                    <iframe
+                      src="https://www.youtube.com/embed/GwXt3tL6FqY"
+                      frameborder="0"
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen
-                    >
-                    </iframe>
+                    ></iframe>
                   </div>
                 </div>
               </Col>
