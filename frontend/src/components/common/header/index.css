@@ -105,10 +105,6 @@ a.dropdown-item {
   margin-bottom: auto;
 }
 
-.donate {
-  width: 220px;
-}
-
 /* responsiveness */
 @media all and (min-width: 768px) and (max-width: 2048px) {
   .align-links {
@@ -182,5 +178,9 @@ a.dropdown-item {
 
   .logo {
     display: none;
+  }
+
+  .donate {
+    font-size: 50px;
   }
 }

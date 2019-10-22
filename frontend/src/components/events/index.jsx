@@ -4,24 +4,18 @@ import { events } from "../../actions";
 import "./index.css";
 import EventList from "./EventList";
 import Flex from "./atoms/flex/flex";
+import {
+  getSorted,
+  getUpcomingEvents,
+  getPastEvents
+} from "../../reducers/selectors";
 
 class Events extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      event: {}
-    };
-  }
-
   componentDidMount() {
     this.props.fetchEvents();
   }
 
   render() {
-    let events = this.props.events.filter(s =>
-      ["live", "started", "ended", "completed"].includes(s.status)
-    );
-
     const eventsHeading = (
       <Flex>
         <div className="headingFlex">
@@ -30,12 +24,14 @@ class Events extends Component {
       </Flex>
     );
 
-    if (events.length) {
+    if (this.props.upcomingEvents.length || this.props.pastEvents.length) {
       return (
         <div>
           {eventsHeading}
-          <EventList events={events} />
-          );
+          <EventList
+            upcomingEvents={this.props.upcomingEvents}
+            pastEvents={this.props.pastEvents}
+          />
         </div>
       );
     }
@@ -50,7 +46,8 @@ class Events extends Component {
 
 const mapStateToProps = state => {
   return {
-    events: state.events
+    upcomingEvents: getUpcomingEvents(getSorted(state.events)),
+    pastEvents: getPastEvents(getSorted(state.events))
   };
 };
 
@@ -58,10 +55,6 @@ const mapDispatchToProps = dispatch => {
   return {
     fetchEvents: () => {
       dispatch(events.fetchEvents());
-    },
-
-    deleteEvent: id => {
-      dispatch(events.deleteEvent(id));
     }
   };
 };
