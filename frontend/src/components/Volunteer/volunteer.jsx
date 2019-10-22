@@ -71,7 +71,7 @@ class Volunteer extends Component {
 
               </Col>
               
-              <Col className="volunteerVideos" xs={12} sm={12} md={12} lg={4}>
+              <Col className="volunteerVideos px-2 pt-2" xs={12} sm={12} md={12} lg={4}>
                 <div className="videoFrame">
                   <h4 className="videoFrameTitle">Inspiring</h4>
                   <div className="videoWrapper">

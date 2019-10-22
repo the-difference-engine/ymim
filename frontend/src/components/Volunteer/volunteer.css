@@ -32,7 +32,6 @@
 .videoWrapper {
 	position: relative;
   padding-bottom: 56.25%; /* 16:9 video ratio*/
-  min-width: 185px;
 	padding-top: 25px;
 	height: 0;
 }
