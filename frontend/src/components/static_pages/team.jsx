@@ -29,15 +29,15 @@ class Team extends Component {
             <Row>
               <Col>
                 <Col className="meetTheTeam">
-                  <h2>Meet The Team</h2>
-                  <p>
+                  <h2 className="text-center heading">Meet The Team</h2>
+                  <p className="line-paragraph">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit.
                     Blanditiis voluptas quia laboriosam ea, ut delectus
                     perferendis quae nisi necessitatibus non sapiente nesciunt
                     unde officia quis facilis temporibus itaque eaque optio!
                   </p>
 
-                  <p>
+                  <p className="line-paragraph">
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                     Harum, rerum labore. Ipsa voluptatibus odit impedit repellat
                     facere quos eius. Laudantium unde, totam autem temporibus
@@ -56,7 +56,7 @@ class Team extends Component {
           <Container className="teamPhotos">
             <Row>
               <Col>
-                <h2>Gallery</h2>
+                <h2 className="text-center heading">Gallery</h2>
               </Col>
             </Row>
             <Row>
@@ -141,9 +141,11 @@ class Team extends Component {
                 />
               </Col>
               <Col className="imageColumn" sm={4}>
-                <a href="https://www.facebook.com/theymim/"
-                   target="_blank"
-                   rel="noopener noreferrer">
+                <a
+                  href="https://www.facebook.com/theymim/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <div className="facebookLinkContainer">
                     <p>Click here for more photos of the team.</p>
                   </div>

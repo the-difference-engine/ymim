@@ -50,21 +50,21 @@
   width: auto;
   padding-top: 10px;
   text-align: justify;
-  margin: 0 16px 10px 16px;
+  margin: 0 20px 10px 14px;
 }
 
 .text.feature-subheading {
   font-size: 24px;
   font-weight: bold;
   color: #363636;
-  padding-top: 10px;
+  padding-top: 6px;
   position: relative;
   margin: 0 16px;
 }
 
 .text.rsvp {
   font-size: 24px;
-  margin-left: 14px;
+  margin-left: 10px;
 }
 
 .text.rsvp-link {
