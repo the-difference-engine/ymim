@@ -7,7 +7,7 @@ class Contact extends Component {
   render() {
     return (
       <>
-        <SingleCarousel className="carousel" header="Contact Us" image="ymim5.jpg"/>
+        <SingleCarousel className="carousel" header="Contact Us" image="ymim5.png"/>
         <div className="container">
           <h1 className="mt-5">Contact Us</h1>
           <div className="main-content container col-sm-6 float-right mt-5">
