@@ -1,21 +1,13 @@
 export const fetchEvents = () => {
   return dispatch => {
-    let headers = {
-      "Content-Type": "application/json",
-      Authorization: "Bearer 6KS3ILIMYDX2XUBQUPVS"
-    };
-
-    return fetch(
-      "https://www.eventbriteapi.com/v3/organizers/18024803549/events/",
-      {
-        headers
-      }
-    )
-      .then(res => res.json())
+    return fetch("api/events")
+      .then(res => {
+        return res.json();
+      })
       .then(events => {
         return dispatch({
           type: "FETCH_EVENTS",
-          events: events.events
+          events: events.event_info
         });
       });
   };

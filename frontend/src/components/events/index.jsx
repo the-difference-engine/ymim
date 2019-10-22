@@ -18,6 +18,7 @@ class Events extends Component {
   }
 
   render() {
+    console.log("events props", this.props.events);
     let events = this.props.events.filter(s =>
       ["live", "started", "ended", "completed"].includes(s.status)
     );
