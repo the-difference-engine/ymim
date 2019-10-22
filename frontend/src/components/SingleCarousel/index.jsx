@@ -1,17 +1,27 @@
 import React, { Component } from "react";
 import { Carousel, Navbar } from "react-bootstrap";
 import "./index.css";
-import ymim1 from "../../assets/ymim1.png";
+//import ymim1 from "../../assets/ymim1.png";
 import logo from "../../assets/logo.png";
 
 class SingleCarousel extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      header: "",
+      image: ""
+    };
+  }
+
   render() {
     return (
       <Carousel>
         <Carousel.Item>
           <img
             className="d-block w-100 blurImage"
-            src={ymim1}
+            //src={ymim1}
+            src={require("../../assets/" + this.props.image)}
             alt="First Slide"
           />
           <Carousel.Caption>
