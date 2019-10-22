@@ -73,6 +73,7 @@ class Volunteer extends Component {
               
               <Col className="volunteerVideos" xs={12} sm={12} md={12} lg={4}>
                 <div className="videoFrame">
+                  <h4 className="videoFrameTitle">Inspiring</h4>
                   <div className="videoWrapper">
                     <iframe 
                       src="https://www.youtube.com/embed/PK9ESRMGq74" 
@@ -84,9 +85,22 @@ class Volunteer extends Component {
                   </div>
                 </div>
                 <div className="videoFrame">
+                  <h4 className="videoFrameTitle">Connecting</h4>
                   <div className="videoWrapper">
                     <iframe 
                       src="https://www.youtube.com/embed/jdsqht1m1rE" 
+                      frameborder="0" 
+                      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
+                      allowfullscreen
+                    >
+                    </iframe>
+                  </div>
+                </div>
+                <div className="videoFrame">
+                 <h4 className="videoFrameTitle">Empowering</h4>
+                  <div className="videoWrapper">
+                    <iframe 
+                      src="https://www.youtube.com/embed/GwXt3tL6FqY" 
                       frameborder="0" 
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 
                       allowfullscreen
