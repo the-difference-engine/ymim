@@ -43,6 +43,9 @@
   font-weight: bold;
 }
 
+.events-section {
+  padding: 15px 0;
+}
 /* links to facebook and eventbrite */
 .button-anchors {
   font-size: 24pt;
@@ -114,7 +117,7 @@
     font-weight: bold;
     background-color: #fdd368;
     border-radius: 2px;
-    width: 100px;
+    width: auto;
     height: 40px;
     text-align: center;
     margin-right: 15px;
@@ -156,7 +159,7 @@
     font-weight: bold;
     background-color: #fdd368;
     border-radius: 2px;
-    width: 70px;
+    width: auto;
     height: 35px;
     text-align: center;
     margin-right: 15px;
