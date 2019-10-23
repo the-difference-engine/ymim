@@ -16,7 +16,7 @@ export const getUpcomingEvents = events => {
 
 export const getNextMonthsEvents = events => {
   return events.filter(event =>
-    moment(event.end.local).isBetween(currentTime, upcomingEnd)
+    moment(event.start.local).isBetween(currentTime, upcomingEnd)
   );
 };
 
