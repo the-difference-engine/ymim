@@ -11,6 +11,10 @@ export const getSorted = events => {
 };
 
 export const getUpcomingEvents = events => {
+  return events.filter(event => moment(event.end.local).isAfter(currentTime));
+};
+
+export const getNextMonthsEvents = events => {
   return events.filter(event =>
     moment(event.end.local).isBetween(currentTime, upcomingEnd)
   );
