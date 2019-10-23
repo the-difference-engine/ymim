@@ -7,15 +7,18 @@ class Volunteer extends Component {
   constructor(props) {
     super(props);
 
-    this.state = {      
+    this.state = {
       loadCounter: 0,
       iframeHeight: 1075
     };
   }
 
   loaded = () => {
-    let height = this.state.loadCounter % 2 === 0 ? 1075 : 400
-    this.setState({iframeHeight: height, loadCounter: this.state.loadCounter + 1})
+    let height = this.state.loadCounter % 2 === 0 ? 1075 : 400;
+    this.setState({
+      iframeHeight: height,
+      loadCounter: this.state.loadCounter + 1
+    });
   };
 
   render() {
@@ -28,12 +31,11 @@ class Volunteer extends Component {
               <Col xs={12} sm={12} md={12} lg={7} className="mr-2">
                 <iframe
                   src="https://docs.google.com/forms/d/e/1FAIpQLSe64AwGoRanKukVA4RzS-hzh_oN1EFMu4WQiWpKoCQ-LOO90w/viewform?embedded=true"
-                  style={{width: "100%", height: this.state.iframeHeight}}
+                  style={{ width: "100%", height: this.state.iframeHeight }}
                   frameborder="0"
                   onLoad={this.loaded}
                   title="volunteer-iframe"
-                >                  
-                </iframe>
+                ></iframe>
               </Col>
               <Col className="volunteerMain" xs={12} sm={12} md={12} lg={4}>
                 <h2 className="mb-4">Dear Volunteers!</h2>
