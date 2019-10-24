@@ -183,4 +183,13 @@ a.dropdown-item {
   .donate {
     font-size: 50px;
   }
+
+  .resources-link {
+    padding: 5px 8px;
+  }
+
+  .align-links {
+    padding-top: 35px;
+    padding-bottom: 15px;
+  }
 }
