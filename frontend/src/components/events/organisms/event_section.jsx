@@ -2,7 +2,7 @@ import React from "react";
 import Text from "../atoms/text/text";
 import { EventCard } from "../molecules/event_card";
 import Flex, { FlexItem } from "../atoms/flex/flex";
-import defaultLogo from "../../../assets/ymim1.png";
+import defaultLogo from "../../../assets/logo.png";
 import "./event_section.css";
 
 const EventSection = ({ events, isUpcoming }) => {

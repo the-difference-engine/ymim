@@ -8,11 +8,19 @@
   padding-bottom: 25px;
 }
 
+.donate-form {
+  background: #eee;
+  padding-top: 20px;
+}
+
 .donate {
   font-size: 48px;
   padding-bottom: 25px;
   padding-top: 25px;
   text-align: center;
+}
+.content-styling a {
+  font-size: 22px;
 }
 
 /* tablet  and mobile */

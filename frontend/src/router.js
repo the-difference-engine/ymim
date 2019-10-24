@@ -8,7 +8,7 @@ import Home from "./components/home";
 import Header from "./components/common/header";
 import NotFound from "./components/common/not_found";
 import Footer from "./components/common/footer";
-import Login from "./components/common/login";
+import Login from "./components/login";
 import Contact from "./components/static_pages/contact";
 import About from "./components/static_pages/about";
 import Admin from "./components/admin";
