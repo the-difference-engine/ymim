@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import "./mid.css";
 import { Container, Row, Col } from "react-bootstrap";
+import footerImage1 from "../../../assets/footerImage1.jpg";
+import footerImage2 from "../../../assets/Group_at_a_table_YMIM.png";
+import footerImage3 from "../../../assets/Group_pic_YMIM.png";
+import footerImage4 from "../../../assets/chicago-illinois-skyline-skyscrapers-161963.jpeg";
 
 class LowerMid extends Component {
   render() {
@@ -68,38 +72,22 @@ class LowerMid extends Component {
         <Row className="test justify-content-md-center">
           <Col className="justify-content-md-center">
             <div className="pic-container">
-              <img
-                className="pic"
-                src="https://res.cloudinary.com/dyaffqyuj/image/upload/v1557954804/YMIM/6a00d83451b26169e201a5118cd1e9970c-800wi.jpg"
-                alt=""
-              />
+              <img className="pic" src={footerImage1} alt="" />
             </div>
           </Col>
           <Col className="justify-content-md-center">
             <div className="pic-container">
-              <img
-                className="pic"
-                src="https://res.cloudinary.com/dyaffqyuj/image/upload/v1557954804/YMIM/6a00d83451b26169e201a5118cd1e9970c-800wi.jpg"
-                alt=""
-              />
+              <img className="pic" src={footerImage2} alt="" />
             </div>
           </Col>
           <Col className="justify-content-md-center">
             <div className="pic-container">
-              <img
-                className="pic"
-                src="https://res.cloudinary.com/dyaffqyuj/image/upload/v1557954804/YMIM/6a00d83451b26169e201a5118cd1e9970c-800wi.jpg"
-                alt=""
-              />
+              <img className="pic" src={footerImage3} alt="" />
             </div>
           </Col>
           <Col className="justify-content-md-center">
             <div className="pic-container">
-              <img
-                className="pic"
-                src="https://res.cloudinary.com/dyaffqyuj/image/upload/v1557954804/YMIM/6a00d83451b26169e201a5118cd1e9970c-800wi.jpg"
-                alt=""
-              />
+              <img className="pic" src={footerImage4} alt="" />
             </div>
           </Col>
         </Row>
