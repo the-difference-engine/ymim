@@ -81,6 +81,7 @@ class Volunteer extends Component {
                       frameborder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen
+                      title="inspire"
                     ></iframe>
                   </div>
                 </div>
@@ -92,6 +93,7 @@ class Volunteer extends Component {
                       frameborder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen
+                      title="connecting"
                     ></iframe>
                   </div>
                 </div>
@@ -103,6 +105,7 @@ class Volunteer extends Component {
                       frameborder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen
+                      title="empower"
                     ></iframe>
                   </div>
                 </div>
