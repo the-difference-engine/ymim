@@ -185,11 +185,11 @@ a.dropdown-item {
   }
 
   .resources-link {
-    padding: 5px 8px;
+    padding: 0px 8px;
   }
 
   .align-links {
-    padding-top: 35px;
+    padding-top: 15px;
     padding-bottom: 15px;
   }
 }
