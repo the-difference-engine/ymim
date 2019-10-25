@@ -24,7 +24,7 @@ class Volunteer extends Component {
   render() {
     return (
       <>
-        <SingleCarousel className="carousel" header="Volunteer" />
+        <SingleCarousel className="carousel" header="Volunteer" image="ymim1.png"/>
         <Container className="mt-4 content-format">
           <Row className="mx-auto flexForm">
             <Row noGutters={true}>
@@ -81,6 +81,7 @@ class Volunteer extends Component {
                       frameborder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen
+                      title="inspire"
                     ></iframe>
                   </div>
                 </div>
@@ -92,6 +93,7 @@ class Volunteer extends Component {
                       frameborder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen
+                      title="connecting"
                     ></iframe>
                   </div>
                 </div>
@@ -103,6 +105,7 @@ class Volunteer extends Component {
                       frameborder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowfullscreen
+                      title="empower"
                     ></iframe>
                   </div>
                 </div>
