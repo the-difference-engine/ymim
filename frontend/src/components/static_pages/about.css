@@ -4,6 +4,10 @@
   display: block;
 }
 
+.about-people-row {
+  margin-bottom: 20px;
+}
+
 .images {
   margin: 0;
   margin-bottom: 40px;
@@ -72,6 +76,8 @@
   .images {
     margin: 0;
     margin-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .images img {
     width: 100%;
@@ -80,7 +86,9 @@
     font-size: 26px;
   }
   .sub-heading {
-    font-size: 18px;
+    font-size: 20px;
+    padding-top: 0px;
+    margin-top: 8px;
   }
   .people-heading {
     font-size: 26px;
@@ -92,5 +100,6 @@
   .about-heading {
     font-size: 26px;
     margin-left: 0px;
+    margin-bottom: 0px;
   }
 }
