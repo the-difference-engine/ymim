@@ -85,7 +85,8 @@
   .heading {
     font-size: 26px;
   }
-  .sub-heading {
+  .about-people-row .sub-heading,
+  #aboutPageTextRow .sub-heading {
     font-size: 20px;
     padding-top: 0px;
     margin-top: 8px;
