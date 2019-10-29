@@ -7,7 +7,7 @@ class Donate extends Component {
     return (
       <Row noGutters="true">
         <Container fluid="true" className="content-styling">
-          <h1 className="donate">Donate Now!</h1>
+          <h1 className="donate center">Donate Now!</h1>
           <p>
             The Young Masterbuilders In Motion, Inc., (<strong>YMIM</strong>),
             supports young women orphans, adoptees, and foster youth alumnae to
@@ -32,6 +32,38 @@ class Donate extends Component {
             Wright, Founder/Executive Director at (773) 941-1200 or via email at{" "}
             <strong>Founder@TheYMIM.org</strong>
           </p>
+
+          <div className="mx-auto donate">
+            <form
+              action="https://www.paypal.com/"
+              method="post"
+              target="_blank"
+              class="donate-form"
+            >
+              <input type="hidden" name="cmd" value="_s-xclick" />
+              <input
+                type="hidden"
+                name="hosted_button_id"
+                value="34L62HLMP5VEC"
+              />
+              <input
+                type="image"
+                src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif"
+                border="0"
+                name="submit"
+                title="PayPal - The safer, easier way to pay online!"
+                alt="Donate with PayPal button"
+                margin="auto"
+              />
+              <img
+                alt=""
+                border="0"
+                src="https://www.paypal.com/en_US/i/scr/pixel.gif"
+                width="1"
+                height="1"
+              />
+            </form>
+          </div>
         </Container>
       </Row>
     );

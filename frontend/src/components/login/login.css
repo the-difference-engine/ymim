@@ -1,0 +1,42 @@
+.center-login {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.login {
+  margin: 4% auto;
+}
+
+.loginButton {
+  background-color: #519b46;
+  color: #fff;
+}
+
+.password-link {
+  color: #519b46;
+}
+
+.password-link:hover {
+  text-decoration: none;
+}
+
+.style-login {
+  margin: 0 0 3% 0;
+  padding: 50px 0px 10px 0px;
+}
+
+@media only screen and (min-width: 398px) {
+  .style-login {
+    border: 10px solid #519b46;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    padding: 50px 10px 10px 10px;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .style-login {
+    border: 15px solid #519b46;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
+    padding: 50px 50px 10px 50px;
+  }
+}
