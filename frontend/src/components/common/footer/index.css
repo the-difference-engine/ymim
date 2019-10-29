@@ -2,6 +2,10 @@
   background-color: #519b46;
 }
 
+.footer-sub {
+  padding: 0;
+}
+
 .footer-link {
   display: inline-block;
   margin: 4vh 0;
@@ -44,7 +48,7 @@
   margin: 20px;
 }
 
-.footer_text{
+.footer_text {
   padding-bottom: 50px;
 }
 

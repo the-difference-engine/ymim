@@ -13,7 +13,7 @@ export default class footer extends Component {
   render() {
     return (
       <Container fluid={true} className="footer">
-        <Col>
+        <Col className="footer-sub">
           <Row className="justify-content-md-center text-left">
             <Col xs="12" sm="12" md="12" lg="12" xl="12" fluid="true">
               <nav>
@@ -81,7 +81,7 @@ export default class footer extends Component {
                 </Row>
               </div>
             </Col>
-            
+
             <Col xs="10" sm="10">
               <div className="tsocial">
                 <a
