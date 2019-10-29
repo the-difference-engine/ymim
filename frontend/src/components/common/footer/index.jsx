@@ -65,20 +65,23 @@ export default class footer extends Component {
           <hr className="footer-line"></hr>
           <Row className="justify-content-center">
             <Col xs sm md lg xl="12">
-              <Row className="justify-content-md-center contact">
-                <Col xs="12" sm="12" md="4" lg="4" xl="2">
-                  Copyright 2019
-                </Col>
-                <Col xs="12" sm="12" md="4" lg="4" xl="2">
-                  <a className="contact" href="mailto:founder@theymim.org">
-                    founder@theymim.org
-                  </a>
-                </Col>
-                <Col xs="12" sm="12" md="4" lg="4" xl="2">
-                  773.941.1200
-                </Col>
-              </Row>
+              <div className="footer_text">
+                <Row className="justify-content-md-center contact">
+                  <Col xs="12" sm="12" md="4" lg="4" xl="2">
+                    Copyright 2019
+                  </Col>
+                  <Col xs="12" sm="12" md="4" lg="4" xl="2">
+                    <a className="contact" href="mailto:founder@theymim.org">
+                      founder@theymim.org
+                    </a>
+                  </Col>
+                  <Col xs="12" sm="12" md="4" lg="4" xl="2">
+                    773.941.1200
+                  </Col>
+                </Row>
+              </div>
             </Col>
+            
             <Col xs="10" sm="10">
               <div className="tsocial">
                 <a
