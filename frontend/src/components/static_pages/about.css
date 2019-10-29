@@ -2,6 +2,11 @@
   padding-left: 133px;
   padding-right: 133px;
   display: block;
+
+  .sub-heading {
+    font-size: 24px;
+  }
+
 }
 
 .about-people-row {
@@ -25,10 +30,6 @@
   font-weight: bold;
 }
 
-.sub-heading {
-  font-size: 24px;
-}
-
 .people-heading {
   font-size: 48px;
   font-weight: bold;
@@ -40,6 +41,10 @@
   #aboutPageTextRow {
     padding-left: 20px;
     padding-right: 20px;
+
+    .sub-heading {
+      font-size: 24px;
+    }
   }
 
   .images {
@@ -54,9 +59,7 @@
   .heading {
     font-size: 30px;
   }
-  .sub-heading {
-    font-size: 24px;
-  }
+
   p {
     font-size: 16px;
   }
