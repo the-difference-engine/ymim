@@ -6,6 +6,10 @@ import { events } from "../../../actions";
 import { findNextUpcomingEvent } from "../../events/utils";
 import { getSorted, getUpcomingEvents } from "../../../reducers/selectors";
 import Moment from "react-moment";
+import footerImage1 from "../../../assets/footerImage1.jpg";
+import footerImage2 from "../../../assets/Group_at_a_table_YMIM.png";
+import footerImage3 from "../../../assets/Group_pic_YMIM.png";
+import footerImage4 from "../../../assets/chicago-illinois-skyline-skyscrapers-161963.jpeg";
 
 class LowerMid extends Component {
   componentDidMount() {
@@ -61,11 +65,16 @@ class LowerMid extends Component {
             </button>
           </div>
         ) : (
-          <div className="events-section"></div>
+          <div className="text-center heading"></div>
         )}
       </>
     );
-
+    const footerImages = [
+      { src: footerImage1 },
+      { src: footerImage2 },
+      { src: footerImage3 },
+      { src: footerImage4 }
+    ];
     return (
       <Container fluid={true}>
         <Row className="lower-mid">
@@ -83,42 +92,13 @@ class LowerMid extends Component {
           </Col>
         </Row>
         <Row className="test justify-content-md-center">
-          <Col className="justify-content-md-center">
-            <div className="pic-container">
-              <img
-                className="pic"
-                src="https://res.cloudinary.com/dyaffqyuj/image/upload/v1557954804/YMIM/6a00d83451b26169e201a5118cd1e9970c-800wi.jpg"
-                alt=""
-              />
-            </div>
-          </Col>
-          <Col className="justify-content-md-center">
-            <div className="pic-container">
-              <img
-                className="pic"
-                src="https://res.cloudinary.com/dyaffqyuj/image/upload/v1557954804/YMIM/6a00d83451b26169e201a5118cd1e9970c-800wi.jpg"
-                alt=""
-              />
-            </div>
-          </Col>
-          <Col className="justify-content-md-center">
-            <div className="pic-container">
-              <img
-                className="pic"
-                src="https://res.cloudinary.com/dyaffqyuj/image/upload/v1557954804/YMIM/6a00d83451b26169e201a5118cd1e9970c-800wi.jpg"
-                alt=""
-              />
-            </div>
-          </Col>
-          <Col className="justify-content-md-center">
-            <div className="pic-container">
-              <img
-                className="pic"
-                src="https://res.cloudinary.com/dyaffqyuj/image/upload/v1557954804/YMIM/6a00d83451b26169e201a5118cd1e9970c-800wi.jpg"
-                alt=""
-              />
-            </div>
-          </Col>
+          {footerImages.map(i => (
+            <Col className="justify-content-md-center">
+              <div className="pic-container">
+                <img className="pic" src={i.src} alt="" />
+              </div>
+            </Col>
+          ))}
         </Row>
       </Container>
     );
