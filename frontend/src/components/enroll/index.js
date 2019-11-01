@@ -33,7 +33,11 @@ class Enroll extends Component {
   render() {
     return (
       <div>
-        <SingleCarousel id="enroll-carousel" header="Young Masterbuilders in Motion" image="ymim1.png"/>
+        <SingleCarousel
+          id="enroll-carousel"
+          header="Young Masterbuilders in Motion"
+          image="ymim1.png"
+        />
         <div className="container group">
           <div className="container col-sm-6 float-right mt-5">
             <Markdown id="fontcss" className="mt-3 " source={this.state.text} />

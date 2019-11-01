@@ -3,7 +3,7 @@ import { Carousel, Navbar } from "react-bootstrap";
 import "./index.css";
 import logo from "../../assets/logo.png";
 
-class SingleCarousel extends Component { 
+class SingleCarousel extends Component {
   render() {
     return (
       <Carousel>
