@@ -33,23 +33,26 @@ class Team extends Component {
                   <p className="line-paragraph">
                     We are made up of professionals with more than 40 years of
                     combined multidisciplinary work and life experience ranging
-                    from military veterans, nurses, doctors, researchers, teachers,
-                    counselors, lawyers, artists, social workers, business leaders,
-                    and mental health practitioners. And, there’s room for more passionate,
-                    talented, and compassionate people to join us.
+                    from military veterans, nurses, doctors, researchers,
+                    teachers, counselors, lawyers, artists, social workers,
+                    business leaders, and mental health practitioners. And,
+                    there’s room for more passionate, talented, and
+                    compassionate people to join us.
                   </p>
 
                   <p className="line-paragraph">
-                  We believe that by working together, we can co-create a supportive
-                  environment in the midst of chaotic urban communities.
+                    We believe that by working together, we can co-create a
+                    supportive environment in the midst of chaotic urban
+                    communities.
                   </p>
 
                   <p className="line-paragraph">
-                  We appreciate your time, gifts and talents
-                  toward creating and sustaining impactful programming.
-                  Your thoughtful and generous support is greatly appreciated.
-                  If you are not already a registered volunteer ambassador, please
-                  sign up now, and you too can help our Young Masterbuilders in Motion thrive.
+                    We appreciate your time, gifts and talents toward creating
+                    and sustaining impactful programming. Your thoughtful and
+                    generous support is greatly appreciated. If you are not
+                    already a registered volunteer ambassador, please sign up
+                    now, and you too can help our Young Masterbuilders in Motion
+                    thrive.
                   </p>
                 </Col>
               </Col>
