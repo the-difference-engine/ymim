@@ -17,7 +17,7 @@ class SingleCarousel extends Component {
             <div className="overlay">
               <h3 className="title-carousel">{this.props.header}</h3>
               <p className="paragraph-carousel">
-                inspires, connects, and empowers young women orphans, adoptees,
+                Inspires, connects, and empowers young women orphans, adoptees,
                 and foster youth alumnae to thrive.
               </p>
               <Navbar.Brand className="logo-div">
