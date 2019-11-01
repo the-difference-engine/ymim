@@ -32,10 +32,15 @@ class Contact extends Component {
                 can help.
               </p>
               <p className="text-left">Until next time,</p>
-              <p className="text-left">Kim Wright, MBA, U.S. Army Veteran<br />
-                Foster Youth Alumna<br />
-                Founder, Young Masterbuilders in Motion<br />
-                Email: Founder@theymim.org |&nbsp;Phone: 773.941.1200</p>
+              <p className="text-left">
+                Kim Wright, MBA, U.S. Army Veteran
+                <br />
+                Foster Youth Alumna
+                <br />
+                Founder, Young Masterbuilders in Motion
+                <br />
+                Email: Founder@theymim.org |&nbsp;Phone: 773.941.1200
+              </p>
             </div>
           </div>
           <div className="container col-sm-6 float-left mt-5">
