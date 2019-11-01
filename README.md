@@ -38,7 +38,7 @@ I'm going to be very blunt: this will be much, much easier on a Mac or Linux sys
 
 - Clone and go into the application
 
-        git clone git@github.com:the-difference-engine/ymim.git
+        git clone https://github.com/the-difference-engine/ymim.git
         cd ymim
 
 You should now be in the root of the project
