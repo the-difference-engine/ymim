@@ -2,44 +2,70 @@
   padding-left: 133px;
   padding-right: 133px;
   display: block;
+
+  .sub-heading {
+    font-size: 24px;
+  }
+
+}
+
+.about-people-row {
+  margin-bottom: 20px;
 }
 
 .images {
   margin: 0;
   margin-bottom: 40px;
+  margin-left: 120px;
 }
 
 .images img {
-  width: 400px;
+  width: 300px;
 }
 
-.sub-heading {
-  font-size: 24px;
+.about-heading {
+  margin-left: 120px;
+  margin-bottom: 10px;
+  padding: 15px 0px;
+  font-weight: bold;
+}
+
+.people-heading {
+  font-size: 48px;
+  font-weight: bold;
 }
 
 /* tablet */
 
 @media all and (min-width: 426px) and (max-width: 1023px) {
   #aboutPageTextRow {
-    padding-left: 133px;
-    padding-right: 133px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    .sub-heading {
+      font-size: 24px;
+    }
   }
 
   .images {
     margin: 0;
-    margin-bottom: 20px;
+    height: 350px;
   }
+
   .images img {
     width: 300px;
   }
+
   .heading {
     font-size: 30px;
   }
-  .sub-heading {
-    font-size: 24px;
-  }
+
   p {
     font-size: 16px;
+  }
+  .about-heading {
+    font-size: 32px;
+    margin-left: 0;
   }
 }
 
@@ -52,18 +78,31 @@
   }
   .images {
     margin: 0;
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
   .images img {
-    width: 250px;
+    width: 100%;
   }
   .heading {
     font-size: 26px;
   }
-  .sub-heading {
-    font-size: 18px;
+  .about-people-row .sub-heading,
+  #aboutPageTextRow .sub-heading {
+    font-size: 20px;
+    padding-top: 0px;
+    margin-top: 8px;
+  }
+  .people-heading {
+    font-size: 26px;
+    font-weight: bold;
   }
   p {
     font-size: 14px;
+  }
+  .about-heading {
+    margin-left: 0px;
+    margin-bottom: 0px;
   }
 }

@@ -1,19 +1,12 @@
-from rest_framework import permissions, generics
-from rest_framework.viewsets import ViewSetMixin
-
-from .models import Event
-from .serializers import EventSerializer
-
-
-class EventListCreate(ViewSetMixin, generics.ListCreateAPIView):
-    queryset = Event.objects.all()
-    permission_classes = [permissions.AllowAny]
-    serializer_class = EventSerializer
-    lookup_field = "id"
+import requests
+from django.shortcuts import render
+from events.admin import eventbrite_api_key
+from django.http import JsonResponse
 
 
-class EventRetrieveUpdateDestroy(ViewSetMixin, generics.RetrieveUpdateDestroyAPIView):
-    queryset = Event.objects.all()
-    permission_classes = [permissions.AllowAny]
-    serializer_class = EventSerializer
-    lookup_field = "id"
+def event_index(request):
+    event_list = requests.get(eventbrite_api_key.format("events")).json()
+
+    context = {"event_info": event_list["events"]}
+
+    return JsonResponse(context)

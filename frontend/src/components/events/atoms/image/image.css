@@ -13,8 +13,13 @@
   height: 200px;
   flex: content;
   justify-content: center;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 4px;
+}
+
+.eventImage.floating {
+  float: left;
+  margin: 14px;
 }
 
 @media screen and (max-width: 425px) {

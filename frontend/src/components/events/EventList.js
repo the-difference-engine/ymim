@@ -1,11 +1,11 @@
 import React from "react";
 import EventSection from "./organisms/event_section";
 import "./index.css";
-import { findPastEndIndex } from "./utils";
+import { findNextUpcomingEvent } from "./utils";
+import FeatureEvent from "./FeatureEvent";
 
-const EventList = ({ events }) => {
-  let pastEnd = findPastEndIndex(events)
-  if (pastEnd === events.length - 1) {
+const EventList = ({ upcomingEvents, pastEvents }) => {
+  if (upcomingEvents.length === 0) {
     return (
       <div>
         <EventSection events={[]} isUpcoming={true} />
@@ -14,20 +14,22 @@ const EventList = ({ events }) => {
           an event that you think YMIM should be a part of please email:
           Founder@theymim.org or call: 773.941.1200.
         </div>
-        <EventSection
-          events={events.slice(0, pastEnd + 1)}
-          isUpcoming={false}
-        />
+        <EventSection events={pastEvents} isUpcoming={false} />
+      </div>
+    );
+  } else if (upcomingEvents.length === 1) {
+    return (
+      <div>
+        <FeatureEvent event={findNextUpcomingEvent(upcomingEvents)} />
+        <EventSection events={pastEvents} isUpcoming={false} />
       </div>
     );
   } else {
     return (
       <div>
-        <EventSection events={events.slice(pastEnd + 1)} isUpcoming={true} />
-        <EventSection
-          events={events.slice(0, pastEnd + 1)}
-          isUpcoming={false}
-        />
+        <FeatureEvent event={findNextUpcomingEvent(upcomingEvents)} />
+        <EventSection events={upcomingEvents.slice(1)} isUpcoming={true} />
+        <EventSection events={pastEvents} isUpcoming={false} />
       </div>
     );
   }

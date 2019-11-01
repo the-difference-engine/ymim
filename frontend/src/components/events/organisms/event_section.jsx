@@ -2,13 +2,12 @@ import React from "react";
 import Text from "../atoms/text/text";
 import { EventCard } from "../molecules/event_card";
 import Flex, { FlexItem } from "../atoms/flex/flex";
-import defaultLogo from "../../../assets/ymim1.png";
+import defaultLogo from "../../../assets/logo.png";
 import "./event_section.css";
 
 const EventSection = ({ events, isUpcoming }) => {
   let sectionTitle = "Upcoming Events";
   if (isUpcoming === false) {
-    events.reverse();
     sectionTitle = "Past Events";
   }
   return (
@@ -17,7 +16,7 @@ const EventSection = ({ events, isUpcoming }) => {
         <div className="headingFlex">
           <Text text={sectionTitle} type="heading" />
         </div>
-        {events.map(({ name, start, logo, url, id }) => {
+        {events.map(({ name, start, logo, url, id, description }) => {
           return (
             <FlexItem key={id}>
               <EventCard
@@ -25,6 +24,7 @@ const EventSection = ({ events, isUpcoming }) => {
                 start={start ? start.local : "TBA"}
                 logo={logo ? logo.url : defaultLogo}
                 url={url}
+                description={description.text ? description.text : ""}
               />
             </FlexItem>
           );

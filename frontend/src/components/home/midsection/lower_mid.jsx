@@ -1,6 +1,10 @@
 import React, { Component } from "react";
 import "./mid.css";
 import { Container, Row, Col } from "react-bootstrap";
+import footerImage1 from "../../../assets/footerImage1.jpg";
+import footerImage2 from "../../../assets/Group_at_a_table_YMIM.png";
+import footerImage3 from "../../../assets/Group_pic_YMIM.png";
+import footerImage4 from "../../../assets/chicago-illinois-skyline-skyscrapers-161963.jpeg";
 
 class LowerMid extends Component {
   render() {
@@ -17,6 +21,7 @@ class LowerMid extends Component {
               Library to collect and package essential supplies for foster
               youth.
             </div>
+            <br />
             <div className="line-paragraph">
               It's estimated that 5,000 youth age out of foster care in the
               Chicagoland area each year. Young Masterbuilders in Motion is
@@ -25,31 +30,30 @@ class LowerMid extends Component {
               we care. We know it's an urgent situation. We need your support!
               Won't you join us?
             </div>
+
             <h2 className="sub-heading">RSVP and Find out More:</h2>
-            <a
-              href="https://www.eventbrite.com/o/young-masterbuilders-in-motion-inc-18024803549"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="space-anchors"
-              alt="Eventbrite"
-            >
-              Eventbrite
-            </a>
-            <a
-              href="https://www.facebook.com/theymim/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="space-anchors"
-              alt="Facebook"
-            >
-              Facebook
-            </a>
             <div>
               <button className="ym-button" id="enroll">
-                All News
+                <a
+                  href="https://www.facebook.com/theymim/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button-anchors"
+                  alt="Facebook"
+                >
+                  Facebook
+                </a>
               </button>
               <button className="ym-button" id="enroll">
-                All Events
+                <a
+                  href="https://www.eventbrite.com/o/young-masterbuilders-in-motion-inc-18024803549"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="button-anchors"
+                  alt="Eventbrite"
+                >
+                  Eventbrite
+                </a>
               </button>
             </div>
           </Col>
@@ -68,38 +72,22 @@ class LowerMid extends Component {
         <Row className="test justify-content-md-center">
           <Col className="justify-content-md-center">
             <div className="pic-container">
-              <img
-                className="pic"
-                src="https://res.cloudinary.com/dyaffqyuj/image/upload/v1557954804/YMIM/6a00d83451b26169e201a5118cd1e9970c-800wi.jpg"
-                alt=""
-              />
+              <img className="pic" src={footerImage1} alt="" />
             </div>
           </Col>
           <Col className="justify-content-md-center">
             <div className="pic-container">
-              <img
-                className="pic"
-                src="https://res.cloudinary.com/dyaffqyuj/image/upload/v1557954804/YMIM/6a00d83451b26169e201a5118cd1e9970c-800wi.jpg"
-                alt=""
-              />
+              <img className="pic" src={footerImage2} alt="" />
             </div>
           </Col>
           <Col className="justify-content-md-center">
             <div className="pic-container">
-              <img
-                className="pic"
-                src="https://res.cloudinary.com/dyaffqyuj/image/upload/v1557954804/YMIM/6a00d83451b26169e201a5118cd1e9970c-800wi.jpg"
-                alt=""
-              />
+              <img className="pic" src={footerImage3} alt="" />
             </div>
           </Col>
           <Col className="justify-content-md-center">
             <div className="pic-container">
-              <img
-                className="pic"
-                src="https://res.cloudinary.com/dyaffqyuj/image/upload/v1557954804/YMIM/6a00d83451b26169e201a5118cd1e9970c-800wi.jpg"
-                alt=""
-              />
+              <img className="pic" src={footerImage4} alt="" />
             </div>
           </Col>
         </Row>
