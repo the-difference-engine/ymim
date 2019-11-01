@@ -43,6 +43,10 @@
   height: 100%;
 }
 
+.title-carousel {
+  font-weight: bold;
+}
+
 @media (max-width: 1000px) {
   .flexForm {
     display: flex;

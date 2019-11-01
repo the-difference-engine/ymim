@@ -26,7 +26,7 @@ class Volunteer extends Component {
       <>
         <SingleCarousel
           className="carousel"
-          header="Volunteer"
+          header="Young Masterbuilders in Motion"
           image="ymim1.png"
         />
         <Container className="mt-4 content-format">
