@@ -89,7 +89,7 @@ class NavBar extends Component {
                     download
                     target="_blank"
                   >
-                    Youth Resources
+                    Resources
                   </NavLink>
                   {/* enroll  */}
                   <NavLink className="resources-link" to="/enrollment">
