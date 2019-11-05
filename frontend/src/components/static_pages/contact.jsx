@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./contact.css";
 import "react-bootstrap";
+import SingleCarousel from "../SingleCarousel/index";
 
 class Contact extends Component {
   state = {
@@ -16,6 +17,12 @@ class Contact extends Component {
 
   render() {
     return (
+      <>
+        <SingleCarousel
+          className="carousel"
+          header="Contact Us"
+          image="ymim5.png"
+        />
       <div className="container">
         <div className="main-content container col-sm-4 float-right mt-5">
           <div className="mt-4">
