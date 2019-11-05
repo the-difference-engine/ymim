@@ -62,3 +62,7 @@ textarea {
     padding: 0;
   }
 }
+
+.title-carousel {
+  font-weight: bold;
+}
