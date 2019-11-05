@@ -5,11 +5,11 @@ import "react-bootstrap";
 class Contact extends Component {
   state = {
     loadCounter: 0,
-    iframeHeight: 1275
+    iframeHeight: 1400
   };
 
   loaded = () => {
-    let height = this.state.loadCounter % 2 === 0 ? 1275 : 400;
+    let height = this.state.loadCounter % 2 === 0 ? 1400 : 400;
     let loadCounter = this.state.loadCounter + 1;
     this.setState({ iframeHeight: height, loadCounter: loadCounter });
   };
