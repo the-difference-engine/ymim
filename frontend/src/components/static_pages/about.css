@@ -11,15 +11,30 @@
 .about-people-row {
   margin-bottom: 20px;
 }
-
 .images {
-  margin: 0;
-  margin-bottom: 40px;
-  margin-left: 120px;
+ margin: 0;
+ margin-bottom: 40px;
+ margin-left: 120px;
 }
 
 .images img {
-  width: 300px;
+ width: 330px;
+ padding: 20px;
+ border: 1px solid #d3d3d3;
+}
+
+#kim-image {
+ margin-top: 60px;
+ height: 350px;
+}
+
+#pierre-image {
+ margin-top: 10px;
+ margin-bottom: 35px;
+}
+
+#shirley-image {
+ margin-top: -20px;
 }
 
 .about-heading {
