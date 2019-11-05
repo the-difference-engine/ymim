@@ -44,6 +44,7 @@ const EventCard = props => {
           type="hoverTitle"
         />
         <Text text={props.description} type="hoverDescription" />
+        <Text text="Click to learn more!" type="learnMore" />
       </div>
     </a>
   );

@@ -30,14 +30,27 @@
   font-weight: bold;
 }
 
-.text.hoverDescription,
-.text.hoverTitle {
+.text.hoverDescription {
   color: white;
   margin: 10px;
+  max-height: 190px;
+  white-space: pre-wrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .text.hoverTitle {
+  color: white;
+  margin: 10px;
   font-weight: bold;
+  font-size: 20px;
+}
+
+.text.learnMore {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  align-self: flex-end;
 }
 
 .thumbNail {
