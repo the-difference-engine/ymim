@@ -52,6 +52,7 @@ class Contact extends Component {
             marginheight="0"
             onLoad={this.loaded}
             className="enroll-iframe"
+            title="contact-iframe"
           >
             Loading…
           </iframe>
