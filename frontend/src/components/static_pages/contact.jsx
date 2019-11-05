@@ -18,7 +18,7 @@ class Contact extends Component {
   render() {
     return (
       <>
-        <SingleCarousel
+      <SingleCarousel
           className="carousel"
           header="Contact Us"
           image="ymim5.png"
@@ -64,6 +64,7 @@ class Contact extends Component {
           </iframe>
         </div>
       </div>
+      </>
     );
   }
 }
