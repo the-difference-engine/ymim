@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Carousel, Navbar } from "react-bootstrap";
 import "./index.css";
-import ymim from "../../assets/ymim5.jpeg";
+import ymim from "../../assets/ymim6.jpeg";
 import logo from "../../assets/logo.png";
 
 class MainCarousel extends Component {
