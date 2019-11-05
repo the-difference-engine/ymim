@@ -36,7 +36,7 @@ class Volunteer extends Component {
                 </iframe>
               </Col>
               <Col className="volunteerMain" xs={12} sm={12} md={12} lg={4}>
-                <h2 className="mb-4">Dear Volunteers!</h2>
+                <h2 className="mb-4">Dear Volunteers and Sponsors!</h2>
                 <p>
                   Thank you for considering getting involved in the Young
                   Masterbuilders in Motion (<b>YMIM)</b>&nbsp;movement to
