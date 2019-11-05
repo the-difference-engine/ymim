@@ -14,13 +14,29 @@
 }
 
 .images {
-  margin: 0;
-  margin-bottom: 40px;
-  margin-left: 120px;
+ margin: 0;
+ margin-bottom: 40px;
+ margin-left: 120px;
 }
 
 .images img {
-  width: 300px;
+ width: 330px;
+ padding: 20px;
+ border: 1px solid #d3d3d3;
+}
+
+#kim-image {
+ margin-top: 55px;
+ height: 350px;
+}
+
+#pierre-image {
+ margin-top: -8px;
+ margin-bottom: -25px;
+}
+
+#shirley-image {
+ margin-top: -8px;
 }
 
 .about-heading {
