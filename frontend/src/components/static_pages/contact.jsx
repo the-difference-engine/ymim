@@ -17,7 +17,7 @@ class Contact extends Component {
   render() {
     return (
       <div className="container">
-        {/* <h1 className="mt-5">Contact Us</h1> */}
+        <h1 className="mt-5">Contact Us</h1>
         <div className="main-content container col-sm-4 float-right mt-5">
           <div className="mt-4">
             <p>Hello Ms. or Mr. Wonderful,</p>
@@ -45,7 +45,6 @@ class Contact extends Component {
         </div>
         <div className="main-content container col-sm-8 mt-5">
           <iframe
-            title="contact-iframe"
             src="https://docs.google.com/forms/d/e/1FAIpQLSe9vicPG5oh6xdZYGLMkksNXQc_6WnjY4GCOZbjcnlVzW0huA/viewform?embedded=true"
             style={{ width: "100%", height: this.state.iframeHeight }}
             frameborder="0"
