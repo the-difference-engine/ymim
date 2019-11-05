@@ -17,7 +17,6 @@ class Contact extends Component {
   render() {
     return (
       <div className="container">
-        <h1 className="mt-5">Contact Us</h1>
         <div className="main-content container col-sm-4 float-right mt-5">
           <div className="mt-4">
             <p>Hello Ms. or Mr. Wonderful,</p>
