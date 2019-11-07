@@ -40,7 +40,11 @@ class Enroll extends Component {
         />
         <div className="container group">
           <div className="container col-sm-4 float-right mt-5">
-            <Markdown id="fontcss" className="text-left" source={this.state.text} />
+            <Markdown
+              id="fontcss"
+              className="text-left"
+              source={this.state.text}
+            />
           </div>
           <div className="container col-sm-8 mt-5">
             <iframe
