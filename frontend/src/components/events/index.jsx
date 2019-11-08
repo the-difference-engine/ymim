@@ -9,6 +9,7 @@ import {
   getNextMonthsEvents,
   getPastEvents
 } from "../../reducers/selectors";
+import Sponsors from "./sponsors/index";
 
 class Events extends Component {
   componentDidMount() {
@@ -24,22 +25,42 @@ class Events extends Component {
       </Flex>
     );
 
+    const sponsorsHeading = (
+      <Flex>
+        <div className="headingFlex">
+          <h1>Our Sponsors</h1>
+        </div>
+      </Flex>
+    );
+
     if (this.props.upcomingEvents.length || this.props.pastEvents.length) {
       return (
-        <div>
-          {eventsHeading}
-          <EventList
-            upcomingEvents={this.props.upcomingEvents}
-            pastEvents={this.props.pastEvents}
-          />
-        </div>
+        <>
+          <div>
+            {eventsHeading}
+            <EventList
+              upcomingEvents={this.props.upcomingEvents}
+              pastEvents={this.props.pastEvents}
+            />          
+          </div> 
+          <div>
+            {sponsorsHeading}
+            <Sponsors />
+          </div>   
+        </>   
       );
     }
-    return (
-      <div>
-        {eventsHeading}
-        <div className="checkBack"> Check back soon for events</div>
-      </div>
+    return (  
+      <>          
+        <div>
+          {eventsHeading}
+          <div className="checkBack"> Check back soon for events</div>          
+        </div> 
+        <div>
+          {sponsorsHeading}
+          <Sponsors />
+        </div> 
+      </>      
     );
   }
 }
