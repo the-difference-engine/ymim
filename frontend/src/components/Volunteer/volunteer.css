@@ -48,6 +48,10 @@
 }
 
 @media (max-width: 1000px) {
+  .text-left {
+    line-height: normal;
+  }
+
   .flexForm {
     display: flex;
     flex-direction: column-reverse;
