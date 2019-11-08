@@ -12,9 +12,9 @@
   margin-bottom: 20px;
 }
 .images {
- margin: 0;
- margin-bottom: 40px;
+ margin-bottom: 60px;
  margin-left: 120px;
+ margin-right: 40px;
 }
 
 .images img {
@@ -24,17 +24,17 @@
 }
 
 #kim-image {
- margin-top: 60px;
+ margin-top: 90px;
  height: 350px;
 }
 
 #pierre-image {
- margin-top: 10px;
- margin-bottom: 35px;
+ margin-top: 45px;
+ margin-bottom: 30px;
 }
 
 #shirley-image {
- margin-top: -20px;
+ margin-top: 30px;
 }
 
 .about-heading {
@@ -45,6 +45,7 @@
 }
 
 .people-heading {
+  margin-top: 45px;
   font-size: 48px;
   font-weight: bold;
 }
@@ -61,9 +62,15 @@
     }
   }
 
+  #kim-tablet {
+    margin-bottom: 90px;
+  }
+
   .images {
     margin: 0;
+    margin-right: 20px;
     height: 350px;
+    margin-bottom: 10px;
   }
 
   .images img {
@@ -99,6 +106,7 @@
   .images img {
     width: 100%;
   }
+
   .heading {
     font-size: 26px;
   }
