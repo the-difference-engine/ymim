@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 import "./index.css";
 import SponsorGallery from "./sponsor_gallery";
 import Sponsor1 from "../../../assets/IDPH logo.PNG";
@@ -26,17 +26,17 @@ let urls = [
   Sponsor9,
   Sponsor10,
   Sponsor11,
-  Sponsor12,
+  Sponsor12
 ];
 
 class Sponsors extends Component {
-    render() {
-      return (
-        <div className="sponsor-gallery">
-          <SponsorGallery imageUrls={urls}/>          
-        </div>      
-      );
-    }
+  render() {
+    return (
+      <div className="sponsor-gallery">
+        <SponsorGallery imageUrls={urls} />
+      </div>
+    );
+  }
 }
 
 export default Sponsors;

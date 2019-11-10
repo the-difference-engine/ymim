@@ -41,26 +41,26 @@ class Events extends Component {
             <EventList
               upcomingEvents={this.props.upcomingEvents}
               pastEvents={this.props.pastEvents}
-            />          
-          </div> 
+            />
+          </div>
           <div>
             {sponsorsHeading}
             <Sponsors />
-          </div>   
-        </>   
+          </div>
+        </>
       );
     }
-    return (  
-      <>          
+    return (
+      <>
         <div>
           {eventsHeading}
-          <div className="checkBack"> Check back soon for events</div>          
-        </div> 
+          <div className="checkBack"> Check back soon for events</div>
+        </div>
         <div>
           {sponsorsHeading}
           <Sponsors />
-        </div> 
-      </>      
+        </div>
+      </>
     );
   }
 }
