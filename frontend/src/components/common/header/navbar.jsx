@@ -35,6 +35,9 @@ class NavBar extends Component {
               </Navbar.Brand>
               {/* first navbar (white) */}
               <Nav className="ml-lg-3 ml-xl-3 ml-auto mr-auto my-auto">
+                <NavLink className="nav-link-top mr-5" to="/home">
+                  Home
+                </NavLink>
                 <NavLink className="nav-link-top mr-5" to="/about">
                   About
                 </NavLink>

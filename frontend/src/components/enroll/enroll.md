@@ -6,4 +6,4 @@ To apply, please send us your personal statement describing why you would like t
 
 Note: Each applicant is required to have two adult references with complete contact information provided in the email submission.
 
-The form below is a general participant interest form that helps us plan for number and age groups of potential cohort members, not to be confused with the enrollment application that will need to be submitted via email to **Founder@TheYMIM.org** noted above.
+The accompanying form is a general participant interest form that helps us plan for number and age groups of potential cohort members, not to be confused with the enrollment application that will need to be submitted via email to **Founder@TheYMIM.org** noted above.
