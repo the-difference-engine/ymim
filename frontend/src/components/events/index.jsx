@@ -36,7 +36,7 @@ class Events extends Component {
     if (this.props.upcomingEvents.length || this.props.pastEvents.length) {
       return (
         <>
-          <div>
+          <div className="fullEventsSection">
             {eventsHeading}
             <EventList
               upcomingEvents={this.props.upcomingEvents}
