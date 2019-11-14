@@ -35,14 +35,14 @@
   bottom: 20px;
   right: 97.5px;
   left: 97.5px;
-  background: #519B56;
+  background: #519b56;
   border-color: #eeeaea;
   color: #eeeaea;
   font-weight: bold;
 }
 
 .learnMore:hover {
-  background: #519B56;
+  background: #519b56;
   border-color: #fdd368;
   color: #fdd368;
 }

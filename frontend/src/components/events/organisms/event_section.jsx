@@ -17,10 +17,17 @@ const EventSection = ({ events, isUpcoming }) => {
           <Text text={sectionTitle} type="heading" />
         </div>
         {events.map(({ name, start, logo, url, id, description }) => {
-          const maxChar = 200
+          const maxChar = 200;
           if (description.text.length > maxChar) {
-            description.text = description.text.substring(0, maxChar)
-            description.text = description.text.substring(0, Math.min(description.text.length, description.text.lastIndexOf(" "))) + " . . ."
+            description.text = description.text.substring(0, maxChar);
+            description.text =
+              description.text.substring(
+                0,
+                Math.min(
+                  description.text.length,
+                  description.text.lastIndexOf(" ")
+                )
+              ) + " . . .";
           }
           return (
             <FlexItem key={id}>
