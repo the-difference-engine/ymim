@@ -19,6 +19,10 @@
   padding-top: 25px;
   text-align: center;
 }
+.donate-button{
+  height:100px;
+  
+}
 .content-styling a {
   font-size: 22px;
 }

@@ -54,6 +54,7 @@ class Donate extends Component {
                 title="PayPal - The safer, easier way to pay online!"
                 alt="Donate with PayPal button"
                 margin="auto"
+                class="donate-button"
               />
               <img
                 alt=""
