@@ -41,7 +41,7 @@ const EventCard = props => {
         <Text text={props.name} type="hoverTitle" />
         <Text
           text={<Moment format="llll">{props.start}</Moment>}
-          type="hoverTitle"
+          type="hoverDate"
         />
         <Text text={props.description} type="hoverDescription" />
         <Button className="learnMore">Click to learn more!</Button>

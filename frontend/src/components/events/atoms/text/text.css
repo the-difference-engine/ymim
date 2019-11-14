@@ -34,7 +34,7 @@
   color: white;
   margin: 10px;
   max-height: 190px;
-  
+  text-align: justify;
 }
 
 .text.hoverTitle {
@@ -42,6 +42,15 @@
   margin: 10px;
   font-weight: bold;
   font-size: 20px;
+  text-align: justify;
+}
+
+.text.hoverDate {
+  color: white;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
 }
 
 .thumbNail {

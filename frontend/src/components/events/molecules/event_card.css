@@ -18,12 +18,11 @@
   opacity: 0;
   transition: 0.5s ease;
   background-color: gray;
-  overflow: auto;
   border-radius: 5px;
 }
 
 .eventCard:hover .overlay {
-  opacity: 0.9;
+  opacity: 0.95;
 }
 
 .eventTextBoxes {
@@ -31,6 +30,21 @@
 }
 
 .learnMore {
-  position: relative;
-  
+  position: absolute;
+  width: max-content;
+  bottom: 20px;
+  right: 97.5px;
+  left: 97.5px;
+  background: #519B56;
+  border-color: black;
+  color: black;
+  font-weight: bold;
+}
+
+@media all and (max-width: 767px) {
+  .learnMore {
+    right: 80.5px;
+    left: 80.5px;
+    bottom: 10px;
+  }
 }
