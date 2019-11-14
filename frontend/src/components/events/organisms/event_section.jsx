@@ -17,9 +17,9 @@ const EventSection = ({ events, isUpcoming }) => {
           <Text text={sectionTitle} type="heading" />
         </div>
         {events.map(({ name, start, logo, url, id, description }) => {
-          const maxChar = 250
+          const maxChar = 200
           if (description.text.length > maxChar) {
-            description.text = description.text.substring(0, maxChar) + "..."
+            description.text = description.text.substring(0, maxChar) + " . . ."
           }
           return (
             <FlexItem key={id}>
