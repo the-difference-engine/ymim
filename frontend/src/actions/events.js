@@ -7,7 +7,7 @@ export const fetchEvents = () => {
     /* Use 25445773237 for dummy data testing.
     Use 18024803549 for YMIM data testing */
     return fetch(
-      "https://www.eventbriteapi.com/v3/organizers/25445773237/events/",
+      "https://www.eventbriteapi.com/v3/organizers/18024803549/events/",
       {
         headers
       }

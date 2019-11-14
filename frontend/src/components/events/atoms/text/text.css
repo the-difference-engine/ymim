@@ -34,9 +34,7 @@
   color: white;
   margin: 10px;
   max-height: 190px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  
 }
 
 .text.hoverTitle {
