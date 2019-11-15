@@ -10,7 +10,7 @@ import logo from "../../assets/logo.png";
 class MainCarousel extends Component {
   render() {
     return (
-      <Carousel>
+      <Carousel className="main">
         <Carousel.Item>
           <img
             className="d-block w-100 blurImage"
