@@ -31,26 +31,22 @@
 
 .learnMore {
   position: absolute;
-  width: max-content;
   bottom: 20px;
-  right: 97.5px;
-  left: 97.5px;
+  width: 100%;
+}
+
+.learnMoreButton {
+  position: relative;
+  margin: auto;
+  display: flex;
   background: #519b56;
   border-color: #eeeaea;
   color: #eeeaea;
   font-weight: bold;
 }
 
-.learnMore:hover {
+.learnMoreButton:hover {
   background: #519b56;
   border-color: #fdd368;
   color: #fdd368;
-}
-
-@media all and (max-width: 767px) {
-  .learnMore {
-    right: 80.5px;
-    left: 80.5px;
-    bottom: 10px;
-  }
 }

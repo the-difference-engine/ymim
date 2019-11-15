@@ -44,7 +44,9 @@ const EventCard = props => {
           type="hoverDate"
         />
         <Text text={props.description} type="hoverDescription" />
-        <Button className="learnMore">Click to learn more!</Button>
+        <div className="learnMore">
+          <Button className="learnMoreButton">Click to learn more!</Button>
+        </div>
       </div>
     </a>
   );
