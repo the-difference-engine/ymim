@@ -24,34 +24,29 @@ class Contact extends Component {
           image="ymim5.png"
         />
         <div className="container">
-          <h1 className="mt-sm-3 mt-md-5 heading">Contact Us</h1>
-          <div className="main-content container col-sm-6 float-right mt-sm-2 mt-md-5">
-            <div className="mt-sm-3 mt-md-4">
-              <p className="text-left">Hello Ms. or Mr. Wonderful,</p>
-              <p className="text-left">
+          <div className="main-content container col-sm-4 float-right mt-5">
+            <div className="mt-4">
+              <p>Hello Ms. or Mr. Wonderful,</p>
+              <p>
                 Thank you for checking out our website and considering the Young
                 Masterbuilders in Motion (<strong>YMIM</strong>) as your charity
                 of choice.
               </p>
-              <p className="text-left">
+              <p>
                 Together we can work to make a difference in the lives
                 of&nbsp;young adult women orphans, adoptees, and foster youth
                 teens and alumnae.
               </p>
-              <p className="text-left">
+              <p>
                 Use the form below to let us know what’s on your mind and how we
                 can help.
               </p>
-              <p className="text-left">Until next time,</p>
-              <p className="text-left">
-                Kim Wright, MBA, U.S. Army Veteran
-                <br />
-                Foster Youth Alumna
-                <br />
-                Founder, Young Masterbuilders in Motion
-                <br />
-                Email: Founder@theymim.org |&nbsp;Phone: 773.941.1200
-              </p>
+              <p>Until next time,</p>
+              <p>Kim Wright, MBA, U.S. Army Veteran</p>
+              <p>Foster Youth Alumna</p>
+              <p>Founder, Young Masterbuilders in Motion</p>
+              <p>Email: Founder@theymim.org |&nbsp;Phone: 773.941.1200</p>
+              <p>&nbsp;</p>
             </div>
           </div>
           <div className="main-content container col-sm-8 mt-5">
