@@ -18,14 +18,7 @@ const EventSection = ({ events, isUpcoming }) => {
         </div>
         {events.map(({ name, start, logo, url, id, description }) => {
           description.text = description.text.length > 200 ? description.text.substring(0, 200) : description.text
-          description.text = description.text.length === 200 ? 
-              description.text.substring(
-                0,
-                Math.min(
-                  description.text.length,
-                  description.text.lastIndexOf(" ")
-                )
-              ) + " . . ." : description.text
+          description.text = description.text.length === 200 ? description.text.substring(0, Math.min(description.text.length,description.text.lastIndexOf(" "))) + " . . ." : description.text
           return (
             <FlexItem key={id}>
               <EventCard
