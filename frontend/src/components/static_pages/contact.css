@@ -53,3 +53,9 @@ textarea {
     max-width: unset !important;
   }
 }
+
+@media (max-width: 425px) {
+  .text-left {
+    line-height: normal;
+  }
+}
