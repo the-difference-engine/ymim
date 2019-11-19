@@ -33,6 +33,9 @@ class Volunteer extends Component {
           <Row className="mx-auto flexForm">
             <Row noGutters={true}>
               <Col xs={12} sm={12} md={12} lg={8}>
+                <div className="mb-5 px-3 text-left">
+                  <h2 className="mb-4">Dear Volunteers!</h2>
+                  <p>
                 <div className="mb-5 px-3">
                   <h2 className="text-left">
                     Dear Volunteers and Sponsors!
@@ -43,13 +46,13 @@ class Volunteer extends Component {
                     inspire, connect, and empower young adult orphans, adoptees,
                     and foster youth alumnae.
                   </p>
-                  <p className="text-left">
+                  <p>
                     Your thoughtful and generous contributions will help our
                     vulnerable young adult alumnae who are in need to
                     matriculate through life. Your time, talent and donations
                     are greatly appreciated!
                   </p>
-                  <p className="text-left">
+                  <p>
                     In the accompanying form, please tell us more about you in
                     the comment section. Describe your current occupation and
                     expertise, and if the area you want to help us with is
@@ -57,7 +60,7 @@ class Volunteer extends Component {
                     to help us accomplish. Oh yes, of course, donors and
                     sponsors can be volunteers too!
                   </p>
-                  <p className="text-left">
+                  <p>
                     We welcome you to our family of great people connecting
                     other wonderful people to life changing experiences!
                   </p>

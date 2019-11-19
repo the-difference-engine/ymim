@@ -47,6 +47,10 @@
   font-weight: bold;
 }
 
+.volunteer-title {
+  margin-bottom: 25px;
+}
+
 @media (max-width: 1000px) {
   .text-left {
     line-height: normal;
