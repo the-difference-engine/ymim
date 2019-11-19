@@ -109,6 +109,7 @@ class About extends Component {
           <Row className="about-people-row">
             <Col xs="12" md="6" lg="4" xl="4" className="images">
               <img id="piere-image" src={PierrePriestley} alt={"Pierre Priestley"} />
+              <img id="pierre-image" src={PierrePriestley} alt={"Pierre Priestley"} />
             </Col>
             <Col xs="12" md="6" lg="4" xl="6">
               <h1 className="people-heading text-left">Pierre Priestley</h1>

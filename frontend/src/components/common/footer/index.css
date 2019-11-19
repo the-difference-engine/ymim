@@ -2,6 +2,10 @@
   background-color: #519b46;
 }
 
+.footer-sub {
+  padding: 0;
+}
+
 .footer-link {
   display: inline-block;
   margin: 4vh 0;
@@ -44,6 +48,10 @@
   margin: 20px;
 }
 
+.footer_text {
+  padding-bottom: 50px;
+}
+
 .footerImageHeader {
   box-sizing: border-box;
   text-align: center !important;
@@ -79,11 +87,11 @@
 }
 
 .footer-line {
-  border: 0.7px solid white;
-  margin-left: 20%;
-  margin-right: 15%;
-  margin-top: 50px;
+  border: 0.8px solid white;
+  margin-top: 10px;
   margin-bottom: 30px;
+  margin-right: 20px;
+  margin-left: 20px;
 }
 
 .tsocial {

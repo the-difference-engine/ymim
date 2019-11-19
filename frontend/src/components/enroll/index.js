@@ -33,12 +33,20 @@ class Enroll extends Component {
   render() {
     return (
       <div>
-        <SingleCarousel header="Enroll" image="ymim1.png"/>
+        <SingleCarousel
+          id="enroll-carousel"
+          header="Young Masterbuilders in Motion"
+          image="ymim1.png"
+        />
         <div className="container group">
-          <div className="container col-sm-6 float-right mt-5">
-            <Markdown id="fontcss" className="mt-3 " source={this.state.text} />
+          <div className="container col-sm-4 float-right mt-5">
+            <Markdown
+              id="fontcss"
+              className="text-left"
+              source={this.state.text}
+            />
           </div>
-          <div className="container col-sm-6 mt-5">
+          <div className="container col-sm-8 mt-5">
             <iframe
               title="enroll"
               src="https://docs.google.com/forms/d/e/1FAIpQLScH_lkw44ikfkHlHpUFVsAtXF6MzElK19xWUyVOP_mJ-ClmHw/viewform?embedded=true"

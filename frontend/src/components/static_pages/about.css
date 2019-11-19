@@ -6,17 +6,18 @@
   .sub-heading {
     font-size: 24px;
   }
-
 }
 
 .about-people-row {
   margin-bottom: 20px;
 }
-
 .images {
  margin: 0;
  margin-bottom: 40px;
  margin-left: 120px;
+ margin-bottom: 60px;
+ margin-left: 120px;
+ margin-right: 40px;
 }
 
 .images img {
@@ -26,6 +27,12 @@
 
 #kim-image {
  margin-top: 55px;
+ padding: 20px;
+ border: 1px solid #d3d3d3;
+}
+
+#kim-image {
+ margin-top: 90px;
  height: 350px;
 }
 
@@ -36,6 +43,12 @@
 
 #shirley-image {
  margin-top: -8px;
+ margin-top: 45px;
+ margin-bottom: 30px;
+}
+
+#shirley-image {
+ margin-top: 30px;
 }
 
 .about-heading {
@@ -46,6 +59,7 @@
 }
 
 .people-heading {
+  margin-top: 45px;
   font-size: 48px;
   font-weight: bold;
 }
@@ -62,9 +76,15 @@
     }
   }
 
+  #kim-image {
+    margin-top: 20px;
+  }
+
   .images {
     margin: 0;
+    margin-right: 20px;
     height: 350px;
+    margin-bottom: 10px;
   }
 
   .images img {
@@ -100,6 +120,7 @@
   .images img {
     width: 100%;
   }
+
   .heading {
     font-size: 26px;
   }

@@ -11,11 +11,10 @@ export const fetchEvents = () => {
       {
         headers
       }
-    ).then(res => res.json()).then(events => {
-        return dispatch({
-          type: "FETCH_EVENTS",
-          events: events.events
-        });
+    )
+      .then(res => res.json())
+      .then(events => {
+        return dispatch({ type: "FETCH_EVENTS", events: events.events });
       });
   };
 };

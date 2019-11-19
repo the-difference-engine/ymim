@@ -43,7 +43,19 @@
   height: 100%;
 }
 
+.title-carousel {
+  font-weight: bold;
+}
+
+.volunteer-title {
+  margin-bottom: 25px;
+}
+
 @media (max-width: 1000px) {
+  .text-left {
+    line-height: normal;
+  }
+
   .flexForm {
     display: flex;
     flex-direction: column-reverse;
