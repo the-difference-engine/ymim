@@ -34,9 +34,7 @@ class Volunteer extends Component {
             <Row noGutters={true}>
               <Col xs={12} sm={12} md={12} lg={8}>
                 <div className="mb-5 px-3">
-                  <h2 className="mb-4 volunteer-title" >
-                    Dear Volunteers and Sponsors!
-                  </h2>
+                  <h2 className="mb-4">Dear Volunteers!</h2>
                   <p className="text-left">
                     Thank you for considering getting involved in the Young
                     Masterbuilders in Motion (<b>YMIM)</b>&nbsp;movement to
