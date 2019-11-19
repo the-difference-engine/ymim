@@ -25,14 +25,6 @@ class Events extends Component {
       </Flex>
     );
 
-    const sponsorsHeading = (
-      <Flex>
-        <div className="headingFlex">
-          <h1>Our Sponsors</h1>
-        </div>
-      </Flex>
-    );
-
     if (this.props.upcomingEvents.length || this.props.pastEvents.length) {
       return (
         <>
@@ -44,7 +36,6 @@ class Events extends Component {
             />
           </div>
           <div>
-            {sponsorsHeading}
             <Sponsors />
           </div>
         </>
@@ -57,7 +48,6 @@ class Events extends Component {
           <div className="checkBack"> Check back soon for events</div>
         </div>
         <div>
-          {sponsorsHeading}
           <Sponsors />
         </div>
       </>

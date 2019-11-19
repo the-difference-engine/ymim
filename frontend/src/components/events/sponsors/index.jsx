@@ -1,6 +1,7 @@
 import React, { Component } from "react";
+import { Container, Col, Row } from "react-bootstrap";
 import "./index.css";
-import SponsorGallery from "./sponsor_gallery";
+import Flex from "../atoms/flex/flex";
 import Sponsor1 from "../../../assets/IDPH logo.PNG";
 import Sponsor2 from "../../../assets/24thDistrict Police.PNG";
 import Sponsor3 from "../../../assets/Citron Hygiene.jpg";
@@ -29,11 +30,24 @@ let urls = [
   Sponsor12
 ];
 
+const sponsorsHeading = (
+  <Flex>
+    <div className="headingFlex">
+      <h1>Our Sponsors</h1>
+    </div>
+  </Flex>
+);
+
 class Sponsors extends Component {
   render() {
     return (
       <div className="sponsor-gallery">
-        <SponsorGallery imageUrls={urls} />
+        {sponsorsHeading}
+        <Container>
+          {urls.map((url) => (
+            <img src={url} className="logo-picture" alt="sponsor logo" />
+          ))}
+        </Container>
       </div>
     );
   }
