@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Carousel, Navbar } from "react-bootstrap";
 import "./index.css";
-import ymim1 from "../../assets/ymim1.png";
+import ymim from "../../assets/ymim6.jpeg";
 import logo from "../../assets/logo.png";
 
 class MainCarousel extends Component {
@@ -11,7 +11,7 @@ class MainCarousel extends Component {
         <Carousel.Item>
           <img
             className="d-block w-100 blurImage"
-            src={ymim1}
+            src={ymim}
             alt="First Slide"
           />
           <Carousel.Caption>

@@ -6,7 +6,7 @@ import EventList from "./EventList";
 import Flex from "./atoms/flex/flex";
 import {
   getSorted,
-  getUpcomingEvents,
+  getNextMonthsEvents,
   getPastEvents
 } from "../../reducers/selectors";
 
@@ -26,7 +26,7 @@ class Events extends Component {
 
     if (this.props.upcomingEvents.length || this.props.pastEvents.length) {
       return (
-        <div>
+        <div className="fullEventsSection">
           {eventsHeading}
           <EventList
             upcomingEvents={this.props.upcomingEvents}
@@ -46,7 +46,7 @@ class Events extends Component {
 
 const mapStateToProps = state => {
   return {
-    upcomingEvents: getUpcomingEvents(getSorted(state.events)),
+    upcomingEvents: getNextMonthsEvents(getSorted(state.events)),
     pastEvents: getPastEvents(getSorted(state.events))
   };
 };

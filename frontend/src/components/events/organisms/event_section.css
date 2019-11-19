@@ -5,7 +5,7 @@ a {
 .sectionFlex {
   display: block;
   justify-content: center;
-  margin: 10px auto;
+  margin: 0 auto 0px auto;
 }
 
 .headingFlex {
