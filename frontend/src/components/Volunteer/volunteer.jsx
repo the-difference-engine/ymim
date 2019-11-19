@@ -27,7 +27,7 @@ class Volunteer extends Component {
         <SingleCarousel
           className="carousel"
           header="Young Masterbuilders in Motion"
-          image="volunteers.jpg"
+          image="ymim1.png"
         />
         <Container className="mt-4 content-format">
           <Row className="mx-auto flexForm">
@@ -36,11 +36,6 @@ class Volunteer extends Component {
                 <div className="mb-5 px-3 text-left">
                   <h2 className="mb-4">Dear Volunteers!</h2>
                   <p>
-                <div className="mb-5 px-3">
-                  <h2 className="text-left">
-                    Dear Volunteers and Sponsors!
-                  </h2>
-                  <p className="text-left">
                     Thank you for considering getting involved in the Young
                     Masterbuilders in Motion (<b>YMIM)</b>&nbsp;movement to
                     inspire, connect, and empower young adult orphans, adoptees,
