@@ -10,6 +10,7 @@ import Picture5 from "../../assets/action-shots/Team photo wKennedy.jpg";
 import Picture6 from "../../assets/action-shots/TTigue Sscott ASayre.jpg";
 import Picture7 from "../../assets/action-shots/UIC Dream Team SScott ACalix KWright.jpg";
 import Picture8 from "../../assets/action-shots/Calix family donors.jpg";
+import Picture9 from "../../assets/action-shots/textphotos.png";
 
 class Team extends Component {
   state = {
@@ -154,10 +155,17 @@ class Team extends Component {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <div className="facebookLinkContainer">
-                    <p>Click here for more photos of the team.</p>
-                  </div>
+                  <img
+                    src={Picture9}
+                    className="gallery-picture"
+                    alt="8"
+                    onClick={event => {
+                      this.selectImage(event);
+                    }}
+                  />
+                  <div className="facebookLink">Click here for more photos of the team.</div>
                 </a>
+
               </Col>
             </Row>
             <ImageModal
