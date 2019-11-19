@@ -71,6 +71,7 @@
   }
   .overlay {
     height: 50px;
+    margin-bottom: 16px;
   }
 }
 
@@ -89,5 +90,6 @@
   }
   .overlay {
     height: 70px;
+    margin-bottom: 16px;
   }
 }

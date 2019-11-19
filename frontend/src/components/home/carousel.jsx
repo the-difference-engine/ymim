@@ -4,6 +4,8 @@ import ymim1 from "../../assets/ymim1.png";
 import ymim5 from "../../assets/ymim5.png";
 import ymim6 from "../../assets/ymim6.png";
 import ymim7 from "../../assets/ymim7.png";
+import "./index.css";
+import ymim from "../../assets/ymim6.jpeg";
 import logo from "../../assets/logo.png";
 import "./index.css";
 
@@ -23,6 +25,23 @@ class MainCarousel extends Component {
                 <Navbar.Brand className="logo-div">
                   <img className="logo" src={logo} alt="YMIM" />
                 </Navbar.Brand>
+      <Carousel>
+        <Carousel.Item>
+          <img
+            className="d-block w-100 blurImage"
+            src={ymim}
+            alt="First Slide"
+          />
+          <Carousel.Caption>
+            <div class="overlay">
+              <h3 className="title-carousel">Young Masterbuilders in Motion</h3>
+              <p className="paragraph-carousel">
+                <strong>Inspires, connects, and empowers young women orphans, adoptees,
+                and foster youth alumnae to thrive.</strong>
+              </p>
+              <Navbar.Brand className="logo-div">
+                <img className="logo" src={logo} alt="YMIM" />
+              </Navbar.Brand>
             </div>
           </Carousel.Caption>
       </Carousel.Item>
