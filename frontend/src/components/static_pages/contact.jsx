@@ -17,7 +17,7 @@ class Contact extends Component {
 
   render() {
     return (
-      <>
+      <div>
         <SingleCarousel
           className="carousel"
           header="Contact Us"
@@ -56,8 +56,9 @@ class Contact extends Component {
                 Founder, Young Masterbuilders in Motion
                 <br />
                 Email: Founder@theymim.org |&nbsp;Phone: 773.941.1200
-               </p>
+              </p>
             </div>
+          </div>
           </div>
           <div className="main-content container col-sm-8 mt-5">
             <iframe
@@ -74,7 +75,7 @@ class Contact extends Component {
             </iframe>
           </div>
         </div>
-      </>
+      </div>
     );
   }
 }

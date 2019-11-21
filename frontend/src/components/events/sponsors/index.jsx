@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Container, Col, Row } from "react-bootstrap";
+import { Container } from "react-bootstrap";
 import "./index.css";
 import Flex from "../atoms/flex/flex";
 import Sponsor1 from "../../../assets/IDPH logo.PNG";
