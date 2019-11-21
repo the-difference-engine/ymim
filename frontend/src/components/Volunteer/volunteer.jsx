@@ -23,7 +23,7 @@ class Volunteer extends Component {
 
   render() {
     return (
-      <>
+      <div>
         <SingleCarousel
           className="carousel"
           header="Young Masterbuilders in Motion"
@@ -35,7 +35,7 @@ class Volunteer extends Component {
               <Col xs={12} sm={12} md={12} lg={8}>
                 <div className="mb-5 px-3 text-left">
                   <h2 className="mb-4">Dear Volunteers!</h2>
-                  <p>
+                </div>
                 <div className="mb-5 px-3">
                   <h2 className="text-left">
                     Dear Volunteers and Sponsors!
@@ -72,6 +72,7 @@ class Volunteer extends Component {
                   frameborder="0"
                   onLoad={this.loaded}
                   title="volunteer-iframe"
+                  scrolling="no"
                 ></iframe>
               </Col>
 
@@ -122,7 +123,7 @@ class Volunteer extends Component {
             </Row>
           </Row>
         </Container>
-      </>
+      </div>
     );
   }
 }

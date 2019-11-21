@@ -9,6 +9,7 @@ import {
   getNextMonthsEvents,
   getPastEvents
 } from "../../reducers/selectors";
+import Sponsors from "./sponsors/index";
 
 class Events extends Component {
   componentDidMount() {
@@ -26,20 +27,30 @@ class Events extends Component {
 
     if (this.props.upcomingEvents.length || this.props.pastEvents.length) {
       return (
-        <div className="fullEventsSection">
-          {eventsHeading}
-          <EventList
-            upcomingEvents={this.props.upcomingEvents}
-            pastEvents={this.props.pastEvents}
-          />
-        </div>
+        <>
+          <div className="fullEventsSection">
+            {eventsHeading}
+            <EventList
+              upcomingEvents={this.props.upcomingEvents}
+              pastEvents={this.props.pastEvents}
+            />
+          </div>
+          <div>
+            <Sponsors />
+          </div>
+        </>
       );
     }
     return (
-      <div>
-        {eventsHeading}
-        <div className="checkBack"> Check back soon for events</div>
-      </div>
+      <>
+        <div>
+          {eventsHeading}
+          <div className="checkBack"> Check back soon for events</div>
+        </div>
+        <div>
+          <Sponsors />
+        </div>
+      </>
     );
   }
 }
