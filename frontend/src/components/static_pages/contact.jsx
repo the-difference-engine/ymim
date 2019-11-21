@@ -25,7 +25,6 @@ class Contact extends Component {
         />
         <div className="container">
           <div className="main-content container col-sm-4 float-right mt-5">
-          <div className="main-content container col-sm-4 float-right mt-5 text-left">
             <div className="mt-4">
               <p>Hello Ms. or Mr. Wonderful,</p>
               <p>
@@ -58,7 +57,6 @@ class Contact extends Component {
                 Email: Founder@theymim.org |&nbsp;Phone: 773.941.1200
               </p>
             </div>
-          </div>
           </div>
           <div className="main-content container col-sm-8 mt-5">
             <iframe
