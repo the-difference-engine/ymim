@@ -14,10 +14,7 @@ export const fetchEvents = () => {
     )
       .then(res => res.json())
       .then(events => {
-        return dispatch({
-          type: "FETCH_EVENTS",
-          events: events.events
-        });
+        return dispatch({ type: "FETCH_EVENTS", events: events.events });
       });
   };
 };
