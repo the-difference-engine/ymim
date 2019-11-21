@@ -8,6 +8,10 @@
   line-height: 1.6em;
 }
 
+#donate-now {
+  padding-top: 20px;
+}
+
 .donate-form {
   background: #eee;
   padding-top: 20px;
