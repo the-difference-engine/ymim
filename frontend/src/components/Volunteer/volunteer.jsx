@@ -72,6 +72,7 @@ class Volunteer extends Component {
                   frameborder="0"
                   onLoad={this.loaded}
                   title="volunteer-iframe"
+                  scrolling="no"
                 ></iframe>
               </Col>
 
