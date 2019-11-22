@@ -32,43 +32,34 @@
   height: auto;
 }
 
-.teamPhotos .facebookLinkContainer {
-  background: darkgrey;
-  height: 100%;
-  width: 100%;
-  text-align: center;
-}
-
-.teamPhotos .facebookLinkContainer p {
+.facebookLink{
+  font-size: larger;
+  font-weight:700;
   margin: 0;
   position: absolute;
-  top: 50%;
+  top:50%;
   left: 50%;
-  -ms-transform: translate(-50%, -66%);
-  transform: translate(-50%, -66%);
-  font-size: larger;
-  font-weight: bold;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 90%;
 }
+
 
 .imageColumn a {
   color: black;
 }
 
-@media all and (min-width: 1440px) {
-  .teamPhotos .facebookLinkContainer p {
-    font-size: x-large;
-  }
-}
-
 /* tablet */
 @media all and (min-width: 426px) and (max-width: 768px) {
-  .teamPhotos .facebookLinkContainer p {
-    font-size: medium;
+  .facebookLink{
+    line-height:95%;
   }
+
   .heading {
     font-size: 24px;
     padding: 10px 0;
   }
+
   .line-paragraph {
     font-size: 14px;
     margin-bottom: 10px;
@@ -77,10 +68,8 @@
 
 /* mobile */
 @media all and (min-width: 300px) and (max-width: 425px) {
-  .teamPhotos .facebookLinkContainer {
-    margin: auto;
-    height: 200px;
-    width: 250px;
+  .facebookLink {
+    font-size: larger;
   }
 
   .heading {
