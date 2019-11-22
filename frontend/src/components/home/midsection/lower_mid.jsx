@@ -4,7 +4,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import { connect } from "react-redux";
 import { events } from "../../../actions";
 import { findNextUpcomingEvent } from "../../events/utils";
-import { getSorted, getUpcomingEvents } from "../../../reducers/selectors";
+import { getSorted, getNextMonthsEvents } from "../../../reducers/selectors";
 import Moment from "react-moment";
 import footerImage1 from "../../../assets/footerImage1.jpg";
 import footerImage2 from "../../../assets/Group_at_a_table_YMIM.png";
@@ -107,7 +107,7 @@ class LowerMid extends Component {
 
 const mapStateToProps = state => {
   return {
-    upcomingEvents: getUpcomingEvents(getSorted(state.events))
+    upcomingEvents: getNextMonthsEvents(getSorted(state.events))
   };
 };
 

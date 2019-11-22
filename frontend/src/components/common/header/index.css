@@ -3,7 +3,7 @@
   background-color: #ffffff;
   font-size: 32px;
   font-family: "GothamMedium";
-  height: auto;
+  height: 100px !important;
   width: 100%;
 }
 
@@ -33,6 +33,7 @@
   padding: 40px 8px 20px 8px;
   margin-right: 15px;
   color: white !important;
+  padding-bottom: 45px;
 }
 
 .resources-link:hover {
@@ -41,7 +42,7 @@
 }
 
 .nav-link-top {
-  padding: 20px;
+  padding: 15px;
   color: #000000;
   height: 100%;
 }
