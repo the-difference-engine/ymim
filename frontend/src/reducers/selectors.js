@@ -1,6 +1,6 @@
 import moment from "moment";
 const currentTime = moment();
-const upcomingEnd = currentTime.add(30, "days");
+const upcomingEnd = moment(currentTime).add(30, "days");
 
 export const getSorted = events => {
   return events
@@ -8,10 +8,6 @@ export const getSorted = events => {
     .filter(event =>
       ["live", "started", "ended", "completed"].includes(event.status)
     );
-};
-
-export const getUpcomingEvents = events => {
-  return events.filter(event => moment(event.end.local).isAfter(currentTime));
 };
 
 export const getNextMonthsEvents = events => {
