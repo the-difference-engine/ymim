@@ -5,20 +5,20 @@ import Flex, { FlexItem } from "../atoms/flex/flex";
 import defaultLogo from "../../../assets/logo.png";
 import "./event_section.css";
 
-const shortenDescription = (text) => {
- text =
-   text.length > 200
-     ? text.substring(0, 200)
-     : text;
- text =
-   text.length === 200
-     ? text.substring(
-         0,
-         Math.min(text.length, text.lastIndexOf(" "))
-       ) + " . . ."
-     : text;
-  return text;
-}
+const shortenDescription = (description) => {
+  description =
+    description.text.length > 200
+      ? description.text.substring(0, 200)
+      : description.text;
+  description =
+    description.length === 200
+      ? description.substring(
+          0,
+          Math.min(description.length, description.lastIndexOf(" "))
+        ) + " . . ."
+      : description;
+  return description;
+};
 
 const EventSection = ({ events, isUpcoming }) => {
   let sectionTitle = "Upcoming Events";
@@ -39,7 +39,11 @@ const EventSection = ({ events, isUpcoming }) => {
                 start={start ? start.local : "TBA"}
                 logo={logo ? logo.url : defaultLogo}
                 url={url}
-                description={description.text.shortenDescription ? description.text.shortenDescription : ""}
+                description={
+                  shortenDescription(description)
+                    ? shortenDescription(description)
+                    : ""
+                }
               />
             </FlexItem>
           );
