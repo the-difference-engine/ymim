@@ -36,6 +36,10 @@
       display: block !important;
 }
 
+.carousel-control-next, .carousel-control-prev {
+  z-index: 9999;
+}
+
 /* tablet */
 
 @media all and (min-width: 426px) and (max-width: 1023px) {

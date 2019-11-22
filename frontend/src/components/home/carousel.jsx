@@ -5,7 +5,6 @@ import ymim5 from "../../assets/ymim5.png";
 import ymim6 from "../../assets/ymim6.png";
 import ymim7 from "../../assets/ymim7.png";
 import "./index.css";
-import ymim from "../../assets/ymim6.jpeg";
 import logo from "../../assets/logo.png";
 import "./index.css";
 
@@ -16,7 +15,7 @@ class MainCarousel extends Component {
         <Carousel.Item>
           <img
             className="d-block w-100 blurImage"
-            src={ymim}
+            src={image}
             alt="First Slide"
           />
           <Carousel.Caption>
