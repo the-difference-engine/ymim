@@ -89,20 +89,20 @@ a.dropdown-item {
 
 /* donate button on second navbar (green) */
 #donate-button {
+  margin-left: 50px;
   font-size: 20px;
   font-weight: bold;
   background-color: #fdd368;
   border-radius: 7px;
   border: none;
-  width: 140px;
-  height: 54px;
+  width: auto;
+  height: auto;
   text-align: center;
 }
 
 /* spacing around donate button  */
 .center-button {
-  margin-top: auto;
-  margin-bottom: auto;
+  margin: auto;
 }
 
 /* responsiveness */
