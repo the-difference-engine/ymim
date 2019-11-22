@@ -33,6 +33,7 @@ const router = (
             <div>
               <Switch>
                 <Route exact path="/" component={Home} />
+                <Route exact path="/home" component={Home} />
                 <Route exact path="/donate" component={Donate} />
                 <Route exact path="/contact-us" component={Contact} />
                 <Route exact path="/about" component={About} />
