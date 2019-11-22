@@ -8,6 +8,10 @@
   line-height: 1.6em;
 }
 
+#donate-now {
+  padding-top: 20px;
+}
+
 .donate-form {
   background: #eee;
   padding-top: 20px;
@@ -19,6 +23,7 @@
   padding-top: 25px;
   text-align: center;
 }
+
 .content-styling a {
   font-size: 22px;
 }
