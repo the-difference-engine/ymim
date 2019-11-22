@@ -32,18 +32,17 @@
   height: auto;
 }
 
-.facebookLink{
+.facebookLink {
   font-size: larger;
-  font-weight:700;
+  font-weight: 700;
   margin: 0;
   position: absolute;
-  top:50%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
   width: 90%;
 }
-
 
 .imageColumn a {
   color: black;
@@ -51,8 +50,8 @@
 
 /* tablet */
 @media all and (min-width: 426px) and (max-width: 768px) {
-  .facebookLink{
-    line-height:95%;
+  .facebookLink {
+    line-height: 95%;
   }
 
   .heading {

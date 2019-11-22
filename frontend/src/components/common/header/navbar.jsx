@@ -95,13 +95,11 @@ class NavBar extends Component {
                     Resources
                   </NavLink>
                   {/* enroll  */}
-                  <NavLink className="resources-link"
-                   to="/enrollment">
+                  <NavLink className="resources-link" to="/enrollment">
                     Enroll
                   </NavLink>
                   {/* volunteer  */}
-                  <NavLink className="resources-link"
-                   to="/volunteer">
+                  <NavLink className="resources-link" to="/volunteer">
                     Volunteer
                   </NavLink>
                 </Nav>

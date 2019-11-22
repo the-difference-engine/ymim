@@ -18,8 +18,10 @@ class MainCarousel extends Component {
             <div class="overlay">
               <h3 className="title-carousel">Young Masterbuilders in Motion</h3>
               <p className="paragraph-carousel">
-                <strong>Inspires, connects, and empowers young women orphans, adoptees,
-                and foster youth alumnae to thrive.</strong>
+                <strong>
+                  Inspires, connects, and empowers young women orphans,
+                  adoptees, and foster youth alumnae to thrive.
+                </strong>
               </p>
               <Navbar.Brand className="logo-div">
                 <img className="logo" src={logo} alt="YMIM" />

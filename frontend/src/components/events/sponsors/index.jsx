@@ -44,7 +44,7 @@ class Sponsors extends Component {
       <div className="sponsor-gallery">
         {sponsorsHeading}
         <Container>
-          {urls.map((url) => (
+          {urls.map(url => (
             <img src={url} className="logo-picture" alt="sponsor logo" />
           ))}
         </Container>

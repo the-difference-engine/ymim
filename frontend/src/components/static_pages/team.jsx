@@ -163,9 +163,10 @@ class Team extends Component {
                       this.selectImage(event);
                     }}
                   />
-                  <div className="facebookLink">Click here for more photos of the team.</div>
+                  <div className="facebookLink">
+                    Click here for more photos of the team.
+                  </div>
                 </a>
-
               </Col>
             </Row>
             <ImageModal
