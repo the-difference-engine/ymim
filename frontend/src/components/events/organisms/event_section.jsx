@@ -8,15 +8,8 @@ import "./event_section.css";
 const shortenDescription = (description) => {
   description =
     description.text.length > 200
-      ? description.text.substring(0, 200)
+      ? description.text.substring(0, 200).split(' ').slice(0, -1).join(' ') + " . . ."
       : description.text;
-  description =
-    description.length === 200
-      ? description.substring(
-          0,
-          Math.min(description.length, description.lastIndexOf(" "))
-        ) + " . . ."
-      : description;
   return description;
 };
 
