@@ -19,8 +19,7 @@
 
 .images img {
   width: 330px;
-  padding: 20px;
-  border: 1px solid #d3d3d3;
+  border: 5px solid #d3d3d3;
 }
 
 #kim-image {
