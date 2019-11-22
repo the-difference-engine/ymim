@@ -23,7 +23,7 @@ class Volunteer extends Component {
 
   render() {
     return (
-      <>
+      <div>
         <SingleCarousel
           className="carousel"
           header="Young Masterbuilders in Motion"
@@ -67,6 +67,7 @@ class Volunteer extends Component {
                   frameborder="0"
                   onLoad={this.loaded}
                   title="volunteer-iframe"
+                  scrolling="no"
                 ></iframe>
               </Col>
 
@@ -117,7 +118,7 @@ class Volunteer extends Component {
             </Row>
           </Row>
         </Container>
-      </>
+      </div>
     );
   }
 }
