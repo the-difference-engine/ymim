@@ -13,19 +13,6 @@ class MainCarousel extends Component {
 
   static CarouselItem(image, altText) {
     return (
-      <Carousel.Item>
-        <img className="d-block w-100 blurImage" src={image} alt={altText}/>
-          <Carousel.Caption>
-            <div class="overlay">
-              <h3 className="title-carousel">Young Masterbuilders in Motion</h3>
-                <p className="paragraph-carousel">
-                  inspires, connects, and empowers young women orphans, adoptees,
-                  and foster youth alumnae to thrive.
-                </p>
-                <Navbar.Brand className="logo-div">
-                  <img className="logo" src={logo} alt="YMIM" />
-                </Navbar.Brand>
-      <Carousel>
         <Carousel.Item>
           <img
             className="d-block w-100 blurImage"
