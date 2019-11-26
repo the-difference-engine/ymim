@@ -25,7 +25,7 @@ class Contact extends Component {
         />
         <div className="container">
           <div className="main-content container col-sm-4 float-right mt-5">
-            <div className="mt-4">
+            <div className="mb-4">
               <p>Hello Ms. or Mr. Wonderful,</p>
               <p>
                 Thank you for checking out our website and considering the Young
@@ -41,13 +41,7 @@ class Contact extends Component {
                 Use the accompanying form to let us know what’s on your mind and how we
                 can help.
               </p>
-              <p>Until next time,</p>
-              <p>Kim Wright, MBA, U.S. Army Veteran</p>
-              <p>Foster Youth Alumna</p>
-              <p>Founder, Young Masterbuilders in Motion</p>
-              <p>Email: Founder@theymim.org</p>
-              <p>Phone: 773.941.1200</p>
-              <p>&nbsp;</p>
+              <p>Until next time,</p> 
               <p>
                 Kim Wright, MBA, U.S. Army Veteran
                 <br />
