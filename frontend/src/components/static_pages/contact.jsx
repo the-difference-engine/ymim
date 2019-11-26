@@ -38,7 +38,7 @@ class Contact extends Component {
                 teens and alumnae.
               </p>
               <p>
-                Use the form below to let us know what’s on your mind and how we
+                Use the accompanying form to let us know what’s on your mind and how we
                 can help.
               </p>
               <p>Until next time,</p>
