@@ -45,7 +45,8 @@ class Contact extends Component {
               <p>Kim Wright, MBA, U.S. Army Veteran</p>
               <p>Foster Youth Alumna</p>
               <p>Founder, Young Masterbuilders in Motion</p>
-              <p>Email: Founder@theymim.org |&nbsp;Phone: 773.941.1200</p>
+              <p>Email: Founder@theymim.org</p>
+              <p>Phone: 773.941.1200</p>
               <p>&nbsp;</p>
               <p>
                 Kim Wright, MBA, U.S. Army Veteran
@@ -54,7 +55,9 @@ class Contact extends Component {
                 <br />
                 Founder, Young Masterbuilders in Motion
                 <br />
-                Email: Founder@theymim.org |&nbsp;Phone: 773.941.1200
+                Email: Founder@theymim.org
+                <br />
+                Phone: 773.941.1200
               </p>
             </div>
           </div>
