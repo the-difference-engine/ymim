@@ -38,10 +38,10 @@ class Contact extends Component {
                 teens and alumnae.
               </p>
               <p className="text-left">
-                Use the accompanying form to let us know what’s on your mind and how we
-                can help.
+                Use the accompanying form to let us know what’s on your mind and
+                how we can help.
               </p>
-              <p className="text-left">Until next time,</p> 
+              <p className="text-left">Until next time,</p>
               <p className="text-left">
                 Kim Wright, MBA, U.S. Army Veteran
                 <br />
