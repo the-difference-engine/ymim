@@ -36,7 +36,7 @@ class Enroll extends Component {
         <SingleCarousel
           id="enroll-carousel"
           header="Young Masterbuilders in Motion"
-          image="ymim1.png"
+          image="ymim7.png"
         />
         <div className="container group mt-2">
           <div className="container col-sm-4 float-right mt-5">
