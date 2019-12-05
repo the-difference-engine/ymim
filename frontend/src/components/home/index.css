@@ -22,6 +22,24 @@
   margin: 10px;
 }
 
+.main .carousel-control-next-icon {
+      height: 50px;
+      width: 50px;
+      background-size: 100%, 100%;
+      display: block !important;
+}
+
+.main .carousel-control-prev-icon {
+      height: 50px;
+      width: 50px;
+      background-size: 100%, 100%;
+      display: block !important;
+}
+
+.carousel-control-next, .carousel-control-prev {
+  z-index: 9999;
+}
+
 /* tablet */
 
 @media all and (min-width: 426px) and (max-width: 1023px) {

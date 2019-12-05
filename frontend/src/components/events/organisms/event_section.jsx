@@ -5,6 +5,14 @@ import Flex, { FlexItem } from "../atoms/flex/flex";
 import defaultLogo from "../../../assets/logo.png";
 import "./event_section.css";
 
+const shortenDescription = (description) => {
+  description =
+    description.text.length > 200
+      ? description.text.substring(0, 200).split(' ').slice(0, -1).join(' ') + " . . ."
+      : description.text;
+  return description;
+};
+
 const EventSection = ({ events, isUpcoming }) => {
   let sectionTitle = "Upcoming Events";
   if (isUpcoming === false) {
@@ -24,7 +32,11 @@ const EventSection = ({ events, isUpcoming }) => {
                 start={start ? start.local : "TBA"}
                 logo={logo ? logo.url : defaultLogo}
                 url={url}
-                description={description.text ? description.text : ""}
+                description={
+                  shortenDescription(description)
+                    ? shortenDescription(description)
+                    : ""
+                }
               />
             </FlexItem>
           );
