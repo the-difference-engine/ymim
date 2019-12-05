@@ -103,4 +103,7 @@ label {
   .form-control {
     width: 100%;
   }
+  .text-left {
+    line-height: normal;
+  }
 }
