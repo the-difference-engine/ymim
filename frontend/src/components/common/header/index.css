@@ -31,7 +31,6 @@
 .resources-link {
   height: 100%;
   padding: 20px 80px 20px 8px;
-  /* margin-right: 15px; */
   color: white !important;
   padding-bottom: 45px;
 }
@@ -98,12 +97,13 @@ a.dropdown-item {
   width: 140px;
   height: 54px;
   text-align: center;
+  margin-left: 70px;
 }
 
 /* spacing around donate button  */
 .center-button {
   margin-top: auto;
-  margin-bottom: auto;
+  margin-bottom: 52px;
 }
 
 /* responsiveness */
@@ -166,6 +166,8 @@ a.dropdown-item {
     font-size: 12px;
     width: 80px;
     height: 40px;
+    margin-left: 5px;
+    margin-top: 20px;
   }
 
   .center-button {
