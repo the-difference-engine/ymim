@@ -54,6 +54,7 @@ class Enroll extends Component {
               frameborder="0"
               onLoad={this.loaded}
               className="enroll-iframe"
+              scrolling="no"
             ></iframe>
           </div>
         </div>
