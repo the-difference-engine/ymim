@@ -12,7 +12,7 @@ class Enroll extends Component {
     this.state = {
       text: null,
       loadCounter: 0,
-      iframeHeight: 1275
+      iframeHeight: 2000
     };
   }
 
@@ -25,7 +25,7 @@ class Enroll extends Component {
   }
 
   loaded = () => {
-    let height = this.state.loadCounter % 2 === 0 ? 1275 : 400;
+    let height = this.state.loadCounter % 2 === 0 ? 2000 : 400;
     let loadCounter = this.state.loadCounter + 1;
     this.setState({ iframeHeight: height, loadCounter: loadCounter });
   };
@@ -54,6 +54,7 @@ class Enroll extends Component {
               frameborder="0"
               onLoad={this.loaded}
               className="enroll-iframe"
+              scrolling="no"
             ></iframe>
           </div>
         </div>
