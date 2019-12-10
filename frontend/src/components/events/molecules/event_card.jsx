@@ -3,7 +3,7 @@ import Text from "../atoms/text/text";
 import EventImage from "../atoms/image/image";
 import "./event_card.css";
 import Moment from "react-moment";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Button } from "react-bootstrap";
 export function EventList({ children }) {
   return <ul>{children}</ul>;
 }
@@ -41,9 +41,12 @@ const EventCard = props => {
         <Text text={props.name} type="hoverTitle" />
         <Text
           text={<Moment format="llll">{props.start}</Moment>}
-          type="hoverTitle"
+          type="hoverDate"
         />
         <Text text={props.description} type="hoverDescription" />
+        <div className="learnMore">
+          <Button className="learnMoreButton">Click to learn more!</Button>
+        </div>
       </div>
     </a>
   );

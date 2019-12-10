@@ -7,7 +7,7 @@ class Donate extends Component {
     return (
       <Row noGutters="true">
         <Container fluid="true" className="content-styling">
-          <h1 className="donate center">Donate Now!</h1>
+          <h1 id="donate-now">Donate Now!</h1>
           <p>
             The Young Masterbuilders In Motion, Inc., (<strong>YMIM</strong>),
             supports young women orphans, adoptees, and foster youth alumnae to

@@ -12,29 +12,28 @@
   margin-bottom: 20px;
 }
 .images {
- margin-bottom: 60px;
- margin-left: 120px;
- margin-right: 40px;
+  margin-bottom: 60px;
+  margin-left: 120px;
+  margin-right: 40px;
 }
 
 .images img {
- width: 330px;
- padding: 20px;
- border: 1px solid #d3d3d3;
+  width: 330px;
+  border: 5px solid #d3d3d3;
 }
 
 #kim-image {
- margin-top: 90px;
- height: 350px;
+  margin-top: 90px;
+  height: 350px;
 }
 
 #pierre-image {
- margin-top: 45px;
- margin-bottom: 30px;
+  margin-top: 45px;
+  margin-bottom: 30px;
 }
 
 #shirley-image {
- margin-top: 30px;
+  margin-top: 30px;
 }
 
 .about-heading {
