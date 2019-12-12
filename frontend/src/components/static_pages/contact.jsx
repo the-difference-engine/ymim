@@ -65,6 +65,7 @@ class Contact extends Component {
               onLoad={this.loaded}
               className="enroll-iframe"
               title="contact-iframe"
+              scrolling="no"
             >
               Loading…
             </iframe>
