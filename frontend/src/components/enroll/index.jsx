@@ -5,6 +5,7 @@ import Text from "./enroll.md";
 import "react-bootstrap";
 import SingleCarousel from "../SingleCarousel";
 
+
 class Enroll extends Component {
   constructor(props) {
     super(props);
