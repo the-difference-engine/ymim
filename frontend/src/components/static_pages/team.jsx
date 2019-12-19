@@ -159,9 +159,6 @@ class Team extends Component {
                     src={Picture9}
                     className="gallery-picture"
                     alt="8"
-                    onClick={event => {
-                      this.selectImage(event);
-                    }}
                   />
                   <div className="facebookLink">
                     Click here for more photos of the team.
