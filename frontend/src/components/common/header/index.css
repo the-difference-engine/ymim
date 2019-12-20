@@ -12,7 +12,7 @@
   background-color: #519b56;
   font-size: 32px;
   font-family: "GothamMedium";
-  height: 100px;
+  height: auto;
   color: white;
   width: 100%;
 }
@@ -97,7 +97,8 @@ a.dropdown-item {
   width: 140px;
   height: 54px;
   text-align: center;
-  margin-left: 70px;
+  margin-left: 10px;
+
 }
 /* spacing around donate button  */
 .center-button {
@@ -166,7 +167,6 @@ a.dropdown-item {
     font-size: 12px;
     width: 80px;
     height: 40px;
-    margin-left: 5px;
     margin-top: 20px;
   }
 
@@ -195,4 +195,10 @@ a.dropdown-item {
     padding-top: 15px;
     padding-bottom: 15px;
   }
+}
+  @media all and (min-width: 320px) and (max-width: 767px) {
+    
+    #donate-button {
+      margin-left: 5px;
+    }
 }

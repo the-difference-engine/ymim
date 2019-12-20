@@ -80,7 +80,7 @@ class NavBar extends Component {
         </Row>
         {/* second navbar (green) */}
         <Row className="ym-bottom" noGutters={true}>
-          <Col className="mx-auto my-auto px-0" xs={8} sm={8} md={10} lg={10}>
+          <Col className="mx-auto my-auto px-0" xs={8} sm={8} md={9} lg={10}>
             <Navbar collapseOnSelect expand="lg">
               <Navbar.Toggle className="ml-3" onClick={this.toggle} />
               <Navbar.Collapse isOpen={this.state.isOpen} navbar>
@@ -107,7 +107,7 @@ class NavBar extends Component {
             </Navbar>
           </Col>
           {/* donate button  */}
-          <Col className="center-button" xs={4} sm={4} md={2} lg={2}>
+          <Col className="center-button" xs={4} sm={4} md={3} lg={2}>
             <NavLink to="/donate">
               <button id="donate-button">Donate</button>
             </NavLink>
