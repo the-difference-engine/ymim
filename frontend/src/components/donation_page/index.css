@@ -5,7 +5,12 @@
 }
 
 .content-styling p {
-  padding-bottom: 25px;
+  line-height: 1.6em;
+}
+
+#donate-now {
+  text-align: center;
+  line-height: 1.6em;
 }
 
 .donate-form {
@@ -19,6 +24,7 @@
   padding-top: 25px;
   text-align: center;
 }
+
 .content-styling a {
   font-size: 22px;
 }

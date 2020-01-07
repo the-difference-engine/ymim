@@ -18,7 +18,7 @@ import Ambassadors from "./components/static_pages/ambassadors";
 import Donate from "./components/donation_page";
 import Resources from "./components/resources";
 import Events from "./components/events";
-import Volunteer from "./components/Volunteer/volunteer.jsx";
+import Volunteer from "./components/volunteer/volunteer.jsx";
 import ScrollToTop from "./components/to_the_top";
 
 let store = createStore(fetchData, applyMiddleware(thunk));
@@ -33,6 +33,7 @@ const router = (
             <div>
               <Switch>
                 <Route exact path="/" component={Home} />
+                <Route exact path="/home" component={Home} />
                 <Route exact path="/donate" component={Donate} />
                 <Route exact path="/contact-us" component={Contact} />
                 <Route exact path="/about" component={About} />

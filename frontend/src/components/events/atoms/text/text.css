@@ -14,7 +14,7 @@
 }
 
 .text.heading {
-  font-size: 24px;
+  font-size: 36px;
   font-weight: bold;
 }
 
@@ -30,14 +30,25 @@
   font-weight: bold;
 }
 
-.text.hoverDescription,
-.text.hoverTitle {
+.text.hoverDescription {
   color: white;
   margin: 10px;
+  max-height: 190px;
 }
 
 .text.hoverTitle {
+  color: white;
+  margin: 10px;
   font-weight: bold;
+  font-size: 20px;
+}
+
+.text.hoverDate {
+  color: white;
+  margin: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
 }
 
 .thumbNail {

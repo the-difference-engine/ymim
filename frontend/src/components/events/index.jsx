@@ -6,9 +6,10 @@ import EventList from "./EventList";
 import Flex from "./atoms/flex/flex";
 import {
   getSorted,
-  getUpcomingEvents,
+  getNextMonthsEvents,
   getPastEvents
 } from "../../reducers/selectors";
+import Sponsors from "./sponsors/index";
 
 class Events extends Component {
   componentDidMount() {
@@ -26,27 +27,37 @@ class Events extends Component {
 
     if (this.props.upcomingEvents.length || this.props.pastEvents.length) {
       return (
-        <div>
-          {eventsHeading}
-          <EventList
-            upcomingEvents={this.props.upcomingEvents}
-            pastEvents={this.props.pastEvents}
-          />
-        </div>
+        <>
+          <div className="fullEventsSection">
+            {eventsHeading}
+            <EventList
+              upcomingEvents={this.props.upcomingEvents}
+              pastEvents={this.props.pastEvents}
+            />
+          </div>
+          <div>
+            <Sponsors />
+          </div>
+        </>
       );
     }
     return (
-      <div>
-        {eventsHeading}
-        <div className="checkBack"> Check back soon for events</div>
-      </div>
+      <>
+        <div>
+          {eventsHeading}
+          <div className="checkBack"> Check back soon for events</div>
+        </div>
+        <div>
+          <Sponsors />
+        </div>
+      </>
     );
   }
 }
 
 const mapStateToProps = state => {
   return {
-    upcomingEvents: getUpcomingEvents(getSorted(state.events)),
+    upcomingEvents: getNextMonthsEvents(getSorted(state.events)),
     pastEvents: getPastEvents(getSorted(state.events))
   };
 };
@@ -59,7 +70,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(Events);
+export default connect(mapStateToProps, mapDispatchToProps)(Events);

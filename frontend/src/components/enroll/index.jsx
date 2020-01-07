@@ -5,6 +5,7 @@ import Text from "./enroll.md";
 import "react-bootstrap";
 import SingleCarousel from "../SingleCarousel";
 
+
 class Enroll extends Component {
   constructor(props) {
     super(props);
@@ -12,7 +13,7 @@ class Enroll extends Component {
     this.state = {
       text: null,
       loadCounter: 0,
-      iframeHeight: 1275
+      iframeHeight: 2000
     };
   }
 
@@ -25,7 +26,7 @@ class Enroll extends Component {
   }
 
   loaded = () => {
-    let height = this.state.loadCounter % 2 === 0 ? 1275 : 400;
+    let height = this.state.loadCounter % 2 === 0 ? 2000 : 400;
     let loadCounter = this.state.loadCounter + 1;
     this.setState({ iframeHeight: height, loadCounter: loadCounter });
   };
@@ -33,19 +34,28 @@ class Enroll extends Component {
   render() {
     return (
       <div>
-        <SingleCarousel header="Enroll" />
-        <div className="container group">
-          <div className="container col-sm-6 float-right mt-5">
-            <Markdown id="fontcss" className="mt-3 " source={this.state.text} />
+        <SingleCarousel
+          id="enroll-carousel"
+          header="Young Masterbuilders in Motion"
+          image="ymim7.png"
+        />
+        <div className="container group mt-2">
+          <div className="container col-sm-4 float-right mt-5">
+            <Markdown
+              id="fontcss"
+              className="text-left"
+              source={this.state.text}
+            />
           </div>
-          <div className="container col-sm-6 mt-5">
+          <div className="container col-sm-8 mt-7">
             <iframe
               title="enroll"
-              src="https://docs.google.com/forms/d/e/1FAIpQLScH_lkw44ikfkHlHpUFVsAtXF6MzElK19xWUyVOP_mJ-ClmHw/viewform?embedded=true"
+              src="https://docs.google.com/forms/d/e/1FAIpQLSdgJbnCM0D23-fEm9d_zYoycNUEOelqqEGcCwlBUhPC2vurbg/viewform?embedded=true"
               style={{ width: "100%", height: this.state.iframeHeight }}
               frameborder="0"
               onLoad={this.loaded}
               className="enroll-iframe"
+              scrolling="no"
             ></iframe>
           </div>
         </div>

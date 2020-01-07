@@ -35,13 +35,16 @@ class NavBar extends Component {
               </Navbar.Brand>
               {/* first navbar (white) */}
               <Nav className="ml-lg-3 ml-xl-3 ml-auto mr-auto my-auto">
-                <NavLink className="nav-link-top mr-5" to="/about">
+                <NavLink className="nav-link-top mr-4" to="/home">
+                  Home
+                </NavLink>
+                <NavLink className="nav-link-top mr-4" to="/about">
                   About
                 </NavLink>
-                <NavLink className="nav-link-top mr-5" to="/contact-us">
+                <NavLink className="nav-link-top mr-4" to="/contact-us">
                   Contact
                 </NavLink>
-                <NavLink className="nav-link-top" to="/events">
+                <NavLink className="nav-link-top mr-4" to="/events">
                   Events
                 </NavLink>
               </Nav>
@@ -89,7 +92,7 @@ class NavBar extends Component {
                     download
                     target="_blank"
                   >
-                    Youth Resources
+                    Resources
                   </NavLink>
                   {/* enroll  */}
                   <NavLink className="resources-link" to="/enrollment">
