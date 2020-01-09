@@ -107,7 +107,7 @@ class NavBar extends Component {
             </Navbar>
           </Col>
           {/* donate button  */}
-          <Col className="center-button" xs={4} sm={4} md={2} lg={2}>
+          <Col xs={4} sm={4} md={2} lg={2}>
             <NavLink to="/donate">
               <button className="donate-button">Donate</button>
             </NavLink>
