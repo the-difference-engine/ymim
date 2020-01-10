@@ -106,7 +106,7 @@ a.dropdown-item {
 /* responsiveness */
 @media all and (min-width: 768px) and (max-width: 2048px) {
   .align-links {
-    padding-left: 10px;
+    padding-left: 200px;
   }
 
   .ym-top {
