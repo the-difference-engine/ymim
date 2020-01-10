@@ -125,7 +125,7 @@ a.dropdown-item {
   }
 }
 
-@media all and (min-width: 1440px) and (max-width: 2048px) {
+@media all and (min-width: 1440px) {
   .logo {
     height: 180px;
     width: 180px;
