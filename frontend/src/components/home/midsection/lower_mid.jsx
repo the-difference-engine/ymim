@@ -18,7 +18,7 @@ class LowerMid extends Component {
 
   render() {
     const defaultContent =
-      "Check back again soon for what is coming up next for YMIM. If you have an event that you think YMIM should be a part of please email: Founder@theymim.org or call: 773.941.1200";
+      "Check back again soon for what is coming up next for YMIM. If you have an event that you think YMIM should be a part of, please email: Founder@theymim.org or call: 773.941.1200";
     const upcomingEvents = this.props.upcomingEvents;
     let nextEvent;
     if (upcomingEvents.length) {
