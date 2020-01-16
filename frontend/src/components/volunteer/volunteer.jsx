@@ -9,12 +9,12 @@ class Volunteer extends Component {
 
     this.state = {
       loadCounter: 0,
-      iframeHeight: 1075
+      iframeHeight: 1275
     };
   }
 
   loaded = () => {
-    let height = this.state.loadCounter % 2 === 0 ? 1075 : 400;
+    let height = this.state.loadCounter % 2 === 0 ? 1275 : 400;
     this.setState({
       iframeHeight: height,
       loadCounter: this.state.loadCounter + 1
@@ -27,14 +27,14 @@ class Volunteer extends Component {
         <SingleCarousel
           className="carousel"
           header="Young Masterbuilders in Motion"
-          image="ymim1.png"
+          image="volunteer4.jpg"
         />
         <Container className="mt-4 content-format">
           <Row className="mx-auto flexForm">
             <Row noGutters={true}>
               <Col xs={12} sm={12} md={12} lg={8}>
                 <div className="mb-5 px-3 text-left">
-                  <h2 className="mb-4">Dear Volunteers!</h2>
+                  <h2 className="mb-4">Dear Volunteers and Sponsors!</h2>
                   <p>
                     Thank you for considering getting involved in the Young
                     Masterbuilders in Motion (<b>YMIM)</b>&nbsp;movement to
@@ -62,7 +62,7 @@ class Volunteer extends Component {
                 </div>
 
                 <iframe
-                  src="https://docs.google.com/forms/d/e/1FAIpQLSe64AwGoRanKukVA4RzS-hzh_oN1EFMu4WQiWpKoCQ-LOO90w/viewform?embedded=true"
+                  src="https://docs.google.com/forms/d/e/1FAIpQLSf_nNhswm8ZNZxddnuPzhGj6JI9vCQd-FNqfmMGKLHyxe8gPg/viewform?embedded=true"
                   style={{ width: "100%", height: this.state.iframeHeight }}
                   frameborder="0"
                   onLoad={this.loaded}

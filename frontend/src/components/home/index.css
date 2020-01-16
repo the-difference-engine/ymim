@@ -52,6 +52,7 @@
   .paragraph-carousel {
     font-size: 16px;
     width: 100%;
+    padding-right: 20px;
   }
   .overlay {
     height: 100px;
