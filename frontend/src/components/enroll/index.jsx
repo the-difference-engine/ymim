@@ -5,7 +5,6 @@ import Text from "./enroll.md";
 import "react-bootstrap";
 import SingleCarousel from "../SingleCarousel";
 
-
 class Enroll extends Component {
   constructor(props) {
     super(props);
@@ -13,7 +12,7 @@ class Enroll extends Component {
     this.state = {
       text: null,
       loadCounter: 0,
-      iframeHeight: 2000
+      iframeHeight: 1300
     };
   }
 
@@ -26,7 +25,8 @@ class Enroll extends Component {
   }
 
   loaded = () => {
-    let height = this.state.loadCounter % 2 === 0 ? 2000 : 400;
+    let height =
+      this.state.loadCounter % 2 === 0 ? this.state.iframeHeight + "px" : 400;
     let loadCounter = this.state.loadCounter + 1;
     this.setState({ iframeHeight: height, loadCounter: loadCounter });
   };
@@ -55,7 +55,7 @@ class Enroll extends Component {
               frameborder="0"
               onLoad={this.loaded}
               className="enroll-iframe"
-              scrolling="no"
+              scrolling="yes"
             ></iframe>
           </div>
         </div>
