@@ -9,12 +9,13 @@ class Volunteer extends Component {
 
     this.state = {
       loadCounter: 0,
-      iframeHeight: 1275
+      iframeHeight: 1250
     };
   }
 
   loaded = () => {
-    let height = this.state.loadCounter % 2 === 0 ? 1275 : 400;
+    let height =
+      this.state.loadCounter % 2 === 0 ? this.state.iframeHeight + "px" : 400;
     this.setState({
       iframeHeight: height,
       loadCounter: this.state.loadCounter + 1
@@ -62,12 +63,13 @@ class Volunteer extends Component {
                 </div>
 
                 <iframe
+                  id="test"
                   src="https://docs.google.com/forms/d/e/1FAIpQLSf_nNhswm8ZNZxddnuPzhGj6JI9vCQd-FNqfmMGKLHyxe8gPg/viewform?embedded=true"
                   style={{ width: "100%", height: this.state.iframeHeight }}
                   frameborder="0"
                   onLoad={this.loaded}
                   title="volunteer-iframe"
-                  scrolling="no"
+                  scrolling="yes"
                 ></iframe>
               </Col>
 
