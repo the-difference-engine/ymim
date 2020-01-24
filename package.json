@@ -1,11 +1,7 @@
 {
   "name": "ymim",
   "version": "0.1.0",
-  "dependencies": {
-    "iframe-resizer-react": "^1.0.1",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0"
-  },
+  "dependencies": {},
   "scripts": {},
   "devDependencies": {
     "husky": "^3.0.9",
