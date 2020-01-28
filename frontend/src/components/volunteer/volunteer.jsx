@@ -9,12 +9,13 @@ class Volunteer extends Component {
 
     this.state = {
       loadCounter: 0,
-      iframeHeight: 1275
+      iframeHeight: 1250
     };
   }
 
   loaded = () => {
-    let height = this.state.loadCounter % 2 === 0 ? 1275 : 400;
+    let height =
+      this.state.loadCounter % 2 === 0 ? this.state.iframeHeight + "px" : 400;
     this.setState({
       iframeHeight: height,
       loadCounter: this.state.loadCounter + 1
@@ -27,7 +28,7 @@ class Volunteer extends Component {
         <SingleCarousel
           className="carousel"
           header="Young Masterbuilders in Motion"
-          image="volunteers.jpg"
+          image="volunteer4.jpg"
         />
         <Container className="mt-4 content-format">
           <Row className="mx-auto flexForm">
@@ -67,7 +68,7 @@ class Volunteer extends Component {
                   frameborder="0"
                   onLoad={this.loaded}
                   title="volunteer-iframe"
-                  scrolling="no"
+                  scrolling="yes"
                 ></iframe>
               </Col>
 

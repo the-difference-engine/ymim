@@ -88,27 +88,25 @@ a.dropdown-item {
 }
 
 /* donate button on second navbar (green) */
-#donate-button {
+.donate-button {
   font-size: 20px;
   font-weight: bold;
   background-color: #fdd368;
   border-radius: 7px;
   border: none;
-  width: 140px;
+  width: 110px;
   height: 54px;
-  text-align: center;
-  margin-left: 70px;
-}
-/* spacing around donate button  */
-.center-button {
-  margin-top: auto;
-  margin-bottom: 52px;
+  margin-top: 23px;
+  margin-right: 30px;
+  position: absolute;
+  bottom: 5;
+  right: 0;
 }
 
 /* responsiveness */
 @media all and (min-width: 768px) and (max-width: 2048px) {
   .align-links {
-    padding-left: 166px;
+    padding-left: 200px;
   }
 
   .ym-top {
@@ -125,7 +123,7 @@ a.dropdown-item {
   }
 }
 
-@media all and (min-width: 1440px) and (max-width: 2048px) {
+@media all and (min-width: 1440px) {
   .logo {
     height: 180px;
     width: 180px;
@@ -147,6 +145,10 @@ a.dropdown-item {
 }
 
 @media all and (min-width: 320px) and (max-width: 768px) {
+  .align-links {
+    padding-left: 11px;
+  }
+
   .ym-top {
     font-size: 16px;
     height: 35%;
@@ -162,17 +164,16 @@ a.dropdown-item {
     height: auto;
   }
 
-  #donate-button {
+  .donate-button {
     font-size: 12px;
     width: 80px;
-    height: 40px;
-    margin-left: 5px;
-    margin-top: 20px;
-  }
-
-  .center-button {
-    margin-top: 10px;
+    height: 45px;
+    margin-top: 28px;
+    margin-right: 30px;
     margin-bottom: 10px;
+    position: absolute;
+    bottom: 5;
+    right: 0;
   }
 
   #tsocial {

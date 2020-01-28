@@ -37,6 +37,7 @@ DEBUG = os.getenv("DEBUG", False)
 ALLOWED_HOSTS = [
     "ymim-backend-staging.herokuapp.com",
     "ymim-backend-production.herokuapp.com",
+    "localhost",
 ]
 
 
