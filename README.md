@@ -53,7 +53,7 @@ Here are the variables you will need to run the application. Copy this
     DB_NAME="postgres"
     DB_USER="postgres"
     DB_PASSWORD="password"
-    DB_HOST="db"
+    DB_HOST="localhost"
     DB_PORT=5432
 
 Then `cd backend` and `vi .env` and paste this file in there. Then run `:wq!` to save. Then `cd ..` so you are back in the root of the project. 
@@ -80,6 +80,66 @@ Use `pipenv run secret_key` to generate a value for SECRET_KEY and then save tha
 - Start Docker containers (from root directory): 
 
         docker-compose up
+
+### NO Docker
+
+Follow the steps above but instead of running `docker-compose up`, do this to start the FrontEnd and Backend
+
+To Start the FrontEnd. First make sure you are in the root of the project. Then:
+
+```bash
+      cd frontend
+      npm install
+      npm start
+```
+You should be able to Visit the Frontend by going to [http://localhost:3000/](http://localhost:3000/). If you see the Home Page, you have won!
+
+* Note: React will automatically launch this page for you if you are using Chrome and you may get a message asking you to allow this! 
+
+
+Open a new Terminal Window and again *make sure you are in the root of the project* Then:
+
+```bash
+      cd backend
+      pipenv install --dev
+      pipenv shell
+      python manage.py migrate
+      python manage.py create_test_users
+      python manage.py runserver
+```
+
+You should be able to Visit the Backend by going to [http://localhost:8000/](http://localhost:8000/). If you see the words API Root, you have won!
+
+### Postgres (specific to MAC)
+
+Postgres is our database. You will need to have Postgres installed on your computer to persist data and run the application. 
+
+If you do not have Postgres installed, you can install it via brew
+
+1. In your command-line run the command: `brew install postgresql`
+2. Run the command: `ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents`
+3. Create two new aliases to start and stop your postgres server. They could look something like this:
+
+     ```
+     alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+     alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+     ```
+
+4. Run the alias you just created: `pg_start`. Use this comment to start your database service.
+     - alternatively, `pg_stop` stops your database service.
+5. Run the command: ``createdb postgres ``
+6. Connect to your postgres with the command: `psql`
+8. `createuser -s postgres` - fixes `role "postgres" does not exist`
+9. Test with `psql` command (and some additional commands if issues)
+
+     ```
+     $ psql
+     psql (10.0)
+     Type "help" for help.
+
+     postgres=# ALTER ROLE postgres WITH SUPERUSER;
+     postgres=# ALTER ROLE postgres WITH LOGIN;
+     ```
 
 ### PC Users (currently incomplete)
 
