@@ -105,6 +105,36 @@ Open a new Terminal Window and again *make sure you are in the root of the proje
 
 You should be able to Visit the Backend by going to [http://localhost:8000/](http://localhost:8000/). If you see the words API Root, you have won!
 
+### Postgres (specific to MAC)
+
+Postgres is our database. You will need to have Postgres installed on your computer to persist data and run the application. 
+
+If you do not have Postgres installed, you can install it via brew
+
+1. In your command-line run the command: `brew install postgresql`
+2. Run the command: `ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents`
+3. Create two new aliases to start and stop your postgres server. They could look something like this:
+
+     ```
+     alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+     alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+     ```
+
+4. Run the alias you just created: `pg_start`. Use this comment to start your database service.
+     - alternatively, `pg_stop` stops your database service.
+5. Run the command: ``createdb postgres ``
+6. Connect to your postgres with the command: `psql`
+8. `createuser -s postgres` - fixes `role "postgres" does not exist`
+9. Test with `psql` command (and some additional commands if issues)
+
+     ```
+     $ psql
+     psql (10.0)
+     Type "help" for help.
+
+     postgres=# ALTER ROLE postgres WITH SUPERUSER;
+     postgres=# ALTER ROLE postgres WITH LOGIN;
+     ```
 
 ### PC Users (currently incomplete)
 
