@@ -53,7 +53,7 @@ Here are the variables you will need to run the application. Copy this
     DB_NAME="postgres"
     DB_USER="postgres"
     DB_PASSWORD="password"
-    DB_HOST="db"
+    DB_HOST="localhost"
     DB_PORT=5432
 
 Then `cd backend` and `vi .env` and paste this file in there. Then run `:wq!` to save. Then `cd ..` so you are back in the root of the project. 
