@@ -87,21 +87,26 @@ Follow the steps above but instead of running `docker-compose up`, do this to st
 
 To Start the FrontEnd. First make sure you are in the root of the project. Then:
 
+```bash
       cd frontend
       npm install
       npm start
-
+```
 You should be able to Visit the Frontend by going to [http://localhost:3000/](http://localhost:3000/). If you see the Home Page, you have won!
+
+* Note: React will automatically launch this page for you if you are using Chrome and you may get a message asking you to allow this! 
 
 
 Open a new Terminal Window and again *make sure you are in the root of the project* Then:
 
+```bash
       cd backend
       pipenv install --dev
       pipenv shell
       python manage.py migrate
       python manage.py create_test_users
       python manage.py runserver
+```
 
 You should be able to Visit the Backend by going to [http://localhost:8000/](http://localhost:8000/). If you see the words API Root, you have won!
 
