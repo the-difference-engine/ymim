@@ -99,6 +99,7 @@ Open a new Terminal Window and again *make sure you are in the root of the proje
       cd backend
       pipenv install --dev
       pipenv shell
+      python manage.py migrate
       python manage.py create_test_users
       python manage.py runserver
 
