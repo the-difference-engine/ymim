@@ -10,11 +10,11 @@ class About extends Component {
   render() {
     return (
       <Container fluid="true">
-      <SingleCarousel
-        className="carousel"
-        header="Young Masterbuilders in Motion"
-        image="ymim6.png"
-      />
+        <SingleCarousel
+          className="carousel"
+          header="Young Masterbuilders in Motion"
+          image="ymim6.png"
+        />
         <Container>
           <Row id="aboutPageTextRow">
             <h1 className="heading"> About </h1>
@@ -84,10 +84,10 @@ class About extends Component {
           </Row>
           <h1 className="about-heading">Our People</h1>
           <Row className="about-people-row">
-            <Col xs="12" md="6" lg="4" xl="4" className="images">
+            <Col xs="12" md="5" lg="4" xl="4" className="images">
               <img id="kim-image" src={KimWright} alt={"Kim Wright"} />
             </Col>
-            <Col xs="12" md="6" lg="4" xl="6">
+            <Col xs="12" md="6" lg="4" xl="6" className="people-col">
               <h1 className="people-heading text-left">Kim Wright, MBA</h1>
               <h4 className="sub-heading text-left">Founder and President</h4>
               <p className="text-left">
@@ -110,15 +110,15 @@ class About extends Component {
             </Col>
           </Row>
 
-          <Row className="about-people-row">
-            <Col xs="12" md="6" lg="4" xl="4" className="images">
+          <Row className="about-people-row" id="pierre">
+            <Col xs="12" md="5" lg="4" xl="4" className="images">
               <img
                 id="pierre-image"
                 src={PierrePriestley}
                 alt={"Pierre Priestley"}
               />
             </Col>
-            <Col xs="12" md="6" lg="4" xl="6">
+            <Col xs="12" md="6" lg="4" xl="6" className="people-col">
               <h1 className="people-heading text-left">Pierre Priestley</h1>
               <h4 className="sub-heading text-left">
                 Board Officer, Treasurer
@@ -138,15 +138,15 @@ class About extends Component {
             </Col>
           </Row>
 
-          <Row className="about-people-row">
-            <Col xs="12" md="6" lg="4" xl="4" className="images">
+          <Row className="about-people-row" id="shirley">
+            <Col xs="12" md="5" lg="4" xl="4" className="images">
               <img
                 id="shirley-image"
                 src={ShirleyScott}
                 alt={"Shirley Scott"}
               />
             </Col>
-            <Col xs="12" md="6" lg="4" xl="6">
+            <Col xs="12" md="6" lg="4" xl="6" className="people-col">
               <h1 className="people-heading text-left">
                 Shirley Scott, MS, RN-BC, C-EFM, APN, DNP
               </h1>
