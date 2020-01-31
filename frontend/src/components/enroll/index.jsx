@@ -13,7 +13,9 @@ class Enroll extends Component {
       loadCounter: 0,
       iframeHeight: 1300
     };
+  }
 
+  componentDidMount() {
     fetch(Text)
       .then(response => response.text())
       .then(text => {
