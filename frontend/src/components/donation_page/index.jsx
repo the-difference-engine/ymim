@@ -38,7 +38,7 @@ class Donate extends Component {
               action="https://www.paypal.com/"
               method="post"
               target="_blank"
-              class="donate-form"
+              className="donate-form"
             >
               <input type="hidden" name="cmd" value="_s-xclick" />
               <input

@@ -8,15 +8,12 @@ import SingleCarousel from "../SingleCarousel";
 class Enroll extends Component {
   constructor(props) {
     super(props);
-
     this.state = {
       text: null,
       loadCounter: 0,
       iframeHeight: 1300
     };
-  }
 
-  componentWillMount() {
     fetch(Text)
       .then(response => response.text())
       .then(text => {
@@ -52,7 +49,7 @@ class Enroll extends Component {
               title="enroll"
               src="https://docs.google.com/forms/d/e/1FAIpQLSdgJbnCM0D23-fEm9d_zYoycNUEOelqqEGcCwlBUhPC2vurbg/viewform?embedded=true"
               style={{ width: "100%", height: this.state.iframeHeight }}
-              frameborder="0"
+              frameBorder="0"
               onLoad={this.loaded}
               className="enroll-iframe"
               scrolling="yes"
