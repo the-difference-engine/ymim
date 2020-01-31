@@ -68,7 +68,7 @@ export default class footer extends Component {
               <div className="footer_text">
                 <Row className="justify-content-md-center contact">
                   <Col xs="12" sm="12" md="4" lg="4" xl="2">
-                    Copyright 2019
+                    Copyright {new Date().getFullYear()}
                   </Col>
                   <Col xs="12" sm="12" md="4" lg="4" xl="2">
                     <a className="contact" href="mailto:founder@theymim.org">
