@@ -12,7 +12,7 @@ class Enroll extends Component {
     this.state = {
       text: null,
       loadCounter: 0,
-      iframeHeight: 1300
+      iframeHeight: 1400
     };
   }
 
@@ -24,9 +24,23 @@ class Enroll extends Component {
       });
   }
 
+  setHeight = () => {
+    let width = window.innerWidth;
+    if (320 >= width && width < 375) {
+      return 1450;
+    } else if (375 >= width && width < 424) {
+      return 1400;
+    } else if (425 >= width && width < 767) {
+      return 1350;
+    } else if (768 >= width && width < 1024) {
+      return 1330;
+    } else {
+      return 1327;
+    }
+  };
+
   loaded = () => {
-    let height =
-      this.state.loadCounter % 2 === 0 ? this.state.iframeHeight + "px" : 400;
+    let height = this.state.loadCounter % 2 === 0 ? this.setHeight() : 400;
     let loadCounter = this.state.loadCounter + 1;
     this.setState({ iframeHeight: height, loadCounter: loadCounter });
   };

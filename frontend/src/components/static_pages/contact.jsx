@@ -9,11 +9,28 @@ class Contact extends Component {
     iframeHeight: 1100
   };
 
+  setHeight = () => {
+    let width = window.innerWidth;
+    if (320 >= width && width < 375) {
+      return 1300;
+    } else if (375 >= width && width < 424) {
+      return 1250;
+    } else if (425 >= width && width < 767) {
+      return 1205;
+    } else if (768 >= width && width <= 1024) {
+      return 1130;
+    } else {
+      return 1100;
+    }
+  };
+
   loaded = () => {
-    let height =
-      this.state.loadCounter % 2 === 0 ? this.state.iframeHeight : 400;
+    let height = this.state.loadCounter % 2 === 0 ? this.setHeight() : 400;
     let loadCounter = this.state.loadCounter + 1;
-    this.setState({ iframeHeight: height, loadCounter: loadCounter });
+    this.setState({
+      iframeHeight: height,
+      loadCounter: this.state.loadCounter + 1
+    });
   };
 
   render() {
