@@ -2,10 +2,10 @@
   padding-left: 133px;
   padding-right: 133px;
   display: block;
+}
 
-  .sub-heading {
-    font-size: 24px;
-  }
+.sub-heading {
+  font-size: 24px;
 }
 
 .about-people-row {
@@ -50,22 +50,29 @@
   margin-top: 45px;
   font-size: 48px;
   font-weight: bold;
+  display: inline-block;
 }
 
 /* tablet */
 
-@media all and (min-width: 426px) and (max-width: 1023px) {
+@media all and (min-width: 768px) and (max-width: 1023px) {
   #aboutPageTextRow {
     padding-left: 20px;
     padding-right: 20px;
-
-    .sub-heading {
-      font-size: 24px;
-    }
+  }
+  .sub-heading {
+    font-size: 24px;
   }
 
   #kim-image {
-    margin-top: 20px;
+    margin-top: 0px;
+  }
+  #pierre-image {
+    margin-top: 0px;
+  }
+
+  #shirley-image {
+    margin-top: 0px;
   }
 
   .images {
@@ -87,8 +94,23 @@
     font-size: 16px;
   }
   .about-heading {
-    font-size: 32px;
+    font-size: 45px;
     margin-left: 0;
+    text-align: center;
+  }
+  .people-col {
+    display: inline-block;
+    margin-left: 20px;
+  }
+  .people-heading {
+    font-size: 38px;
+    margin-top: 0px;
+  }
+  .people-col .sub-heading {
+    padding-top: 7px;
+  }
+  .about-people-row {
+    margin: 20px 0px;
   }
 }
 
