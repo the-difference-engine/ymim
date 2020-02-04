@@ -9,13 +9,17 @@ class Volunteer extends Component {
 
     this.state = {
       loadCounter: 0,
-      iframeHeight: 1250
+      iframeHeight: 1240
     };
   }
 
+  setHeight = () => {
+    let width = window.innerWidth;
+    return 320 >= width && width <= 647 ? 1300 : 1240;
+  };
+
   loaded = () => {
-    let height =
-      this.state.loadCounter % 2 === 0 ? this.state.iframeHeight + "px" : 400;
+    let height = this.state.loadCounter % 2 === 0 ? this.setHeight() : 400;
     this.setState({
       iframeHeight: height,
       loadCounter: this.state.loadCounter + 1
