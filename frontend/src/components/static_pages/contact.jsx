@@ -6,11 +6,12 @@ import SingleCarousel from "../SingleCarousel/index";
 class Contact extends Component {
   state = {
     loadCounter: 0,
-    iframeHeight: 1400
+    iframeHeight: 1100
   };
 
   loaded = () => {
-    let height = this.state.loadCounter % 2 === 0 ? 1400 : 400;
+    let height =
+      this.state.loadCounter % 2 === 0 ? this.state.iframeHeight : 400;
     let loadCounter = this.state.loadCounter + 1;
     this.setState({ iframeHeight: height, loadCounter: loadCounter });
   };
@@ -59,13 +60,13 @@ class Contact extends Component {
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLSe9vicPG5oh6xdZYGLMkksNXQc_6WnjY4GCOZbjcnlVzW0huA/viewform?embedded=true"
               style={{ width: "100%", height: this.state.iframeHeight }}
-              frameborder="0"
-              marginwidth="0"
-              marginheight="0"
+              frameBorder="0"
+              marginWidth="0"
+              marginHeight="0"
               onLoad={this.loaded}
               className="enroll-iframe"
               title="contact-iframe"
-              scrolling="no"
+              scrolling="yes"
             >
               Loading…
             </iframe>
