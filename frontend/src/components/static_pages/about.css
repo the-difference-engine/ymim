@@ -65,10 +65,14 @@
   }
 
   #kim-image {
-    margin-top: 20px;
+    margin-top: 0px;
   }
   #pierre-image {
-    margin-top: 20px;
+    margin-top: 0px;
+  }
+
+  #shirley-image {
+    margin-top: 0px;
   }
 
   .images {
@@ -99,20 +103,14 @@
     margin-left: 20px;
   }
   .people-heading {
-    font-size: 40px;
-    margin-top: 20px;
+    font-size: 38px;
+    margin-top: 0px;
   }
   .people-col .sub-heading {
     padding-top: 7px;
   }
   .about-people-row {
-    margin: 0px;
-  }
-  #shirley {
-    margin: 40px 0px 30px 0px;
-  }
-  #pierre {
-    margin-top: 20px;
+    margin: 20px 0px;
   }
 }
 

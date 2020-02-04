@@ -110,7 +110,7 @@ class About extends Component {
             </Col>
           </Row>
 
-          <Row className="about-people-row" id="pierre">
+          <Row className="about-people-row">
             <Col xs="12" md="5" lg="4" xl="4" className="images">
               <img
                 id="pierre-image"
