@@ -60,9 +60,9 @@ class Contact extends Component {
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLSe9vicPG5oh6xdZYGLMkksNXQc_6WnjY4GCOZbjcnlVzW0huA/viewform?embedded=true"
               style={{ width: "100%", height: this.state.iframeHeight }}
-              frameborder="0"
-              marginwidth="0"
-              marginheight="0"
+              frameBorder="0"
+              marginWidth="0"
+              marginHeight="0"
               onLoad={this.loaded}
               className="enroll-iframe"
               title="contact-iframe"

@@ -11,19 +11,6 @@ import logo from "../../../assets/logo.png";
 import "./index.css";
 
 class NavBar extends Component {
-  constructor(props) {
-    super(props);
-
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
   render() {
     return (
       <Container fluid={true}>
@@ -82,8 +69,8 @@ class NavBar extends Component {
         <Row className="ym-bottom" noGutters={true}>
           <Col className="mx-auto my-auto px-0" xs={8} sm={8} md={10} lg={10}>
             <Navbar collapseOnSelect expand="lg">
-              <Navbar.Toggle className="ml-3" onClick={this.toggle} />
-              <Navbar.Collapse isOpen={this.state.isOpen} navbar>
+              <Navbar.Toggle className="ml-3" />
+              <Navbar.Collapse>
                 <Nav className="ml-lg-3 ml-xl-3 ml-auto mr-auto my-auto align-links">
                   {/* resources  */}
                   <NavLink

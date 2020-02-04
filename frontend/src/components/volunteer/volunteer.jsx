@@ -65,7 +65,7 @@ class Volunteer extends Component {
                 <iframe
                   src="https://docs.google.com/forms/d/e/1FAIpQLSf_nNhswm8ZNZxddnuPzhGj6JI9vCQd-FNqfmMGKLHyxe8gPg/viewform?embedded=true"
                   style={{ width: "100%", height: this.state.iframeHeight }}
-                  frameborder="0"
+                  frameBorder="0"
                   onLoad={this.loaded}
                   title="volunteer-iframe"
                   scrolling="yes"
@@ -84,9 +84,9 @@ class Volunteer extends Component {
                   <div className="videoWrapper">
                     <iframe
                       src="https://www.youtube.com/embed/PK9ESRMGq74"
-                      frameborder="0"
+                      frameBorder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
+                      allowFullScreen
                       title="inspire"
                     ></iframe>
                   </div>
@@ -96,9 +96,9 @@ class Volunteer extends Component {
                   <div className="videoWrapper">
                     <iframe
                       src="https://www.youtube.com/embed/jdsqht1m1rE"
-                      frameborder="0"
+                      frameBorder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
+                      allowFullScreen
                       title="connecting"
                     ></iframe>
                   </div>
@@ -108,9 +108,9 @@ class Volunteer extends Component {
                   <div className="videoWrapper">
                     <iframe
                       src="https://www.youtube.com/embed/GwXt3tL6FqY"
-                      frameborder="0"
+                      frameBorder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                      allowfullscreen
+                      allowFullScreen
                       title="empower"
                     ></iframe>
                   </div>
