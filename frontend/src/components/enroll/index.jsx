@@ -53,7 +53,7 @@ class Enroll extends Component {
           image="ymim7.png"
         />
         <div className="container group mt-2">
-          <div className="container col-sm-4 float-right mt-5">
+          <div className="container col-sm-4 float-right mt-4">
             <Markdown
               id="fontcss"
               className="text-left"
