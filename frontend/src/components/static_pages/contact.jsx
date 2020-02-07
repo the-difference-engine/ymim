@@ -2,11 +2,15 @@ import React, { Component } from "react";
 import "./contact.css";
 import "react-bootstrap";
 import SingleCarousel from "../SingleCarousel/index";
+import axios from "axios";
+import ReactMarkdown from "react-markdown";
 
 class Contact extends Component {
   state = {
     loadCounter: 0,
-    iframeHeight: 1100
+    iframeHeight: 1100,
+    pageText: "",
+    pageImage: ""
   };
 
   setHeight = () => {
@@ -33,44 +37,45 @@ class Contact extends Component {
     });
   };
 
+  componentDidMount() {
+    const token =
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNTgwNzgzODk4LCJleHAiOjE1ODMzNzU4OTh9.02-zwjvENOTr42qdVXhL4DC3I5xtxmKekyel7VtyExc";
+    const url = "http://localhost:1337/contact-pages";
+    // Request API.
+    debugger;
+    axios
+      .get(url, {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      })
+      .then(response => {
+        // Handle success.
+        debugger;
+        this.setState({
+          pageText: response.data[0].richie,
+          pageImage: `http://localhost:1337${response.data[0].UpdateImage.url}`
+        });
+      })
+      .catch(error => {
+        // Handle error.
+        console.log("An error occurred:", error);
+      });
+  }
+
   render() {
     return (
       <div>
         <SingleCarousel
           className="carousel"
           header="Contact Us"
-          image="ymim5.png"
+          image={this.state.pageImage}
         />
+
         <div className="container">
           <div className="main-content container col-sm-4 float-right mt-3 mt-md-5">
             <div className="mt-2 mt-md-4">
-              <p>Hello Ms. or Mr. Wonderful,</p>
-              <p className="text-left">
-                Thank you for checking out our website and considering the Young
-                Masterbuilders in Motion (<strong>YMIM</strong>) as your charity
-                of choice.
-              </p>
-              <p className="text-left">
-                Together we can work to make a difference in the lives
-                of&nbsp;young adult women orphans, adoptees, and foster youth
-                teens and alumnae.
-              </p>
-              <p className="text-left">
-                Use the accompanying form to let us know what’s on your mind and
-                how we can help.
-              </p>
-              <p className="text-left">Until next time,</p>
-              <p className="text-left">
-                Kim Wright, MBA, U.S. Army Veteran
-                <br />
-                Foster Youth Alumna
-                <br />
-                Founder, Young Masterbuilders in Motion
-                <br />
-                Email: Founder@theymim.org
-                <br />
-                Phone: 773.941.1200
-              </p>
+              <ReactMarkdown source={this.state.pageText} />
             </div>
           </div>
           <div className="main-content container col-sm-8 mt-5">

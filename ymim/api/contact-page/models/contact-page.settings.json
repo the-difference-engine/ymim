@@ -1,0 +1,30 @@
+{
+  "connection": "default",
+  "collectionName": "contact_page_s",
+  "info": {
+    "name": "Contact Page "
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "UpdateText": {
+      "type": "text",
+      "required": true
+    },
+    "UpdateImage": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": true
+    },
+    "UpdateForm": {
+      "type": "text",
+      "required": false
+    },
+    "richie": {
+      "type": "richtext"
+    }
+  }
+}
