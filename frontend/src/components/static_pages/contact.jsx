@@ -51,7 +51,7 @@ class Contact extends Component {
       })
       .then(response => {
         // Handle success.
-        debugger;
+        // debugger;
         this.setState({
           pageText: response.data[0].richie,
           pageImage: `http://localhost:1337${response.data[0].UpdateImage.url}`

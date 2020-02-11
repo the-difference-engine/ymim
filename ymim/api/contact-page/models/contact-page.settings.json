@@ -9,19 +9,11 @@
     "timestamps": true
   },
   "attributes": {
-    "UpdateText": {
-      "type": "text",
-      "required": true
-    },
     "UpdateImage": {
       "model": "file",
       "via": "related",
       "plugin": "upload",
       "required": true
-    },
-    "UpdateForm": {
-      "type": "text",
-      "required": false
     },
     "richie": {
       "type": "richtext"

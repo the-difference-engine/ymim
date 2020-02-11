@@ -13,6 +13,7 @@ class SingleCarousel extends Component {
         image = this.props.image;
       } else {
         image = require("../../assets/" + this.props.image);
+        console.log(image);
       }
     }
 
