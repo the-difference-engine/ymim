@@ -1,0 +1,22 @@
+{
+  "connection": "default",
+  "collectionName": "about_pages",
+  "info": {
+    "name": "About Page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "updateimage": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

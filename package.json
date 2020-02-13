@@ -11,5 +11,8 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
   }
 }

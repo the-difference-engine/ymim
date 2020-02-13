@@ -7,13 +7,12 @@ class SingleCarousel extends Component {
   render() {
     let pat = /^https?:\/\//i;
     let image = "";
-    debugger;
+    // debugger;
     if (this.props.image) {
       if (pat.test(this.props.image)) {
         image = this.props.image;
       } else {
         image = require("../../assets/" + this.props.image);
-        console.log(image);
       }
     }
 

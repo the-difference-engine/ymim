@@ -39,10 +39,8 @@ class Contact extends Component {
 
   componentDidMount() {
     const token =
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNTgwNzgzODk4LCJleHAiOjE1ODMzNzU4OTh9.02-zwjvENOTr42qdVXhL4DC3I5xtxmKekyel7VtyExc";
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNTgxMzgzNDc3LCJleHAiOjE1ODM5NzU0Nzd9.fLn5jTbyPzUMTN-h61DUQtgEdzAXUZMczGqkzFOuwT8";
     const url = "http://localhost:1337/contact-pages";
-    // Request API.
-    debugger;
     axios
       .get(url, {
         headers: {
@@ -50,15 +48,12 @@ class Contact extends Component {
         }
       })
       .then(response => {
-        // Handle success.
-        // debugger;
         this.setState({
           pageText: response.data[0].richie,
           pageImage: `http://localhost:1337${response.data[0].UpdateImage.url}`
         });
       })
       .catch(error => {
-        // Handle error.
         console.log("An error occurred:", error);
       });
   }
