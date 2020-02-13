@@ -14,7 +14,10 @@ class About extends Component {
     pageImage: "",
     aboutKim: "",
     aboutPierre: "",
-    aboutShirley: ""
+    aboutShirley: "",
+    kimPhoto: "",
+    pierrePhoto: "",
+    shirleyPhoto: ""
   };
 
   componentDidMount() {
@@ -33,7 +36,10 @@ class About extends Component {
           pageImage: `http://localhost:1337${response.data[0].updateimage[0].url}`,
           aboutKim: response.data[0].aboutKim,
           aboutPierre: response.data[0].aboutPierre,
-          aboutShirley: response.data[0].aboutShirley
+          aboutShirley: response.data[0].aboutShirley,
+          kimPhoto: `http://localhost:1337${response.data[0].kimPhoto[0].url}`,
+          pierrePhoto: `http://localhost:1337${response.data[0].pierrePhoto[0].url}`,
+          shirleyPhoto: `http://localhost:1337${response.data[0].shirleyPhoto[0].url}`
         });
       })
       .catch(error => {
@@ -42,6 +48,8 @@ class About extends Component {
   }
 
   render() {
+    console.log(this.state.kimPhoto);
+    console.log(this.state.pageImage);
     return (
       <Container fluid="true">
         <SingleCarousel
@@ -57,7 +65,11 @@ class About extends Component {
           <h1 className="about-heading">Our People</h1>
           <Row className="about-people-row">
             <Col xs="12" md="5" lg="4" xl="4" className="images">
-              <img id="kim-image" src={KimWright} alt={"Kim Wright"} />
+              <img
+                id="kim-image"
+                src={this.state.kimPhoto}
+                alt={"Kim Wright"}
+              />
             </Col>
             <Col xs="12" md="6" lg="4" xl="6" className="people-col">
               <h1 className="people-heading text-left">Kim Wright, MBA</h1>

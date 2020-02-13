@@ -26,6 +26,24 @@
     },
     "aboutShirley": {
       "type": "richtext"
+    },
+    "kimPhoto": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "pierrePhoto": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "shirleyPhoto": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
     }
   }
 }
