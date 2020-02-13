@@ -15,7 +15,16 @@
       "plugin": "upload",
       "required": false
     },
-    "text": {
+    "aboutText": {
+      "type": "richtext"
+    },
+    "aboutKim": {
+      "type": "richtext"
+    },
+    "aboutPierre": {
+      "type": "richtext"
+    },
+    "aboutShirley": {
       "type": "richtext"
     }
   }

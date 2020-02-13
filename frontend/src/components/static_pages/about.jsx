@@ -10,8 +10,11 @@ import ReactMarkdown from "react-markdown";
 
 class About extends Component {
   state = {
-    pageText: "",
-    pageImage: ""
+    aboutText: "",
+    pageImage: "",
+    aboutKim: "",
+    aboutPierre: "",
+    aboutShirley: ""
   };
 
   componentDidMount() {
@@ -26,8 +29,11 @@ class About extends Component {
       })
       .then(response => {
         this.setState({
-          pageText: response.data[0].text,
-          pageImage: `http://localhost:1337${response.data[0].updateimage[0].url}`
+          aboutText: response.data[0].aboutText,
+          pageImage: `http://localhost:1337${response.data[0].updateimage[0].url}`,
+          aboutKim: response.data[0].aboutKim,
+          aboutPierre: response.data[0].aboutPierre,
+          aboutShirley: response.data[0].aboutShirley
         });
       })
       .catch(error => {
@@ -46,7 +52,7 @@ class About extends Component {
         <Container>
           <Row id="aboutPageTextRow">
             <h1 className="heading"> About </h1>
-            <ReactMarkdown className="textLeft" source={this.state.pageText} />
+            <ReactMarkdown className="textLeft" source={this.state.aboutText} />
           </Row>
           <h1 className="about-heading">Our People</h1>
           <Row className="about-people-row">
@@ -56,23 +62,7 @@ class About extends Component {
             <Col xs="12" md="6" lg="4" xl="6" className="people-col">
               <h1 className="people-heading text-left">Kim Wright, MBA</h1>
               <h4 className="sub-heading text-left">Founder and President</h4>
-              <p className="text-left">
-                Wright grew up as a youth-in-care from age 2 to 17 in multiple
-                foster homes and a catholic orphanage after losing her mother to
-                a premature death due to a horrific domestic violence incident.
-                At the age of 7, Wright knew then that her life’s path would
-                lead her serve children and young people who also grew up
-                without the care and guidance of their own loving mother or
-                father. Lacking mentors and relatives to share their experiences
-                on how they made it and how she could too, caused Wright to
-                always read and research how to do anything. Wright has worked
-                as a reporter, writer, editor, HR manager, trainer, case
-                manager, and director. Finally stepping out on faith to do what
-                she had in her heart since age 7, Wright quotes Audrey Lorde,
-                “When I dare to be powerful—to use my strength in the service of
-                my vision, then it becomes less and less important whether I am
-                afraid.”
-              </p>
+              <p className="text-left">{this.state.aboutKim}</p>
             </Col>
           </Row>
 
@@ -89,18 +79,7 @@ class About extends Component {
               <h4 className="sub-heading text-left">
                 Board Officer, Treasurer
               </h4>
-              <p className="text-left">
-                “Service to our youth today will ensure the strength of our
-                world tomorrow.”
-              </p>
-              <p className="text-left">
-                Priestley currently serves as an associate general counsel of
-                Investment Property Exchange Services, Inc. He is an attorney
-                and Certified Public Accountant. Priestley served in a variety
-                of roles in large companies as a tax analyst and manager. He has
-                worked on many community service initiatives for to equip youth
-                and young adults.
-              </p>
+              <p className="text-left">{this.state.aboutPierre}</p>
             </Col>
           </Row>
 
@@ -119,14 +98,7 @@ class About extends Component {
               <h4 className="sub-heading text-left">
                 Board Officer, Secretary
               </h4>
-              <p className="text-left">
-                Scott works as a perinatal network administrator and cares for
-                women and infants. She has a special interest in the adolescent
-                and young adult women population particularly those living in
-                underserved areas. Scott incorporates the physical, social,
-                emotional, and spiritual aspects of life to help women and
-                families obtain optimal health. U.S. Air Force Veteran.
-              </p>
+              <p className="text-left">{this.state.aboutShirley}</p>
             </Col>
           </Row>
         </Container>

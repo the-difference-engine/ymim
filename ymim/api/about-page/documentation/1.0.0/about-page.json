@@ -570,14 +570,32 @@
               }
             }
           },
-          "text": {
+          "aboutText": {
+            "type": "string"
+          },
+          "aboutKim": {
+            "type": "string"
+          },
+          "aboutPierre": {
+            "type": "string"
+          },
+          "aboutShirley": {
             "type": "string"
           }
         }
       },
       "NewAbout-page": {
         "properties": {
-          "text": {
+          "aboutText": {
+            "type": "string"
+          },
+          "aboutKim": {
+            "type": "string"
+          },
+          "aboutPierre": {
+            "type": "string"
+          },
+          "aboutShirley": {
             "type": "string"
           }
         }
