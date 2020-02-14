@@ -4,22 +4,37 @@ import "./enroll.css";
 import Text from "./enroll.md";
 import "react-bootstrap";
 import SingleCarousel from "../SingleCarousel";
+import axios from "axios";
 
 class Enroll extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      text: null,
+      pageText: "",
+      pageImage: "",
       loadCounter: 0,
       iframeHeight: 1400
     };
   }
 
   componentDidMount() {
-    fetch(Text)
-      .then(response => response.text())
-      .then(text => {
-        this.setState({ text: text });
+    const token =
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNTgxMzgzNDc3LCJleHAiOjE1ODM5NzU0Nzd9.fLn5jTbyPzUMTN-h61DUQtgEdzAXUZMczGqkzFOuwT8";
+    const url = "http://localhost:1337/enroll-pages";
+    axios
+      .get(url, {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      })
+      .then(response => {
+        this.setState({
+          pageText: response.data[0].pageText,
+          pageImage: `http://localhost:1337${response.data[0].pageImage[0].url}`
+        });
+      })
+      .catch(error => {
+        console.log("An error occurred:", error);
       });
   }
 
@@ -45,19 +60,20 @@ class Enroll extends Component {
   };
 
   render() {
+    console.log(this.state.pageImage);
     return (
       <div>
         <SingleCarousel
           id="enroll-carousel"
           header="Young Masterbuilders in Motion"
-          image="ymim7.png"
+          image={this.state.pageImage}
         />
         <div className="container group mt-2">
           <div className="container col-sm-4 float-right mt-5">
             <Markdown
               id="fontcss"
               className="text-left"
-              source={this.state.text}
+              source={this.state.pageText}
             />
           </div>
           <div className="container col-sm-8 mt-7">

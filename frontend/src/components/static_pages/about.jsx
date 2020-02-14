@@ -10,8 +10,6 @@ import ReactMarkdown from "react-markdown";
 
 class About extends Component {
   state = {
-    aboutText: "",
-    pageImage: "",
     aboutKim: "",
     aboutPierre: "",
     aboutShirley: "",
@@ -32,8 +30,6 @@ class About extends Component {
       })
       .then(response => {
         this.setState({
-          aboutText: response.data[0].aboutText,
-          pageImage: `http://localhost:1337${response.data[0].updateimage[0].url}`,
           aboutKim: response.data[0].aboutKim,
           aboutPierre: response.data[0].aboutPierre,
           aboutShirley: response.data[0].aboutShirley,
@@ -48,19 +44,71 @@ class About extends Component {
   }
 
   render() {
-    console.log(this.state.kimPhoto);
-    console.log(this.state.pageImage);
     return (
       <Container fluid="true">
         <SingleCarousel
           className="carousel"
           header="Young Masterbuilders in Motion"
-          image={this.state.pageImage}
+          image="ymim6.png"
         />
         <Container>
           <Row id="aboutPageTextRow">
             <h1 className="heading"> About </h1>
-            <ReactMarkdown className="textLeft" source={this.state.aboutText} />
+            <h2 className="sub-heading">Our Mission</h2>
+            <p className="text-left">
+              The Young Masterbuilders in Motion (YMIM) inspires, connects, and
+              empowers young women orphans, adoptees, and foster youth alumnae
+              to thrive.
+            </p>
+            <p className="text-left">
+              The YMIM provides a holistic approach to mentoring and leadership
+              development. Our programs are delivered through empowerment
+              workshops, life enrichment retreats, and international missions
+              experiences.
+            </p>
+            <h2 className="sub-heading"> Our Values </h2>
+            <p className="text-left">
+              We believe that a caring and supportive community can equip young
+              women and empower global communities.
+            </p>
+            <p className="text-left">
+              We whole-heartedly embrace peace, grace, joy, love and wisdom and
+              want to share what we have learned in our wide and varied life
+              experiences with those who are yet vulnerable and who desire such
+              support.
+            </p>
+            <h2 className="sub-heading">Our Approach to Engagement</h2>
+            <p className="text-left">
+              The YMIM works to enhance participants' global perspective of the
+              world economy. Through access and exposure to the arts, healthcare
+              advocacy, sciences, technology, industries, and international
+              mission experiences we aim to enrich the cultural, personal, and
+              professional aspects of each participant.
+            </p>
+            <p className="text-left">
+              We listen to participants, address their concerns, and help
+              connect them with resources to navigate life. We help participants
+              develop life skills necessary to thrive as the masterbuilder of
+              their future.
+            </p>
+            <p className="text-left">
+              Our approach includes models and scenarios of self-direction that
+              cover a broad span on topics of visioning life goals, decision
+              making, and self-sufficiency. Additionally, we help participants
+              mature in accountability and leadership through peer-to-peer
+              mentoring and workshops on the precepts and concepts of
+              entrepreneurship, sustained employment, global community service
+              activities and more. **Our Road to Impactful Programming** Alumnae
+              input and feedback are the drivers of ongoing program
+              enhancements. Our pre and post self assessments provide our
+              guideposts to impactful programming. Participants of each age
+              segment serve on ideation and planning committees.
+              Participant-centered needs is how we determine where to prioritize
+              cultural, education, life skills, and employment programming.
+              **Resources and Referrals** We link participants to resources and
+              services beyond our capacity for those desiring or requiring
+              additional support.
+            </p>
           </Row>
           <h1 className="about-heading">Our People</h1>
           <Row className="about-people-row">
