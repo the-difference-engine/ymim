@@ -1,0 +1,25 @@
+{
+  "connection": "default",
+  "collectionName": "enroll_pages",
+  "info": {
+    "name": "Enroll Page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "pageImage": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "pageText": {
+      "type": "richtext"
+    },
+    "pageTextTest": {
+      "type": "string"
+    }
+  }
+}

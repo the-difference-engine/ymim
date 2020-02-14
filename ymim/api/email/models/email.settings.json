@@ -1,0 +1,16 @@
+{
+  "info": {
+    "name": "email"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "email": {
+      "type": "richtext"
+    }
+  },
+  "connection": "default",
+  "collectionName": "emails"
+}

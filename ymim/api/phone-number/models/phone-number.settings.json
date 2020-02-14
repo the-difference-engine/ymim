@@ -1,0 +1,16 @@
+{
+  "connection": "default",
+  "collectionName": "phone_numbers",
+  "info": {
+    "name": "phoneNumber"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "number": {
+      "type": "string"
+    }
+  }
+}

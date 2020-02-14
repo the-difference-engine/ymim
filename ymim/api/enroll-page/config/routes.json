@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/enroll-pages",
+      "handler": "enroll-page.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/enroll-pages/count",
+      "handler": "enroll-page.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/enroll-pages/:id",
+      "handler": "enroll-page.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/enroll-pages",
+      "handler": "enroll-page.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/enroll-pages/:id",
+      "handler": "enroll-page.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/enroll-pages/:id",
+      "handler": "enroll-page.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
