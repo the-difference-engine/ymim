@@ -15,7 +15,7 @@ class About extends Component {
           header="Young Masterbuilders in Motion"
           image="ymim6.png"
         />
-        <Container>
+        <Container className="mainContainer">
           <Row id="aboutPageTextRow">
             <h1 className="heading"> About </h1>
             <h2 className="sub-heading">Our Mission</h2>

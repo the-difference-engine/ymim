@@ -1,4 +1,4 @@
-.container {
+.mainContainer {
   padding: 0px 50px 25px 50px;
 }
 #aboutPageTextRow {
@@ -41,12 +41,12 @@
 }
 
 @media (min-width: 2000px) {
-  .container {
+  .mainContainer {
     max-width: 2000px;
   }
 
   p {
-    font-size: 2rem;
+    font-size: 32px;
     margin-bottom: 10px;
   }
 
@@ -60,21 +60,21 @@
   }
   h1.heading,
   h1.about-heading {
-    font-size: 5rem;
+    font-size: 80px;
   }
   .sub-heading {
-    font-size: 2.7rem;
+    font-size: 43px;
     margin-bottom: 16px;
   }
   .people-heading {
-    font-size: 4rem;
+    font-size: 64px;
   }
 }
 
 /* tablet */
 
 @media all and (min-width: 600px) and (max-width: 1023px) {
-  .container {
+  .mainContainer {
     padding: 0px 20px;
   }
 
@@ -112,7 +112,7 @@
 /* mobile */
 
 @media all and (min-width: 300px) and (max-width: 767px) {
-  .container {
+  .mainContainer {
     padding: 0px 20px;
   }
   .images {
