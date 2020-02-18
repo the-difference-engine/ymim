@@ -1,6 +1,9 @@
 import React, { Component } from "react";
 import { Container, Row } from "react-bootstrap";
 import "./index.css";
+import Email from "../static_pages/email.jsx";
+import PhoneNumber from "../static_pages/phoneNumber.jsx";
+import TaxId from "../static_pages/taxId.jsx";
 
 class Donate extends Component {
   render() {
@@ -23,14 +26,17 @@ class Donate extends Component {
             and are greatly appreciated. The Young Masterbuilders in Motion,
             Inc., (<strong>YMIM</strong>) is a 501(c)(3) nonprofit organization
             and your contributions are deductible to the full extent of the law.
-            Our tax identification number is 82-1904373.
+            Our tax identification number is <TaxId />.
           </p>
           <p>
             The<strong> YMIM</strong> is committed to respecting the privacy of
             our donors. We do not sell or trade donors’ personal or contact
             information with anyone else. Questions on donating? Contact Kim
-            Wright, Founder/Executive Director at (773) 941-1200 or via email at{" "}
-            <strong>Founder@TheYMIM.org</strong>
+            Wright, Founder/Executive Director at <PhoneNumber /> or via email
+            at{" "}
+            <strong>
+              <Email />
+            </strong>
           </p>
 
           <div className="mx-auto donate">

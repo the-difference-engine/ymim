@@ -1,7 +1,7 @@
 "use strict";
 
 /**
- * Lifecycle callbacks for the `contact-page` model.
+ * Lifecycle callbacks for the `social` model.
  */
 
 module.exports = {

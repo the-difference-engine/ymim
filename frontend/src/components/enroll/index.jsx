@@ -5,6 +5,7 @@ import Text from "./enroll.md";
 import "react-bootstrap";
 import SingleCarousel from "../SingleCarousel";
 import axios from "axios";
+import Email from "../static_pages/email.jsx";
 
 class Enroll extends Component {
   constructor(props) {

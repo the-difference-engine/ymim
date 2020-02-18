@@ -1,6 +1,6 @@
 {
   "paths": {
-    "/contact-pages": {
+    "/socials": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -10,10 +10,9 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Social"
                   }
                 }
               }
@@ -51,7 +50,7 @@
           }
         },
         "summary": "",
-        "tags": ["Contact-page"],
+        "tags": ["Social"],
         "parameters": [
           {
             "name": "_limit",
@@ -200,11 +199,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Social"
                 }
               }
             }
@@ -241,21 +236,21 @@
           }
         },
         "summary": "",
-        "tags": ["Contact-page"],
+        "tags": ["Social"],
         "requestBody": {
           "description": "",
           "required": true,
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewContact-page"
+                "$ref": "#/components/schemas/NewSocial"
               }
             }
           }
         }
       }
     },
-    "/contact-pages/count": {
+    "/socials/count": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -266,8 +261,8 @@
               "application/json": {
                 "schema": {
                   "properties": {
-                    "foo": {
-                      "type": "string"
+                    "count": {
+                      "type": "integer"
                     }
                   }
                 }
@@ -306,11 +301,11 @@
           }
         },
         "summary": "",
-        "tags": ["Contact-page"],
+        "tags": ["Social"],
         "parameters": []
       }
     },
-    "/contact-pages/{id}": {
+    "/socials/{id}": {
       "get": {
         "deprecated": false,
         "description": "",
@@ -320,11 +315,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Social"
                 }
               }
             }
@@ -361,7 +352,7 @@
           }
         },
         "summary": "",
-        "tags": ["Contact-page"],
+        "tags": ["Social"],
         "parameters": [
           {
             "name": "id",
@@ -384,11 +375,7 @@
             "content": {
               "application/json": {
                 "schema": {
-                  "properties": {
-                    "foo": {
-                      "type": "string"
-                    }
-                  }
+                  "$ref": "#/components/schemas/Social"
                 }
               }
             }
@@ -425,14 +412,14 @@
           }
         },
         "summary": "",
-        "tags": ["Contact-page"],
+        "tags": ["Social"],
         "requestBody": {
           "description": "",
           "required": true,
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/NewContact-page"
+                "$ref": "#/components/schemas/NewSocial"
               }
             }
           }
@@ -497,7 +484,7 @@
           }
         },
         "summary": "",
-        "tags": ["Contact-page"],
+        "tags": ["Social"],
         "parameters": [
           {
             "name": "id",
@@ -515,71 +502,41 @@
   },
   "components": {
     "schemas": {
-      "Contact-page": {
-        "required": ["id", "UpdateImage"],
+      "Social": {
+        "required": ["id"],
         "properties": {
           "id": {
             "type": "string"
           },
-          "UpdateImage": {
-            "required": [
-              "id",
-              "name",
-              "hash",
-              "mime",
-              "size",
-              "url",
-              "provider"
-            ],
-            "properties": {
-              "id": {
-                "type": "string"
-              },
-              "name": {
-                "type": "string"
-              },
-              "hash": {
-                "type": "string"
-              },
-              "sha256": {
-                "type": "string"
-              },
-              "ext": {
-                "type": "string"
-              },
-              "mime": {
-                "type": "string"
-              },
-              "size": {
-                "type": "number"
-              },
-              "url": {
-                "type": "string"
-              },
-              "provider": {
-                "type": "string"
-              },
-              "provider_metadata": {
-                "type": "object"
-              },
-              "related": {
-                "type": "string"
-              }
-            }
+          "facebook": {
+            "type": "string"
           },
-          "richie": {
+          "instagram": {
+            "type": "string"
+          },
+          "twitter": {
             "type": "string"
           }
         }
       },
-      "NewContact-page": {
+      "NewSocial": {
         "properties": {
-          "richie": {
+          "facebook": {
+            "type": "string"
+          },
+          "instagram": {
+            "type": "string"
+          },
+          "twitter": {
             "type": "string"
           }
         }
       }
     }
   },
-  "tags": []
+  "tags": [
+    {
+      "name": "Social"
+    }
+  ]
 }

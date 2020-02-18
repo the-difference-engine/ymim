@@ -9,15 +9,6 @@
     "timestamps": true
   },
   "attributes": {
-    "updateimage": {
-      "collection": "file",
-      "via": "related",
-      "plugin": "upload",
-      "required": false
-    },
-    "aboutText": {
-      "type": "richtext"
-    },
     "aboutKim": {
       "type": "richtext"
     },
