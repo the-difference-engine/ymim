@@ -1,154 +1,146 @@
+.mainContainer {
+  padding: 0px 50px 25px 50px;
+}
 #aboutPageTextRow {
-  padding-left: 133px;
-  padding-right: 133px;
+  margin: 0px;
   display: block;
 }
-
 .sub-heading {
   font-size: 24px;
+  padding: 0px;
+  width: 100%;
 }
 
 .about-people-row {
-  margin-bottom: 20px;
+  margin: 40px 0px;
 }
+
 .images {
-  margin-bottom: 60px;
-  margin-left: 120px;
-  margin-right: 40px;
+  display: flex;
+  align-items: center;
 }
 
 .images img {
-  width: 330px;
+  width: 85%;
   border: 5px solid #d3d3d3;
 }
 
-#kim-image {
-  margin-top: 90px;
-  margin-bottom: 30px;
-  height: 350px;
-}
-
-#pierre-image {
-  margin-top: 30px;
-  margin-bottom: 30px;
-  height: 350px;
-}
-
-#shirley-image {
-  margin-top: 30px;
-  height: 355px;
-}
-
 .about-heading {
-  margin-left: 120px;
-  margin-bottom: 10px;
-  padding: 15px 0px;
+  margin: auto;
+  font-size: 48px;
   font-weight: bold;
+  width: 100%;
+  text-align: center;
 }
 
 .people-heading {
-  margin-top: 45px;
-  font-size: 48px;
+  font-size: 40px;
   font-weight: bold;
   display: inline-block;
+  width: 100%;
+}
+
+@media (min-width: 2000px) {
+  .mainContainer {
+    max-width: 2000px;
+  }
+
+  .mainContainer p {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .images {
+    display: inline-block;
+  }
+
+  .about-people-row {
+    margin: 80px 0px;
+    text-align: center;
+  }
+  h1.heading,
+  h1.about-heading {
+    font-size: 80px;
+  }
+  .sub-heading {
+    font-size: 43px;
+    margin-bottom: 16px;
+  }
+  .people-heading {
+    font-size: 64px;
+  }
 }
 
 /* tablet */
 
-@media all and (min-width: 768px) and (max-width: 1023px) {
-  #aboutPageTextRow {
-    padding-left: 20px;
-    padding-right: 20px;
+@media all and (min-width: 600px) and (max-width: 1023px) {
+  .mainContainer {
+    padding: 0px 20px;
   }
+
   .sub-heading {
     font-size: 24px;
-  }
-
-  #kim-image {
-    margin-top: 0px;
-  }
-  #pierre-image {
-    margin-top: 0px;
-  }
-
-  #shirley-image {
-    margin-top: 0px;
-  }
-
-  .images {
-    margin: 0;
-    margin-right: 20px;
-    height: 350px;
-    margin-bottom: 10px;
+    padding: 0px;
   }
 
   .images img {
-    width: 300px;
+    width: 100%;
   }
 
-  .heading {
-    font-size: 30px;
-  }
-
-  p {
+  .mainContainer p {
     font-size: 16px;
   }
-  .about-heading {
+
+  h1.heading h1.about-heading {
     font-size: 45px;
-    margin-left: 0;
-    text-align: center;
   }
   .people-col {
-    display: inline-block;
-    margin-left: 20px;
+    margin-left: 30px;
+    padding: 0px;
   }
+
   .people-heading {
     font-size: 38px;
     margin-top: 0px;
   }
-  .people-col .sub-heading {
-    padding-top: 7px;
-  }
+
   .about-people-row {
-    margin: 20px 0px;
+    margin: 30px 0px;
   }
 }
 
 /* mobile */
 
-@media all and (min-width: 300px) and (max-width: 425px) {
-  #aboutPageTextRow {
-    padding-left: 20px;
-    padding-right: 20px;
+@media all and (min-width: 300px) and (max-width: 767px) {
+  .mainContainer {
+    padding: 0px 20px;
   }
   .images {
-    margin: 0;
-    margin-bottom: 12px;
-    padding-left: 30px;
-    padding-right: 30px;
+    margin-bottom: 15px;
+    padding: 0px 20px;
   }
   .images img {
     width: 100%;
   }
 
-  .heading {
-    font-size: 26px;
+  h1.heading,
+  h1.about-heading {
+    font-size: 32px;
   }
   .about-people-row .sub-heading,
   #aboutPageTextRow .sub-heading {
     font-size: 20px;
-    padding-top: 0px;
-    margin-top: 8px;
   }
+
   .people-heading {
-    font-size: 26px;
+    font-size: 28px;
     font-weight: bold;
   }
-  p {
-    font-size: 14px;
+  .mainContainer p {
+    font-size: 16px;
   }
-  .about-heading {
-    margin-left: 0px;
-    margin-bottom: 0px;
+
+  .about-people-row {
+    margin: 20px 0px;
   }
 }
