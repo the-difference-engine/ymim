@@ -45,7 +45,7 @@
     max-width: 2000px;
   }
 
-  p {
+  .mainContainer p {
     font-size: 32px;
     margin-bottom: 10px;
   }
@@ -87,7 +87,7 @@
     width: 100%;
   }
 
-  p {
+  .mainContainer p {
     font-size: 16px;
   }
 
@@ -136,7 +136,7 @@
     font-size: 28px;
     font-weight: bold;
   }
-  p {
+  .mainContainer p {
     font-size: 16px;
   }
 
