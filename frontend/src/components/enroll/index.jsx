@@ -4,39 +4,31 @@ import "./enroll.css";
 import Text from "./enroll.md";
 import "react-bootstrap";
 import SingleCarousel from "../SingleCarousel";
-import axios from "axios";
 import Email from "../static_pages/email.jsx";
+import getEmail from "../../actions/email_enroll_page.js";
+import { connect } from "react-redux";
 
 class Enroll extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      pageText: "",
-      pageImage: "",
+      text: null,
       loadCounter: 0,
       iframeHeight: 1400
     };
   }
-
   componentDidMount() {
-    const token =
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNTgxMzgzNDc3LCJleHAiOjE1ODM5NzU0Nzd9.fLn5jTbyPzUMTN-h61DUQtgEdzAXUZMczGqkzFOuwT8";
-    const url = "http://localhost:1337/enroll-pages";
-    axios
-      .get(url, {
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      })
-      .then(response => {
-        this.setState({
-          pageText: response.data[0].pageText,
-          pageImage: `http://localhost:1337${response.data[0].pageImage[0].url}`
+    let email = this.props.gEmail();
+  }
+
+  static getDerivedStateFromProps(props, state) {
+    if (props.email) {
+      fetch(Text)
+        .then(response => response.text())
+        .then(text => {
+          state.text = text.replace(/{{email}}/g, props.email);
         });
-      })
-      .catch(error => {
-        console.log("An error occurred:", error);
-      });
+    }
   }
 
   setHeight = () => {
@@ -53,28 +45,26 @@ class Enroll extends Component {
       return 1327;
     }
   };
-
   loaded = () => {
     let height = this.state.loadCounter % 2 === 0 ? this.setHeight() : 400;
     let loadCounter = this.state.loadCounter + 1;
     this.setState({ iframeHeight: height, loadCounter: loadCounter });
   };
-
   render() {
-    console.log(this.state.pageImage);
     return (
       <div>
         <SingleCarousel
           id="enroll-carousel"
           header="Young Masterbuilders in Motion"
-          image={this.state.pageImage}
+          image="ymim7.png"
         />
         <div className="container group mt-2">
-          <div className="container col-sm-4 float-right mt-5">
+          {this.props.email} Email
+          <div className="container col-sm-4 float-right mt-4">
             <Markdown
               id="fontcss"
               className="text-left"
-              source={this.state.pageText}
+              source={this.state.text}
             />
           </div>
           <div className="container col-sm-8 mt-7">
@@ -94,4 +84,23 @@ class Enroll extends Component {
   }
 }
 
-export default Enroll;
+const mapStateToProps = state => {
+  return {
+    email: state.email
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    gEmail: () => {
+      dispatch(getEmail());
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Enroll);
+
+// export default Enroll;

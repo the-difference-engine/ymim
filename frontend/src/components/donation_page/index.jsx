@@ -4,8 +4,33 @@ import "./index.css";
 import Email from "../static_pages/email.jsx";
 import PhoneNumber from "../static_pages/phoneNumber.jsx";
 import TaxId from "../static_pages/taxId.jsx";
+import axios from "axios";
 
 class Donate extends Component {
+  state = {
+    paypal: ""
+  };
+
+  componentDidMount() {
+    const token =
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNTgxMzgzNDc3LCJleHAiOjE1ODM5NzU0Nzd9.fLn5jTbyPzUMTN-h61DUQtgEdzAXUZMczGqkzFOuwT8";
+    const paypal = "http://localhost:1337/donates";
+    axios
+      .get(paypal, {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      })
+      .then(response =>
+        this.setState({
+          paypal: response.data[0].paypal
+        })
+      )
+      .catch(error => {
+        console.log("An error occurred:", error);
+      });
+  }
+
   render() {
     return (
       <Row noGutters="true">
@@ -41,7 +66,7 @@ class Donate extends Component {
 
           <div className="mx-auto donate">
             <form
-              action="https://www.paypal.com/"
+              action={this.state.paypal}
               method="post"
               target="_blank"
               className="donate-form"

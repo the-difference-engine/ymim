@@ -19,7 +19,6 @@ class NavBar extends Component {
   };
 
   componentDidMount() {
-    //facebook
     const token =
       "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNTgxMzgzNDc3LCJleHAiOjE1ODM5NzU0Nzd9.fLn5jTbyPzUMTN-h61DUQtgEdzAXUZMczGqkzFOuwT8";
     const social = "http://localhost:1337/socials";
@@ -39,40 +38,6 @@ class NavBar extends Component {
       .catch(error => {
         console.log("An error occurred:", error);
       });
-
-    // instagram
-    //     const instagram = "http://localhost:1337/instagrams";
-    //     axios
-    //       .get(instagram, {
-    //         headers: {
-    //           Authorization: `Bearer ${token}`
-    //         }
-    //       })
-    //       .then(response =>
-    //         this.setState({
-    //           instagram: response.data[0].instagram
-    //         })
-    //       )
-    //       .catch(error => {
-    //         console.log("An error occurred:", error);
-    //       });
-    //
-    //       // twitter
-    //       const twitter = "http://localhost:1337/twitters";
-    //       axios
-    //         .get(twitter, {
-    //           headers: {
-    //             Authorization: `Bearer ${token}`
-    //           }
-    //         })
-    //         .then(response =>
-    //           this.setState({
-    //             twitter: response.data[0].twitter
-    //           })
-    //         )
-    //         .catch(error => {
-    //           console.log("An error occurred:", error);
-    //         });
   }
 
   render() {
