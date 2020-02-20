@@ -1,0 +1,16 @@
+{
+  "connection": "default",
+  "collectionName": "volunteer_videos",
+  "info": {
+    "name": "volunteerVideo"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "videos": {
+      "type": "string"
+    }
+  }
+}

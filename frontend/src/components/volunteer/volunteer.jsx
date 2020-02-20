@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./volunteer.css";
 import SingleCarousel from "../SingleCarousel/index";
+import axios from "axios";
 
 class Volunteer extends Component {
   constructor(props) {
@@ -9,8 +10,33 @@ class Volunteer extends Component {
 
     this.state = {
       loadCounter: 0,
-      iframeHeight: 1240
+      iframeHeight: 1240,
+      video1: "",
+      video2: "",
+      video3: ""
     };
+  }
+
+  componentDidMount() {
+    const token =
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNTgxMzgzNDc3LCJleHAiOjE1ODM5NzU0Nzd9.fLn5jTbyPzUMTN-h61DUQtgEdzAXUZMczGqkzFOuwT8";
+    const videos = "http://localhost:1337/volunteer-videos";
+    axios
+      .get(videos, {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      })
+      .then(response =>
+        this.setState({
+          video1: response.data[0].videos,
+          video2: response.data[1].videos,
+          video3: response.data[2].videos
+        })
+      )
+      .catch(error => {
+        console.log("An error occurred:", error);
+      });
   }
 
   setHeight = () => {
@@ -87,7 +113,7 @@ class Volunteer extends Component {
                   <h4 className="videoFrameTitle">Inspiring</h4>
                   <div className="videoWrapper">
                     <iframe
-                      src="https://www.youtube.com/embed/PK9ESRMGq74"
+                      src={this.state.video1}
                       frameBorder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
@@ -99,7 +125,7 @@ class Volunteer extends Component {
                   <h4 className="videoFrameTitle">Connecting</h4>
                   <div className="videoWrapper">
                     <iframe
-                      src="https://www.youtube.com/embed/jdsqht1m1rE"
+                      src={this.state.video2}
                       frameBorder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
@@ -111,7 +137,7 @@ class Volunteer extends Component {
                   <h4 className="videoFrameTitle">Empowering</h4>
                   <div className="videoWrapper">
                     <iframe
-                      src="https://www.youtube.com/embed/GwXt3tL6FqY"
+                      src={this.state.video3}
                       frameBorder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
