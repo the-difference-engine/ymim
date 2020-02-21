@@ -14,6 +14,7 @@ import Sponsor9 from "../../../assets/Logo2.jpg";
 import Sponsor10 from "../../../assets/Roger's Park Library.PNG";
 import Sponsor11 from "../../../assets/uic logo2.png";
 import Sponsor12 from "../../../assets/Walmart_logo.svg.png";
+import axios from "axios";
 
 let urls = [
   Sponsor1,
@@ -39,13 +40,42 @@ const sponsorsHeading = (
 );
 
 class Sponsors extends Component {
+  state = {
+    sponsors: []
+  };
+
+  componentDidMount() {
+    const token =
+      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNTgxMzgzNDc3LCJleHAiOjE1ODM5NzU0Nzd9.fLn5jTbyPzUMTN-h61DUQtgEdzAXUZMczGqkzFOuwT8";
+    const sponsors = "http://localhost:1337/sponsors";
+    axios
+      .get(sponsors, {
+        headers: {
+          Authorization: `Bearer ${token}`
+        }
+      })
+      .then(response =>
+        this.setState({
+          sponsors: response.data
+        })
+      )
+      .catch(error => {
+        console.log("An error occurred:", error);
+      });
+  }
   render() {
+    console.log(this.state.sponsors);
     return (
       <div className="sponsor-gallery">
         {sponsorsHeading}
         <Container>
-          {urls.map((url, i) => (
-            <img key={i} src={url} className="logo-picture" alt="sponsor logo" />
+          {this.state.sponsors.map((url, i) => (
+            <img
+              key={i}
+              src={`http://localhost:1337${url.sponsors.url}`}
+              className="logo-picture"
+              alt="sponsor logo"
+            />
           ))}
         </Container>
       </div>
