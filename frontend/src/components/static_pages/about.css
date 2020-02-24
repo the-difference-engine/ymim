@@ -26,11 +26,10 @@
 }
 
 .about-heading {
-  margin: auto;
   font-size: 48px;
   font-weight: bold;
   width: 100%;
-  text-align: center;
+  padding-top: 20px;
 }
 
 .people-heading {
@@ -38,6 +37,12 @@
   font-weight: bold;
   display: inline-block;
   width: 100%;
+}
+
+.people-col {
+  display: block;
+  margin-bottom: auto;
+  margin-top: auto;
 }
 
 @media (min-width: 2000px) {
@@ -50,14 +55,6 @@
     margin-bottom: 10px;
   }
 
-  .images {
-    display: inline-block;
-  }
-
-  .about-people-row {
-    margin: 80px 0px;
-    text-align: center;
-  }
   h1.heading,
   h1.about-heading {
     font-size: 80px;
@@ -68,6 +65,9 @@
   }
   .people-heading {
     font-size: 64px;
+  }
+  .about-heading {
+    padding-top: 50px;
   }
 }
 
