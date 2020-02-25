@@ -21,7 +21,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     gPhone: () => {
-      dispatch(getStrapi("GET_PHONE", "phoneNumbers"));
+      dispatch(getStrapi("GET_PHONE", "phone-numbers"));
     }
   };
 };

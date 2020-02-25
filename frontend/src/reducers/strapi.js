@@ -1,14 +1,17 @@
 const initialState = {
   email: "founder@ymim.org",
-  phone: "773.941.1200"
+  phone: "773.941.1200",
+  taxId: "82-1904373"
 };
 
 export default function email(state = initialState, action) {
   switch (action.type) {
     case "GET_EMAIL":
-      return { ...initialState, email: action.response.data[0].email };
+      return { ...state, email: action.response.data[0].email };
     case "GET_PHONE":
-      return { ...initialState, phone: action.response.data[0].phone };
+      return { ...state, phone: action.response.data[0].phone };
+    case "GET_TAXID":
+      return { ...state, taxId: action.response.data[0].taxId };
 
     default:
       return state;

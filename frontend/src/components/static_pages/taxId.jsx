@@ -1,34 +1,32 @@
 import React from "react";
-import axios from "axios";
+import { connect } from "react-redux";
+import getStrapi from "../../actions/strapi.js";
 
 class TaxId extends React.Component {
-  state = {
-    taxId: ""
-  };
-
   componentDidMount() {
-    const token =
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNTgxMzgzNDc3LCJleHAiOjE1ODM5NzU0Nzd9.fLn5jTbyPzUMTN-h61DUQtgEdzAXUZMczGqkzFOuwT8";
-    const taxId = "http://localhost:1337/tax-ids";
-    axios
-      .get(taxId, {
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      })
-      .then(response =>
-        this.setState({
-          taxId: response.data[0].taxId
-        })
-      )
-      .catch(error => {
-        console.log("An error occurred:", error);
-      });
+    this.props.gTaxId();
   }
 
   render() {
-    return <>{this.state.taxId}</>;
+    return <>{this.props.taxId}</>;
   }
 }
 
-export default TaxId;
+const mapStateToProps = state => {
+  return {
+    taxId: state.strapi.taxId
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    gTaxId: () => {
+      dispatch(getStrapi("GET_TAXID", "tax-ids"));
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(TaxId);
