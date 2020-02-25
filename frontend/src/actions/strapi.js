@@ -1,18 +1,18 @@
 import axios from "axios";
 
-const getEmail = () => {
+const getStrapi = (action, endpoint) => {
   return dispatch => {
     const token =
       "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNTgxMzgzNDc3LCJleHAiOjE1ODM5NzU0Nzd9.fLn5jTbyPzUMTN-h61DUQtgEdzAXUZMczGqkzFOuwT8";
-    const email = "http://localhost:1337/emails";
-    return axios(email, {
+    const url = `http://localhost:1337/${endpoint}`;
+    return axios(url, {
       headers: {
         Authorization: `Bearer ${token}`
       }
     }).then(response => {
-      return dispatch({ type: "GET_EMAIL", response: response });
+      return dispatch({ type: action, response: response });
     });
   };
 };
 
-export default getEmail;
+export default getStrapi;

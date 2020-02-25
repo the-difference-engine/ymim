@@ -4,8 +4,7 @@ import "./enroll.css";
 import Text from "./enroll.md";
 import "react-bootstrap";
 import SingleCarousel from "../SingleCarousel";
-import Email from "../static_pages/email.jsx";
-import getEmail from "../../actions/email_enroll_page.js";
+import getStrapi from "../../actions/strapi.js";
 import { connect } from "react-redux";
 
 class Enroll extends Component {
@@ -18,7 +17,7 @@ class Enroll extends Component {
     };
   }
   componentDidMount() {
-    let email = this.props.gEmail();
+    this.props.gEmail();
   }
 
   static getDerivedStateFromProps(props, state) {
@@ -86,14 +85,14 @@ class Enroll extends Component {
 
 const mapStateToProps = state => {
   return {
-    email: state.email
+    email: state.strapi.email
   };
 };
 
 const mapDispatchToProps = dispatch => {
   return {
     gEmail: () => {
-      dispatch(getEmail());
+      dispatch(getStrapi("GET_EMAIL", "emails"));
     }
   };
 };
@@ -102,5 +101,3 @@ export default connect(
   mapStateToProps,
   mapDispatchToProps
 )(Enroll);
-
-// export default Enroll;

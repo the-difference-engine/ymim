@@ -1,34 +1,32 @@
 import React from "react";
-import axios from "axios";
+import { connect } from "react-redux";
+import getStrapi from "../../actions/strapi.js";
 
 class PhoneNumber extends React.Component {
-  state = {
-    phone: ""
-  };
-
   componentDidMount() {
-    const token =
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNTgxMzgzNDc3LCJleHAiOjE1ODM5NzU0Nzd9.fLn5jTbyPzUMTN-h61DUQtgEdzAXUZMczGqkzFOuwT8";
-    const phone = "http://localhost:1337/phone-numbers";
-    axios
-      .get(phone, {
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      })
-      .then(response =>
-        this.setState({
-          phone: response.data[0].number
-        })
-      )
-      .catch(error => {
-        console.log("An error occurred:", error);
-      });
+    this.props.gPhone();
   }
 
   render() {
-    return <>{this.state.phone}</>;
+    return <>{this.props.phone}</>;
   }
 }
 
-export default PhoneNumber;
+const mapStateToProps = state => {
+  return {
+    phone: state.strapi.phone
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    gPhone: () => {
+      dispatch(getStrapi("GET_PHONE", "phoneNumbers"));
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(PhoneNumber);

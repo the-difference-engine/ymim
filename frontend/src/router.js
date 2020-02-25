@@ -1,7 +1,7 @@
 import React from "react";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import { Provider } from "react-redux";
-import { createStore, applyMiddleware } from "redux";
+import { createStore, applyMiddleware, compose } from "redux";
 import fetchData from "./reducers";
 import thunk from "redux-thunk";
 import Home from "./components/home";
@@ -21,7 +21,8 @@ import Events from "./components/events";
 import Volunteer from "./components/volunteer/volunteer.jsx";
 import ScrollToTop from "./components/to_the_top";
 
-let store = createStore(fetchData, applyMiddleware(thunk));
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+let store = createStore(fetchData, composeEnhancers(applyMiddleware(thunk)));
 
 const router = (
   <Provider store={store}>
