@@ -510,12 +510,18 @@
           },
           "paypal": {
             "type": "string"
+          },
+          "token": {
+            "type": "string"
           }
         }
       },
       "NewDonate": {
         "properties": {
           "paypal": {
+            "type": "string"
+          },
+          "token": {
             "type": "string"
           }
         }

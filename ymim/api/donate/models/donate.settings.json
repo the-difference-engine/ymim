@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "donates",
   "info": {
     "name": "donate"
   },
@@ -9,8 +11,9 @@
   "attributes": {
     "paypal": {
       "type": "string"
+    },
+    "token": {
+      "type": "string"
     }
-  },
-  "connection": "default",
-  "collectionName": "donates"
+  }
 }

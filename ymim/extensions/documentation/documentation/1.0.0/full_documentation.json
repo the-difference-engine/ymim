@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "02/20/2020 8:08:38 PM"
+    "x-generation-date": "02/24/2020 9:03:35 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -6889,12 +6889,18 @@
           },
           "paypal": {
             "type": "string"
+          },
+          "token": {
+            "type": "string"
           }
         }
       },
       "NewDonate": {
         "properties": {
           "paypal": {
+            "type": "string"
+          },
+          "token": {
             "type": "string"
           }
         }

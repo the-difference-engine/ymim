@@ -64,7 +64,6 @@ class Sponsors extends Component {
       });
   }
   render() {
-    console.log(this.state.sponsors);
     return (
       <div className="sponsor-gallery">
         {sponsorsHeading}

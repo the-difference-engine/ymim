@@ -58,7 +58,6 @@ class Enroll extends Component {
           image="ymim7.png"
         />
         <div className="container group mt-2">
-          {this.props.email} Email
           <div className="container col-sm-4 float-right mt-4">
             <Markdown
               id="fontcss"

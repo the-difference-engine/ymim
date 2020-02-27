@@ -10,37 +10,18 @@ import {
 import logo from "../../../assets/logo.png";
 import "./index.css";
 import axios from "axios";
+import { connect } from "react-redux";
+import getStrapi from "../../../actions/strapi.js";
 
 class NavBar extends Component {
-  state = {
-    facebook: "",
-    twitter: "",
-    instagram: ""
-  };
-
   componentDidMount() {
-    const token =
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNTgxMzgzNDc3LCJleHAiOjE1ODM5NzU0Nzd9.fLn5jTbyPzUMTN-h61DUQtgEdzAXUZMczGqkzFOuwT8";
-    const social = "http://localhost:1337/socials";
-    axios
-      .get(social, {
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      })
-      .then(response =>
-        this.setState({
-          facebook: response.data[1].facebook,
-          instagram: response.data[2].instagram,
-          twitter: response.data[0].twitter
-        })
-      )
-      .catch(error => {
-        console.log("An error occurred:", error);
-      });
+    this.props.gFacebook();
+    this.props.gTwitter();
+    this.props.gInstagram();
   }
 
   render() {
+    console.log(this.props);
     return (
       <Container fluid={true}>
         <Row noGutters={true}>
@@ -66,19 +47,19 @@ class NavBar extends Component {
               </Nav>
               {/* social media links */}
               <Nav id="tsocial" className="ml-auto">
-                <Nav.Link href={this.state.facebook} target="_blank">
+                <Nav.Link href={this.props.facebook} target="_blank">
                   <FontAwesomeIcon
                     className="social-media"
                     icon={faFacebookSquare}
                   />
                 </Nav.Link>
-                <Nav.Link href={this.state.instagram} target="_blank">
+                <Nav.Link href={this.props.instagram} target="_blank">
                   <FontAwesomeIcon
                     className="social-media"
                     icon={faInstagram}
                   />
                 </Nav.Link>
-                <Nav.Link href={this.state.twitter} target="_blank">
+                <Nav.Link href={this.props.twitter} target="_blank">
                   <FontAwesomeIcon className="social-media" icon={faTwitter} />
                 </Nav.Link>
               </Nav>
@@ -125,4 +106,29 @@ class NavBar extends Component {
   }
 }
 
-export default NavBar;
+const mapStateToProps = state => {
+  return {
+    twitter: state.strapi.twitter,
+    facebook: state.strapi.facebook,
+    instagram: state.strapi.instagram
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    gFacebook: () => {
+      dispatch(getStrapi("GET_SOCIAL", "socials"));
+    },
+    gTwitter: () => {
+      dispatch(getStrapi("GET_SOCIAL", "socials"));
+    },
+    gInstagram: () => {
+      dispatch(getStrapi("GET_SOCIAL", "socials"));
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(NavBar);
