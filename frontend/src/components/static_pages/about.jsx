@@ -5,45 +5,17 @@ import { Container, Row, Col } from "react-bootstrap";
 import PierrePriestley from "./../../assets/Pierre-Priestley_new.jpg";
 import ShirleyScott from "./../../assets/Shirley-Scott_new.jpg";
 import KimWright from "./../../assets/KWright_new.jpg";
-import axios from "axios";
 import ReactMarkdown from "react-markdown";
+import { connect } from "react-redux";
+import getStrapi from "../../actions/strapi.js";
 
 class About extends Component {
-  state = {
-    aboutKim: "",
-    aboutPierre: "",
-    aboutShirley: "",
-    kimPhoto: "",
-    pierrePhoto: "",
-    shirleyPhoto: ""
-  };
-
   componentDidMount() {
-    const token =
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNTgxMzgzNDc3LCJleHAiOjE1ODM5NzU0Nzd9.fLn5jTbyPzUMTN-h61DUQtgEdzAXUZMczGqkzFOuwT8";
-    const url = "http://localhost:1337/about-pages";
-    axios
-      .get(url, {
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      })
-      .then(response => {
-        this.setState({
-          aboutKim: response.data[0].aboutKim,
-          aboutPierre: response.data[0].aboutPierre,
-          aboutShirley: response.data[0].aboutShirley,
-          kimPhoto: `http://localhost:1337${response.data[0].kimPhoto[0].url}`,
-          pierrePhoto: `http://localhost:1337${response.data[0].pierrePhoto[0].url}`,
-          shirleyPhoto: `http://localhost:1337${response.data[0].shirleyPhoto[0].url}`
-        });
-      })
-      .catch(error => {
-        console.log("An error occurred:", error);
-      });
+    this.props.gAbout();
   }
 
   render() {
+    console.log(this.props.kimPhoto);
     return (
       <Container fluid="true">
         <SingleCarousel
@@ -115,14 +87,14 @@ class About extends Component {
             <Col xs="12" md="5" lg="4" xl="4" className="images">
               <img
                 id="kim-image"
-                src={this.state.kimPhoto}
+                src={this.props.kimPhoto}
                 alt={"Kim Wright"}
               />
             </Col>
             <Col xs="12" md="6" lg="4" xl="6" className="people-col">
               <h1 className="people-heading text-left">Kim Wright, MBA</h1>
               <h4 className="sub-heading text-left">Founder and President</h4>
-              <p className="text-left">{this.state.aboutKim}</p>
+              <p className="text-left">{this.props.aboutKim}</p>
             </Col>
           </Row>
 
@@ -130,7 +102,7 @@ class About extends Component {
             <Col xs="12" md="5" lg="4" xl="4" className="images">
               <img
                 id="pierre-image"
-                src={PierrePriestley}
+                src={this.props.pierrePhoto}
                 alt={"Pierre Priestley"}
               />
             </Col>
@@ -139,7 +111,7 @@ class About extends Component {
               <h4 className="sub-heading text-left">
                 Board Officer, Treasurer
               </h4>
-              <p className="text-left">{this.state.aboutPierre}</p>
+              <p className="text-left">{this.props.aboutPierre}</p>
             </Col>
           </Row>
 
@@ -147,7 +119,7 @@ class About extends Component {
             <Col xs="12" md="5" lg="4" xl="4" className="images">
               <img
                 id="shirley-image"
-                src={ShirleyScott}
+                src={this.props.shirleyPhoto}
                 alt={"Shirley Scott"}
               />
             </Col>
@@ -158,7 +130,7 @@ class About extends Component {
               <h4 className="sub-heading text-left">
                 Board Officer, Secretary
               </h4>
-              <p className="text-left">{this.state.aboutShirley}</p>
+              <p className="text-left">{this.props.aboutShirley}</p>
             </Col>
           </Row>
         </Container>
@@ -167,4 +139,26 @@ class About extends Component {
   }
 }
 
-export default About;
+const mapStateToProps = state => {
+  return {
+    aboutKim: state.strapi.aboutKim,
+    aboutPierre: state.strapi.aboutPierre,
+    aboutShirley: state.strapi.aboutShirley,
+    kimPhoto: `http://localhost:1337${state.strapi.kimPhoto}`,
+    pierrePhoto: `http://localhost:1337${state.strapi.pierrePhoto}`,
+    shirleyPhoto: `http://localhost:1337${state.strapi.shirleyPhoto}`
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    gAbout: () => {
+      dispatch(getStrapi("GET_ABOUT", "about-pages"));
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(About);
