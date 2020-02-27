@@ -2,7 +2,8 @@ import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./volunteer.css";
 import SingleCarousel from "../SingleCarousel/index";
-import axios from "axios";
+import { connect } from "react-redux";
+import getStrapi from "../../actions/strapi.js";
 
 class Volunteer extends Component {
   constructor(props) {
@@ -10,33 +11,8 @@ class Volunteer extends Component {
 
     this.state = {
       loadCounter: 0,
-      iframeHeight: 1240,
-      video1: "",
-      video2: "",
-      video3: ""
+      iframeHeight: 1240
     };
-  }
-
-  componentDidMount() {
-    const token =
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNTgxMzgzNDc3LCJleHAiOjE1ODM5NzU0Nzd9.fLn5jTbyPzUMTN-h61DUQtgEdzAXUZMczGqkzFOuwT8";
-    const videos = "http://localhost:1337/volunteer-videos";
-    axios
-      .get(videos, {
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      })
-      .then(response =>
-        this.setState({
-          video1: response.data[0].videos,
-          video2: response.data[1].videos,
-          video3: response.data[2].videos
-        })
-      )
-      .catch(error => {
-        console.log("An error occurred:", error);
-      });
   }
 
   setHeight = () => {
@@ -113,7 +89,7 @@ class Volunteer extends Component {
                   <h4 className="videoFrameTitle">Inspiring</h4>
                   <div className="videoWrapper">
                     <iframe
-                      src={this.state.video1}
+                      src={this.props.video1}
                       frameBorder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
@@ -125,7 +101,7 @@ class Volunteer extends Component {
                   <h4 className="videoFrameTitle">Connecting</h4>
                   <div className="videoWrapper">
                     <iframe
-                      src={this.state.video2}
+                      src={this.props.video2}
                       frameBorder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
@@ -137,7 +113,7 @@ class Volunteer extends Component {
                   <h4 className="videoFrameTitle">Empowering</h4>
                   <div className="videoWrapper">
                     <iframe
-                      src={this.state.video3}
+                      src={this.props.video3}
                       frameBorder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
@@ -153,5 +129,29 @@ class Volunteer extends Component {
     );
   }
 }
+const mapStateToProps = state => {
+  return {
+    video1: state.strapi.video1,
+    video2: state.strapi.video2,
+    video3: state.strapi.video3
+  };
+};
 
-export default Volunteer;
+const mapDispatchToProps = dispatch => {
+  return {
+    gVideo1: () => {
+      dispatch(getStrapi("GET_SOCIAL", "videos"));
+    },
+    gVideo2: () => {
+      dispatch(getStrapi("GET_SOCIAL", "videos"));
+    },
+    gVideo3: () => {
+      dispatch(getStrapi("GET_SOCIAL", "videos"));
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Volunteer);
