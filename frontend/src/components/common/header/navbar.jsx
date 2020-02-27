@@ -9,7 +9,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import logo from "../../../assets/logo.png";
 import "./index.css";
-import axios from "axios";
 import { connect } from "react-redux";
 import getStrapi from "../../../actions/strapi.js";
 

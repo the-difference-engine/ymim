@@ -11,33 +11,17 @@ import Picture6 from "../../assets/action-shots/TTigue Sscott ASayre.jpg";
 import Picture7 from "../../assets/action-shots/UIC Dream Team SScott ACalix KWright.jpg";
 import Picture8 from "../../assets/action-shots/Calix family donors.jpg";
 import Picture9 from "../../assets/action-shots/textphotos.png";
-import axios from "axios";
+import { connect } from "react-redux";
+import getStrapi from "../../actions/strapi.js";
 
 class Team extends Component {
   state = {
     showImageModal: false,
-    enhancedImage: null,
-    facebook: ""
+    enhancedImage: null
   };
 
   componentDidMount() {
-    const token =
-      "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNTgxMzgzNDc3LCJleHAiOjE1ODM5NzU0Nzd9.fLn5jTbyPzUMTN-h61DUQtgEdzAXUZMczGqkzFOuwT8";
-    const social = "http://localhost:1337/socials";
-    axios
-      .get(social, {
-        headers: {
-          Authorization: `Bearer ${token}`
-        }
-      })
-      .then(response =>
-        this.setState({
-          facebook: response.data[1].facebook
-        })
-      )
-      .catch(error => {
-        console.log("An error occurred:", error);
-      });
+    this.props.gFacebook();
   }
 
   selectImage = event => {
@@ -173,7 +157,7 @@ class Team extends Component {
               </Col>
               <Col className="imageColumn" sm={4}>
                 <a
-                  href={this.state.facebook}
+                  href={this.props.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -198,4 +182,21 @@ class Team extends Component {
   }
 }
 
-export default Team;
+const mapStateToProps = state => {
+  return {
+    facebook: state.strapi.facebook
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    gFacebook: () => {
+      dispatch(getStrapi("GET_SOCIAL", "socials"));
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Team);

@@ -3,7 +3,10 @@ const initialState = {
   phone: "773.941.1200",
   taxId: "82-1904373",
   donateLink: "https://www.paypal.com/",
-  token: ""
+  token: "",
+  facebook: "https://www.facebook.com/theymim/",
+  instagram: "https://www.instagram.com/theyoungmasterbuilders/",
+  twitter: "https://twitter.com/YMIMtweets"
 };
 
 export default function getStrapi(state = initialState, action) {
@@ -23,9 +26,9 @@ export default function getStrapi(state = initialState, action) {
     case "GET_SOCIAL":
       return {
         ...state,
-        instagram: action.response.data[2].instagram,
+        twitter: action.response.data[0].twitter,
         facebook: action.response.data[1].facebook,
-        twitter: action.response.data[0].twitter
+        instagram: action.response.data[2].instagram
       };
     default:
       return state;
