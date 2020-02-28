@@ -10,31 +10,6 @@ class Header extends Component {
     return (
       <div>
         <NavBar />
-        {AuthAdmin ? (
-          <NavLink
-            className="nav-link-top"
-            to="/admin"
-            activeClassName="nav-link-top-selected"
-          >
-            Admin
-          </NavLink>
-        ) : AuthUser ? (
-          <NavLink
-            className="nav-link-top"
-            to="/login"
-            activeClassName="nav-link-top-selected"
-          >
-            Logout
-          </NavLink>
-        ) : (
-          <NavLink
-            className="nav-link-top"
-            to="/login"
-            activeClassName="nav-link-top-selected"
-          >
-            Login
-          </NavLink>
-        )}
       </div>
     );
   }
