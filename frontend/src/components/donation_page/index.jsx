@@ -82,7 +82,6 @@ class Donate extends Component {
   }
 }
 const mapStateToProps = state => {
-  console.log("link:", state.strapi.donateLink);
   return {
     donateLink: state.strapi.donateLink,
     token: state.strapi.token

@@ -15,7 +15,6 @@ class About extends Component {
   }
 
   render() {
-    console.log(this.props.kimPhoto);
     return (
       <Container fluid="true">
         <SingleCarousel

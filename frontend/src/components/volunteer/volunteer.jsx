@@ -27,7 +27,9 @@ class Volunteer extends Component {
       loadCounter: this.state.loadCounter + 1
     });
   };
-
+  componentDidMount() {
+    this.props.gVideos();
+  }
   render() {
     return (
       <div>
@@ -139,14 +141,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    gVideo1: () => {
-      dispatch(getStrapi("GET_SOCIAL", "videos"));
-    },
-    gVideo2: () => {
-      dispatch(getStrapi("GET_SOCIAL", "videos"));
-    },
-    gVideo3: () => {
-      dispatch(getStrapi("GET_SOCIAL", "videos"));
+    gVideos: () => {
+      dispatch(getStrapi("GET_VIDEOS", "videos"));
     }
   };
 };

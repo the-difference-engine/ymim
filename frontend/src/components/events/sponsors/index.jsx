@@ -22,20 +22,24 @@ class Sponsors extends Component {
     return (
       <div className="sponsor-gallery">
         {sponsorsHeading}
-        <Container>// we will come back to this</Container>
+        <Container>
+          {this.props.sponsors ? (
+            this.props.sponsors.map((url, i) => (
+              <img
+                key={i}
+                src={`http://localhost:1337${url.sponsors.url}`}
+                className="logo-picture"
+                alt="sponsor logo"
+              />
+            ))
+          ) : (
+            <label>loading sponsors...</label>
+          )}
+        </Container>
       </div>
     );
   }
 }
-
-// {this.props.sponsors.map((url, i) => (
-//   <img
-//     key={i}
-//     src={`http://localhost:1337${url.sponsors.sponsors.url}`}
-//     className="logo-picture"
-//     alt="sponsor logo"
-//   />
-// ))}
 
 const mapStateToProps = state => {
   return {

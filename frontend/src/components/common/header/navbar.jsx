@@ -14,13 +14,10 @@ import getStrapi from "../../../actions/strapi.js";
 
 class NavBar extends Component {
   componentDidMount() {
-    this.props.gFacebook();
-    this.props.gTwitter();
-    this.props.gInstagram();
+    this.props.gSocials();
   }
 
   render() {
-    console.log(this.props);
     return (
       <Container fluid={true}>
         <Row noGutters={true}>
@@ -115,13 +112,7 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    gFacebook: () => {
-      dispatch(getStrapi("GET_SOCIAL", "socials"));
-    },
-    gTwitter: () => {
-      dispatch(getStrapi("GET_SOCIAL", "socials"));
-    },
-    gInstagram: () => {
+    gSocials: () => {
       dispatch(getStrapi("GET_SOCIAL", "socials"));
     }
   };
