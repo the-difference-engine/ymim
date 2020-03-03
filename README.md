@@ -17,6 +17,7 @@
     - [Required Backend Env Vars](#Required-Backend-Env-Vars)
 
 ## What Technologies Are We Using?
+
 The backend application is written in Python, using the [Django](https://www.djangoproject.com/) framework and the [Django REST Framework](https://www.django-rest-framework.org/) library. The frontend application is written in Javascript, using the [React](https://reactjs.org/) framework and several other third party libraries, bootstrapped via the [create-react-app](https://github.com/facebook/create-react-app) tool.
 
 ## Getting Started With The App
@@ -24,6 +25,7 @@ The backend application is written in Python, using the [Django](https://www.dja
 I'm going to be very blunt: this will be much, much easier on a Mac or Linux system than it will be on a PC. On any PC that doesn't have Hyper-V (any system running any OS older/less powerful than Win10 Pro), you're going to need to run older, mostly unsupported programs. We strongly recommend that you either use a Mac or move to Linux.
 
 ### Mac/Linux Users
+
 - Install homebrew
 
         /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
@@ -32,7 +34,7 @@ I'm going to be very blunt: this will be much, much easier on a Mac or Linux sys
 
         brew install node
 
-- Install Pipenv: 
+- Install Pipenv:
 
         brew install pipenv
 
@@ -43,7 +45,7 @@ I'm going to be very blunt: this will be much, much easier on a Mac or Linux sys
 
 You should now be in the root of the project
 
-When you first clone the repo, you will need to create and populate `.env` files in both the `backend/` and `frontend/` directories to make the applications work correctly. Currently, we only require variables on the backend. 
+When you first clone the repo, you will need to create and populate `.env` files in both the `backend/` and `frontend/` directories to make the applications work correctly. Currently, we only require variables on the backend.
 
 Here are the variables you will need to run the application. Copy this
 
@@ -56,7 +58,7 @@ Here are the variables you will need to run the application. Copy this
     DB_HOST="localhost"
     DB_PORT=5432
 
-Then `cd backend` and `vi .env` and paste this file in there. Then run `:wq!` to save. Then `cd ..` so you are back in the root of the project. 
+Then `cd backend` and `vi .env` and paste this file in there. Then run `:wq!` to save. Then `cd ..` so you are back in the root of the project.
 
 Use `pipenv run secret_key` to generate a value for SECRET_KEY and then save that into the file.
 
@@ -65,19 +67,20 @@ Use `pipenv run secret_key` to generate a value for SECRET_KEY and then save tha
         cd frontend
         npm install
 
-- Install Pipenv: 
-  
+- Install Pipenv:
+
         brew install pipenv
 
 - Set up Pipenv and install the backend dependencies:
-    ```
-    cd backend
-    pipenv install --dev
-    cd ..
-    ```
+
+  ```
+  cd backend
+  pipenv install --dev
+  cd ..
+  ```
 
 - [Download and Install Docker](https://download.docker.com/mac/stable/Docker.dmg)
-- Start Docker containers (from root directory): 
+- Start Docker containers (from root directory):
 
         docker-compose up
 
@@ -92,12 +95,12 @@ To Start the FrontEnd. First make sure you are in the root of the project. Then:
       npm install
       npm start
 ```
+
 You should be able to Visit the Frontend by going to [http://localhost:3000/](http://localhost:3000/). If you see the Home Page, you have won!
 
-* Note: React will automatically launch this page for you if you are using Chrome and you may get a message asking you to allow this! 
+- Note: React will automatically launch this page for you if you are using Chrome and you may get a message asking you to allow this!
 
-
-Open a new Terminal Window and again *make sure you are in the root of the project* Then:
+Open a new Terminal Window and again _make sure you are in the root of the project_ Then:
 
 ```bash
       cd backend
@@ -112,7 +115,7 @@ You should be able to Visit the Backend by going to [http://localhost:8000/](htt
 
 ### Postgres (specific to MAC)
 
-Postgres is our database. You will need to have Postgres installed on your computer to persist data and run the application. 
+Postgres is our database. You will need to have Postgres installed on your computer to persist data and run the application.
 
 If you do not have Postgres installed, you can install it via brew
 
@@ -120,26 +123,26 @@ If you do not have Postgres installed, you can install it via brew
 2. Run the command: `ln -sfv /usr/local/opt/postgresql/*.plist ~/Library/LaunchAgents`
 3. Create two new aliases to start and stop your postgres server. They could look something like this:
 
-     ```
-     alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
-     alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
-     ```
+   ```
+   alias pg_start="launchctl load ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+   alias pg_stop="launchctl unload ~/Library/LaunchAgents/homebrew.mxcl.postgresql.plist"
+   ```
 
 4. Run the alias you just created: `pg_start`. Use this comment to start your database service.
-     - alternatively, `pg_stop` stops your database service.
-5. Run the command: ``createdb postgres ``
+   - alternatively, `pg_stop` stops your database service.
+5. Run the command: `createdb postgres`
 6. Connect to your postgres with the command: `psql`
-8. `createuser -s postgres` - fixes `role "postgres" does not exist`
-9. Test with `psql` command (and some additional commands if issues)
+7. `createuser -s postgres` - fixes `role "postgres" does not exist`
+8. Test with `psql` command (and some additional commands if issues)
 
-     ```
-     $ psql
-     psql (10.0)
-     Type "help" for help.
+   ```
+   $ psql
+   psql (10.0)
+   Type "help" for help.
 
-     postgres=# ALTER ROLE postgres WITH SUPERUSER;
-     postgres=# ALTER ROLE postgres WITH LOGIN;
-     ```
+   postgres=# ALTER ROLE postgres WITH SUPERUSER;
+   postgres=# ALTER ROLE postgres WITH LOGIN;
+   ```
 
 ### PC Users (currently incomplete)
 
@@ -147,10 +150,10 @@ If you do not have Postgres installed, you can install it via brew
 
 Once you have your containers running, the code in your local directory will be linked with the code inside the Docker containers. When you make changes, the app will reboot inside the containers to reflect those changes. The API will be accessible in your browser at `localhost:8000`, and the frontend application will be available at `localhost:3000`.
 
-
 ## External Packages in Use
 
 ### Frontend
+
 If you need to add new packages to the frontend app, you can use npm to do so:
 
     npm install <package_name>
@@ -158,12 +161,13 @@ If you need to add new packages to the frontend app, you can use npm to do so:
 Here are the existing packages already in use:
 
 ### Backend
+
 If you need to add new packages to the backend app, you can use Pipenv to do so:
 
     pipenv install <package_name>
 
-
 Here are the existing packages already in use:
+
 - [Django](https://www.djangoproject.com/): A full-featured web framework for Python
 - [djangorestframework](https://www.django-rest-framework.org/): A library that provides an extensive toolset for using Django as a backend API for an SPA.
 - [django-filter](https://django-filter.readthedocs.io/en/master/): Easy Django Queryset filtering from URL params
@@ -188,6 +192,7 @@ Here are the existing packages already in use:
 The application is deployed in two Heroku pipelines in the young-masterbuilders Heroku team, one for the frontend application and one for the backend. Each pipeline has a staging and production app, linked to the staging and master Github branches of this repo. The app is deployed by either pushing to those branches or manually deploying via the Heroku GUI.
 
 ### Frontend
+
 We're using the [lstoll/heroku-buildpack-monorepo](https://github.com/lstoll/heroku-buildpack-monorepo) & [mars/create-react-app](https://github.com/mars/create-react-app-buildpack) buildpacks. They must be installed in that order to function.
 
 ### Required Frontend Env Vars
@@ -195,9 +200,51 @@ We're using the [lstoll/heroku-buildpack-monorepo](https://github.com/lstoll/her
     APP_BASE=frontend
 
 ### Backend
+
 On the backend, we use a Python package to extract the DB information from a DATABASE_URL that Heroku provides, so we need fewer environment variables. Make sure to manually create the SECRET_KEY, using the same `pipenv run secret_key`
 
 ### Required Backend Env Vars
 
     APP_BASE=backend
     SECRET_KEY=<SECRET_KEY>
+
+# Submit to Strapi from Postman
+
+​
+set up strapi
+https://strapi.io/documentation/3.0.0-beta.x/getting-started/quick-start.html#_1-install-strapi-and-create-a-new-project
+​
+set up content-types
+​
+ensure that the `Authenticated` role is enabled to perform the actions that are needed
+For Example:
+click `Authenticated` role
+check all permissions for any of the content types that were created.
+​
+ensure that the `Public` role is enabled to perform the actions that are needed
+Likely only GET requests
+​
+set up user
+associate user to `Authenticated`
+​
+set up documentation in strapi
+https://strapi.io/documentation/3.0.0-beta.x/plugins/documentation.html#installation
+​
+go to documentation tab in UI of strapi
+copy token
+​
+open Postman
+create new POST request to `http://localhost:1337/{{content-type}}` (content-type is a specific content type created in Strapi)
+under `Authorization` tab (below url), select `Bearer Token` and paste the token from documentation tab
+under `Body` tab,
+select `raw` radio option
+select `json` from type dropdown
+under the radio selection place the data to submit. (quotes are important)
+for example:
+​
+{
+"name": "name from postman",
+"description": "description from postman"
+}
+​
+click `Send`
