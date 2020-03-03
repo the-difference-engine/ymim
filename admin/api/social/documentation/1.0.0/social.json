@@ -511,10 +511,10 @@
           "facebook": {
             "type": "string"
           },
-          "instagram": {
+          "twitter": {
             "type": "string"
           },
-          "twitter": {
+          "instagram": {
             "type": "string"
           }
         }
@@ -524,10 +524,10 @@
           "facebook": {
             "type": "string"
           },
-          "instagram": {
+          "twitter": {
             "type": "string"
           },
-          "twitter": {
+          "instagram": {
             "type": "string"
           }
         }

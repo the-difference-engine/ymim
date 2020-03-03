@@ -1,4 +1,6 @@
 {
+  "connection": "default",
+  "collectionName": "emails",
   "info": {
     "name": "email"
   },
@@ -8,9 +10,7 @@
   },
   "attributes": {
     "email": {
-      "type": "richtext"
+      "type": "string"
     }
-  },
-  "connection": "default",
-  "collectionName": "emails"
+  }
 }

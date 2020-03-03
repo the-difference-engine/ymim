@@ -23,18 +23,20 @@ const initialState = {
   video1: "https://www.youtube.com/embed/PK9ESRMGq74",
   video2: "https://www.youtube.com/embed/jdsqht1m1rE",
   video3: "https://www.youtube.com/embed/GwXt3tL6FqY",
-  sponsor1: Sponsor1,
-  sponsor2: Sponsor2,
-  sponsor3: Sponsor3,
-  sponsor4: Sponsor4,
-  sponsor5: Sponsor5,
-  sponsor6: Sponsor6,
-  sponsor7: Sponsor7,
-  sponsor8: Sponsor8,
-  sponsor9: Sponsor9,
-  sponsor10: Sponsor10,
-  sponsor11: Sponsor11,
-  sponsor12: Sponsor12
+  sponsors: [
+    Sponsor1,
+    Sponsor2,
+    Sponsor3,
+    Sponsor4,
+    Sponsor5,
+    Sponsor6,
+    Sponsor7,
+    Sponsor8,
+    Sponsor9,
+    Sponsor10,
+    Sponsor11,
+    Sponsor12
+  ]
 };
 
 export default function getStrapi(state = initialState, action) {
@@ -54,9 +56,9 @@ export default function getStrapi(state = initialState, action) {
     case "GET_SOCIAL":
       return {
         ...state,
-        twitter: action.response.data[0].twitter,
-        facebook: action.response.data[1].facebook,
-        instagram: action.response.data[2].instagram
+        twitter: action.response.data.twitter,
+        facebook: action.response.data.facebook,
+        instagram: action.response.data.instagram
       };
     case "GET_VOLUNTEERSVIDEOS":
       return {
