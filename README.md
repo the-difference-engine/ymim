@@ -208,43 +208,58 @@ On the backend, we use a Python package to extract the DB information from a DAT
     APP_BASE=backend
     SECRET_KEY=<SECRET_KEY>
 
-# Submit to Strapi from Postman
+## Submit to Strapi from Postman
 
-​
-set up strapi
+### Set up strapi
+
 https://strapi.io/documentation/3.0.0-beta.x/getting-started/quick-start.html#_1-install-strapi-and-create-a-new-project
 ​
-set up content-types
-​
-ensure that the `Authenticated` role is enabled to perform the actions that are needed
-For Example:
-click `Authenticated` role
-check all permissions for any of the content types that were created.
-​
-ensure that the `Public` role is enabled to perform the actions that are needed
-Likely only GET requests
-​
-set up user
-associate user to `Authenticated`
-​
-set up documentation in strapi
+
+### Set up content-types
+
+- Ensure that the `Authenticated` role is enabled to perform the actions that are needed.
+
+  For Example:
+
+  - Click `Authenticated` role
+  - Check all permissions for any of the content types that were created.
+    ​
+
+- Ensure that the `Public` role is enabled to perform the actions that are needed
+  Likely only GET requests
+  ​
+
+### Set up user
+
+- Associate user to `Authenticated`
+  ​
+
+### Set up documentation in strapi
+
 https://strapi.io/documentation/3.0.0-beta.x/plugins/documentation.html#installation
 ​
-go to documentation tab in UI of strapi
-copy token
-​
-open Postman
-create new POST request to `http://localhost:1337/{{content-type}}` (content-type is a specific content type created in Strapi)
-under `Authorization` tab (below url), select `Bearer Token` and paste the token from documentation tab
-under `Body` tab,
-select `raw` radio option
-select `json` from type dropdown
-under the radio selection place the data to submit. (quotes are important)
-for example:
-​
-{
-"name": "name from postman",
-"description": "description from postman"
-}
-​
-click `Send`
+
+- Go to documentation tab in UI of strapi
+- Copy token
+  ​
+
+### Submitting data through Postman
+
+- Open Postman
+- Create new POST request to `http://localhost:1337/{{content-type}}` (content-type is a specific content type created in Strapi)
+- Under `Authorization` tab (below url), select `Bearer Token` and paste the token from documentation tab
+- Under `Body` tab,
+- Select `raw` radio option
+- Select `json` from type dropdown
+- Under the radio selection place the data to submit. (quotes are important)
+
+  For Example:
+
+  ```json
+  {
+    "name": "name from postman",
+    "description": "description from postman"
+  }
+  ```
+
+- Click `Send`
