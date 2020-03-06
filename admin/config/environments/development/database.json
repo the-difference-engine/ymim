@@ -4,12 +4,15 @@
     "default": {
       "connector": "bookshelf",
       "settings": {
-        "client": "sqlite",
-        "filename": ".tmp/data.db"
+        "client": "postgres",
+        "host": "${process.env.DATABASE_HOST_STAGING}",
+        "port": "${process.env.DATABASE_PORT_STAGING}",
+        "database": "${process.env.DATABASE_NAME_STAGING}",
+        "username": "${process.env.DATABASE_USERNAME_STAGING}",
+        "password": "${process.env.DATABASE_PASSWORD_STAGING}",
+        "ssl": true
       },
-      "options": {
-        "useNullAsDefault": true
-      }
+      "options": {}
     }
   }
 }
