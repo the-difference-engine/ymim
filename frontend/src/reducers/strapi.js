@@ -10,6 +10,9 @@ import Sponsor9 from "../assets/Logo2.jpg";
 import Sponsor10 from "../assets/Roger's Park Library.PNG";
 import Sponsor11 from "../assets/uic logo2.png";
 import Sponsor12 from "../assets/Walmart_logo.svg.png";
+import PierrePriestley from "../assets/Pierre-Priestley_new.jpg";
+import ShirleyScott from "../assets/Shirley-Scott_new.jpg";
+import KimWright from "../assets/KWright_new.jpg";
 
 const initialState = {
   email: "founder@ymim.org",
@@ -24,36 +27,53 @@ const initialState = {
   video2: "https://www.youtube.com/embed/jdsqht1m1rE",
   video3: "https://www.youtube.com/embed/GwXt3tL6FqY",
   sponsors: [
-    Sponsor1,
-    Sponsor2,
-    Sponsor3,
-    Sponsor4,
-    Sponsor5,
-    Sponsor6,
-    Sponsor7,
-    Sponsor8,
-    Sponsor9,
-    Sponsor10,
-    Sponsor11,
-    Sponsor12
-  ]
+    { url: Sponsor1 },
+    { url: Sponsor2 },
+    { url: Sponsor3 },
+    { url: Sponsor4 },
+    { url: Sponsor5 },
+    { url: Sponsor6 },
+    { url: Sponsor7 },
+    { url: Sponsor8 },
+    { url: Sponsor9 },
+    { url: Sponsor10 },
+    { url: Sponsor11 },
+    { url: Sponsor12 }
+  ],
+  kimPhoto: KimWright,
+  pierrePhoto: PierrePriestley,
+  shirleyPhoto: ShirleyScott
 };
+
+function getState(contentType, state, action) {
+  if (action.response.data.length === 0) {
+    return { ...state, [contentType]: initialState[contentType] };
+  } else {
+    return { ...state, [contentType]: action.response.data[0][contentType] };
+  }
+}
 
 export default function getStrapi(state = initialState, action) {
   switch (action.type) {
     case "GET_EMAIL":
-      return { ...state, email: action.response.data[0].email };
+      return getState("email", state, action);
     case "GET_PHONE":
-      return { ...state, phone: action.response.data[0].number };
+      return getState("number", state, action);
     case "GET_TAXID":
-      return { ...state, taxId: action.response.data[0].taxId };
+      return getState("taxId", state, action);
     case "GET_DONATELINK":
+      if (action.response.data.length === 0) {
+        return state;
+      }
       return {
         ...state,
         donateLink: action.response.data[0].paypal,
         token: action.response.data[0].token
       };
     case "GET_SOCIAL":
+      if (action.response.data.length === 0) {
+        return state;
+      }
       return {
         ...state,
         twitter: action.response.data.twitter,
@@ -61,6 +81,9 @@ export default function getStrapi(state = initialState, action) {
         instagram: action.response.data.instagram
       };
     case "GET_VOLUNTEERSVIDEOS":
+      if (action.response.data.length === 0) {
+        return state;
+      }
       return {
         ...state,
         video1: action.response.data[0].videos,
@@ -68,8 +91,14 @@ export default function getStrapi(state = initialState, action) {
         video3: action.response.data[2].videos
       };
     case "GET_SPONSORS":
+      if (action.response.data.length === 0) {
+        return state;
+      }
       return { ...state, sponsors: action.response.data };
     case "GET_ABOUT":
+      if (action.response.data.length === 0) {
+        return state;
+      }
       return {
         ...state,
         aboutKim: action.response.data[0].aboutKim,

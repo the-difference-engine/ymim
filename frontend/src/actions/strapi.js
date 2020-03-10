@@ -14,3 +14,5 @@ const getStrapi = (action, endpoint) => {
     });
   };
 };
+
+export default getStrapi;

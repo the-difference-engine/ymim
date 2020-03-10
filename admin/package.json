@@ -13,6 +13,7 @@
   "dependencies": {
     "axios": "^0.19.2",
     "knex": "<0.20.0",
+    "pg": "^7.18.2",
     "sqlite3": "latest",
     "strapi": "3.0.0-beta.18.7",
     "strapi-admin": "3.0.0-beta.18.7",
