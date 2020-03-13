@@ -142,7 +142,7 @@ const mapStateToProps = state => {
 const mapDispatchToProps = dispatch => {
   return {
     gVideos: () => {
-      dispatch(getStrapi("GET_VIDEOS", "videos"));
+      dispatch(getStrapi("GET_VOLUNTEERSVIDEOS", "volunteer-videos"));
     }
   };
 };

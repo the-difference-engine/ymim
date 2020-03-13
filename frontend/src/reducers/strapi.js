@@ -76,9 +76,9 @@ export default function getStrapi(state = initialState, action) {
       }
       return {
         ...state,
-        twitter: action.response.data.twitter,
-        facebook: action.response.data.facebook,
-        instagram: action.response.data.instagram
+        twitter: action.response.data[0].twitter,
+        facebook: action.response.data[0].facebook,
+        instagram: action.response.data[0].instagram
       };
     case "GET_VOLUNTEERSVIDEOS":
       if (action.response.data.length === 0) {

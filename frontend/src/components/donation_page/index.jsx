@@ -13,6 +13,7 @@ class Donate extends Component {
   }
 
   render() {
+    console.log(this.props);
     return (
       <Row noGutters="true">
         <Container fluid="true" className="content-styling">

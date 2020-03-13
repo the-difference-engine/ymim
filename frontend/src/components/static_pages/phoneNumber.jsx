@@ -14,7 +14,7 @@ class PhoneNumber extends React.Component {
 
 const mapStateToProps = state => {
   return {
-    phone: state.strapi.phone
+    phone: state.strapi.number
   };
 };
 
