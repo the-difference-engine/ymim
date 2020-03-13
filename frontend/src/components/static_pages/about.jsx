@@ -85,7 +85,7 @@ class About extends Component {
           <Row className="about-people-row">
             <Col xs="12" md="5" lg="6" xl="5" className="images">
               <img
-                src={`http://localhost:1337${this.props.kimPhoto}`}
+                src={`${process.env.REACT_APP_STRAPI_HOST}${this.props.kimPhoto}`}
                 alt={"Kim Wright"}
               />
             </Col>
@@ -98,7 +98,7 @@ class About extends Component {
           <Row className="about-people-row">
             <Col xs="12" md="5" lg="6" xl="5" className="images">
               <img
-                src={`http://localhost:1337/${this.props.pierrePhoto}`}
+                src={`${process.env.REACT_APP_STRAPI_HOST}${this.props.pierrePhoto}`}
                 alt={"Pierre Priestley"}
               />
             </Col>
@@ -117,7 +117,7 @@ class About extends Component {
           <Row className="about-people-row" id="shirley">
             <Col xs="12" md="5" lg="6" xl="5" className="images">
               <img
-                src={`http://localhost:1337/${this.props.shirleyPhoto}`}
+                src={`${process.env.REACT_APP_STRAPI_HOST}${this.props.shirleyPhoto}`}
                 alt={"Shirley Scott"}
               />
             </Col>

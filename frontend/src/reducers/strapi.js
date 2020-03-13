@@ -26,19 +26,20 @@ const initialState = {
   video1: "https://www.youtube.com/embed/PK9ESRMGq74",
   video2: "https://www.youtube.com/embed/jdsqht1m1rE",
   video3: "https://www.youtube.com/embed/GwXt3tL6FqY",
+  sponsors_host: process.env.REACT_APP_FRONTEND_HOST,
   sponsors: [
-    { url: Sponsor1 },
-    { url: Sponsor2 },
-    { url: Sponsor3 },
-    { url: Sponsor4 },
-    { url: Sponsor5 },
-    { url: Sponsor6 },
-    { url: Sponsor7 },
-    { url: Sponsor8 },
-    { url: Sponsor9 },
-    { url: Sponsor10 },
-    { url: Sponsor11 },
-    { url: Sponsor12 }
+    { sponsors: { url: Sponsor1 } },
+    { sponsors: { url: Sponsor2 } },
+    { sponsors: { url: Sponsor3 } },
+    { sponsors: { url: Sponsor4 } },
+    { sponsors: { url: Sponsor5 } },
+    { sponsors: { url: Sponsor6 } },
+    { sponsors: { url: Sponsor7 } },
+    { sponsors: { url: Sponsor8 } },
+    { sponsors: { url: Sponsor9 } },
+    { sponsors: { url: Sponsor10 } },
+    { sponsors: { url: Sponsor11 } },
+    { sponsors: { url: Sponsor12 } }
   ],
   kimPhoto: KimWright,
   pierrePhoto: PierrePriestley,
@@ -94,7 +95,11 @@ export default function getStrapi(state = initialState, action) {
       if (action.response.data.length === 0) {
         return state;
       }
-      return { ...state, sponsors: action.response.data };
+      return {
+        ...state,
+        sponsors: action.response.data,
+        sponsors_host: process.env.REACT_APP_STRAPI_HOST
+      };
     case "GET_ABOUT":
       if (action.response.data.length === 0) {
         return state;

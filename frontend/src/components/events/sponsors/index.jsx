@@ -24,10 +24,10 @@ class Sponsors extends Component {
         {sponsorsHeading}
         <Container>
           {this.props.sponsors ? (
-            this.props.sponsors.map((url, i) => (
+            this.props.sponsors.map((sponsor, i) => (
               <img
                 key={i}
-                src={`http://localhost:1337${url.sponsors.url}`}
+                src={`${this.props.sponsors_host}${sponsor.sponsors.url}`}
                 className="logo-picture"
                 alt="sponsor logo"
               />
@@ -43,7 +43,8 @@ class Sponsors extends Component {
 
 const mapStateToProps = state => {
   return {
-    sponsors: state.strapi.sponsors
+    sponsors: state.strapi.sponsors,
+    sponsors_host: state.strapi.sponsors_host
   };
 };
 
