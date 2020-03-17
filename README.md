@@ -213,3 +213,58 @@ On the backend, we use a Python package to extract the DB information from a DAT
 REACT_APP_STRAPI_HOST=http://localhost:1337/
 REACT_APP_FRONTEND_HOST=http://localhost:3000/
 REACT_APP_STRAPI_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNTgzNzk5NzU4LCJleHAiOjE1ODYzOTE3NTh9.dWR7T76GKYKaV5C6s8Yqma6mY6nsaklySF5PCDA4u7c
+## Submit to Strapi from Postman
+
+### Set up strapi
+
+https://strapi.io/documentation/3.0.0-beta.x/getting-started/quick-start.html#_1-install-strapi-and-create-a-new-project
+​
+
+### Set up content-types
+
+- Ensure that the `Authenticated` role is enabled to perform the actions that are needed.
+
+  For Example:
+
+  - Click `Authenticated` role
+  - Check all permissions for any of the content types that were created.
+    ​
+
+- Ensure that the `Public` role is enabled to perform the actions that are needed
+  Likely only GET requests
+  ​
+
+### Set up user
+
+- Associate user to `Authenticated`
+  ​
+
+### Set up documentation in strapi
+
+https://strapi.io/documentation/3.0.0-beta.x/plugins/documentation.html#installation
+​
+
+- Go to documentation tab in UI of strapi
+- Copy token
+  ​
+
+### Submitting data through Postman
+
+- Open Postman
+- Create new POST request to `http://localhost:1337/{{content-type}}` (content-type is a specific content type created in Strapi)
+- Under `Authorization` tab (below url), select `Bearer Token` and paste the token from documentation tab
+- Under `Body` tab,
+- Select `raw` radio option
+- Select `json` from type dropdown
+- Under the radio selection place the data to submit. (quotes are important)
+
+  For Example:
+
+  ```json
+  {
+    "name": "name from postman",
+    "description": "description from postman"
+  }
+  ```
+
+- Click `Send`
