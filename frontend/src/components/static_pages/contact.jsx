@@ -2,7 +2,6 @@ import React, { Component } from "react";
 import "./contact.css";
 import "react-bootstrap";
 import SingleCarousel from "../SingleCarousel/index";
-import axios from "axios";
 import Email from "./email.jsx";
 import PhoneNumber from "./phoneNumber.jsx";
 
