@@ -2,9 +2,6 @@ import React, { Component } from "react";
 import "./about.css";
 import SingleCarousel from "../SingleCarousel/index";
 import { Container, Row, Col } from "react-bootstrap";
-import PierrePriestley from "./../../assets/Pierre-Priestley_new.jpg";
-import ShirleyScott from "./../../assets/Shirley-Scott_new.jpg";
-import KimWright from "./../../assets/KWright_new.jpg";
 import { connect } from "react-redux";
 import getStrapi from "../../actions/strapi.js";
 
@@ -14,7 +11,6 @@ class About extends Component {
   }
 
   render() {
-    console.log(this.props);
     return (
       <Container fluid="true">
         <SingleCarousel
@@ -85,7 +81,7 @@ class About extends Component {
           <Row className="about-people-row">
             <Col xs="12" md="5" lg="6" xl="5" className="images">
               <img
-                src={`${process.env.REACT_APP_STRAPI_HOST}${this.props.kimPhoto}`}
+                src={`${this.props.photosHost}${this.props.kimPhoto}`}
                 alt={"Kim Wright"}
               />
             </Col>
@@ -98,7 +94,7 @@ class About extends Component {
           <Row className="about-people-row">
             <Col xs="12" md="5" lg="6" xl="5" className="images">
               <img
-                src={`${process.env.REACT_APP_STRAPI_HOST}${this.props.pierrePhoto}`}
+                src={`${this.props.photosHost}${this.props.pierrePhoto}`}
                 alt={"Pierre Priestley"}
               />
             </Col>
@@ -117,7 +113,7 @@ class About extends Component {
           <Row className="about-people-row" id="shirley">
             <Col xs="12" md="5" lg="6" xl="5" className="images">
               <img
-                src={`${process.env.REACT_APP_STRAPI_HOST}${this.props.shirleyPhoto}`}
+                src={`${this.props.photosHost}${this.props.shirleyPhoto}`}
                 alt={"Shirley Scott"}
               />
             </Col>
@@ -144,7 +140,8 @@ const mapStateToProps = state => {
     aboutPierre: state.strapi.aboutPierre,
     kimPhoto: state.strapi.kimPhoto,
     pierrePhoto: state.strapi.pierrePhoto,
-    shirleyPhoto: state.strapi.shirleyPhoto
+    shirleyPhoto: state.strapi.shirleyPhoto,
+    photosHost: state.strapi.photosHost
   };
 };
 
