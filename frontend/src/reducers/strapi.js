@@ -44,7 +44,8 @@ const initialState = {
   ],
   kimPhoto: KimWright,
   pierrePhoto: PierrePriestley,
-  shirleyPhoto: ShirleyScott
+  shirleyPhoto: ShirleyScott,
+  aboutKim: Text
 };
 
 function getState(contentType, state, action) {
