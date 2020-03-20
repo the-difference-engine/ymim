@@ -7,7 +7,7 @@
         "client": "${process.env.CLIENT}",
         "database": "${process.env.DATABASE}",
         "host": "${process.env.HOST}",
-        "port": "${process.env.PORT}",
+        "port": "${process.env.DB_PORT}",
         "username": "${process.env.USERNAME}",
         "password": "${process.env.PASSWORD}",
         "ssl": true
