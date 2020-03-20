@@ -3,7 +3,6 @@ import axios from "axios";
 const getStrapi = (action, endpoint) => {
   return dispatch => {
     const token = process.env.REACT_APP_STRAPI_TOKEN;
-    // const url = `http://localhost:1337/${endpoint}`;
     const url = process.env.REACT_APP_STRAPI_HOST + endpoint;
     return axios(url, {
       headers: {

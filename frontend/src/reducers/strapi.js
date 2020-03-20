@@ -16,7 +16,7 @@ import KimWright from "../assets/KWright_new.jpg";
 
 const initialState = {
   email: "founder@ymim.org",
-  phone: "773.941.1200",
+  number: "773.941.1200",
   taxId: "82-1904373",
   donateLink: "https://www.paypal.com/",
   token: "",
@@ -45,7 +45,12 @@ const initialState = {
   kimPhoto: KimWright,
   pierrePhoto: PierrePriestley,
   shirleyPhoto: ShirleyScott,
-  aboutKim: Text
+  aboutKim:
+    "Wright grew up as a youth-in-care from age 2 to 17 in multiple foster homes and a catholic orphanage after losing her mother to a premature death due to a horrific domestic violence incident. At the age of 7, Wright knew then that her life’s path would lead her serve children and young people who also grew up without the care and guidance of their own loving mother or father. Lacking mentors and relatives to share their experiences on how they made it and how she could too, caused Wright to always read and research how to do anything. Wright has worked as a reporter, writer, editor, HR manager, trainer, case manager, and director. Finally stepping out on faith to do what she had in her heart since age 7, Wright quotes Audrey Lorde, “When I dare to be powerful—to use my strength in the service of my vision, then it becomes less and less important whether I am afraid.”",
+  aboutPierre:
+    "“Service to our youth today will ensure the strength of our world tomorrow.” <br /><br />  Priestley currently serves as an associate general counsel of Investment Property Exchange Services, Inc. He is an attorney and Certified Public Accountant. Priestley served in a variety of roles in large companies as a tax analyst and manager. He has worked on many community service initiatives for to equip youth and young adults.",
+  aboutShirley:
+    "Scott works as a perinatal network administrator and cares for women and infants. She has a special interest in the adolescent and young adult women population particularly those living in underserved areas. Scott incorporates the physical, social, emotional, and spiritual aspects of life to help women and families obtain optimal health. U.S. Air Force Veteran."
 };
 
 function getState(contentType, state, action) {

@@ -104,10 +104,13 @@ class About extends Component {
                 Board Officer, Treasurer
               </h4>
               <p className="text-left">
-                "Service to our youth today will ensure the strength of our
-                world tomorrow."
+                {this.props.aboutPierre.split("<br />").map(string => (
+                  <>
+                    {string}
+                    <br />
+                  </>
+                ))}
               </p>
-              <p className="text-left">{this.props.aboutPierre}</p>
             </Col>
           </Row>
           <Row className="about-people-row" id="shirley">
@@ -124,7 +127,7 @@ class About extends Component {
               <h4 className="sub-heading text-left">
                 Board Officer, Secretary
               </h4>
-              <p className="text-left">{this.props.aboutPierre}</p>
+              <p className="text-left">{this.props.aboutShirley}</p>
             </Col>
           </Row>
         </Container>

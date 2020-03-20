@@ -210,6 +210,14 @@ On the backend, we use a Python package to extract the DB information from a DAT
 
 ### Using an .env file to set environment variables
 
-REACT_APP_STRAPI_HOST=http://localhost:1337/
-REACT_APP_FRONTEND_HOST=http://localhost:3000/
-REACT_APP_STRAPI_TOKEN=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaXNBZG1pbiI6dHJ1ZSwiaWF0IjoxNTgzNzk5NzU4LCJleHAiOjE1ODYzOTE3NTh9.dWR7T76GKYKaV5C6s8Yqma6mY6nsaklySF5PCDA4u7c
+````
+REACT_APP_STRAPI_HOST=
+REACT_APP_FRONTEND_HOST=
+REACT_APP_STRAPI_TOKEN=
+
+REACT_APP_CLIENT=
+REACT_APP_HOST=
+REACT_APP_PORT=
+REACT_APP_USERNAME=
+REACT_APP_PASSWORD=```
+````

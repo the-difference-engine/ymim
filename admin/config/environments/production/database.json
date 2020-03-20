@@ -4,12 +4,12 @@
     "default": {
       "connector": "bookshelf",
       "settings": {
-        "client": "${process.env.REACT_APP_CLIENT || 'postgres'}",
-        "database": "${process.env.REACT_APP_DATABASE || 'd80rgd499a8c8j'}",
-        "host": "${process.env.REACT_APP_HOST || 'ec2-3-231-46-238.compute-1.amazonaws.com'}",
-        "port": "${process.env.REACT_APP_PORT || 5432}",
-        "username": "${process.env.REACT_APP_USERNAME || ''}",
-        "password": "${process.env.REACT_APP_PASSWORD || ''}",
+        "client": "postgres",
+        "database": "d80rgd499a8c8j",
+        "host": "ec2-3-231-46-238.compute-1.amazonaws.com",
+        "port": "5432",
+        "username": "qiikutniibytvn",
+        "password": "76305121d96bfc512d13b1af5d3cedcca44d40ac11db457cfb9abf5b9b8f8e5a",
         "ssl": true
       },
       "options": {}

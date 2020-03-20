@@ -8,13 +8,13 @@ class PhoneNumber extends React.Component {
   }
 
   render() {
-    return <>{this.props.phone}</>;
+    return <>{this.props.number}</>;
   }
 }
 
 const mapStateToProps = state => {
   return {
-    phone: state.strapi.number
+    number: state.strapi.number
   };
 };
 
