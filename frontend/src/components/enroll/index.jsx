@@ -4,6 +4,8 @@ import "./enroll.css";
 import Text from "./enroll.md";
 import "react-bootstrap";
 import SingleCarousel from "../SingleCarousel";
+import getStrapi from "../../actions/strapi.js";
+import { connect } from "react-redux";
 
 class Enroll extends Component {
   constructor(props) {
@@ -14,13 +16,18 @@ class Enroll extends Component {
       iframeHeight: 1400
     };
   }
-
   componentDidMount() {
-    fetch(Text)
-      .then(response => response.text())
-      .then(text => {
-        this.setState({ text: text });
-      });
+    this.props.gEmail();
+  }
+
+  static getDerivedStateFromProps(props, state) {
+    if (props.email) {
+      fetch(Text)
+        .then(response => response.text())
+        .then(text => {
+          state.text = text.replace(/{{email}}/g, props.email);
+        });
+    }
   }
 
   setHeight = () => {
@@ -37,13 +44,11 @@ class Enroll extends Component {
       return 1327;
     }
   };
-
   loaded = () => {
     let height = this.state.loadCounter % 2 === 0 ? this.setHeight() : 400;
     let loadCounter = this.state.loadCounter + 1;
     this.setState({ iframeHeight: height, loadCounter: loadCounter });
   };
-
   render() {
     return (
       <div>
@@ -77,4 +82,21 @@ class Enroll extends Component {
   }
 }
 
-export default Enroll;
+const mapStateToProps = state => {
+  return {
+    email: state.strapi.email
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    gEmail: () => {
+      dispatch(getStrapi("GET_EMAIL", "emails"));
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Enroll);

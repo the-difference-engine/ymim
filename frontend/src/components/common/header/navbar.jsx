@@ -9,8 +9,14 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import logo from "../../../assets/logo.png";
 import "./index.css";
+import { connect } from "react-redux";
+import getStrapi from "../../../actions/strapi.js";
 
 class NavBar extends Component {
+  componentDidMount() {
+    this.props.gSocials();
+  }
+
   render() {
     return (
       <Container fluid={true}>
@@ -37,28 +43,19 @@ class NavBar extends Component {
               </Nav>
               {/* social media links */}
               <Nav id="tsocial" className="ml-auto">
-                <Nav.Link
-                  href="https://www.facebook.com/theymim/"
-                  target="_blank"
-                >
+                <Nav.Link href={this.props.facebook} target="_blank">
                   <FontAwesomeIcon
                     className="social-media"
                     icon={faFacebookSquare}
                   />
                 </Nav.Link>
-                <Nav.Link
-                  href="https://www.instagram.com/theyoungmasterbuilders"
-                  target="_blank"
-                >
+                <Nav.Link href={this.props.instagram} target="_blank">
                   <FontAwesomeIcon
                     className="social-media"
                     icon={faInstagram}
                   />
                 </Nav.Link>
-                <Nav.Link
-                  href="https://www.twitter.com/YMIMtweets"
-                  target="_blank"
-                >
+                <Nav.Link href={this.props.twitter} target="_blank">
                   <FontAwesomeIcon className="social-media" icon={faTwitter} />
                 </Nav.Link>
               </Nav>
@@ -105,4 +102,23 @@ class NavBar extends Component {
   }
 }
 
-export default NavBar;
+const mapStateToProps = state => {
+  return {
+    twitter: state.strapi.twitter,
+    facebook: state.strapi.facebook,
+    instagram: state.strapi.instagram
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    gSocials: () => {
+      dispatch(getStrapi("GET_SOCIAL", "socials"));
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(NavBar);

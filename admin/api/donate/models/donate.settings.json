@@ -1,0 +1,19 @@
+{
+  "connection": "default",
+  "collectionName": "donates",
+  "info": {
+    "name": "donate"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "paypal": {
+      "type": "string"
+    },
+    "token": {
+      "type": "string"
+    }
+  }
+}

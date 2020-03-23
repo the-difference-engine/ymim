@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/volunteer-videos",
+      "handler": "volunteer-video.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/volunteer-videos/count",
+      "handler": "volunteer-video.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/volunteer-videos/:id",
+      "handler": "volunteer-video.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/volunteer-videos",
+      "handler": "volunteer-video.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/volunteer-videos/:id",
+      "handler": "volunteer-video.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/volunteer-videos/:id",
+      "handler": "volunteer-video.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

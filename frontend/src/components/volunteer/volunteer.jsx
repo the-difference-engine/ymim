@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import "./volunteer.css";
 import SingleCarousel from "../SingleCarousel/index";
+import { connect } from "react-redux";
+import getStrapi from "../../actions/strapi.js";
 
 class Volunteer extends Component {
   constructor(props) {
@@ -25,7 +27,9 @@ class Volunteer extends Component {
       loadCounter: this.state.loadCounter + 1
     });
   };
-
+  componentDidMount() {
+    this.props.gVideos();
+  }
   render() {
     return (
       <div>
@@ -87,7 +91,7 @@ class Volunteer extends Component {
                   <h4 className="videoFrameTitle">Inspiring</h4>
                   <div className="videoWrapper">
                     <iframe
-                      src="https://www.youtube.com/embed/PK9ESRMGq74"
+                      src={this.props.video1}
                       frameBorder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
@@ -99,7 +103,7 @@ class Volunteer extends Component {
                   <h4 className="videoFrameTitle">Connecting</h4>
                   <div className="videoWrapper">
                     <iframe
-                      src="https://www.youtube.com/embed/jdsqht1m1rE"
+                      src={this.props.video2}
                       frameBorder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
@@ -111,7 +115,7 @@ class Volunteer extends Component {
                   <h4 className="videoFrameTitle">Empowering</h4>
                   <div className="videoWrapper">
                     <iframe
-                      src="https://www.youtube.com/embed/GwXt3tL6FqY"
+                      src={this.props.video3}
                       frameBorder="0"
                       allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
                       allowFullScreen
@@ -127,5 +131,23 @@ class Volunteer extends Component {
     );
   }
 }
+const mapStateToProps = state => {
+  return {
+    video1: state.strapi.video1,
+    video2: state.strapi.video2,
+    video3: state.strapi.video3
+  };
+};
 
-export default Volunteer;
+const mapDispatchToProps = dispatch => {
+  return {
+    gVideos: () => {
+      dispatch(getStrapi("GET_VOLUNTEERSVIDEOS", "volunteer-videos"));
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Volunteer);

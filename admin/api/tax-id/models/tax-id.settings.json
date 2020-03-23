@@ -1,0 +1,16 @@
+{
+  "info": {
+    "name": "taxId"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "taxId": {
+      "type": "string"
+    }
+  },
+  "connection": "default",
+  "collectionName": "tax_ids"
+}

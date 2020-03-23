@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./contact.css";
 import "react-bootstrap";
 import SingleCarousel from "../SingleCarousel/index";
+import Email from "./email.jsx";
+import PhoneNumber from "./phoneNumber.jsx";
 
 class Contact extends Component {
   state = {
@@ -56,7 +58,7 @@ class Contact extends Component {
                 teens and alumnae.
               </p>
               <p className="text-left">
-                Use the accompanying form to let us know what’s on your mind and
+                Use the accompanying form to let us know what's on your mind and
                 how we can help.
               </p>
               <p className="text-left">Until next time,</p>
@@ -67,9 +69,9 @@ class Contact extends Component {
                 <br />
                 Founder, Young Masterbuilders in Motion
                 <br />
-                Email: Founder@theymim.org
+                Email: <Email />
                 <br />
-                Phone: 773.941.1200
+                Phone: <PhoneNumber />
               </p>
             </div>
           </div>

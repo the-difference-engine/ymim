@@ -1,8 +1,17 @@
 import React, { Component } from "react";
 import { Container, Row } from "react-bootstrap";
 import "./index.css";
+import Email from "../static_pages/email.jsx";
+import PhoneNumber from "../static_pages/phoneNumber.jsx";
+import TaxId from "../static_pages/taxId.jsx";
+import { connect } from "react-redux";
+import getStrapi from "../../actions/strapi.js";
 
 class Donate extends Component {
+  componentDidMount() {
+    this.props.gDonateLink();
+  }
+
   render() {
     return (
       <Row noGutters="true">
@@ -23,19 +32,22 @@ class Donate extends Component {
             and are greatly appreciated. The Young Masterbuilders in Motion,
             Inc., (<strong>YMIM</strong>) is a 501(c)(3) nonprofit organization
             and your contributions are deductible to the full extent of the law.
-            Our tax identification number is 82-1904373.
+            Our tax identification number is <TaxId />.
           </p>
           <p>
             The<strong> YMIM</strong> is committed to respecting the privacy of
             our donors. We do not sell or trade donors’ personal or contact
             information with anyone else. Questions on donating? Contact Kim
-            Wright, Founder/Executive Director at (773) 941-1200 or via email at{" "}
-            <strong>Founder@TheYMIM.org</strong>
+            Wright, Founder/Executive Director at <PhoneNumber /> or via email
+            at{" "}
+            <strong>
+              <Email />
+            </strong>
           </p>
 
           <div className="mx-auto donate">
             <form
-              action="https://www.paypal.com/"
+              action={this.props.donateLink}
               method="post"
               target="_blank"
               className="donate-form"
@@ -44,7 +56,7 @@ class Donate extends Component {
               <input
                 type="hidden"
                 name="hosted_button_id"
-                value="34L62HLMP5VEC"
+                value={this.props.token}
               />
               <input
                 type="image"
@@ -69,4 +81,22 @@ class Donate extends Component {
     );
   }
 }
-export default Donate;
+const mapStateToProps = state => {
+  return {
+    donateLink: state.strapi.donateLink,
+    token: state.strapi.token
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    gDonateLink: () => {
+      dispatch(getStrapi("GET_DONATELINK", "donates"));
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Donate);
