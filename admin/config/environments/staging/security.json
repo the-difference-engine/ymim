@@ -22,7 +22,7 @@
   },
   "cors": {
     "enabled": true,
-    "origin": "http://ymim-frontend-staging.herokuapp.com, http://ymim-frontend-staging.herokuapp.com/"
+    "origin": "http://ymim-frontend-staging.herokuapp.com, http://ymim-frontend-staging.herokuapp.com/, https://ymim-frontend-staging.herokuapp.com, https://ymim-frontend-staging.herokuapp.com/"
   },
   "ip": {
     "enabled": false,
