@@ -21,7 +21,7 @@
     "mode": "block"
   },
   "cors": {
-    "enabled": false,
+    "enabled": true,
     "origin": "http://ymim-frontend-staging.herokuapp.com, http://ymim-frontend-staging.herokuapp.com/"
   },
   "ip": {
