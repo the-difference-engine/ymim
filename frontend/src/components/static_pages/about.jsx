@@ -80,10 +80,7 @@ class About extends Component {
           <h1 className="about-heading">Our People</h1>
           <Row className="about-people-row">
             <Col xs="12" md="5" lg="6" xl="5" className="images">
-              <img
-                src={`${this.props.photosHost}${this.props.kimPhoto}`}
-                alt={"Kim Wright"}
-              />
+              <img src={this.props.kimPhoto} alt={"Kim Wright"} />
             </Col>
             <Col xs="12" md="6" lg="6" xl="7" className="people-col">
               <h1 className="people-heading text-left">Kim Wright, MBA</h1>
@@ -93,10 +90,7 @@ class About extends Component {
           </Row>
           <Row className="about-people-row">
             <Col xs="12" md="5" lg="6" xl="5" className="images">
-              <img
-                src={`${this.props.photosHost}${this.props.pierrePhoto}`}
-                alt={"Pierre Priestley"}
-              />
+              <img src={this.props.pierrePhoto} alt={"Pierre Priestley"} />
             </Col>
             <Col xs="12" md="6" lg="6" xl="7" className="people-col">
               <h1 className="people-heading text-left">Pierre Priestley</h1>
@@ -115,10 +109,7 @@ class About extends Component {
           </Row>
           <Row className="about-people-row" id="shirley">
             <Col xs="12" md="5" lg="6" xl="5" className="images">
-              <img
-                src={`${this.props.photosHost}${this.props.shirleyPhoto}`}
-                alt={"Shirley Scott"}
-              />
+              <img src={this.props.shirleyPhoto} alt={"Shirley Scott"} />
             </Col>
             <Col xs="12" md="6" lg="6" xl="7" className="people-col">
               <h1 className="people-heading text-left">
@@ -143,8 +134,7 @@ const mapStateToProps = state => {
     aboutPierre: state.strapi.aboutPierre,
     kimPhoto: state.strapi.kimPhoto,
     pierrePhoto: state.strapi.pierrePhoto,
-    shirleyPhoto: state.strapi.shirleyPhoto,
-    photosHost: state.strapi.photosHost
+    shirleyPhoto: state.strapi.shirleyPhoto
   };
 };
 

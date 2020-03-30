@@ -26,8 +26,6 @@ const initialState = {
   video1: "https://www.youtube.com/embed/PK9ESRMGq74",
   video2: "https://www.youtube.com/embed/jdsqht1m1rE",
   video3: "https://www.youtube.com/embed/GwXt3tL6FqY",
-  sponsors_host: process.env.REACT_APP_FRONTEND_HOST,
-  photosHost: process.env.REACT_APP_FRONTEND_HOST,
   sponsors: [
     { sponsors: { url: Sponsor1 } },
     { sponsors: { url: Sponsor2 } },
@@ -104,8 +102,7 @@ export default function getStrapi(state = initialState, action) {
       }
       return {
         ...state,
-        sponsors: action.response.data,
-        sponsors_host: process.env.REACT_APP_STRAPI_HOST
+        sponsors: action.response.data
       };
     case "GET_ABOUT":
       if (action.response.data.length === 0) {
@@ -118,8 +115,7 @@ export default function getStrapi(state = initialState, action) {
         aboutShirley: action.response.data[0].aboutShirley,
         kimPhoto: action.response.data[0].kimPhoto[0].url,
         pierrePhoto: action.response.data[0].pierrePhoto[0].url,
-        shirleyPhoto: action.response.data[0].shirleyPhoto[0].url,
-        photosHost: process.env.REACT_APP_STRAPI_HOST
+        shirleyPhoto: action.response.data[0].shirleyPhoto[0].url
       };
     default:
       return state;

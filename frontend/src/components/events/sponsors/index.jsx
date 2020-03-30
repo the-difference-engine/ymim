@@ -27,7 +27,7 @@ class Sponsors extends Component {
             this.props.sponsors.map((sponsor, i) => (
               <img
                 key={i}
-                src={`${this.props.sponsors_host}${sponsor.sponsors.url}`}
+                src={sponsor.sponsors.url}
                 className="logo-picture"
                 alt="sponsor logo"
               />
@@ -43,8 +43,7 @@ class Sponsors extends Component {
 
 const mapStateToProps = state => {
   return {
-    sponsors: state.strapi.sponsors,
-    sponsors_host: state.strapi.sponsors_host
+    sponsors: state.strapi.sponsors
   };
 };
 
