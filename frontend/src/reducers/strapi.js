@@ -125,7 +125,7 @@ export default function getStrapi(state = initialState, action) {
       }
       return {
         ...state,
-        resources: action.response.data[0].resource[0].name
+        resources: action.response.data[0].resource[0].url
       };
     default:
       return state;
