@@ -121,6 +121,14 @@ export default function getStrapi(state = initialState, action) {
         shirleyPhoto: action.response.data[0].shirleyPhoto[0].url,
         photosHost: process.env.REACT_APP_STRAPI_HOST
       };
+    case "GET_RESOURCES":
+      if (action.response.data.length === 0) {
+        return state;
+      }
+      return {
+        ...state,
+        resources: action.response.data[0].resource[0].name
+      };
     default:
       return state;
   }

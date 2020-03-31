@@ -15,6 +15,7 @@ import getStrapi from "../../../actions/strapi.js";
 class NavBar extends Component {
   componentDidMount() {
     this.props.gSocials();
+    this.props.gResources();
   }
 
   render() {
@@ -70,14 +71,14 @@ class NavBar extends Component {
               <Navbar.Collapse>
                 <Nav className="ml-lg-3 ml-xl-3 ml-auto mr-auto my-auto align-links">
                   {/* resources  */}
-                  <NavLink
+                  <Nav.Link
                     className="resources-link"
-                    to="/resources.pdf"
+                    href={this.props.resources}
                     download
                     target="_blank"
                   >
                     Resources
-                  </NavLink>
+                  </Nav.Link>
                   {/* enroll  */}
                   <NavLink className="resources-link" to="/enrollment">
                     Enroll
@@ -106,7 +107,8 @@ const mapStateToProps = state => {
   return {
     twitter: state.strapi.twitter,
     facebook: state.strapi.facebook,
-    instagram: state.strapi.instagram
+    instagram: state.strapi.instagram,
+    resources: state.strapi.resources
   };
 };
 
@@ -114,6 +116,9 @@ const mapDispatchToProps = dispatch => {
   return {
     gSocials: () => {
       dispatch(getStrapi("GET_SOCIAL", "socials"));
+    },
+    gResources: () => {
+      dispatch(getStrapi("GET_RESOURCES", "resources"));
     }
   };
 };
