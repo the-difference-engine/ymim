@@ -13,6 +13,7 @@ import Sponsor12 from "../assets/Walmart_logo.svg.png";
 import PierrePriestley from "../assets/Pierre-Priestley_new.jpg";
 import ShirleyScott from "../assets/Shirley-Scott_new.jpg";
 import KimWright from "../assets/KWright_new.jpg";
+import resources from "../assets/resources.pdf";
 
 const initialState = {
   email: "founder@ymim.org",
@@ -48,7 +49,8 @@ const initialState = {
   aboutPierre:
     "“Service to our youth today will ensure the strength of our world tomorrow.” <br /><br />  Priestley currently serves as an associate general counsel of Investment Property Exchange Services, Inc. He is an attorney and Certified Public Accountant. Priestley served in a variety of roles in large companies as a tax analyst and manager. He has worked on many community service initiatives for to equip youth and young adults.",
   aboutShirley:
-    "Scott works as a perinatal network administrator and cares for women and infants. She has a special interest in the adolescent and young adult women population particularly those living in underserved areas. Scott incorporates the physical, social, emotional, and spiritual aspects of life to help women and families obtain optimal health. U.S. Air Force Veteran."
+    "Scott works as a perinatal network administrator and cares for women and infants. She has a special interest in the adolescent and young adult women population particularly those living in underserved areas. Scott incorporates the physical, social, emotional, and spiritual aspects of life to help women and families obtain optimal health. U.S. Air Force Veteran.",
+  resources: resources
 };
 
 function getState(contentType, state, action) {
@@ -116,6 +118,14 @@ export default function getStrapi(state = initialState, action) {
         kimPhoto: action.response.data[0].kimPhoto[0].url,
         pierrePhoto: action.response.data[0].pierrePhoto[0].url,
         shirleyPhoto: action.response.data[0].shirleyPhoto[0].url
+      };
+    case "GET_RESOURCES":
+      if (action.response.data.length === 0) {
+        return state;
+      }
+      return {
+        ...state,
+        resources: action.response.data[0].resource[0].name
       };
     default:
       return state;
