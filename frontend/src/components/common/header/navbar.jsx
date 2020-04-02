@@ -71,14 +71,14 @@ class NavBar extends Component {
               <Navbar.Collapse>
                 <Nav className="ml-lg-3 ml-xl-3 ml-auto mr-auto my-auto align-links">
                   {/* resources  */}
-                  <Nav.Link
+                  <NavLink
                     className="resources-link"
-                    href={this.props.resources}
+                    to={this.props.resources}
                     download
                     target="_blank"
                   >
                     Resources
-                  </Nav.Link>
+                  </NavLink>
                   {/* enroll  */}
                   <NavLink className="resources-link" to="/enrollment">
                     Enroll
@@ -123,7 +123,4 @@ const mapDispatchToProps = dispatch => {
   };
 };
 
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(NavBar);
+export default connect(mapStateToProps, mapDispatchToProps)(NavBar);
