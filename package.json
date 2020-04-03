@@ -12,5 +12,8 @@
       "pre-commit": "pretty-quick --staged"
     }
   },
-  "dependencies": {}
+  "dependencies": {
+    "axios": "^0.19.2",
+    "save": "^2.4.0"
+  }
 }

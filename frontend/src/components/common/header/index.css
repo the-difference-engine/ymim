@@ -41,6 +41,10 @@
   color: #fdd368 !important;
 }
 
+#resource-inactive {
+  color: white !important;
+}
+
 .nav-link-top {
   padding: 15px;
   color: #000000;
