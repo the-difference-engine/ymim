@@ -76,6 +76,7 @@ class NavBar extends Component {
                       className="resources-link"
                       href={this.props.resources}
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Resources
                     </a>
@@ -85,6 +86,7 @@ class NavBar extends Component {
                       id="resource-inactive"
                       to={this.props.resources}
                       target="_blank"
+                      rel="noopener noreferrer"
                     >
                       Resources
                     </NavLink>

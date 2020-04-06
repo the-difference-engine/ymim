@@ -1,6 +1,7 @@
 {
   "name": "ymim",
   "version": "0.1.0",
+  "dependencies": {},
   "scripts": {},
   "devDependencies": {
     "husky": "^3.0.9",
@@ -11,9 +12,5 @@
     "hooks": {
       "pre-commit": "pretty-quick --staged"
     }
-  },
-  "dependencies": {
-    "axios": "^0.19.2",
-    "save": "^2.4.0"
   }
 }
