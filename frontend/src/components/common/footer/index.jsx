@@ -8,6 +8,8 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import { Container, Row, Col } from "react-bootstrap";
 import "./index.css";
+import Email from "../../static_pages/email.jsx";
+import PhoneNumber from "../../static_pages/phoneNumber.jsx";
 
 export default class footer extends Component {
   render() {
@@ -72,11 +74,11 @@ export default class footer extends Component {
                   </Col>
                   <Col xs="12" sm="12" md="4" lg="4" xl="2">
                     <a className="contact" href="mailto:founder@theymim.org">
-                      founder@theymim.org
+                      <Email />
                     </a>
                   </Col>
                   <Col xs="12" sm="12" md="4" lg="4" xl="2">
-                    773.941.1200
+                    <PhoneNumber />
                   </Col>
                 </Row>
               </div>

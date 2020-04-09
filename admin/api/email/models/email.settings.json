@@ -1,0 +1,16 @@
+{
+  "connection": "default",
+  "collectionName": "emails",
+  "info": {
+    "name": "email"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "email": {
+      "type": "string"
+    }
+  }
+}

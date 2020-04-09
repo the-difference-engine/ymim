@@ -92,8 +92,8 @@ class LowerMid extends Component {
           </Col>
         </Row>
         <Row className="test justify-content-md-center">
-          {footerImages.map(i => (
-            <Col className="justify-content-md-center">
+          {footerImages.map((i, ii) => (
+            <Col key={ii} className="justify-content-md-center">
               <div className="pic-container">
                 <img className="pic" src={i.src} alt="" />
               </div>

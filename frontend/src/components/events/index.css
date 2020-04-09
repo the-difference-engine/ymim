@@ -16,13 +16,7 @@
   }
 }
 
-@media screen and (min-width: 680px) and (max-width: 839px) {
-  .checkBack {
-    max-width: 680px;
-  }
-}
-
-@media screen and (min-width: 840px) and (max-width: 1267px) {
+@media screen and (min-width: 680px) and (max-width: 1267px) {
   .checkBack {
     max-width: 850px;
   }

@@ -11,12 +11,18 @@ import Picture6 from "../../assets/action-shots/TTigue Sscott ASayre.jpg";
 import Picture7 from "../../assets/action-shots/UIC Dream Team SScott ACalix KWright.jpg";
 import Picture8 from "../../assets/action-shots/Calix family donors.jpg";
 import Picture9 from "../../assets/action-shots/textphotos.png";
+import { connect } from "react-redux";
+import getStrapi from "../../actions/strapi.js";
 
 class Team extends Component {
   state = {
     showImageModal: false,
     enhancedImage: null
   };
+
+  componentDidMount() {
+    this.props.gFacebook();
+  }
 
   selectImage = event => {
     this.setState({ enhancedImage: event.target.src, showImageModal: true });
@@ -151,15 +157,11 @@ class Team extends Component {
               </Col>
               <Col className="imageColumn" sm={4}>
                 <a
-                  href="https://www.facebook.com/theymim/"
+                  href={this.props.facebook}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <img
-                    src={Picture9}
-                    className="gallery-picture"
-                    alt="8"
-                  />
+                  <img src={Picture9} className="gallery-picture" alt="8" />
                   <div className="facebookLink">
                     Click here for more photos of the team.
                   </div>
@@ -180,4 +182,21 @@ class Team extends Component {
   }
 }
 
-export default Team;
+const mapStateToProps = state => {
+  return {
+    facebook: state.strapi.facebook
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    gFacebook: () => {
+      dispatch(getStrapi("GET_SOCIAL", "socials"));
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(Team);

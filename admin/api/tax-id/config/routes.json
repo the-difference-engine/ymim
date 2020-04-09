@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/tax-ids",
+      "handler": "tax-id.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tax-ids/count",
+      "handler": "tax-id.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/tax-ids/:id",
+      "handler": "tax-id.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/tax-ids",
+      "handler": "tax-id.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/tax-ids/:id",
+      "handler": "tax-id.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/tax-ids/:id",
+      "handler": "tax-id.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

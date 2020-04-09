@@ -208,6 +208,19 @@ On the backend, we use a Python package to extract the DB information from a DAT
     APP_BASE=backend
     SECRET_KEY=<SECRET_KEY>
 
+### Using an .env file to set environment variables
+
+```
+REACT_APP_STRAPI_TOKEN=
+
+REACT_APP_CLIENT=
+REACT_APP_HOST=
+REACT_APP_PORT=
+REACT_APP_USERNAME=
+REACT_APP_PASSWORD=
+```
+
+
 ## Submit to Strapi from Postman
 
 ### Set up strapi
@@ -261,5 +274,6 @@ https://strapi.io/documentation/3.0.0-beta.x/plugins/documentation.html#installa
     "description": "description from postman"
   }
   ```
+
 
 - Click `Send`

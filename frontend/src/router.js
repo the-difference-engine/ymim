@@ -1,17 +1,15 @@
 import React from "react";
 import { Switch, Route, BrowserRouter as Router } from "react-router-dom";
 import { Provider } from "react-redux";
-import { createStore, applyMiddleware } from "redux";
+import { createStore, applyMiddleware, compose } from "redux";
 import fetchData from "./reducers";
 import thunk from "redux-thunk";
 import Home from "./components/home";
 import Header from "./components/common/header";
 import NotFound from "./components/common/not_found";
 import Footer from "./components/common/footer";
-import Login from "./components/login";
 import Contact from "./components/static_pages/contact";
 import About from "./components/static_pages/about";
-import Admin from "./components/admin";
 import Enroll from "./components/enroll";
 import Team from "./components/static_pages/team";
 import Ambassadors from "./components/static_pages/ambassadors";
@@ -21,7 +19,8 @@ import Events from "./components/events";
 import Volunteer from "./components/volunteer/volunteer.jsx";
 import ScrollToTop from "./components/to_the_top";
 
-let store = createStore(fetchData, applyMiddleware(thunk));
+const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+let store = createStore(fetchData, composeEnhancers(applyMiddleware(thunk)));
 
 const router = (
   <Provider store={store}>
@@ -41,8 +40,6 @@ const router = (
                 <Route exact path="/meet-the-team" component={Team} />
                 <Route exact path="/ambassadors" component={Ambassadors} />
                 <Route exact path="/events" component={Events} />
-                <Route exact path="/admin" component={Admin} />
-                <Route exact path="/login" component={Login} />
                 <Route exact path="/resources" component={Resources} />
                 <Route exact path="/volunteer" component={Volunteer} />
                 <Route component={NotFound} />

@@ -9,21 +9,15 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 import logo from "../../../assets/logo.png";
 import "./index.css";
+import { connect } from "react-redux";
+import getStrapi from "../../../actions/strapi.js";
 
 class NavBar extends Component {
-  constructor(props) {
-    super(props);
+  componentDidMount() {
+    this.props.gSocials();
+    this.props.gResources();
+  }
 
-    this.toggle = this.toggle.bind(this);
-    this.state = {
-      isOpen: false
-    };
-  }
-  toggle() {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
-  }
   render() {
     return (
       <Container fluid={true}>
@@ -50,28 +44,19 @@ class NavBar extends Component {
               </Nav>
               {/* social media links */}
               <Nav id="tsocial" className="ml-auto">
-                <Nav.Link
-                  href="https://www.facebook.com/theymim/"
-                  target="_blank"
-                >
+                <Nav.Link href={this.props.facebook} target="_blank">
                   <FontAwesomeIcon
                     className="social-media"
                     icon={faFacebookSquare}
                   />
                 </Nav.Link>
-                <Nav.Link
-                  href="https://www.instagram.com/theyoungmasterbuilders"
-                  target="_blank"
-                >
+                <Nav.Link href={this.props.instagram} target="_blank">
                   <FontAwesomeIcon
                     className="social-media"
                     icon={faInstagram}
                   />
                 </Nav.Link>
-                <Nav.Link
-                  href="https://www.twitter.com/YMIMtweets"
-                  target="_blank"
-                >
+                <Nav.Link href={this.props.twitter} target="_blank">
                   <FontAwesomeIcon className="social-media" icon={faTwitter} />
                 </Nav.Link>
               </Nav>
@@ -82,18 +67,31 @@ class NavBar extends Component {
         <Row className="ym-bottom" noGutters={true}>
           <Col className="mx-auto my-auto px-0" xs={8} sm={8} md={10} lg={10}>
             <Navbar collapseOnSelect expand="lg">
-              <Navbar.Toggle className="ml-3" onClick={this.toggle} />
-              <Navbar.Collapse isOpen={this.state.isOpen} navbar>
+              <Navbar.Toggle className="ml-3" />
+              <Navbar.Collapse>
                 <Nav className="ml-lg-3 ml-xl-3 ml-auto mr-auto my-auto align-links">
                   {/* resources  */}
-                  <NavLink
-                    className="resources-link"
-                    to="/resources.pdf"
-                    download
-                    target="_blank"
-                  >
-                    Resources
-                  </NavLink>
+                  {this.props.resources.includes("cloudinary") ? (
+                    <a
+                      className="resources-link"
+                      id="resource-inactive"
+                      href={this.props.resources}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Resources
+                    </a>
+                  ) : (
+                    <NavLink
+                      className="resources-link"
+                      id="resource-inactive"
+                      to={this.props.resources}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      Resources
+                    </NavLink>
+                  )}
                   {/* enroll  */}
                   <NavLink className="resources-link" to="/enrollment">
                     Enroll
@@ -118,4 +116,27 @@ class NavBar extends Component {
   }
 }
 
-export default NavBar;
+const mapStateToProps = state => {
+  return {
+    twitter: state.strapi.twitter,
+    facebook: state.strapi.facebook,
+    instagram: state.strapi.instagram,
+    resources: state.strapi.resources
+  };
+};
+
+const mapDispatchToProps = dispatch => {
+  return {
+    gSocials: () => {
+      dispatch(getStrapi("GET_SOCIAL", "socials"));
+    },
+    gResources: () => {
+      dispatch(getStrapi("GET_RESOURCES", "resources"));
+    }
+  };
+};
+
+export default connect(
+  mapStateToProps,
+  mapDispatchToProps
+)(NavBar);

@@ -1,8 +1,10 @@
 import { combineReducers } from "redux";
 import events from "./events";
+import strapi from "./strapi";
 
 const fetchData = combineReducers({
-  events
+  events,
+  strapi
 });
 
 export default fetchData;

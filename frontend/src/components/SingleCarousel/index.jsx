@@ -5,12 +5,22 @@ import logo from "../../assets/logo.png";
 
 class SingleCarousel extends Component {
   render() {
+    let pat = /^https?:\/\//i;
+    let image = "";
+    if (this.props.image) {
+      if (pat.test(this.props.image)) {
+        image = this.props.image;
+      } else {
+        image = require("../../assets/" + this.props.image);
+      }
+    }
+
     return (
       <Carousel>
         <Carousel.Item>
           <img
             className="d-block w-100 blurImage"
-            src={require("../../assets/" + this.props.image)}
+            src={image}
             alt="First Slide"
           />
           <Carousel.Caption>

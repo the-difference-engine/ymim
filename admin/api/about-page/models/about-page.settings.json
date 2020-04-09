@@ -1,0 +1,40 @@
+{
+  "connection": "default",
+  "collectionName": "about_pages",
+  "info": {
+    "name": "About Page"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "aboutKim": {
+      "type": "richtext"
+    },
+    "aboutPierre": {
+      "type": "richtext"
+    },
+    "aboutShirley": {
+      "type": "richtext"
+    },
+    "kimPhoto": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "pierrePhoto": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    },
+    "shirleyPhoto": {
+      "collection": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import "./contact.css";
 import "react-bootstrap";
 import SingleCarousel from "../SingleCarousel/index";
+import Email from "./email.jsx";
+import PhoneNumber from "./phoneNumber.jsx";
 
 class Contact extends Component {
   state = {
@@ -9,11 +11,28 @@ class Contact extends Component {
     iframeHeight: 1100
   };
 
+  setHeight = () => {
+    let width = window.innerWidth;
+    if (320 >= width && width < 375) {
+      return 1300;
+    } else if (375 >= width && width < 424) {
+      return 1250;
+    } else if (425 >= width && width < 767) {
+      return 1205;
+    } else if (768 >= width && width <= 1024) {
+      return 1130;
+    } else {
+      return 1100;
+    }
+  };
+
   loaded = () => {
-    let height =
-      this.state.loadCounter % 2 === 0 ? this.state.iframeHeight : 400;
+    let height = this.state.loadCounter % 2 === 0 ? this.setHeight() : 400;
     let loadCounter = this.state.loadCounter + 1;
-    this.setState({ iframeHeight: height, loadCounter: loadCounter });
+    this.setState({
+      iframeHeight: height,
+      loadCounter: this.state.loadCounter + 1
+    });
   };
 
   render() {
@@ -39,7 +58,7 @@ class Contact extends Component {
                 teens and alumnae.
               </p>
               <p className="text-left">
-                Use the accompanying form to let us know what’s on your mind and
+                Use the accompanying form to let us know what's on your mind and
                 how we can help.
               </p>
               <p className="text-left">Until next time,</p>
@@ -50,9 +69,9 @@ class Contact extends Component {
                 <br />
                 Founder, Young Masterbuilders in Motion
                 <br />
-                Email: Founder@theymim.org
+                Email: <Email />
                 <br />
-                Phone: 773.941.1200
+                Phone: <PhoneNumber />
               </p>
             </div>
           </div>
@@ -60,9 +79,9 @@ class Contact extends Component {
             <iframe
               src="https://docs.google.com/forms/d/e/1FAIpQLSe9vicPG5oh6xdZYGLMkksNXQc_6WnjY4GCOZbjcnlVzW0huA/viewform?embedded=true"
               style={{ width: "100%", height: this.state.iframeHeight }}
-              frameborder="0"
-              marginwidth="0"
-              marginheight="0"
+              frameBorder="0"
+              marginWidth="0"
+              marginHeight="0"
               onLoad={this.loaded}
               className="enroll-iframe"
               title="contact-iframe"

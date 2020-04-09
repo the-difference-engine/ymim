@@ -19,7 +19,7 @@ class MainCarousel extends Component {
             alt="First Slide"
           />
           <Carousel.Caption>
-            <div class="overlay">
+            <div className="overlay">
               <h3 className="title-carousel">Young Masterbuilders in Motion</h3>
               <p className="paragraph-carousel">
                 <strong>

@@ -1,0 +1,19 @@
+{
+  "connection": "default",
+  "collectionName": "sponsors",
+  "info": {
+    "name": "Sponsor"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true
+  },
+  "attributes": {
+    "sponsors": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}
