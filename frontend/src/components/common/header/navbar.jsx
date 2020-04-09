@@ -74,6 +74,7 @@ class NavBar extends Component {
                   {this.props.resources.includes("cloudinary") ? (
                     <a
                       className="resources-link"
+                      id="resource-inactive"
                       href={this.props.resources}
                       target="_blank"
                       rel="noopener noreferrer"

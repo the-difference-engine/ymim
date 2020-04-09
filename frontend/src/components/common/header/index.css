@@ -45,6 +45,10 @@
   color: white !important;
 }
 
+#resource-inactive:hover {
+  color: white !important;
+}
+
 .nav-link-top {
   padding: 15px;
   color: #000000;
